@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>외주 공고 분석부터 구현까지 - AI로 1시간 컷이 가능할까_ 실전 라이브 - VidDigest</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-inner">
+            <a href="../../" class="site-title">VidDigest</a>
+        </div>
+        <h1>외주 공고 분석부터 구현까지 - AI로 1시간 컷이 가능할까_ 실전 라이브</h1>
+        <div class="meta">
+            <span></span>
+            <span></span>
+            <span>2026-02-11</span>
+        </div>
+    </div>
+    <div class="container">
+<p>이제 모든 스크린샷을 확인했습니다. Markdown 요약 보고서를 작성하겠습니다.</p>
+<blockquote><p><strong>채널</strong>: 바이브랩스 | <strong>길이</strong>: 3:01:05 | <strong>날짜</strong>: 20251228</p></blockquote>
+<h2>핵심 내용</h2>
+<ul>
+<li><strong>위시켓(Wishket) 외주 프로젝트 공고를 실시간으로 분석하고, AI 도구들만으로 실제 구현까지 도전하는 3시간짜리 라이브 코딩 방송이다.</strong> 진행자(futurewave)는 &quot;AI 챗봇 기반 강연 섭외 및 운영 자동화 시스템&quot; 프로젝트를 선택하여, 공고 분석 → 문서 작성(PRD/TRD/TASKS) → 실제 코딩 → Docker 배포까지의 전 과정을 AI 에이전트에게 맡기는 실험을 진행한다.</li>
+</ul>
+<ul>
+<li><strong>Claude (Haiku 4.5, Sonnet 4.5)를 활용하여 외주 공고를 분석하고, &quot;AI 코딩 생산성 현실 분석&quot;이라는 관점에서 2주짜리 프로젝트를 바이브코딩 기준으로 어느 정도까지 가능한지 현실적으로 평가한다.</strong> Claude가 프로젝트의 프론트엔드만 가능하고 백엔드도 가능하다는 분석 결과를 제시한다.</li>
+</ul>
+<ul>
+<li><strong>Google AI Studio의 Gemini 3 Pro Preview 모델과 Antigravity(구 Jules) 에이전트를 핵심 도구로 사용한다.</strong> Gemini에게 PRD와 TRD 문서를 전달하고 Tasks를 계획하게 한 뒤, Antigravity 에이전트가 실제 코드를 자동 생성하는 방식으로 진행한다.</li>
+</ul>
+<ul>
+<li><strong>약 33분 만에 프론트엔드 프로젝트 초기화, 백엔드 Django 프로젝트 설정, Docker 환경 구성, 데이터베이스 인덱싱, 샘플 데이터 생성, Redis/Celery 설정, 인증 시스템, 프론트엔드 인증 구현, WebSocket 서버, AI 챗봇 시나리오 엔진까지 다수의 TASK를 자동으로 완료한다.</strong> 56개 이상의 파일이 수정되며 실질적인 풀스택 애플리케이션이 만들어진다.</li>
+</ul>
+<ul>
+<li><strong>실제 Docker Compose로 서비스를 올려보면 프론트엔드(localhost:5173), 채팅(localhost:5173/chat), 관리자 페이지(localhost:5173/admin) 등이 동작하지만, WebSocket 연결 오류, 인증 관련 버그 등이 발생하여 추가 디버깅이 필요하다.</strong> AI가 자동으로 오류를 진단하고 JWT 미들웨어를 새로 작성하는 등 문제 해결을 시도한다.</li>
+</ul>
+<ul>
+<li><strong>후반부에서는 Claude Code의 Plan mode를 활용하여 프로젝트 상태를 분석하고, 남은 Phase별 TODO를 정리한 뒤 제안서 자동 생성, 캘린더 UI, Serializers/Views 등 고급 기능까지 구현을 이어간다.</strong> 또한 GLM Coding Plan이라는 AI 코딩 전문 서비스의 가격표도 소개된다.</li>
+</ul>
+<ul>
+<li><strong>이 방송의 핵심 메시지는 &quot;AI 에이전트(Conductor, Antigravity 등)를 활용하면 코드가 아닌 컨텍스트(문서)를 먼저 통제해야 한다&quot;는 것이다.</strong> PRD → TRD → TASKS 순서로 문서를 체계적으로 작성한 후 AI에게 넘기는 워크플로우가 강조된다.</li>
+</ul>
+<hr>
+<h2>상세 분석</h2>
+<h3>1. 방송 오프닝 및 Excalidraw 준비 [0:00 - 6:02]</h3>
+<p>방송이 시작되면 진행자(futurewave)가 Excalidraw Whiteboard를 열고 라이브 준비를 한다. 화면 왼쪽에는 Excalidraw의 드로잉 도구가 보이며, 오른쪽에는 YouTube 라이브 채팅창이 활성화되어 있다. 채팅창에서는 시청자들이 &quot;안녕하세요&quot;, &quot;반갑습니다&quot; 등의 인사를 나누고 있다. 진행자는 &quot;qkd&quot;라는 텍스트를 Excalidraw에 테스트로 입력하며 화이트보드 세팅을 확인한다. 브라우저 상단 탭에는 &quot;업무 자동화 전문가가 필요한 순간&quot;, &quot;프로젝트 찾기 - 위시켓(Wishket)&quot;, &quot;Excalidraw Whiteboard&quot; 등의 탭이 열려 있어 오늘 방송의 주제가 외주 플랫폼 위시켓과 관련된 것임을 알 수 있다.</p>
+<p>상단 북마크바에는 futurewave, 공실책, AI, Productivity, Write, Dev, MR, Design, 솔프레(원고) 등의 폴더가 정리되어 있어 진행자가 다양한 AI 및 개발 관련 리소스를 활용하고 있음을 보여준다.</p>
+<div class="screenshot-container"><img src="images/segment_000.jpg" alt="Excalidraw 준비 화면" loading="lazy">
+<div class="caption">Excalidraw 준비 화면</div>
+</div>
+<hr>
+<h3>2. 위시켓(Wishket) 플랫폼 소개 및 외주 프로젝트 탐색 [6:02 - 12:04]</h3>
+<p>진행자가 위시켓(wishket.com) 플랫폼에 로그인한 화면이 보인다. &quot;futurewave 님의 마이위시켓&quot; 페이지가 표시되며, 프로필 정보가 나타난다:</p>
+<ul>
+<li><strong>계정명</strong>: futurewave (futurewave@gmail.com)</li>
+<li><strong>파트너 등급</strong>: BASIC 파트너</li>
+<li><strong>지원한 프로젝트</strong>: 0건</li>
+<li><strong>계약한 프로젝트</strong>: 0건</li>
+<li><strong>누적 완료 금액</strong>: 0원</li>
+</ul>
+<p>위시켓은 IT 프리랜서/외주 매칭 플랫폼으로, &quot;파트너님께 알맞은 프로젝트를 위시켓에서 안전하게 진행하세요&quot;라는 안내 문구가 보인다. 화면 중앙에는 두 가지 고민이 일러스트와 함께 표시된다:</p>
+<ul>
+<li>&quot;내가 가진 기술에 맞는 프로젝트가 있을까?&quot;</li>
+<li>&quot;내가 원하는 시간과 금액으로 일을 하고 싶은데...&quot;</li>
+</ul>
+<p>하단에는 위시켓 이용 프로세스가 안내되어 있다:</p>
+<ol>
+<li>프로필 작성 - 프로필을 통해 파트너님에 대해 알려주세요</li>
+<li>내 프로필 작성하고 원하는 프로젝트 수주하기</li>
+<li>나에게 맞는 프로젝트 찾기</li>
+</ol>
+<p>채팅창에서는 시청자들이 활발하게 대화하고 있으며, 한 시청자는 &quot;이게 들어왔을 때 만약에 전기가 근거가 없으면 반복되고 제작요청해달라하구요&quot;라는 실무 경험을 공유하고 있다.</p>
+<div class="screenshot-container"><img src="images/segment_001.jpg" alt="위시켓 마이페이지" loading="lazy">
+<div class="caption">위시켓 마이페이지</div>
+</div>
+<hr>
+<h3>3. 외주 프로젝트 공고 상세 분석 [12:04 - 18:06]</h3>
+<p>진행자가 위시켓에서 특정 프로젝트 공고를 열어 상세 내용을 분석한다. 프로젝트 URL은 <code>wishket.com/project/151677/</code>이며, &quot;AI 챗봇 기반 강연 섭외 및 운영 자동화 시스템&quot; 프로젝트이다. 공고의 상세 내용이 화면에 보인다:</p>
+<p><strong>업무 내용 탭에 표시된 상세 요구사항:</strong></p>
+<p><strong>2.2. 조건 기반 추천 및 문서 자동 생성</strong></p>
+<ul>
+<li>강연자 추천: 지역, 예산, 주제, 대상, 강의 형식 등을 입력받아 적합한 강연자 리스트 도출 (1차 추천)</li>
+<li>제안서/계획서 생성: 추천된 강사를 바탕으로 제안서 초안 및 강의 계획서(개요, 목표, 기대효과 등) PDF/문서 자동 생성</li>
+<li>로직 특이사항: AI 추천은 &#x27;1차 추천&#x27;이며, 최종 확정은 내부 매니저 검토 후 진행되는 프로세스 구현</li>
+</ul>
+<p><strong>2.3. 관리자 실시간 모니터링 및 개입</strong></p>
+<ul>
+<li>라이브 채팅 관제: 모든 채팅방 실시간 모니터링, 관리자 난입(임장/퇴장), 상담원 연결 기능</li>
+<li>실시간 로그 및 요약: 상담 내용을 AI가 3줄 요약(정형화된 포맷)하여 실시간 피드, 핵심 니즈 해시태그(#) 자동 추출</li>
+<li>가예약 전환 감지: 상담이 특정 단계(가예약 등) 도달 시 담당자에게 자동 알림 및 매칭</li>
+</ul>
+<p><strong>2.4. 관리자 상담 지표 대시보드</strong></p>
+<ul>
+<li>KPI Zone: 일별 문의 수, 자동 응답 처리율, 매니저 개입률, 가예약 전환율(핵심 KPI) 시각화</li>
+<li>필터링: 일/주/월 단위 필터 및 수치 클릭 시 해당 상담 리스트로 이동</li>
+</ul>
+<p><strong>3. 홈페이지 UI 개편 (업업)</strong></p>
+<ul>
+<li>방향성: ChatGPT형 채팅 중심 레이아웃 또는 상단 고정바 + 채팅 중심 구조 적용</li>
+<li>지원 디바이스: PC Web, Mobile Web (반응형)</li>
+</ul>
+<p><strong>기술 스택:</strong></p>
+<ul>
+<li>제안 요청: AI 엔진(LLM 또는 시나리오 기반 하이브리드 등), 웹 프레임워크 자유 제안</li>
+</ul>
+<p><strong>지원 자격:</strong></p>
+<ul>
+<li>AI 챗봇(자연어 처리) 및 시나리오 기반 상담 시스템 구축 경험</li>
+<li>관리자 대시보드 및 데이터 시각화 개발 경험</li>
+<li>문서 생성 자동화(PDF/Docx) 구현 경험</li>
+</ul>
+<p><strong>산출물:</strong></p>
+<ul>
+<li>소스 코드 원본</li>
+<li>시스템 설계서 및 API 명세서</li>
+<li>관리자/사용자 매뉴얼</li>
+</ul>
+<p>오른쪽에는 클라이언트(ks<strong>*</strong>) 정보가 보이며, 프로젝트 등록 1건, 계약한 프로젝트 0건, 프로젝트 계약률 0%, 누적 완료 금액 0만원으로 신규 클라이언트임을 알 수 있다.</p>
+<div class="screenshot-container"><img src="images/segment_002.jpg" alt="외주 공고 상세 - 업무 내용" loading="lazy">
+<div class="caption">외주 공고 상세 - 업무 내용</div>
+</div>
+<hr>
+<h3>4. Claude를 활용한 프로젝트 공고 분석 [18:06 - 24:08]</h3>
+<p>진행자가 Claude (Haiku 4.5)를 열어 외주 공고를 분석하기 시작한다. 화면 오른쪽 상단에 &quot;Claude&quot; 패널이 열려 있고, Haiku 4.5 모델이 선택되어 있다.</p>
+<p>왼쪽 화면에는 프로젝트의 전체 상세 내용이 보인다:</p>
+<p><strong>[프로젝트 개요]</strong></p>
+<ul>
+<li>AI 챗봇 기반 강연 섭외 · 운영 시스템 구축</li>
+</ul>
+<p><strong>[프로젝트 배경 및 목표]</strong></p>
+<ul>
+<li>본 프로젝트는 강연 섭외 플랫폼의 운영 효율화를 목적으로 합니다. 현재 운영 중인 플랫폼과 구축 진행 중인 강사 DB를 활용하여, 주최측 및 강사 문의를 1차적으로 자동 응대하고 조건에 맞는 강연자를 추천하는 AI 챗봇 시스템을 도입하고자 합니다.</li>
+<li>이를 통해 운영 매니저의 단순 반복 업무를 최소화하고, 제안서 자동 생성 및 섭외 상태 관리를 자동화하여 최종 확정률을 높이는 것이 핵심 목표입니다.</li>
+</ul>
+<p><strong>[과업 범위]</strong></p>
+<ol>
+<li>수행 범위</li>
+</ol>
+<ul>
+<li>AI 챗봇 엔진 및 시나리오 개발 (상담, 추천, 일정 관리)</li>
+<li>사용자(Front) 웹 채팅 인터페이스 개발 및 홈페이지 연동</li>
+<li>관리자(Admin) 모니터링 및 대시보드 구축</li>
+<li>강사 DB 및 평가 데이터 연동 (기존 DB 활용)</li>
+<li>알림틱 및 자동 문서 생성 기능 구현</li>
+</ul>
+<p><strong>2. 상세 기능 요구 사항</strong></p>
+<p><strong>2.1. AI 챗봇 상담 및 운영 관리</strong></p>
+<ul>
+<li>웹 기반 채팅 상담: 모바일/PC 대응 및 홈페이지 연동 (기존 홈페이지 업체와 협업 전체)</li>
+<li>사용자 구분: 로그인 시 계정 타입 기반 구분, 비로그인 시 질문 의도 분석을 통한 주최측/강사 구분</li>
+<li>상태 자동 관리: 문의 등록 → 강사 추천 중 → 제안서 발송 → 일정 대기 → 확정/취소 등 단계별 상태값 자동 변경</li>
+<li>이탈 감지: 채팅방 이탈 시 자동 알림틱 발송 및 링크를 통한 재진입 유도</li>
+</ul>
+<p>하단의 Claude 채팅 인터페이스에는 Claude가 외주 공고를 분석한 결과가 표시되고 있다. 채팅창에서 시청자들은 &quot;고학적인 반응 소리가 직근인데도 전달을 못 더 건 없었는가는 분 사례 수 아닌 시각이 있는 거&quot;라며 분석 과정에 관심을 보이고 있다.</p>
+<div class="screenshot-container"><img src="images/segment_003.jpg" alt="Claude로 공고 분석" loading="lazy">
+<div class="caption">Claude로 공고 분석</div>
+</div>
+<hr>
+<h3>5. AI 코딩 생산성 현실 분석 - Claude의 프로젝트 평가 [24:08 - 30:10]</h3>
+<p>Claude가 프로젝트를 분석한 결과가 화면 오른쪽에 상세히 표시된다. 핵심 분석 제목은 <strong>&quot;AI 코딩 생산성 현실 분석 (바이브코딩 기준)&quot;</strong>이다.</p>
+<p><strong>주요 분석 내용:</strong></p>
+<ul>
+<li>&quot;AI의 코딩 생산성이 높은 부분 (2주가 시나리오)&quot;</li>
+<li>이 프로젝트에서 2주는 불가능한 이유가 설명된다</li>
+</ul>
+<p><strong>분석 항목:</strong></p>
+<ol>
+<li>AI 학습 및 컨텍스트 이해 (1-2일)</li>
+</ol>
+<ul>
+<li>CRUD (Create, Read, Update, Delete)</li>
+<li>기본적인 채팅</li>
+<li>인증 등</li>
+</ul>
+<ol>
+<li>UI 프레임워크 구현</li>
+</ol>
+<ul>
+<li>UI 프레임워크, 프론트엔드</li>
+<li>DB 프레임워크 수준 (React, Vue 등)</li>
+</ul>
+<p>Claude는 &quot;이 프로젝트에서 2주는 불가능한 이유&quot;를 설명하면서, AI가 할 수 있는 부분과 할 수 없는 부분을 구분하여 현실적인 프로젝트 진행 가능성을 분석한다.</p>
+<p>왼쪽 화면에서는 동일한 위시켓 프로젝트 공고가 계속 보이며, 상세 기능 요구사항이 스크롤되어 보인다. 채팅창에는 시청자들이 &quot;AI 코딩 생산성이 높은 부분&quot;, &quot;프로젝트에서 2주는 불가능한 이유&quot; 등의 분석 결과에 대해 논의하고 있다.</p>
+<div class="screenshot-container"><img src="images/segment_004.jpg" alt="AI 코딩 생산성 분석" loading="lazy">
+<div class="caption">AI 코딩 생산성 분석</div>
+</div>
+<hr>
+<h3>6. Conductor(Gemini CLI) 도구 소개 및 TRD 문서 작성 [30:10 - 36:13]</h3>
+<p>진행자가 Notion에서 TRD(Technical Requirements Document) 문서를 작성하기 시작한다. 화면 좌측에는 Notion 페이지가 열려 있고, &quot;TRD&quot;라는 제목의 문서가 보인다. 우측에는 Claude 패널(Sonnet 4.5)이 열려 있으며, <strong>Conductor</strong>라는 도구에 대한 설명이 표시된다.</p>
+<p><strong>Conductor의 3가지 핵심 명령어:</strong></p>
+<ol>
+<li><code>/conductor:setup</code> - 프로젝트 컨텍스트, 기술 스택, 워크플로우 설정</li>
+<li><code>/conductor:newTrack</code> - 새 기능/작업에 대한 명세서와 계획 생성</li>
+<li><code>/conductor:implement</code> - 계획을 실행하여 실제 코드 작성</li>
+</ol>
+<p><strong>작동 방식:</strong></p>
+<ol>
+<li>프로젝트 분석 - 기존 코드베이스 자동 감지 (git, package.json 등)</li>
+<li>제품 정의 - &quot;무엇을 만들 것인가?&quot; 질문에 답하며 product.md 생성</li>
+</ol>
+<ul>
+<li>해결할 문제, 필수 기능, 사용자, 디자인 원칙 등 정의</li>
+</ul>
+<ol>
+<li>계획 생성 - 작업 단위(track)별로 spec과 plan 문서 생성</li>
+<li>실행 - AI 에이전트가 plan.md에 따라 단계별로 작업 수행</li>
+</ol>
+<p><strong>장점:</strong></p>
+<ul>
+<li>명확한 컨텍스트 관리 - 팀원들이 같은 문맥 공유</li>
+<li>체계적인 개발 - 범위 확장 방지, 집중도 유지</li>
+<li>중단/재개 가능 - 진행 상태가 파일에 저장됨</li>
+<li>기존 프로젝트 적용 - 새 프로젝트뿐만 아니라 기존 코드베이스에도 적용 가능</li>
+</ul>
+<p><strong>설치 방법:</strong></p>
+<pre><code># Gemini CLI 설치
+npm install -g @google/gemini-cli@latest
+# Conductor 설치
+gemini extensions install https://github.com/google/gemini-cli-exten...</code></pre>
+<p><strong>핵심 철학</strong>: &quot;AI로 코딩할 때 길을 잃지 않으려면, 코드가 아닌 컨텍스트를 먼저 통제하라&quot;</p>
+<p>하단에는 &quot;작업에 관련되어서 단어가 필요한 적 설명 받기&quot; 버튼이 보이며, Claude에게 추가 질문을 할 수 있는 인터페이스가 제공된다.</p>
+<p>채팅창에서 시청자들은 &quot;그럼 파이어베이스 되면 사업이 시작인데요&quot;, &quot;금도 110달러 정도면 괜찮은 편인데요&quot; 등 다양한 의견을 나누고 있으며, 한 시청자는 Claude.com 크롬 확장에 대해 언급하고 있다.</p>
+<div class="screenshot-container"><img src="images/segment_005.jpg" alt="TRD 문서 및 Conductor 소개" loading="lazy">
+<div class="caption">TRD 문서 및 Conductor 소개</div>
+</div>
+<hr>
+<h3>7. PRD (Product Requirements Document) 작성 [36:13 - 42:15]</h3>
+<p>진행자가 Notion에서 PRD 문서를 작성한 결과가 화면에 보인다. 문서 제목은 <strong>&quot;PRD (Product Requirements Document)&quot;</strong>이며, 부제목은 <strong>&quot;AI 챗봇 기반 강연 섭외 및 운영 자동화 시스템&quot;</strong>이다.</p>
+<p><strong>Document Information 섹션:</strong></p>
+<ul>
+<li>참작지프로젝트/AI 챗봇 기반 강연 섭외 및 운영 자동화 시스템/2025년 12월 27일/버전1.0프로젝트 기간/60일 (민일 목표)/비용30,000,000원/단반포인트/포함 안됨 / 솔과를 견중보합니다</li>
+</ul>
+<p><strong>1. Executive Summary</strong></p>
+<p><strong>1.1 프로젝트 개요:</strong></p>
+<p>강연 섭외 종합플랫폼의 운영 효율화를 위한 AI 챗봇 기반 자동화 시스템 구축. 주최측 및 강사의 문의를 1차적으로 자동 응대하고, 조건에 맞는 강연자를 추천하며, 제안서를 자동 생성하여 운영 매니저의 업무 부담을 최소화하고 섭외 확정률을 높이는 것이 핵심 목표.</p>
+<p><strong>1.2 프로젝트 목표:</strong></p>
+<ul>
+<li>운영 매니저의 단순 반복 업무 최소화 (자동화 70% 이상 목표)</li>
+<li>AI 챗봇을 통한 24/7 1차 상담 자동화</li>
+<li>강연자 추천 및 제안서 자동 생성으로 응답 속도 향상</li>
+<li>실시간 모니터링 및 개입를 통한 품질 관리</li>
+<li>가예약 전환율 향상 (핵심 KPI)</li>
+</ul>
+<p><strong>1.3 프로젝트 배경:</strong></p>
+<ul>
+<li>현재 문제점: 수동 섭외로 인한 응답 지연, 반복 업무 과다</li>
+<li>비즈니스 임팩트: 운영 비용 절감, 고객 만족도 향상, 매출 증대</li>
+<li>기술 전환: 기존 강사 DB 활용 + AI 자동화 + 관리자 대시보드</li>
+</ul>
+<p>오른쪽 Claude 패널에서는 Conductor 도구의 설치 방법과 장점이 계속 표시되고 있다.</p>
+<div class="screenshot-container"><img src="images/segment_006.jpg" alt="PRD 문서 작성" loading="lazy">
+<div class="caption">PRD 문서 작성</div>
+</div>
+<hr>
+<h3>8. TASKS 문서 생성 및 Sprint 계획 수립 [42:15 - 48:17]</h3>
+<p>왼쪽에는 위시켓 프로젝트 공고 페이지가 보이고, 오른쪽에는 Claude 패널에서 TASKS 문서가 생성되고 있다. Claude가 프로젝트를 Sprint 단위로 나누어 상세 태스크를 생성한 모습이다.</p>
+<p><strong>Sprint 1.5: AI 챗봇 시나리오 구현 (4일)</strong></p>
+<ul>
+<li><strong>TASK-015: 챗봇 시나리오 엔진 생성</strong></li>
+<li>담당: 백엔드, 프로젝트 개발자</li>
+<li>기간: 2일</li>
+<li>우선순위: P0</li>
+<li>참조: TRD 1.5 (FR-2, FR-3)</li>
+</ul>
+<p><strong>세부 작업:</strong></p>
+<ul>
+<li>Day 1:</li>
+<li>3줄 시나리오 생성</li>
+<li>States: GREETING → TYPE_CHECK → INFO_COLLECT + RECOMMEND → PROPOSAL → CONFIRM</li>
+<li>ChatbotService 클래스 작성</li>
+<li>process_user_message()</li>
+<li>generate_response()</li>
+<li>update_conversation_state()</li>
+<li>시나리오별 프롬프트 작성</li>
+</ul>
+<p><strong>완료 기준:</strong></p>
+<ul>
+<li>기본 시나리오 상에서의 확인</li>
+<li>메시지 발송시 승수신 확인</li>
+<li>시나리오 전환시 정상 기능</li>
+</ul>
+<p><strong>의존성</strong>: TASK-012, TASK-013</p>
+<p>채팅창에서는 시청자들이 &quot;소프트웨어에서 보니까 MVP의 의미요소를 외주한다&quot;, &quot;클론도 시에도 들어가면 대화가 확인 될 수 있나요?&quot; 등의 질문을 던지고 있다.</p>
+<div class="screenshot-container"><img src="images/segment_007.jpg" alt="TASKS 문서 및 Sprint 계획" loading="lazy">
+<div class="caption">TASKS 문서 및 Sprint 계획</div>
+</div>
+<hr>
+<h3>9. Google AI Studio에서 Gemini 3 Pro Preview로 분석 시작 [48:17 - 54:19]</h3>
+<p>진행자가 Google AI Studio (aistudio.google.com)를 열고, Gemini 3 Pro Preview 모델을 선택한다. 화면에 &quot;Build your ideas with Gemini&quot;이라는 헤더와 함께 프롬프트 입력란이 보인다.</p>
+<p>진행자가 입력한 프롬프트:</p>
+<blockquote><p>&quot;마래 PRD와 TRD를 먼저 분석해줘. 마래 기지서에 따라 내가 어떻게 개발할 것인지 Tasks를 계획해봐. 너는 백엔드도 개발할 수 있어? 내가 알기론 너는 프론트엔드만 가능한 것으로 알고 있거든? 아래 문서를 읽고 바로 코딩 시작하지 말고 분석 결과만 설명해줘.&quot;</p></blockquote>
+<p>그 아래에 PRD 문서 내용이 붙여넣기 되어 있다:</p>
+<pre><code># PRD (Product Requirements Document)
+## AI 챗봇 기반 강연 섭외 및 운영 자동화 시스템
+---
+## Document Information
+...</code></pre>
+<p>왼쪽 사이드바에는 Google AI Studio의 &quot;Recently viewed&quot; 목록이 보이며:</p>
+<ul>
+<li>AI Shorts Creator</li>
+<li>스마트 엘리먼트 투두 (Smart C...)</li>
+<li>Smart Ledger AI</li>
+<li>Excalidraw Clone MVP</li>
+<li>PyStock AI Predictor</li>
+<li>PromptMaster Book Lan...</li>
+<li>BookLanding</li>
+<li>Keep Clone AI</li>
+<li>Apple Store Clone - Sho...</li>
+<li>Jae Doe Portfolio</li>
+</ul>
+<p>하단에 &quot;This model is not stable and may not be suitable for production use&quot; 경고 메시지가 보인다. 모델은 &quot;Gemini 3 Pro Preview&quot;이며 &quot;Build&quot; 버튼이 옆에 있다.</p>
+<p>채팅창에서는 시청자들이 &quot;PRD와 TRD으로&quot;, &quot;고학적인 반응 소리구나 직근인데도 전달을 못 더 건인가는 것이고 더 좋아서는 그 사례가 어떤나라고하는지요?&quot; 등의 의견을 나누고 있다.</p>
+<div class="screenshot-container"><img src="images/segment_008.jpg" alt="Google AI Studio - Gemini 3 Pro" loading="lazy">
+<div class="caption">Google AI Studio - Gemini 3 Pro</div>
+</div>
+<hr>
+<h3>10. Antigravity 에이전트 - 프론트엔드 프로젝트 초기화 [54:19 - 1:00:21]</h3>
+<p>Google AI Studio에서 생성된 앱이 &quot;App&quot; 이름으로 Preview 모드에서 실행되고 있다. 좌측에는 &quot;Code assistant&quot; 패널이 보이며, TASK-003 (프론트엔드 프로젝트 초기화) 내용이 표시된다:</p>
+<p><strong>TASK-003: 프론트엔드 프로젝트 초기화</strong></p>
+<ul>
+<li>담당: 프론트엔드 개발자</li>
+<li>기간: 1일</li>
+<li>우선순위: P0</li>
+<li>참조: TRD 2.2.1</li>
+</ul>
+<p><strong>세부 작업:</strong></p>
+<pre><code>[ ] React + TypeScript + Vite 프로젝트 생성 [ ] 필수 패키지 설치 및 package.json 구성
+@mui/material @reduxjs/toolkit reactrouterdom axios socket.ioclient recharts
+[ ] 프로젝트 구조 설계
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── store/
+│   ├── services/
+│   ├── types/
+│   └── utils/
+[ ] TypeScript 설정 (tsconfig.json)
+[ ] ESLint + Prettier 설정
+[ ] 환경 변수 설정 (.env)</code></pre>
+<p><strong>완료 기준:</strong></p>
+<ul>
+<li>☐ npm run dev 실행 시 개발 서버 구동</li>
+<li>☐ 기본 페이지 렌더링 확인</li>
+</ul>
+<p>하단에는 &quot;Make changes, add new features, ask for anything&quot; 입력란이 보인다.</p>
+<p>한편 오른쪽의 &quot;Antigravity&quot; 앱에서는 새 폴더를 생성하는 다이얼로그가 열려 있으며, &quot;AI Chatbot&quot;이라는 이름의 프로젝트 폴더가 만들어지고 있다. Agent 모드가 활성화되어 있으며, &quot;Planning → Gemini 3&quot; 설정이 보인다.</p>
+<p>채팅창에서는 &quot;구글의 firebase를 쓴 만들려고요?&quot;, &quot;포인트엔드도 스패셜하게키다&quot;, &quot;네. 목건 해요&quot; 등의 대화가 오가고 있다.</p>
+<div class="screenshot-container"><img src="images/segment_009.jpg" alt="Antigravity 프로젝트 초기화" loading="lazy">
+<div class="caption">Antigravity 프로젝트 초기화</div>
+</div>
+<div class="screenshot-container"><img src="images/segment_010.jpg" alt="프론트엔드 초기화 진행" loading="lazy">
+<div class="caption">프론트엔드 초기화 진행</div>
+</div>
+<hr>
+<h3>11. 프론트엔드 프로젝트 초기화 완료 - Walkthrough [1:00:21 - 1:06:23]</h3>
+<p>Antigravity 에이전트가 프론트엔드 프로젝트 초기화를 완료한 화면이다. 왼쪽 파일 탐색기에는 &quot;AI Chatbot&quot; 프로젝트의 파일 구조가 보인다:</p>
+<p><strong>프로젝트 파일 구조:</strong></p>
+<ul>
+<li>dist/</li>
+<li>node_modules/</li>
+<li>public/</li>
+<li>src/</li>
+<li>.env</li>
+<li>.gitignore</li>
+<li>.prettierrc</li>
+<li>eslint.config.js</li>
+<li>index.html</li>
+<li>package-lock.json</li>
+<li>package.json</li>
+<li>README.md</li>
+<li>tsconfig.app.json</li>
+<li>tsconfig.json</li>
+<li>tsconfig.node.json</li>
+<li>vite.config.ts</li>
+</ul>
+<p><strong>&quot;Frontend Project Initialization Walkthrough&quot; 패널:</strong></p>
+<ul>
+<li>&quot;I have successfully initialized the frontend project for the AI Chatbot.&quot;</li>
+</ul>
+<p><strong>Changes Made - Project Setup:</strong></p>
+<ul>
+<li><strong>Initialized Vite Project</strong>: Created a React + TypeScript project using <code>create-vite</code></li>
+<li><strong>Installed Dependencies:</strong></li>
+<li>UI: <code>@mui/material</code>, <code>@emotion/react</code>, <code>@emotion/styled</code></li>
+<li>State Management: <code>@reduxjs/toolkit</code>, <code>react-redux</code></li>
+<li>Routing: <code>react-router-dom</code></li>
+<li>Networking: <code>axios</code>, <code>socket.io-client</code></li>
+<li>Charts: <code>recharts</code></li>
+<li>Dev: eslint, prettier 등</li>
+</ul>
+<p><strong>Initialize Frontend Project 작업 단계:</strong></p>
+<ol>
+<li>Configuring rules in eslint.config.js and creating .prettierrc/.env</li>
+<li>Updating ESLint config and verifying build</li>
+<li>Running lint and build verification</li>
+<li>Fixing lint errors and verifying build again</li>
+<li>Verifying dev server startup</li>
+<li>Creating walkthrough and completing task</li>
+</ol>
+<p>터미널에서 <code>npm run dev</code>가 실행되어 <code>&gt; ai-chatbot@0.0.0 dev</code> → <code>&gt; vite</code>로 개발 서버가 시작되었다.</p>
+<p>오른쪽 하단에는 &quot;개발 서버 실행해줘.&quot;라는 사용자 메시지가 보이며, Planning 모드에서 Gemini 3 Pro (High) 모델이 사용되고 있다.</p>
+<div class="screenshot-container"><img src="images/segment_011.jpg" alt="프론트엔드 초기화 Walkthrough" loading="lazy">
+<div class="caption">프론트엔드 초기화 Walkthrough</div>
+</div>
+<hr>
+<h3>12. TASKS 문서 기반 체계적 개발 진행 [1:06:23 - 1:12:25]</h3>
+<p>VS Code(Antigravity) 에디터에서 TASKS.md 파일이 열려 있다. 화면 상단에는 타이머가 &quot;00:00:00&quot;으로 리셋되어 있으며, 프로젝트의 전체 Task 구조가 보인다.</p>
+<p><strong>TASKS Document 구조:</strong></p>
+<pre><code># TASKS Document
+## Phase 1: Core MVP Development (Week 3-6)
+### TASK-012: WebSocket 서버 구현
+---
+### TASK-013: 채팅 REST API 구현
+- **담당**: 백엔드 개발자
+- **기간**: 1일
+- **우선순위**: P0
+- **참조**: TRD 4.2.2, 4.2.3
+
+**세부 작업:**
+yaml
+- `[ ] Conversation 시리얼라이저 작성
+  [ ] 상담 시작 API
+      POST /api/v1/conversations/
+  [ ] 상담 목록 조회 API
+      GET /api/v1/conversations/
+      필터링 (status, date_from, date_to)
+      페이지네이션
+  [ ] 상담 상세 조회 API
+      GET /api/v1/conversations/{id}/
+  [ ] 메시지 조회 API
+      GET /api/v1/conversations/{id}/messages/
+  [ ] API 문서 자동 생성 (drfspectacular)`
+
+**완료 기준:**
+- [ ] Swagger UI에서 API 문서 확인
+- [ ] 모든 엔드포인트 테스트 성공
+
+**의존성**: TASK-010</code></pre>
+<p>우측 Agent 패널에는 &quot;AI 챗봇 기반 강연 섭외 및 운영 자동화 시스템&quot;이라는 프로젝트 제목이 표시되고, 입력란에 &quot;Ask anything (⌘L), @ to mention, / for workflows&quot;가 보인다. Planning 모드에서 Gemini 3 Pro (High) 모델이 사용 중이다.</p>
+<p>채팅창에서는 &quot;문서를 먼저 분석해줘&quot;, &quot;planning mode으 넣어 어디는대로&quot;, &quot;쪽 보기는 그나&quot;, &quot;VSCODE인요?&quot; 등의 대화가 오가고 있다.</p>
+<div class="screenshot-container"><img src="images/segment_012.jpg" alt="TASKS 문서 구조" loading="lazy">
+<div class="caption">TASKS 문서 구조</div>
+</div>
+<hr>
+<h3>13. 백엔드 프로젝트 설정 및 Docker 환경 구성 완료 [1:12:25 - 1:18:28]</h3>
+<p>Antigravity 에이전트가 자동으로 여러 TASK를 순차적으로 처리하고 있는 화면이다. 타이머는 &quot;00:01:54&quot;를 표시하며, 우측 Agent 패널에서 작업 진행 상황이 보인다:</p>
+<p><strong>TASK-001: 프로젝트 환경 설정 완료:</strong></p>
+<ul>
+<li>Git 초기화: .gitignore 설정 포함</li>
+<li>프로젝트 구조 생성: backend/, frontend/, .github/ 디렉토리 생성</li>
+<li>Docker 환경 구성:</li>
+<li>docker-compose.yml (Backend, Frontend, Postgres, Redis)</li>
+<li>backend/Dockerfile &amp; frontend/Dockerfile 생성</li>
+<li>docker-compose build 테스트 완료 (정상 빌드 확인)</li>
+<li>문서화: README.md, .env.example 작성</li>
+<li>CI/CD: GitHub Actions 워크플로우(.github/workflows/ci.yml) 초안 작성</li>
+</ul>
+<p>&quot;TASK-001: 프로젝트 환경 설정을 완료했습니다.&quot;라는 메시지와 함께, &quot;다음 단계는 TASK-002: 백엔드 프로젝트 초기화입니다. Django 프로젝트를 생성하시겠습니까?&quot;라는 프롬프트가 표시된다.</p>
+<p>왼쪽 파일 탐색기에는 프로젝트 구조가 보인다:</p>
+<ul>
+<li>.github/</li>
+<li>backend/</li>
+<li>docs/ (PRD.md, TASKS.md, TRD.md)</li>
+<li>frontend/ (Dockerfile)</li>
+<li>.env, .env.example, .gitignore, docker-compose.yml, README.md</li>
+</ul>
+<p>TASKS.md 파일에는 다음 내용이 보인다:</p>
+<ul>
+<li><code>### [x] TASK-001: 프로젝트 환경 설정</code> (완료 표시)</li>
+<li>담당: DevOps/백엔드 리드</li>
+<li>기간: 1일 (실제로는 수 분만에 완료)</li>
+<li>우선순위: P0</li>
+<li>참조: TRD 2.2, 8.1</li>
+</ul>
+<div class="screenshot-container"><img src="images/segment_013.jpg" alt="프로젝트 환경 설정 완료" loading="lazy">
+<div class="caption">프로젝트 환경 설정 완료</div>
+</div>
+<hr>
+<h3>14. 대량 TASK 자동 처리 - 백엔드 초기화부터 DB 인덱싱까지 [1:18:28 - 1:24:30]</h3>
+<p>에이전트가 모든 남은 TASK를 한 번에 처리하도록 지시받은 상태이다. 화면 오른쪽에서 여러 작업이 동시에 진행되고 있다:</p>
+<p><strong>TASK-002: 백엔드 프로젝트 초기화 완료</strong></p>
+<ul>
+<li>Dependency 설정: backend/requirements.txt에 Django, DRF, Channels, Celery, Redis 등 필수 패키지 추가</li>
+<li>Django 프로젝트 구조 생성:</li>
+<li>backend/config: settings.py, urls.py, wsgi.py, asgi.py, celery.py 설정</li>
+<li>backend/apps: users, conversations, chat, speakers, analytics 앱 디렉토리 생성</li>
+<li>backend/manage.py 생성</li>
+<li>검증: docker-compose build backend를 통해 의존성 설치 및 빌드 성공 확인</li>
+</ul>
+<p>&quot;TASK-003: 프론트엔드 프로젝트 초기화입니다. 진행할까요?&quot;라는 메시지 뒤에, 사용자가 &quot;자, 지금부터는 태스크 하나가 아니라 모든 태스크를 한 번에 구현하도록 해줘. TASK-003: 프론트엔드 프로젝트 초기화: 이미 스크래치터서 시작해서, TASK-028: AI 요약 및 해시태그 추출: 해당 의&quot;라고 지시한 것이 보인다.</p>
+<p><strong>Database Indexing &amp; Optimization (TASK-005):</strong></p>
+<ul>
+<li>Starting TASK-005: Optimizing database performance by adding indexes to frequently queried fields as per TRD specifications</li>
+<li>Files Edited: models.py, models.py (여러 모듈)</li>
+<li>Progress: Applying database indexes</li>
+<li>&quot;15 Files With Changes&quot; - Accept all 버튼이 보임</li>
+</ul>
+<p>왼쪽 TASKS.md에서는 프론트엔드 프로젝트의 세부 작업이 보인다:</p>
+<pre><code>- `[ ] React + TypeScript + Vite 프로젝트 생성
+  [ ] 필수 패키지 설치 및 package.json 구성
+  @mui/material
+  @reduxjs/toolkit
+  reactrouterdom
+  axios
+  socket.ioclient
+  recharts
+  [ ] 프로젝트 구조 설계
+  ├── src/
+  │   ├── components/
+  │   ├── pages/
+  │   ├── store/
+  │   ├── services/
+  │   ├── types/
+  │   └── utils/
+  [ ] TypeScript 설정 (tsconfig.json)
+  [ ] ESLint + Prettier 설정
+  [ ] 환경 변수 설정 (.env)`</code></pre>
+<div class="screenshot-container"><img src="images/segment_014.jpg" alt="대량 TASK 자동 처리" loading="lazy">
+<div class="caption">대량 TASK 자동 처리</div>
+</div>
+<div class="screenshot-container"><img src="images/segment_015.jpg" alt="DB 인덱싱 및 샘플 데이터" loading="lazy">
+<div class="caption">DB 인덱싱 및 샘플 데이터</div>
+</div>
+<hr>
+<h3>15. 샘플 데이터 생성, Redis/Celery 설정 자동화 [1:24:30 - 1:30:32]</h3>
+<p>에이전트가 계속해서 여러 TASK를 자동으로 처리하고 있다. 타이머는 &quot;00:16:35&quot;를 표시한다.</p>
+<p><strong>진행 중인 작업들:</strong></p>
+<p><strong>Database Indexing &amp; Optimization (TASK-005):</strong></p>
+<ul>
+<li>Applying database indexes 완료</li>
+</ul>
+<p><strong>Sample Data Generation (TASK-006):</strong></p>
+<ul>
+<li>Schema and Indexing (TASK-004, TASK-005) completed successfully</li>
+<li>Starting TASK-006: Adding Faker to requirements and implementing generate_sample_data command</li>
+<li>Files Edited: generate_sample_data.py, TASKS.md, requirements.txt</li>
+<li>Installing Faker and creating generation script</li>
+</ul>
+<p><strong>Redis &amp; Celery Setup (TASK-007):</strong></p>
+<ul>
+<li>Sample data generated. Now configuring Docker Compose to include Redis and Celery</li>
+</ul>
+<p>총 &quot;18 Files With Changes&quot;가 보이며, Accept all 버튼으로 모든 변경사항을 한번에 수락할 수 있다.</p>
+<p>왼쪽 TASKS.md 파일에서는 프론트엔드 프로젝트 구조와 설정이 계속 보인다.</p>
+<div class="screenshot-container"><img src="images/segment_016.jpg" alt="샘플 데이터 및 Redis 설정" loading="lazy">
+<div class="caption">샘플 데이터 및 Redis 설정</div>
+</div>
+<hr>
+<h3>16. 인증 시스템 및 시나리오 엔진 구현 [1:30:32 - 1:36:34]</h3>
+<p>타이머가 &quot;00:22:37&quot;을 표시하며, 에이전트가 핵심 비즈니스 로직까지 구현을 진행하고 있다.</p>
+<p><strong>왼쪽 소스 제어 패널 - 변경된 파일 목록:</strong></p>
+<ul>
+<li>consumers.py (backend/)</li>
+<li>engine.py (backend/)</li>
+<li>routing.py (backend/)</li>
+<li>serializers.py (backend/)</li>
+<li>urls.py (backend/)</li>
+<li>views.py (backend/)</li>
+<li>asgi.py (backend/)</li>
+<li>urls.py (backend/)</li>
+<li>views.py (backend/)</li>
+</ul>
+<p><strong>TASKS.md에서 보이는 진행 상황:</strong></p>
+<pre><code>### [x] TASK-010: 사용자 인증 API 구현
+---
+Day 2:
+- [ ] 프로필 조회/수정 API
+  - GET/PATCH /api/v1/users/me/
+- [ ] JWT 인증 미들웨어 설정
+- [ ] 권한 클래스 작성 (IsClient, IsSpeaker, IsManager)
+- [ ] API 테스트 작성 (pytest)
+
+**완료 기준:**
+- [ ] Postman으로 모든 API 테스트 성공
+- [ ] 단위 테스트 커버리지 &gt; 80%
+
+**의존성**: TASK-004
+---
+### TASK-011: 프론트엔드 인증 구현
+### [x] TASK-011: 프론트엔드 인증 구현
+- **담당**: 프론트엔드 개발자
+- **기간**: 1일
+- **우선순위**: P0
+- **참조**: TRD 4.2.1</code></pre>
+<p><strong>우측 Agent 패널 진행 상황:</strong></p>
+<p><strong>Chatbot Scenario Engine (TASK-015):</strong></p>
+<ul>
+<li>Chat UI complete. Starting TASK-015: Implementing the backend Chatbot Scenario Engine to process user messages and detect intents.</li>
+<li>Files Edited: consumers.py, engine.py, Task, TASKS.md</li>
+</ul>
+<p><strong>Client Scenario Implementation (TASK-016):</strong></p>
+<ul>
+<li>Scenario Engine integrated. Starting TASK-016: Implementing concrete client scenarios, focusing on &#x27;Speaker Recommendation&#x27; logic using actual DB queries.</li>
+<li>Implementing Speaker Recommendation Logic in Engine</li>
+<li>Edited: TASKS.md, Task, engine.py (+8 -1)</li>
+</ul>
+<p>&quot;45 Files With Changes&quot;가 보이며, 에이전트가 매우 많은 파일을 동시에 수정하고 있음을 알 수 있다.</p>
+<div class="screenshot-container"><img src="images/segment_017.jpg" alt="인증 및 시나리오 엔진" loading="lazy">
+<div class="caption">인증 및 시나리오 엔진</div>
+</div>
+<hr>
+<h3>17. 전체 시스템 구현 완료 및 실행 방법 안내 [1:36:34 - 1:42:36]</h3>
+<p>타이머가 &quot;00:28:39&quot;를 표시하며, 시스템이 기능적으로 완성된 상태이다.</p>
+<p><strong>에이전트의 완료 메시지:</strong></p>
+<p><strong>Implementing Chatbot Core Features:</strong></p>
+<ul>
+<li>Added AdminDashboard page in Frontend</li>
+<li>Wrap-up (TASK-026 ~ TASK-028):</li>
+<li>Set up NotificationViewSet skeleton</li>
+<li>Added gunicorn to requirements for production deployment readiness</li>
+</ul>
+<p><strong>How to Run:</strong></p>
+<pre><code>docker-compose up --build</code></pre>
+<ul>
+<li>Access the application at <code>http://localhost:5173</code></li>
+<li>Chat: <code>http://localhost:5173/chat</code></li>
+<li>Admin: <code>http://localhost:5173/admin</code></li>
+</ul>
+<p>&quot;The system is now functionally complete according to the initial task list specifications. TypeScript lint errors in the frontend may need further npm install @types/... if you wish to eliminate them entirely, but the code logic is in place.&quot;</p>
+<p><strong>56 Files With Changes</strong> - 총 56개 파일이 변경됨</p>
+<p>왼쪽 소스 제어에서 변경된 파일들이 나열된다:</p>
+<ul>
+<li>requirements.txt (backend/)</li>
+<li>views.py (backend/)</li>
+<li>consumers.py (backend/)</li>
+<li>engine.py (backend/)</li>
+<li>routing.py (backend/)</li>
+<li>serializers.py (backend/)</li>
+<li>urls.py (backend/)</li>
+<li>views.py (backend/) 등</li>
+</ul>
+<p>채팅창에서는 시청자들이 슈퍼챗(후원)을 보내고 있으며, &quot;와우 스폰서 진 여러 Super의 정말 화끈하게 주세요!&quot;라는 반응이 보인다. 10,000원, 5,000원, 3,000원 등의 후원이 들어오고 있다.</p>
+<div class="screenshot-container"><img src="images/segment_018.jpg" alt="시스템 구현 완료" loading="lazy">
+<div class="caption">시스템 구현 완료</div>
+</div>
+<hr>
+<h3>18. Docker Compose 실행 및 서비스 구동 [1:42:36 - 1:48:39]</h3>
+<p>진행자가 실제로 Docker Compose를 실행하여 서비스를 구동하는 모습이다. 타이머는 &quot;00:33:17&quot;을 표시한다.</p>
+<p><strong>Docker Desktop에서 보이는 컨테이너 상태:</strong></p>
+<p><strong>Containers (ai 그룹):</strong></p>
+<ul>
+<li>frontend (Running)</li>
+<li>backend (Running)</li>
+<li>celery (아이콘 표시)</li>
+<li>db (postgres:14-alpine, Running)</li>
+<li>redis (redis:7-alpine, Running)</li>
+</ul>
+<p><strong>Stopped 컨테이너:</strong></p>
+<ul>
+<li>admin</li>
+</ul>
+<p><strong>터미널 출력:</strong></p>
+<pre><code>docker-compose up --build -d
+✓ ai-frontend         Built     0.0s
+✓ Container chatbot_redis    Running   0.0s
+✓ Container chatbot_db       Running   0.0s
+✓ Container chatbot_backend  Started   3.1s
+✓ Container chatbot_frontend Started   2.8s
+ℹ Container chatbot_celery   Starting  2.8s
+Error response from daemon: failed to create task fo...</code></pre>
+<p>에이전트가 Docker Compose 설정을 확인하고 서비스를 시작하고 있다:</p>
+<ul>
+<li>&quot;Running Application Servers&quot;</li>
+<li>&quot;User requested to run the servers. I will check the Docker Compose configuration and then attempt to start the services.&quot;</li>
+<li>Verifying Docker Compose configuration</li>
+<li><code>ls -F frontend/Dockerfile</code> → <code>frontend/Dockerfile</code> 확인</li>
+</ul>
+<p>왼쪽 TASKS.md에서는 하단에 &quot;완료 기준&quot;이 보인다:</p>
+<ul>
+<li>[ ] 요약 품질 검증 (수동)</li>
+<li>[ ] 해시태그 정확</li>
+</ul>
+<div class="screenshot-container"><img src="images/segment_019.jpg" alt="Docker 컨테이너 실행" loading="lazy">
+<div class="caption">Docker 컨테이너 실행</div>
+</div>
+<hr>
+<h3>19. 프론트엔드 오류 수정 - SyntaxError 및 React Router 경고 해결 [1:48:39 - 1:54:41]</h3>
+<p>타이머가 &quot;00:33:17&quot;을 표시하고, 에이전트가 프론트엔드 오류를 자동으로 수정하고 있다.</p>
+<p><strong>Running Completed Chatbot System - Fixing Frontend Export Error:</strong></p>
+<ul>
+<li>User reported a SyntaxError regarding the <code>theme</code> export. I will verify <code>frontend/src/theme.ts</code> and <code>frontend/src/App.tsx</code> to resolve the mismatch.</li>
+<li>Files Edited: App.tsx</li>
+<li>Checking theme export and import</li>
+<li>Analyzed theme.ts#L1-19</li>
+<li>Analyzed App.tsx#L1-39</li>
+<li>Edited App.tsx (+1 -1, +3 -4)</li>
+</ul>
+<p><strong>Notifying User of Fix:</strong></p>
+<p>&quot;The import error in App.tsx is history! The issue is squashed, and the prompt should be fully addressed now. I&#x27;m ready to update the user with the good news, so they can get back to their work!&quot;</p>
+<p>&quot;4 Files With Changes&quot; - Accept all 버튼이 보임</p>
+<div class="screenshot-container"><img src="images/segment_020.jpg" alt="프론트엔드 오류 수정" loading="lazy">
+<div class="caption">프론트엔드 오류 수정</div>
+</div>
+<hr>
+<h3>20. 완성된 홈페이지 UI 확인 및 추가 수정 [1:54:41 - 2:00:43]</h3>
+<p>에이전트가 수정을 완료한 후 실제 웹 애플리케이션이 <code>localhost:5173</code>에서 실행되고 있는 모습이다.</p>
+<p><strong>완성된 홈페이지 UI - &quot;자동화 시스템&quot;:</strong></p>
+<ul>
+<li>헤더: &quot;AI Chatbot&quot; (네비게이션)</li>
+<li>메인 타이틀: <strong>&quot;자동화 시스템&quot;</strong></li>
+<li>부제: &quot;복잡한 강연자 섭외부터 일정 조율, 제안서 작성까지. AI 에이전트가 당신의 업무를 획기적으로 줄여드립니다.&quot;</li>
+<li>CTA 버튼: &quot;AI 매니저와 대화하기&quot; / &quot;관리자 대시보드&quot;</li>
+</ul>
+<p><strong>주요 기능 카드 3개:</strong></p>
+<ol>
+<li><strong>AI 자동 섭외</strong> - 요구사항만 입력하면 최적의 강연자를 AI가 자동으로 추천합니다.</li>
+<li><strong>간편한 일정 관리</strong> - 강연자와의 일정 조율을 채팅 하나로 관리 하세요.</li>
+<li><strong>즉시 제안서 생성</strong> - 클릭 한 번으로 전문적인 섭외 제안서를 생성합니다.</li>
+</ol>
+<p>푸터: &quot;© 2024 AI Chatbot Automated System. All rights reserved.&quot;</p>
+<p><strong>에이전트의 수정 내역:</strong></p>
+<ul>
+<li>홈 페이지 리뉴얼 (frontend/src/pages/Home.tsx):</li>
+<li>기존의 단순한 텍스트와 링크 대신, 서비스의 가치를 전달하는 전문적인 랜딩 페이지로 교체</li>
+<li>Hero 섹션: 서비스 소개와 주요 액션 버튼(AI 매니저와 대화하기, 관리자 대시보드) 배치</li>
+<li>Features 섹션: AI 자동 섭외, 일정 관리, 제안서 생성 등 주요 기능을 아이콘과 함께 시각적으로 표현</li>
+<li>MUI 디자인: 일관된 테마와 레이아웃을 적용하여 전문성을 높임</li>
+</ul>
+<p><strong>React Router 경고 해결:</strong></p>
+<ul>
+<li>BrowserRouter의 <code>future={{ v7_startTransition: true, v7_relativeSplatPath: true }}</code> 옵션을 추가하여 v7 호환성 검증도 해결</li>
+</ul>
+<div class="screenshot-container"><img src="images/segment_021.jpg" alt="완성된 홈페이지" loading="lazy">
+<div class="caption">완성된 홈페이지</div>
+</div>
+<hr>
+<h3>21. 회원가입 오류 디버깅 [2:00:43 - 2:06:45]</h3>
+<p>에이전트가 회원가입 기능의 오류를 디버깅하고 있다.</p>
+<p><strong>Debugging Registration Error:</strong></p>
+<ul>
+<li>Improving Registration Error Handling</li>
+<li>Updated Register.tsx to display all validation error messages returned by the backend. This will help the user understand why registration (or login if confused) is receiving a 400 Bad Request.</li>
+<li>Updating Register.tsx</li>
+<li>Error handling updated. Verification complete.</li>
+</ul>
+<p><strong>회원가입 오류 메시지:</strong></p>
+<p>&quot;회원가입 오류의 정확한 원인을 파악하기 위해 프론트엔드 코드를 수정했습니다. 이제 회원가입을 다시 시도하시면 화면에 구체적인 에러 메시지(&#x27;username: 이 존재하는 아이디입니다&#x27; 또는 &#x27;email: 이미 사용 중인 이메일 주소입니다&#x27;)가 표시될 것입니다.&quot;</p>
+<p><strong>참고:</strong></p>
+<ul>
+<li>testclient@example.com 이메일이나 testclient 아이디는 제가 생성한 테스트용 계정이므로 다시 가입하실 수 없습니다.</li>
+<li>이 계정을 사용하시려면 로그인 페이지에서 로그인에 주세요.</li>
+<li>새로운 계정을 만드시려면 다른 아이디와 이메일을 사용해 주세요.</li>
+</ul>
+<p>왼쪽 TASKS.md에서는 TASK-011 (프론트엔드 인증 구현)의 세부 작업이 보인다:</p>
+<pre><code>- `[ ] Redux store 설정 (auth slice)
+  [ ] API 서비스 작성 (services/auth)
+  [ ] 로그인 페이지 구현
+  [ ] 회원가입 페이지 구현
+  [ ] JWT 토큰 저장 및 관리 (localStorage)
+  [ ] Axios 인터셉터 설정 (자동 토큰 정보)
+  [ ] 토큰 만료 시 자동 갱신 처리
+  [ ] 보호된 라우트 설정 (PrivateRoute)`</code></pre>
+<div class="screenshot-container"><img src="images/segment_022.jpg" alt="회원가입 디버깅" loading="lazy">
+<div class="caption">회원가입 디버깅</div>
+</div>
+<hr>
+<h3>22. 채팅 UI 구현 및 WebSocket 연결 오류 [2:06:45 - 2:12:47]</h3>
+<p>실제 채팅 페이지(<code>localhost:5173/chat</code>)가 브라우저에서 실행되고 있다.</p>
+<p><strong>채팅 UI 구성:</strong></p>
+<ul>
+<li>좌측 사이드바: &quot;채팅 목록&quot;</li>
+<li>AI 강연자 섭외 모집 (채팅방)</li>
+<li>신규 문의 (채팅방)</li>
+<li>중앙: 메시지 입력란 &quot;메시지를 입력하세요...&quot; + &quot;Send&quot; / &quot;Proposal&quot; 버튼</li>
+</ul>
+<p><strong>그러나 브라우저 콘솔에 WebSocket 오류가 발생:</strong></p>
+<pre><code>xt.ts:33 WebSocket Error
+{isTrusted: true, type: &#x27;error&#x27;, target: WebSocket, currentTarget: WebSocket, eventPhase: 2, ...}
+
+xt.ts:29 WebSocket Disconnected
+xt.ts:13 WebSocket connection to 
+&#x27;ws://localhost:8000/ws/chat/general/?
+JhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJOb2tIbl90eXBIIjoiYWNjZXNz
+...
+njJFKg8zOFealUJgd0r1nzN5CuqF38&#x27; failed:
+
+xt.ts:33 WebSocket Error
+{isTrusted: true, type: &#x27;error&#x27;, target: WebSocket, currentTarget: WebSocket, eventPhase: 2, ...}</code></pre>
+<p>WebSocket 연결이 JWT 토큰을 쿼리 파라미터로 전달하고 있지만 연결에 실패하고 있다. 에이전트가 이 문제를 인지하고 &quot;auth state logic&quot;을 확인하며 수정을 진행하고 있다:</p>
+<ul>
+<li>Checking auth state logic</li>
+<li>Updating Home.tsx to reflect auth state</li>
+<li>Applying Home.tsx update</li>
+<li>Fitting Home.tsx with correct auth logic</li>
+</ul>
+<p>&quot;대로 로그인 후에도 상단 메뉴가 변경되지 않는 문제를 수정했습니다.&quot;</p>
+<div class="screenshot-container"><img src="images/segment_023.jpg" alt="채팅 UI 및 WebSocket 오류" loading="lazy">
+<div class="caption">채팅 UI 및 WebSocket 오류</div>
+</div>
+<hr>
+<h3>23. AI 챗봇 시나리오 엔진 및 WebSocket 디버깅 [2:12:47 - 2:18:49]</h3>
+<p>에이전트가 WebSocket 연결 문제를 디버깅하고 있다. 타이머는 &quot;00:33:17&quot;을 표시한다.</p>
+<p><strong>TASKS.md에서 보이는 TASK-015 (챗봇 시나리오 엔진):</strong></p>
+<pre><code>Day 1:
+- [ ] 상담 시나리오 순서도 작성
+  States: GREETING → TYPE_CHECK → INFO_COLLECT + RECOMMEND → PROPOSAL → CONFIRM
+- [ ] ChatbotService 클래스 작성
+  - process_user_message()
+  - generate_response()
+  - update_conversation_state()
+- [ ] 시나리오별 프롬프트 작성
+
+Day 2:
+- [ ] 사용자 의도 분석 (AI)
+  - [ ] 주최측/강사 구분
+  - [ ] 조건 정보 추출 (예산, 주제, 날짜 등)
+  - [ ] 컨텍스트 관리 (대화 이력 유지)
+  - [ ] 폴백 응답 처리 (이해 못한 경우)</code></pre>
+<p><strong>Debugging WebSocket Connection:</strong></p>
+<ul>
+<li>에이전트가 test_ai_integration.py, engine.py, openai_client.py 파일을 수정</li>
+<li>Retrying verification script</li>
+<li>Diagnosing missing API key</li>
+<li>Analyzed docker-compose.yml#L1-72</li>
+<li>Analyzed settings.py#L1-151</li>
+<li>&quot;environment variable isn&#x27;t showing up. It looks like docker-compose&#x27;s .env loading and Django&#x27;s os.environ access aren&#x27;t playing nicely.&quot;</li>
+<li>&quot;docker-compose restart might not be enough to reload env vars; <code>up -d</code> might be required.&quot;</li>
+</ul>
+<p>에이전트가 환경 변수 문제를 진단하며, Docker Compose에서 <code>.env</code> 파일 로딩과 Django의 <code>os.environ</code> 접근이 제대로 작동하지 않는 문제를 발견했다.</p>
+<div class="screenshot-container"><img src="images/segment_024.jpg" alt="WebSocket 디버깅" loading="lazy">
+<div class="caption">WebSocket 디버깅</div>
+</div>
+<hr>
+<h3>24. JWT 인증 미들웨어 수정 및 WebSocket 연결 해결 [2:18:49 - 2:24:52]</h3>
+<p>에이전트가 WebSocket 인증 문제의 근본 원인을 찾아 해결하고 있다.</p>
+<p><strong>Debugging Chatbot AI Integration:</strong></p>
+<p><strong>WebSocket 연결 실패 원인 분석:</strong></p>
+<ul>
+<li>원인: 기존 WebSocket 설정은 웹 브라우저의 쿠키/세션 기반 인증만 처리하도록 되어 있고, 리프레시 없는 JWT 토큰 방식의 인증을 처리하지 못해 연결이 거부되고 있었음</li>
+<li><strong>수정: JWT 토큰을 인식할 수 있는 커스텀 미들웨어(JwtAuthMiddleware)를 백엔드에 추가하여 URL 파라미터로 전달된 토큰(token=...)을 정상적으로 해석하여 연결을 수락하도록 수정</strong></li>
+</ul>
+<p>에이전트가 asgi.py와 jwt_auth_middleware.py 파일을 수정했으며, &quot;이제 다시 채팅 연결을 시도해 보시기 바랍니다. 혹시 여전히 연결이 안 된다면 페이지를 새로고침 해보세요. (컨테이너 재시작 완료됨)&quot;이라고 안내한다.</p>
+<p><strong>TASKS.md에서 보이는 Sprint 1.4 및 1.5:</strong></p>
+<pre><code>### Sprint 1.4: 강연자 추천 시스템 (4일)
+### [x] TASK-018: 추천 알고리즘 구현—
+### TASK-019: 추천 API 구현—
+### TASK-020: 프론트엔드 추천 UI 구현—
+
+### Sprint 1.5: 제안서 자동 생성 (5일)
+### [x] TASK-021: 문서 생성 엔진 개발—
+### [x] TASK-022: 제안서 API 구현
+- **담당**: 백엔드 개발자
+- **기간**: 1일
+- **우선순위**: P0
+- **참조**: TRD 4.2.5</code></pre>
+<p><strong>제안서 API 세부 작업:</strong></p>
+<pre><code>- [ ] 제안서 생성 API
+  POST /api/v1/conversations/{id}/proposals/
+  비동기 태스크 시작
+  작업 ID 반환
+- [ ] 제안서 조회 API
+  GET /api/v1/proposals/{id}/</code></pre>
+<p>&quot;3 Files With Changes&quot; - jwt_auth_middleware.py, asgi.py 등이 수정됨</p>
+<div class="screenshot-container"><img src="images/segment_025.jpg" alt="JWT 미들웨어 수정" loading="lazy">
+<div class="caption">JWT 미들웨어 수정</div>
+</div>
+<hr>
+<h3>25. Claude Code의 Plan Mode 활용 - 프로젝트 상태 분석 [2:24:52 - 2:30:54]</h3>
+<p>진행자가 Claude Code (VS Code의 Anthropic 확장)의 Plan mode를 사용하여 프로젝트 상태를 분석하고 있다. 왼쪽에는 확장 프로그램 목록이 보인다:</p>
+<p><strong>설치된 확장 프로그램:</strong></p>
+<ul>
+<li>clangd (C/C++ completion, navigation...)</li>
+<li>llvm-vs-code-extensions</li>
+<li><strong>Claude Code for VS Code</strong> (62ms) - Claude Code for VS Code, Anthropic</li>
+<li>Composer</li>
+<li>Container Tools (165ms)</li>
+<li>devensene</li>
+<li><strong>Dart</strong> (Dart language support an...)</li>
+<li>Dart-Code</li>
+<li><strong>Docker</strong> (&quot;Make it easy to create...&quot;)</li>
+<li>ms-azuretools</li>
+</ul>
+<p><strong>Plan mode 실행 결과 (우측 터미널):</strong></p>
+<p>&quot;현재 프로젝트의 상태를 먼저 분석해줘(docs 를...&quot;</p>
+<pre><code># Bash: Read git status
+IN: cd ~/Users/futurewave/Documents/dev/AI 챗봇 기반 강연 섭외 및 운영 자동화 시스템
+OUT: 0
+
+# Bash: Read TASKS file
+OUT: # TASKS Document
+## AI 챗봇 기반 강연 섭외 및 운영 자동화 시스템
+
+# Bash: Search for schedule-related fields
+OUT: backend/apps/speakers/migrations/0001_initial.py:
+     backend/apps/speakers/models.py: available_dates = models
+
+# Bash: Read chat consumers
+IN: cd ~/Users/futurewave/Documents/dev/AI 챗봇 기반 강연 섭외 및 운영 자동화 시스템
+OUT: import json
+     from channels.generic.websocket import AsyncWebsocketConsume
+     from .engine import engine</code></pre>
+<p>Plan mode에서 &quot;Edit automatically → TASKS.md&quot; 설정이 보이며, Claude Code가 프로젝트의 현재 상태를 파악하기 위해 여러 파일을 순차적으로 읽고 있다.</p>
+<div class="screenshot-container"><img src="images/segment_026.jpg" alt="Claude Code Plan Mode" loading="lazy">
+<div class="caption">Claude Code Plan Mode</div>
+</div>
+<hr>
+<h3>26. Phase별 TODO 업데이트 및 제안서 자동 생성 구현 [2:30:54 - 2:36:56]</h3>
+<p>Claude Code가 프로젝트 상태를 분석한 후 Phase별 TODO를 정리한 결과가 보인다.</p>
+<p><strong>requirements.txt 내용 (일부):</strong></p>
+<pre><code>psycopg2-binary==2.9.*
+python-dotenv==1.0.*
+django-environ==0.11.*
+drf-spectacular==0.26.*</code></pre>
+<p><strong>Update Todos:</strong></p>
+<ul>
+<li><strong>Phase 1: 제안서 자동 생성 기능 구현</strong></li>
+<li>페이도 파이썬 설치 (weasyprint-python-docs)</li>
+<li>document_generator.py - PDF/Word 생성 로직 구현</li>
+<li>제안서 HTML 템플릿 작성</li>
+<li>제안서 API 완성 (생성/다운로드/상태)</li>
+<li>프론트엔드 제안서 컴포넌트 구현</li>
+</ul>
+<ul>
+<li><strong>Phase 2: 일정/캘린더 기능 구현</strong></li>
+<li>Schedule 모델 및 뷰 생성</li>
+<li>캘린더 UI 컴포넌트 구현</li>
+</ul>
+<ul>
+<li><strong>Phase 3: 섭외 프로세스 고도화</strong></li>
+<li>추천 알고리즘 개선</li>
+<li>섭외 요청/수락 모델 및 API 구현</li>
+</ul>
+<ul>
+<li><strong>Phase 4: 관리자 대시보드 완성</strong></li>
+<li>Analytics API 실제 KPI 계산 구현</li>
+<li>대시보드 UI 및 차트 구현</li>
+</ul>
+<p>&quot;이제 document_generator.py를 완전히 재작성하겠습니다.&quot;라는 메시지와 함께 Thinking... 상태가 표시된다.</p>
+<div class="screenshot-container"><img src="images/segment_027.jpg" alt="Phase별 TODO" loading="lazy">
+<div class="caption">Phase별 TODO</div>
+</div>
+<hr>
+<h3>27. GLM Coding Plan 가격표 소개 [2:36:56 - 2:42:58]</h3>
+<p>화면에 <strong>&quot;GLM Coding Plan - AI Coding&quot;</strong> 가격표 페이지가 표시된다. URL은 <code>z.ai/subscribe</code>로, AI 코딩 전문 서비스의 구독 플랜이다.</p>
+<p><strong>플랜 구성 (Yearly -60% 할인 기준):</strong></p>
+<p><strong>Lite ($28.8/year)</strong></p>
+<ul>
+<li>원래 가격: $72/year</li>
+<li>1st Year: -$36 할인</li>
+<li>3x usage of the Claude Pro plan</li>
+<li>Managing lightweight workloads</li>
+<li>Powered by GLM-4.7</li>
+<li>Compatible with over 10 coding tools, including Claude Code, Cursor, Cline, Kilo Code...</li>
+<li>Get same-tier model updates</li>
+</ul>
+<p><strong>Pro ($144/year) - Popular</strong></p>
+<ul>
+<li>원래 가격: $360/year</li>
+<li>1st Year: -$180 할인</li>
+<li>5x Lite plan usage</li>
+<li>Managing complex workloads</li>
+<li>All Lite plan benefits</li>
+<li>40%-60% faster compared to Lite</li>
+<li>Access Vision Analyze, Web Search, Web Reader and Zread MCP</li>
+<li>Get flagship model updates</li>
+</ul>
+<p><strong>Max ($288/year) - Max Usage</strong></p>
+<ul>
+<li>원래 가격: $720/year</li>
+<li>1st Year: -$360 할인</li>
+<li>4x Pro plan usage</li>
+<li>Managing high-volume workloads for advanced developers</li>
+<li>All Pro plan benefits</li>
+<li>Guaranteed peak-hour performance</li>
+<li>Early access to new features</li>
+<li>Get flagship model updates</li>
+</ul>
+<p>지불 주기 옵션: Monthly / Quarterly (-55%) / Yearly (-60%)</p>
+<p>모든 플랜에 &quot;-20% Extra Christmas Deal&quot; 태그가 붙어 있다.</p>
+<p>채팅창에서는 시청자들이 &quot;lite, pro, max 뭘 쓰시죠?&quot;, &quot;그 쪽엔 맨 또 뭐요&quot; 등의 질문을 하고 있으며, &quot;Lovable 이 아니고 처음으로는요&quot; 등 다른 AI 코딩 도구에 대한 대화도 오가고 있다.</p>
+<div class="screenshot-container"><img src="images/segment_028.jpg" alt="GLM Coding Plan 가격" loading="lazy">
+<div class="caption">GLM Coding Plan 가격</div>
+</div>
+<hr>
+<h3>28. 백엔드 Serializers/Views 및 Schedule 모델 구현 [2:42:58 - 2:49:00]</h3>
+<p>Claude Code가 계속해서 코드를 자동 생성하고 있다.</p>
+<p><strong>Write 작업 진행:</strong></p>
+<p><strong>Write apps.py (8 lines):</strong></p>
+<pre><code>from django.apps import AppConfig</code></pre>
+<p><strong>Write models.py (196 lines):</strong></p>
+<pre><code>from django.db import models
+from django.conf import settings</code></pre>
+<p><strong>Write serializers.py (197 lines):</strong></p>
+<pre><code>from rest_framework import serializers
+from .models import Schedule, SpeakerAvailability, ScheduleRemir
+from django.utils import timezone</code></pre>
+<p>&quot;Flibbertigibbeting...&quot; (AI가 생성 중임을 나타내는 상태 메시지)</p>
+<p>왼쪽 TASKS.md에서는 제안서 API 구현(TASK-022) 관련 내용이 계속 보인다:</p>
+<pre><code>- `[ ] 제안서 생성 API
+  POST /api/v1/conversations/{id}/proposals/
+  비동기 태스크 시작
+  작업 ID 반환
+- [ ] 제안서 조회 API
+  GET /api/v1/proposals/{id}/</code></pre>
+<p>&quot;Edit automatically → TASKS.md&quot; 설정이 하단에 표시되어, 작업 완료 시 TASKS.md가 자동으로 업데이트된다.</p>
+<div class="screenshot-container"><img src="images/segment_029.jpg" alt="Serializers 생성" loading="lazy">
+<div class="caption">Serializers 생성</div>
+</div>
+<hr>
+<h3>29. 캘린더 UI 컴포넌트 및 Schedule 서비스 구현 [2:49:00 - 2:55:02]</h3>
+<p>Claude Code가 프론트엔드 캘린더 UI 컴포넌트를 구현하고 있다.</p>
+<p><strong>현재 프로젝트 상태 분석 결과에서 보이는 Phase 구조:</strong></p>
+<ul>
+<li>Phase 1: 제안서 자동 생성 기능 구현</li>
+<li>Phase 2: 일정/캘린더 기능 구현 ← 현재 진행 중</li>
+<li>Phase 3: 섭외 프로세스 고도화</li>
+<li>추천 알고리즘 개선</li>
+<li>섭외 요청/수락 모델 및 API 구현</li>
+<li>Phase 4: 관리자 대시보드 완성</li>
+<li>Analytics API 실제 KPI 계산 구현</li>
+<li>대시보드 UI 및 차트 구현</li>
+</ul>
+<p><strong>작업 내용:</strong></p>
+<p>&quot;이제 프론트엔드 캘린더 UI 컴포넌트를 구현하겠습니다. 먼저 필요한 패키지를 확인하고 서비스와 컴포넌트를 생성합니다.&quot;</p>
+<ul>
+<li>Read package.json</li>
+<li><strong>Bash: Create Calendar components directory</strong></li>
+</ul>
+<pre><code>  mkdir -p &quot;/Users/futurewave/Documents/dev/AI 챗봇 기반 강연 섭외 및 운영 자동화 시스템&quot;</code></pre>
+<p>OUT: 0</p>
+<ul>
+<li><strong>Write schedule.ts (276 lines):</strong></li>
+</ul>
+<pre><code>  import axios from &#x27;axios&#x27;;
+  const API_BASE_URL = import.meta.env.VITE_API_URL || &#x27;http://lo...</code></pre>
+<p>&quot;Ha_🅱 ng...&quot; 상태가 표시되며 생성이 진행 중이다.</p>
+<div class="screenshot-container"><img src="images/segment_030.jpg" alt="캘린더 UI 구현" loading="lazy">
+<div class="caption">캘린더 UI 구현</div>
+</div>
+<hr>
+<h3>30. 방송 마무리 [3:01:04 - 3:01:05]</h3>
+<p>3시간의 라이브 방송이 마무리되는 시점으로, 마지막 스크린샷은 이전 세그먼트와 동일한 캘린더 UI 구현 화면을 보여준다.</p>
+<hr>
+<h2>주요 인용 및 발언</h2>
+<blockquote><p>&quot;AI로 코딩할 때 길을 잃지 않으려면, 코드가 아닌 컨텍스트를 먼저 통제하라.&quot;<br>— Conductor 도구의 핵심 철학으로 소개됨</p></blockquote>
+<blockquote><p>&quot;누가 내 마음대로 코딩하래? 기다려.&quot;<br>— 에이전트가 사용자 지시 없이 코딩을 시작하려 할 때 진행자의 반응</p></blockquote>
+<blockquote><p>&quot;자, 지금부터는 태스크 하나가 아니라 모든 태스크를 한 번에 구현하도록 해줘.&quot;<br>— TASK-003부터 TASK-028까지 모든 태스크를 한번에 처리하도록 지시</p></blockquote>
+<blockquote><p>&quot;The system is now functionally complete according to the initial task list specifications.&quot;<br>— 약 28분 만에 전체 시스템이 기능적으로 완성되었다는 에이전트의 보고</p></blockquote>
+<hr>
+<h2>결론 및 시사점</h2>
+<p><strong>1. AI 에이전트를 활용한 외주 프로젝트 구현의 현실</strong></p>
+<p>이 3시간 라이브 방송은 위시켓의 실제 외주 공고(AI 챗봇 기반 강연 섭외 시스템, 예상 3,000만원/60일 규모)를 AI 도구만으로 구현하는 실험이다. 결과적으로 약 33분 만에 56개 이상의 파일을 생성/수정하며 풀스택 애플리케이션의 기본 골격을 완성했다. 그러나 WebSocket 연결 오류, JWT 인증 미들웨어 문제, 프론트엔드 import 오류 등 실전에서 반드시 발생하는 디버깅 작업이 뒤따랐다.</p>
+<p><strong>2. 문서 중심 워크플로우의 중요성</strong></p>
+<p>가장 강조된 포인트는 &quot;코드를 바로 작성하지 말고 문서를 먼저 작성하라&quot;는 것이다. PRD(Product Requirements Document) → TRD(Technical Requirements Document) → TASKS.md 순서로 체계적인 문서를 준비한 후 AI에게 전달하는 방식이 훨씬 효과적이다. Conductor 도구의 핵심 철학인 &quot;코드가 아닌 컨텍스트를 먼저 통제하라&quot;가 이를 뒷받침한다.</p>
+<p><strong>3. 사용된 AI 도구 생태계</strong></p>
+<ul>
+<li><strong>Claude (Haiku 4.5 / Sonnet 4.5)</strong>: 프로젝트 공고 분석, AI 코딩 생산성 현실 평가</li>
+<li><strong>Google AI Studio (Gemini 3 Pro Preview)</strong>: PRD/TRD 분석 및 TASKS 계획 수립</li>
+<li><strong>Antigravity (구 Jules)</strong>: 실제 코드 생성 에이전트 (VS Code 통합)</li>
+<li><strong>Claude Code (Plan mode)</strong>: 프로젝트 상태 분석 및 추가 구현</li>
+<li><strong>Conductor (Gemini CLI Extension)</strong>: 프로젝트 컨텍스트 관리 도구</li>
+</ul>
+<p><strong>4. AI 코딩의 한계와 가능성</strong></p>
+<p>Claude가 분석한 바에 따르면, 이 프로젝트를 AI만으로 2주 만에 완성하는 것은 비현실적이다. CRUD, 기본 채팅, 인증 등 표준적인 기능은 AI가 빠르게 생성할 수 있지만, 복잡한 비즈니스 로직(시나리오 엔진, 추천 알고리즘 등)과 인프라 연동(Docker, WebSocket, Celery 등)에서는 사람의 개입이 필수적이다. 그러나 반복적인 보일러플레이트 코드 생성, 프로젝트 초기 설정, CRUD API 구현 등에서 AI의 생산성은 압도적이다.</p>
+<p><strong>5. 실전 적용 시사점</strong></p>
+<ul>
+<li>외주 프로젝트를 수주할 때 AI 도구를 활용하면 초기 프로토타입 제작 속도를 크게 높일 수 있다</li>
+<li>다만 품질 보증(QA), 에지 케이스 처리, 보안 검토 등은 여전히 사람의 몫이다</li>
+<li>Docker, CI/CD, 데이터베이스 마이그레이션 등 DevOps 영역에서도 AI가 상당 부분 자동화할 수 있다</li>
+<li>AI 에이전트에게 &quot;모든 태스크를 한번에 처리하라&quot;는 지시가 가능하며, 실제로 다수의 TASK를 연속으로 처리하는 모습을 보여주었다</li>
+</ul>
+        <div class="footer">
+            Generated by VidDigest
+        </div>
+    </div>
+    <div class="lightbox" id="lightbox" onclick="this.classList.remove('active')">
+        <img id="lightbox-img" src="" alt="">
+    </div>
+    <script src="../../js/main.js"></script>
+</body>
+</html>

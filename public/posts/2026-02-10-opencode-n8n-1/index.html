@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[OPENCODE + n8n]으로 구축하는 미친 성능의 1인 에이전시 - VidDigest</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-inner">
+            <a href="../../" class="site-title">VidDigest</a>
+        </div>
+        <h1>[OPENCODE + n8n]으로 구축하는 미친 성능의 1인 에이전시</h1>
+        <div class="meta">
+            <span></span>
+            <span></span>
+            <span>2026-02-10</span>
+        </div>
+    </div>
+    <div class="container">
+<p>이제 모든 30개 세그먼트의 스크린샷을 확인했습니다. 자막이 제공되지 않았으므로 스크린샷의 시각적 정보를 기반으로 최대한 상세한 분석 보고서를 작성하겠습니다.</p>
+<blockquote><p><strong>채널</strong>: Dante&#x27;s Datalab | <strong>길이</strong>: 59:39 | <strong>날짜</strong>: 20260120</p></blockquote>
+<h2>핵심 내용</h2>
+<ul>
+<li><strong>OpenCode는 오픈소스 AI 코딩 에이전트</strong>로, Claude, GPT, Gemini 등 다양한 모델 프로바이더를 연결하여 사용할 수 있는 터미널 기반 AI 코딩 도구이다. Claude Code와 유사한 기능을 제공하면서도 무료 모델을 포함하고 있어 비용 효율적인 개발이 가능하다.</li>
+</ul>
+<ul>
+<li><strong>Antigravity라는 IDE 및 플랫폼</strong>과 OpenCode를 결합하여 사용하며, Antigravity는 VS Code 기반의 개발 환경으로 OpenCode Zen, Z.AI Coding Plan 등 다양한 프로바이더를 지원한다. 가격은 Lite($6/월), Pro($15/월), Max($30/월) 세 가지 플랜으로 구성되어 있다.</li>
+</ul>
+<ul>
+<li><strong>OpenCode의 플러그인 시스템</strong>을 통해 기능을 확장할 수 있으며, <code>opencode-antigravity-auth@latest</code> 플러그인을 설치하여 Antigravity와 연동하고, <code>oh-my-opencode</code> 플러그인으로 추가 기능을 활용한다. 설정 파일(opencode.json)에서 프로바이더, 모델, 컨텍스트 크기 등을 세밀하게 구성할 수 있다.</li>
+</ul>
+<ul>
+<li><strong>&quot;Dante Coffee&quot;라는 가상의 커피 브랜드를 대상으로 한 에이전틱 마케팅 시나리오</strong>를 실제로 구현하여 시연한다. 시장 리서치, 브랜드 분석, 고객 세그멘테이션, 페르소나 생성, 콘텐츠 제작, 이미지/영상 생성까지 전체 마케팅 파이프라인을 AI 에이전트가 자동으로 수행하는 과정을 보여준다.</li>
+</ul>
+<ul>
+<li><strong>n8n 워크플로우 자동화 도구와 OpenCode를 연동</strong>하여, n8n에서 OpenCode API를 호출하고 커맨드를 실행하는 방식으로 완전 자동화된 마케팅 에이전시 시스템을 구축한다. 이를 통해 1인이 에이전시 수준의 마케팅 업무를 자동화할 수 있다.</li>
+</ul>
+<ul>
+<li><strong>신규 서비스 Full Agent 전체 설계도</strong>를 제시하며, EDA 에이전트 레이어, 외부 리서치 에이전트 레이어, 1pager 보고서 작성 레이어, 사후분석 에이전트 레이어의 4개 레이어로 구성된 종합적인 에이전트 아키텍처를 소개한다.</li>
+</ul>
+<ul>
+<li><strong>상반기 출간 예정인 n8n 도서</strong>를 예고하며, 도서 제목 제안 이벤트를 진행한다. 총 50명에게 인당 1만원 상당의 기프티콘(배달의민족, 이마트, 파리바게뜨, 편의점 등)을 경품으로 제공한다.</li>
+</ul>
+<h2>상세 분석</h2>
+<h3>1. 도입부 - AI 기술의 얼리 어답터 시대 [0:00 - 1:59]</h3>
+<p>영상은 진행자(Dante)가 서재 배경 앞에서 카메라를 바라보며 이야기하는 장면으로 시작된다. 화면 하단 자막에 <strong>&quot;기술이 얼리 아답터들의 전유물인 상태를&quot;</strong>이라는 문구가 표시되어 있어, AI 기술이 아직 얼리 어답터 단계에 있지만 이를 활용하여 1인 에이전시를 구축할 수 있다는 핵심 메시지를 전달하고 있다.</p>
+<p>진행자는 안경을 쓴 젊은 한국인 남성으로, 편안한 회색 상의를 입고 있다. 뒤편에는 책장과 노트북이 놓인 책상이 보이며, 전문적이면서도 친근한 분위기를 연출한다.</p>
+<div class="screenshot-container"><img src="images/segment_000.jpg" alt="도입부 - 진행자 소개" loading="lazy">
+<div class="caption">도입부 - 진행자 소개</div>
+</div>
+<hr>
+<h3>2. OpenCode 설치 환경 준비 [1:59 - 3:58]</h3>
+<p>화면이 Windows 데스크톱 환경으로 전환된다. 데스크톱에는 다음과 같은 주요 아이콘들이 보인다:</p>
+<ul>
+<li><strong>휴지통</strong>: 기본 Windows 아이콘</li>
+<li><strong>Claude</strong>: Anthropic의 Claude 데스크톱 앱</li>
+<li><strong>flowithOS Beta</strong>: flowithOS 베타 버전 앱</li>
+<li><strong>Antigravity</strong>: 이번 영상의 핵심 IDE</li>
+<li><strong>Dante</strong>: 진행자의 개인 폴더</li>
+<li><strong>내 PC, 네트워크, 제어판, 바로가기</strong>: Windows 기본 아이콘들</li>
+<li><strong>한글 2024</strong>: 한글 오피스</li>
+<li><strong>VPN</strong>: VPN 클라이언트</li>
+</ul>
+<p><strong>PowerShell 7</strong> 터미널이 열려 있으며, <code>PS C:\Users\USER&gt;</code> 프롬프트가 표시되어 있다. 이 단계에서 OpenCode를 설치하기 위한 터미널 환경을 준비하고 있다.</p>
+<div class="screenshot-container"><img src="images/segment_001.jpg" alt="PowerShell 터미널 환경" loading="lazy">
+<div class="caption">PowerShell 터미널 환경</div>
+</div>
+<hr>
+<h3>3. OpenCode 공식 사이트 및 설치 방법 [3:58 - 5:57]</h3>
+<p>OpenCode의 공식 웹사이트가 표시된다. 핵심 정보는 다음과 같다:</p>
+<p><strong>헤더 배너</strong>: &quot;New - Desktop app available in beta on macOS, Windows, and Linux. Download now&quot;</p>
+<p><strong>메인 타이틀</strong>: <strong>&quot;The open source AI coding agent&quot;</strong></p>
+<p><strong>설명문</strong>: &quot;Free models included or connect any model from any provider, including Claude, GPT, Gemini and more.&quot;</p>
+<p><strong>설치 방법</strong> (여러 패키지 매니저 탭 제공):</p>
+<ul>
+<li><strong>curl</strong> (선택됨): <code>curl -fsSL https://opencode.ai/install | bash</code></li>
+<li>npm</li>
+<li>bun</li>
+<li>brew</li>
+<li>paru</li>
+</ul>
+<p>화면 하단에는 터미널에서 테스트가 실행된 결과가 보인다:</p>
+<ul>
+<li><code>PASS Tests\Feature\DashboardTest</code></li>
+<li>✓ guests are redirected to the login page</li>
+<li>✓ authenticated users can visit the dashboard</li>
+<li><code>PASS Tests\Feature\ExampleTest</code> (일부 잘림)</li>
+</ul>
+<p>이는 OpenCode가 실제 프로젝트에서 테스트를 자동으로 실행하고 통과시키는 모습을 보여주는 것이다.</p>
+<div class="screenshot-container"><img src="images/segment_002.jpg" alt="OpenCode 공식 사이트" loading="lazy">
+<div class="caption">OpenCode 공식 사이트</div>
+</div>
+<hr>
+<h3>4. OpenCode 설치 및 인증 설정 [5:57 - 7:57]</h3>
+<p>PowerShell 7 터미널에서 실제 설치 과정이 진행된다:</p>
+<pre><code>PS C:\Users\USER&gt; npm i -g opencode-ai
+changed 3 packages in 3s
+PS C:\Users\USER&gt; opencode -v
+1.1.25
+PS C:\Users\USER&gt; opencode auth login</code></pre>
+<p><strong>설치 단계</strong>:</p>
+<ol>
+<li><code>npm i -g opencode-ai</code> 명령으로 글로벌 설치 (3초 만에 3개 패키지 설치 완료)</li>
+<li><code>opencode -v</code>로 버전 확인 → <strong>1.1.25</strong> 버전</li>
+<li><code>opencode auth login</code>으로 인증 시작</li>
+</ol>
+<p><strong>인증 과정</strong>:</p>
+<ul>
+<li>Add credential</li>
+<li>Select provider → <strong>OpenCode Zen</strong> 선택</li>
+<li>Create an api key at https://opencode.ai/auth</li>
+<li>Enter your API key → API 키 입력 대기 중</li>
+</ul>
+<p>브라우저에는 <code>https://opencode.ai/workspace/wrk_...</code> URL이 열려 있어 API 키 생성 페이지에 접속한 상태이다.</p>
+<div class="screenshot-container"><img src="images/segment_003.jpg" alt="OpenCode 설치 및 인증" loading="lazy">
+<div class="caption">OpenCode 설치 및 인증</div>
+</div>
+<hr>
+<h3>5. OpenCode 플러그인 시스템 [7:57 - 9:56]</h3>
+<p>OpenCode의 공식 문서에서 <strong>Plugins</strong> 페이지가 표시된다:</p>
+<p><strong>플러그인 개요</strong>: &quot;Write your own plugins to extend OpenCode.&quot;</p>
+<p><strong>플러그인 기능 설명</strong>: &quot;Plugins allow you to extend OpenCode by hooking into various events and customizing behavior. You can create plugins to add new features, integrate with external services, or modify OpenCode&#x27;s default behavior.&quot;</p>
+<p>커뮤니티가 만든 플러그인 예시도 확인할 수 있다.</p>
+<p><strong>플러그인 사용 방법 (Use a plugin)</strong>: &quot;There are two ways to load plugins.&quot;</p>
+<ol>
+<li><strong>From local files</strong>: &quot;Place JavaScript or TypeScript files in the plugin directory.&quot;</li>
+</ol>
+<p><strong>우측 네비게이션 목차</strong>:</p>
+<ul>
+<li>Overview</li>
+<li>Use a plugin</li>
+<li>From local files</li>
+<li>From npm</li>
+<li>How plugins work</li>
+<li>Load order</li>
+<li>Create a plugin</li>
+<li>Dependencies</li>
+<li>Basic structure</li>
+<li>TypeScript support</li>
+<li>Events</li>
+<li>Examples</li>
+<li>Send notifications</li>
+<li>.env protection</li>
+<li>Custom tools</li>
+<li>Logging</li>
+<li>Compaction handling</li>
+</ul>
+<div class="screenshot-container"><img src="images/segment_004.jpg" alt="OpenCode 플러그인 문서" loading="lazy">
+<div class="caption">OpenCode 플러그인 문서</div>
+</div>
+<hr>
+<h3>6. Antigravity IDE에서 플러그인 설정 [9:56 - 11:55]</h3>
+<p>VS Code(Antigravity) 에디터가 열려 있으며, 상단에 코드가 표시된다:</p>
+<pre><code>{
+    &quot;plugin&quot;: [
+        &quot;opencode-antigravity-auth@latest&quot;
+    ]
+}</code></pre>
+<p>이는 OpenCode 설정 파일에 Antigravity 인증 플러그인을 추가하는 과정이다.</p>
+<p>하단 터미널에서는:</p>
+<pre><code>PS C:\Users\USER\.config\opencode&gt; opencode auth login</code></pre>
+<p>Antigravity 디렉토리에서 인증 로그인을 실행하고 있다.</p>
+<p>우측에는 <strong>&quot;Antigravity&quot;</strong> 패널이 보이며:</p>
+<ul>
+<li>&quot;Ask anything (Ctrl+L), @ to mention, / for work...&quot;</li>
+<li><strong>+ Fast ∨ Gemini 3 Flash</strong> 모델이 선택되어 있다</li>
+</ul>
+<p>이는 Antigravity IDE가 자체적으로 AI 채팅 기능을 내장하고 있으며, Gemini 3 Flash 모델을 기본으로 사용할 수 있음을 보여준다.</p>
+<div class="screenshot-container"><img src="images/segment_005.jpg" alt="Antigravity IDE 플러그인 설정" loading="lazy">
+<div class="caption">Antigravity IDE 플러그인 설정</div>
+</div>
+<hr>
+<h3>7. Antigravity 가격 정책 (Pricing) [11:55 - 13:55]</h3>
+<p>Antigravity의 구독 플랜이 상세히 표시된다:</p>
+<p><strong>Lite 플랜</strong> (✦ Valid 표시 - 현재 구독 중):</p>
+<ul>
+<li><strong>$6 / month</strong> ($6/month from 2nd month)</li>
+<li>3× usage of the Claude Pro plan</li>
+<li>Managing lightweight workloads</li>
+<li>Powered by GLM-4.7</li>
+<li>Compatible with over 10 coding tools, including Claude Code, Cursor, Cline, Kilo Code...</li>
+<li>Get same-tier model updates</li>
+<li>&quot;My Subscription&quot; 버튼</li>
+</ul>
+<p><strong>Pro 플랜</strong> (Popular 뱃지):</p>
+<ul>
+<li>☆ -$15 1st Month</li>
+<li><strong>$15 / month</strong> (~~$30/month~~)</li>
+<li>$30/month from 2nd month</li>
+<li>5× Lite plan usage</li>
+<li>Managing complex workloads</li>
+<li>All Lite plan benefits</li>
+<li>40%-60% faster compared to Lite</li>
+<li>Access Vision Analyze, Web Search, Web Reader and Zread MCP</li>
+<li>Get flagship model updates</li>
+<li>&quot;Upgrade&quot; 버튼</li>
+</ul>
+<p><strong>Max 플랜</strong> (Max Usage 뱃지):</p>
+<ul>
+<li>☆ -$30 1st Month</li>
+<li><strong>$30 / month</strong> (~~$60/month~~)</li>
+<li>$60/month from 2nd month</li>
+<li>4× Pro plan usage</li>
+<li>Managing high-volume workloads for advanced developers</li>
+<li>All Pro plan benefits</li>
+<li>Guaranteed peak-hour performance</li>
+<li>Early access to...</li>
+<li>Get flagship model updates</li>
+<li>&quot;Upgrade&quot; 버튼</li>
+</ul>
+<div class="screenshot-container"><img src="images/segment_006.jpg" alt="Antigravity 가격 정책" loading="lazy">
+<div class="caption">Antigravity 가격 정책</div>
+</div>
+<hr>
+<h3>8. Z.AI Coding Plan 인증 추가 [13:55 - 15:54]</h3>
+<p>터미널에서 추가 인증 과정이 진행된다:</p>
+<pre><code>PS C:\Users\USER\.config\opencode&gt; opencode auth login
+└ Done
+PS C:\Users\USER\.config\opencode&gt; opencode auth login
+├ Add credential
+├ Select provider
+│ Z.AI Coding Plan
+├ Enter your API key
+│ ••••••••••••••••••••••••••••••••••
+└ Done
+PS C:\Users\USER\.config\opencode&gt;</code></pre>
+<p>첫 번째 인증(OpenCode Zen)에 이어 두 번째로 <strong>Z.AI Coding Plan</strong> 프로바이더의 API 키를 추가 등록하는 과정이다. 이렇게 여러 프로바이더를 동시에 등록하여 다양한 모델을 사용할 수 있다.</p>
+<div class="screenshot-container"><img src="images/segment_007.jpg" alt="Z.AI Coding Plan 인증" loading="lazy">
+<div class="caption">Z.AI Coding Plan 인증</div>
+</div>
+<hr>
+<h3>9. OpenCode 설정 파일 (opencode.json) 상세 구성 [15:54 - 17:53]</h3>
+<p>VS Code에서 <code>opencode.json</code> 설정 파일의 상세 내용이 표시된다:</p>
+<pre><code>{
+    &quot;plugin&quot;: [
+        &quot;opencode-antigravity-auth@latest&quot;,
+        &quot;oh-my-opencode&quot;
+    ],
+    &quot;$schema&quot;: &quot;https://opencode.ai/config.json&quot;,
+    &quot;provider&quot;: {
+        &quot;google&quot;: {
+            &quot;name&quot;: &quot;Google&quot;,
+            &quot;models&quot;: {
+                &quot;antigravity-gemini-3-pro-high&quot;: {
+                    &quot;name&quot;: &quot;Gemini 3 Pro High (Antigravity)&quot;,
+                    &quot;thinking&quot;: true,
+                    &quot;attachment&quot;: true,
+                    &quot;limit&quot;: {
+                        &quot;context&quot;: 1048576,
+                        &quot;output&quot;: 65535
+                    },
+                    &quot;modalities&quot;: {
+                        &quot;input&quot;: [
+                            &quot;text&quot;,
+                            &quot;image&quot;,
+                            &quot;pdf&quot;
+                        ],
+                        &quot;output&quot;: [
+                            &quot;text&quot;
+                        ]
+                    }
+                },
+                &quot;antigravity-gemini-3-pro-low&quot;: {</code></pre>
+<p><strong>주요 설정 내용</strong>:</p>
+<ul>
+<li><strong>플러그인</strong>: <code>opencode-antigravity-auth@latest</code>와 <code>oh-my-opencode</code> 두 개 사용</li>
+<li><strong>$schema</strong>: OpenCode 공식 설정 스키마 URL 참조</li>
+<li><strong>프로바이더 설정 (Google)</strong>:</li>
+<li>모델명: <code>antigravity-gemini-3-pro-high</code></li>
+<li>표시 이름: &quot;Gemini 3 Pro High (Antigravity)&quot;</li>
+<li>thinking(사고) 모드: true</li>
+<li>첨부파일 지원: true</li>
+<li>컨텍스트 제한: <strong>1,048,576</strong> 토큰 (약 100만 토큰)</li>
+<li>출력 제한: <strong>65,535</strong> 토큰</li>
+<li>입력 모달리티: text, image, pdf</li>
+<li>출력 모달리티: text</li>
+</ul>
+<div class="screenshot-container"><img src="images/segment_008.jpg" alt="OpenCode 설정 파일" loading="lazy">
+<div class="caption">OpenCode 설정 파일</div>
+</div>
+<hr>
+<h3>10. Antigravity IDE에서 OpenCode 실행 화면 [17:53 - 19:52]</h3>
+<p>Antigravity IDE 내에서 OpenCode가 실행된 화면이 표시된다:</p>
+<p><strong>상단 메뉴바</strong>: opencode - Antigravity - opencode (Open Agent Manager 버튼 포함)</p>
+<p><strong>좌측 패널 (Extensions - 21개 설치됨)</strong>:</p>
+<ul>
+<li>clangd: C/C++ completion, navigation, and...</li>
+<li>Composer: All-in-One composer integration, q...</li>
+<li>Container Tools: Makes it easy to create, manage, an...</li>
+<li>Debugger for Java: A lightweight Java debugger for Vis...</li>
+<li>Docker: Makes it easy to create, manage, an...</li>
+<li>Extension Pack for Java: Popular extensions for Java develop...</li>
+<li>Go: Full Go language support for Visual...</li>
+<li><strong>Recommended</strong>: npm Intellisense (231K), markdownlint (463K), GitLens — Git superc... (4.6M)</li>
+</ul>
+<p><strong>메인 화면 - OpenCode 인터페이스</strong>:</p>
+<ul>
+<li>OpenCode 로고 (ASCII 아트 스타일)</li>
+<li>입력창: &quot;Ask anything... &#x27;What is the tech stack of this project?&#x27;&quot;</li>
+<li>하단 정보: <strong>Sisyphus</strong> | <strong>GLM-4.7</strong> | <strong>OpenCode Zen</strong></li>
+<li>단축키: ctrl+t variants | tab agents | ctrl+p commands</li>
+</ul>
+<p><strong>하단 터미널</strong>:</p>
+<ul>
+<li>palantir (2 vars)</li>
+<li>pixabay (1 vars)</li>
+<li>public-data-api (4 vars)</li>
+<li>superset (3 vars)</li>
+</ul>
+<div class="screenshot-container"><img src="images/segment_009.jpg" alt="Antigravity IDE에서 OpenCode" loading="lazy">
+<div class="caption">Antigravity IDE에서 OpenCode</div>
+</div>
+<hr>
+<h3>11. OpenCode 모델 선택 화면 [19:52 - 21:52]</h3>
+<p>OpenCode에서 사용 가능한 모델 목록이 표시된다:</p>
+<p><strong>Chat</strong> 패널에서 모델 검색 드롭다운:</p>
+<ul>
+<li><strong>Claude Opus 4.1</strong> - 200K</li>
+<li><strong>Claude Haiku 4.5</strong> - 200K</li>
+<li><strong>Claude Sonnet 3.7</strong> - 200K</li>
+<li><strong>Claude Opus 4</strong> - 200K</li>
+<li><strong>Vertex</strong> (Google Vertex AI)</li>
+<li><strong>Gemini Embedding 001</strong> - 2K</li>
+<li><strong>Gemini 3 Flash Preview</strong> - 1M</li>
+<li><strong>Gemini 2.5 Flash Preview 05-20</strong> - 1M</li>
+<li><strong>Gemini Flash-Lite Latest</strong> - 1M</li>
+<li><strong>Gemini 3 Pro Preview</strong> - 1M</li>
+<li><strong>Gemini 2.5 Flash</strong> - 1M</li>
+<li><strong>Gemini Flash Latest</strong> - 1M</li>
+</ul>
+<p><strong>입력창</strong>: &quot;# for agents; @ for files; / for commands&quot;</p>
+<p><strong>하단 상태바</strong>: ⌃ Big Pickle ⊙ Sisyphus</p>
+<p><strong>터미널 패널</strong>:</p>
+<ul>
+<li>palantir (2 vars)</li>
+<li>pixabay (1 vars)</li>
+<li>public-data-api (4 vars)</li>
+<li>superset (3 vars)</li>
+</ul>
+<p>OpenCode가 Claude 시리즈(Opus 4.1, Haiku 4.5, Sonnet 3.7, Opus 4)와 Google Gemini 시리즈를 모두 지원하며, 컨텍스트 윈도우가 200K에서 1M까지 다양한 모델을 선택할 수 있음을 보여준다.</p>
+<div class="screenshot-container"><img src="images/segment_010.jpg" alt="모델 선택 화면" loading="lazy">
+<div class="caption">모델 선택 화면</div>
+</div>
+<hr>
+<h3>12. Dante Coffee 프로젝트 초기 설정 [21:52 - 23:51]</h3>
+<p><strong>dante-coffee</strong> 프로젝트가 Antigravity IDE에서 열린 상태이다:</p>
+<p><strong>프로젝트 구조</strong> (좌측 탐색기):</p>
+<ul>
+<li>dante-coffee (루트)</li>
+<li>.claude</li>
+<li>agents</li>
+<li>commands</li>
+<li>skills</li>
+</ul>
+<p><strong>Chat 패널</strong>: New Session이 열려 있으며 &quot;Improve performance...&quot; 문구가 보인다.</p>
+<p><strong>입력창</strong>: &quot;# for agents; @ for files; / for commands&quot;</p>
+<p><strong>상태</strong>: Big Pickle ⊙ Sisyphus</p>
+<p><strong>터미널</strong> (Loading authentication credentials...):</p>
+<pre><code>✓ ai-ml-services (4 vars)
+✓ aihub (2 vars)
+✓ apple-appstore (3 vars)
+✓ google-cloud (1 vars)
+✓ google-oauth (2 vars)
+✓ imgbb (1 vars)
+✓ kie-ai (1 vars)
+✓ n8n (2 vars)
+✓ palantir (2 vars)
+✓ pixabay (1 vars)
+✓ public-data-api (4 vars)
+✓ superset (3 vars)
+✓ Successfully loaded 12 services (26 variables)</code></pre>
+<p><strong>12개의 서비스와 26개의 환경 변수</strong>가 성공적으로 로드되었다. 이 중 <code>n8n (2 vars)</code>가 포함되어 있어 n8n과의 연동이 사전에 설정되어 있음을 알 수 있다.</p>
+<p><strong>하단 상태바</strong>: Launchpad | ⌥ 0 △ 0 | Connect</p>
+<div class="screenshot-container"><img src="images/segment_011.jpg" alt="Dante Coffee 프로젝트 설정" loading="lazy">
+<div class="caption">Dante Coffee 프로젝트 설정</div>
+</div>
+<hr>
+<h3>13. 에이전트 및 테스트 파일 구조 [23:51 - 25:50]</h3>
+<p><strong>test-agents.md</strong> 파일이 열려 있다:</p>
+<p><strong>프로젝트 파일 구조</strong> (좌측):</p>
+<ul>
+<li>agents.md</li>
+<li>.nds (commands)</li>
+<li>.md (3개 파일)</li>
+<li>.est</li>
+<li>..md (1개 파일)</li>
+</ul>
+<p>상단 탭: New Session | SKILL.md 1 | test.md 3 | <strong>test-agents.md</strong> (현재 활성)</p>
+<p>경로: <code>.claude &gt; agents &gt; test-agents.md</code></p>
+<p>에디터 상단에 <strong>Edit</strong>, <strong>Chat ⌘L</strong>, <strong>...</strong> 버튼이 보이며, 이는 Antigravity가 markdown 파일에서 바로 Chat 모드로 전환하여 AI와 대화할 수 있는 기능을 제공함을 나타낸다.</p>
+<p><strong>터미널</strong>: &quot;Loading authentication credentials...&quot; - 인증 정보 로딩 중</p>
+<ul>
+<li>ai-ml-services (4 vars)</li>
+<li>aihub (2 vars)</li>
+<li>apple-appstore (3 vars) (일부 잘림)</li>
+</ul>
+<div class="screenshot-container"><img src="images/segment_012.jpg" alt="에이전트 파일 구조" loading="lazy">
+<div class="caption">에이전트 파일 구조</div>
+</div>
+<hr>
+<h3>14. 에이전틱 마케팅 시나리오 코드 (흐릿한 화면) [25:50 - 27:50]</h3>
+<p>화면이 의도적으로 흐릿하게 처리된 코드 화면이 표시된다. 좌측에는 파일 목록, 우측에는 마크다운 형식의 코드/문서가 보이며, 하단에는 터미널과 상태바가 표시된다. 이는 아마도 보안상의 이유로 일부 코드를 흐리게 처리했거나, 전환 효과로 사용된 것으로 보인다.</p>
+<p>코드 구조상 여러 섹션(헤더, 본문, 하위 항목)이 있는 마크다운 문서로 보이며, 에이전트 설정이나 스킬 정의와 관련된 내용으로 추정된다.</p>
+<div class="screenshot-container"><img src="images/segment_013.jpg" alt="흐릿한 코드 화면" loading="lazy">
+<div class="caption">흐릿한 코드 화면</div>
+</div>
+<hr>
+<h3>15. 에이전틱 마케팅 시나리오 - SKILL.md 및 플러그인 설치 [27:50 - 29:49]</h3>
+<p><strong>SKILL.md</strong> 파일이 열려 있으며, <strong>Content Pillars Framework</strong> 내용이 표시된다:</p>
+<p><strong>마크다운 내용 (코드 에디터)</strong>:</p>
+<pre><code># Content Pillars Framework
+## Content Format Mix
+### Instagram
+| 포맷 | 특성 | 적합한 필러 |
+|------|------|-----------|
+| 피드 | 고품질 이미지 | 제품, 라이프스타일 |
+| 릴스 | 15-60초 영상 | 교육, 라이프스타일 |
+| 스토리 | 일시적, 친밀 | 커뮤니티, 비하인드 |
+| 라이브 | 실시간 소통 | 교육, 커뮤니티 |
+
+### YouTube
+| 포맷 | 특성 | 적합한 필러 |
+|------|------|-----------|
+| 롱폼 | 5-15분 | 교육, 브랜드 스토리 |
+| 쇼츠 | 60초 이하 | 팁, 라이프스타일 |
+
+## Content Calendar Template
+### 주간 배분 예시
+| 요일 | 채널 | 필러 | 포맷 | 아이디어 |
+| 월 | IG 피드 | 라이프스타일 | 이미지 | 새 주의 시작 |
+| 화 | IG 릴스 | 교육 | 영상 | 3분 레시피 |
+| 수 | IG 스토리 | 커뮤니티 | 설문 | 오늘의 선택 |</code></pre>
+<p><strong>터미널</strong> (하단):</p>
+<pre><code>(base) → dante-coffee npx dantelabs-agentic-school install
+info Installation target: /Users/dante/workspace/dante-code/class/dante-coffee/.claude
+✓ Plugin registry loaded
+&gt; Install all 9 plugins? Yes
+✓ Installed common
+✓ Installed brand-analytics
+✓ Installed customer-segmentation
+✓ Installed persona-builder
+✓ Installed social-strategy
+✓ Installed content-creation
+✓ Installed creative-production
+✓ Installed campaign-orchestration
+✓ Installed market-research
+
+success Successfully installed 9 plugin(s)
+  15 agents, 18 commands, 19 skills
+
+Location: /Users/dante/workspace/dante-code/class/dante-coffee/.claude
+
+Next steps:
+1. Run claude --help to see available commands
+(base) → dante-coffee npx dantelabs-agentic-school sample marketing
+  Downloading marketing...</code></pre>
+<p><strong>9개의 플러그인이 설치</strong>되었으며, 이는 <strong>15개 에이전트, 18개 커맨드, 19개 스킬</strong>을 포함한다:</p>
+<ol>
+<li>common</li>
+<li>brand-analytics</li>
+<li>customer-segmentation</li>
+<li>persona-builder</li>
+<li>social-strategy</li>
+<li>content-creation</li>
+<li>creative-production</li>
+<li>campaign-orchestration</li>
+<li>market-research</li>
+</ol>
+<p>이후 <code>sample marketing</code> 명령으로 마케팅 샘플 데이터를 다운로드하고 있다.</p>
+<div class="screenshot-container"><img src="images/segment_014.jpg" alt="SKILL.md 및 플러그인 설치" loading="lazy">
+<div class="caption">SKILL.md 및 플러그인 설치</div>
+</div>
+<hr>
+<h3>16. Dante Coffee 에이전틱 마케팅 시나리오 문서 [29:49 - 31:48]</h3>
+<p><strong>dante-coffee-agentic-marketing-scenario.md</strong> 파일이 열려 있다:</p>
+<pre><code># Dante Coffee 에이전틱 마케팅 시나리오
+## Phase 0: 시장 리서치 (Market Research)
+### 사용 커맨드
+- ~/analyze-market : 시장 규모 및 성장률 종합 분석
+- `/competitive-landscape`: 경쟁 환경 및 산업 구조 분석
+
+### 지원 스킬
+- `analysis-reports`: 시장 분석 리포트 템플릿
+- `diagram-generator`: 시각자료 생성 (ASCII, Mermaid, 텍스트 다이어그램)
+
+### 실행 방법</code></pre>
+<p>/analyze-market --industry &quot;한국 프리미엄 커피 시장&quot; --scope &quot;2024-2034&quot;</p>
+<p>/competitive-landscape --market &quot;한국 커피 시장&quot; --competitors &quot;스타벅스,이디야,투썸&quot;</p>
+<p>&quot;한국 프리미엄 커피 시장 분석 리포트를 작성해줘. 2024-2034년 전망 포함해서.&quot;</p>
+<p>&quot;한국 커피 리테일 시장의 경쟁 환경을 Porter&#x27;s 5 Forces로 분석해줘.&quot;</p>
+<pre><code>
+### 리서치 범위</code></pre>
+<p>시장 정의:</p>
+<p>산업: 한국 프리미엄 커피 리테일 시장</p>
+<p>세그먼트: 스페셜티 커피, 가성비 커피, 프랜차이즈 커피</p>
+<p>지역: 대한민국 (수도권 중심)</p>
+<p>기간: 2024-2034 (10년 전망)</p>
+<p>핵심 분석 항목:</p>
+<ul>
+<li>시장 규모 및 성장률 (TAM/SAM/SOM)</li>
+</ul>
+<pre><code>
+**파일 구조 (좌측)**:
+- analytics, orchestration, content-creation, creative-production, customer-segmentation, market-research (analyze-market.md, competitive-landscape.md), persona-builder, social-strategy, skills, samples/marketing
+
+![에이전틱 마케팅 시나리오](screenshots/segment_015.jpg)
+
+---
+
+### 17. OpenCode 에이전트의 프로젝트 분석 실행 [31:48 - 33:48]
+
+OpenCode 에이전트가 실제로 Dante Coffee 프로젝트를 분석하는 과정이 표시된다:
+
+**에이전트 실행 화면 (메인 패널)**:</code></pre>
+<p>./.claude/skills/kie-image-generator/scripts/models/ideogram.py</p>
+<ul>
+<li>Click to expand</li>
+</ul>
+<p>$ ls -la</p>
+<p>total 0</p>
+<p>drwxr-xr-x@ 4 dante staff 128 1월 18 23:26 .</p>
+<p>drwxr-xr-x@ 26 dante staff 832 1월 18 14:32 ..</p>
+<p>drwxr-xr-x@ 5 dante staff 160 1월 18 23:26 .claude</p>
+<p>drwxr-xr-x@ 3 dante staff 96 1월 18 23:26 samples</p>
+<p>$ find samples -type f | head -20</p>
+<p>samples/marketing/dante-coffee-agentic-marketing-scenario.md</p>
+<p>samples/marketing/dante-coffee-brand-brief.md</p>
+<p>$ ls -la samples/</p>
+<p>total 0</p>
+<p>drwxr-xr-x@ 3 dante staff 96 1월 18 23:26 .</p>
+<p>drwxr-xr-x@ 4 dante staff 128 1월 18 23:26 ..</p>
+<p>drwxr-xr-x@ 4 dante staff 128 1월 18 23:26 marketing</p>
+<pre><code>
+**상태 정보**:
+- ■ Sisyphus · big-pickle
+- Sisyphus | Big Pickle | OpenCode Zen
+- ctrl+t variants | tab agents | ctrl+p commands
+
+**좌측 파일 구조**:
+- dante-coffee
+  - .claude (agents, commands, skills)
+  - samples/marketing
+    - dante-coffee-agentic-mark... 9+
+    - dante-coffee-brand-brief.md
+
+에이전트가 프로젝트 구조를 자동으로 탐색하고, `ls -la`, `find` 명령어를 실행하여 파일 구조를 파악하고 있다.
+
+![에이전트 프로젝트 분석](screenshots/segment_016.jpg)
+
+---
+
+### 18. 시장 분석 결과 및 경쟁사 비교 [33:48 - 35:47]
+
+에이전트가 생성한 시장 분석 결과가 표시된다. 화면이 두 부분으로 나뉜다:
+
+**좌측 (코드 에디터 + 터미널)**:
+에이전트의 마케팅 시나리오 실행 결과. 커맨드 실행 화면에 다양한 커맨드가 보인다:
+- `/market-research:competitive-landscape` (project)
+- `/kaggle-api` (user - Skill)
+- `/compact` - compact the session
+- `/video-compressor` (user - Skill)
+- `/github-code-review`
+- `/plugin-dev:Command Development`
+- `/websearch:code_search_help` (MCP)
+- `/competi` (입력 중)
+
+**우측 (분석 결과)**:
+- PESTLE 분석 결과
+- 경쟁사 분석
+- TAM/SAM/SOM 분석
+- competitive-intelligence 데이터
+
+**사용 커맨드**:
+- `/analyze-market`: 시장 규모 및 성장률 종합 분석
+- `/competitive-landscape`: 경쟁 환경 및 산업 구조 분석
+
+**지원 스킬**:
+- `analysis-reports`: 시장 분석 리포트 템플릿
+- `diagram-generator`: 시각자료 생성 (ASCII, Mermaid, 텍스트 다이어그램)
+
+**실행 방법 (커맨드)**:</code></pre>
+<p>/analyze-market --industry &quot;한국 프리미엄 커피 시장&quot; --scope &quot;2024-2034&quot;</p>
+<p>/competitive-landscape --market &quot;한국 커피 시장&quot; --competitors &quot;스타벅스,이디야,투썸&quot;</p>
+<pre><code>
+**Claude에게 직접 요청**:
+- &quot;한국 프리미엄 커피 시장 분석 리포트를 작성해줘. 2024-2034년 전망 포함해서.&quot;
+- &quot;한국 커피 리테일 시장의 경쟁 환경을 Porter&#x27;s 5 Forces로 분석해줘.&quot;
+
+**사용된 플러그인 및 에이전트 요약 (우측)**:
+
+| Phase | 플러그인 | 에이전트 | 스킬 |
+|-------|---------|---------|------|
+| 0. 시장 리서치 | market-research | market-analyst, competitive-intelligence | analysis-reports, diagram-generator |
+
+**리서치 범위**:
+- 시장 정의: 한국 프리미엄 커피 리테일 시장
+- 리서치 기간: 2024-2034
+
+![시장 분석 및 경쟁사 비교](screenshots/segment_017.jpg)
+
+---
+
+### 19. PESTLE 분석 및 경쟁 포지션 맵 [35:47 - 37:46]
+
+더 상세한 분석 결과가 표시된다:
+
+**좌측 (에이전트 출력)**:
+경쟁 포지셔닝과 SWOT 분석 관련 내용:
+- Opportunities | Threats 분석
+- `## 5. 경쟁 포지션 (선택적)` - [경쟁사 비교 및 포지션 맵]
+- `## 6. 전략적 권고사항` - 권고 1, 2, 3
+- `## 7. 다음 단계`:
+  - 고객 세그멘테이션: `/create-segments`
+  - 페르소나 생성: `/build-persona`
+
+**브랜드 분석 커맨드 실행**:</code></pre>
+<p>/analyze-brand --brand-doc &quot;./docs/dante-coffee-brand-brief.md&quot;</p>
+<pre><code>
+**Related Commands**:
+- `/create-segments`: 고객 세그먼트 생성
+- `/build-persona`: 페르소나 카드 생성
+- `/plan-channels`: 채널 전략 수립
+
+**Agents Used**:
+- `brand-strategist` (필수)
+- `competitive-analyst` (선택)
+
+**우측 (분석 보고서)**:
+**산출물 3: 소비자 트렌드 분석 (PESTLE)**:
+
+| 요인 | 주요 동인 | 영향 | 기회/위협 |
+|------|----------|------|----------|
+| Political | 최저임금 인상, 가맹점 규제 | Medium | 가격 전가... |
+| Economic | 고물가, 소비 위축 | High | 가성비 추... |
+| Social | MZ세대 가치 소비, 1인 가구 증가 | High | 품질+가격... |
+| Technological | 모바일 오더, 키오스크 | Medium | 운영 효율... |
+| Legal | 식품 표시 강화, 위생 규제 | Low | 투명성 차... |
+| Environmental | 친환경 트렌드, ESG | Medium | 친환경 포... |
+
+**핵심 인사이트**:
+- ★ Dante Coffee 포지셔닝: &quot;스페셜티 품질 + 가성비 가격&quot; → 중저가~증가 사이 빈 공간 공략
+
+![PESTLE 분석 결과](screenshots/segment_018.jpg)
+
+---
+
+### 20. 고객 세분화 및 페르소나 생성 과정 [37:46 - 39:46]
+
+에이전트가 고객 세분화와 페르소나 생성을 병렬로 실행하는 과정:
+
+**좌측 (에이전트 실행 로그)**:
+타겟 프로필 기반 정보:
+- 20대 후반~30대 초반 직장인 (오피스근로자)
+- 30대 중후반 전문직 (매니저급)
+- 20대 중후반 대학원생/취업준비생
+- 20대 초중반 패션/디자인 관련 직종
+
+**요구사항**:
+- 각 페르소나별 상세 시나리오와 구체적인 행동 패턴
+- Dante Coffee의 마케팅 메시지가 어떻게 각 페르소나에 도달하는지
+
+**에이전트 작업 위임**:</code></pre>
+<p>Dante Coffee의 고객 세분화와 페르소나 생성을 전문</p>
+<p>에이전트에 병렬로 의뢰했습니다.</p>
+<p>🔄 진행 중인 작업</p>
+<ol>
+<li>고객 세분화 분석 (Task ID: bg_d7a1947e)</li>
+</ol>
+<ul>
+<li>시장 세분화: 인구통계적, 지리적, 심리적, 행동적 분석</li>
+<li>우선순위 세그먼트: 3~4개 핵심 세그먼트 선정</li>
+<li>세그먼트별 마케팅 전략 및 도달 채널 제안</li>
+<li>실행 로드맵: 단/중/장기 확장 계획</li>
+</ul>
+<ol>
+<li>페르소나 레포트 생성 (Task ID: bg_297e75bc)</li>
+</ol>
+<ul>
+<li>3~4개 상세 페르소나: 오피스근로자, 전문직, 학생, 크리에이티브 직종</li>
+<li>기본 정보: 연령, 직업, 소득, 라이프스타일</li>
+<li>커피 소비 형태: 빈도, 선호, 구매 동기</li>
+<li>미디어 사용 패턴 및 Dante 가치제안 매핑</li>
+</ul>
+<pre><code>
+**예상 완료 시간**: 각 분석 약 15-20분 소요 예정
+
+**우측 (분석 결과)**:
+경쟁사 가격/브랜드 비교:
+
+| 브랜드 | 가격(잔) | 특징 |
+|--------|---------|------|
+| 스타벅스 | 4,500원 | 브랜드, 공간 경험 |
+| 메가커피 | 1,500원 | 최저가, 대용량 |
+| 이디야 | 3,200원 | 높은 접근성 |
+
+**사용된 플러그인 및 에이전트 요약**:
+
+| Phase | 플러그인 | 에이전트 | 스킬 |
+|-------|---------|---------|------|
+| 2. 세그멘테이션 | customer-segmentation | segmentation-architect, data-analyst | segmentation-framework, activation-map |
+| 3. 페르소나 | persona-builder | persona-architect, customer-insights-partner | persona-framework |
+
+**전략적 권고사항**:
+- **단기 실행 (3-6개월)**: 품질 인지도 강화, 타겟 마케팅 집중, SNS 콘텐츠 고도화
+- **중기 실행 (6-12개월)**: 가맹사업 준비 5개 직영점, 제품 라인 확장 RTD 제품, 충성 고객 프로그램 &#x27;단테 패...&#x27;
+- **장기 실행 (1-3년)**: 수직 통합 자체 로스터리 설립, 채널 다..., 지역 ...
+
+**7. 브랜드 아이덴... 시스...**
+
+![고객 세분화 및 페르소나](screenshots/segment_019.jpg)
+
+---
+
+### 21. AI가 생성한 페르소나 - PowerPoint 프레젠테이션 [39:46 - 41:45]
+
+에이전트가 자동으로 생성한 **PowerPoint 프레젠테이션**이 macOS의 PowerPoint에서 열려 있다:
+
+**파일명**: `dante-coffee-persona-kimjihyun`
+
+**슬라이드 1 (표지)**:
+- **Dante Coffee**
+- 고객 페르소나 분석 리포트
+- 김지현 (29세, IT 마케터)
+
+**슬라이드 2 (현재 표시 - 기본 정보)**:
+# 기본 정보
+- **이름**: 김지현 (29세)
+- **직업**: IT기업 마케터 (강남역 근무)
+- **소득**: 연봉 4,200만원
+- **거주지**: 서초구 서초동 (자취 1인)
+- **가족**: 미혼, 현재 연애 중
+
+**라이프스타일**:
+- 업무: 오전 9시-오후 7시
+- 통근: 지하철 9번역 이동 (8:30-9:00)
+- 여가: 헬스장, 넷플릭스, 맛집 탐방
+- 소비: 가격 비교 앱 사용, 프로모션 적극 활용
+
+**가치관**: &quot;시간이 돈보다 중요하지만, 돈은 아껴써야지&quot;
+
+**슬라이드 3**: 커피 소비 형태
+**슬라이드 4**: 미디어 사용 패턴
+**슬라이드 5**: 현재 커피 소비의 고충점
+
+AI 에이전트가 시장 분석과 타겟 고객 데이터를 기반으로 자동으로 상세한 페르소나 프레젠테이션을 생성한 것이 인상적이다.
+
+![AI 생성 페르소나 PPT](screenshots/segment_020.jpg)
+
+---
+
+### 22. 콘텐츠 제작 - 인스타그램 카피 및 YouTube Shorts 스크립트 [41:45 - 43:44]
+
+에이전트가 실제 마케팅 콘텐츠를 생성하는 단계:
+
+**좌측 (코드 에디터 - 인스타그램 카피)**:
+
+여러 탭이 열려 있다: node | dante-coffee-instagram-copy-kimjihyun-v2.md 9+ | dante-coffee-agentic-marketing-scenario.md 9+ | create-image.md
+
+**인스타그램 카피 내용**:</code></pre>
+<h2>1. 인스타그램 피드 (Feed)</h2>
+<h3>Option C: 루틴 중심 (Daily Routine)</h3>
+<h2>2. 인스타그램 릴스 (Reels)</h2>
+<h3>Reels 1: 속도 체감 (Fast-paced)</h3>
+<ul>
+<li>&quot;도착하자마자 피업 완료 (0초)&quot;</li>
+<li>&quot;마케터는 시간이 금이니까 ✨&quot;</li>
+</ul>
+<h3>Reels 2: 맛의 반전 (Comparison)</h3>
+<p><strong>자막</strong>*:</p>
+<ul>
+<li>&quot;는 가리고 마셔봤습니다 🫣&quot;</li>
+<li>&quot;이게 더 맛있는데? 스타벅스죠?&quot;</li>
+<li>&quot;아뇨, 2,500원 단테커피입니다.&quot;</li>
+<li>&quot;브랜드 값 말고, 진짜 맛을 선택하세요.&quot;</li>
+</ul>
+<h3>Reels 3: 브이로그 (Lifestyle)</h3>
+<p><strong>자막</strong>*:</p>
+<ul>
+<li>&quot;29세 마케터의 갓생 루틴 🌅&quot;</li>
+<li>&quot;아침 운동 후 단테 한 잔&quot;</li>
+<li>&quot;오후 미팅 전 다시 한 잔&quot;</li>
+<li>&quot;두 잔 마셔도 5,000원, 퀄리티는 하이엔드&quot;</li>
+</ul>
+<h2>3. 핵심 해시태그</h2>
+<p>#단테커피 #DanteCoffee #스페셜티커피 #가성비커피 #직장인커피 #마케터일상 #출근길루틴</p>
+<pre><code>
+**우측 (create-image.md 커맨드 문서)**:</code></pre>
+<h2>/create-image</h2>
+<h2>Prompt Templates by Type</h2>
+<h3>Lifestyle (라이프스타일)</h3>
+<p>장소/환경,</p>
+<p>조명 설정,</p>
+<p>lifestyle photography,</p>
+<p>warm and inviting atmosphere,</p>
+<p>candid natural pose</p>
+<h3>Thumbnail (썸네일)</h3>
+<p>YouTube thumbnail style,</p>
+<p>[주요 요소],</p>
+<p>bold text space on [위치],</p>
+<p>[색상] color scheme,</p>
+<p>attention-grabbing composition</p>
+<p>professional graphic design</p>
+<h2>Example</h2>
+<pre><code>/create-image --concept &quot;미니...&quot;
+product --model flux-pro</code></pre>
+<pre><code>
+**좌측 파일 구조**:
+- .claude (agents, commands - brand-analytics, campaign-orchestration, content-creation, **creative-production** (create-image, create-video), customer-segmentation, market-research, persona-builder, social-strategy, skills)
+- data, reports (brand, market, marketing), presentations, samples/marketing
+
+**우측 (사용된 플러그인 및 에이전트)**:
+
+| Phase | 플러그인 | 에이전트 | 스킬 |
+|-------|---------|---------|------|
+| 4. 채널 전략 | social-strategy | social-strategy-director, channel-analyst | - |
+| 5. 카피 제작 | content-creation | copy-strategist, conversion-copywriter, script-writer | - |
+
+![콘텐츠 제작 과정](screenshots/segment_021.jpg)
+
+---
+
+### 23. YouTube Shorts 스크립트 및 성과 지표 [43:44 - 45:43]
+
+마케팅 시나리오의 전체 결과가 표시된다:
+
+**에이전트 실행 결과 (메인 패널)**:</code></pre>
+<p>Premium Coffee)        106,970  53% ($0.00)</p>
+<p>188 - <strong>총 소요</strong>: 7-10시간</p>
+<p>191 성과 측정 지표</p>
+<p>193 - <strong>시청 지속시간</strong>: 10초 영상의 70% 이상 시청률</p>
+<p>194 - <strong>클릭률 (CTR)</strong>: 다운로드 링크 클릭 비율</p>
+<p>195 - <strong>공유율</strong>: 단톡 등으로 그룹 내 공유 횟수</p>
+<p>196 - <strong>채널 전환</strong>: YouTube에서 Dante Coffee 앱으로의 전환</p>
+<pre><code>
+**YouTube Shorts 스크립트 개요**:</code></pre>
+<p>두 가지 핵심 컨셉으로 10초 YouTube Shorts 제작</p>
+<p>♦ Option 1: &quot;꼭 그 한 잔의 기적&quot; (속도 중심)</p>
+<ul>
+<li>0-3s: &quot;아직도 15분 대기?&quot; → 시간 부족 쇼크</li>
+<li>3-8s: 단테커피 1분 피업의 쾌감감상</li>
+<li>8-10s: &quot;일상의 작은 사치, 지금 단테커피로&quot; CTA</li>
+</ul>
+<p>♦ Option 2: &quot;합리적 마케터의 선택&quot; (가격/품질 중심)</p>
+<ul>
+<li>0-3s: 블라인드 테스트 → &quot;같은 커피가 같냐요?&quot;</li>
+<li>3-8s: 가격 반전 &quot;스타벅스 4,500원 vs 단테 2,500원&quot;</li>
+<li>8-10s: &quot;똑똑한 마케터의 선택, Dante Coffee 앱&quot; CTA</li>
+</ul>
+<pre><code>
+**촬영 체크리스트**:
+- [ ] 스타벅스와 단테커피 매장 외부 촬영 허가
+- [ ] 20대 후반~30대 초반 직장인 캐스팅
+- [ ] 사무실 세트장 구축 (모니터, 키보드, 손목시계)
+- [ ] 커피 컵 UI 목업 제작
+
+**우측 (전체 캠페인 실행 플로우)**:</code></pre>
+<p>/campaign-orchestration:run-full-pipeline --</p>
+<p>brand-doc &quot;./dante-coffee-brand-brief.md&quot;</p>
+<p>/campaign-orchestration:run-phase --phase 1  #</p>
+<p>브랜드 분석만</p>
+<p>/campaign-orchestration:run-phase ...         #</p>
+<p>콘텐츠 제작만</p>
+<pre><code>
+**사용된 플러그인 및 에이전트 요약**:
+
+| Phase | 플러그인 | 에이전트 | 스킬 |
+|-------|---------|---------|------|
+| 0. 시장 리서치 | market-research | market-analyst, competitive-intelligence | analysis-reports, diagram-generator |
+| 1. 브랜드 분석 | brand-analytics | brand-strategist, competitive-analyst | brand-positioning |
+| 2. 세그멘테이션 | customer-segmentation | segmentation-architect, data-analyst | segmentation-framework, activation-map |
+| 3. 페르소나 | persona-builder | persona-architect, customer-insights-partner | persona-framework |
+| 4. 채널 전략 | social-strategy | social-strategy-director, channel-analyst | - |
+| 5. 카피 제작 | content-creation | copy-strategist, conversion-copywriter, script-writer | - |
+
+![Shorts 스크립트 및 성과 지표](screenshots/segment_022.jpg)
+
+---
+
+### 24. n8n과 OpenCode 연동 - API 인증 설정 [45:43 - 47:43]
+
+**n8n 워크플로우 자동화 도구**에서 OpenCode API 연결을 설정하는 화면:
+
+**OpenCode account 2** (OpenCode API) 설정 창:
+- **Connection** 탭 (현재 활성)
+- Sharing
+- Details
+
+**설정 필드**:
+- **Base URL** *: `http://127.0.0.1:4096`
+- **Username** *: `dante`
+- **Password** *: `••` (마스킹됨)
+- Fixed / Expression 토글
+
+&quot;Enterprise plan users can pull in credentials from external vaults. More info&quot;
+
+상단: &quot;Need help filling out these fields? Open docs&quot;
+
+**Save** 버튼이 우측 상단에 있다.
+
+이는 OpenCode 서버를 로컬(127.0.0.1:4096)에서 실행하고, n8n에서 이 서버에 API로 접속하여 OpenCode의 기능을 n8n 워크플로우에서 활용할 수 있도록 설정하는 과정이다.
+
+![n8n OpenCode API 연결](screenshots/segment_023.jpg)
+
+---
+
+### 25. n8n에서 OpenCode 노드 설정 [47:43 - 49:42]
+
+n8n에서 OpenCode 노드의 상세 설정 화면:
+
+**Message 필드**: &quot;이 카피 내용을 조금더 단순하게 명료하게 개선해서 새로 저장해줘.&quot;
+
+**Model**: Google: Gemini 3 Flash (Antigravity) 선택
+
+**Simple Response**: Off (토글)
+
+**추가 옵션 드롭다운**:
+- Trim Response
+- Response Key
+- Reference Message ID
+- System Prompt
+- No Reply
+- Tools (JSON)
+
+좌측: &quot;No input data&quot; - Execute previous nodes to view input data
+우측: &quot;No output data&quot; - Execute step (또는 set mock data)
+
+&quot;💡 I wish this node would...&quot; (하단 피드백 링크)
+
+이는 n8n에서 OpenCode API를 통해 AI 모델에 메시지를 보내고, 카피 내용을 자동으로 개선하는 워크플로우를 구성하는 과정이다.
+
+![n8n OpenCode 노드 설정](screenshots/segment_024.jpg)
+
+---
+
+### 26. n8n에서 OpenCode 커맨드 실행 [49:42 - 51:41]
+
+n8n 워크플로우에서 OpenCode의 다양한 커맨드를 실행할 수 있는 화면:
+
+**OpenCode account** 연결 상태
+
+**Resource**: Message
+
+**Command 드롭다운** (사용 가능한 커맨드 목록):
+- **init** - create/update AGENTS.md
+- **review** - review changes [commit|branch|pr], defaults to uncommitted
+- **init-deep** - (builtin) Initialize hierarchical AGENTS.md knowledge base
+- **ralph-loop** - (builtin) Start self-referential development loop until completion
+- **cancel-ralph** - (builtin) Cancel active Ralph Loop
+
+**Command Arguments**: `{&quot;key&quot;: &quot;value&quot;}`
+
+**Reference Files**: Select (드롭다운)
+
+**Options** (추가 옵션)
+
+상단에 &quot;Execute workflow&quot; 실행 버튼과 빨간색 에러 표시가 보인다.
+
+이 화면은 n8n에서 OpenCode의 내장 커맨드(init, review, init-deep, ralph-loop, cancel-ralph)를 직접 호출할 수 있음을 보여준다. 특히 `ralph-loop`는 자기 참조적 개발 루프를 시작하는 고급 기능이다.
+
+![n8n 커맨드 실행](screenshots/segment_025.jpg)
+
+---
+
+### 27. AI 생성 이미지 - 마케팅 소재 [51:41 - 53:41]
+
+에이전트가 자동으로 생성한 **마케팅용 AI 이미지**가 표시된다:
+
+**생성된 이미지**: 29세 한국인 여성이 카페에서 노트북을 사용하며 Dante Coffee 브랜드 컵을 들고 있는 라이프스타일 사진. 전문적인 비즈니스 캐주얼 의상(검은 블레이저)을 입고 자연스럽게 미소 짓고 있다. 컵에는 &quot;Dante&quot; 로고가 필기체로 새겨져 있다.
+
+**파일 정보**: `gpt4o-image_a-stylish-29-year-old-korean-f_20260119_011021.png`
+경로: `~/workspace/dante-code/class/dante-coffee/assets/images/lifestyle/`
+
+**우측 코드 에디터 (마케팅 시나리오)**:</code></pre>
+<h2>Phase 6: 홍보 이미지 생성</h2>
+<h3>이미지 생성 프롬프트 (AI 이미지 생성)</h3>
+<ul>
+<li>단테커피 컵 (오른쪽 1/3)</li>
+<li>가격 비교 텍스트 (중앙)</li>
+</ul>
+<p>Text:</p>
+<ul>
+<li>&quot;스타벅스 맛&quot; (취소선)</li>
+<li>&quot;2,500원&quot; (크게 강조)</li>
+<li>&quot;월 9만원 절약!&quot;</li>
+</ul>
+<p>Colors: High contrast, yellow high...</p>
+<h3>브랜드 가이드라인 적용</h3>
+<p>Dante Coffee Identity</p>
+<p>Primary Color | Secondary | Accent</p>
+<p>□#3D2314    | ■#F9...</p>
+<p>|Dark Brown| |Cream Wh...|</p>
+<pre><code>
+**파일 구조**:
+- assets
+  - images/lifestyle (gpt4o-image_a-stylish-29-year-old-kore...)
+  - videos/lifestyle
+- data
+- reports
+- samples
+- tmp
+- AGENTS.md
+- dante-coffee-shorts-scripts-kim-jihyun.md
+
+![AI 생성 마케팅 이미지](screenshots/segment_026.jpg)
+
+---
+
+### 28. AI 생성 영상 및 OpenCode 서버 실행 [53:41 - 55:40]
+
+**AI가 생성한 동영상**이 재생 중이다:
+
+이전 세그먼트와 같은 29세 한국인 여성 모델이 Dante Coffee 컵을 들고 있는 라이프스타일 영상이다. 영상 길이는 **0:05** (5초)로 표시되어 있으며, 이는 Instagram Reels나 YouTube Shorts용 짧은 마케팅 영상으로 활용될 수 있다.
+
+**파일**: `marketer_lifestyle_kimjihyun_kling.mp4`
+경로: `assets &gt; videos &gt; lifestyle`
+
+**우측 코드 (마케팅 시나리오)**:
+Phase 6 홍보 이미지 생성 관련 브랜드 가이드라인이 계속 표시된다:
+- Dante Coffee Identity
+- Primary Color | Secondary | Accent
+- #3D2314 | #F9... (Dark Brown | Cream Wh...)
+
+**하단 터미널**:</code></pre>
+<p>(base) → dante-coffee OPENCODE_SERVER_USERNAME=dante OPENCODE_</p>
+<p>SERVER_PASSWORD=dante123 opencode serve --port 4096</p>
+<p>opencode server listening on http://127.0.0.1:4096</p>
+<p>□</p>
+<pre><code>
+그리고 우측에 n8n 관련 로그:</code></pre>
+<p>initializing n8n process</p>
+<p>onConnector&quot; | retry in 2048 s</p>
+<p>Try to activate workflow &quot;Figm... ent M</p>
+<p>25QXlw)</p>
+<p>Unrecognized node type: CUSTOM.figmationCommand...</p>
+<p>Activation of workflow &quot;Figmation (Component...</p>
+        <div class="footer">
+            Generated by VidDigest
+        </div>
+    </div>
+    <div class="lightbox" id="lightbox" onclick="this.classList.remove('active')">
+        <img id="lightbox-img" src="" alt="">
+    </div>
+    <script src="../../js/main.js"></script>
+</body>
+</html>
