@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>쿠팡 매출은 커지는데 내 통장은 계속 마이너스인 이유 l 당신이 곧 겪을 이야기 - VidDigest</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.8;
+            color: #1a1a2e;
+            background: #f8f9fa;
+        }
+        .header {
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: white;
+            padding: 48px 0 40px;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 28px;
+            font-weight: 700;
+            max-width: 800px;
+            margin: 0 auto 16px;
+            padding: 0 24px;
+            line-height: 1.4;
+        }
+        .header .meta {
+            font-size: 14px;
+            opacity: 0.85;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 0 24px;
+        }
+        .header .meta span {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+        }
+        h2 {
+            font-size: 22px;
+            font-weight: 700;
+            color: #302b63;
+            margin: 48px 0 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e8e8f0;
+        }
+        h3 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #24243e;
+            margin: 32px 0 14px;
+        }
+        h4 {
+            font-size: 16px;
+            font-weight: 600;
+            color: #444;
+            margin: 24px 0 10px;
+        }
+        p {
+            margin: 12px 0;
+            font-size: 15.5px;
+            color: #2c2c3e;
+        }
+        ul, ol {
+            margin: 12px 0;
+            padding-left: 28px;
+        }
+        li {
+            margin: 8px 0;
+            font-size: 15.5px;
+            color: #2c2c3e;
+        }
+        li strong {
+            color: #302b63;
+        }
+        blockquote {
+            margin: 20px 0;
+            padding: 16px 20px;
+            background: #f0f0f8;
+            border-left: 4px solid #302b63;
+            border-radius: 0 8px 8px 0;
+            font-size: 15px;
+            color: #444;
+        }
+        blockquote p {
+            margin: 4px 0;
+        }
+        .screenshot-container {
+            margin: 24px 0;
+            text-align: center;
+        }
+        .screenshot-container img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+            border: 1px solid #e0e0e8;
+        }
+        .screenshot-container .caption {
+            font-size: 13px;
+            color: #888;
+            margin-top: 8px;
+            font-style: italic;
+        }
+        code {
+            background: #eef;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-family: 'SF Mono', Menlo, Consolas, monospace;
+            color: #d63384;
+        }
+        pre {
+            background: #1e1e2e;
+            color: #cdd6f4;
+            padding: 20px;
+            border-radius: 10px;
+            overflow-x: auto;
+            margin: 16px 0;
+            font-size: 13.5px;
+            line-height: 1.6;
+        }
+        pre code {
+            background: none;
+            padding: 0;
+            color: inherit;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid #e0e0e8;
+            margin: 40px 0;
+        }
+        strong {
+            font-weight: 600;
+        }
+        .footer {
+            text-align: center;
+            padding: 32px 0;
+            font-size: 13px;
+            color: #999;
+            border-top: 1px solid #e8e8f0;
+            margin-top: 60px;
+        }
+        .screenshot-container img {
+            cursor: zoom-in;
+            transition: opacity 0.2s;
+        }
+        .screenshot-container img:hover {
+            opacity: 0.85;
+        }
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.85);
+            z-index: 9999;
+            cursor: zoom-out;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+        }
+        .lightbox.active {
+            display: flex;
+        }
+        .lightbox img {
+            max-width: 95vw;
+            max-height: 92vh;
+            border-radius: 8px;
+            box-shadow: 0 8px 40px rgba(0,0,0,0.5);
+            object-fit: contain;
+        }
+        @media (max-width: 600px) {
+            .header { padding: 32px 0 28px; }
+            .header h1 { font-size: 20px; padding: 0 16px; }
+            .header .meta { font-size: 12px; gap: 12px; padding: 0 16px; }
+            .container { padding: 24px 16px 60px; }
+            h2 { font-size: 19px; margin: 36px 0 16px; }
+            h3 { font-size: 16px; margin: 24px 0 12px; }
+            h4 { font-size: 15px; margin: 20px 0 8px; }
+            p, li { font-size: 14.5px; }
+            ul, ol { padding-left: 20px; }
+            blockquote { padding: 12px 14px; font-size: 14px; }
+            pre { padding: 14px; font-size: 12.5px; border-radius: 8px; }
+            code { font-size: 13px; }
+            .screenshot-container img { border-radius: 8px; }
+            hr { margin: 28px 0; }
+        }
+        @media (prefers-color-scheme: dark) {
+            body { background: #1a1a2e; color: #e0e0e8; }
+            h2 { color: #a8a4d6; border-bottom-color: #333; }
+            h3 { color: #c8c4e6; }
+            h4 { color: #b0b0c8; }
+            p, li { color: #d0d0e0; }
+            blockquote { background: #252540; border-left-color: #6c63ff; color: #c0c0d0; }
+            code { background: #2a2a4a; color: #f0a0c0; }
+            pre { background: #0d0d1a; }
+            hr { border-top-color: #333; }
+            .screenshot-container img { border-color: #333; }
+            .footer { border-top-color: #333; color: #666; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>쿠팡 매출은 커지는데 내 통장은 계속 마이너스인 이유 l 당신이 곧 겪을 이야기</h1>
+        <div class="meta">
+            <span>돈버는하마</span>
+            <span>11:38</span>
+            <span>20250526</span>
+        </div>
+    </div>
+    <div class="container">
+        <p>모든 스크린샷을 확인했습니다. 이제 종합 분석 보고서를 작성하겠습니다.</p>
+<blockquote><p><strong>채널</strong>: 돈버는하마 | <strong>길이</strong>: 11:38 | <strong>날짜</strong>: 20250526</p></blockquote>
+<h2>핵심 내용</h2>
+<ul>
+<li><strong>쿠팡 로켓그로스 판매에서 매출이 증가해도 통장 잔고가 마이너스가 되는 구조적 원인을 엑셀 시뮬레이션으로 상세 분석한다.</strong> 판매가 10,000원(VAT 포함) 상품을 매월 1,000개씩 꾸준히 팔아도, 정산 시차(2달 뒤 정산) 때문에 초기 4~5개월간 통장 잔고가 계속 마이너스를 기록하는 현실을 보여준다.</li>
+</ul>
+<ul>
+<li><strong>쿠팡 로켓그로스의 비용 구조를 완전 분해한다.</strong> 판매가에서 원가, 판매수수료(11.88%), 입출고배송비(2,150원), 부가세, 광고비(11%)를 모두 차감한 뒤 남는 마진율은 33%, 광고비까지 빼면 순마진율은 22%에 불과하다. 여기서 광고비는 별도로 매달 즉시 빠져나가는 비용이라 통장 잔고에 추가 타격을 준다.</li>
+</ul>
+<ul>
+<li><strong>정산 시차가 핵심 문제다.</strong> 1월에 팔아도 정산은 3월에 들어온다. 그 사이 원가(물건 매입비), 광고비는 매달 빠져나가므로 처음 2개월간은 정산금 0원인데 비용만 계속 나간다. 이 때문에 1개월 차에 -333만 원, 2개월 차에 -666만 원까지 마이너스가 누적된다.</li>
+</ul>
+<ul>
+<li><strong>마진율이 낮으면 통장이 플러스로 전환되는 시점이 더 늦어진다.</strong> 마진율 33%(순마진 22%) 기준으로 약 5개월 차에 겨우 플러스 전환되지만, 원가가 높아 마진율이 낮은 상품은 플러스 전환이 훨씬 더 오래 걸리거나 아예 전환되지 않을 수도 있다.</li>
+</ul>
+<ul>
+<li><strong>원가를 낮추면 상황이 극적으로 개선된다.</strong> 원가를 3,000원에서 2,000원으로 낮추면 마진율이 33%에서 42%로, 순마진이 22%에서 31%로 올라가고, 통장 마이너스 폭도 줄고 플러스 전환 시점도 빨라진다. 발표자는 순마진율 30% 이상을 권장한다.</li>
+</ul>
+<ul>
+<li><strong>쿠팡 윙(Coupang Wing) 정산 현황 페이지를 통해 실제 정산 구조를 확인하는 방법을 알려준다.</strong> 매출 상세내역, 판매수수료, 상계금액(쿠폰 등), 추가 상계금액(밀크런 이용역, 광고비, 정산 차감), 쿠팡 풀필먼트서비스 비용(입출고비, 배송비, 보관비, 반품 회수비, 반품 재입고비, 반출비, 바코드 부착비 등) 항목을 하나하나 설명한다.</li>
+</ul>
+<ul>
+<li><strong>온라인 판매 초보자들이 흔히 겪는 실수를 경고한다.</strong> 주변에서 &quot;쿠팡으로 돈 번다&quot;는 말을 듣고 뛰어들지만, 매출 규모만 보고 실제 순이익과 통장 잔고 흐름을 계산하지 않아 초기 자금난에 빠지는 경우가 많다.</li>
+</ul>
+<hr>
+<h2>상세 분석</h2>
+<h3>도입부: 온라인 판매의 현실 - &quot;제 주변에 온라인 판매를 하시는 분이&quot;</h3>
+<div class="screenshot-container"><img src="images/segment_000.jpg" alt="두 진행자가 사무실에서 대화하는 모습" loading="lazy"><div class="caption">두 진행자가 사무실에서 대화하는 모습</div></div>
+<p>영상은 남녀 두 진행자가 고층 사무실에서 대화하는 형식으로 시작된다. 자막에는 &quot;제 주변에 온라인 판매를 하시는 분이&quot;라는 텍스트가 보이며, 발표자(남성)가 자신의 주변에서 온라인 판매를 하는 사람들의 사례를 언급하며 이야기를 시작한다. 쿠팡에서 매출은 계속 올라가는데 정작 통장 잔고는 마이너스인 현상이 왜 발생하는지에 대한 의문을 제기하며 영상의 주제를 설정한다.</p>
+<h3>엑셀 시뮬레이션 준비: &quot;엑셀을 준비했습니다 여러분&quot;</h3>
+<div class="screenshot-container"><img src="images/segment_001.jpg" alt="진행자들이 엑셀을 준비했다고 말하는 장면" loading="lazy"><div class="caption">진행자들이 엑셀을 준비했다고 말하는 장면</div></div>
+<p>여성 진행자가 &quot;엑셀을 준비했습니다 여러분&quot;이라고 말하며, 이론적인 설명이 아닌 실제 숫자로 시뮬레이션을 보여주겠다고 선언한다. 이는 단순한 개념 설명이 아니라 구체적인 수치 기반의 분석이 될 것임을 예고한다.</p>
+<h3>로켓그로스 비용 구조 엑셀 분석표 소개</h3>
+<div class="screenshot-container"><img src="images/segment_002.jpg" alt="판매자로켓 엑셀 시뮬레이션 - 초기 설정" loading="lazy"><div class="caption">판매자로켓 엑셀 시뮬레이션 - 초기 설정</div></div>
+<p>화면에 &quot;판매자로켓&quot;이라는 제목의 엑셀 스프레드시트가 등장한다. 좌측에는 입력 항목이, 우측에는 월별(1~6개월) 시뮬레이션 결과가 표시된다.</p>
+<p><strong>좌측 입력 항목:</strong></p>
+<ul>
+<li>판매가(+VAT): 10,000원</li>
+<li>원가(+VAT): 3,000원</li>
+<li>판매수수료(+VAT): (아직 미입력)</li>
+<li>입출고배송비(+VAT): (아직 미입력)</li>
+<li>광고비(+VAT): (아직 미입력)</li>
+<li>월판매량: (아직 미입력)</li>
+</ul>
+<p><strong>우측 월별 시뮬레이션 항목:</strong></p>
+<ul>
+<li>매출, 원가, 판매수수료, 입출고배송비, 부가세, 마진, 광고비, 순마진, 정산금액, 내통장잔고</li>
+</ul>
+<p>자막에는 &quot;이거는 부가세 포함이니까&quot;라는 설명이 보이며, 모든 금액이 부가세(VAT) 포함 기준임을 명확히 한다. 하단에 &quot;로켓그로스&quot;와 &quot;계산기&quot; 두 개의 시트 탭이 보인다.</p>
+<h3>모든 비용 항목 입력 완료 - 월 1,000만 원 매출 시뮬레이션</h3>
+<div class="screenshot-container"><img src="images/segment_003.jpg" alt="모든 비용 항목이 입력된 엑셀" loading="lazy"><div class="caption">모든 비용 항목이 입력된 엑셀</div></div>
+<p>모든 항목이 입력된 완성된 엑셀이 표시된다.</p>
+<p><strong>입력된 비용 구조:</strong></p>
+<ul>
+<li>판매가(+VAT): 10,000원</li>
+<li>원가(+VAT): 3,000원</li>
+<li>판매수수료(+VAT): 11.88%</li>
+<li>입출고배송비(+VAT): 2,150원</li>
+<li>광고비(+VAT): 11.00%</li>
+<li>월판매량: 1,000개</li>
+<li>마진율: 33%</li>
+<li>순마진율: 22%</li>
+</ul>
+<p><strong>월별 시뮬레이션 결과 (매월 동일):</strong></p>
+<ul>
+<li>매출: 10,000,000원 (월 1천만 원)</li>
+<li>원가: 3,000,000원</li>
+<li>판매수수료: 1,188,000원</li>
+<li>입출고배송비: 2,150,000원</li>
+<li>부가세: 332,909원</li>
+<li>마진: 3,329,091원 (마진율 33%)</li>
+<li>광고비: 1,100,000원</li>
+<li>순마진: 2,229,091원 (순마진율 22%)</li>
+</ul>
+<p><strong>정산금액과 내통장잔고:</strong></p>
+<ul>
+<li>정산금액: 1~2개월 차 없음, 3개월 차부터 5,562,000원씩 정산</li>
+<li>내통장잔고: 1개월 차 -3,332,909원 → 2개월 차 -6,665,818원 → 3개월 차 -4,436,727원 → 4개월 차 -2,207,636원 → 5개월 차 21,455원 → 6개월 차 2,250,545원</li>
+</ul>
+<p>자막: &quot;이렇게&quot; - 비용 항목을 하나하나 채워넣은 결과가 이렇게 나온다는 것을 보여준다.</p>
+<h3>입출고배송비 설명</h3>
+<div class="screenshot-container"><img src="images/segment_004.jpg" alt="입출고배송비 항목 강조" loading="lazy"><div class="caption">입출고배송비 항목 강조</div></div>
+<p>엑셀에서 &quot;입출고배송비&quot; 행이 녹색으로 하이라이트되어 있다. 자막: &quot;그리고 나서 입출고 배송비&quot;. 발표자가 입출고배송비가 건당 2,150원이라는 점을 설명한다. 이는 쿠팡 풀필먼트 서비스를 이용할 때 물건이 입고되고 출고될 때, 그리고 배송될 때 드는 비용으로, 상품 하나당 고정적으로 발생하는 비용이다.</p>
+<h3>마진에서 빠지지 않은 것: 광고비</h3>
+<div class="screenshot-container"><img src="images/segment_005.jpg" alt="마진 행 강조 - &quot;여기서 안 뺀 게 뭐예요?&quot;" loading="lazy"><div class="caption">마진 행 강조 - &quot;여기서 안 뺀 게 뭐예요?&quot;</div></div>
+<p>마진 행(3,329,091원)이 녹색으로 하이라이트된다. 자막: &quot;여기서 안 뺀 게 뭐예요?&quot; 매출에서 원가, 판매수수료, 입출고배송비, 부가세를 빼면 마진 3,329,091원(33%)이 남는데, 여기서 아직 빠지지 않은 것이 바로 <strong>광고비</strong>라는 점을 짚는다. 광고비 1,100,000원을 추가로 빼면 순마진이 2,229,091원(22%)으로 줄어든다.</p>
+<h3>정산 시차의 핵심: &quot;2달 뒤 정산으로 설명 드립니다&quot;</h3>
+<div class="screenshot-container"><img src="images/segment_007.jpg" alt="정산 시차 설명 - 1월 판매, 3월 정산" loading="lazy"><div class="caption">정산 시차 설명 - 1월 판매, 3월 정산</div></div>
+<p>화면 하단에 중요한 설명이 등장한다: &quot;<em>쉬운 이해를 위해 2달 뒤 정산으로 설명 드립니다</em>&quot; 그리고 &quot;내가 1월달에 팔긴 팔았지만&quot;이라는 자막이 보인다. 엑셀의 정산금액 행과 내통장잔고 행이 주황색으로 강조되어 있다.</p>
+<p>핵심 포인트는 <strong>쿠팡 로켓그로스의 정산은 약 2개월 뒤에 이루어진다</strong>는 것이다. 1월에 물건을 팔아도 그 매출에 대한 정산금은 3월에야 입금된다. 그 사이 2개월 동안 원가(물건을 사입하는 비용)와 광고비는 매달 꾸준히 빠져나간다.</p>
+<h3>정산 전 통장 잔고: &quot;아직 정산을 못 받았거든&quot;</h3>
+<div class="screenshot-container"><img src="images/segment_008.jpg" alt="1~2개월 차 정산금 없음 강조" loading="lazy"><div class="caption">1~2개월 차 정산금 없음 강조</div></div>
+<p>엑셀에서 1~2개월 차의 정산금액이 비어 있는 것이 보인다. 자막: &quot;아직 정산을 못 받았거든&quot;. 정산금액 행의 G열(1개월)과 H열(2개월)이 공란이며, 3개월 차(I열)부터 5,562,000원이 입금되기 시작한다.</p>
+<p>이 2개월의 공백이 바로 통장이 마이너스가 되는 핵심 원인이다. 매달 원가 3,000,000원과 광고비 1,100,000원 등이 빠져나가는데, 정산은 들어오지 않으니 적자가 누적되는 것이다.</p>
+<h3>정산 공식과 통장 잔고 계산</h3>
+<div class="screenshot-container"><img src="images/segment_009.jpg" alt="정산 공식 표시 - =G4-G6-G7-G10" loading="lazy"><div class="caption">정산 공식 표시 - =G4-G6-G7-G10</div></div>
+<p>수식 바에 &quot;=G4-G6-G7-G10&quot;이라는 수식이 보인다. 자막: &quot;거기다가 제가 쿠팡에서 판매하느라&quot;. 이 수식은 정산금액을 계산하는 공식으로, 매출(G4)에서 판매수수료(G6), 입출고배송비(G7), 광고비(G10)를 차감한 금액이 정산으로 들어온다는 의미다.</p>
+<p>또한 내통장잔고 계산 수식 &quot;=-(I8+I5)+L14+I13&quot;도 보이는데, 이는 부가세와 원가를 빼고, 이전 달 잔고에 이번 달 정산금을 더하는 구조다.</p>
+<h3>3개월 차에도 여전히 마이너스: &quot;-400만 원이야&quot;</h3>
+<div class="screenshot-container"><img src="images/segment_009.jpg" alt="3개월 차 통장잔고 -4,436,727원" loading="lazy"><div class="caption">3개월 차 통장잔고 -4,436,727원</div></div>
+<p>자막: &quot;마이너스 400만 원이야&quot;. 3개월 차에 드디어 첫 정산금 5,562,000원이 들어오지만, 이미 2개월간 누적된 마이너스가 크기 때문에 통장잔고는 여전히 -4,436,727원이다. 이 수치가 빨간색으로 표시되어 있어 시각적으로도 위험 신호를 나타낸다.</p>
+<h3>5개월 이후 점진적 흑자 전환</h3>
+<div class="screenshot-container"><img src="images/segment_010.jpg" alt="7개월 차까지 확대된 엑셀 - 점차 흑자 전환" loading="lazy"><div class="caption">7개월 차까지 확대된 엑셀 - 점차 흑자 전환</div></div>
+<p>화면이 오른쪽으로 스크롤되어 7개월 차 이후까지 보인다. 자막: &quot;그때부터 이렇게 조금씩 쌓이게 돼 있어요&quot;.</p>
+<p><strong>내통장잔고 추이:</strong></p>
+<ul>
+<li>1개월: -3,332,909</li>
+<li>2개월: -6,665,818</li>
+<li>3개월: -4,436,727</li>
+<li>4개월: -2,207,636</li>
+<li>5개월: 21,455 (드디어 플러스 전환!)</li>
+<li>6개월: 2,250,545</li>
+<li>7개월: 4,479,636</li>
+<li>8개월: 6,708,727</li>
+<li>9개월: 8,937,818</li>
+<li>10개월: 11,166,909</li>
+<li>11개월: 13,396,000</li>
+</ul>
+<p>5개월 차에 겨우 21,455원으로 플러스에 진입하고, 이후부터 매달 약 220만 원씩 쌓여간다.</p>
+<h3>12개월 전체 시뮬레이션: &quot;(모든 비용) 나가면 이 정도 남는데&quot;</h3>
+<div class="screenshot-container"><img src="images/segment_011.jpg" alt="12개월 전체 시뮬레이션 결과" loading="lazy"><div class="caption">12개월 전체 시뮬레이션 결과</div></div>
+<p>12개월까지 확장된 시뮬레이션이 보인다. 자막: &quot;(모든 비용) 나가면 이 정도 남는데&quot;. 수식 바에 &quot;=G9-G10&quot; (마진 - 광고비 = 순마진)이 표시된다.</p>
+<p><strong>12개월 차까지의 순마진 행:</strong> 모두 2,229,091원으로 동일하다. 매달 순마진은 같지만, 정산 시차 때문에 실제 통장에 쌓이는 속도는 다르다.</p>
+<p><strong>내통장잔고 추이 (계속):</strong></p>
+<ul>
+<li>12개월: 15,625,091</li>
+<li>(이후 계속 증가)</li>
+</ul>
+<p>연간 총 순마진은 약 2,229,091원 x 12 = 약 2,675만 원이지만, 초기 5개월간의 마이너스 기간을 버텨야 한다는 것이 핵심이다.</p>
+<h3>쿠폰, 할인 등 추가 비용 요소</h3>
+<div class="screenshot-container"><img src="images/segment_012.jpg" alt="쿠폰 할인 관련 대화" loading="lazy"><div class="caption">쿠폰 할인 관련 대화</div></div>
+<p>자막: &quot;쿠폰 얼마짜리 달고 팔고 있고&quot;. 발표자가 추가적으로 고려해야 할 비용 요소들을 언급한다. 쿠팡에서 판매할 때 쿠폰(즉시할인쿠폰, 다운로드쿠폰)을 달아서 팔게 되면, 그 쿠폰 금액만큼 실제 수입이 줄어든다. 앞서 보여준 엑셀 시뮬레이션은 쿠폰 비용을 포함하지 않은 것이므로, 실제로는 더 나쁜 결과가 나올 수 있다.</p>
+<h3>쿠팡 윙(Coupang Wing) 정산 현황 확인 방법</h3>
+<div class="screenshot-container"><img src="images/segment_013.jpg" alt="쿠팡 윙 정산 메뉴" loading="lazy"><div class="caption">쿠팡 윙 정산 메뉴</div></div>
+<p>실제 쿠팡 윙(Coupang Wing) 판매자 페이지가 화면에 보인다. 자막: &quot;여러분들 [정산] - [로켓 그로스 정산 현황]&quot;. 좌측 메뉴에서 다음 항목들이 보인다:</p>
+<ul>
+<li>상품관리</li>
+<li>판매 성장</li>
+<li>가격관리</li>
+<li><strong>로켓그로스</strong></li>
+<li>주문/배송</li>
+<li><strong>정산</strong> (펼쳐진 상태)</li>
+<li><strong>로켓그로스 정산현황</strong> (빨간 박스로 강조)</li>
+<li>정산 현황</li>
+<li>매출내역</li>
+<li>셀러월렛 빠른정산</li>
+<li>부가세 신고내역</li>
+<li>우대수수료 환급조회</li>
+<li>매입 세금계산서</li>
+<li>매출(위수탁) 세금계산서</li>
+<li>보유목록</li>
+<li>추가지급</li>
+<li>라이브 정산현황</li>
+</ul>
+<p>발표자는 판매자들이 [정산] &gt; [로켓그로스 정산현황]에서 자신의 정산 내역을 확인할 수 있다고 안내한다.</p>
+<h3>정산 리포트 목록 및 매출 상세내역</h3>
+<div class="screenshot-container"><img src="images/segment_014.jpg" alt="정산 리포트 목록 및 매출 상세내역" loading="lazy"><div class="caption">정산 리포트 목록 및 매출 상세내역</div></div>
+<p>정산 리포트 목록이 총 2건 표시된다:</p>
+<ul>
+<li>정산일 2025-03-31 / 정산유형: 월별 / 지급비율: 100 / 매출인식일: 2025-02-01~2025-02-28</li>
+<li>정산일 2025-04-28 / 정산유형: 월별 / 지급비율: 100 / 매출인식일: 2025-03-01~2025-03-31</li>
+</ul>
+<p>자막: &quot;그럼 너 이거 매출 이건데&quot;. 하단에 <strong>매출 상세내역</strong>이 보인다:</p>
+<ul>
+<li><strong>매출금액 (A)</strong>: 판매액 (a), 취소액 (b), 소계 (a-b)</li>
+<li><strong>판매수수료 (B)</strong></li>
+<li><strong>상계금액 (C)</strong>: 판매자할인쿠폰 (ㄴ 즉시할인쿠폰, ㄴ 다운로드쿠폰), 소계</li>
+<li><strong>판매기준 매출액 (A-B-C-D)</strong></li>
+</ul>
+<p>이 화면에서 실제 정산 구조를 확인할 수 있다. 2월 매출의 정산이 3월 31일에, 3월 매출의 정산이 4월 28일에 이루어짐을 보여준다.</p>
+<h3>추가 상계금액과 쿠팡 풀필먼트서비스 비용 상세</h3>
+<div class="screenshot-container"><img src="images/segment_015.jpg" alt="추가 상계금액 및 풀필먼트서비스 비용" loading="lazy"><div class="caption">추가 상계금액 및 풀필먼트서비스 비용</div></div>
+<p>정산 상세 내역의 하단 부분이 보인다. 자막: &quot;그다음에 이제부터 우리가 내야 되는&quot;.</p>
+<ul>
+<li><strong>지급액 (H)</strong>: 정산대상액의 100%</li>
+<li><strong>추가 상계금액 (I)</strong>:</li>
+<li>밀크런 이용역 (c)</li>
+<li>광고비 (d)</li>
+<li>정산 차감 (e)</li>
+<li>소계 (c+d+e)</li>
+<li><strong>쿠팡 풀필먼트서비스 비용 (J)</strong>: <em>본 비용은 '쿠팡풀필먼트서비스'에서 청구하는 비용</em></li>
+<li>전체 비용 (f):</li>
+<li>ㄴ 입출고비</li>
+<li>ㄴ 배송비</li>
+<li>ㄴ 보관비</li>
+<li>ㄴ 반품 회수비</li>
+<li>ㄴ 반품 재입고비</li>
+<li>ㄴ 반출비</li>
+<li>ㄴ 바코드 부착비</li>
+<li>ㄴ 지난 정산 미납 비용</li>
+</ul>
+<p>발표자는 이것이 우리(판매자)가 내야 하는 비용들이라고 설명한다.</p>
+<h3>최종 지급액 계산 구조</h3>
+<div class="screenshot-container"><img src="images/segment_016.jpg" alt="최종 지급액 공식" loading="lazy"><div class="caption">최종 지급액 공식</div></div>
+<p>자막: &quot;정리한 내용이랑 맞는지 맞춰봐야 돼요&quot;. 추가 항목들이 보인다:</p>
+<ul>
+<li>기납부된 비용</li>
+<li><strong>다음 정산으로 이월 (g)</strong></li>
+<li><strong>이번 정산 비용 (f-g)</strong></li>
+<li><strong>재고 손실 보상 (K)</strong></li>
+<li><strong>최종지급액 (H-I-J+K)</strong></li>
+</ul>
+<p>최종지급액은 정산대상액에서 추가 상계금액(광고비 등)과 쿠팡 풀필먼트서비스 비용을 빼고, 재고 손실 보상이 있으면 더해서 산출된다. 발표자는 엑셀에서 정리한 내용과 실제 쿠팡 윙의 정산 내역이 맞는지 대조해봐야 한다고 강조한다.</p>
+<h3>돈이 떨어지는 구조적 문제</h3>
+<div class="screenshot-container"><img src="images/segment_017.jpg" alt="발표자 - &quot;저한테 이제 돈이 떨어지는 거잖아요&quot;" loading="lazy"><div class="caption">발표자 - &quot;저한테 이제 돈이 떨어지는 거잖아요&quot;</div></div>
+<p>자막: &quot;저한테 이제 돈이 떨어지는 거잖아요&quot;. 발표자가 카메라를 향해 직접적으로 말한다. 매출이 잘 나와도, 정산 시차와 선지출 비용(원가 매입, 광고비) 때문에 초기에는 불가피하게 돈이 떨어지는 구조라는 것을 강조한다.</p>
+<h3>기본 시뮬레이션으로 복귀: &quot;그래도 이건 똑같아요&quot;</h3>
+<div class="screenshot-container"><img src="images/segment_019.jpg" alt="기본 엑셀로 복귀 - 마진율 33%, 순마진 22%" loading="lazy"><div class="caption">기본 엑셀로 복귀 - 마진율 33%, 순마진 22%</div></div>
+<p>다시 엑셀 시뮬레이션으로 돌아온다. 자막: &quot;그래도 이건 똑같아요&quot;. 기본 설정(판매가 10,000원, 원가 3,000원)에서 마진율 33%, 순마진율 22%인 상태가 변하지 않는다는 것을 보여준다. 수식 바에 &quot;=IFERROR(G9/G4,0)&quot; (마진/매출 = 마진율)이 표시된다.</p>
+<h3>원가를 낮춘 시뮬레이션: 마진율 42%, 순마진 31%</h3>
+<div class="screenshot-container"><img src="images/segment_019.jpg" alt="원가 2,000원으로 변경 시 마진율 42%" loading="lazy"><div class="caption">원가 2,000원으로 변경 시 마진율 42%</div></div>
+<p>원가를 3,000원에서 <strong>2,000원</strong>으로 변경한 시뮬레이션이 보인다. 자막: &quot;(마진율) 42%짜리&quot;.</p>
+<p><strong>변경된 수치:</strong></p>
+<ul>
+<li>원가(+VAT): 2,000원 (기존 3,000원)</li>
+<li>마진율: <strong>42%</strong> (기존 33%)</li>
+<li>순마진율: <strong>31%</strong> (기존 22%)</li>
+<li>마진: 4,238,182원 (기존 3,329,091원)</li>
+<li>순마진: 3,138,182원 (기존 2,229,091원)</li>
+</ul>
+<p><strong>변경된 내통장잔고 추이:</strong></p>
+<ul>
+<li>1개월: -2,423,818 (기존 -3,332,909)</li>
+<li>2개월: -4,847,636 (기존 -6,665,818)</li>
+<li>3개월: -1,709,455 (기존 -4,436,727)</li>
+<li>4개월: 1,428,727 (기존 -2,207,636) - <strong>4개월 만에 흑자!</strong></li>
+<li>5개월: 4,566,909 (기존 21,455)</li>
+</ul>
+<p>원가를 1,000원만 낮춰도 흑자 전환이 5개월에서 4개월로 1달 앞당겨지고, 마이너스 폭도 크게 줄어든다.</p>
+<h3>순마진율 30% 기준 제시: &quot;제 기준 마진율 30%입니다&quot;</h3>
+<div class="screenshot-container"><img src="images/segment_020.jpg" alt="순마진율 22% 강조 - &quot;제 기준 마진율 30%입니다&quot;" loading="lazy"><div class="caption">순마진율 22% 강조 - &quot;제 기준 마진율 30%입니다&quot;</div></div>
+<p>자막: &quot;제 기준 마진율 30%입니다&quot;. 수식 바에 &quot;=IFERROR(G11/G4,0)&quot;이 보이며, 순마진율(E11 셀)이 22%로 표시된 엑셀이 다시 보인다. 발표자는 자신의 기준으로 <strong>순마진율 30% 이상</strong>이 되어야 안정적으로 사업을 운영할 수 있다고 권고한다.</p>
+<h3>매출 규모를 키우려면 더 많은 초기 자금이 필요</h3>
+<div class="screenshot-container"><img src="images/segment_021.jpg" alt="발표자 - &quot;이런 얘기입니다&quot;" loading="lazy"><div class="caption">발표자 - &quot;이런 얘기입니다&quot;</div></div>
+<p>자막: &quot;이런 얘기입니다&quot;. 발표자가 핵심 메시지를 전달한다.</p>
+<h3>높은 매출의 이면: &quot;내가 높은 매출을 내려면&quot;</h3>
+<div class="screenshot-container"><img src="images/segment_022.jpg" alt="발표자 - &quot;내가 높은 매출을 내려면&quot;" loading="lazy"><div class="caption">발표자 - &quot;내가 높은 매출을 내려면&quot;</div></div>
+<p>자막: &quot;내가 높은 매출을 내려면&quot;. 높은 매출을 올리려면 그만큼 더 많은 물건을 매입해야 하고(원가 지출 증가), 더 많은 광고비를 써야 하므로, 초기 마이너스 폭이 더 커진다. 월 1,000만 원 매출 기준으로도 최대 -666만 원까지 마이너스가 되는데, 월 5,000만 원, 1억 원 매출을 목표로 하면 초기 필요 자금은 기하급수적으로 늘어난다.</p>
+<h3>로켓그로스의 구조적 특성</h3>
+<div class="screenshot-container"><img src="images/segment_023.jpg" alt="발표자 - &quot;로켓 그로스이기 때문에&quot;" loading="lazy"><div class="caption">발표자 - &quot;로켓 그로스이기 때문에&quot;</div></div>
+<p>자막: &quot;로켓 그로스이기 때문에&quot;. 로켓그로스는 쿠팡이 물류를 대행해주는 시스템이므로 입출고배송비 등의 물류 비용이 고정적으로 발생한다. 이 구조적 특성 때문에 일반 판매(마켓플레이스)와는 비용 구조가 다르다는 점을 설명한다.</p>
+<h3>&quot;아, 어렵지 않다?&quot;</h3>
+<div class="screenshot-container"><img src="images/segment_024.jpg" alt="발표자 - &quot;아, 어렵지 않다?&quot;" loading="lazy"><div class="caption">발표자 - &quot;아, 어렵지 않다?&quot;</div></div>
+<p>자막: &quot;아, 어렵지 않다?&quot;. 발표자가 시청자들에게 이 내용이 생각보다 어렵지 않다는 점을 강조하며, 반드시 이해하고 사업을 시작해야 한다는 메시지를 전달한다.</p>
+<h3>전체 시뮬레이션 복습: &quot;그냥 내가 아는 수준으로만 말해볼게요&quot;</h3>
+<div class="screenshot-container"><img src="images/segment_026.jpg" alt="12개월 전체 시뮬레이션 다시 보기" loading="lazy"><div class="caption">12개월 전체 시뮬레이션 다시 보기</div></div>
+<p>다시 12개월 전체 시뮬레이션이 화면에 보인다. 자막: &quot;그냥 내가 아는 수준으로만 말해볼게요&quot;.</p>
+<p><strong>12개월 전체 내통장잔고 추이 (최종):</strong></p>
+<ul>
+<li>1개월: -3,332,909</li>
+<li>2개월: -6,665,818</li>
+<li>3개월: -4,436,727</li>
+<li>4개월: -2,207,636</li>
+<li>5개월: 21,455</li>
+<li>6개월: 2,250,545</li>
+<li>7개월: 4,479,636</li>
+<li>8개월: 6,708,727</li>
+<li>9개월: 8,937,818</li>
+<li>10개월: 11,166,909</li>
+<li>11개월: 13,396,000</li>
+<li>12개월: 15,625,091</li>
+</ul>
+<p>수식 바에 &quot;=G9-G10&quot;이 보이며, 순마진 계산이 마진에서 광고비를 빼는 것임을 재확인한다.</p>
+<h3>&quot;1천만 원 버는 사람 부러워&quot;</h3>
+<div class="screenshot-container"><img src="images/segment_027.jpg" alt="12개월 시뮬레이션 - &quot;1천만 원 버는 사람 부러워&quot;" loading="lazy"><div class="caption">12개월 시뮬레이션 - &quot;1천만 원 버는 사람 부러워&quot;</div></div>
+<p>자막: &quot;1천만 원 버는 사람 부러워&quot;. 12개월간 월 1,000만 원 매출을 꾸준히 올리면 12개월 차에 통장잔고가 약 1,562만 원 정도 된다. 하지만 이것은 월 순수익이 약 222만 원이라는 뜻이고, 월 1,000만 원 매출(연 1.2억 매출)을 올리는 것 자체가 쉽지 않다는 현실을 지적한다.</p>
+<h3>근무 시간과 노동 강도에 대한 질문</h3>
+<div class="screenshot-container"><img src="images/segment_028.jpg" alt="여성 진행자 - &quot;그럼 지금은 몇 시간 일하세요?&quot;" loading="lazy"><div class="caption">여성 진행자 - &quot;그럼 지금은 몇 시간 일하세요?&quot;</div></div>
+<p>자막: &quot;그럼 지금은 몇 시간 일하세요?&quot;. 여성 진행자가 온라인 판매 업무의 노동 강도에 대해 질문한다. 매출 1,000만 원을 올리기 위해 실제로 얼마나 많은 시간을 일해야 하는지, 단순히 숫자만으로는 보이지 않는 노동의 현실을 짚는다.</p>
+<h3>착각의 위험: &quot;내 주변에 있으니까 내가 잘 됐겠어&quot;</h3>
+<div class="screenshot-container"><img src="images/segment_029.jpg" alt="발표자 - &quot;내 주변에 있으니까 내가 잘 됐겠어&quot;" loading="lazy"><div class="caption">발표자 - &quot;내 주변에 있으니까 내가 잘 됐겠어&quot;</div></div>
+<p>자막: &quot;내 주변에 있으니까 내가 잘 됐겠어&quot;. 발표자가 주변에서 쿠팡 판매로 성공한 사람을 보고 자신도 잘 될 것이라고 착각하는 위험성을 경고한다. 실제 비용 구조와 정산 시차를 이해하지 못한 채 사업을 시작하면 초기 자금난에 빠질 수 있다.</p>
+<h3>마무리: 감사 인사</h3>
+<div class="screenshot-container"><img src="images/segment_029.jpg" alt="두 진행자 합장 - &quot;감사합니다&quot;" loading="lazy"><div class="caption">두 진행자 합장 - &quot;감사합니다&quot;</div></div>
+<p>자막: &quot;감사합니다&quot;. 두 진행자가 합장하며 감사 인사를 하고, 영상의 본 내용을 마무리한다.</p>
+<h3>엔딩 화면</h3>
+<div class="screenshot-container"><img src="images/segment_030.jpg" alt="엔딩 - 구독 부탁드려요" loading="lazy"><div class="caption">엔딩 - 구독 부탁드려요</div></div>
+<p>검은 배경에 &quot;오늘 영상이 좋으셨다면 <strong>구독 부탁드려요!</strong>&quot;라는 텍스트가 표시되며 영상이 종료된다.</p>
+<hr>
+<h2>주요 인용 및 발언</h2>
+<blockquote><p>&quot;제 주변에 온라인 판매를 하시는 분이...&quot;</p></blockquote>
+<blockquote><p>&quot;엑셀을 준비했습니다 여러분&quot;</p></blockquote>
+<blockquote><p>&quot;이거는 부가세 포함이니까&quot;</p></blockquote>
+<blockquote><p>&quot;그리고 나서 입출고 배송비&quot;</p></blockquote>
+<blockquote><p>&quot;여기서 안 뺀 게 뭐예요?&quot; (마진에서 광고비가 빠지지 않았음을 지적)</p></blockquote>
+<blockquote><p>&quot;내가 1월달에 팔긴 팔았지만&quot; (정산이 2달 뒤에 온다는 핵심 설명)</p></blockquote>
+<blockquote><p>&quot;아직 정산을 못 받았거든&quot;</p></blockquote>
+<blockquote><p>&quot;마이너스 400만 원이야&quot; (3개월 차에도 여전히 적자)</p></blockquote>
+<blockquote><p>&quot;그때부터 이렇게 조금씩 쌓이게 돼 있어요&quot; (5개월 차 이후 흑자)</p></blockquote>
+<blockquote><p>&quot;(모든 비용) 나가면 이 정도 남는데&quot;</p></blockquote>
+<blockquote><p>&quot;쿠폰 얼마짜리 달고 팔고 있고&quot; (추가 비용 요소)</p></blockquote>
+<blockquote><p>&quot;여러분들 [정산] - [로켓 그로스 정산 현황]&quot; (쿠팡 윙 확인 방법)</p></blockquote>
+<blockquote><p>&quot;그다음에 이제부터 우리가 내야 되는&quot; (풀필먼트 비용 설명)</p></blockquote>
+<blockquote><p>&quot;정리한 내용이랑 맞는지 맞춰봐야 돼요&quot;</p></blockquote>
+<blockquote><p>&quot;저한테 이제 돈이 떨어지는 거잖아요&quot;</p></blockquote>
+<blockquote><p>&quot;(마진율) 42%짜리&quot; (원가를 낮추면 마진율이 크게 개선)</p></blockquote>
+<blockquote><p>&quot;제 기준 마진율 30%입니다&quot; (순마진율 30% 이상 권장)</p></blockquote>
+<blockquote><p>&quot;내가 높은 매출을 내려면&quot; (매출이 클수록 초기 자금 부담 증가)</p></blockquote>
+<blockquote><p>&quot;로켓 그로스이기 때문에&quot;</p></blockquote>
+<blockquote><p>&quot;아, 어렵지 않다?&quot;</p></blockquote>
+<blockquote><p>&quot;1천만 원 버는 사람 부러워&quot;</p></blockquote>
+<blockquote><p>&quot;그럼 지금은 몇 시간 일하세요?&quot;</p></blockquote>
+<blockquote><p>&quot;내 주변에 있으니까 내가 잘 됐겠어&quot; (착각의 위험 경고)</p></blockquote>
+<hr>
+<h2>결론 및 시사점</h2>
+<p><strong>핵심 메시지:</strong> 쿠팡 로켓그로스에서 매출이 커져도 통장이 마이너스인 이유는 <strong>정산 시차(약 2개월)</strong>와 <strong>선지출 비용 구조</strong> 때문이다. 매달 원가와 광고비는 즉시 빠져나가는데, 정산금은 2개월 뒤에야 들어오기 때문에 초기 몇 개월간 불가피하게 통장이 마이너스 상태를 유지한다.</p>
+<p><strong>실용적 시사점:</strong></p>
+<ol>
+<li><strong>초기 자금 준비가 필수적이다.</strong> 월 1,000만 원 매출 기준으로도 최대 약 670만 원의 마이너스를 감당할 수 있는 여유 자금이 필요하다. 매출 목표가 더 크다면 초기 필요 자금도 비례해서 커진다.</li>
+</ol>
+<ol>
+<li><strong>순마진율 30% 이상의 상품을 선정해야 한다.</strong> 마진율이 낮으면 흑자 전환 시점이 늦어지고, 초기 마이너스 폭도 커진다. 발표자는 순마진율 30%를 최소 기준으로 제시한다.</li>
+</ol>
+<ol>
+<li><strong>원가 절감이 수익성 개선의 핵심이다.</strong> 원가를 3,000원에서 2,000원으로 1,000원만 낮춰도 순마진율이 22%에서 31%로 올라가고, 흑자 전환이 1개월 앞당겨진다.</li>
+</ol>
+<ol>
+<li><strong>보이지 않는 비용을 모두 고려해야 한다.</strong> 판매수수료(11.88%), 입출고배송비(건당 2,150원), 광고비(11%), 부가세 외에도 쿠폰 비용, 반품 비용, 보관비, 바코드 부착비 등 다양한 숨은 비용이 존재한다.</li>
+</ol>
+<ol>
+<li><strong>쿠팡 윙의 정산 현황을 반드시 확인하고 엑셀로 관리해야 한다.</strong> 감으로 사업하지 말고, 실제 정산 내역과 자신의 비용 계산을 정기적으로 대조해봐야 한다.</li>
+</ol>
+<ol>
+<li><strong>&quot;매출 = 수익&quot;이라는 착각을 경계해야 한다.</strong> 월 1,000만 원 매출을 올려도 실제 순수익은 약 222만 원에 불과하며, 그마저도 5개월 이후에야 통장에 실질적으로 쌓이기 시작한다.</li>
+</ol>
+<ol>
+<li><strong>주변의 성공 사례만 보고 뛰어들면 안 된다.</strong> 비용 구조, 정산 시차, 필요 자금, 노동 강도를 충분히 이해한 뒤에 사업을 시작해야 한다.</li>
+</ol>
+
+        <div class="footer">
+            Generated by VidDigest
+        </div>
+    </div>
+    <div class="lightbox" id="lightbox" onclick="this.classList.remove('active')">
+        <img id="lightbox-img" src="" alt="">
+    </div>
+    <script>
+        document.querySelectorAll('.screenshot-container img').forEach(function(img) {
+            img.addEventListener('click', function() {
+                var lb = document.getElementById('lightbox');
+                document.getElementById('lightbox-img').src = this.src;
+                lb.classList.add('active');
+            });
+        });
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') document.getElementById('lightbox').classList.remove('active');
+        });
+    </script>
+</body>
+</html>

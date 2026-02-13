@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listing a Product for Items Not Requiring KC - VidDigest</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.8;
+            color: #1a1a2e;
+            background: #f8f9fa;
+        }
+        .header {
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: white;
+            padding: 48px 0 40px;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 28px;
+            font-weight: 700;
+            max-width: 800px;
+            margin: 0 auto 16px;
+            padding: 0 24px;
+            line-height: 1.4;
+        }
+        .header .meta {
+            font-size: 14px;
+            opacity: 0.85;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 0 24px;
+        }
+        .header .meta span {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+        }
+        h2 {
+            font-size: 22px;
+            font-weight: 700;
+            color: #302b63;
+            margin: 48px 0 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e8e8f0;
+        }
+        h3 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #24243e;
+            margin: 32px 0 14px;
+        }
+        h4 {
+            font-size: 16px;
+            font-weight: 600;
+            color: #444;
+            margin: 24px 0 10px;
+        }
+        p {
+            margin: 12px 0;
+            font-size: 15.5px;
+            color: #2c2c3e;
+        }
+        ul, ol {
+            margin: 12px 0;
+            padding-left: 28px;
+        }
+        li {
+            margin: 8px 0;
+            font-size: 15.5px;
+            color: #2c2c3e;
+        }
+        li strong {
+            color: #302b63;
+        }
+        blockquote {
+            margin: 20px 0;
+            padding: 16px 20px;
+            background: #f0f0f8;
+            border-left: 4px solid #302b63;
+            border-radius: 0 8px 8px 0;
+            font-size: 15px;
+            color: #444;
+        }
+        blockquote p {
+            margin: 4px 0;
+        }
+        .screenshot-container {
+            margin: 24px 0;
+            text-align: center;
+        }
+        .screenshot-container img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+            border: 1px solid #e0e0e8;
+        }
+        .screenshot-container .caption {
+            font-size: 13px;
+            color: #888;
+            margin-top: 8px;
+            font-style: italic;
+        }
+        code {
+            background: #eef;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-family: 'SF Mono', Menlo, Consolas, monospace;
+            color: #d63384;
+        }
+        pre {
+            background: #1e1e2e;
+            color: #cdd6f4;
+            padding: 20px;
+            border-radius: 10px;
+            overflow-x: auto;
+            margin: 16px 0;
+            font-size: 13.5px;
+            line-height: 1.6;
+        }
+        pre code {
+            background: none;
+            padding: 0;
+            color: inherit;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid #e0e0e8;
+            margin: 40px 0;
+        }
+        strong {
+            font-weight: 600;
+        }
+        .footer {
+            text-align: center;
+            padding: 32px 0;
+            font-size: 13px;
+            color: #999;
+            border-top: 1px solid #e8e8f0;
+            margin-top: 60px;
+        }
+        .screenshot-container img {
+            cursor: zoom-in;
+            transition: opacity 0.2s;
+        }
+        .screenshot-container img:hover {
+            opacity: 0.85;
+        }
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.85);
+            z-index: 9999;
+            cursor: zoom-out;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+        }
+        .lightbox.active {
+            display: flex;
+        }
+        .lightbox img {
+            max-width: 95vw;
+            max-height: 92vh;
+            border-radius: 8px;
+            box-shadow: 0 8px 40px rgba(0,0,0,0.5);
+            object-fit: contain;
+        }
+        @media (max-width: 600px) {
+            .header { padding: 32px 0 28px; }
+            .header h1 { font-size: 20px; padding: 0 16px; }
+            .header .meta { font-size: 12px; gap: 12px; padding: 0 16px; }
+            .container { padding: 24px 16px 60px; }
+            h2 { font-size: 19px; margin: 36px 0 16px; }
+            h3 { font-size: 16px; margin: 24px 0 12px; }
+            h4 { font-size: 15px; margin: 20px 0 8px; }
+            p, li { font-size: 14.5px; }
+            ul, ol { padding-left: 20px; }
+            blockquote { padding: 12px 14px; font-size: 14px; }
+            pre { padding: 14px; font-size: 12.5px; border-radius: 8px; }
+            code { font-size: 13px; }
+            .screenshot-container img { border-radius: 8px; }
+            hr { margin: 28px 0; }
+        }
+        @media (prefers-color-scheme: dark) {
+            body { background: #1a1a2e; color: #e0e0e8; }
+            h2 { color: #a8a4d6; border-bottom-color: #333; }
+            h3 { color: #c8c4e6; }
+            h4 { color: #b0b0c8; }
+            p, li { color: #d0d0e0; }
+            blockquote { background: #252540; border-left-color: #6c63ff; color: #c0c0d0; }
+            code { background: #2a2a4a; color: #f0a0c0; }
+            pre { background: #0d0d1a; }
+            hr { border-top-color: #333; }
+            .screenshot-container img { border-color: #333; }
+            .footer { border-top-color: #333; color: #666; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Listing a Product for Items Not Requiring KC</h1>
+        <div class="meta">
+            <span>Coupang Seller Education</span>
+            <span>7:04</span>
+            <span>20210908</span>
+        </div>
+    </div>
+    <div class="container">
+        <p>이제 모든 스크린샷을 확인했습니다. 자막이 없는 영상이므로 스크린샷의 시각적 정보를 기반으로 상세한 분석 보고서를 작성하겠습니다.</p>
+<blockquote><p><strong>채널</strong>: Coupang Seller Education | <strong>길이</strong>: 7:04 | <strong>날짜</strong>: 20210908</p></blockquote>
+<h2>핵심 내용</h2>
+<ul>
+<li><strong>KC 인증이 불필요한 상품의 쿠팡 Wing 등록 전 과정을 단계별로 시연하는 교육 영상이다.</strong> 쿠팡 셀러 교육 채널에서 제공하는 이 영상은 해외 셀러가 쿠팡 마켓플레이스에 KC(한국적합성인증) 인증이 필요하지 않은 상품을 등록하는 전체 프로세스를 Coupang Wing 셀러 포털을 통해 실시간으로 보여준다.</li>
+</ul>
+<ul>
+<li><strong>상품 등록은 배송 유형 선택, 상품명 입력, 카테고리 선택, 옵션 설정, 이미지 업로드, 상세 설명, 핵심 상품 정보, 키워드, 상품 정보 고시, 배송 정보, 반품/교환 정보 등 다수의 섹션으로 구성되어 있다.</strong> 각 섹션은 필수 입력 항목(빨간 점으로 표시)과 선택 항목으로 나뉘며, 빠짐없이 정확하게 입력해야 상품이 성공적으로 등록된다.</li>
+</ul>
+<ul>
+<li><strong>배송 유형은 세 가지 중 선택할 수 있다.</strong> &quot;I will ship this item myself (Fulfilled by Seller)&quot;, &quot;Coupang Global Fulfillment (CGF)&quot;, &quot;CGF LITE&quot; 옵션이 제공되며, 이 영상에서는 셀러가 직접 배송하는 &quot;Fulfilled by Seller&quot; 옵션을 선택하여 진행한다.</li>
+</ul>
+<ul>
+<li><strong>옵션 설정에서는 색상(color) 등의 옵션명과 옵션값을 입력하고, 각 옵션별로 원가, 판매가, 재고수량 등을 개별 관리할 수 있다.</strong> 예시로 &quot;color&quot; 옵션명에 &quot;green, white&quot;를 쉼표로 구분하여 입력하면 자동으로 옵션 리스트가 생성되는 과정을 보여준다.</li>
+</ul>
+<ul>
+<li><strong>인증 정보(Certification information) 항목에서 &quot;Certification/reporting not required&quot;를 선택하는 것이 이 영상의 핵심이다.</strong> KC 인증이 필요하지 않은 상품의 경우 이 옵션을 선택함으로써 인증서 없이도 상품을 등록할 수 있다.</li>
+</ul>
+<ul>
+<li><strong>배송 섹션에서는 택배사 선택, 배송 방법(Purchasing agent), 개인통관부호(PCCC) 사용 여부, 합배송 가능 여부, 배송비 유형, 출고 리드타임 등을 설정한다.</strong> 배송비는 무료 배송 또는 조건부 무료 배송(예: 30,000원 이상 무료) 등 다양한 옵션이 있다.</li>
+</ul>
+<ul>
+<li><strong>모든 정보 입력 후 &quot;Request sales&quot; 버튼을 클릭하면 &quot;Listed successfully&quot;와 함께 Vendor Inventory ID가 발급되어 상품 등록이 완료된다.</strong> 이후 &quot;Product list&quot;에서 확인하거나 &quot;List new product&quot;로 새 상품을 추가할 수 있다.</li>
+</ul>
+<h2>상세 분석</h2>
+<h3>인트로 및 영상 개요 [0:00 - 0:20]</h3>
+<p>영상은 쿠팡의 노란색 브랜드 컬러를 배경으로 한 타이틀 화면으로 시작된다. 왼쪽에는 보라색 후드티를 입은 여성이 노트북 앞에서 스마트폰을 들고 작업하는 모습이 보이며, 배경에는 옷걸이와 택배 박스가 있어 셀러의 작업 환경을 연출하고 있다. 오른쪽 노란색 영역에는 <strong>&quot;Listing a Product (for items not requiring certification)&quot;</strong>이라는 제목이 크게 표시되어 있고, 우측 하단에 coupang 로고가 위치한다.</p>
+<p>이 영상은 KC(Korea Certification, 한국적합성인증)가 불필요한 상품을 쿠팡에 등록하는 방법을 안내하는 셀러 교육 콘텐츠임을 명확히 알 수 있다.</p>
+<div class="screenshot-container"><img src="images/segment_000.jpg" alt="인트로 타이틀 화면" loading="lazy"><div class="caption">인트로 타이틀 화면</div></div>
+<h3>STEP ONE: 배송 유형 선택 및 상품명 입력 [0:20 - 0:40]</h3>
+<p>Coupang Wing 셀러 포털의 <strong>&quot;List a Product&quot;</strong> 페이지가 표시된다. 화면 상단에는 &quot;We recommend Chrome for Wing. The page may not show properly if you use other browsers or older versions of Chrome.&quot;이라는 안내 문구가 있어, Chrome 브라우저 사용을 권장하고 있다. 우측 상단에는 &quot;Product listing manual&quot; 링크가 제공된다.</p>
+<p>왼쪽 사이드 메뉴에는 다음 항목들이 나열되어 있다:</p>
+<ul>
+<li><strong>Manage Products</strong> (펼쳐진 상태)</li>
+<li>List a Product (현재 선택됨, 파란색 텍스트)</li>
+<li>List Products in Bulk</li>
+<li>List Products with Integrated Solution (Free)</li>
+<li>View/Edit Products</li>
+<li>Product Notification</li>
+<li>Manage Prices (new 태그 표시)</li>
+<li>Coupang Global Fulfillment (CGF)</li>
+<li>Order/Shipping</li>
+<li>Settlement</li>
+<li>Manage Customers</li>
+</ul>
+<p>메인 영역의 첫 번째 섹션은 <strong>&quot;Copy &amp; list&quot;</strong> (접힌 상태)이고, 그 아래에 <strong>&quot;Shipping type&quot;</strong> 섹션이 펼쳐져 있다. 배송 유형에는 세 가지 옵션이 있다:</p>
+<ol>
+<li><strong>&quot;I will ship this item myself (Fulfilled by Seller)&quot;</strong> - 현재 선택됨 (파란색 라디오 버튼)</li>
+<li><strong>&quot;This is a product that is shipped out from the seller's warehouse and delivered to the customer from Coupang's fulfillment center in China (CGF: Coupang Global Fulfillment).&quot;</strong></li>
+<li><strong>&quot;This is a product that is shipped out from the seller's warehouse and delivered to the customer from Coupang's fulfillment center in China (CGF LITE: Coupang Global Fulfillment LITE).&quot;</strong></li>
+</ol>
+<p>그 아래에 <strong>&quot;Display product name&quot;</strong> 필수 입력 필드가 있으며, 입력란에는 &quot;Enter display product name (brand + product name)&quot;이라는 플레이스홀더 텍스트가 보인다. 글자 수 제한은 0/100으로 표시되어 있다. 하단에는 빨간색 안내 문구로 &quot;This product name is displayed on the sales page. This may be changed later according to Coupang standards.&quot;라고 적혀 있다.</p>
+<p>페이지 하단에는 Cancel, Preview, Save as draft, Save, Request sales 버튼이 있다.</p>
+<div class="screenshot-container"><img src="images/segment_001.jpg" alt="Coupang Wing - List a Product 메인 화면" loading="lazy"><div class="caption">Coupang Wing - List a Product 메인 화면</div></div>
+<h3>STEP TWO: 상품 카테고리 선택 및 옵션 유무 지정 [0:40 - 1:00]</h3>
+<p>노란색 배경의 전환 화면이 나타나며 <strong>&quot;STEP TWO&quot;</strong>라는 큰 제목과 함께 <strong>&quot;Select product category &amp; specify option availability&quot;</strong>라는 설명이 표시된다. 이 단계에서는 상품의 카테고리를 선택하고 옵션이 있는 상품인지 여부를 지정하는 과정을 안내한다.</p>
+<div class="screenshot-container"><img src="images/segment_002.jpg" alt="STEP TWO 전환 화면" loading="lazy"><div class="caption">STEP TWO 전환 화면</div></div>
+<h3>옵션 설정 - 옵션이 있는 상품 등록 [1:00 - 2:00]</h3>
+<p><strong>Option</strong> 섹션이 표시된다. 상단에 두 가지 탭이 있다:</p>
+<ul>
+<li><strong>&quot;List product with options&quot;</strong> (파란색 배경으로 현재 선택됨)</li>
+<li><strong>&quot;List product with no option&quot;</strong></li>
+</ul>
+<p>안내 문구: &quot;If the logistics inbound information is different by option, please select 'list by option'.&quot;</p>
+<p><strong>Number of option</strong> 드롭다운에서 &quot;1 option&quot;이 선택되어 있으며, &quot;Do you want to know how to register the option? View Options Example&quot; 링크가 제공된다.</p>
+<p><strong>Enter option</strong> 영역에서:</p>
+<ul>
+<li><strong>Option name</strong>: &quot;Quantity&quot; (드롭다운 선택)</li>
+<li><strong>Option value</strong>: 입력란에 &quot;One, two packs, three boxes, four cans, etc.&quot; 플레이스홀더 텍스트가 표시</li>
+</ul>
+<p>우측에 &quot;+&quot; 버튼과 &quot;About field entries&quot; 링크가 있다. 하단에 <strong>&quot;Apply option list&quot;</strong> 버튼(파란색)이 있다.</p>
+<p><strong>Tips for entering option values</strong> 팝업이 표시되어 있으며: &quot;You can enter several values separating them with commas (,). For example, colors can be entered as Red, Yellow, Blue, White, etc.&quot;라고 안내한다.</p>
+<p><strong>Option list (Total 0)</strong> 테이블이 하단에 있으며, 컬럼은 다음과 같다:</p>
+<ul>
+<li>Option name</li>
+<li>Original price (KRW)</li>
+<li>Sales price (KRW) (필수)</li>
+<li>Stock Qty. (필수)</li>
+<li>Seller Product Code</li>
+<li>Model number</li>
+<li>Barcode</li>
+<li>Delete</li>
+</ul>
+<p>각 컬럼에 &quot;Apply to all&quot; 버튼이 있어 일괄 적용이 가능하다.</p>
+<div class="screenshot-container"><img src="images/segment_003.jpg" alt="옵션 설정 화면 - Quantity 선택" loading="lazy"><div class="caption">옵션 설정 화면 - Quantity 선택</div></div>
+<p>다음으로 Option name이 <strong>&quot;color&quot;</strong>로 변경된 화면이 보인다. Option value 입력란의 플레이스홀더는 &quot;Example: Black, white (separate with comma)&quot;로 표시된다. 옵션 목록은 아직 Total 0 상태이다.</p>
+<div class="screenshot-container"><img src="images/segment_004.jpg" alt="옵션 설정 화면 - color 선택" loading="lazy"><div class="caption">옵션 설정 화면 - color 선택</div></div>
+<p>이어서 Option name에 <strong>&quot;color&quot;</strong>, Option value에 <strong>&quot;green,white&quot;</strong>가 입력된 후 &quot;Apply option list&quot; 버튼을 클릭한 결과가 표시된다. <strong>Option list (Total 2)</strong>로 변경되었으며 두 개의 옵션이 생성되었다:</p>
+<ol>
+<li><strong>green</strong>: Original price 0, Sales price 10,000, Stock Qty. 20</li>
+<li><strong>white</strong>: Original price 0, Sales price 0, Stock Qty. 0</li>
+</ol>
+<p>&quot;green&quot; 옵션에는 판매가 10,000원, 재고 20개가 입력된 상태이고, &quot;white&quot; 옵션은 아직 값이 입력되지 않았다. 하단에 &quot;+ Add to list&quot; 버튼이 있어 추가 옵션을 넣을 수 있다. 그 아래로 <strong>Product image</strong> 섹션이 시작되고 있다.</p>
+<div class="screenshot-container"><img src="images/segment_005.jpg" alt="옵션 리스트 생성 완료 - green, white" loading="lazy"><div class="caption">옵션 리스트 생성 완료 - green, white</div></div>
+<h3>상품 이미지 업로드 [2:00 - 2:40]</h3>
+<p><strong>Product image</strong> 섹션이 표시된다. 상단에 두 가지 업로드 모드가 있다:</p>
+<ul>
+<li><strong>&quot;Upload (default)&quot;</strong></li>
+<li><strong>&quot;Upload option&quot;</strong> (현재 선택됨, 파란색 배경)</li>
+</ul>
+<p>안내: &quot;If there is a different image for each option, select [Upload option].&quot;</p>
+<p>이미지 규격 안내:</p>
+<ul>
+<li><strong>File size</strong>: Min 100px (Recommended size: 500 x 500)</li>
+<li><strong>File size</strong>: Under 10MB, File format: JPG, PNG</li>
+</ul>
+<p>업로드 버튼들: &quot;Upload representative images in bulk&quot;, &quot;Upload additional images in bulk&quot;, &quot;Apply image URL to all&quot;, &quot;Option search ON&quot;</p>
+<p>옵션별 이미지 업로드 테이블:</p>
+<ul>
+<li><strong>green</strong>: Representative image(필수) 업로드 영역 + Additional images (up to 9) 영역 + &quot;Enter image URL&quot; 버튼</li>
+<li><strong>white</strong>: 동일 구조</li>
+</ul>
+<p>각 옵션별로 대표 이미지 1장(필수)과 추가 이미지 최대 9장을 업로드할 수 있으며, 이미지 URL로도 등록이 가능하다. 드래그 앤 드롭으로 이미지 순서를 변경할 수 있다.</p>
+<div class="screenshot-container"><img src="images/segment_006.jpg" alt="Product Image - Upload option 모드" loading="lazy"><div class="caption">Product Image - Upload option 모드</div></div>
+<h3>상세 설명 (Detailed Description) [2:20 - 3:00]</h3>
+<p><strong>Detailed description</strong> 섹션이 표시된다. 상단에 두 가지 모드가 있다:</p>
+<ul>
+<li><strong>&quot;Upload (default)&quot;</strong> (파란색 배경으로 선택됨)</li>
+<li><strong>&quot;Upload option&quot;</strong></li>
+</ul>
+<p>입력 방식은 세 가지가 제공된다:</p>
+<ul>
+<li><strong>&quot;Upload image&quot;</strong></li>
+<li><strong>&quot;Enter manually&quot;</strong></li>
+<li><strong>&quot;Write in HTML&quot;</strong> (파란색 배경으로 선택됨)</li>
+</ul>
+<p>HTML 작성 영역이 빈 상태로 표시되어 있으며, 하단에 다음 안내 문구가 있다:</p>
+<ul>
+<li>&quot;Recommended image size: 780px in width (300px min – 3,000px max.) / Under 30,000px in length / JPG or PNG file under 10MB&quot;</li>
+<li>&quot;To embed images using HTML, select [Write in HTML].&quot;</li>
+<li>PC Preview, Reset, Save 버튼이 우측에 있다.</li>
+</ul>
+<div class="screenshot-container"><img src="images/segment_007.jpg" alt="Detailed description - Write in HTML 모드" loading="lazy"><div class="caption">Detailed description - Write in HTML 모드</div></div>
+<p>다음 화면에서는 <strong>&quot;Upload image&quot;</strong> 모달 창이 열려 있다. 상단에:</p>
+<ul>
+<li><strong>&quot;Add image&quot;</strong> 버튼 (파란색)</li>
+<li><strong>&quot;Add text (HTML)&quot;</strong> 버튼</li>
+<li>&quot;You can upload several image files at once.&quot; 안내</li>
+</ul>
+<p>&quot;To change the order of the content, drag the ↕ on the left to a desired location.&quot; 설명이 있다.</p>
+<p>우측에 &quot;Delete all&quot;, &quot;Actual size&quot;, &quot;Reduced size&quot; (현재 선택됨, 파란색) 버튼이 있다.</p>
+<p>업로드된 이미지로 <strong>녹색/노란색 헤어브러시</strong> 상품 사진이 보이며, 상단에 상품 설명 텍스트가 포함되어 있다. 각 이미지 항목에 &quot;Modify&quot;와 &quot;Delete&quot; 버튼이 있다. 하단에 &quot;Cancel&quot;과 &quot;Save&quot; 버튼이 있다.</p>
+<div class="screenshot-container"><img src="images/segment_008.jpg" alt="상세 설명 이미지 업로드 모달" loading="lazy"><div class="caption">상세 설명 이미지 업로드 모달</div></div>
+<h3>핵심 상품 정보 (Key Product Information) [3:00 - 3:40]</h3>
+<p><strong>Key product information</strong> 섹션이 표시된다. 다음 필드들이 있다:</p>
+<ul>
+<li><strong>Brand</strong> (필수): &quot;Enter brand&quot; 입력란 + <strong>&quot;No brand (or private label)&quot;</strong> 체크박스가 선택된 상태</li>
+<li><strong>Manufacturer</strong>: &quot;Enter manufacturer. If unknown, enter brand name.&quot; 플레이스홀더</li>
+<li><strong>Certification information</strong>: 네 가지 라디오 버튼 옵션</li>
+</ul>
+<ol>
+<li>&quot;Subject to certification/reporting requirements&quot;</li>
+<li>&quot;Exempt from certification/reporting requirements&quot;</li>
+<li>&quot;Provided on detail page&quot;</li>
+<li><strong>&quot;Certification/reporting not required&quot;</strong> (현재 선택됨, 파란색 라디오 버튼) - <strong>이것이 이 영상의 핵심 포인트</strong></li>
+</ol>
+<ul>
+<li><strong>Parallel import</strong>: &quot;Parallel import&quot; / <strong>&quot;Non-parallel import&quot;</strong> (선택됨)</li>
+<li><strong>Availability to minors</strong> (필수): <strong>&quot;Available&quot;</strong> (선택됨) / &quot;Not available&quot;</li>
+<li><strong>Maximum purchasable quantity per person</strong>: &quot;Set&quot; / <strong>&quot;Do not set&quot;</strong> (선택됨)</li>
+<li><strong>Sales period</strong>: &quot;Set&quot; / <strong>&quot;Do not set&quot;</strong> (선택됨)</li>
+<li><strong>VAT</strong> (필수): <strong>&quot;Taxable&quot;</strong> (선택됨) / &quot;Tax-free&quot;</li>
+</ul>
+<div class="screenshot-container"><img src="images/segment_009.jpg" alt="Key product information 설정" loading="lazy"><div class="caption">Key product information 설정</div></div>
+<p>두 번째 화면에서는 동일한 Key product information 섹션을 약간 스크롤한 상태로 보여준다. Brand, Manufacturer, Certification information(&quot;Certification/reporting not required&quot; 선택), Parallel import(&quot;Non-parallel import&quot; 선택), Availability to minors(&quot;Available&quot; 선택), Maximum purchasable quantity(&quot;Do not set&quot;), Sales period(&quot;Do not set&quot;), VAT(&quot;Taxable&quot;) 설정이 동일하게 확인된다.</p>
+<div class="screenshot-container"><img src="images/segment_010.jpg" alt="Key product information - 스크롤된 화면" loading="lazy"><div class="caption">Key product information - 스크롤된 화면</div></div>
+<h3>키워드 (Keyword) 및 검색 필터 [3:40 - 4:20]</h3>
+<p><strong>Keyword</strong> 섹션이 표시된다:</p>
+<ul>
+<li><strong>Tag</strong>: &quot;Enter up to 20 tags, separated by comma (,).&quot; 입력란 + &quot;Add&quot; 버튼</li>
+<li>안내: &quot;Add keywords to help customers easily find your product. How to boost ranking on Coupang&quot; (외부 링크)</li>
+<li>경고: &quot;Coupang may delete or change any search keywords that are irrelevant to your product, including irrelevant brand names. Please note that Coupang admin could delete/modify such keywords.&quot; (빨간색 텍스트)</li>
+</ul>
+<p><strong>Search filter</strong> 섹션이 접혀 있는 상태로 있다.</p>
+<p><strong>Product information</strong> 섹션이 표시된다:</p>
+<ul>
+<li>&quot;Select and enter product notice for each category.&quot;</li>
+<li>드롭다운에서 <strong>&quot;Other goods&quot;</strong> 선택됨</li>
+<li>&quot;See detail page for all products&quot; 체크박스 (미선택)</li>
+<li>Notice title / Detail 테이블이 시작됨</li>
+</ul>
+<div class="screenshot-container"><img src="images/segment_011.jpg" alt="Keyword 및 Product information 섹션" loading="lazy"><div class="caption">Keyword 및 Product information 섹션</div></div>
+<p>다음 화면에서는 Tag 입력란에 <strong>&quot;brush&quot;</strong>가 입력된 상태가 보인다. Product information 섹션도 동일하게 보인다.</p>
+<div class="screenshot-container"><img src="images/segment_012.jpg" alt="키워드 brush 입력" loading="lazy"><div class="caption">키워드 brush 입력</div></div>
+<p>이어서 키워드가 모두 입력된 상태가 보인다. 태그 영역에 네 개의 키워드가 등록되어 있다:</p>
+<ul>
+<li><strong>#brush</strong></li>
+<li><strong>#hairbrush</strong></li>
+<li><strong>#green hairbrush</strong></li>
+<li><strong>#white hairbrush</strong></li>
+</ul>
+<p>Product information 섹션에서 &quot;Other goods&quot; 카테고리가 선택된 상태이며, Notice title / Detail 테이블이 표시되고, 첫 번째 항목으로 <strong>&quot;Item name and model name&quot;</strong>이 보이며 &quot;Enter manually&quot; 입력란과 &quot;See product detail page&quot; 체크박스가 있다.</p>
+<div class="screenshot-container"><img src="images/segment_013.jpg" alt="키워드 4개 등록 완료" loading="lazy"><div class="caption">키워드 4개 등록 완료</div></div>
+<h3>상품 정보 고시 (Product Information Notice) [4:20 - 5:00]</h3>
+<p><strong>Product information</strong> 테이블의 상세 내용이 표시된다. &quot;Other goods&quot; 카테고리로 선택된 상태에서 다음 항목들이 나열되어 있다:</p>
+<ul>
+<li><strong>Item name and model name</strong>: &quot;Enter manually&quot; 입력란 + &quot;See product detail page&quot; 체크박스</li>
+<li><strong>Credentials</strong>: &quot;Enter manually&quot; 입력란 + &quot;See product detail page&quot; 체크박스</li>
+<li><strong>Country of Manufacture (Origin)</strong>: &quot;Enter manually&quot; 입력란 + &quot;See product detail page&quot; 체크박스</li>
+<li><strong>Manufacturer (Importer)</strong>: &quot;Enter manually&quot; 입력란 + &quot;See product detail page&quot; 체크박스</li>
+<li><strong>Consumer Counseling Phone Number</strong>: <strong>&quot;쿠팡고객센터 1577-7011&quot;</strong>이 기본값으로 입력됨</li>
+</ul>
+<div class="screenshot-container"><img src="images/segment_014.jpg" alt="Product information - 입력 항목들" loading="lazy"><div class="caption">Product information - 입력 항목들</div></div>
+<p>다음 화면에서는 각 항목이 채워진 상태를 보여준다:</p>
+<ul>
+<li><strong>Item name and model name</strong>: &quot;See product details page&quot; 입력 + <strong>&quot;See product detail page&quot; 체크됨</strong></li>
+<li><strong>Credentials</strong>: &quot;See product details page&quot; 입력 + <strong>&quot;See product detail page&quot; 체크됨</strong></li>
+<li><strong>Country of Manufacture (Origin)</strong>: <strong>&quot;South Korea&quot;</strong> 입력</li>
+<li><strong>Manufacturer (Importer)</strong>: &quot;See product details page&quot; 입력 + <strong>&quot;See product detail page&quot; 체크됨</strong></li>
+<li><strong>Consumer Counseling Phone Number</strong>: <strong>&quot;쿠팡고객센터 1577-7011&quot;</strong> (기본값 유지)</li>
+</ul>
+<div class="screenshot-container"><img src="images/segment_015.jpg" alt="Product information - 값 입력 완료" loading="lazy"><div class="caption">Product information - 값 입력 완료</div></div>
+<h3>배송 정보 (Shipping) [5:00 - 5:40]</h3>
+<p><strong>Shipping</strong> 섹션이 표시된다. 다음 항목들이 있다:</p>
+<ul>
+<li><strong>Outbound shipping center</strong></li>
+<li><strong>Shipping center</strong> (필수): &quot;No shipping center selected&quot; + &quot;Addresses&quot; 버튼</li>
+<li><strong>Shipping to Jeju/remote area</strong> (필수): &quot;Available&quot; / <strong>&quot;Unavailable&quot;</strong> (선택됨)</li>
+<li>안내: &quot;To select 'Available', select courier and remote area shipping surcharge&quot;</li>
+<li><strong>Courier</strong> (필수): 드롭다운에서 <strong>&quot;롯데택배&quot;</strong> 선택됨</li>
+<li>안내: &quot;If you haven't signed a courier service contract yet, we recommend the Post Office or convenience store (CVS Courier).&quot;</li>
+<li><strong>Shipping method</strong> (필수): 드롭다운에서 <strong>&quot;Purchasing agent&quot;</strong> 선택됨</li>
+<li><strong>Enter Personal Customs Clearance Code (PCCC)</strong>: <strong>&quot;Use&quot;</strong> (선택됨) / &quot;N/A&quot;</li>
+<li><strong>Bundled shipping</strong> (필수): &quot;Available&quot; / <strong>&quot;Unavailable&quot;</strong> (선택됨)</li>
+<li>안내: &quot;Bundled shipping is available only for products with the same outbound shipping information (Not available for Payment on Delivery).&quot;</li>
+<li><strong>Shipping fee type</strong> (필수): <strong>&quot;FREE Shipping&quot;</strong> 선택됨</li>
+<li>안내: &quot;Free shipping / Free shipping for over KRW 9,800, KRW 10,000, KRW 19,800, KRW 30,000 / Paid shipping / Conditional free shipping only (Except for certain categories and overseas purchase agent products)&quot;</li>
+</ul>
+<div class="screenshot-container"><img src="images/segment_016.jpg" alt="Shipping 섹션 - 기본 설정" loading="lazy"><div class="caption">Shipping 섹션 - 기본 설정</div></div>
+<p>다음 화면에서는 배송 설정이 변경된 상태를 보여준다:</p>
+<ul>
+<li><strong>Courier</strong>: <strong>&quot;DHL&quot;</strong>로 변경됨</li>
+<li><strong>Shipping method</strong>: 드롭다운이 열려 있으며 &quot;Select&quot;과 <strong>&quot;Purchasing agent&quot;</strong> (체크 표시) 옵션이 보임</li>
+<li><strong>Bundled shipping</strong>: <strong>&quot;Unavailable&quot;</strong> 선택됨</li>
+<li><strong>Shipping fee type</strong>: <strong>&quot;FREE Shipping&quot;</strong> 선택됨</li>
+<li><strong>Shipment lead time</strong> (필수): <strong>&quot;Basic input&quot;</strong> 선택됨, <strong>1 day(s)</strong> 입력</li>
+<li>안내: &quot;If you can make same-day or next-day shipments, set the lead time to 1 day.&quot;</li>
+<li>하단에 <strong>Return/Exchange</strong> 섹션이 시작됨</li>
+</ul>
+<div class="screenshot-container"><img src="images/segment_017.jpg" alt="Shipping - DHL 설정 및 리드타임" loading="lazy"><div class="caption">Shipping - DHL 설정 및 리드타임</div></div>
+<p>추가로 배송비가 변경된 화면이 표시된다:</p>
+<ul>
+<li><strong>Shipping fee type</strong>: <strong>&quot;Free shipping over 30,000&quot;</strong>으로 변경됨</li>
+<li>안내에 KRW 9,800, KRW 10,000, KRW 19,800, KRW 30,000 등 다양한 무료배송 기준 금액이 나열됨</li>
+<li><strong>Base shipping fee</strong> (필수): <strong>2,900 KRW</strong> 입력됨</li>
+<li><strong>Shipment lead time</strong>: Basic input, <strong>1 day(s)</strong></li>
+<li><strong>Return/Exchange</strong> 섹션:</li>
+<li><strong>Return/Exchange center</strong> (필수): <strong>&quot;[TEST] 서울특별시 송파구 송파대로 570 ~&quot;</strong> 주소 + &quot;Addresses&quot; 버튼</li>
+<li><strong>Return shipping fee (one-way)</strong> (필수): <strong>0 KRW</strong></li>
+</ul>
+<div class="screenshot-container"><img src="images/segment_018.jpg" alt="배송비 2,900원 및 반품 센터 설정" loading="lazy"><div class="caption">배송비 2,900원 및 반품 센터 설정</div></div>
+<h3>반품/교환 정보 (Return/Exchange) [5:40 - 6:20]</h3>
+<p><strong>Return/Exchange</strong> 섹션의 최종 설정 화면이 표시된다:</p>
+<ul>
+<li><strong>Return/Exchange center</strong> (필수): <strong>&quot;[test center 6] 서울특별시 송파구 송파대로 552-2 9th Floor, Office Building, Block A, Xinzhongguan Building, No. 19 Zhongguancun Street Haidian District, Beijing, China&quot;</strong> - 긴 주소가 입력됨 + &quot;Addresses&quot; 버튼</li>
+<li><strong>Return shipping fee (one-way)</strong> (필수): <strong>2,900 KRW</strong> 입력됨</li>
+</ul>
+<p>하단에 <strong>Upload documents</strong> 섹션이 접혀 있는 상태로 보인다.</p>
+<p>페이지 최하단에는 Cancel, <strong>Preview</strong>, Save as draft, Save, <strong>Request sales</strong> (파란색 버튼) 등의 버튼이 나열되어 있다. 페이지 푸터에는 &quot;Coupang Corp.&quot;, &quot;Representative Directors Hanseung Kang &amp; Daejun Park&quot;, &quot;570, Songpa-daero, Songpa-gu, Seoul&quot; 등의 회사 정보가 표시된다.</p>
+<div class="screenshot-container"><img src="images/segment_019.jpg" alt="Return/Exchange 최종 설정" loading="lazy"><div class="caption">Return/Exchange 최종 설정</div></div>
+<h3>상품 등록 완료 [6:20 - 6:40]</h3>
+<p><strong>&quot;Listed successfully&quot;</strong> 모달 팝업이 화면 중앙에 표시된다. 팝업 내용:</p>
+<ul>
+<li><strong>&quot;Listed successfully&quot;</strong> (성공 메시지)</li>
+<li><strong>&quot;Vendor Inventory ID : 12815440613&quot;</strong> (고유 상품 ID 발급)</li>
+<li>두 개의 버튼:</li>
+<li><strong>&quot;Product list&quot;</strong> (흰색 배경, 상품 목록으로 이동)</li>
+<li><strong>&quot;List new product&quot;</strong> (파란색 배경, 새 상품 등록)</li>
+</ul>
+<p>배경에는 Return/Exchange 섹션과 Upload documents 섹션이 보이며, 하단에 Cancel, Preview, Save as draft, Save, Request sales 버튼들이 있다.</p>
+<div class="screenshot-container"><img src="images/segment_020.jpg" alt="상품 등록 완료 - Listed successfully" loading="lazy"><div class="caption">상품 등록 완료 - Listed successfully</div></div>
+<h3>아웃트로 [6:40 - 7:04]</h3>
+<p>노란색 배경에 <strong>&quot;Follow us on LinkedIn &amp; Youtube for more tips!&quot;</strong> 텍스트가 표시되며, 우측 하단에 coupang 로고가 있다. 쿠팡 셀러 교육의 LinkedIn과 Youtube 채널을 팔로우하면 더 많은 팁을 얻을 수 있다는 안내로 영상이 마무리된다.</p>
+<div class="screenshot-container"><img src="images/segment_021.jpg" alt="아웃트로 - Follow us" loading="lazy"><div class="caption">아웃트로 - Follow us</div></div>
+<h2>주요 인용 및 발언</h2>
+<p>이 영상은 자막 없이 화면 시연 위주로 진행되는 교육 영상이므로 음성 발언 대신 화면에 표시된 주요 안내 문구를 정리한다:</p>
+<blockquote><p>&quot;We recommend Chrome for Wing. The page may not show properly if you use other browsers or older versions of Chrome.&quot;</p></blockquote>
+<blockquote><p>&quot;This product name is displayed on the sales page. This may be changed later according to Coupang standards.&quot;</p></blockquote>
+<blockquote><p>&quot;Tips for entering option values: You can enter several values separating them with commas (,). For example, colors can be entered as Red, Yellow, Blue, White, etc.&quot;</p></blockquote>
+<blockquote><p>&quot;Coupang may delete or change any search keywords that are irrelevant to your product, including irrelevant brand names.&quot;</p></blockquote>
+<blockquote><p>&quot;If you haven't signed a courier service contract yet, we recommend the Post Office or convenience store (CVS Courier).&quot;</p></blockquote>
+<blockquote><p>&quot;If you can make same-day or next-day shipments, set the lead time to 1 day.&quot;</p></blockquote>
+<blockquote><p>&quot;Bundled shipping is available only for products with the same outbound shipping information (Not available for Payment on Delivery).&quot;</p></blockquote>
+<h2>결론 및 시사점</h2>
+<p>이 영상은 쿠팡 마켓플레이스에 KC 인증이 불필요한 상품을 등록하는 전체 프로세스를 Coupang Wing 셀러 포털을 통해 단계별로 시연하는 교육 콘텐츠이다.</p>
+<p><strong>핵심 메시지:</strong></p>
+<ul>
+<li>KC 인증이 필요하지 않은 상품의 경우, Certification information 항목에서 &quot;Certification/reporting not required&quot;를 선택하면 인증서 없이 상품 등록이 가능하다.</li>
+<li>상품 등록은 배송 유형 → 상품명 → 카테고리 → 옵션 → 이미지 → 상세 설명 → 핵심 정보 → 키워드 → 상품 정보 고시 → 배송 → 반품/교환 순서로 진행된다.</li>
+<li>각 필수 항목(빨간 점 표시)을 빠짐없이 입력해야 &quot;Request sales&quot; 버튼으로 최종 등록이 가능하다.</li>
+</ul>
+<p><strong>실용적 시사점:</strong></p>
+<ul>
+<li>해외 셀러의 경우 배송 방법을 &quot;Purchasing agent&quot;로 설정하고, 개인통관부호(PCCC) 사용을 활성화해야 한다.</li>
+<li>택배사는 DHL 등 국제 배송업체나 롯데택배 등 국내 업체 중 선택할 수 있다.</li>
+<li>키워드는 최대 20개까지 쉼표로 구분하여 입력 가능하며, 상품과 무관한 키워드는 쿠팡 관리자에 의해 삭제될 수 있다.</li>
+<li>옵션별로 서로 다른 이미지를 등록하려면 &quot;Upload option&quot; 모드를 사용하면 된다.</li>
+<li>상품 정보 고시에서 일부 항목은 &quot;See product detail page&quot; 체크박스를 활용하여 상세 페이지에서 확인하도록 설정할 수 있다.</li>
+<li>배송비는 무료 배송, 유료 배송, 조건부 무료 배송(9,800원/10,000원/19,800원/30,000원 이상) 등 다양한 옵션을 제공한다.</li>
+<li>상품 등록이 완료되면 고유한 Vendor Inventory ID가 발급되어 이후 상품 관리에 활용된다.</li>
+</ul>
+
+        <div class="footer">
+            Generated by VidDigest
+        </div>
+    </div>
+    <div class="lightbox" id="lightbox" onclick="this.classList.remove('active')">
+        <img id="lightbox-img" src="" alt="">
+    </div>
+    <script>
+        document.querySelectorAll('.screenshot-container img').forEach(function(img) {
+            img.addEventListener('click', function() {
+                var lb = document.getElementById('lightbox');
+                document.getElementById('lightbox-img').src = this.src;
+                lb.classList.add('active');
+            });
+        });
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') document.getElementById('lightbox').classList.remove('active');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>쿠팡 상품 소싱 방법, 초보는 이것만 알아도 100만 원 아낄 수 있습니다. (로켓그로스/스마트스토어/도매꾹) - VidDigest</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.8;
+            color: #1a1a2e;
+            background: #f8f9fa;
+        }
+        .header {
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: white;
+            padding: 48px 0 40px;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 28px;
+            font-weight: 700;
+            max-width: 800px;
+            margin: 0 auto 16px;
+            padding: 0 24px;
+            line-height: 1.4;
+        }
+        .header .meta {
+            font-size: 14px;
+            opacity: 0.85;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 0 24px;
+        }
+        .header .meta span {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+        }
+        h2 {
+            font-size: 22px;
+            font-weight: 700;
+            color: #302b63;
+            margin: 48px 0 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e8e8f0;
+        }
+        h3 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #24243e;
+            margin: 32px 0 14px;
+        }
+        h4 {
+            font-size: 16px;
+            font-weight: 600;
+            color: #444;
+            margin: 24px 0 10px;
+        }
+        p {
+            margin: 12px 0;
+            font-size: 15.5px;
+            color: #2c2c3e;
+        }
+        ul, ol {
+            margin: 12px 0;
+            padding-left: 28px;
+        }
+        li {
+            margin: 8px 0;
+            font-size: 15.5px;
+            color: #2c2c3e;
+        }
+        li strong {
+            color: #302b63;
+        }
+        blockquote {
+            margin: 20px 0;
+            padding: 16px 20px;
+            background: #f0f0f8;
+            border-left: 4px solid #302b63;
+            border-radius: 0 8px 8px 0;
+            font-size: 15px;
+            color: #444;
+        }
+        blockquote p {
+            margin: 4px 0;
+        }
+        .screenshot-container {
+            margin: 24px 0;
+            text-align: center;
+        }
+        .screenshot-container img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+            border: 1px solid #e0e0e8;
+        }
+        .screenshot-container .caption {
+            font-size: 13px;
+            color: #888;
+            margin-top: 8px;
+            font-style: italic;
+        }
+        code {
+            background: #eef;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-family: 'SF Mono', Menlo, Consolas, monospace;
+            color: #d63384;
+        }
+        pre {
+            background: #1e1e2e;
+            color: #cdd6f4;
+            padding: 20px;
+            border-radius: 10px;
+            overflow-x: auto;
+            margin: 16px 0;
+            font-size: 13.5px;
+            line-height: 1.6;
+        }
+        pre code {
+            background: none;
+            padding: 0;
+            color: inherit;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid #e0e0e8;
+            margin: 40px 0;
+        }
+        strong {
+            font-weight: 600;
+        }
+        .footer {
+            text-align: center;
+            padding: 32px 0;
+            font-size: 13px;
+            color: #999;
+            border-top: 1px solid #e8e8f0;
+            margin-top: 60px;
+        }
+        .screenshot-container img {
+            cursor: zoom-in;
+            transition: opacity 0.2s;
+        }
+        .screenshot-container img:hover {
+            opacity: 0.85;
+        }
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.85);
+            z-index: 9999;
+            cursor: zoom-out;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+        }
+        .lightbox.active {
+            display: flex;
+        }
+        .lightbox img {
+            max-width: 95vw;
+            max-height: 92vh;
+            border-radius: 8px;
+            box-shadow: 0 8px 40px rgba(0,0,0,0.5);
+            object-fit: contain;
+        }
+        @media (max-width: 600px) {
+            .header { padding: 32px 0 28px; }
+            .header h1 { font-size: 20px; padding: 0 16px; }
+            .header .meta { font-size: 12px; gap: 12px; padding: 0 16px; }
+            .container { padding: 24px 16px 60px; }
+            h2 { font-size: 19px; margin: 36px 0 16px; }
+            h3 { font-size: 16px; margin: 24px 0 12px; }
+            h4 { font-size: 15px; margin: 20px 0 8px; }
+            p, li { font-size: 14.5px; }
+            ul, ol { padding-left: 20px; }
+            blockquote { padding: 12px 14px; font-size: 14px; }
+            pre { padding: 14px; font-size: 12.5px; border-radius: 8px; }
+            code { font-size: 13px; }
+            .screenshot-container img { border-radius: 8px; }
+            hr { margin: 28px 0; }
+        }
+        @media (prefers-color-scheme: dark) {
+            body { background: #1a1a2e; color: #e0e0e8; }
+            h2 { color: #a8a4d6; border-bottom-color: #333; }
+            h3 { color: #c8c4e6; }
+            h4 { color: #b0b0c8; }
+            p, li { color: #d0d0e0; }
+            blockquote { background: #252540; border-left-color: #6c63ff; color: #c0c0d0; }
+            code { background: #2a2a4a; color: #f0a0c0; }
+            pre { background: #0d0d1a; }
+            hr { border-top-color: #333; }
+            .screenshot-container img { border-color: #333; }
+            .footer { border-top-color: #333; color: #666; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>쿠팡 상품 소싱 방법, 초보는 이것만 알아도 100만 원 아낄 수 있습니다. (로켓그로스/스마트스토어/도매꾹)</h1>
+        <div class="meta">
+            <span>이맛쇼 - 이 맛에 쇼핑몰 한다</span>
+            <span>9:39</span>
+            <span>20251217</span>
+        </div>
+    </div>
+    <div class="container">
+        <p>모든 스크린샷을 확인했습니다. 이제 자막 텍스트(하단 자막)와 화면의 시각적 정보를 종합하여 상세 분석 보고서를 작성하겠습니다.</p>
+<blockquote><p><strong>채널</strong>: 이맛쇼 - 이 맛에 쇼핑몰 한다 | <strong>길이</strong>: 9:39 | <strong>날짜</strong>: 2025.12.17</p></blockquote>
+<h2>핵심 내용</h2>
+<ul>
+<li><strong>상품 소싱에서 가장 중요한 것은 &quot;절대 소싱하면 안 되는 상품&quot;을 먼저 걸러내는 것이다.</strong> 각자의 소싱 방법이 다르지만, 결론부터 말하면 특정 유형의 상품은 절대 소싱해서는 안 된다. 초보 셀러들이 이를 모르고 진입했다가 100만 원 이상의 손실을 보는 경우가 흔하다.</li>
+</ul>
+<ul>
+<li><strong>네이버 가격비교와 아이템스카우트(itemscout)를 활용한 키워드 분석이 소싱의 핵심 도구다.</strong> &quot;털슬리퍼&quot;를 예시로 들어, 등록 상품수 1,261,921개, 월간 검색수 79,000회, Top 40 기준 6개월 매출 70,894만원, 6개월 판매량 20,695개, 평균 판매가 42,300원 등의 데이터를 분석하는 방법을 보여준다.</li>
+</ul>
+<ul>
+<li><strong>계절 상품은 초보 셀러에게 치명적인 함정이다.</strong> 털슬리퍼 같은 겨울 상품은 11~1월에만 검색량이 폭증(월간 최대 약 60,000건)하고, 나머지 기간에는 주간 검색수 200~600건 수준으로 급락한다. 상품 등록, 리뷰 작업, 광고 최적화 등 준비 기간을 고려하면 실제 판매 가능 기간이 매우 짧아 수익을 내기 어렵다.</li>
+</ul>
+<ul>
+<li><strong>수면양말, 온풍기 등도 동일한 계절성 함정 상품이다.</strong> 온풍기의 경우 2024년 12월 22일~28일 주간 검색수 31,540건이지만, 비수기에는 검색량이 3분의 1 이하로 떨어진다. 수면양말 역시 겨울에만 검색량이 급증하는 전형적 계절 상품이다.</li>
+</ul>
+<ul>
+<li><strong>초보 셀러가 노려야 할 상품은 &quot;사계절 꾸준한 검색량&quot;을 가진 상품이다.</strong> 피크닉매트를 좋은 예시로 제시하며, 월간 검색수 기준으로 3년간 꾸준히 10,000~30,000건 사이를 유지하는 상품을 선택해야 한다. 날씨가 따뜻한 4~5월에만 잠깐 하락하지만 연중 안정적인 수요가 있어, 비수기에 미리 상품을 등록하고 순위를 올릴 시간적 여유가 있다.</li>
+</ul>
+<ul>
+<li><strong>도매꾹(domeggook.com)의 베스트 상품도 소싱처로 활용할 수 있다.</strong> 도매꾹에서 인기 있는 상품들을 참고하되, 단순히 베스트 상품을 그대로 따라하는 것이 아니라 데이터 분석을 통해 검증한 후 소싱해야 한다.</li>
+</ul>
+<h2>상세 분석</h2>
+<h3>1. 도입 - 네이버 가격비교 화면과 소싱의 핵심 원칙</h3>
+<div class="screenshot-container"><img src="images/segment_000.jpg" alt="네이버 가격비교 털슬리퍼 검색 결과" loading="lazy"><div class="caption">네이버 가격비교 털슬리퍼 검색 결과</div></div>
+<p>영상은 네이버 쇼핑 가격비교 페이지(search.shopping.naver.com)에서 &quot;털슬리퍼&quot;를 검색한 화면으로 시작한다. 화면에는 다양한 털슬리퍼 상품들이 나열되어 있다:</p>
+<ul>
+<li><strong>슈퍼카마트</strong> 리커버리 쿠션 샌들 털 슬리퍼 겨울 남녀공용 방한화: <strong>19,900원</strong> (무료배송)</li>
+<li><strong>크록스코리아</strong> [크록스 본사] 남녀공용 바야 라인드 클로그 205969 4종 택1: <strong>43,900원</strong> (멤버십 10% 적립, 나의 할인가 42,900원)</li>
+<li><strong>나이키 버로우 털 슬리퍼</strong> 플리스 패딩 겨울 방한 캠핑 방한화: <strong>49,800원</strong> (무료교환반품, 나의 할인가 49,300원)</li>
+<li><strong>오슬로 N59</strong> 남여공용 패딩 슬리퍼 방한 겨울 털 샌들 신발 경량 사무실: <strong>29,000원</strong> (17% 나의 할인가 24,000원)</li>
+</ul>
+<p>화면 우측에는 <strong>쇼핑 인기검색어</strong> 목록이 표시되어 있다 (2025.12.15 기준):</p>
+<ol>
+<li>방한슬리퍼</li>
+<li>어그슬리퍼</li>
+<li>털슬리퍼</li>
+<li>패딩슬리퍼</li>
+<li>호주어그</li>
+<li>가을슬리퍼</li>
+<li>가을실내화</li>
+<li>버켄스탁보스턴</li>
+<li>사무슬리퍼</li>
+<li>여성사무실슬리퍼</li>
+</ol>
+<p>하단 자막에는 <strong>&quot;각자의 방법이 다르기에&quot;</strong>라는 텍스트가 표시되며, 발화자는 상품 소싱 방법이 사람마다 다르다는 점을 언급한다.</p>
+<div class="screenshot-container"><img src="images/segment_001.jpg" alt="결론 먼저 - 절대 소싱하면 안 됩니다" loading="lazy"><div class="caption">결론 먼저 - 절대 소싱하면 안 됩니다</div></div>
+<p>이어서 <strong>&quot;우선 결론을 먼저 말씀드리면&quot;</strong>이라는 자막과 함께, 같은 네이버 가격비교 화면이 유지된다. 발화자는 결론부터 이야기하겠다고 전환한다.</p>
+<div class="screenshot-container"><img src="images/segment_002.jpg" alt="절대 소싱하면 안 됩니다" loading="lazy"><div class="caption">절대 소싱하면 안 됩니다</div></div>
+<p><strong>&quot;절대 소싱하면 안 됩니다&quot;</strong>라는 강한 경고 메시지가 자막으로 표시된다. 네이버 가격비교에서 보이는 털슬리퍼와 같은 상품을 절대 소싱하면 안 된다는 것이 핵심 결론이다.</p>
+<h3>2. 아이템스카우트를 활용한 키워드 데이터 분석</h3>
+<div class="screenshot-container"><img src="images/segment_003.jpg" alt="네이버 가격비교에 털슬리퍼 키워드 분석" loading="lazy"><div class="caption">네이버 가격비교에 털슬리퍼 키워드 분석</div></div>
+<p>화면이 네이버 가격비교 상단으로 스크롤되면서 <strong>아이템스카우트(itemscout) 확장 프로그램</strong> 데이터가 하단에 표시된다. 자막: <strong>&quot;네이버 가격비교에 털슬리퍼&quot;</strong></p>
+<p>아이템스카우트 키워드 분석 '털슬리퍼' 데이터:</p>
+<ul>
+<li><strong>등록 상품수</strong>: 1,261,921개</li>
+<li><strong>월간 검색수</strong>: 79,000회</li>
+<li><strong>6개월 매출</strong>: Top 40 기준 70,894만원</li>
+<li><strong>6개월 판매량</strong>: 20,695개</li>
+<li><strong>평균 판매가</strong>: 42,300원</li>
+</ul>
+<p>화면에는 월간 검색수와 월간 클릭량(%) 그래프도 함께 표시되며, 검색량이 100,000에 가까운 피크와 급락하는 패턴이 보인다.</p>
+<h3>3. 이미 포화된 시장 - &quot;지금 진입해도 되지 않나요?&quot;</h3>
+<div class="screenshot-container"><img src="images/segment_004.jpg" alt="네이버 가격비교 상품 목록 - 진입 질문" loading="lazy"><div class="caption">네이버 가격비교 상품 목록 - 진입 질문</div></div>
+<p>네이버 가격비교 페이지를 아래로 스크롤하면서 다양한 털슬리퍼 상품들이 표시된다:</p>
+<ul>
+<li>국내매장품 뉴발란스 파올리 울 패딩 슬립온 겨울 털 슬리퍼 캠핑 방한화: <strong>116,000원</strong> (나의 할인가 115,000원)</li>
+<li>호란크록스내피 털 안감 털부착 클로그 슬리퍼 겨울 깔창 방한 기모 커버 털신: <strong>6,500원</strong></li>
+<li>크록스 털 슬리퍼 털신 바야 라인드 퍼즈 겨울 퍼 방한 사무실 실내화: <strong>54,900원</strong> (나의 할인가 54,350원)</li>
+<li>크록스 털 슬리퍼 겨울 바야 라인드 퍼즈 스트랩 클로그 털신 방한화 실내: <strong>54,400원</strong> (나의 할인가 53,900원)</li>
+</ul>
+<p>자막: <strong>&quot;그럼 지금 진입해서 팔아도 되지 않나요?&quot;</strong> - 시청자가 할 수 있는 질문을 대변하고 있다.</p>
+<h3>4. 아이템스카우트 키워드 분석 상세 화면 - 경쟁강도와 지표 분석</h3>
+<div class="screenshot-container"><img src="images/segment_005.jpg" alt="아이템스카우트 키워드분석 상세 페이지" loading="lazy"><div class="caption">아이템스카우트 키워드분석 상세 페이지</div></div>
+<p>화면이 <strong>아이템스카우트(itemscout.io) 키워드분석 상세</strong> 페이지로 전환된다. 자막: <strong>&quot;우선 이렇게 바로 내려와 주시면 되고&quot;</strong></p>
+<p><strong>상품 카테고리</strong>:</p>
+<ul>
+<li>패션잡화 &gt; 여성신발 &gt; 슬리퍼 (50%)</li>
+<li>패션잡화 &gt; 남성신발 &gt; 슬리퍼 (32%)</li>
+</ul>
+<p><strong>핵심 데이터</strong>:</p>
+<ul>
+<li>상품수: 1,261,921개</li>
+<li>월 검색수: 79,000회</li>
+<li>경쟁강도: <strong>15.97</strong> (보통)</li>
+</ul>
+<p><strong>Top 10 vs Top 40 비교</strong>:</p>
+<ul>
+<li>Top 10: 6개월 매출 38,864만원 / 6개월 판매량 11,553개 / 평균 가격 43,400원</li>
+<li>Top 40: 6개월 매출 70,894만원 / 6개월 판매량 20,695개 / 평균 가격 42,300원</li>
+</ul>
+<p><strong>쿠팡 상품지표</strong> (아주좋음):</p>
+<ul>
+<li>쿠팡 경쟁강도: <strong>2.49</strong> (좋음) - 쿠팡 상품수 196,925개 ÷ 월간 검색수(네이버) 79,000회</li>
+<li>로켓상품 비율: <strong>0.00%</strong> (아주좋음)</li>
+<li>판매자로켓 비율: <strong>0.00%</strong> (아주좋음)</li>
+<li>평균 판매량: <strong>15,242원</strong></li>
+<li>평균 리뷰: <strong>790개</strong></li>
+</ul>
+<p><strong>네이버 상품지표</strong> (보통):</p>
+<ul>
+<li>경쟁강도: <strong>15.97</strong> (보통) - 상품수 1,261,921개 ÷ 검색수 79,000회</li>
+<li>실거래상품 비율: <strong>85%</strong> (아주좋음)</li>
+<li>묶음상품 비율: <strong>20%</strong> (좋음)</li>
+<li>해외상품 비율: <strong>8%</strong> (아주나쁨)</li>
+<li>1년 내 게시 비율: <strong>25%</strong> (나쁨)</li>
+</ul>
+<p><strong>연관 키워드</strong> (우측):</p>
+<ul>
+<li>족저근막연: 검색수 230 / 상품수 966</li>
+<li>네파 털슬리퍼: 검색수 2,250 / 상품수 211</li>
+<li>털슬리퍼어그: 검색수 3,050 / 상품수 54,348</li>
+<li>호주어그: 검색수 86,720 / 상품수 160,818</li>
+<li>키높이 털슬...: 검색수 2,060 / 상품수 98,170</li>
+<li>스케처스털...: 검색수 1,440 / 상품수 346</li>
+<li>키높이털슬...: 검색수 2,380 / 상품수 100,871</li>
+<li>겨울 털슬리퍼: 검색수 3,600 / 상품수 960,797</li>
+<li>겨울털슬리퍼: 검색수 3,600 / 상품수 948,521</li>
+<li>여성겨울슬...: 검색수 8,210 / 상품수 1,342,849</li>
+<li>나이키 털슬...: 검색수 8,780 / 상품수 2,058</li>
+<li>남성겨울슬...: 검색수 5,890 / 상품수 301,772</li>
+<li>아디다스 털...: 검색수 10,140 / 상품수 541</li>
+<li>크록스 털슬...: 검색수 14,770 / 상품수 17,476</li>
+<li>통굽털슬리퍼: 검색수 1,340 / 상품수 104,738</li>
+</ul>
+<h3>5. 종합 차트 분석 - 월간 검색 추이 (3년)</h3>
+<div class="screenshot-container"><img src="images/segment_006.jpg" alt="아이템스카우트 종합 차트 - 월간 3년" loading="lazy"><div class="caption">아이템스카우트 종합 차트 - 월간 3년</div></div>
+<p>화면은 아이템스카우트의 <strong>종합 차트</strong> 페이지로 이동한다. &quot;털슬리퍼&quot; 키워드의 <strong>월간/3년</strong> 검색 추이 그래프가 표시된다.</p>
+<p>자막: <strong>&quot;25년 1월 검색량은 약 30,000회입니다&quot;</strong></p>
+<p>그래프 데이터 포인트: <strong>2025.01 검색수 30,280</strong></p>
+<p>그래프 패턴을 보면, 매년 겨울(11월~1월)에 검색량이 급격히 치솟아 <strong>약 80,000~100,000건 이상</strong>까지 올라갔다가, 봄~가을에는 <strong>30,000~50,000건</strong> 수준으로 하락하는 전형적인 계절성 패턴을 보인다.</p>
+<p><strong>우측 사이드바 데이터</strong>:</p>
+<ul>
+<li>기기별 클릭 비율: 모바일 86% / PC 13%</li>
+<li>성별 클릭 비율: 여성 81% / 남성 18%</li>
+<li>연령별 클릭 비율: 30대, 40대가 가장 높고, 20대, 50대가 그 다음</li>
+<li>요일별 클릭 비율: 비교적 균등하게 분포</li>
+</ul>
+<h3>6. 상품 등록과 준비 기간의 현실</h3>
+<div class="screenshot-container"><img src="images/segment_007.jpg" alt="상품 등록, 리뷰 작업, 광고 최적화 등" loading="lazy"><div class="caption">상품 등록, 리뷰 작업, 광고 최적화 등</div></div>
+<p>같은 종합 차트 화면에서 자막: <strong>&quot;상품 등록, 리뷰 작업, 광고 최적화 등&quot;</strong></p>
+<p>발화자는 상품을 판매하기 위해서는 단순히 상품을 올리는 것만으로는 안 되고, <strong>상품 등록 → 리뷰 작업 → 광고 최적화</strong> 등 여러 단계의 준비 과정이 필요하다고 설명한다. 이러한 준비 기간이 최소 수주에서 수개월이 걸리기 때문에, 계절 상품의 경우 실질적으로 판매 가능한 기간이 매우 짧아진다.</p>
+<h3>7. 월간에서 주간으로 전환 - 더 정밀한 분석</h3>
+<div class="screenshot-container"><img src="images/segment_008.jpg" alt="월간이 아닌 주간으로 확인을 해 보겠습니다" loading="lazy"><div class="caption">월간이 아닌 주간으로 확인을 해 보겠습니다</div></div>
+<p>발화자는 차트의 시간 단위를 <strong>월간에서 주간</strong>으로 변경한다. 자막: <strong>&quot;월간이 아닌 주간으로 확인을 해 보겠습니다&quot;</strong></p>
+<p>드롭다운 메뉴에서 &quot;월간&quot;, &quot;주간&quot;, &quot;일간&quot; 옵션이 보이며, &quot;주간&quot;을 선택하는 모습이 캡처되어 있다.</p>
+<h3>8. 주간 데이터로 본 계절성의 실체</h3>
+<div class="screenshot-container"><img src="images/segment_009.jpg" alt="주간 데이터 - 2024.09.08~09.14 검색수 620" loading="lazy"><div class="caption">주간 데이터 - 2024.09.08~09.14 검색수 620</div></div>
+<p>주간 데이터로 전환한 그래프가 표시된다. 자막: <strong>&quot;이때만 그런 거 아니냐고요? 할 수 있지만&quot;</strong></p>
+<p><strong>2024.09.08~2024.09.14 주간 검색수: 620건</strong></p>
+<p>그래프는 훨씬 더 극적인 계절성을 보여준다. 겨울 피크 시즌(11월~1월)에는 주간 검색수가 <strong>50,000~60,000건</strong>까지 치솟지만, 비수기(특히 여름~초가을)에는 <strong>200~600건</strong> 수준으로 급락한다. 이는 월간 데이터보다 훨씬 더 명확하게 계절성을 보여준다.</p>
+<h3>9. 비수기의 현실 - 3월에도 검색량 급감</h3>
+<div class="screenshot-container"><img src="images/segment_010.jpg" alt="2025.03.23~03.29 검색수 240" loading="lazy"><div class="caption">2025.03.23~03.29 검색수 240</div></div>
+<p>자막: <strong>&quot;벌써 11월, 12월에 구매를 했기에&quot;</strong></p>
+<p><strong>2025.03.23~2025.03.29 주간 검색수: 240건</strong></p>
+<p>발화자는 털슬리퍼가 이미 11월, 12월에 대부분 구매가 이루어지기 때문에, 1월 이후에는 검색량이 급격히 줄어든다고 설명한다. 3월 말 기준 주간 검색수가 240건밖에 되지 않는 것은, 소비자들이 이미 겨울에 필요한 슬리퍼를 구매했기 때문이다.</p>
+<h3>10. 계절 상품의 재고 리스크 - 온풍기 사례</h3>
+<div class="screenshot-container"><img src="images/segment_011.jpg" alt="우리는 온풍기를 구매할까요?" loading="lazy"><div class="caption">우리는 온풍기를 구매할까요?</div></div>
+<p>자막: <strong>&quot;우리는 온풍기를 구매할까요?&quot;</strong></p>
+<p>발화자는 계절 상품의 또 다른 예시로 온풍기를 든다. &quot;봄이나 여름에 우리가 온풍기를 사겠느냐?&quot;라는 질문을 통해, 계절 상품은 시즌이 끝나면 수요가 사라진다는 점을 직관적으로 설명한다.</p>
+<div class="screenshot-container"><img src="images/segment_012.jpg" alt="그래도 짧게 판매를 해보겠다는" loading="lazy"><div class="caption">그래도 짧게 판매를 해보겠다는</div></div>
+<p>자막: <strong>&quot;그래도 짧게 판매를 해보겠다는&quot;</strong></p>
+<p>일부 셀러들이 &quot;짧은 기간이라도 판매해보겠다&quot;는 생각으로 계절 상품에 진입하는 경우가 있다고 언급한다.</p>
+<h3>11. 계절 상품의 추가 문제점 - 재고 처리</h3>
+<div class="screenshot-container"><img src="images/segment_013.jpg" alt="계다가 계절 상품은" loading="lazy"><div class="caption">계다가 계절 상품은</div></div>
+<p>자막: <strong>&quot;게다가 계절 상품은&quot;</strong></p>
+<p>차트 하단에 x축 날짜가 보이며 (12.18, 02.12, 04.09, 06.04, 07.30...), 요일별 클릭 비율 차트도 우측에 표시된다. 발화자는 계절 상품의 추가적인 문제점을 설명한다.</p>
+<h3>12. 과거 실패 경험 - 겨울 상품 처음 판매 사례</h3>
+<div class="screenshot-container"><img src="images/segment_015.jpg" alt="2024.01.28~02.03 검색수 4,630" loading="lazy"><div class="caption">2024.01.28~02.03 검색수 4,630</div></div>
+<p>자막: <strong>&quot;그때 당시 겨울 상품을 처음 판매했었는데&quot;</strong></p>
+<p><strong>2024.01.28~2024.02.03 주간 검색수: 4,630건</strong></p>
+<p>발화자는 자신의 과거 경험을 공유한다. 겨울 상품을 처음 판매했을 당시, 1월 말~2월 초에도 주간 검색수가 4,630건 정도 있어서 &quot;계속 팔릴 줄 알았다&quot;고 했지만 실제로는 그렇지 않았다고 고백한다.</p>
+<div class="screenshot-container"><img src="images/segment_016.jpg" alt="계속 팔릴 줄 알았기 때문이죠" loading="lazy"><div class="caption">계속 팔릴 줄 알았기 때문이죠</div></div>
+<p>자막: <strong>&quot;계속 팔릴 줄 알았기 때문이죠&quot;</strong></p>
+<p><strong>2023.07.30~2023.08.05 주간 검색수: 220건</strong></p>
+<p>여름(7~8월) 시점의 주간 검색수가 220건밖에 안 되는 것을 보여주며, 겨울 상품이 여름에는 사실상 판매가 불가능하다는 현실을 보여준다.</p>
+<h3>13. 대안 제시 - 사계절 상품 &quot;수면양말&quot;</h3>
+<div class="screenshot-container"><img src="images/segment_017.jpg" alt="수면양말 검색 추이" loading="lazy"><div class="caption">수면양말 검색 추이</div></div>
+<p>자막: <strong>&quot;그리고 이러한 수면양말과 같은&quot;</strong></p>
+<p>화면이 <strong>&quot;수면양말&quot;</strong> 키워드 분석으로 전환된다. 주간/3년 그래프에서 수면양말의 검색 추이를 보여준다.</p>
+<p><strong>수면양말 사이드바 데이터</strong>:</p>
+<ul>
+<li>기기별 클릭 비율: 모바일 86% / PC 13%</li>
+<li>성별 클릭 비율: 여성 79% / 남성 20%</li>
+<li>연령별 클릭 비율: 30대, 40대가 가장 높음</li>
+</ul>
+<p>수면양말도 겨울에 검색량이 높고 여름에 낮아지는 계절성을 보이지만, 털슬리퍼만큼 극단적이지는 않다. 그래도 여전히 계절성이 있는 상품이다.</p>
+<h3>14. 온풍기의 극단적 계절성</h3>
+<div class="screenshot-container"><img src="images/segment_017.jpg" alt="온풍기 검색 추이 - 2024.12.22~12.28 검색수 31,540" loading="lazy"><div class="caption">온풍기 검색 추이 - 2024.12.22~12.28 검색수 31,540</div></div>
+<p>자막: <strong>&quot;그 주에 검색량이 3분의 1&quot;</strong></p>
+<p><strong>온풍기</strong> 키워드로 전환된 화면에서:</p>
+<ul>
+<li><strong>2024.12.22~2024.12.28 주간 검색수: 31,540건</strong></li>
+<li>기기별 클릭 비율: 모바일 96% / PC 3%</li>
+<li>성별 클릭 비율: 여성 66% / 남성 33%</li>
+</ul>
+<p>온풍기는 겨울 피크 시 주간 80,000~100,000건까지 치솟았다가, 비수기에는 거의 0에 가까운 극단적 계절성을 보인다.</p>
+<h3>15. 수면양말의 비수기 검색량</h3>
+<div class="screenshot-container"><img src="images/segment_018.jpg" alt="수면양말 2025.03.02~03.08 검색수 1,780" loading="lazy"><div class="caption">수면양말 2025.03.02~03.08 검색수 1,780</div></div>
+<p>자막: <strong>&quot;이러한 상품을 제외하고는&quot;</strong></p>
+<p><strong>수면양말 2025.03.02~2025.03.08 주간 검색수: 1,780건</strong></p>
+<p>수면양말은 비수기(3월)에도 주간 1,780건의 검색수를 유지하고 있어, 털슬리퍼(240건)보다는 낫지만 여전히 계절성이 존재하는 상품임을 보여준다.</p>
+<div class="screenshot-container"><img src="images/segment_019.jpg" alt="엄청난 데이터이기 때문이죠" loading="lazy"><div class="caption">엄청난 데이터이기 때문이죠</div></div>
+<p>자막: <strong>&quot;엄청난 데이터이기 때문이죠&quot;</strong></p>
+<p>이러한 검색 추이 데이터가 상품 소싱에 있어 매우 중요한 판단 근거가 된다고 강조한다.</p>
+<h3>16. 도매꾹(domeggook.com)에서의 소싱</h3>
+<div class="screenshot-container"><img src="images/segment_020.jpg" alt="도매꾹 베스트 상품 페이지" loading="lazy"><div class="caption">도매꾹 베스트 상품 페이지</div></div>
+<p>자막: <strong>&quot;베스트 상품도 충분히 소싱하기에 좋습니다&quot;</strong></p>
+<p>화면이 <strong>도매꾹(domeggook.com)</strong> 웹사이트로 전환된다. &quot;돈버는 쇼핑, 도매꾹&quot;이라는 슬로건이 보이며, 베스트 상품 순위가 표시된다:</p>
+<ol>
+<li><strong>2배두툼패딩솜+두툼고급융털 상하세트 남녀공용 융털 기모바지</strong>: 18,500원 (최소 1개)</li>
+<li><strong>[노넥타이] KC인증 120X9cm 아동 유아 니트 뽀띠목도리 도매꾹 최저가 크리스마스 선물 구성</strong>: 1,740원 (최소 3개)</li>
+<li><strong>[도매라인] 도매 최저가 고급짙 할머니조끼 빈티지용털조끼 가을조끼 겨울조끼</strong>: 3,800원 (최소 2개)</li>
+<li><strong>겨울 남자 방한 패딩바지 융털 트레이닝 바지 남성 팬츠 조거형 일자형</strong>: 6,900원 (최소 1개)</li>
+<li><strong>3M 신슐레이트 스키장갑 방한장갑</strong>: 7,500원 (최소 10개)</li>
+</ol>
+<p>우측에는 광고 배너와 구매완료 상품수 228,467 상품이 표시되어 있다.</p>
+<p>발화자는 도매꾹의 베스트 상품도 소싱 참고용으로 충분히 좋다고 설명한다.</p>
+<h3>17. 도매꾹 베스트 상품 추가 목록</h3>
+<div class="screenshot-container"><img src="images/segment_021.jpg" alt="도매꾹 베스트 상품 6~15위" loading="lazy"><div class="caption">도매꾹 베스트 상품 6~15위</div></div>
+<p>자막: <strong>&quot;판매를 못하는 것이죠&quot;</strong></p>
+<p>도매꾹 베스트 상품 6~15위:</p>
+<ol>
+<li>(완판감사세일)KC인증 무선 뻥고데기 C타입충전 (파우치+집게핀 2P+오리빗 휴치)**: 14,900원</li>
+<li>[노넥타이] KC인증 유아 아동 니트 바라클라바 넥워머: 3,980원</li>
+<li>푸들포/크리스마스인기무드등/토끼/하트로기/하트베어/삼근토끼/괴물이/고양이 묶음개별: 1,880원</li>
+<li>[도매라인] 고급짙 프리미엄 겨울양 패딩목도리 100g 볼륨감있고 부드러운이건 겨울 멋진 머플러: 3,900원</li>
+<li>[도매라인] 세련된디자인 한겨울용 두꺼운 극세사이불담요 200*150 겨울이불 겨울담요: 11,500원</li>
+</ol>
+<p>구매완료 상품수가 621,189 상품으로 증가한 것이 보인다. 발화자는 이런 계절 상품들만 가지고는 지속적인 판매를 할 수 없다고 경고한다.</p>
+<h3>18. 수면양말 차트로 복귀 - 데이터의 중요성 재강조</h3>
+<div class="screenshot-container"><img src="images/segment_022.jpg" alt="수면양말 차트 - 어마어마하기 때문이죠" loading="lazy"><div class="caption">수면양말 차트 - 어마어마하기 때문이죠</div></div>
+<p>자막: <strong>&quot;어마어마하기 때문이죠&quot;</strong></p>
+<p>다시 아이템스카우트의 수면양말 주간 검색 추이 차트로 돌아온다. 데이터 분석의 중요성을 재차 강조한다.</p>
+<h3>19. 추천 상품 유형 - &quot;피크닉매트&quot; 사례</h3>
+<div class="screenshot-container"><img src="images/segment_024.jpg" alt="피크닉매트 월간 검색 추이 - 2025.05 검색수 18,640" loading="lazy"><div class="caption">피크닉매트 월간 검색 추이 - 2025.05 검색수 18,640</div></div>
+<p>자막: <strong>&quot;날씨가 따뜻한 4월, 5월에만&quot;</strong></p>
+<p>화면이 <strong>&quot;피크닉매트&quot;</strong> 키워드 분석으로 전환된다. <strong>월간/3년</strong> 그래프가 표시된다.</p>
+<p><strong>2025.05 검색수: 18,640건</strong></p>
+<p>피크닉매트의 검색 추이는 계절 상품과 크게 다른 패턴을 보인다:</p>
+<ul>
+<li>3년간 월간 검색수가 대체로 <strong>10,000~30,000건</strong> 사이를 유지</li>
+<li>겨울(12월~2월)에 약간 하락하여 최저점이 약 <strong>3,000~5,000건</strong></li>
+<li>봄~가을에 걸쳐 안정적으로 <strong>15,000~30,000건</strong> 유지</li>
+<li>극단적인 피크/급락 없이 비교적 완만한 곡선</li>
+</ul>
+<p><strong>피크닉매트 사이드바 데이터</strong>:</p>
+<ul>
+<li>기기별 클릭 비율: 모바일 75% / PC 24%</li>
+<li>성별 클릭 비율: 여성 80% / 남성 19%</li>
+<li>연령별 클릭 비율: 30대, 40대가 가장 높음</li>
+</ul>
+<p>발화자는 피크닉매트 같은 상품이 날씨가 따뜻한 4월, 5월에만 살짝 검색량이 하락하지만, 연중 꾸준한 수요가 있어 초보 셀러에게 훨씬 유리하다고 설명한다.</p>
+<div class="screenshot-container"><img src="images/segment_025.jpg" alt="2025.03 검색수 14,100 - 순위를 상승시킬 수 있으며" loading="lazy"><div class="caption">2025.03 검색수 14,100 - 순위를 상승시킬 수 있으며</div></div>
+<p>자막: <strong>&quot;순위를 상승시킬 수 있으며&quot;</strong></p>
+<p><strong>2025.03 검색수: 14,100건</strong></p>
+<p>비수기인 3월에도 14,100건의 안정적인 검색수를 유지하고 있다. 발화자는 이런 상품은 비수기에 미리 상품을 등록하고 순위를 올릴 시간적 여유가 충분하다고 설명한다. 계절 상품과 달리 급하게 진입할 필요 없이, 차근차근 상품 등록 → 리뷰 확보 → 광고 최적화를 진행할 수 있다는 것이다.</p>
+<h3>20. 초보 셀러들의 흔한 실수</h3>
+<div class="screenshot-container"><img src="images/segment_026.jpg" alt="많은 초보 분들이" loading="lazy"><div class="caption">많은 초보 분들이</div></div>
+<p>자막: <strong>&quot;많은 초보 분들이&quot;</strong></p>
+<p>피크닉매트 그래프를 보여주며, 많은 초보 셀러들이 저지르는 실수에 대해 언급한다.</p>
+<div class="screenshot-container"><img src="images/segment_027.jpg" alt="하루, 이틀, 길게는 일주일 정도의" loading="lazy"><div class="caption">하루, 이틀, 길게는 일주일 정도의</div></div>
+<p>자막: <strong>&quot;하루, 이틀, 길게는 일주일 정도의&quot;</strong></p>
+<p>발화자는 많은 초보 셀러들이 하루, 이틀, 길게는 일주일 정도만 데이터를 보고 상품을 소싱하는 실수를 저지른다고 경고한다. 짧은 기간의 데이터만으로는 계절성을 파악할 수 없으며, 반드시 <strong>3년치 장기 데이터</strong>를 확인해야 한다는 것이다.</p>
+<h3>21. 마무리 - 다양한 소싱 방법과 구독 요청</h3>
+<div class="screenshot-container"><img src="images/segment_027.jpg" alt="2025.07 검색수 9,920 - 다양한 방법들이 있습니다" loading="lazy"><div class="caption">2025.07 검색수 9,920 - 다양한 방법들이 있습니다</div></div>
+<p>자막: <strong>&quot;다양한 방법들이 있습니다&quot;</strong></p>
+<p><strong>2025.07 검색수: 9,920건</strong></p>
+<p>한여름(7월)에도 약 10,000건의 검색수를 유지하는 피크닉매트를 보여주며, 이 외에도 다양한 소싱 방법들이 있다고 마무리한다.</p>
+<div class="screenshot-container"><img src="images/segment_028.jpg" alt="2025.06 검색수 12,540 - 구독과 좋아요 부탁드리며" loading="lazy"><div class="caption">2025.06 검색수 12,540 - 구독과 좋아요 부탁드리며</div></div>
+<p>자막: <strong>&quot;구독과 좋아요 부탁드리며&quot;</strong></p>
+<p><strong>2025.06 검색수: 12,540건</strong></p>
+<p>마지막으로 구독과 좋아요를 부탁하며 영상을 마무리한다.</p>
+<h2>주요 인용 및 발언</h2>
+<blockquote><p>&quot;각자의 방법이 다르기에&quot;</p></blockquote>
+<ul>
+<li>소싱 방법은 셀러마다 다양하지만, 공통적으로 피해야 할 상품 유형이 있다.</li>
+</ul>
+<blockquote><p>&quot;우선 결론을 먼저 말씀드리면... 절대 소싱하면 안 됩니다&quot;</p></blockquote>
+<ul>
+<li>영상의 핵심 메시지. 계절성이 강한 상품은 절대 소싱하지 말라는 강한 경고.</li>
+</ul>
+<blockquote><p>&quot;그럼 지금 진입해서 팔아도 되지 않나요?&quot;</p></blockquote>
+<ul>
+<li>시청자의 예상 질문을 대변하며, 데이터로 왜 안 되는지를 설명하는 전환점.</li>
+</ul>
+<blockquote><p>&quot;25년 1월 검색량은 약 30,000회입니다&quot;</p></blockquote>
+<ul>
+<li>월간 데이터만 보면 괜찮아 보이지만, 주간 데이터로 보면 계절성이 극명하게 드러난다.</li>
+</ul>
+<blockquote><p>&quot;이때만 그런 거 아니냐고요? 할 수 있지만&quot;</p></blockquote>
+<ul>
+<li>비수기 주간 검색수 620건이라는 현실을 보여주며 반박.</li>
+</ul>
+<blockquote><p>&quot;벌써 11월, 12월에 구매를 했기에&quot;</p></blockquote>
+<ul>
+<li>소비자 구매 심리를 설명. 겨울 상품은 이미 시즌 초반에 구매가 완료된다.</li>
+</ul>
+<blockquote><p>&quot;우리는 온풍기를 구매할까요?&quot;</p></blockquote>
+<ul>
+<li>직관적 비유로 계절 상품의 한계를 설명.</li>
+</ul>
+<blockquote><p>&quot;그때 당시 겨울 상품을 처음 판매했었는데, 계속 팔릴 줄 알았기 때문이죠&quot;</p></blockquote>
+<ul>
+<li>발화자 본인의 실패 경험 공유. 1월의 4,630건 검색수에 속아 여름까지 재고를 보유했던 실수.</li>
+</ul>
+<blockquote><p>&quot;베스트 상품도 충분히 소싱하기에 좋습니다&quot;</p></blockquote>
+<ul>
+<li>도매꾹 등 도매 플랫폼의 베스트 상품을 참고할 것을 권장.</li>
+</ul>
+<blockquote><p>&quot;날씨가 따뜻한 4월, 5월에만... 순위를 상승시킬 수 있으며&quot;</p></blockquote>
+<ul>
+<li>피크닉매트처럼 연중 꾸준한 상품은 비수기에 미리 진입하여 순위를 올릴 여유가 있다.</li>
+</ul>
+<blockquote><p>&quot;하루, 이틀, 길게는 일주일 정도의&quot;</p></blockquote>
+<ul>
+<li>초보들이 단기 데이터만 보고 판단하는 실수를 경고.</li>
+</ul>
+<h2>결론 및 시사점</h2>
+<p><strong>핵심 메시지</strong>: 쿠팡/스마트스토어 초보 셀러가 상품 소싱 시 가장 먼저 해야 할 일은 &quot;팔 상품을 찾는 것&quot;이 아니라 <strong>&quot;절대 팔면 안 되는 상품을 걸러내는 것&quot;</strong>이다.</p>
+<p><strong>실용적 시사점</strong>:</p>
+<ol>
+<li><strong>아이템스카우트(itemscout.io)를 반드시 활용하라</strong>: 네이버 가격비교 페이지에서 확장 프로그램으로 바로 키워드 데이터를 확인할 수 있으며, 상품수, 월간 검색수, 경쟁강도, 매출, 판매량, 평균 판매가 등 핵심 지표를 한눈에 파악할 수 있다.</li>
+</ol>
+<ol>
+<li><strong>월간이 아닌 주간 데이터로 확인하라</strong>: 월간 데이터는 계절성을 뭉뚱그려 보여주기 때문에, 반드시 주간 단위로 전환하여 실제 검색량 변동 폭을 확인해야 한다.</li>
+</ol>
+<ol>
+<li><strong>최소 3년치 장기 데이터를 분석하라</strong>: 하루, 이틀, 일주일의 단기 데이터로는 계절성을 파악할 수 없다. 3년간의 추이를 보고 패턴을 파악해야 한다.</li>
+</ol>
+<ol>
+<li><strong>계절 상품을 피하라</strong>: 털슬리퍼(겨울), 온풍기(겨울), 수면양말(겨울) 등 특정 시즌에만 수요가 몰리는 상품은 상품 등록~리뷰 확보~광고 최적화 기간을 고려하면 실제 수익을 내기 매우 어렵다. 시즌이 끝나면 재고만 남게 된다.</li>
+</ol>
+<ol>
+<li><strong>사계절 꾸준한 상품을 선택하라</strong>: 피크닉매트처럼 연중 10,000~30,000건의 안정적 검색수를 유지하는 상품을 선택하면, 비수기에 미리 진입하여 순위를 올리고, 시즌에 본격적으로 매출을 올릴 수 있다.</li>
+</ol>
+<ol>
+<li><strong>도매꾹 등 도매 플랫폼의 베스트 상품을 참고하되, 반드시 데이터 검증을 거쳐라</strong>: 도매꾹의 인기 상품을 참고할 수 있지만, 아이템스카우트 등으로 검색 추이와 경쟁강도를 반드시 확인한 후 소싱 여부를 결정해야 한다.</li>
+</ol>
+
+        <div class="footer">
+            Generated by VidDigest
+        </div>
+    </div>
+    <div class="lightbox" id="lightbox" onclick="this.classList.remove('active')">
+        <img id="lightbox-img" src="" alt="">
+    </div>
+    <script>
+        document.querySelectorAll('.screenshot-container img').forEach(function(img) {
+            img.addEventListener('click', function() {
+                var lb = document.getElementById('lightbox');
+                document.getElementById('lightbox-img').src = this.src;
+                lb.classList.add('active');
+            });
+        });
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') document.getElementById('lightbox').classList.remove('active');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>쿠팡 로켓 배송 입점 노하우부터 포장 출고까지의 모든 것 - VidDigest</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.8;
+            color: #1a1a2e;
+            background: #f8f9fa;
+        }
+        .header {
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: white;
+            padding: 48px 0 40px;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 28px;
+            font-weight: 700;
+            max-width: 800px;
+            margin: 0 auto 16px;
+            padding: 0 24px;
+            line-height: 1.4;
+        }
+        .header .meta {
+            font-size: 14px;
+            opacity: 0.85;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 0 24px;
+        }
+        .header .meta span {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+        }
+        h2 {
+            font-size: 22px;
+            font-weight: 700;
+            color: #302b63;
+            margin: 48px 0 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e8e8f0;
+        }
+        h3 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #24243e;
+            margin: 32px 0 14px;
+        }
+        h4 {
+            font-size: 16px;
+            font-weight: 600;
+            color: #444;
+            margin: 24px 0 10px;
+        }
+        p {
+            margin: 12px 0;
+            font-size: 15.5px;
+            color: #2c2c3e;
+        }
+        ul, ol {
+            margin: 12px 0;
+            padding-left: 28px;
+        }
+        li {
+            margin: 8px 0;
+            font-size: 15.5px;
+            color: #2c2c3e;
+        }
+        li strong {
+            color: #302b63;
+        }
+        blockquote {
+            margin: 20px 0;
+            padding: 16px 20px;
+            background: #f0f0f8;
+            border-left: 4px solid #302b63;
+            border-radius: 0 8px 8px 0;
+            font-size: 15px;
+            color: #444;
+        }
+        blockquote p {
+            margin: 4px 0;
+        }
+        .screenshot-container {
+            margin: 24px 0;
+            text-align: center;
+        }
+        .screenshot-container img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+            border: 1px solid #e0e0e8;
+        }
+        .screenshot-container .caption {
+            font-size: 13px;
+            color: #888;
+            margin-top: 8px;
+            font-style: italic;
+        }
+        code {
+            background: #eef;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-family: 'SF Mono', Menlo, Consolas, monospace;
+            color: #d63384;
+        }
+        pre {
+            background: #1e1e2e;
+            color: #cdd6f4;
+            padding: 20px;
+            border-radius: 10px;
+            overflow-x: auto;
+            margin: 16px 0;
+            font-size: 13.5px;
+            line-height: 1.6;
+        }
+        pre code {
+            background: none;
+            padding: 0;
+            color: inherit;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid #e0e0e8;
+            margin: 40px 0;
+        }
+        strong {
+            font-weight: 600;
+        }
+        .footer {
+            text-align: center;
+            padding: 32px 0;
+            font-size: 13px;
+            color: #999;
+            border-top: 1px solid #e8e8f0;
+            margin-top: 60px;
+        }
+        .screenshot-container img {
+            cursor: zoom-in;
+            transition: opacity 0.2s;
+        }
+        .screenshot-container img:hover {
+            opacity: 0.85;
+        }
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.85);
+            z-index: 9999;
+            cursor: zoom-out;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+        }
+        .lightbox.active {
+            display: flex;
+        }
+        .lightbox img {
+            max-width: 95vw;
+            max-height: 92vh;
+            border-radius: 8px;
+            box-shadow: 0 8px 40px rgba(0,0,0,0.5);
+            object-fit: contain;
+        }
+        @media (max-width: 600px) {
+            .header { padding: 32px 0 28px; }
+            .header h1 { font-size: 20px; padding: 0 16px; }
+            .header .meta { font-size: 12px; gap: 12px; padding: 0 16px; }
+            .container { padding: 24px 16px 60px; }
+            h2 { font-size: 19px; margin: 36px 0 16px; }
+            h3 { font-size: 16px; margin: 24px 0 12px; }
+            h4 { font-size: 15px; margin: 20px 0 8px; }
+            p, li { font-size: 14.5px; }
+            ul, ol { padding-left: 20px; }
+            blockquote { padding: 12px 14px; font-size: 14px; }
+            pre { padding: 14px; font-size: 12.5px; border-radius: 8px; }
+            code { font-size: 13px; }
+            .screenshot-container img { border-radius: 8px; }
+            hr { margin: 28px 0; }
+        }
+        @media (prefers-color-scheme: dark) {
+            body { background: #1a1a2e; color: #e0e0e8; }
+            h2 { color: #a8a4d6; border-bottom-color: #333; }
+            h3 { color: #c8c4e6; }
+            h4 { color: #b0b0c8; }
+            p, li { color: #d0d0e0; }
+            blockquote { background: #252540; border-left-color: #6c63ff; color: #c0c0d0; }
+            code { background: #2a2a4a; color: #f0a0c0; }
+            pre { background: #0d0d1a; }
+            hr { border-top-color: #333; }
+            .screenshot-container img { border-color: #333; }
+            .footer { border-top-color: #333; color: #666; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>쿠팡 로켓 배송 입점 노하우부터 포장 출고까지의 모든 것</h1>
+        <div class="meta">
+            <span>무역선생 Dr.H 황동명</span>
+            <span>7:09</span>
+            <span>20230523</span>
+        </div>
+    </div>
+    <div class="container">
+        <blockquote><p><strong>채널</strong>: 무역선생 Dr.H 황동명 | <strong>길이</strong>: 7:09 | <strong>날짜</strong>: 20230523</p></blockquote>
+<h2>핵심 내용</h2>
+<ul>
+<li><strong>쿠팡 로켓배송(로켓 그로스) 입점 및 출고 실무를 직접 보여주는 현장 밀착 영상이다.</strong> 발화자(황동명)는 자신의 사무실과 창고에서 실제로 포장하고 출고하는 과정을 촬영하면서, 쿠팡 로켓배송 셀러로서의 일상과 노하우를 공유한다. 포장해 놓은 물건들을 보여주며 금요일까지 입고해야 하는 일정을 설명한다.</li>
+</ul>
+<ul>
+<li><strong>쿠팡 로켓배송의 매출 규모와 수익 현실을 솔직하게 공개한다.</strong> 쿠팡에 신상품을 안 넣은 지 오래되었음에도 불구하고 일정 수준의 매출이 유지되고 있으며, 시즌 상품이 터질 때는 천만 원까지 매출이 나가는 경우가 있다고 언급한다(아주 가끔이라고 솔직하게 부연).</li>
+</ul>
+<ul>
+<li><strong>로켓 그로스의 핵심 입점 전략은 &quot;다른 사람들이 잘 판매하지 않는 제품&quot;을 찾는 것이다.</strong> 쿠팡 측(MD)이 욕심을 내는 아이템이 있는데, 그런 아이템은 쿠팡이 직접 판매하려 하므로 셀러에게 불리하다. 따라서 경쟁이 적은 틈새 제품을 공략하는 것이 유리하다.</li>
+</ul>
+<ul>
+<li><strong>중국 현지에서든 일본이든 해외 소싱을 통해 제품을 확보하고, 바코드와 스티커링 등의 준비 작업이 필수적이다.</strong> 중국산 제품은 바코드가 거의 없기 때문에, 중국에서 수입되는 벌크 상태 그대로는 판매할 수 없다. 스티커링 작업(한글 라벨, 품명, 원산지, 수입자 정보 등 부착)이 반드시 필요하다.</li>
+</ul>
+<ul>
+<li><strong>쿠팡 광고 없이도 판매가 가능하며, 위탁판매는 절대 불가하다.</strong> 발화자는 쿠팡에서 광고하라고 권유해도 광고를 하지 않고 있으며, 처음에 주문이 적게 들어오더라도 꾸준히 하면 발주가 들어오는 일이 생긴다고 조언한다. 다만 위탁판매 같은 방식은 로켓배송에서 절대 안 된다고 강조한다.</li>
+</ul>
+<ul>
+<li><strong>포장 출고 실무 과정을 직접 시연한다.</strong> 포장내역서를 넣고 박스 포장을 하는 과정, 큰 박스는 크게 출력하면 된다는 실용적 팁, 그리고 입고예정일(2023-05-12)이 적힌 송장 부착까지의 전 과정을 보여준다.</li>
+</ul>
+<h2>상세 분석</h2>
+<h3>1. 인트로 - 포장해 놓은 물건들과 출고 준비 현장</h3>
+<div class="screenshot-container"><img src="images/segment_000.jpg" alt="포장해 놓은 물건들" loading="lazy"><div class="caption">포장해 놓은 물건들</div></div>
+<p>영상은 사무실 문 앞에 쌓여 있는 여러 개의 택배 박스들을 보여주며 시작된다. 화면 하단에 &quot;포장해 놓은 물건들&quot;이라는 자막이 표시된다. 박스에는 배송 라벨과 바코드가 부착되어 있고, 박스 위에 &quot;시흥&quot;, &quot;인천4&quot; 등 지역명이 손글씨로 적혀 있다. 입고예정일이 &quot;2023-05-12&quot;로 표시된 라벨도 보인다. 이는 쿠팡 물류센터 각 지역(시흥, 인천 등)으로 배송되는 상품들이 이미 포장 완료되어 출고를 기다리고 있는 상태임을 보여준다.</p>
+<h3>2. 금요일까지 입고 일정과 정리 작업</h3>
+<div class="screenshot-container"><img src="images/segment_001.jpg" alt="금요일까지 입고라서 오늘까지 정리해서 시켜야 합니다" loading="lazy"><div class="caption">금요일까지 입고라서 오늘까지 정리해서 시켜야 합니다</div></div>
+<p>발화자는 사무실 책상 앞에 앉아 컴퓨터 모니터(듀얼 모니터 구성)를 배경으로 카메라를 향해 이야기한다. &quot;금요일까지 입고라서 오늘까지 정리해서 시켜야 합니다&quot;라고 말하며, 쿠팡 로켓배송의 입고 마감일 관리가 중요함을 보여준다. 뒤편에는 벽돌무늬 벽지의 사무실 환경이 보이고, 책상 위에는 키보드, 프린터, 각종 서류 등이 놓여 있어 실제 셀러의 업무 환경을 엿볼 수 있다.</p>
+<h3>3. 쿠팡 신상품 등록 현황과 매출 규모</h3>
+<div class="screenshot-container"><img src="images/segment_002.jpg" alt="지금 쿠팡에 신상품 안 넣은지" loading="lazy"><div class="caption">지금 쿠팡에 신상품 안 넣은지</div></div>
+<p>발화자는 &quot;지금 쿠팡에 신상품 안 넣은지&quot;라고 말하며, 한동안 새로운 상품을 등록하지 않았음을 고백한다. 그럼에도 불구하고 기존 상품들의 판매가 지속되고 있다는 맥락이다.</p>
+<div class="screenshot-container"><img src="images/segment_003.jpg" alt="천만원까지 나가는 경우에는 시즌 상품이 터질 때 (아주 가끔 ㅎㅎㅎ)" loading="lazy"><div class="caption">천만원까지 나가는 경우에는 시즌 상품이 터질 때 (아주 가끔 ㅎㅎㅎ)</div></div>
+<p>매출 규모에 대해 솔직하게 이야기한다. &quot;천만원까지 나가는 경우에는 시즌 상품이 터질 때&quot;라고 말하며, 괄호 안에 &quot;(아주 가끔 ㅎㅎㅎ)&quot;이라는 부연을 넣어 솔직한 현실을 전달한다. 시즌 상품이 잘 맞아떨어지면 큰 매출이 나올 수 있지만, 그런 경우가 매번은 아니라는 현실적인 조언이다.</p>
+<h3>4. 시간이 바쁘니 바로 보여주겠다는 도입부</h3>
+<div class="screenshot-container"><img src="images/segment_004.jpg" alt="시간 다 바쁘니까 보여드리도록 하겠습니다" loading="lazy"><div class="caption">시간 다 바쁘니까 보여드리도록 하겠습니다</div></div>
+<p>&quot;시간 다 바쁘니까 보여드리도록 하겠습니다&quot;라고 말하며, 이론적인 설명보다는 실제 과정을 직접 보여주겠다는 의지를 표현한다. 실무 중심의 콘텐츠임을 예고하는 대목이다.</p>
+<h3>5. 로켓 그로스 입점 전략 - 경쟁이 적은 제품 공략</h3>
+<div class="screenshot-container"><img src="images/segment_005.jpg" alt="그래서 로켓 그로스같은 경우는" loading="lazy"><div class="caption">그래서 로켓 그로스같은 경우는</div></div>
+<p>발화자는 &quot;그래서 로켓 그로스같은 경우는&quot;이라고 말하며 로켓 그로스(쿠팡의 셀러 위탁 물류 서비스) 입점 전략에 대해 설명을 시작한다.</p>
+<div class="screenshot-container"><img src="images/segment_006.jpg" alt="다른 사람들이 잘 판매하지 않는 제품들을 일단" loading="lazy"><div class="caption">다른 사람들이 잘 판매하지 않는 제품들을 일단</div></div>
+<p>핵심 전략으로 &quot;다른 사람들이 잘 판매하지 않는 제품들을 일단&quot; 찾아야 한다고 강조한다. 레드오션 제품보다는 경쟁이 적은 블루오션 제품을 찾는 것이 로켓 그로스 성공의 열쇠라는 것이다.</p>
+<div class="screenshot-container"><img src="images/segment_007.jpg" alt="자기네들이 욕심이 나는 아이템 이거든요" loading="lazy"><div class="caption">자기네들이 욕심이 나는 아이템 이거든요</div></div>
+<p>&quot;자기네들이 욕심이 나는 아이템 이거든요&quot;라고 말하며, 쿠팡 MD(상품기획자)가 직접 판매하고 싶어하는 인기 아이템의 경우, 쿠팡이 직접 소싱하여 로켓배송으로 판매하기 때문에 개인 셀러가 그 카테고리에서 경쟁하기 어렵다는 점을 지적한다. 즉, 쿠팡이 욕심내지 않는 틈새시장을 노려야 한다는 것이다.</p>
+<h3>6. 해외 소싱 경험 - 중국 현지 등</h3>
+<div class="screenshot-container"><img src="images/segment_008.jpg" alt="하다 보니까 중국 현지가 됐든" loading="lazy"><div class="caption">하다 보니까 중국 현지가 됐든</div></div>
+<p>&quot;하다 보니까 중국 현지가 됐든&quot;이라고 말하며, 제품 소싱처에 대해 이야기한다. 중국 현지에서든, 일본에서든, 해외에서 제품을 직접 소싱하는 경험을 바탕으로 이야기하고 있음을 알 수 있다. 발화자가 무역 전문가(채널명 '무역선생')임을 고려하면, 해외 수입을 통한 쿠팡 판매 전략을 주로 다루고 있다.</p>
+<div class="screenshot-container"><img src="images/segment_009.jpg" alt="지금은 또 잘 판매를 하고 있습니다" loading="lazy"><div class="caption">지금은 또 잘 판매를 하고 있습니다</div></div>
+<p>&quot;지금은 또 잘 판매를 하고 있습니다&quot;라고 말하며, 초기에 어려움이 있더라도 꾸준히 하면 결국 판매가 잘 이루어진다는 긍정적인 메시지를 전달한다.</p>
+<h3>7. 창고 현장 - 발주 규모와 물류 환경</h3>
+<div class="screenshot-container"><img src="images/segment_010.jpg" alt="몇 백개씩 발주가 들어온다고 얘기하시는 분도 계시는데" loading="lazy"><div class="caption">몇 백개씩 발주가 들어온다고 얘기하시는 분도 계시는데</div></div>
+<p>장면이 창고로 전환된다. 넓은 창고 내부에 선반, 다양한 박스, 각종 상품들이 쌓여 있는 모습이 보인다. &quot;몇 백개씩 발주가 들어온다고 얘기하시는 분도 계시는데&quot;라고 말하며, 대량 발주를 받는 셀러들도 있다는 것을 언급한다. 창고에는 HDMI 케이블 박스, 각종 생활용품, 의류 등 다양한 카테고리의 상품이 보관되어 있다.</p>
+<h3>8. 쿠팡 광고에 대한 입장 - 광고 없이 판매</h3>
+<div class="screenshot-container"><img src="images/segment_011.jpg" alt="저희들은 지금 쿠팡에서 광고하라고 얘기해도" loading="lazy"><div class="caption">저희들은 지금 쿠팡에서 광고하라고 얘기해도</div></div>
+<p>&quot;저희들은 지금 쿠팡에서 광고하라고 얘기해도&quot;라고 말하며, 쿠팡 측에서 광고를 권유하지만 본인은 광고를 하지 않고 있다는 입장을 밝힌다. 이는 광고비를 절약하면서도 유기적 검색과 로켓배송의 장점만으로 판매를 유지할 수 있다는 전략을 시사한다.</p>
+<div class="screenshot-container"><img src="images/segment_012.jpg" alt="그렇게 이제 처음에 주문이 조금 적게 들어온다 하더라도" loading="lazy"><div class="caption">그렇게 이제 처음에 주문이 조금 적게 들어온다 하더라도</div></div>
+<p>&quot;그렇게 이제 처음에 주문이 조금 적게 들어온다 하더라도&quot;라고 말하며, 초기 진입 시 주문량이 적은 것은 자연스러운 현상이니 인내심을 가지라고 조언한다.</p>
+<h3>9. 중국산 제품의 바코드 문제와 스티커링 작업</h3>
+<div class="screenshot-container"><img src="images/segment_013.jpg" alt="중국산 제품들 같은 경우에는 바코드가 거의 없잖아요" loading="lazy"><div class="caption">중국산 제품들 같은 경우에는 바코드가 거의 없잖아요</div></div>
+<p>&quot;중국산 제품들 같은 경우에는 바코드가 거의 없잖아요&quot;라고 말하며, 중국에서 수입하는 제품의 핵심적인 실무 문제를 지적한다. 한국에서 정식으로 판매하려면 바코드가 필수적인데, 중국산 벌크 제품에는 바코드가 부착되어 있지 않은 경우가 대부분이라는 것이다.</p>
+<div class="screenshot-container"><img src="images/segment_014.jpg" alt="그래서 중국에서 수입되는 벌크 그대로" loading="lazy"><div class="caption">그래서 중국에서 수입되는 벌크 그대로</div></div>
+<p>&quot;그래서 중국에서 수입되는 벌크 그대로&quot;는 판매할 수 없다고 설명한다. 벌크(bulk) 상태로 수입된 제품은 한국 시장에 맞게 가공(스티커링, 바코드 부착, 한글 표기 등)을 해야만 쿠팡에 입고할 수 있다.</p>
+<div class="screenshot-container"><img src="images/segment_015.jpg" alt="그래서 스티커링에는 바코드는없이" loading="lazy"><div class="caption">그래서 스티커링에는 바코드는없이</div></div>
+<p>실제 상품을 들어 보이며 스티커링 작업을 설명한다. 화면에는 일본산 &quot;슈즈 행거(シューズ ハンガー)&quot; 제품의 뒷면이 보인다. 한글 스티커가 부착되어 있으며, 스티커에는 다음 정보가 적혀 있다:</p>
+<ul>
+<li><strong>품명</strong>: 운동화 건조대</li>
+<li><strong>원산지</strong>: 일본</li>
+<li><strong>수입자</strong>: 글로벌티엔티</li>
+</ul>
+<p>제품 패키지 자체에는 일본어 설명과 바코드(4905596312390), 품번 3123, 상품 사이즈(28.7×18.2×두께1.9cm), 품질 표시(소재: 폴리프로필렌, 내열온도 120°C, 내냉온도 -20°C), 제조사(이노마타 화학 주식회사) 정보가 표기되어 있다. &quot;그래서 스티커링에는 바코드는없이&quot; 품명, 원산지, 수입자 정보만 부착한 사례를 보여주는 것이다.</p>
+<h3>10. 포장 출고 실무 과정 시연</h3>
+<div class="screenshot-container"><img src="images/segment_016.jpg" alt="이제 여기에 포장내역서 넣고 박스 포장을 합니다" loading="lazy"><div class="caption">이제 여기에 포장내역서 넣고 박스 포장을 합니다</div></div>
+<p>포장 작업 현장으로 이동한다. &quot;이제 여기에 포장내역서 넣고 박스 포장을 합니다&quot;라고 말하며, 실제 포장 과정을 보여준다. 화면에는 &quot;3SK BOX&quot;라고 적힌 박스(3SK, SUNCOMPANY 제조, B318 규격 350x270x180)가 보이고, FSC(산림관리협의회) 인증 마크도 확인된다. 박스 안에 상품과 포장내역서를 넣은 뒤 테이핑하는 작업을 진행한다. 파란색 파티션이 있는 포장 작업대에서 체계적으로 작업하는 모습이다.</p>
+<div class="screenshot-container"><img src="images/segment_017.jpg" alt="큰 박스 같은 경우에는 크게 출력하시면 됩니다" loading="lazy"><div class="caption">큰 박스 같은 경우에는 크게 출력하시면 됩니다</div></div>
+<p>포장을 마친 박스에 송장을 붙이는 모습이 보인다. &quot;큰 박스 같은 경우에는 크게 출력하시면 됩니다&quot;라는 실용적인 팁을 제공한다. 박스 상단에는 입고예정일 &quot;2023-05-12&quot;가 적힌 송장 라벨이 부착되어 있고, 박스에 &quot;광주4&quot;라고 손글씨로 적혀 있어 광주 물류센터로 배송될 상품임을 알 수 있다. 발화자는 한 손에 바코드 스캐너를 들고 있어, 상품 확인 및 출고 과정에서 바코드 스캐닝이 활용됨을 보여준다.</p>
+<h3>11. 쿠팡 로켓배송 출고 총정리와 위탁판매 경고</h3>
+<div class="screenshot-container"><img src="images/segment_018.jpg" alt="그래서 오늘은 쿠팡 로켓배송 출고에 대해서 한번 봤고요" loading="lazy"><div class="caption">그래서 오늘은 쿠팡 로켓배송 출고에 대해서 한번 봤고요</div></div>
+<p>다시 사무실로 돌아와 &quot;그래서 오늘은 쿠팡 로켓배송 출고에 대해서 한번 봤고요&quot;라고 말하며 영상 내용을 정리하기 시작한다.</p>
+<div class="screenshot-container"><img src="images/segment_019.jpg" alt="위탁판매 같은 것은 절대 안 되겠죠" loading="lazy"><div class="caption">위탁판매 같은 것은 절대 안 되겠죠</div></div>
+<p>&quot;위탁판매 같은 것은 절대 안 되겠죠&quot;라고 강하게 경고한다. 로켓배송/로켓 그로스에서는 위탁판매(재고를 직접 보유하지 않고 중간에서 주문만 받는 방식) 방식이 불가능하다는 점을 분명히 한다. 실제 재고를 확보하고 쿠팡 물류센터에 입고해야만 로켓배송으로 판매할 수 있기 때문이다.</p>
+<h3>12. 꾸준히 하면 발주가 들어온다는 격려 메시지</h3>
+<div class="screenshot-container"><img src="images/segment_020.jpg" alt="이렇게 발주가 들어오는 일이 생길 겁니다" loading="lazy"><div class="caption">이렇게 발주가 들어오는 일이 생길 겁니다</div></div>
+<p>&quot;이렇게 발주가 들어오는 일이 생길 겁니다&quot;라고 말하며, 초보 셀러들에게 포기하지 말라는 격려의 메시지를 전달한다. 꾸준히 상품을 등록하고 관리하면, 처음에는 적더라도 점차 발주가 들어오게 될 것이라는 희망적인 메시지로 마무리한다.</p>
+<h3>13. 아웃트로</h3>
+<div class="screenshot-container"><img src="images/segment_021.jpg" alt="아웃트로 화면" loading="lazy"><div class="caption">아웃트로 화면</div></div>
+<p>영상 마지막은 어두운 화면으로 전환되며, 매장이나 쇼핑 공간으로 보이는 이미지가 페이드아웃되면서 영상이 종료된다.</p>
+<h2>주요 인용 및 발언</h2>
+<blockquote><p>&quot;금요일까지 입고라서 오늘까지 정리해서 시켜야 합니다&quot;<br>— 쿠팡 로켓배송 입고 일정의 촉박함과 셀러의 일상을 보여주는 발언</p></blockquote>
+<blockquote><p>&quot;천만원까지 나가는 경우에는 시즌 상품이 터질 때 (아주 가끔 ㅎㅎㅎ)&quot;<br>— 매출 규모에 대한 솔직한 현실 고백. 시즌 상품이 맞아떨어지면 큰 매출이 가능하지만 항상 그런 것은 아님</p></blockquote>
+<blockquote><p>&quot;다른 사람들이 잘 판매하지 않는 제품들을 일단 [찾아야 한다]&quot;<br>— 로켓 그로스 입점의 핵심 전략. 레드오션을 피하고 블루오션을 공략하라</p></blockquote>
+<blockquote><p>&quot;자기네들이 욕심이 나는 아이템 이거든요&quot;<br>— 쿠팡 MD가 직접 판매하고 싶어하는 인기 아이템은 셀러에게 불리하다는 현실적 조언</p></blockquote>
+<blockquote><p>&quot;저희들은 지금 쿠팡에서 광고하라고 얘기해도 [광고를 하지 않고 있다]&quot;<br>— 광고비 없이도 유기적 판매가 가능하다는 자신의 경험 공유</p></blockquote>
+<blockquote><p>&quot;중국산 제품들 같은 경우에는 바코드가 거의 없잖아요&quot;<br>— 중국 수입 제품의 핵심 과제: 바코드와 한글 라벨 스티커링 작업의 필요성</p></blockquote>
+<blockquote><p>&quot;위탁판매 같은 것은 절대 안 되겠죠&quot;<br>— 로켓배송에서 위탁판매가 불가능함을 단호하게 경고</p></blockquote>
+<blockquote><p>&quot;이렇게 발주가 들어오는 일이 생길 겁니다&quot;<br>— 초보 셀러에 대한 격려. 꾸준히 하면 결과가 온다는 메시지</p></blockquote>
+<h2>결론 및 시사점</h2>
+<p>이 영상은 쿠팡 로켓배송(로켓 그로스) 셀러의 <strong>실제 업무 현장</strong>을 가감 없이 보여주는 실무 중심의 콘텐츠다. 핵심 시사점을 정리하면 다음과 같다.</p>
+<p><strong>입점 전략 측면</strong>: 쿠팡 로켓 그로스에 입점할 때는 쿠팡 MD가 직접 소싱하고 싶어하는 인기 아이템을 피하고, 다른 셀러들이 잘 판매하지 않는 틈새 제품을 찾는 것이 핵심이다. 경쟁이 치열한 레드오션 카테고리에서는 개인 셀러가 쿠팡 자체 소싱력과 경쟁하기 어렵다.</p>
+<p><strong>소싱 및 준비 작업 측면</strong>: 중국 등 해외에서 제품을 수입할 경우, 벌크 상태로는 판매할 수 없다. 반드시 한글 라벨(품명, 원산지, 수입자 정보) 스티커링 작업과 바코드 부착이 필요하며, 이러한 후가공 작업이 로켓배송 입고의 필수 조건이다.</p>
+<p><strong>광고 전략 측면</strong>: 쿠팡에서 광고를 권유하더라도, 광고 없이 유기적 검색과 로켓배송 뱃지의 장점만으로도 판매가 가능하다. 다만 초기에는 주문이 적을 수 있으므로 인내심이 필요하다.</p>
+<p><strong>출고 실무 측면</strong>: 포장내역서 작성, 적절한 크기의 박스 선택, 송장 출력 및 부착, 바코드 스캐닝 확인 등의 일련의 과정이 체계적으로 이루어져야 한다. 물류센터별(시흥, 인천, 광주 등)로 분류하여 출고하는 것도 중요한 실무 포인트다.</p>
+<p><strong>비즈니스 모델 측면</strong>: 위탁판매는 로켓배송에서 절대 불가하다. 반드시 실제 재고를 보유하고 쿠팡 물류센터에 직접 입고해야 한다. 이는 초기 투자 비용이 필요하지만, 꾸준히 운영하면 안정적인 발주와 매출을 기대할 수 있다.</p>
+<p>영상은 화려한 성공담보다는 <strong>현실적인 셀러의 일상과 실용적인 팁</strong>을 전달하는 데 초점을 맞추고 있어, 쿠팡 로켓배송 입점을 고려하는 초보 셀러들에게 실질적인 도움이 되는 콘텐츠다.</p>
+
+        <div class="footer">
+            Generated by VidDigest
+        </div>
+    </div>
+    <div class="lightbox" id="lightbox" onclick="this.classList.remove('active')">
+        <img id="lightbox-img" src="" alt="">
+    </div>
+    <script>
+        document.querySelectorAll('.screenshot-container img').forEach(function(img) {
+            img.addEventListener('click', function() {
+                var lb = document.getElementById('lightbox');
+                document.getElementById('lightbox-img').src = this.src;
+                lb.classList.add('active');
+            });
+        });
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') document.getElementById('lightbox').classList.remove('active');
+        });
+    </script>
+</body>
+</html>

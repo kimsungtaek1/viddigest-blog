@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>유료강의 필요 없는 대박 상품 소싱 노하우! 쿠팡 부업 셀러 입문자 필독! #부업 #자기계발 - VidDigest</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.8;
+            color: #1a1a2e;
+            background: #f8f9fa;
+        }
+        .header {
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: white;
+            padding: 48px 0 40px;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 28px;
+            font-weight: 700;
+            max-width: 800px;
+            margin: 0 auto 16px;
+            padding: 0 24px;
+            line-height: 1.4;
+        }
+        .header .meta {
+            font-size: 14px;
+            opacity: 0.85;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 0 24px;
+        }
+        .header .meta span {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+        }
+        h2 {
+            font-size: 22px;
+            font-weight: 700;
+            color: #302b63;
+            margin: 48px 0 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e8e8f0;
+        }
+        h3 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #24243e;
+            margin: 32px 0 14px;
+        }
+        h4 {
+            font-size: 16px;
+            font-weight: 600;
+            color: #444;
+            margin: 24px 0 10px;
+        }
+        p {
+            margin: 12px 0;
+            font-size: 15.5px;
+            color: #2c2c3e;
+        }
+        ul, ol {
+            margin: 12px 0;
+            padding-left: 28px;
+        }
+        li {
+            margin: 8px 0;
+            font-size: 15.5px;
+            color: #2c2c3e;
+        }
+        li strong {
+            color: #302b63;
+        }
+        blockquote {
+            margin: 20px 0;
+            padding: 16px 20px;
+            background: #f0f0f8;
+            border-left: 4px solid #302b63;
+            border-radius: 0 8px 8px 0;
+            font-size: 15px;
+            color: #444;
+        }
+        blockquote p {
+            margin: 4px 0;
+        }
+        .screenshot-container {
+            margin: 24px 0;
+            text-align: center;
+        }
+        .screenshot-container img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+            border: 1px solid #e0e0e8;
+        }
+        .screenshot-container .caption {
+            font-size: 13px;
+            color: #888;
+            margin-top: 8px;
+            font-style: italic;
+        }
+        code {
+            background: #eef;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-family: 'SF Mono', Menlo, Consolas, monospace;
+            color: #d63384;
+        }
+        pre {
+            background: #1e1e2e;
+            color: #cdd6f4;
+            padding: 20px;
+            border-radius: 10px;
+            overflow-x: auto;
+            margin: 16px 0;
+            font-size: 13.5px;
+            line-height: 1.6;
+        }
+        pre code {
+            background: none;
+            padding: 0;
+            color: inherit;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid #e0e0e8;
+            margin: 40px 0;
+        }
+        strong {
+            font-weight: 600;
+        }
+        .footer {
+            text-align: center;
+            padding: 32px 0;
+            font-size: 13px;
+            color: #999;
+            border-top: 1px solid #e8e8f0;
+            margin-top: 60px;
+        }
+        .screenshot-container img {
+            cursor: zoom-in;
+            transition: opacity 0.2s;
+        }
+        .screenshot-container img:hover {
+            opacity: 0.85;
+        }
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.85);
+            z-index: 9999;
+            cursor: zoom-out;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+        }
+        .lightbox.active {
+            display: flex;
+        }
+        .lightbox img {
+            max-width: 95vw;
+            max-height: 92vh;
+            border-radius: 8px;
+            box-shadow: 0 8px 40px rgba(0,0,0,0.5);
+            object-fit: contain;
+        }
+        @media (max-width: 600px) {
+            .header { padding: 32px 0 28px; }
+            .header h1 { font-size: 20px; padding: 0 16px; }
+            .header .meta { font-size: 12px; gap: 12px; padding: 0 16px; }
+            .container { padding: 24px 16px 60px; }
+            h2 { font-size: 19px; margin: 36px 0 16px; }
+            h3 { font-size: 16px; margin: 24px 0 12px; }
+            h4 { font-size: 15px; margin: 20px 0 8px; }
+            p, li { font-size: 14.5px; }
+            ul, ol { padding-left: 20px; }
+            blockquote { padding: 12px 14px; font-size: 14px; }
+            pre { padding: 14px; font-size: 12.5px; border-radius: 8px; }
+            code { font-size: 13px; }
+            .screenshot-container img { border-radius: 8px; }
+            hr { margin: 28px 0; }
+        }
+        @media (prefers-color-scheme: dark) {
+            body { background: #1a1a2e; color: #e0e0e8; }
+            h2 { color: #a8a4d6; border-bottom-color: #333; }
+            h3 { color: #c8c4e6; }
+            h4 { color: #b0b0c8; }
+            p, li { color: #d0d0e0; }
+            blockquote { background: #252540; border-left-color: #6c63ff; color: #c0c0d0; }
+            code { background: #2a2a4a; color: #f0a0c0; }
+            pre { background: #0d0d1a; }
+            hr { border-top-color: #333; }
+            .screenshot-container img { border-color: #333; }
+            .footer { border-top-color: #333; color: #666; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>유료강의 필요 없는 대박 상품 소싱 노하우! 쿠팡 부업 셀러 입문자 필독! #부업 #자기계발</h1>
+        <div class="meta">
+            <span>사뚜 Satddu</span>
+            <span>20:46</span>
+            <span>20260120</span>
+        </div>
+    </div>
+    <div class="container">
+        <p>모든 스크린샷을 확인했습니다. 이제 상세한 분석 보고서를 작성하겠습니다.</p>
+<blockquote><p><strong>채널</strong>: 사뚜 Satddu | <strong>길이</strong>: 20:46 | <strong>날짜</strong>: 20260120</p></blockquote>
+<h2>핵심 내용</h2>
+<ul>
+<li><strong>상품 소싱은 체계적인 스프레드시트 기반 분석이 핵심이다.</strong> 발표자(사뚜)는 엑셀/구글 스프레드시트에 소싱 상품 메인 키워드, 시즌 여부, 쿠팡 경쟁사 레퍼런스 조사, 가격구조 설계, 국내사입(도매꼭), 해외사입(1688) 등의 항목을 체계적으로 정리하는 방법을 보여준다. 유료 강의 없이도 이 스프레드시트 하나로 상품 소싱의 전 과정을 관리할 수 있다는 것이 핵심 메시지이다.</li>
+</ul>
+<ul>
+<li><strong>쿠팡 카테고리 탐색을 통해 &quot;꿀통 상품&quot;을 발굴한다.</strong> 쿠팡 홈인테리어 등 카테고리를 쿠팡 랭킹순으로 정렬하고, 10,000원 이상 가격 필터를 적용하여 돈이 많이 쏠아지는 상품을 찾는 방법을 시연한다. 판매량이 많고 리뷰가 풍부한 상품을 경쟁사 레퍼런스로 삼는 것이 첫 단계이다.</li>
+</ul>
+<ul>
+<li><strong>월예상판매량과 예상매출을 자동 계산하는 수식을 활용한다.</strong> 리뷰 개수에 15를 곱하면(리뷰*15) 월예상판매량을 추정할 수 있고, 이를 판매가와 곱하면 예상매출(자동계산)이 나온다. 예를 들어 방한커튼의 경우 리뷰 2,000개 × 판매가 23,900원 = 예상매출 약 4,780만 원으로 산출되며, 이를 통해 월 2~300만 원을 자동으로 꾸준히 벌 수 있는 상품인지 판단할 수 있다.</li>
+</ul>
+<ul>
+<li><strong>가격구조 설계에서 판매수수료(10.8%), 물류수수료, 안전원가를 반드시 계산해야 한다.</strong> 쿠팡 판매수수료를 보수적으로 10.8%로 설정하고, 물류수수료(입출고+택배)는 약 3,000원으로 잡으며, 국내사입(도매꼭)과 해외사입(1688) 원가를 각각 비교하여 마진율을 자동 계산한다. 마진율이 최소 40~70% 이상 나오는 상품을 목표로 삼아야 한다.</li>
+</ul>
+<ul>
+<li><strong>1688(중국 도매 사이트)을 활용한 해외 소싱으로 마진을 극대화한다.</strong> 중국어를 몰라도 구글 번역기(한국어 설정)와 이미지 검색을 통해 1688에서 동일하거나 유사한 상품을 찾을 수 있다. 1688의 원가(CNY)에 350을 곱하면 한국 원화 기준 예상 단가(KRW)를 산출할 수 있으며, 이를 통해 국내 도매 대비 훨씬 낮은 원가로 상품을 확보하여 높은 마진을 실현할 수 있다.</li>
+</ul>
+<ul>
+<li><strong>최소 3개 이상의 상품을 동시에 소싱해야 안정적인 수익 구조를 만들 수 있다.</strong> 하나의 상품에만 의존하면 리스크가 크므로, 여러 상품을 동시에 분석하고 진행하는 것이 바람직하다. 스프레드시트의 &quot;진행&quot; 및 &quot;TO DO&quot; 칼럼을 활용하여 각 상품의 소싱 진행 상황(상세페이지 제작하기, 미완료 등)을 체계적으로 관리한다.</li>
+</ul>
+<h2>상세 분석</h2>
+<h3>1. 도입부 - 영상의 목적과 발표자 소개 [0:00 ~ 2:04]</h3>
+<p>발표자 사뚜는 흰색 티셔츠를 입고 회색 의자에 앉아 카메라를 향해 이야기한다. 화면 하단 자막에 &quot;많이 있는 거예요&quot;, &quot;방법이랑은 조금 다르다는거죠&quot;, &quot;돈을 많이 벌고 싶으시죠?&quot;라는 문구가 순차적으로 나타난다.</p>
+<p>사뚜는 쿠팡 부업 셀러를 시작하려는 입문자들에게 유료 강의 없이도 상품 소싱을 할 수 있는 실전 노하우를 공유하겠다고 밝힌다. 기존의 많은 유료 강의들이 존재하지만, 자신의 방법은 그것들과는 조금 다르며, 실제로 돈을 벌 수 있는 체계적인 접근법을 무료로 알려주겠다고 한다. &quot;돈을 많이 벌고 싶으시죠?&quot;라는 질문으로 시청자의 관심을 끈다.</p>
+<div class="screenshot-container"><img src="images/segment_000.jpg" alt="도입부 - 발표자 사뚜" loading="lazy"><div class="caption">도입부 - 발표자 사뚜</div></div>
+<div class="screenshot-container"><img src="images/segment_001.jpg" alt="방법의 차별점 설명" loading="lazy"><div class="caption">방법의 차별점 설명</div></div>
+<div class="screenshot-container"><img src="images/segment_002.jpg" alt="시청자 동기부여" loading="lazy"><div class="caption">시청자 동기부여</div></div>
+<h3>2. 소싱 분석 스프레드시트 소개 - 가장 먼저 해야 하는 것 [2:04 ~ 2:46]</h3>
+<p>화면이 엑셀(또는 구글 스프레드시트)로 전환된다. 스프레드시트의 구조는 다음과 같이 체계적으로 구성되어 있다:</p>
+<p><strong>스프레드시트 칼럼 구성:</strong></p>
+<ul>
+<li><strong>A열: No.</strong> (번호)</li>
+<li><strong>B열: 소싱 상품 메인 키워드</strong> (상품명/키워드)</li>
+<li><strong>C열: 시즌여부</strong> (겨울시즌, 사계절 등)</li>
+<li><strong>쿠팡 경쟁사 레퍼런스 조사 영역</strong> (보라색/초록색 헤더):</li>
+<li>D열: 상품링크</li>
+<li>E열: 판매가</li>
+<li>F열: 분석기간</li>
+<li>G열: 월예상판매량 (리뷰*15)</li>
+<li>H열: 예상매출 (자동계산)</li>
+<li><strong>가격구조 설계 영역</strong> (진녹색 헤더):</li>
+<li>I열: 판매가격</li>
+<li>J열: 판매수수료 (%로 입력)</li>
+<li>K열: 물류수수료 (입출고+택배)</li>
+<li>L열: 안전원가 (자동계산)</li>
+<li><strong>국내사입 (도매꼭) 영역</strong> (갈색 헤더):</li>
+<li>M열: 상품링크</li>
+<li>N열: 원가</li>
+<li>O열: 안전마진 (자동계산)</li>
+<li>P열: 마진율 (자동계산)</li>
+</ul>
+<p>화면 하단에 &quot;가장 먼저 해야 되는 거 뭘까요?&quot;라는 자막이 표시된다. 사뚜는 상품 소싱을 시작할 때 이런 체계적인 스프레드시트를 먼저 준비해야 한다고 강조한다.</p>
+<div class="screenshot-container"><img src="images/segment_003.jpg" alt="소싱 분석 스프레드시트 전체 구조" loading="lazy"><div class="caption">소싱 분석 스프레드시트 전체 구조</div></div>
+<h3>3. 쿠팡 카테고리 탐색 - 꿀통 상품 찾기 [2:46 ~ 3:27]</h3>
+<p>쿠팡 웹사이트의 &quot;홈인테리어&quot; 카테고리 페이지가 화면에 나타난다. 다음과 같은 설정으로 상품을 탐색한다:</p>
+<ul>
+<li><strong>정렬</strong>: 쿠팡 랭킹순 (체크 표시)</li>
+<li><strong>필터</strong>: 선택한 필터 - 10,000원 이상</li>
+<li><strong>카테고리 목록</strong>: 프리미엄 조명, 방한용품, FW 침구삼, 로켓설치 가구, 홈데코/디퓨저, 조명/스탠드, 커튼/블라인드, 카페트/쿠션, 가구, 수납/정리, 침대/매트리스, 침구, 수예/수선, 공구/철물/DIY, 생활전기용품, 청소/세탁용품, 욕실용품, 수건/타월 등</li>
+</ul>
+<p>화면에 보이는 실제 상품들:</p>
+<ul>
+<li>배수구 청소 클리너 후크, 오렌지 - 12,890원 (리뷰 3,686개)</li>
+<li>탑사 국내 생산 포켓용 핫팩 90g, 30개 - 11,990원 (48% 할인, 리뷰 107,031개)</li>
+<li>코멧 국내생산 모던 슬림서랍장, 화이트, 3단 - 14,380원 (44% 할인, 리뷰 11,087개)</li>
+<li>오브민 길이조절 높이조절 전자레인지 선반 + 후크 6p 세트 - 10,790원 (56% 할인, 리뷰 4,684개)</li>
+</ul>
+<p>화면 하단에 &quot;돈이 많이 쏟아지는 꿀통 상품&quot;이라는 강조 자막이 표시된다. 사뚜는 카테고리를 랭킹순으로 정렬하고 10,000원 이상 필터를 걸면 실제로 매출이 큰 상품들을 쉽게 발견할 수 있다고 설명한다.</p>
+<div class="screenshot-container"><img src="images/segment_004.jpg" alt="쿠팡 홈인테리어 카테고리 탐색" loading="lazy"><div class="caption">쿠팡 홈인테리어 카테고리 탐색</div></div>
+<h3>4. 경쟁사 레퍼런스 상품 상세 분석 - 방풍비닐 방한커튼 사례 [3:27 ~ 4:09]</h3>
+<p>쿠팡에서 실제 경쟁사 레퍼런스로 선정한 상품의 상세 페이지를 보여준다:</p>
+<p><strong>상품 정보:</strong></p>
+<ul>
+<li><strong>상품명</strong>: 타이거라이프 출입이 편한 사이드형 자동자석 엠보싱패딩 현관 방풍비닐 방한 커튼, 1개</li>
+<li><strong>상품평</strong>: 2,229개</li>
+<li><strong>월간 구매</strong>: 2,000명 이상 구매했어요</li>
+<li><strong>정가</strong>: 38,500원 → <strong>쿠팡판매가</strong>: 27,900원 (37% 할인) → <strong>판매자로켓 할인가</strong>: 23,900원</li>
+<li><strong>사이즈 옵션</strong>: 90×210cm (23,900원), 100×220cm (23,900원, 선택됨), 110×220cm (27,800원)</li>
+<li><strong>배송</strong>: 내일 도착, 무료배송</li>
+<li><strong>판매자</strong>: 타이거라이프 주식회사</li>
+</ul>
+<p>화면 하단에 &quot;분석기간&quot;이라는 자막이 표시되어 있다. 사뚜는 이 상품의 분석기간(25/12~26/01)을 기준으로 데이터를 수집한다고 설명한다.</p>
+<div class="screenshot-container"><img src="images/segment_005.jpg" alt="방한커튼 경쟁사 레퍼런스 상세 페이지" loading="lazy"><div class="caption">방한커튼 경쟁사 레퍼런스 상세 페이지</div></div>
+<h3>5. 스프레드시트에 데이터 입력 및 예상매출 자동계산 [4:09 ~ 5:32]</h3>
+<p>스프레드시트에 첫 번째 상품 데이터가 입력된 모습을 보여준다:</p>
+<p><strong>1번 상품 - 방한커튼:</strong></p>
+<ul>
+<li>소싱 상품 메인 키워드: 방한커튼</li>
+<li>시즌여부: 겨울시즌</li>
+<li>상품링크: ndoritemid=... (쿠팡 상품 URL)</li>
+<li>판매가: 23,900원</li>
+<li>분석기간: 25/12~26/01</li>
+<li>월예상판매량(리뷰*15): 2,000</li>
+<li>예상매출(자동계산): 47,800,000원 (약 4,780만 원)</li>
+</ul>
+<p>수식바에 &quot;=H4*F4&quot;가 보이며, 이는 예상매출이 월예상판매량 × 판매가로 자동 계산됨을 보여준다. 화면 하단에 &quot;월예상판매량이 쿠팡에서 알려준 게&quot;, &quot;판단을 하실 수가 있다&quot;라는 자막이 표시된다.</p>
+<p>이어서 두 번째 상품도 입력된다:</p>
+<p><strong>2번 상품 - 쿠션 발받침대:</strong></p>
+<ul>
+<li>소싱 상품 메인 키워드: 쿠션 발받침대</li>
+<li>시즌여부: 사계절</li>
+<li>상품링크: ndoritemid=...</li>
+<li>판매가: 29,800원</li>
+<li>분석기간: 25/12~26/01</li>
+<li>월예상판매량(리뷰*15): 3,000</li>
+<li>예상매출(자동계산): 89,400,000원 (약 8,940만 원)</li>
+</ul>
+<p>수식바에 &quot;=H5*F5&quot;가 표시된다. 화면 하단에 &quot;2~300만원을 자동으로 꾸준히 벌어다 줄 수 있는&quot;이라는 자막이 나타나, 이런 예상매출 규모의 상품을 찾으면 월 200~300만 원의 수익을 기대할 수 있다고 설명한다.</p>
+<div class="screenshot-container"><img src="images/segment_006.jpg" alt="스프레드시트 첫 번째 데이터 입력" loading="lazy"><div class="caption">스프레드시트 첫 번째 데이터 입력</div></div>
+<div class="screenshot-container"><img src="images/segment_007.jpg" alt="예상매출 자동계산 수식" loading="lazy"><div class="caption">예상매출 자동계산 수식</div></div>
+<div class="screenshot-container"><img src="images/segment_008.jpg" alt="두 번째 상품 입력 및 수익 전망" loading="lazy"><div class="caption">두 번째 상품 입력 및 수익 전망</div></div>
+<h3>6. 다양한 상품 소싱 - 쿠팡 카테고리 탐색 계속 [5:32 ~ 6:55]</h3>
+<p>쿠팡 카테고리 페이지를 계속 스크롤하며 추가적인 꿀통 상품들을 탐색한다. 화면에 보이는 상품들:</p>
+<ul>
+<li>코튼클라우드 호텔수건 200g 40수 코마사, 그레이, 10개 - 41,800원 (39% 할인, 리뷰 47,051개)</li>
+<li>ABC 분말소화기 3.3KG, 1개 - 19,900원 (리뷰 5,437개)</li>
+<li>오성정밀 고용량 누전차단 멀티탭 전선형 2구 OSN223, 1.5m, 화이트, 1개 - 14,600원 (리뷰 3,235개)</li>
+<li>마이핫 보온대 160g + 파우치, 30개 - 21,440원 (28% 할인, 리뷰 1,968개)</li>
+<li>본금하사 깔창핫팩 2... - 18,960원 (32% 할인)</li>
+<li>스카트 (청소용품) - 68% 할인</li>
+<li>듀라셀 알카라인 보관박스팩 AA 건전지, 12개입, 1개 - 14,490원</li>
+</ul>
+<p>화면 하단에 &quot;이렇게 가져가시면 되겠습니다&quot;라는 자막이 표시된다.</p>
+<p>이어서 쿠팡의 상품평 페이지가 나타난다. 상정크린마스터 좌변기 관통기 상품의 리뷰 페이지로, 상품평이 총 6,235개이며, 리뷰 페이지가 12페이지까지 보인다. 화면 하단에 &quot;120개 라고 볼 수가 있겠죠&quot;라는 자막이 표시되어, 리뷰 수를 기반으로 판매량을 추정하는 방법을 설명한다.</p>
+<div class="screenshot-container"><img src="images/segment_009.jpg" alt="쿠팡 추가 상품 탐색" loading="lazy"><div class="caption">쿠팡 추가 상품 탐색</div></div>
+<div class="screenshot-container"><img src="images/segment_010.jpg" alt="리뷰 수 기반 판매량 추정" loading="lazy"><div class="caption">리뷰 수 기반 판매량 추정</div></div>
+<h3>7. 스프레드시트 확장 - 여러 상품 동시 분석 [7:36 ~ 8:59]</h3>
+<p>스프레드시트에 더 많은 상품이 입력된 모습을 보여준다:</p>
+<p>| No. | 소싱 상품 메인 키워드 | 시즌여부 | 판매가 | 분석기간 | 월예상판매량 | 예상매출 |</p>
+<p>|-----|------------------|---------|--------|----------|-----------|---------|</p>
+<p>| 1 | 방한커튼 | 겨울시즌 | 23,900 | 25/12~26/01 | 2,000 | 47,800,000 |</p>
+<p>| 2 | 쿠션 발받침대 | 사계절 | 29,800 | 25/12~26/01 | 3,000 | 89,400,000 |</p>
+<p>| 3 | 논슬립 옷걸이 | 사계절 | 16,900 | 25/12~26/01 | 4,000 | 67,600,000 |</p>
+<p>| 4 | 변기관통기 | 사계절 | 15,440 | 25/12~26/01 | 1,800 | 27,792,000 |</p>
+<p>화면 하단에 &quot;높은 확률로&quot;라는 자막이 표시된다.</p>
+<p>이어서 쿠팡에서 &quot;헤르티만 공간활용 간단한 설치 금속 스탠드 옷걸이&quot; 상품(12,800원, 리뷰 988개, 월간 3,000명 이상 구매)을 분석하고, 화면 하단에 &quot;이 상품으로 벌어가고 있을 것 같네요&quot;라는 자막이 나타난다.</p>
+<div class="screenshot-container"><img src="images/segment_011.jpg" alt="여러 상품 동시 분석 스프레드시트" loading="lazy"><div class="caption">여러 상품 동시 분석 스프레드시트</div></div>
+<div class="screenshot-container"><img src="images/segment_012.jpg" alt="스탠드 옷걸이 상품 분석" loading="lazy"><div class="caption">스탠드 옷걸이 상품 분석</div></div>
+<h3>8. 추가 상품 발굴 - 옷걸이 행거, 발받침, 독서대 등 [8:59 ~ 11:04]</h3>
+<p>5개 상품이 입력된 스프레드시트를 보여준다:</p>
+<p>| No. | 소싱 상품 메인 키워드 | 시즌여부 | 판매가 | 월예상판매량 | 예상매출 |</p>
+<p>|-----|------------------|---------|--------|-----------|---------|</p>
+<p>| 1 | 방한커튼 | 겨울시즌 | 23,900 | 2,000 | 47,800,000 |</p>
+<p>| 2 | 쿠션 발받침대 | 사계절 | 29,800 | 3,000 | 89,400,000 |</p>
+<p>| 3 | 논슬립 옷걸이 | 사계절 | 16,900 | 4,000 | 67,600,000 |</p>
+<p>| 4 | 변기관통기 | 사계절 | 15,440 | 1,800 | 27,792,000 |</p>
+<p>| 5 | 스탠드 옷걸이 | 사계절 | 12,800 | 3,000 | 38,400,000 |</p>
+<p>화면 하단에 &quot;아니죠 정말 하나씩 밖에 없었잖아요&quot;라는 자막이 표시된다.</p>
+<p>이어서 쿠팡에서 추가 상품들을 분석한다:</p>
+<p><strong>유니홈 28mm 튼튼한 이동식 옷걸이 행거:</strong></p>
+<ul>
+<li>상품평: 2,277개</li>
+<li>월간 400명 이상 구매</li>
+<li>정가: 45,000원 → 판매가: 25,890원 (43% 할인) → 판매자로켓 할인: 25,890원</li>
+<li>색상: 블랙, 사이즈: 100cm</li>
+<li>재질: 철재, 행거 종류: 스탠드/이동식</li>
+</ul>
+<p>화면 하단에 &quot;400명 이상 구매했다고 찍혔을까요?&quot;라는 자막이 나타나, 실제 판매량은 표시된 것보다 더 많을 수 있음을 시사한다.</p>
+<p><strong>발받침 (사무용 발받침):</strong></p>
+<ul>
+<li>카테고리: 문구/오피스 &gt; 사무용품 전문관 &gt; 사무용가구/수납 &gt; 발받침</li>
+<li>사이즈: 460 × 320 × 330 mm</li>
+<li>재질: 플라스틱, 색상계열: 네이비계열</li>
+<li>형태: 일반형, 높이: 330mm</li>
+</ul>
+<p>화면 하단에 &quot;근데 여러분들 이거 한번쯤 사 보신 적 있으시죠?&quot;라는 자막으로 시청자의 공감을 유도한다.</p>
+<div class="screenshot-container"><img src="images/segment_013.jpg" alt="5개 상품 스프레드시트" loading="lazy"><div class="caption">5개 상품 스프레드시트</div></div>
+<div class="screenshot-container"><img src="images/segment_014.jpg" alt="이동식 옷걸이 행거 분석" loading="lazy"><div class="caption">이동식 옷걸이 행거 분석</div></div>
+<div class="screenshot-container"><img src="images/segment_015.jpg" alt="사무용 발받침 분석" loading="lazy"><div class="caption">사무용 발받침 분석</div></div>
+<h3>9. 순이익 20% 계산 및 대규모 상품 리스트 완성 [11:04 ~ 12:27]</h3>
+<p>스프레드시트가 13개 상품으로 확장된 모습을 보여준다:</p>
+<p>| No. | 소싱 상품 메인 키워드 | 시즌여부 | 판매가 | 월예상판매량 | 예상매출 |</p>
+<p>|-----|------------------|---------|--------|-----------|---------|</p>
+<p>| 1 | 방한커튼 | 겨울시즌 | 23,900 | 2,000 | 47,800,000 |</p>
+<p>| 2 | 쿠션 발받침대 | 사계절 | 29,800 | 3,000 | 89,400,000 |</p>
+<p>| 3 | 논슬립 옷걸이 | 사계절 | 16,900 | 4,000 | 67,600,000 |</p>
+<p>| 4 | 변기관통기 | 사계절 | 15,440 | 1,800 | 27,792,000 |</p>
+<p>| 5 | 스탠드 옷걸이 | 사계절 | 12,800 | 3,000 | 38,400,000 |</p>
+<p>| 6 | 이동식 옷걸이 행거 | 사계절 | 29,890 | 4,500 | 134,505,000 |</p>
+<p>| 7 | 접이식 욕조 | 사계절 | 15,900 | 4,000 | 63,600,000 |</p>
+<p>| 8 | 스탠드 전신거울 | 사계절 | 17,200 | 3,500 | 60,200,000 |</p>
+<p>| 9 | 세면대 각도조절 워터탭 | 사계절 | 19,900 | 3,000 | 79,600,000 (추정) |</p>
+<p>| 10 | 실리콘 빗자루 스퀴지 | 사계절 | 16,350 | 4,000 | 65,400,000 |</p>
+<p>| 11 | 차량용 콘솔 쿠션 | 사계절 | 12,800 | 4,200 | 53,760,000 |</p>
+<p>| 12 | <strong>투명 독서대</strong> | 사계절 | <strong>28,000</strong> | <strong>4,000</strong> | <strong>112,000,000</strong> (노란색 강조) |</p>
+<p>| 13 | 수압상승 필터 샤워기 헤드 | 사계절 | 23,900 | 3,000 | 71,700,000 |</p>
+<p>| 14 | 투명 독서대 | 사계절 | 19,800 | 2,000 | 39,600,000 (노란색 강조) |</p>
+<p>12번 투명 독서대(1억 1,200만 원)와 14번 투명 독서대(3,960만 원)가 노란색으로 강조되어 있어 특히 주목할 만한 상품임을 나타낸다.</p>
+<p>화면 하단에 &quot;그러면 순이익 20% 라고 했을 때&quot;, &quot;어느 정도 좀 채워졌어요&quot;라는 자막이 표시된다.</p>
+<p>사뚜는 예상매출의 순이익률을 20%로 가정했을 때 실제로 얼마를 벌 수 있는지 계산하는 방법을 설명한다.</p>
+<p><strong>실리콘 빗자루 스퀴지 쿠팡 상세:</strong></p>
+<ul>
+<li>브나야 완전밀착 실리콘 빗자루 스퀴지, 럭셔리 그레이, 1개</li>
+<li>상품평: 2,803개, 월간 4,000명 이상 구매</li>
+<li>정가: 19,700원 → 쿠팡판매가: 16,450원 (50% 할인) → 쿠폰할인: 16,350원</li>
+<li>한달간 4,000명 이상 구매</li>
+</ul>
+<p><strong>코블리 다용도 높이 조절 접이식 투명 독서대:</strong></p>
+<ul>
+<li>상품평: 5,182개, 월간 4,000명 이상 구매</li>
+<li>정가: 79,900원 → 쿠팡판매가: 28,900원 (64% 할인) → 판매자로켓 할인: 28,000원</li>
+<li>재질: 알루미늄, 색상계열: 실버계열, 가구 단수: 2단</li>
+<li>한 명은 28,000원에 4천개 이상 팔고 있었고요</li>
+</ul>
+<div class="screenshot-container"><img src="images/segment_019.jpg" alt="13개 상품 리스트 완성" loading="lazy"><div class="caption">13개 상품 리스트 완성</div></div>
+<div class="screenshot-container"><img src="images/segment_017.jpg" alt="실리콘 빗자루 스퀴지" loading="lazy"><div class="caption">실리콘 빗자루 스퀴지</div></div>
+<div class="screenshot-container"><img src="images/segment_018.jpg" alt="투명 독서대 상품 분석" loading="lazy"><div class="caption">투명 독서대 상품 분석</div></div>
+<h3>10. 가격구조 설계 - 판매수수료, 물류수수료, 안전원가 계산 [13:09 ~ 14:32]</h3>
+<p>스프레드시트의 &quot;가격구조 설계&quot; 영역으로 이동하여 상세한 비용 계산을 보여준다:</p>
+<p><strong>판매가격, 판매수수료, 물류수수료, 안전원가 입력:</strong></p>
+<p>| No. | 판매가격 | 판매수수료(%) | 물류수수료 | 안전원가 |</p>
+<p>|-----|---------|-------------|---------|---------|</p>
+<p>| 1 | 23,900 | 10.8% | 3,000 | 7,200 |</p>
+<p>| 2 | 29,800 | 10.8% | 3,000 | 9,800 |</p>
+<p>| 3 | 16,900 | 10.8% | 3,000 | 4,100 |</p>
+<p>| 4 | 15,440 | 10.8% | 3,000 | 3,500 |</p>
+<p>| 5 | 12,800 | 10.8% | 3,000 | 2,300 |</p>
+<p>| 6 | 29,890 | 10.8% | 3,000 | 9,800 |</p>
+<p>| 7 | 15,900 | 10.8% | 3,000 | 3,700 |</p>
+<p>| 8 | 17,200 | 10.8% | 3,000 | 4,200 |</p>
+<p>| 9 | 19,900 | 10.8% | 3,000 | 5,400 |</p>
+<p>| 10 | 16,350 | 10.8% | 3,000 | 3,900 |</p>
+<p>| 11 | 12,800 | 10.8% | 3,000 | 2,300 |</p>
+<p>| 12 | 28,000 | 10.8% | 3,000 | 9,000 |</p>
+<p>| 14 | 19,800 | 10.8% | 3,000 | 5,400 |</p>
+<p>| 13 | 23,900 | 10.8% | 3,000 | 7,200 |</p>
+<p>화면 하단에 &quot;오늘은 판매수수료 보수적으로 10.8%로 계산해보겠습니다&quot;라는 자막이 표시된다. 사뚜는 쿠팡 판매수수료를 보수적으로 10.8%로 잡고 계산한다고 설명한다.</p>
+<p><strong>국내사입(도매꼭) 원가 및 마진율:</strong></p>
+<p>스프레드시트의 국내사입 영역에 원가가 입력된 모습:</p>
+<p>| No. | 원가(도매꼭) | 안전마진(자동계산) | 마진율(자동계산) |</p>
+<p>|-----|-----------|---------------|-------------|</p>
+<p>| 1 | 7,200 | 10,561 | 44% |</p>
+<p>| 2 | - | 22,960 | 77% |</p>
+<p>| 3 | - | 11,592 | 69% |</p>
+<p>| 4 | - | 10,306 | 67% |</p>
+<p>| 5 | - | 7,979 | 62% |</p>
+<p>| 6 | - | 23,039 | 77% |</p>
+<p>| 7 | - | 10,711 | 67% |</p>
+<p>| 8 | - | 11,857 | 69% |</p>
+<p>| 9 | - | 14,236 | 72% |</p>
+<p>| 10 | - | 11,108 | 68% |</p>
+<p>| 11 | - | 7,979 | 62% |</p>
+<p>| 12 | 28,000 | 21,374 | 76% |</p>
+<p>| 14 | - | 14,148 | 71% |</p>
+<p>| 13 | - | 17,761 | 74% |</p>
+<p>방한커튼(1번)의 경우 도매꼭 원가 7,200원, 안전마진 10,561원, 마진율 44%로 산출된다. 대부분의 상품이 60~77%의 높은 마진율을 보인다.</p>
+<div class="screenshot-container"><img src="images/segment_020.jpg" alt="가격구조 설계 - 판매수수료 10.8%" loading="lazy"><div class="caption">가격구조 설계 - 판매수수료 10.8%</div></div>
+<h3>11. 해외사입(1688) 분석 및 국내 vs 해외 비교 [14:32 ~ 16:36]</h3>
+<p>스프레드시트의 오른쪽으로 스크롤하면 <strong>해외사입(1688)</strong> 영역이 나타난다:</p>
+<p>| No. | 판매가격 | 판매수수료 | 물류수수료 | 안전원가 | 국내 원가 | 국내 안전마진 | 국내 마진율 | 해외 원가(KR) | 해외 안전마진 | 해외 마진율 |</p>
+<p>|-----|---------|---------|---------|---------|---------|----------|---------|-----------|----------|---------|</p>
+<p>| 1 | 23,900 | 10.8% | 3,000 | 7,200 | 7,200 | 10,561 | 44% | 17,761 | - | 74% |</p>
+<p>| 2 | 29,800 | 10.8% | 3,000 | 9,800 | - | 22,960 | 77% | 22,960 | - | 77% |</p>
+<p>| 6 | 29,890 | 10.8% | 3,000 | 7,500 | - | 18,360 | 75% | 9,960 | 24 | 41% |</p>
+<p>| 10 | 16,350 | 10.8% | 3,000 | 3,900 | 875 | 11,108 | 68% | 10,233 | 2.5 | 63% |</p>
+<p>| 11 | 12,800 | 10.8% | 3,000 | 2,300 | - | 7,979 | 62% | 7,979 | - | 62% |</p>
+<p>| 12 | 28,000 | 10.8% | 3,000 | 9,000 | 14,000 | 21,374 | 76% | 7,374 | 40 | 26% |</p>
+<p>| 14 | 19,800 | 10.8% | 3,000 | 5,400 | - | 14,148 | 71% | 14,148 | - | 71% |</p>
+<p>화면 하단에 &quot;여기 아닌 곳에서&quot;라는 자막이 표시된다.</p>
+<p>이어서 <strong>1688 중국 도매 사이트</strong> 화면이 나타난다. Google Translate가 한국어로 자동 번역되어 있으며, 다양한 상품들이 표시된다:</p>
+<ul>
+<li>2025년형 신형 무선 리튬 배... - 123.5 엔(위안)</li>
+<li>포산에 위치한 알루미늄 합... - 10 엔</li>
+<li>USB A 암-3RCA 케이블, U... - 5 엔</li>
+<li>귀여운 고양이 귀를 가... - 37.4 엔</li>
+<li>새로운 중국풍 금색 옷장 문... - 3.22 엔</li>
+<li>립글로스/립틴트 스프레이... - 0.32 엔</li>
+<li>고속 데이터 전송을 위한 내... SATA 3포트, 870 EVO SSD, 1TB - 125 엔</li>
+<li>남성용 가을/겨울 양탈 스탠... - 24 엔</li>
+</ul>
+<p>화면 하단에 &quot;중국어 아무것도 몰라도 뭔지 다 알 수가 있어요&quot;라는 자막이 표시되어, 구글 번역기를 활용하면 중국어를 몰라도 1688에서 상품을 검색할 수 있다고 설명한다.</p>
+<div class="screenshot-container"><img src="images/segment_021.jpg" alt="해외사입 1688 가격 비교 스프레드시트" loading="lazy"><div class="caption">해외사입 1688 가격 비교 스프레드시트</div></div>
+<div class="screenshot-container"><img src="images/segment_022.jpg" alt="1688 중국 도매 사이트 - 구글 번역 활용" loading="lazy"><div class="caption">1688 중국 도매 사이트 - 구글 번역 활용</div></div>
+<h3>12. 1688 원가 환산 및 최종 마진율 계산 [16:36 ~ 17:59]</h3>
+<p>스프레드시트에서 1688 원가(CNY)를 한국 원화(KRW)로 환산하는 과정을 보여준다:</p>
+<p>수식바에 &quot;=S13*350&quot;이 보이며, 이는 <strong>1688 원가(위안) × 350 = 한국 원화 예상 단가</strong>임을 나타낸다.</p>
+<p><strong>해외사입 상세 데이터:</strong></p>
+<p>| No. | 상품 | 1688 원가(CNY) | 원가(KRW, 자동계산) | 해외 안전마진 | 해외 마진율 |</p>
+<p>|-----|------|--------------|----------------|----------|---------|</p>
+<p>| 6 | 이동식 옷걸이 행거 | 24 | 8,400 | 9,960 | 41% |</p>
+<p>| 10 | 실리콘 빗자루 스퀴지 | 2.5 | 875 | 10,233 | 63% |</p>
+<p>| 12 | 투명 독서대 | 40 | 14,000 | 7,374 | 26% |</p>
+<p>| 13 | 수압상승 필터 샤워기 헤드 | 15.5 | 5,425 | 8,811 | - |</p>
+<p>화면 하단에 &quot;도매꼭에서는 안했으니까 비워두시면 됩니다&quot;, &quot;이 제품에 비해가지고 물류비가 조금 높게 나올 겁니다&quot;라는 자막이 표시된다. 사뚜는 도매꼭에서 찾지 못한 상품은 비워두고, 특정 상품(예: 독서대)은 부피나 무게 때문에 물류비가 더 높게 나올 수 있다고 설명한다.</p>
+<div class="screenshot-container"><img src="images/segment_024.jpg" alt="1688 원가 환산 수식 (CNY × 350)" loading="lazy"><div class="caption">1688 원가 환산 수식 (CNY × 350)</div></div>
+<div class="screenshot-container"><img src="images/segment_023.jpg" alt="도매꼭 미진행 상품 처리" loading="lazy"><div class="caption">도매꼭 미진행 상품 처리</div></div>
+<h3>13. 실리콘 빗자루 스퀴지 - 경쟁사 분석 및 유사 상품 발굴 [17:18 ~ 18:41]</h3>
+<p>쿠팡에서 실리콘 빗자루 스퀴지의 상세 페이지 하단을 보여준다. &quot;다른 고객이 함께 본 상품&quot; 섹션에서 유사 상품들을 확인한다:</p>
+<ul>
+<li>파나나다 다용도 실리콘 빗자루 먼지제거 스퀴지, 라이트... - 8,560원 (리뷰 1,832개)</li>
+<li>위키밀 다용도 먼지 물기제거 실리콘 빗자루, 1개 화이트 - 4,800원 (리뷰 2,245개)</li>
+<li>짝슐홈 완전밀착 실리콘 빗자루 스퀴지, 화이트, 1개 - 4,890원 (리뷰 74개)</li>
+<li>스리잼비 기본형 다용도 실리... - 20,500원 (리뷰 7,451개)</li>
+<li>노에어 먼지제거 물기제거 감... - 6,800원 (리뷰 1,571개)</li>
+</ul>
+<p>&quot;이런 상품은 어때요?&quot; 섹션도 표시되며, 노마인드 자석 창문 닦이, 세인트리빙 싹퀴지 등의 관련 상품도 보인다.</p>
+<p>상품 하단에 한국지적재산권 경고(Korean Intellectual Property Office)가 표시되어 있어, 지적재산권 및 디자인 침해에 주의해야 함을 알 수 있다.</p>
+<p>화면 하단에 &quot;뒤에서 팔리는 만큼 하루에 몇 개씩 파는걸 거에요&quot;라는 자막이 표시된다.</p>
+<p>이어서 스프레드시트로 돌아와 최종적으로 완성된 리스트를 보여준다. 이동식 옷걸이 행거(6번)와 실리콘 빗자루 스퀴지(10번)가 노란색/초록색으로 강조되어 있다. &quot;진행&quot; 칼럼에서 일부 상품은 &quot;Y&quot;(진행)로, &quot;TO DO&quot; 칼럼에서는 &quot;상세페이지 제작하기&quot;로 표시되어 있다. &quot;상품소싱&quot; 상태는 &quot;완료&quot; 또는 &quot;미완료&quot;로 구분된다.</p>
+<p>화면 하단에 &quot;아까 이것도 찾았고요&quot;라는 자막이 표시된다.</p>
+<div class="screenshot-container"><img src="images/segment_025.jpg" alt="실리콘 빗자루 스퀴지 경쟁사 및 유사 상품" loading="lazy"><div class="caption">실리콘 빗자루 스퀴지 경쟁사 및 유사 상품</div></div>
+<div class="screenshot-container"><img src="images/segment_026.jpg" alt="최종 스프레드시트 - 진행 상태 관리" loading="lazy"><div class="caption">최종 스프레드시트 - 진행 상태 관리</div></div>
+<h3>14. 최종 스프레드시트 완성 및 3개 상품 전략 [17:59 ~ 19:22]</h3>
+<p>스프레드시트의 최종 완성본을 보여준다. 해외사입 칼럼까지 모두 채워진 상태:</p>
+<p>| No. | 상품 | 원가(CNY) | 원가(KRW) | 해외 안전마진 | 해외 마진율 |</p>
+<p>|-----|------|---------|---------|----------|---------|</p>
+<p>| 6 | 이동식 옷걸이 행거 | 24 | 8,400 | 9,960 | 41% |</p>
+<p>| 10 | 실리콘 빗자루 스퀴지 | 2.5 | 875 | 10,233 | 63% |</p>
+<p>| 12 | 투명 독서대 | 40 | 14,000 | 7,374 | 26% |</p>
+<p>| 13 | 수압상승 필터 샤워기 헤드 | 15.5 | 5,425 | 8,811 | - |</p>
+<p>| 14 | 투명 독서대 | - | - | 14,148 | 71% |</p>
+<p>화면 하단에 &quot;3개 상품이 되는 거면&quot;이라는 자막이 표시되어, 최소 3개 이상의 상품을 동시에 진행해야 안정적인 수익을 낼 수 있다고 강조한다.</p>
+<div class="screenshot-container"><img src="images/segment_027.jpg" alt="최종 스프레드시트 - 3개 상품 전략" loading="lazy"><div class="caption">최종 스프레드시트 - 3개 상품 전략</div></div>
+<h3>15. 고급 분석 툴 소개 - 2단계~4단계 자동화 시스템 [19:22 ~ 20:04]</h3>
+<p>더 고급화된 분석 스프레드시트가 나타난다. 이 시트는 기존 스프레드시트보다 훨씬 정교한 구조를 가지고 있다:</p>
+<p><strong>2단계: 수요 조사</strong> 영역:</p>
+<ul>
+<li>리뷰 수, 타입(로켓그로스/로켓/일반), 기간 설정(YYYY-MM-DD), 분석(리뷰분석/다시분석 버튼), 예상판매, 예상매출</li>
+</ul>
+<p><strong>3단계: 비용 구조</strong> 영역:</p>
+<ul>
+<li>수수료(10.8%), 물류/배송(3,000원), 수수료 합계</li>
+</ul>
+<p><strong>4단계: 1688 소싱</strong> 영역:</p>
+<ul>
+<li>이미지, 원가(CNY), 개수, 예상단가(KRW)</li>
+</ul>
+<p><strong>최종 분석</strong> 영역:</p>
+<ul>
+<li>순수익, 마진율, 수익률, 기대수익, 사투 공식(합격/불합격)</li>
+</ul>
+<p>실제 데이터가 입력된 예시:</p>
+<ul>
+<li>한 상품은 리뷰 4,980개, 로켓그로스 타입, 예상판매 4,500개(300리뷰), 예상매출 11,651만 원</li>
+<li>원가(CNY) 9.61, 예상단가(KRW) 3,364원</li>
+<li>순수익 16,150원, 마진율 62.4%, 수익률 480.1%, 기대수익 7,270만 원 → <strong>합격</strong></li>
+</ul>
+<p>다른 상품들은 아직 &quot;AI 소싱&quot; 버튼이나 &quot;리뷰분석&quot; 버튼이 표시되어 있으며, 위안 단위의 원가만 입력된 상태이다.</p>
+<p>화면 하단에 &quot;그랬을때 내가 비슷한 상품을 가져오면&quot;이라는 자막이 표시된다. 이 고급 툴은 사뚜가 자체 개발한 것으로 보이며, AI 소싱 기능과 리뷰 분석 자동화, 합격/불합격 판정 등의 기능이 포함되어 있다.</p>
+<div class="screenshot-container"><img src="images/segment_028.jpg" alt="고급 분석 툴 - 2~4단계 자동화 시스템" loading="lazy"><div class="caption">고급 분석 툴 - 2~4단계 자동화 시스템</div></div>
+<h3>16. 마무리 및 라이브 참석 안내 [20:04 ~ 20:46]</h3>
+<p>발표자 사뚜가 다시 카메라를 향해 이야기한다. 화면 하단에 &quot;라이브에도 한번 참석을 해 보시면 좋을 것 같습니다&quot;, &quot;감사합니다&quot;라는 자막이 표시된다.</p>
+<p>사뚜는 이 영상에서 보여준 기본적인 소싱 방법 외에도 더 심화된 내용을 라이브 방송에서 다루고 있으니 참석해보라고 안내한다. 마지막으로 &quot;감사합니다&quot;라는 인사로 영상을 마무리한다.</p>
+<div class="screenshot-container"><img src="images/segment_029.jpg" alt="라이브 참석 안내" loading="lazy"><div class="caption">라이브 참석 안내</div></div>
+<div class="screenshot-container"><img src="images/segment_030.jpg" alt="마무리 인사" loading="lazy"><div class="caption">마무리 인사</div></div>
+<h2>주요 인용 및 발언</h2>
+<blockquote><p>&quot;돈을 많이 벌고 싶으시죠?&quot; - 영상 초반, 시청자의 관심을 끌기 위한 질문</p></blockquote>
+<blockquote><p>&quot;돈이 많이 쏟아지는 꿀통 상품&quot; - 쿠팡 카테고리 탐색 시 매출이 큰 상품을 지칭하는 표현</p></blockquote>
+<blockquote><p>&quot;2~300만원을 자동으로 꾸준히 벌어다 줄 수 있는&quot; - 적절한 상품을 소싱하면 월 200~300만 원의 안정적 수익이 가능하다는 설명</p></blockquote>
+<blockquote><p>&quot;중국어 아무것도 몰라도 뭔지 다 알 수가 있어요&quot; - 1688 사이트에서 구글 번역을 활용하면 언어 장벽 없이 소싱이 가능하다는 설명</p></blockquote>
+<blockquote><p>&quot;오늘은 판매수수료 보수적으로 10.8%로 계산해보겠습니다&quot; - 안전한 수익 계산을 위해 수수료를 보수적으로 잡는 접근법</p></blockquote>
+<blockquote><p>&quot;한 명은 28,000원에 4천개 이상 팔고 있었고요&quot; - 투명 독서대 판매자의 실적을 언급하며 시장 규모를 설명</p></blockquote>
+<blockquote><p>&quot;3개 상품이 되는 거면&quot; - 최소 3개 이상의 상품을 동시에 운영해야 안정적이라는 전략</p></blockquote>
+<blockquote><p>&quot;라이브에도 한번 참석을 해 보시면 좋을 것 같습니다&quot; - 더 심화된 내용은 라이브 방송에서 다룬다는 안내</p></blockquote>
+<h2>결론 및 시사점</h2>
+<p><strong>핵심 메시지:</strong> 쿠팡 셀러로 부업을 시작하려면 유료 강의에 돈을 쓸 필요 없이, 체계적인 스프레드시트 기반의 상품 소싱 분석만으로도 충분히 수익성 있는 상품을 발굴할 수 있다.</p>
+<p><strong>실용적 시사점:</strong></p>
+<ol>
+<li><strong>체계적인 데이터 관리가 성공의 열쇠이다.</strong> 단순히 &quot;이 상품 잘 팔리겠다&quot;는 감이 아니라, 판매가, 리뷰 수, 월예상판매량, 예상매출, 판매수수료, 물류수수료, 원가, 마진율 등을 수치로 계산하여 객관적으로 판단해야 한다.</li>
+</ol>
+<ol>
+<li><strong>시즌 상품과 사계절 상품을 적절히 조합해야 한다.</strong> 방한커튼처럼 겨울 시즌에만 팔리는 상품도 있지만, 쿠션 발받침대, 논슬립 옷걸이, 실리콘 빗자루 스퀴지, 투명 독서대 등 사계절 내내 수요가 있는 상품을 중심으로 포트폴리오를 구성하는 것이 안정적이다.</li>
+</ol>
+<ol>
+<li><strong>리뷰 수 × 15 = 월예상판매량이라는 공식이 핵심 도구이다.</strong> 이 간단한 공식으로 경쟁 상품의 대략적인 월 판매량을 추정할 수 있으며, 이를 기반으로 시장 규모와 진입 가능성을 판단할 수 있다.</li>
+</ol>
+<ol>
+<li><strong>국내 도매(도매꼭)와 해외 도매(1688)를 동시에 비교해야 최적의 원가를 확보할 수 있다.</strong> 1688의 경우 위안(CNY) × 350으로 원화 환산이 가능하며, 물류비와 관세 등을 고려하더라도 국내 도매보다 훨씬 낮은 원가를 확보할 수 있는 경우가 많다.</li>
+</ol>
+<ol>
+<li><strong>마진율 40% 이상을 목표로, 보수적으로 계산하는 습관이 중요하다.</strong> 판매수수료 10.8%, 물류수수료 3,000원 등을 보수적으로 잡고 계산하면 실제 수익이 예상보다 높게 나오는 구조가 된다.</li>
+</ol>
+<ol>
+<li><strong>고급 분석 툴(AI 소싱, 자동 리뷰 분석, 합격/불합격 판정 시스템)을 활용하면 더욱 효율적인 소싱이 가능하다.</strong> 영상 후반에 소개된 고급 스프레드시트는 수요 조사, 비용 구조, 1688 소싱, 최종 분석까지 4단계로 구분되어 있으며, 마진율 62.4%, 수익률 480.1%, 기대수익 7,270만 원이라는 구체적인 수치를 기반으로 &quot;합격&quot; 판정을 내리는 시스템까지 갖추고 있다.</li>
+</ol>
+
+        <div class="footer">
+            Generated by VidDigest
+        </div>
+    </div>
+    <div class="lightbox" id="lightbox" onclick="this.classList.remove('active')">
+        <img id="lightbox-img" src="" alt="">
+    </div>
+    <script>
+        document.querySelectorAll('.screenshot-container img').forEach(function(img) {
+            img.addEventListener('click', function() {
+                var lb = document.getElementById('lightbox');
+                document.getElementById('lightbox-img').src = this.src;
+                lb.classList.add('active');
+            });
+        });
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') document.getElementById('lightbox').classList.remove('active');
+        });
+    </script>
+</body>
+</html>

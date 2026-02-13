@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>'요즘 누가 직접 등록해요' AI로 5분에 상품 한개씩 등록하고 월 천만원 버는 20대 셀러 - VidDigest</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.8;
+            color: #1a1a2e;
+            background: #f8f9fa;
+        }
+        .header {
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: white;
+            padding: 48px 0 40px;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 28px;
+            font-weight: 700;
+            max-width: 800px;
+            margin: 0 auto 16px;
+            padding: 0 24px;
+            line-height: 1.4;
+        }
+        .header .meta {
+            font-size: 14px;
+            opacity: 0.85;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 0 24px;
+        }
+        .header .meta span {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+        }
+        h2 {
+            font-size: 22px;
+            font-weight: 700;
+            color: #302b63;
+            margin: 48px 0 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e8e8f0;
+        }
+        h3 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #24243e;
+            margin: 32px 0 14px;
+        }
+        h4 {
+            font-size: 16px;
+            font-weight: 600;
+            color: #444;
+            margin: 24px 0 10px;
+        }
+        p {
+            margin: 12px 0;
+            font-size: 15.5px;
+            color: #2c2c3e;
+        }
+        ul, ol {
+            margin: 12px 0;
+            padding-left: 28px;
+        }
+        li {
+            margin: 8px 0;
+            font-size: 15.5px;
+            color: #2c2c3e;
+        }
+        li strong {
+            color: #302b63;
+        }
+        blockquote {
+            margin: 20px 0;
+            padding: 16px 20px;
+            background: #f0f0f8;
+            border-left: 4px solid #302b63;
+            border-radius: 0 8px 8px 0;
+            font-size: 15px;
+            color: #444;
+        }
+        blockquote p {
+            margin: 4px 0;
+        }
+        .screenshot-container {
+            margin: 24px 0;
+            text-align: center;
+        }
+        .screenshot-container img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+            border: 1px solid #e0e0e8;
+        }
+        .screenshot-container .caption {
+            font-size: 13px;
+            color: #888;
+            margin-top: 8px;
+            font-style: italic;
+        }
+        code {
+            background: #eef;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-family: 'SF Mono', Menlo, Consolas, monospace;
+            color: #d63384;
+        }
+        pre {
+            background: #1e1e2e;
+            color: #cdd6f4;
+            padding: 20px;
+            border-radius: 10px;
+            overflow-x: auto;
+            margin: 16px 0;
+            font-size: 13.5px;
+            line-height: 1.6;
+        }
+        pre code {
+            background: none;
+            padding: 0;
+            color: inherit;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid #e0e0e8;
+            margin: 40px 0;
+        }
+        strong {
+            font-weight: 600;
+        }
+        .footer {
+            text-align: center;
+            padding: 32px 0;
+            font-size: 13px;
+            color: #999;
+            border-top: 1px solid #e8e8f0;
+            margin-top: 60px;
+        }
+        .screenshot-container img {
+            cursor: zoom-in;
+            transition: opacity 0.2s;
+        }
+        .screenshot-container img:hover {
+            opacity: 0.85;
+        }
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.85);
+            z-index: 9999;
+            cursor: zoom-out;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+        }
+        .lightbox.active {
+            display: flex;
+        }
+        .lightbox img {
+            max-width: 95vw;
+            max-height: 92vh;
+            border-radius: 8px;
+            box-shadow: 0 8px 40px rgba(0,0,0,0.5);
+            object-fit: contain;
+        }
+        @media (max-width: 600px) {
+            .header { padding: 32px 0 28px; }
+            .header h1 { font-size: 20px; padding: 0 16px; }
+            .header .meta { font-size: 12px; gap: 12px; padding: 0 16px; }
+            .container { padding: 24px 16px 60px; }
+            h2 { font-size: 19px; margin: 36px 0 16px; }
+            h3 { font-size: 16px; margin: 24px 0 12px; }
+            h4 { font-size: 15px; margin: 20px 0 8px; }
+            p, li { font-size: 14.5px; }
+            ul, ol { padding-left: 20px; }
+            blockquote { padding: 12px 14px; font-size: 14px; }
+            pre { padding: 14px; font-size: 12.5px; border-radius: 8px; }
+            code { font-size: 13px; }
+            .screenshot-container img { border-radius: 8px; }
+            hr { margin: 28px 0; }
+        }
+        @media (prefers-color-scheme: dark) {
+            body { background: #1a1a2e; color: #e0e0e8; }
+            h2 { color: #a8a4d6; border-bottom-color: #333; }
+            h3 { color: #c8c4e6; }
+            h4 { color: #b0b0c8; }
+            p, li { color: #d0d0e0; }
+            blockquote { background: #252540; border-left-color: #6c63ff; color: #c0c0d0; }
+            code { background: #2a2a4a; color: #f0a0c0; }
+            pre { background: #0d0d1a; }
+            hr { border-top-color: #333; }
+            .screenshot-container img { border-color: #333; }
+            .footer { border-top-color: #333; color: #666; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>'요즘 누가 직접 등록해요' AI로 5분에 상품 한개씩 등록하고 월 천만원 버는 20대 셀러</h1>
+        <div class="meta">
+            <span>Alice in WonderReview</span>
+            <span>18:10</span>
+            <span>20251028</span>
+        </div>
+    </div>
+    <div class="container">
+        <blockquote><p><strong>채널</strong>: Alice in WonderReview (돈 버는 공식) | <strong>길이</strong>: 18:10 | <strong>날짜</strong>: 20251028</p></blockquote>
+<h2>핵심 내용</h2>
+<ul>
+<li><strong>20대 여성 셀러 '팡지'가 AI를 활용한 이커머스(쿠팡 등) 상품 등록으로 월 순수익 1,000만 원을 달성한 실제 사례를 밀착 취재한 영상이다.</strong> 팡지는 의류 무역회사 출신으로, 퇴사 후 중국 소싱 기반의 온라인 셀러로 전환하여 6개월 만에 월 순수익 1,000만 원을 찍었다고 밝혔다.</li>
+</ul>
+<ul>
+<li><strong>AI 도구를 활용하면 상품 하나를 5분 만에 등록할 수 있으며, 과거에는 일일이 수작업으로 해야 했던 상품명 작성, 상세페이지 제작, 카테고리 선택 등을 자동화할 수 있다.</strong> 팡지는 이를 통해 하루에 다량의 상품을 올리는 '다량 등록' 전략을 구사한다.</li>
+</ul>
+<ul>
+<li><strong>시장 조사 방법으로 오프라인 매장(다이소, JAJU 등)을 직접 방문하여 트렌드를 파악하고, 온라인에서 잘 팔리는 상품의 조회수와 판매량을 확인하는 방식을 병행한다.</strong> 다이소에서 자주 품절되는 상품이 온라인에서도 잘 팔릴 가능성이 높다는 인사이트를 공유했다.</li>
+</ul>
+<ul>
+<li><strong>중국 소싱 사이트(1688 등)에서 이미지 검색을 통해 동일하거나 유사한 상품을 찾아 원가를 확인하고, 묶음 판매 전략으로 마진을 극대화한다.</strong> 예를 들어 1.05위안(약 350원)짜리 상품을 4개 묶음으로 5,280원에 판매하여 72%의 공급 마진을 확보하는 구체적인 가격 설정 과정을 시연했다.</li>
+</ul>
+<ul>
+<li><strong>쿠팡 로켓배송(로켓그로스) 시스템을 활용하면 셀러가 직접 배송하지 않고 쿠팡 물류센터에 물건을 보내면 쿠팡이 대신 배송해주므로, 사실상 재고만 관리하면 되는 구조이다.</strong> 순수익률은 20~25% 정도이며, 100개가 팔리든 말든 상품 수를 늘려 전체 매출을 키우는 전략이 핵심이다.</li>
+</ul>
+<ul>
+<li><strong>팡지는 의류 무역회사 시절 돈에 관심을 갖게 되었고, 회사에서 받는 월급으로는 한계가 있다고 느껴 사업을 시작했다.</strong> 6개월 만에 월 순수익 1,000만 원을 달성했으며, 앞으로도 더 성장하고 싶다는 포부를 밝혔다.</li>
+</ul>
+<hr>
+<h2>상세 분석</h2>
+<h3>1. 인트로 및 셀러 '팡지' 소개 [0:00 ~ 1:12]</h3>
+<p>영상은 &quot;돈 버는 공식&quot;이라는 프로그램 타이틀과 함께 시작된다. 출연자인 20대 여성 셀러 '팡지'가 노트북 앞에 앉아 있는 모습이 보이며, 화면 하단에 <strong>&quot;순수익 20~25% 정도요&quot;</strong>라는 자막이 표시된다. 팡지는 자신의 사업 수익 구조에 대해 설명하며, 매출 대비 순수익률이 20~25% 수준이라고 밝힌다. 배경에는 곰 캐릭터 포스터가 붙어 있는 아담한 사무 공간이 보인다.</p>
+<p>이어서 야외 장면으로 전환되며, HOLLYS 커피숍 앞 분수대가 있는 장소에서 <strong>&quot;월 순수익 1000만 원 달성한 팡지라고 합니다&quot;</strong>라는 자막과 함께 팡지가 자기 소개를 한다. 팡지는 밝은 표정으로 자신이 온라인 셀러로서 월 순수익 1,000만 원을 달성했다고 소개한다.</p>
+<div class="screenshot-container"><img src="images/segment_000.jpg" alt="셀러 팡지 - 노트북 앞에서 순수익 20~25% 설명" loading="lazy"><div class="caption">셀러 팡지 - 노트북 앞에서 순수익 20~25% 설명</div></div>
+<div class="screenshot-container"><img src="images/segment_001.jpg" alt="팡지 자기소개 - 월 순수익 1000만 원 달성" loading="lazy"><div class="caption">팡지 자기소개 - 월 순수익 1000만 원 달성</div></div>
+<hr>
+<h3>2. 시장 조사 방법 - 오프라인 매장 활용 [1:12 ~ 3:01]</h3>
+<p>팡지는 야외 공원에서 인터뷰하며 <strong>&quot;다이소에서도 시장 조사를 할 수 있어요?&quot;</strong>라는 질문에 답한다. 그녀는 오프라인 매장, 특히 다이소 같은 생활용품 매장에서 시장 조사를 하는 방법을 설명한다. 핵심은 매장에서 자주 품절되는 상품, 인기 있는 상품을 관찰하는 것이다.</p>
+<p>이후 실제로 대형 매장(백화점이나 쇼핑몰로 보이는 장소)을 방문하는 장면이 나온다. 팡지는 여행용 캐리어, 가방 등이 진열된 매장에서 <strong>&quot;조회수가&quot;</strong>라는 자막과 함께 온라인에서의 조회수와 실제 오프라인 판매의 상관관계에 대해 이야기한다.</p>
+<p>언더웨어/속옷 매장 코너에서는 <strong>&quot;그게 100개가 팔리든 말든&quot;</strong>이라는 자막이 보인다. 이는 상품 하나하나가 100개씩 대량으로 팔리지 않더라도, 다양한 상품을 많이 올려서 전체 매출을 키우는 <strong>'다량 등록' 전략</strong>의 핵심을 설명하는 부분이다. 즉, 한 상품이 조금씩만 팔려도 상품 수가 많으면 전체 수익이 커진다는 논리이다.</p>
+<div class="screenshot-container"><img src="images/segment_002.jpg" alt="다이소에서 시장 조사 가능 여부 질문" loading="lazy"><div class="caption">다이소에서 시장 조사 가능 여부 질문</div></div>
+<div class="screenshot-container"><img src="images/segment_003.jpg" alt="매장에서 조회수 관련 설명" loading="lazy"><div class="caption">매장에서 조회수 관련 설명</div></div>
+<div class="screenshot-container"><img src="images/segment_004.jpg" alt="100개가 팔리든 말든 - 다량 등록 전략" loading="lazy"><div class="caption">100개가 팔리든 말든 - 다량 등록 전략</div></div>
+<hr>
+<h3>3. 다이소 매장 방문 및 트렌드 파악 [3:01 ~ 4:50]</h3>
+<p>실제로 다이소 매장을 방문한다. 화면에 <strong>&quot;언제나 우리곁에 다이소&quot;</strong>라는 매장 간판이 보이고, 팡지는 다이소 내부를 돌아다니며 <strong>&quot;맨날 오면 없거든요?&quot;</strong>라고 말한다. 이는 특정 상품이 다이소에서 항상 품절 상태라는 의미로, 품절이 잦은 상품은 수요가 높다는 시장 신호라고 해석한다.</p>
+<p>다이소 내부의 다양한 생활용품, 후크용품, 캐릭터 상품, 욕실용품 등이 진열된 매대를 둘러보며 <strong>&quot;많이들 작성하더라고요&quot;</strong>라는 자막이 나온다. 이는 해당 상품의 온라인 리뷰가 많이 작성된다는 의미로, 리뷰 수가 곧 수요의 지표임을 설명한다.</p>
+<p>팡지가 스마트폰으로 특정 상품을 보여주는 장면에서는 화면에 도넛 모양의 제품(목욕 스펀지/곤약 스펀지로 추정)이 보이며, <strong>&quot;이런 식으로 휴지를 넣어서 팔더라고요&quot;</strong>라는 자막과 함께 <strong>&quot;한 달 1,346명이 구매했어요&quot;</strong>라는 판매 데이터가 스마트폰 화면에 표시된다. 즉, 오프라인에서 발견한 상품을 온라인에서 검색하여 실제 판매량을 확인하는 과정을 보여준다.</p>
+<div class="screenshot-container"><img src="images/segment_006.jpg" alt="다이소 매장 내부 - 품절 현상 언급" loading="lazy"><div class="caption">다이소 매장 내부 - 품절 현상 언급</div></div>
+<div class="screenshot-container"><img src="images/segment_007.jpg" alt="다이소 상품 리뷰 많이 작성됨" loading="lazy"><div class="caption">다이소 상품 리뷰 많이 작성됨</div></div>
+<div class="screenshot-container"><img src="images/segment_008.jpg" alt="스마트폰으로 온라인 판매량 확인 - 월 1,346명 구매" loading="lazy"><div class="caption">스마트폰으로 온라인 판매량 확인 - 월 1,346명 구매</div></div>
+<hr>
+<h3>4. 온라인 판매의 핵심 - 빠른 배송과 JAJU 매장 조사 [4:50 ~ 6:03]</h3>
+<p>다이소 청소/욕실용품 코너에서 팡지는 <strong>&quot;빨리 배송 오는 것 때문에 하는 거거든요?&quot;</strong>라고 말한다. 이는 소비자들이 다이소에서 직접 사는 대신 온라인에서 주문하는 이유가 '빠른 배송' 때문이라는 점을 강조하는 것이다. 쿠팡 로켓배송처럼 빠르게 배송해주면, 소비자 입장에서는 굳이 매장에 가지 않아도 되기 때문에 온라인 판매 기회가 있다는 논리이다.</p>
+<p>이어서 다이소 내 자전거 용품, 다용도 용품 등이 있는 통로를 지나며 <strong>&quot;그래서 여기 근처에 JAJU 매장도 있던데 거기도 한번 볼게요&quot;</strong>라고 말한다. 다이소뿐만 아니라 JAJU(자주) 같은 라이프스타일 브랜드 매장도 시장 조사 대상으로 활용한다는 것을 보여준다.</p>
+<div class="screenshot-container"><img src="images/segment_009.jpg" alt="빠른 배송이 온라인 판매의 핵심" loading="lazy"><div class="caption">빠른 배송이 온라인 판매의 핵심</div></div>
+<div class="screenshot-container"><img src="images/segment_010.jpg" alt="JAJU 매장도 시장 조사 대상" loading="lazy"><div class="caption">JAJU 매장도 시장 조사 대상</div></div>
+<hr>
+<h3>5. JAJU(자주) 매장 방문 및 상품 발굴 [6:03 ~ 7:52]</h3>
+<p>JAJU 매장에서 팡지는 욕실용품 코너를 둘러보며 실제로 상품을 손에 들고 스마트폰으로 사진을 찍는 모습이 포착된다. 도넛 모양의 목욕 스펀지(곤약 스펀지로 추정)를 들고 사진을 촬영하며, 이 상품을 중국 소싱 사이트에서 찾아볼 수 있는지 확인하려는 것이다. 주변에는 세면용품, 칫솔 컵, 바디 브러시, 수건 등 다양한 욕실용품이 진열되어 있다.</p>
+<p>JAJU 매장의 침구/수건 코너에서는 <strong>&quot;와 많이 가져가신다&quot;</strong>라는 자막이 보인다. 실제로 다른 고객들이 수건 등을 많이 구매하는 모습을 보며, 특정 상품이 오프라인에서도 인기가 많다는 것을 실시간으로 확인하는 장면이다.</p>
+<p>이어서 <strong>&quot;공산품 위주로 가야겠다&quot;</strong>라는 자막이 나오며, 팡지는 의류보다는 공산품(생활용품, 잡화 등) 위주로 상품을 소싱하는 전략을 설명한다. 의류는 사이즈, 색상 차이, 반품률 등 관리가 복잡한 반면, 공산품은 상대적으로 단순하고 반품률이 낮기 때문이다.</p>
+<div class="screenshot-container"><img src="images/segment_011.jpg" alt="JAJU 매장에서 상품 사진 촬영" loading="lazy"><div class="caption">JAJU 매장에서 상품 사진 촬영</div></div>
+<div class="screenshot-container"><img src="images/segment_012.jpg" alt="JAJU 침구 코너 - 인기 상품 확인" loading="lazy"><div class="caption">JAJU 침구 코너 - 인기 상품 확인</div></div>
+<div class="screenshot-container"><img src="images/segment_013.jpg" alt="공산품 위주 전략 설명" loading="lazy"><div class="caption">공산품 위주 전략 설명</div></div>
+<hr>
+<h3>6. 의류 무역회사 경력과 쿠팡 로켓배송 시스템 [7:15 ~ 8:28]</h3>
+<p>JAJU 매장 의류 코너에서 팡지는 자신의 배경에 대해 언급한다. <strong>&quot;제가 원래 의류 무역회사를 다녔어가지고&quot;</strong>라는 자막과 함께, 의류 무역회사에서 일했던 경험이 현재 소싱 능력의 기반이 되었음을 밝힌다. 무역회사에서 중국과의 거래 구조, 원가 계산, 물류 프로세스 등을 익혔기 때문에 독립 후에도 중국 소싱을 능숙하게 할 수 있었다.</p>
+<p>이어서 쿠팡의 로켓배송 시스템에 대해 구체적으로 설명한다. <strong>&quot;로켓 배송은 저희가 물건을 판 거잖아요&quot;</strong>라는 자막이 나오며, 로켓배송(로켓그로스) 시스템에서는 셀러가 쿠팡 물류센터에 상품을 입고시키면 쿠팡이 포장과 배송을 대행해주는 구조임을 설명한다. 셀러는 상품 소싱과 등록에만 집중하면 되므로, 개인이 물류 인프라 없이도 사업을 운영할 수 있다.</p>
+<div class="screenshot-container"><img src="images/segment_014.jpg" alt="의류 무역회사 출신 배경" loading="lazy"><div class="caption">의류 무역회사 출신 배경</div></div>
+<div class="screenshot-container"><img src="images/segment_015.jpg" alt="로켓배송 시스템 설명" loading="lazy"><div class="caption">로켓배송 시스템 설명</div></div>
+<hr>
+<h3>7. 카테고리 무관 전략과 식사 이동 [8:28 ~ 9:41]</h3>
+<p>JAJU 매장 주방용품/식기 코너에서 팡지는 다양한 그릇, 나무 식기, 도자기 등을 살펴본다. <strong>&quot;사실 상관없어요&quot;</strong>라는 자막이 보이는데, 이는 판매할 상품의 카테고리를 물었을 때의 답변으로, 특별히 카테고리를 가리지 않는다는 것이다. 생활용품, 주방용품, 욕실용품, 청소용품 등 카테고리에 상관없이 마진이 나고 수요가 있는 상품이면 무엇이든 판매한다는 유연한 접근 방식을 보여준다. 매대에는 10,900원짜리 도자기 그릇, 59,900원짜리 대형 용품 등이 진열되어 있다.</p>
+<p>이후 장소가 골목길의 음식점 거리로 바뀌며, <strong>&quot;예쁘네요?&quot;</strong>라는 자막과 함께 식사를 위해 이동하는 모습이 보인다. 까꿍소래, 해장우동, 어묵 등의 간판이 보이는 한식 거리이다.</p>
+<div class="screenshot-container"><img src="images/segment_015.jpg" alt="카테고리 상관없이 다양한 상품 소싱" loading="lazy"><div class="caption">카테고리 상관없이 다양한 상품 소싱</div></div>
+<div class="screenshot-container"><img src="images/segment_016.jpg" alt="이동 중 골목길 식당가 장면" loading="lazy"><div class="caption">이동 중 골목길 식당가 장면</div></div>
+<hr>
+<h3>8. 중국 소싱 사이트(1688)를 활용한 이미지 검색 소싱 [10:17 ~ 10:54]</h3>
+<p>팡지의 작업 공간(노트북이 놓인 소규모 사무실)에서 실제 소싱 과정을 시연한다. 컴퓨터 화면에 <strong>중국 소싱 사이트(1688.com)</strong>가 열려 있고, 빨간색 <strong>&quot;이미지 검색&quot;</strong> 버튼이 눈에 띈다. <strong>&quot;여기서 복사 붙여넣기 하면&quot;</strong>이라는 자막과 함께, 오프라인 매장에서 찍은 상품 사진을 ctrl+v로 이미지 검색창에 붙여넣기 하여 동일한 상품을 찾는 과정을 보여준다.</p>
+<p>화면에는 <strong>&quot;같은 스타일을 찾아드립니다&quot;</strong>라는 1688 사이트의 이미지 검색 결과 화면이 보이며, 검색 결과로 중국 공급업체(义乌市优凯进出口有限公司 - 이우시 요우카이 수출입유한공사)의 상품 목록이 표시된다. <strong>&quot;신용 거래 계좌 개설&quot;</strong> 옵션과 <strong>&quot;글로벌 조달 가이드&quot;</strong> 등의 메뉴도 보이며, 검색된 상품 수는 504개로 표시된다. 승인 대기 5건, 반품/환불 0건 등의 상태 정보도 확인할 수 있다.</p>
+<div class="screenshot-container"><img src="images/segment_017.jpg" alt="1688 이미지 검색으로 상품 소싱 - 504개 결과" loading="lazy"><div class="caption">1688 이미지 검색으로 상품 소싱 - 504개 결과</div></div>
+<hr>
+<h3>9. 원가 계산 과정 시연 [10:54 ~ 11:30]</h3>
+<p>팡지는 노트북 화면에서 가격을 계산하는 모습을 보여준다. <strong>&quot;그러면 1.05 위안에 350원을 곱하면&quot;</strong>이라는 자막이 나오며, 중국 원가(CNY)를 한국 원화(KRW)로 환산하는 과정을 설명한다.</p>
+<p>계산 과정:</p>
+<ul>
+<li>중국 원가: 1.05 위안</li>
+<li>환율(위안 → 원): 약 350원</li>
+<li>한국 원가: 1.05 × 350 = <strong>약 367.5원</strong></li>
+</ul>
+<p>노트북 화면에는 상품 정보와 함께 계산 과정이 보이며, 이 가격에 배송비와 각종 수수료를 더해도 상당한 마진을 남길 수 있는 구조임을 설명한다.</p>
+<div class="screenshot-container"><img src="images/segment_018.jpg" alt="노트북에서 원가 계산 - 1.05위안 × 350원" loading="lazy"><div class="caption">노트북에서 원가 계산 - 1.05위안 × 350원</div></div>
+<hr>
+<h3>10. 묶음 판매 전략과 쿠팡 가격 설정 [11:30 ~ 12:43]</h3>
+<p>팡지는 쿠팡 셀러 페이지를 열어 실제 가격 설정 과정을 보여준다. <strong>&quot;근데 이거를 4개 묶음으로 붙여버리면&quot;</strong>이라는 자막이 나오며, 단품 판매가 아닌 <strong>묶음 판매 전략</strong>을 설명한다. 1개당 약 350원인 상품을 4개 묶음으로 만들어 판매하면 가격을 높게 책정할 수 있어 마진이 크게 늘어난다.</p>
+<p><strong>&quot;그러면 350원에 4개 묶음으로 파는 거니까&quot;</strong>라는 자막과 함께, 노트북 화면에 쿠팡 상품 등록 페이지가 보이며 가격이 <strong>5,280원</strong>으로 설정된 것이 확인된다.</p>
+<p>이어서 상세한 <strong>&quot;가격 설정&quot;</strong> 화면이 크게 보이며, 다음과 같은 수치들이 명확히 표시된다:</p>
+<ul>
+<li><strong>번들/재고</strong>: 개수 설정</li>
+<li><strong>중국 원가 (CNY)</strong>: ¥ 1.05</li>
+<li><strong>환율</strong>: × 350원 = 367.5원</li>
+<li><strong>공급가 (KRW)</strong>: 5,300원</li>
+<li><strong>공급 마진</strong>: 3,830원 <strong>(72%)</strong></li>
+<li><strong>판매가 (KRW)</strong>: 8,800원</li>
+<li><strong>쿠팡 마진</strong>: 별도 (약 40%)</li>
+</ul>
+<p><strong>&quot;나는 쿠팡한테 5300원에 팔게&quot;</strong>라는 자막이 나오며, 셀러가 쿠팡에 납품하는 공급가가 5,300원이고, 쿠팡이 소비자에게 판매하는 최종 가격은 8,800원임을 보여준다. 셀러 입장에서 공급 마진이 72%에 달하는 매우 높은 수익률을 보여준다.</p>
+<p>화면에는 다른 상품들의 가격도 함께 보이며, 판매가 3,500원(공급가 2,300원), 5,700원대 등 다양한 가격대의 상품들이 동시에 관리되고 있다.</p>
+<div class="screenshot-container"><img src="images/segment_019.jpg" alt="쿠팡 페이지 - 4개 묶음 판매 전략" loading="lazy"><div class="caption">쿠팡 페이지 - 4개 묶음 판매 전략</div></div>
+<div class="screenshot-container"><img src="images/segment_020.jpg" alt="350원 × 4개 묶음 가격 설정, 5,280원" loading="lazy"><div class="caption">350원 × 4개 묶음 가격 설정, 5,280원</div></div>
+<div class="screenshot-container"><img src="images/segment_024.jpg" alt="가격 설정 상세 화면 - 공급가 5,300원, 마진 72%, 판매가 8,800원" loading="lazy"><div class="caption">가격 설정 상세 화면 - 공급가 5,300원, 마진 72%, 판매가 8,800원</div></div>
+<hr>
+<h3>11. AI를 활용한 상품 등록 자동화 [12:43 ~ 14:32]</h3>
+<p>팡지는 <strong>카테고리 선택</strong> 화면을 보여주며 <strong>&quot;여기에 카테고리를 입력을 합니다&quot;</strong>라고 설명한다. 화면에는 &quot;카테고리 선택&quot; 제목 아래 <strong>&quot;카테고리 검색:&quot;</strong> 입력창이 보이며, &quot;등록할 상품의 카테고리를 선택해주세요. 단...&quot;이라는 안내 문구가 표시된다. 검색창에는 &quot;시&quot;라는 글자가 입력되어 있어, 특정 카테고리를 검색 중인 모습이다.</p>
+<p>이어서 팡지는 카메라를 향해 <strong>&quot;이거를 일일이 다 입력을 했었어야 됐었어요&quot;</strong>라고 말하며, 과거에는 상품명, 상세 설명, 옵션, 가격, 카테고리 등을 모두 수작업으로 입력해야 했지만, 지금은 AI 도구를 활용하여 자동으로 생성할 수 있다고 설명한다. AI가 상품 이미지를 분석하여 적절한 카테고리를 추천하고, SEO에 최적화된 상품명과 상세 설명을 자동 작성해주기 때문에 <strong>상품 하나를 등록하는 데 5분이면 충분</strong>하다는 것이다.</p>
+<p>노트북 화면에는 쿠팡 셀러 관리 페이지가 열려 있으며, 다양한 상품들이 등록된 목록이 보인다. 여러 색상의 카테고리 태그(초록, 빨강, 파랑, 노랑 등)들이 표시되어 있어, 수십~수백 개 이상의 다양한 카테고리 상품을 동시에 관리하고 있음을 알 수 있다.</p>
+<div class="screenshot-container"><img src="images/segment_022.jpg" alt="카테고리 선택 화면 - 카테고리 검색 UI" loading="lazy"><div class="caption">카테고리 선택 화면 - 카테고리 검색 UI</div></div>
+<div class="screenshot-container"><img src="images/segment_023.jpg" alt="과거 수작업 입력의 번거로움 vs AI 자동화" loading="lazy"><div class="caption">과거 수작업 입력의 번거로움 vs AI 자동화</div></div>
+<hr>
+<h3>12. AI 상세페이지 제작 품질 평가 [14:32 ~ 15:08]</h3>
+<p>팡지가 실제로 AI로 생성한 <strong>상세페이지</strong>를 보여준다. 화면에는 클렌징 상품의 상세페이지가 보이며 다음과 같은 내용이 표시된다:</p>
+<ul>
+<li>영문 카피: <strong>&quot;FOAMING IS ABUNDANT&quot;</strong></li>
+<li>한글 제목: <strong>&quot;쫀쫀 거품력&quot;</strong></li>
+<li>부제: <strong>&quot;초간편 클렌징&quot;</strong></li>
+<li>상세 설명: <strong>&quot;가볍게 롤링, 풍성한 거품! 딥클렌징 끝판왕&quot;</strong></li>
+</ul>
+<p><strong>&quot;좀 약간 소구점 잘 잡는 것 같아요 ㅋㅋ&quot;</strong>라는 자막이 나오며, 팡지는 AI가 생성한 상세페이지의 마케팅 포인트(소구점)가 꽤 잘 잡혀 있다고 평가한다. &quot;쫀쫀 거품력&quot;, &quot;초간편 클렌징&quot;, &quot;딥클렌징 끝판왕&quot; 같은 표현이 소비자의 구매 욕구를 자극하는 데 효과적이라는 것이다. AI가 상품의 특징을 분석하여 소비자에게 어필할 수 있는 포인트를 자동으로 잡아주기 때문에, 디자이너나 카피라이터 없이도 퀄리티 있는 상세페이지를 만들 수 있다.</p>
+<div class="screenshot-container"><img src="images/segment_025.jpg" alt="AI 생성 상세페이지 - 클렌징 상품, 쫀쫀 거품력" loading="lazy"><div class="caption">AI 생성 상세페이지 - 클렌징 상품, 쫀쫀 거품력</div></div>
+<hr>
+<h3>13. 실제 매출 증명 및 6개월 성과 [15:08 ~ 16:21]</h3>
+<p>팡지는 노트북으로 쿠팡 셀러 대시보드를 보여주며, 실제 매출 데이터를 공개한다. <strong>&quot;그거 증명해 주실 수 있나요?&quot;</strong>라는 진행자의 질문에 응하여 실제 판매 내역을 화면에 띄운다. 쿠팡 셀러센터의 주문/배송 관리 페이지가 열려 있으며, 다수의 주문 내역이 확인된다. 화면에는 쿠팡 로고와 함께 주문 목록, 배송 상태, 결제 금액 등이 표시되어 있다.</p>
+<p><strong>&quot;6개월 만에 찍었어요&quot;</strong>라는 자막이 나오며, 팡지는 온라인 셀러를 시작한 지 <strong>6개월 만에 월 순수익 1,000만 원</strong>을 달성했다고 밝힌다. 이는 매우 빠른 성장 속도로, AI 도구 활용을 통한 빠른 상품 등록과 다량 등록 전략이 핵심 성공 요인이었음을 시사한다.</p>
+<div class="screenshot-container"><img src="images/segment_026.jpg" alt="쿠팡 셀러 대시보드 - 주문/배송 관리 화면" loading="lazy"><div class="caption">쿠팡 셀러 대시보드 - 주문/배송 관리 화면</div></div>
+<div class="screenshot-container"><img src="images/segment_027.jpg" alt="6개월 만에 월 순수익 1,000만 원 달성" loading="lazy"><div class="caption">6개월 만에 월 순수익 1,000만 원 달성</div></div>
+<hr>
+<h3>14. 셀러가 된 계기 - 돈에 대한 마인드 변화 [16:21 ~ 17:33]</h3>
+<p>팡지는 자신이 셀러가 된 배경에 대해 이야기한다. <strong>&quot;그래서 그때부터 돈에 관심을 가지기 시작했어요&quot;</strong>라는 자막이 나오며, 의류 무역회사에 다니면서 무역 구조와 마진 구조를 이해하게 되었고, 그 과정에서 돈에 대한 관심이 생겼다고 설명한다. 회사에서 받는 월급으로는 자신이 원하는 삶을 살기 어렵다고 느꼈고, 이를 계기로 직접 사업에 뛰어들게 되었다.</p>
+<p>노트북 화면에는 쿠팡 셀러센터의 관리 화면이 보이며, 실제로 운영 중인 스토어의 데이터가 표시되어 있다.</p>
+<p>이어서 야외(주택가 골목)에서 <strong>&quot;아직도 의심이 많다 싶으신 분들은 들어와서&quot;</strong>라는 자막이 나온다. 이는 온라인 셀러나 AI 활용 소싱에 대해 아직 의심을 품고 있는 시청자들에게, 직접 경험해보라는 메시지를 전달하는 부분이다. 팡지의 사례가 실제 매출 데이터로 증명된 만큼, 망설이지 말고 행동에 옮기는 것이 중요하다는 메시지를 담고 있다.</p>
+<div class="screenshot-container"><img src="images/segment_028.jpg" alt="돈에 관심을 갖게 된 계기 설명" loading="lazy"><div class="caption">돈에 관심을 갖게 된 계기 설명</div></div>
+<div class="screenshot-container"><img src="images/segment_029.jpg" alt="의심 많은 분들에게 전하는 격려 메시지" loading="lazy"><div class="caption">의심 많은 분들에게 전하는 격려 메시지</div></div>
+<hr>
+<h3>15. 마무리 및 향후 포부 [17:33 ~ 18:10]</h3>
+<p>영상의 마지막 부분에서 팡지는 야외(건물 앞 녹지 공간, 나무가 우거진 곳)에서 <strong>&quot;그런 사람이 되고 싶습니다 ㅋㅋ&quot;</strong>라는 자막과 함께 밝게 웃으며 자신의 포부를 이야기한다. 현재 월 순수익 1,000만 원을 달성했지만 여기서 멈추지 않고, 더 큰 목표를 향해 나아가고 싶다는 의지를 표현한다. 자유롭게 돈을 벌면서 시간과 장소에 구애받지 않는 삶을 사는 사람이 되고 싶다는 꿈을 밝히며 영상이 마무리된다.</p>
+<div class="screenshot-container"><img src="images/segment_029.jpg" alt="향후 포부 - 자유로운 삶을 사는 사람이 되고 싶다" loading="lazy"><div class="caption">향후 포부 - 자유로운 삶을 사는 사람이 되고 싶다</div></div>
+<hr>
+<h2>주요 인용 및 발언</h2>
+<blockquote><p>&quot;순수익 20~25% 정도요.&quot;<br>— 팡지, 매출 대비 순수익률에 대해</p></blockquote>
+<blockquote><p>&quot;월 순수익 1000만 원 달성한 팡지라고 합니다.&quot;<br>— 팡지, 자기 소개</p></blockquote>
+<blockquote><p>&quot;다이소에서도 시장 조사를 할 수 있어요?&quot;<br>— 진행자의 질문</p></blockquote>
+<blockquote><p>&quot;맨날 오면 없거든요?&quot;<br>— 팡지, 다이소에서 품절이 잦은 상품에 대해 (수요가 높다는 시장 신호)</p></blockquote>
+<blockquote><p>&quot;그게 100개가 팔리든 말든&quot;<br>— 팡지, 개별 상품 판매량보다 전체 상품 수를 늘리는 것이 중요하다는 다량 등록 전략</p></blockquote>
+<blockquote><p>&quot;많이들 작성하더라고요&quot;<br>— 팡지, 리뷰 수가 수요 지표임을 설명</p></blockquote>
+<blockquote><p>&quot;이런 식으로 휴지를 넣어서 팔더라고요&quot;<br>— 팡지, 온라인에서 생활용품 판매 방식 설명</p></blockquote>
+<blockquote><p>&quot;빨리 배송 오는 것 때문에 하는 거거든요?&quot;<br>— 팡지, 소비자들이 온라인 구매를 선택하는 이유</p></blockquote>
+<blockquote><p>&quot;제가 원래 의류 무역회사를 다녔어가지고&quot;<br>— 팡지, 본인의 경력 배경과 소싱 능력의 기반</p></blockquote>
+<blockquote><p>&quot;로켓 배송은 저희가 물건을 판 거잖아요&quot;<br>— 팡지, 쿠팡 로켓그로스 시스템의 구조</p></blockquote>
+<blockquote><p>&quot;공산품 위주로 가야겠다&quot;<br>— 팡지, 의류보다 공산품이 온라인 판매에 유리하다는 전략적 판단</p></blockquote>
+<blockquote><p>&quot;사실 상관없어요&quot;<br>— 팡지, 판매 카테고리를 가리지 않는 유연한 접근</p></blockquote>
+<blockquote><p>&quot;여기서 복사 붙여넣기 하면&quot;<br>— 팡지, 1688 이미지 검색 소싱 방법 시연</p></blockquote>
+<blockquote><p>&quot;그러면 1.05 위안에 350원을 곱하면&quot;<br>— 팡지, 중국 원가 → 한국 원화 환산 과정</p></blockquote>
+<blockquote><p>&quot;근데 이거를 4개 묶음으로 붙여버리면&quot;<br>— 팡지, 묶음 판매 전략으로 마진 극대화</p></blockquote>
+<blockquote><p>&quot;나는 쿠팡한테 5300원에 팔게&quot;<br>— 팡지, 공급가 설정 과정 시연</p></blockquote>
+<blockquote><p>&quot;이거를 일일이 다 입력을 했었어야 됐었어요&quot;<br>— 팡지, AI 도입 전후의 상품 등록 효율성 비교</p></blockquote>
+<blockquote><p>&quot;좀 약간 소구점 잘 잡는 것 같아요 ㅋㅋ&quot;<br>— 팡지, AI 상세페이지의 마케팅 품질에 대한 긍정적 평가</p></blockquote>
+<blockquote><p>&quot;그거 증명해 주실 수 있나요?&quot;<br>— 진행자, 실제 매출 데이터 공개 요청</p></blockquote>
+<blockquote><p>&quot;6개월 만에 찍었어요&quot;<br>— 팡지, 월 순수익 1,000만 원 달성까지의 기간</p></blockquote>
+<blockquote><p>&quot;그래서 그때부터 돈에 관심을 가지기 시작했어요&quot;<br>— 팡지, 무역회사 경험 후 사업을 시작한 계기</p></blockquote>
+<blockquote><p>&quot;아직도 의심이 많다 싶으신 분들은 들어와서&quot;<br>— 팡지, 망설이는 시청자들에게 보내는 격려</p></blockquote>
+<blockquote><p>&quot;그런 사람이 되고 싶습니다 ㅋㅋ&quot;<br>— 팡지, 자유롭게 수익을 올리는 사람이 되겠다는 포부</p></blockquote>
+<hr>
+<h2>결론 및 시사점</h2>
+<h3>핵심 메시지</h3>
+<p>이 영상은 20대 여성 셀러 '팡지'의 실제 사례를 통해, AI 도구를 활용한 이커머스 상품 등록이 얼마나 효율적이고 수익성 있는 사업 모델인지를 구체적으로 보여준다. 과거에는 상품 하나를 등록하는 데 상당한 시간과 노력이 필요했지만, AI를 활용하면 5분 만에 상품명, 카테고리, 상세페이지까지 자동 생성할 수 있어 '다량 등록' 전략이 가능해졌다.</p>
+<h3>실용적 시사점</h3>
+<ol>
+<li><strong>오프라인-온라인 연계 시장 조사</strong>: 다이소, JAJU 같은 오프라인 매장에서 품절이 잦은 인기 상품을 발견하고, 이를 온라인에서 판매하는 전략이 유효하다. 오프라인 매장은 이미 소비자 수요가 검증된 상품을 보여주는 '쇼룸' 역할을 한다.</li>
+</ol>
+<ol>
+<li><strong>중국 소싱 + 묶음 판매 = 높은 마진</strong>: 1688 같은 중국 소싱 사이트에서 이미지 검색으로 저렴한 원가의 상품을 찾고, 이를 묶음 판매하면 마진율을 크게 높일 수 있다. 1.05위안(약 350원)짜리 상품을 4개 묶어 5,300원에 공급하고 8,800원에 판매하여 72%의 공급 마진을 확보한 구체적 사례가 이를 증명한다.</li>
+</ol>
+<ol>
+<li><strong>쿠팡 로켓그로스 활용</strong>: 물류 인프라가 없는 개인 셀러도 쿠팡의 로켓배송 시스템을 활용하면 배송과 포장을 쿠팡에 맡기고 소싱과 등록에만 집중할 수 있다. 이로 인해 진입 장벽이 크게 낮아졌다.</li>
+</ol>
+<ol>
+<li><strong>AI 도구의 실질적 효용</strong>: AI를 활용한 상품 등록 자동화는 단순히 시간 절약만이 아니라, 상세페이지의 마케팅 소구점 작성(예: &quot;쫀쫀 거품력&quot;, &quot;딥클렌징 끝판왕&quot;), 카테고리 추천 등 전문적인 영역까지 커버한다. AI가 생성한 콘텐츠의 품질이 실무에서 충분히 활용 가능한 수준이다.</li>
+</ol>
+<ol>
+<li><strong>다량 등록 전략의 중요성</strong>: 한 상품에서 대량 판매를 기대하기보다, 수많은 상품을 등록하여 각각 소량씩 팔리더라도 전체 매출을 키우는 전략이 핵심이다. &quot;100개가 팔리든 말든&quot; 상품 수를 늘리는 것이 월 1,000만 원 순수익의 비결이다.</li>
+</ol>
+<ol>
+<li><strong>경력 활용</strong>: 팡지의 경우 의류 무역회사 경험이 중국 소싱 능력의 기반이 되었다. 기존 경력에서 쌓은 전문성을 새로운 사업 모델에 접목하는 것이 성공 확률을 높인다.</li>
+</ol>
+<h3>향후 전망</h3>
+<p>AI 기술의 발전으로 이커머스 상품 등록의 진입 장벽은 계속 낮아질 것이며, 더 많은 개인 셀러들이 이 시장에 진입할 것으로 예상된다. 다만, 경쟁이 심화됨에 따라 차별화된 상품 소싱 능력, 트렌드 파악 센스, 그리고 효율적인 AI 도구 활용 능력이 성공의 핵심 역량이 될 것이다. 팡지의 사례처럼, 개인의 경험과 기술의 결합이 강력한 시너지를 만들어낼 수 있다.</p>
+
+        <div class="footer">
+            Generated by VidDigest
+        </div>
+    </div>
+    <div class="lightbox" id="lightbox" onclick="this.classList.remove('active')">
+        <img id="lightbox-img" src="" alt="">
+    </div>
+    <script>
+        document.querySelectorAll('.screenshot-container img').forEach(function(img) {
+            img.addEventListener('click', function() {
+                var lb = document.getElementById('lightbox');
+                document.getElementById('lightbox-img').src = this.src;
+                lb.classList.add('active');
+            });
+        });
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') document.getElementById('lightbox').classList.remove('active');
+        });
+    </script>
+</body>
+</html>

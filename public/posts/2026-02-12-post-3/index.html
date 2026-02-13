@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상품소싱, 이 영상으로 종결합니다 (왕초보 소싱법, 고마진, 계절상품 소싱) - VidDigest</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.8;
+            color: #1a1a2e;
+            background: #f8f9fa;
+        }
+        .header {
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: white;
+            padding: 48px 0 40px;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 28px;
+            font-weight: 700;
+            max-width: 800px;
+            margin: 0 auto 16px;
+            padding: 0 24px;
+            line-height: 1.4;
+        }
+        .header .meta {
+            font-size: 14px;
+            opacity: 0.85;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 0 24px;
+        }
+        .header .meta span {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+        }
+        h2 {
+            font-size: 22px;
+            font-weight: 700;
+            color: #302b63;
+            margin: 48px 0 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e8e8f0;
+        }
+        h3 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #24243e;
+            margin: 32px 0 14px;
+        }
+        h4 {
+            font-size: 16px;
+            font-weight: 600;
+            color: #444;
+            margin: 24px 0 10px;
+        }
+        p {
+            margin: 12px 0;
+            font-size: 15.5px;
+            color: #2c2c3e;
+        }
+        ul, ol {
+            margin: 12px 0;
+            padding-left: 28px;
+        }
+        li {
+            margin: 8px 0;
+            font-size: 15.5px;
+            color: #2c2c3e;
+        }
+        li strong {
+            color: #302b63;
+        }
+        blockquote {
+            margin: 20px 0;
+            padding: 16px 20px;
+            background: #f0f0f8;
+            border-left: 4px solid #302b63;
+            border-radius: 0 8px 8px 0;
+            font-size: 15px;
+            color: #444;
+        }
+        blockquote p {
+            margin: 4px 0;
+        }
+        .screenshot-container {
+            margin: 24px 0;
+            text-align: center;
+        }
+        .screenshot-container img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+            border: 1px solid #e0e0e8;
+        }
+        .screenshot-container .caption {
+            font-size: 13px;
+            color: #888;
+            margin-top: 8px;
+            font-style: italic;
+        }
+        code {
+            background: #eef;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-family: 'SF Mono', Menlo, Consolas, monospace;
+            color: #d63384;
+        }
+        pre {
+            background: #1e1e2e;
+            color: #cdd6f4;
+            padding: 20px;
+            border-radius: 10px;
+            overflow-x: auto;
+            margin: 16px 0;
+            font-size: 13.5px;
+            line-height: 1.6;
+        }
+        pre code {
+            background: none;
+            padding: 0;
+            color: inherit;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid #e0e0e8;
+            margin: 40px 0;
+        }
+        strong {
+            font-weight: 600;
+        }
+        .footer {
+            text-align: center;
+            padding: 32px 0;
+            font-size: 13px;
+            color: #999;
+            border-top: 1px solid #e8e8f0;
+            margin-top: 60px;
+        }
+        .screenshot-container img {
+            cursor: zoom-in;
+            transition: opacity 0.2s;
+        }
+        .screenshot-container img:hover {
+            opacity: 0.85;
+        }
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.85);
+            z-index: 9999;
+            cursor: zoom-out;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+        }
+        .lightbox.active {
+            display: flex;
+        }
+        .lightbox img {
+            max-width: 95vw;
+            max-height: 92vh;
+            border-radius: 8px;
+            box-shadow: 0 8px 40px rgba(0,0,0,0.5);
+            object-fit: contain;
+        }
+        @media (max-width: 600px) {
+            .header { padding: 32px 0 28px; }
+            .header h1 { font-size: 20px; padding: 0 16px; }
+            .header .meta { font-size: 12px; gap: 12px; padding: 0 16px; }
+            .container { padding: 24px 16px 60px; }
+            h2 { font-size: 19px; margin: 36px 0 16px; }
+            h3 { font-size: 16px; margin: 24px 0 12px; }
+            h4 { font-size: 15px; margin: 20px 0 8px; }
+            p, li { font-size: 14.5px; }
+            ul, ol { padding-left: 20px; }
+            blockquote { padding: 12px 14px; font-size: 14px; }
+            pre { padding: 14px; font-size: 12.5px; border-radius: 8px; }
+            code { font-size: 13px; }
+            .screenshot-container img { border-radius: 8px; }
+            hr { margin: 28px 0; }
+        }
+        @media (prefers-color-scheme: dark) {
+            body { background: #1a1a2e; color: #e0e0e8; }
+            h2 { color: #a8a4d6; border-bottom-color: #333; }
+            h3 { color: #c8c4e6; }
+            h4 { color: #b0b0c8; }
+            p, li { color: #d0d0e0; }
+            blockquote { background: #252540; border-left-color: #6c63ff; color: #c0c0d0; }
+            code { background: #2a2a4a; color: #f0a0c0; }
+            pre { background: #0d0d1a; }
+            hr { border-top-color: #333; }
+            .screenshot-container img { border-color: #333; }
+            .footer { border-top-color: #333; color: #666; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>상품소싱, 이 영상으로 종결합니다 (왕초보 소싱법, 고마진, 계절상품 소싱)</h1>
+        <div class="meta">
+            <span>쿠팡으로 3개월 10억, 돈벌자옹</span>
+            <span>19:02</span>
+            <span>20251105</span>
+        </div>
+    </div>
+    <div class="container">
+        <blockquote><p><strong>채널</strong>: 쿠팡으로 3개월 10억, 돈벌자옹 | <strong>길이</strong>: 19:02 | <strong>날짜</strong>: 20251105</p></blockquote>
+<h2>핵심 내용</h2>
+<ul>
+<li><strong>왕초보도 가능한 상품 소싱의 핵심은 &quot;쿠팡이 신규 출시하는 제품이 어떤 건지를 파악하는 것&quot;이다.</strong> 쿠팡은 시장성과 수요가 검증된 제품만 자체 브랜드(로켓배송)로 출시하는 거대 기업이므로, 쿠팡이 새로 내놓는 제품 카테고리를 살펴보는 것만으로도 어떤 제품에 수요가 있는지 파악할 수 있다. 우리는 그 제품의 단점을 보완하는 제품을 찾아서 업로드하면 된다.</li>
+</ul>
+<ul>
+<li><strong>소싱 시 반드시 지켜야 할 3가지 핵심 원칙이 있다.</strong> 첫 번째는 수요가 터지는 트렌드 찾기, 두 번째는 부피가 작은 제품 선정, 세 번째는 중국 1688 가격대가 적절한 제품을 고르는 것이다. 이 세 가지를 충족하는 제품이 고마진을 확보할 수 있는 이상적인 소싱 대상이다.</li>
+</ul>
+<ul>
+<li><strong>중국 1688 원가 계산법은 &quot;위안 가격 × 300&quot;이 기본 공식이다.</strong> 300원을 곱하는 이유는 통관비, 관세, 부가세를 넉넉하게 포함한 것이며, 예를 들어 7위안짜리 제품이면 7 × 300 = 2,100원에 들여올 수 있다. 이를 바탕으로 로켓그로스 마진계산기를 활용하면 원가율, 마진율을 정확히 산출할 수 있다.</li>
+</ul>
+<ul>
+<li><strong>조회수 3천 이하의 제품은 피하고, 판매가 만원 이상인 제품을 노려야 한다.</strong> 조회수가 너무 낮은 제품은 수요 자체가 부족하여 아무리 좋은 제품이라도 판매량이 나오지 않는다. 또한 판매가가 만원 이하인 제품은 마진이 너무 적어 수익성이 떨어지므로, 실제로 판매가가 어느 정도 있는 제품을 선정해야 한다.</li>
+</ul>
+<ul>
+<li><strong>계절상품 소싱은 높은 수익을 올릴 수 있는 좋은 전략이지만, 명과 암이 동시에 존재한다.</strong> 겨울 시즌 기모양말, 털 슬리퍼 등 계절 수요가 확실한 제품은 시즌 동안 폭발적 매출이 가능하나, 시즌이 끝나면 수요가 급감하는 리스크가 있다. 또한 객단가를 너무 낮게 가져가면 상세페이지 제작 비용조차 뽑지 못할 수 있으므로 주의가 필요하다.</li>
+</ul>
+<ul>
+<li><strong>자신이 아는 것, 좋아하는 것에서 출발하면 소싱이 훨씬 쉬워진다.</strong> 본인이 관심 있는 분야의 제품을 소싱하면 소비자 입장에서 어떤 점이 부족한지, 어떤 제품이 필요한지를 직관적으로 파악할 수 있어 성공 확률이 높아진다.</li>
+</ul>
+<ul>
+<li><strong>실제 수익 시뮬레이션 예시: 속눈썹 제품 하나로 월 약 230만 원 이상의 순수익이 가능하다.</strong> 조회수 평균 4만 회, 전환율 3%, 1일 판매량 약 600개(1200/2) 기준으로 실수익 2,627,800원이라는 구체적인 수치가 제시되었다.</li>
+</ul>
+<h2>상세 분석</h2>
+<h3>1. 도입부: 초보 셀러의 고민과 기존 소싱 방법의 한계 [0:00 - 1:16]</h3>
+<p>영상은 초보 셀러가 컴퓨터 앞에서 고민하는 모습의 일러스트로 시작된다. 화면에는 &quot;도매꼭&quot;, 네이버 &quot;쇼핑&quot;, 그리고 또 다른 쇼핑/분석 앱 아이콘들이 보이며, &quot;.... 모르겠는...&quot; 이라는 텍스트가 떠 있다. 이는 초보 셀러들이 도매꼭, 네이버쇼핑 등 다양한 플랫폼에서 상품을 소싱하려 하지만 무엇을 팔아야 할지 막막해하는 상황을 묘사한 것이다.</p>
+<p>자막에는 &quot;물론 그 방법들 모두 좋아요&quot;라는 텍스트가 표시되어, 기존에 알려진 도매꼭이나 네이버쇼핑을 활용한 소싱 방법들도 물론 유효하지만, 이번 영상에서는 더 효과적인 방법을 알려주겠다는 취지를 전달한다.</p>
+<p>이어서 화면이 전환되어 쇼핑 사이트(도매 또는 소매 플랫폼)의 상품 목록이 블러 처리된 채 보이며, &quot;그리고 여기 들어오셨으면&quot;이라는 자막이 나온다. 이는 시청자들이 이 영상을 클릭했다는 것은 소싱에 대한 관심이 있다는 것을 의미하며, 영상에서 확실한 방법을 알려주겠다는 도입이다.</p>
+<div class="screenshot-container"><img src="images/segment_000.jpg" alt="초보 셀러의 고민 - 도매꼭, 네이버쇼핑 등 소싱 플랫폼 앞에서 막막해하는 모습" loading="lazy"><div class="caption">초보 셀러의 고민 - 도매꼭, 네이버쇼핑 등 소싱 플랫폼 앞에서 막막해하는 모습</div></div>
+<div class="screenshot-container"><img src="images/segment_001.jpg" alt="쇼핑 사이트 상품 목록 화면" loading="lazy"><div class="caption">쇼핑 사이트 상품 목록 화면</div></div>
+<h3>2. 핵심 원칙: 중국 1688 가격대 확인과 쿠팡 활용법 [1:16 - 2:32]</h3>
+<p>화면에 &quot;구체적으로 중국 1688 가격대가&quot;라는 텍스트가 크게 표시된다. 이는 상품 소싱의 핵심 중 하나로, 중국 최대 도매 플랫폼인 1688(알리바바 B2B)에서의 상품 원가를 반드시 확인해야 한다는 점을 강조하는 것이다. 1688 가격대를 기준으로 국내 판매가와의 마진율을 계산해야 수익성 있는 제품을 소싱할 수 있다.</p>
+<p>이어서 &quot;쿠팡이 어떤 회사입니까? 그렇게 큰 회사가 시장성과 수요도 없는 제품을&quot;이라는 텍스트가 화면에 표시된다. 이 부분은 소싱의 가장 핵심적인 통찰을 전달하는 장면이다. 쿠팡은 한국 최대 이커머스 기업으로, 자체 PB(프라이빗 브랜드) 상품을 출시할 때 철저한 시장 조사를 거친다. 따라서 쿠팡이 새로 출시하는 상품 카테고리는 곧 수요가 검증된 카테고리라는 의미이며, 초보 셀러들은 이를 &quot;무료 시장조사 자료&quot;로 활용할 수 있다.</p>
+<div class="screenshot-container"><img src="images/segment_002.jpg" alt="중국 1688 가격대 확인의 중요성" loading="lazy"><div class="caption">중국 1688 가격대 확인의 중요성</div></div>
+<div class="screenshot-container"><img src="images/segment_003.jpg" alt="쿠팡의 시장성 검증 논리" loading="lazy"><div class="caption">쿠팡의 시장성 검증 논리</div></div>
+<h3>3. 쿠팡 신규 출시 제품 분석법 [2:32 - 3:48]</h3>
+<p>화면에 쿠팡 검색 결과 페이지가 표시된다. CJ제일제당 비비고 열무김치(900g, 12,900원), 곰곰 육즙 가득 정통 함박 스테이크(13,730원), 곰곰 팥각(7,330원), 곰곰 메추리알 장조림(7,840원), 곰곰 냉동 블루베리(10,790원), 곰곰 육개장(15,840원), 곰곰 한입 돈까스(7,920원), 사미헌 갈비탕(19,600원) 등 다양한 로켓프레시/로켓배송 제품이 보인다.</p>
+<p>자막에는 &quot;신규 출시하는 제품이 어떤 건지를 파악하는 것만으로도&quot;라는 텍스트가 있다. 이는 쿠팡이 자체적으로 &quot;곰곰&quot;, &quot;탐사&quot; 등의 PB 브랜드로 신규 출시하는 제품 라인업을 주기적으로 체크하면, 현재 시장에서 어떤 카테고리에 수요가 증가하고 있는지를 파악할 수 있다는 의미이다.</p>
+<p>다음 화면에서는 반려동물 사료/간식 카테고리가 보인다. 탐사 소프트 사료(40,720원), 반려동물 간식, CAT SNACK 등의 제품과 함께 &quot;반려동물 간식이나 캣닢이 잘 나가니까 팔면 되나?&quot;라는 텍스트, 그리고 &quot;제가 아까 이야기했죠?&quot;라는 자막이 표시된다. 이는 단순히 쿠팡에서 잘 나가는 제품을 그대로 따라 파는 것이 아니라, 그 제품의 단점을 분석하고 이를 보완하는 차별화된 제품을 찾아야 한다는 점을 강조하는 것이다.</p>
+<div class="screenshot-container"><img src="images/segment_004.jpg" alt="쿠팡 로켓프레시/로켓배송 신규 출시 제품 목록" loading="lazy"><div class="caption">쿠팡 로켓프레시/로켓배송 신규 출시 제품 목록</div></div>
+<div class="screenshot-container"><img src="images/segment_005.jpg" alt="반려동물 간식 카테고리 분석" loading="lazy"><div class="caption">반려동물 간식 카테고리 분석</div></div>
+<h3>4. 쿠팡 PB 제품의 단점 보완 전략 [3:48 - 5:04]</h3>
+<p>화면에는 쿠팡의 다양한 PB 제품들이 보인다. 탐사 향기 제습제 코튼향(17,900원), 탐사 파워워시 액체 세제(12,160원), 코멧 홈 플랫라인 미니 사각 사이드 테이블, 코멧 위생백(7,480원), 탐사 스파크 점화기, 코멧 무타공 세탁기 건조기, 코멧 아웃도어 원터치 텐트 등이 표시되어 있다. 이와 함께 체크리스트를 들고 있는 배달원과 소비자의 일러스트가 겹쳐져 있다.</p>
+<p>자막에는 &quot;어떤 게 있는지 살펴보면 답은 거의 나와요&quot;라고 되어 있어, 쿠팡 PB 제품 라인업을 살펴보기만 해도 어떤 카테고리에서 기회가 있는지 답이 보인다는 것을 강조한다.</p>
+<p>이어서 분홍색 캐릭터가 노트북 앞에서 리서치하는 일러스트가 나오며, &quot;그러면 우리가 그 단점을 보완하는 제품을 찾아서 업로드를 하는 거죠&quot;라는 핵심 자막이 표시된다. 즉, 전략의 요약은 다음과 같다:</p>
+<ol>
+<li>쿠팡 PB 제품(곰곰, 탐사, 코멧 등)의 신규 출시 라인업을 확인</li>
+<li>해당 제품의 리뷰에서 소비자 불만/단점을 파악</li>
+<li>그 단점을 보완하는 제품을 1688 등에서 소싱</li>
+<li>쿠팡에 업로드하여 판매</li>
+</ol>
+<div class="screenshot-container"><img src="images/segment_006.jpg" alt="쿠팡 PB 제품 라인업 분석" loading="lazy"><div class="caption">쿠팡 PB 제품 라인업 분석</div></div>
+<div class="screenshot-container"><img src="images/segment_007.jpg" alt="단점 보완 제품을 찾아 업로드하는 전략" loading="lazy"><div class="caption">단점 보완 제품을 찾아 업로드하는 전략</div></div>
+<h3>5. 구체적 소싱 예시: 메이크업 브러쉬 [5:04 - 5:42]</h3>
+<p>화면에 구체적인 상품 소싱 예시가 제시된다. &quot;엑스비지 풀세트 메이크업 브러쉬 10종, 1개&quot;라는 상품이 표시되어 있다. 카테고리는 뷰티 &gt; 뷰티소품 &gt; 페이스소품 &gt; 브러쉬 &gt; 브러쉬 세트이며, 브랜드명은 &quot;브랜드없음&quot;, 제조사는 &quot;엑스비지 협력사&quot;로 되어 있다. Rating은 별 5개, 상품평 77개, 가격 16,800원이다.</p>
+<p>자막에는 &quot;여러분들이 이런 상품 하나 소싱하시면&quot;이라고 되어 있어, 이런 브랜드 없는(노브랜드) 뷰티 소품류가 소싱하기 좋은 대표적인 예시임을 보여준다. 브랜드가 없다는 것은 중국에서 OEM/ODM으로 제작된 제품일 가능성이 높으며, 1688에서 유사 제품을 저렴하게 소싱할 수 있다는 의미이다.</p>
+<div class="screenshot-container"><img src="images/segment_008.jpg" alt="메이크업 브러쉬 소싱 예시 - 16,800원, 별점 5, 리뷰 77개" loading="lazy"><div class="caption">메이크업 브러쉬 소싱 예시 - 16,800원, 별점 5, 리뷰 77개</div></div>
+<h3>6. 소싱 3가지 핵심 원칙 [5:42 - 6:58]</h3>
+<p>화면에 &quot;첫 번째 수요가 터지는 트렌드 찾기, 두 번째 부피가 작은 제품 선정&quot;이라는 텍스트가 크게 표시된다. 이는 소싱 시 반드시 지켜야 할 핵심 원칙을 정리한 것이다:</p>
+<p><strong>첫 번째 원칙 - 수요가 터지는 트렌드 찾기:</strong></p>
+<p>현재 시장에서 수요가 증가하고 있는 트렌드 제품을 찾는 것이 중요하다. 이미 포화된 시장보다는 새롭게 수요가 형성되고 있는 카테고리를 공략해야 한다.</p>
+<p><strong>두 번째 원칙 - 부피가 작은 제품 선정:</strong></p>
+<p>부피가 작은 제품은 물류비(배송비, 보관비)가 적게 들어 마진율이 높아진다. 중국에서 수입할 때도 부피가 작을수록 항공 운송비가 저렴하고, 쿠팡 물류센터 보관료도 절감된다.</p>
+<p>이어서 귀여운 공룡 캐릭터가 책 위에 올라앉아 있는 일러스트가 나오며, 책에는 &quot;아는 거&quot;, &quot;좋아하는 거&quot;라는 텍스트가 적혀 있다. 자막에는 &quot;먼저 접근해 보시는 걸 추천드립니다&quot;라고 되어 있다. 이는 본인이 잘 알고 좋아하는 분야의 제품부터 소싱을 시작하라는 조언이다. 자신이 소비자로서 잘 아는 카테고리에서 출발하면 시장의 니즈를 더 정확하게 파악할 수 있다.</p>
+<div class="screenshot-container"><img src="images/segment_009.jpg" alt="소싱 3가지 핵심 원칙" loading="lazy"><div class="caption">소싱 3가지 핵심 원칙</div></div>
+<div class="screenshot-container"><img src="images/segment_010.jpg" alt="아는 것, 좋아하는 것에서 시작하기" loading="lazy"><div class="caption">아는 것, 좋아하는 것에서 시작하기</div></div>
+<h3>7. 쿠팡 물류 보관료와 부피가 작은 제품의 장점 [6:58 - 7:36]</h3>
+<p>화면에는 쿠팡 물류 시스템을 설명하는 일러스트가 보인다. &quot;쿠팡 물류보관료는 30일동안 무료&quot;라는 텍스트가 상단에 표시되어 있으며, &quot;고객 김쿠팡 씨의 쇼핑 목록&quot;이라는 주문 프로세스 다이어그램이 있다. 왼쪽에는 물류센터에서 상품을 분류하는 작업자, 오른쪽에는 coupang 로고와 함께 상품을 배송받는 고객의 모습이 그려져 있다.</p>
+<p>자막에는 &quot;해당이 안 될 수도 있지만&quot;이라고 되어 있다. 이는 쿠팡 로켓그로스의 물류보관료가 30일간 무료라는 혜택을 설명하면서, 모든 상품에 해당되는 것은 아닐 수 있다는 단서를 붙인 것이다. 부피가 작은 제품은 이 보관료 혜택을 최대한 활용할 수 있으며, 30일 이내에 회전이 잘 되면 보관료 부담 없이 운영할 수 있다.</p>
+<div class="screenshot-container"><img src="images/segment_011.jpg" alt="쿠팡 물류보관료 30일 무료 설명" loading="lazy"><div class="caption">쿠팡 물류보관료 30일 무료 설명</div></div>
+<h3>8. 쿠팡 인기 상품 검색(시크릿모드) 활용법: 괄사 예시 [7:36 - 8:52]</h3>
+<p>화면에는 &quot;쿠팡 인기 상품 검색 beta&quot; 화면이 표시된다. 검색어로 &quot;괄사&quot;가 입력되어 있고, 연관 키워드로 &quot;괄사스틱&quot;, &quot;얼굴괄사마사지기&quot;, &quot;괄사&quot;, &quot;육스틱괄사&quot;, &quot;바디괄사마사지기&quot; 등이 나열되어 있다.</p>
+<p>&quot;괄사&quot; 키워드 검색 결과:</p>
+<ul>
+<li>평균가: 7,983원</li>
+<li>가격범위: 최소 4,649원 ~ 최대 32,900원</li>
+</ul>
+<p>상품 목록(판매량 순):</p>
+<ol>
+<li><strong>쿤달 스칼프 마사지 샴푸 브러쉬, 보라색 1개</strong> - 뷰티 &gt; 뷰티소품 &gt; 헤어소품 &gt; 빗/브러쉬 &gt; 두피마사지브러쉬, 브랜드: 쿤달, 제조사: (주)더스킨팩토리, Rating 별5, 상품평 4,865개, 가격 5,400원, <strong>조회수 4만-6만 회</strong></li>
+<li><strong>원스토 문어 마사지기 두피 괄사 천연소재 1+1</strong> - 생활용품 &gt; 건강용품 &gt; 지압/마사지용품 &gt; 괄사용품, 브랜드없음, 제조사: 원스토협력사, Rating 별5, 상품평 570개, 가격 11,800원, <strong>조회수 6만-8만 회</strong></li>
+<li><strong>로즈온 디톡 바디 페이스 괄사, 1개 아이보리</strong> - 뷰티 &gt; 뷰티소품 &gt; 기타뷰티소품, 브랜드: 로즈온, 제조사: 중국</li>
+</ol>
+<p>자막에는 &quot;괄사 같은 제품은 지금 보시면은 조회수가 4만 회에서 6만 회&quot;라고 되어 있어, 괄사 카테고리가 상당한 수요(월 조회수 4만~8만)를 보이고 있음을 보여준다. 이처럼 쿠팡 인기 상품 검색(시크릿모드)을 활용하면 각 키워드별 조회수와 경쟁 상황을 한눈에 파악할 수 있다.</p>
+<div class="screenshot-container"><img src="images/segment_012.jpg" alt="쿠팡 인기 상품 검색 - 괄사 키워드 분석" loading="lazy"><div class="caption">쿠팡 인기 상품 검색 - 괄사 키워드 분석</div></div>
+<p>이어서 &quot;그러니까 우리는 지금 물티슈보다 경쟁강도는 훨씬 낮지만 고객의 수요는 꾸준히 증가하는&quot;이라는 텍스트가 화면에 표시된다. 이는 물티슈 같은 레드오션 카테고리와 비교하여, 괄사 같은 제품은 경쟁강도가 훨씬 낮으면서도 고객 수요는 꾸준히 증가하는 블루오션이라는 점을 강조한다.</p>
+<div class="screenshot-container"><img src="images/segment_013.jpg" alt="경쟁강도 낮고 수요 증가하는 제품 선정의 중요성" loading="lazy"><div class="caption">경쟁강도 낮고 수요 증가하는 제품 선정의 중요성</div></div>
+<h3>9. 조회수 기준: 3천 이하 제품은 피해야 한다 [8:52 - 9:31]</h3>
+<p>화면에 빨간색 배경으로 <strong>&quot;조회수 3천 이하 제품&quot;</strong>이라는 경고 텍스트가 크게 표시된다. 자막에는 &quot;근데 이때 막 조회수 2천, 3천밖에 안 되는 제품은&quot;이라고 되어 있다.</p>
+<p>이는 소싱 시 반드시 피해야 할 제품의 기준을 명확히 한 것이다. 조회수가 2천~3천에 불과한 제품은 아무리 마진이 좋아 보여도 판매 자체가 충분히 일어나지 않기 때문에, 재고만 쌓이고 수익을 내기 어렵다. 최소한 월 조회수가 일정 수준 이상 되는 제품을 선택해야 안정적인 매출을 확보할 수 있다.</p>
+<div class="screenshot-container"><img src="images/segment_014.jpg" alt="조회수 3천 이하 제품 주의 경고" loading="lazy"><div class="caption">조회수 3천 이하 제품 주의 경고</div></div>
+<h3>10. 리뷰 분석을 통한 단점 파악 [9:31 - 10:09]</h3>
+<p>화면에는 쿠팡 상품의 리뷰 섹션이 보인다. 배송/교환/반품 안내 아래에 상품평 운영원칙이 표시되어 있고, 상품 이미지가 여러 장 보인다(869장의 리뷰 사진).</p>
+<p>별점 분포가 상세히 나와 있다:</p>
+<ul>
+<li>모든 별점 보기: 1,350개</li>
+<li>최고 (별5): 1,053개</li>
+<li>좋음 (별4): 167개</li>
+<li>보통 (별3): 85개</li>
+<li>별로 (별2): 26개</li>
+<li>나쁨 (별1): 19개</li>
+</ul>
+<p>자막에는 &quot;쿠팡에서 제일 잘 팔렸던 제품도 한번씩 리뷰를 눌러보시면&quot;이라고 되어 있다. 이는 가장 잘 팔리는 1위 제품의 리뷰를 꼼꼼히 분석하라는 조언이다. 별점이 낮은 리뷰(별2, 별1)에서 소비자들의 불만 사항을 파악하면, 그 단점을 보완한 제품을 소싱하여 차별화할 수 있다.</p>
+<div class="screenshot-container"><img src="images/segment_016.jpg" alt="쿠팡 상품 리뷰 별점 분석 화면" loading="lazy"><div class="caption">쿠팡 상품 리뷰 별점 분석 화면</div></div>
+<h3>11. 판매가 기준: 만원 이상 상품 선정 [10:09 - 10:47]</h3>
+<p>화면에 &quot;만원 이상 상품&quot;과 &quot;만원 이하 상품&quot;이 물음표가 그려진 노란 박스 아이콘으로 대비되어 표시된다. 자막에는 &quot;실제로 판매가가 좀 있는 제품을 해야지&quot;라고 되어 있다.</p>
+<p>이 부분은 소싱할 때 판매가 기준을 명확히 설정하라는 조언이다. 만원 이하의 저가 상품은 원가, 배송비, 수수료를 제외하면 마진이 거의 남지 않는다. 반면 만원 이상의 제품은 동일한 마진율이라도 절대적인 이익 금액이 커서 수익성이 좋다. 특히 초보 셀러의 경우 상세페이지 제작, 광고비 등 초기 비용을 감안하면 일정 수준 이상의 판매가를 가진 제품을 선택하는 것이 합리적이다.</p>
+<div class="screenshot-container"><img src="images/segment_017.jpg" alt="만원 이상 vs 만원 이하 상품 비교" loading="lazy"><div class="caption">만원 이상 vs 만원 이하 상품 비교</div></div>
+<h3>12. 원가 계산법: 위안 × 300 공식과 마진계산기 [10:47 - 12:03]</h3>
+<p>화면에 원가 계산 공식이 상세히 표시된다:</p>
+<ul>
+<li>&quot;300원을 곱한 이유는 저희가 통관비 관세 부가세를 넉넉잡아 300원을 곱해주는 것이고요&quot;</li>
+<li>&quot;그러면 우리가 넉넉잡아 7위안이다&quot;</li>
+<li>&quot;그러면 2100원에 들여올 수 있는 거예요&quot;</li>
+</ul>
+<p>즉, 1688에서 7위안에 살 수 있는 제품은 7 × 300 = 2,100원의 원가(통관비/관세/부가세 포함)로 국내에 들여올 수 있다는 계산이다.</p>
+<p>다음 화면에서는 <strong>&quot;3개월 10억 로켓그로스 마진계산기&quot;</strong>라는 엑셀 시트가 표시된다:</p>
+<p><strong>입력 항목 (노란색 음영부분만 작성):</strong></p>
+<ul>
+<li>제품: 속눈썹</li>
+<li>시크릿모드에서 상위 5개 업체의 판매가:</li>
+<li>1등: 9,990원</li>
+<li>2등: 8,600원</li>
+<li>3등: 14,900원</li>
+<li>4등: 15,500원</li>
+<li>5등: 14,500원 (각 쿠팡 URL 포함)</li>
+</ul>
+<p><strong>자동 계산 결과:</strong></p>
+<ul>
+<li>예상판매가: 12,698원</li>
+<li>중국원가: 7위안 / 예상원가: 2,100 (×300)</li>
+<li>로켓그로스배송비: 3,150원</li>
+<li>최종비용: 3,080 (부가세포함, *입출고비포함)</li>
+<li>원가+배송비: 5,180원</li>
+<li>수수료율: 9.6% / 수수료: 1,219원 / 최종수수료: 1,341원</li>
+<li><strong>총원가: 7,082원</strong></li>
+<li><strong>원가율: 55.78%</strong></li>
+<li><strong>마진율: 44.22%</strong></li>
+</ul>
+<div class="screenshot-container"><img src="images/segment_018.jpg" alt="위안 × 300 원가 계산 공식" loading="lazy"><div class="caption">위안 × 300 원가 계산 공식</div></div>
+<div class="screenshot-container"><img src="images/segment_015.jpg" alt="로켓그로스 마진계산기 상세 화면" loading="lazy"><div class="caption">로켓그로스 마진계산기 상세 화면</div></div>
+<h3>13. 실제 수익 시뮬레이션: 속눈썹 제품 [12:03 - 12:41]</h3>
+<p>화면에 구체적인 수익 시뮬레이션이 표시된다:</p>
+<ul>
+<li>상품: 속눈썹 (1+1, 240개 구성)</li>
+<li><strong>조회수 평균 4만 회</strong></li>
+<li><strong>전환율 3%</strong></li>
+<li><strong>1200/2 = 600</strong> (월 판매량의 절반으로 보수적 계산)</li>
+<li><strong>실 수익: 2,627,800원</strong></li>
+</ul>
+<p>자막에는 &quot;230만원 정도는 넉넉하게 여러분들이 버실 수가 있습니다&quot;라고 되어 있다. 속눈썹 제품 하나만으로도 월 약 230만 원 이상의 순수익이 가능하다는 것을 구체적 수치로 증명한다.</p>
+<div class="screenshot-container"><img src="images/segment_019.jpg" alt="속눈썹 제품 수익 시뮬레이션 - 월 실수익 2,627,800원" loading="lazy"><div class="caption">속눈썹 제품 수익 시뮬레이션 - 월 실수익 2,627,800원</div></div>
+<h3>14. 계절상품 소싱 전략: 기모양말, 털 슬리퍼 [12:41 - 14:35]</h3>
+<p>화면에 선풍기 옆에 앉아있는 캐릭터가 보이며, &quot;사실 계절상품 같은 경우는&quot;이라는 자막이 표시된다. 이후 쿠팡에서 &quot;기모양말&quot;을 검색한 화면이 나타난다.</p>
+<p>쿠팡 기모양말 검색 결과 좌측 필터:</p>
+<ul>
+<li>사용계절: 사계절용, 봄/가을용, 여름용, 겨울용</li>
+<li>용도: 일상용, 수면용, 스포츠/등산용</li>
+<li>색상, 종류, 패턴/프린트 등</li>
+</ul>
+<p>검색 결과 상품들:</p>
+<ul>
+<li>LONZOMINI 울니트 컬러 6켤레 양말세트: 35% 할인, 9,000원</li>
+<li>Craftsy 남성 사계절 운동 양말 10켤레: 78% 할인, 9,800원</li>
+<li>양말 전문 러닝 줄넘기 피트니스용: 16,000원</li>
+<li>투발로 남녀공용 2종 파일 등산 양말 10켤레: 13,620원, 로켓배송</li>
+</ul>
+<p>다음으로 쿠팡에서 &quot;털 슬리퍼&quot;를 검색한 화면이 나온다. 자동완성 키워드: &quot;실내 털슬리퍼&quot;, &quot;여성 털슬리퍼&quot;, &quot;남자 털슬리퍼&quot;, &quot;아동 털슬리퍼&quot;, &quot;동물 털 슬리퍼&quot;, &quot;귀여운 털 슬리퍼&quot;, &quot;키높이 털슬리퍼&quot;, &quot;층간소음 털슬리퍼&quot; 등이 표시된다. 자막에 &quot;귀여운 털 슬리퍼, 키높이 털 슬리퍼&quot;라는 텍스트가 있어, 자동완성에서 세분화된 니즈를 파악하는 방법을 보여준다.</p>
+<div class="screenshot-container"><img src="images/segment_020.jpg" alt="계절상품 소싱 도입" loading="lazy"><div class="caption">계절상품 소싱 도입</div></div>
+<div class="screenshot-container"><img src="images/segment_021.jpg" alt="쿠팡 기모양말 검색 결과" loading="lazy"><div class="caption">쿠팡 기모양말 검색 결과</div></div>
+<div class="screenshot-container"><img src="images/segment_022.jpg" alt="쿠팡 털 슬리퍼 검색 - 자동완성 키워드" loading="lazy"><div class="caption">쿠팡 털 슬리퍼 검색 - 자동완성 키워드</div></div>
+<h3>15. 계절상품의 판매량과 수익 계산 [14:35 - 15:13]</h3>
+<p>화면에 캐릭터가 편지를 들고 있는 일러스트와 &quot;평균적으로 20명이 사면&quot;이라는 자막이 표시된다. 하루 평균 20명이 구매한다고 가정했을 때의 수익을 계산하는 장면으로, 시즌 동안 안정적인 일 판매량만 확보해도 상당한 월 수익이 가능하다는 점을 시사한다.</p>
+<div class="screenshot-container"><img src="images/segment_023.jpg" alt="계절상품 판매량 시뮬레이션" loading="lazy"><div class="caption">계절상품 판매량 시뮬레이션</div></div>
+<h3>16. 계절상품 소싱 시 중국 1688 활용: 가습기 예시 [15:13 - 16:29]</h3>
+<p>화면에 중국 1688 플랫폼의 가습기 검색 결과가 표시된다:</p>
+<ol>
+<li><strong>귀여운 캐릭터 가습기</strong> - ¥39.35, 거래 500+건</li>
+<li><strong>대용량 이중 분무 가습기 (400ml)</strong> - ¥44.20, 거래 100+건</li>
+<li><strong>귀여운 반려동물 모양 가습기</strong> - ¥22.40, 거래 60+건 (8년 업력 심천 업체)</li>
+</ol>
+<p>자막에는 &quot;평균 30위안에 가져온다고 해주고 여기에 300을 곱해주면&quot;이라고 되어 있다. 30위안 × 300 = 9,000원의 원가로 가습기를 들여올 수 있으며, 국내 판매가 2만~3만 원대로 설정하면 높은 마진을 확보할 수 있다.</p>
+<p>그러나 다음 화면에서 &quot;전자제품이니까 KC인증을 받아야 하지 않나요?&quot;라는 텍스트가 두 번 표시되며, KC인증 문제를 제기한다. 전자제품 수입 시 KC인증은 반드시 사전에 확인해야 할 사항이다.</p>
+<div class="screenshot-container"><img src="images/segment_025.jpg" alt="1688 가습기 소싱 - 22~44위안대 제품들" loading="lazy"><div class="caption">1688 가습기 소싱 - 22~44위안대 제품들</div></div>
+<div class="screenshot-container"><img src="images/segment_026.jpg" alt="KC인증 관련 질문" loading="lazy"><div class="caption">KC인증 관련 질문</div></div>
+<h3>17. 계절상품의 객단가 주의사항 [17:07 - 17:45]</h3>
+<p>화면에 모니터를 클릭하는 일러스트와 &quot;객단가를 너무 낮게 가져가 버리면&quot;이라는 자막이 표시된다. 계절상품이라도 객단가가 너무 낮으면 상세페이지 제작비, 광고비, 포장비 등의 초기 비용을 회수하기 어렵다는 경고이다.</p>
+<div class="screenshot-container"><img src="images/segment_027.jpg" alt="객단가의 중요성" loading="lazy"><div class="caption">객단가의 중요성</div></div>
+<h3>18. 계절상품의 명과 암 [17:45 - 18:23]</h3>
+<p>화면에 선글라스 쓴 태양(여름)과 빗자루를 든 눈사람(겨울) 캐릭터가 나란히 보이며, &quot;아쉽게도 모든 것엔 명과 암이 동시에 존재하기 마련입니다&quot;라는 자막이 표시된다.</p>
+<p><strong>명(장점):</strong> 시즌 동안 폭발적 수요, 예측 가능한 수요 시기, 비시즌 경쟁자 이탈로 시즌 초기 선점 가능</p>
+<p><strong>암(단점):</strong> 시즌 후 수요 급감, 재고 처리 어려움, 자금 회전 문제, 시즌 예측 실패 리스크</p>
+<div class="screenshot-container"><img src="images/segment_028.jpg" alt="계절상품의 명과 암" loading="lazy"><div class="caption">계절상품의 명과 암</div></div>
+<h3>19. 마무리: 시즌템 승부와 PDF 자료 안내 [18:23 - 19:02]</h3>
+<p>화면에 &quot;이번 겨울, 시즌템으로 승부 본다!&quot;라는 텍스트와 함께 노트북 앞 여성 캐릭터가 보인다. &quot;제대로 승부를 보고 싶으신 분들도 분명 계실 거라 믿어요&quot;라는 자막이 표시된다.</p>
+<p>마지막으로 검은 배경에 &quot;그래서 이 PDF가 처음부터 끝까지&quot;와 &quot;여러분들은 수십 번의 시행착오를 경험하지 않고&quot;라는 텍스트가 표시되며, 제작자가 준비한 PDF 가이드 자료를 통해 소싱부터 판매까지 시행착오 없이 바로 실전에 적용할 수 있도록 안내하고 있다.</p>
+<div class="screenshot-container"><img src="images/segment_029.jpg" alt="시즌템으로 승부 - 마무리" loading="lazy"><div class="caption">시즌템으로 승부 - 마무리</div></div>
+<h2>주요 인용 및 발언</h2>
+<blockquote><p>&quot;물론 그 방법들 모두 좋아요&quot;</p></blockquote>
+<p>— 기존 소싱 방법(도매꼭, 네이버쇼핑 등)도 유효하지만, 더 효과적인 방법이 있다는 도입부</p>
+<blockquote><p>&quot;쿠팡이 어떤 회사입니까? 그렇게 큰 회사가 시장성과 수요도 없는 제품을 (출시하겠습니까)&quot;</p></blockquote>
+<p>— 쿠팡 PB 제품 분석이 최고의 무료 시장조사라는 핵심 논리</p>
+<blockquote><p>&quot;그러면 우리가 그 단점을 보완하는 제품을 찾아서 업로드를 하는 거죠&quot;</p></blockquote>
+<p>— 소싱 전략의 핵심: 기존 인기 제품의 단점을 보완하는 차별화 제품 소싱</p>
+<blockquote><p>&quot;300원을 곱한 이유는 저희가 통관비 관세 부가세를 넉넉잡아 300원을 곱해주는 것이고요, 그러면 우리가 넉넉잡아 7위안이다, 그러면 2100원에 들여올 수 있는 거예요&quot;</p></blockquote>
+<p>— 1688 원가 계산의 핵심 공식 설명</p>
+<blockquote><p>&quot;230만원 정도는 넉넉하게 여러분들이 버실 수가 있습니다&quot;</p></blockquote>
+<p>— 속눈썹 제품 하나로 월 230만 원 수익 시뮬레이션 결과</p>
+<blockquote><p>&quot;아쉽게도 모든 것엔 명과 암이 동시에 존재하기 마련입니다&quot;</p></blockquote>
+<p>— 계절상품의 양면성에 대한 균형 잡힌 시각</p>
+<blockquote><p>&quot;제대로 승부를 보고 싶으신 분들도 분명 계실 거라 믿어요&quot;</p></blockquote>
+<p>— 리스크를 감수하고 시즌상품으로 도전하려는 셀러들에 대한 응원</p>
+<blockquote><p>&quot;여러분들은 수십 번의 시행착오를 경험하지 않고&quot;</p></blockquote>
+<p>— PDF 가이드를 통한 실전 적용 안내</p>
+<h2>결론 및 시사점</h2>
+<p>이 영상은 쿠팡 로켓그로스를 활용한 상품 소싱의 <strong>A부터 Z까지</strong>를 체계적으로 다루고 있다. 핵심 전략을 종합하면 다음과 같다:</p>
+<p><strong>1단계 - 시장 조사:</strong> 쿠팡 PB 브랜드(곰곰, 탐사, 코멧 등)의 신규 출시 제품을 모니터링하여 수요가 검증된 카테고리를 파악한다. 쿠팡 인기 상품 검색(시크릿모드)을 활용하여 키워드별 조회수와 경쟁 현황을 분석한다.</p>
+<p><strong>2단계 - 제품 선정 기준:</strong></p>
+<ul>
+<li>조회수 최소 3천 이상 (가급적 수만 회 이상)</li>
+<li>판매가 만원 이상</li>
+<li>부피가 작은 제품 (물류비 절감)</li>
+<li>본인이 잘 아는/좋아하는 카테고리 우선</li>
+</ul>
+<p><strong>3단계 - 단점 분석:</strong> 해당 카테고리 1위 제품의 리뷰(특히 별1~2점)를 꼼꼼히 분석하여 소비자 불만사항을 파악한다.</p>
+<p><strong>4단계 - 소싱:</strong> 중국 1688에서 단점이 보완된 제품을 찾는다. 원가 계산은 &quot;위안 × 300&quot; 공식으로 간편하게 할 수 있다.</p>
+<p><strong>5단계 - 마진 검증:</strong> 로켓그로스 마진계산기를 활용하여 원가율, 마진율을 사전에 계산한다. 마진율 40% 이상이 이상적이다.</p>
+<p><strong>계절상품에 대한 시사점:</strong> 계절상품은 시즌 동안 폭발적 매출이 가능하지만 시즌 종료 후 재고 리스크가 있다. 객단가를 너무 낮게 설정하면 상세페이지 제작비조차 회수하기 어려우므로 적정 객단가를 유지해야 한다. 전자제품(가습기 등)은 KC인증 여부를 반드시 사전에 확인해야 한다.</p>
+<p>이 영상의 가장 큰 시사점은 <strong>&quot;쿠팡의 시장 조사를 무료로 활용하라&quot;</strong>는 것이다. 수십억 원의 데이터 분석 역량을 가진 쿠팡이 직접 출시하는 PB 제품 라인업 자체가 곧 시장 수요의 증거이며, 초보 셀러는 이를 기반으로 차별화된 제품을 소싱함으로써 리스크를 최소화하면서도 높은 마진을 확보할 수 있다.</p>
+
+        <div class="footer">
+            Generated by VidDigest
+        </div>
+    </div>
+    <div class="lightbox" id="lightbox" onclick="this.classList.remove('active')">
+        <img id="lightbox-img" src="" alt="">
+    </div>
+    <script>
+        document.querySelectorAll('.screenshot-container img').forEach(function(img) {
+            img.addEventListener('click', function() {
+                var lb = document.getElementById('lightbox');
+                document.getElementById('lightbox-img').src = this.src;
+                lb.classList.add('active');
+            });
+        });
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') document.getElementById('lightbox').classList.remove('active');
+        });
+    </script>
+</body>
+</html>

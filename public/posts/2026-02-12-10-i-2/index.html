@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>쿠팡 직원이 알리지 말라던 10분만에 대박 상품 찾는 소싱 방법 I 브랜드유통 상품 소싱 하는 방법 2탄 - VidDigest</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.8;
+            color: #1a1a2e;
+            background: #f8f9fa;
+        }
+        .header {
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: white;
+            padding: 48px 0 40px;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 28px;
+            font-weight: 700;
+            max-width: 800px;
+            margin: 0 auto 16px;
+            padding: 0 24px;
+            line-height: 1.4;
+        }
+        .header .meta {
+            font-size: 14px;
+            opacity: 0.85;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 0 24px;
+        }
+        .header .meta span {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+        }
+        h2 {
+            font-size: 22px;
+            font-weight: 700;
+            color: #302b63;
+            margin: 48px 0 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e8e8f0;
+        }
+        h3 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #24243e;
+            margin: 32px 0 14px;
+        }
+        h4 {
+            font-size: 16px;
+            font-weight: 600;
+            color: #444;
+            margin: 24px 0 10px;
+        }
+        p {
+            margin: 12px 0;
+            font-size: 15.5px;
+            color: #2c2c3e;
+        }
+        ul, ol {
+            margin: 12px 0;
+            padding-left: 28px;
+        }
+        li {
+            margin: 8px 0;
+            font-size: 15.5px;
+            color: #2c2c3e;
+        }
+        li strong {
+            color: #302b63;
+        }
+        blockquote {
+            margin: 20px 0;
+            padding: 16px 20px;
+            background: #f0f0f8;
+            border-left: 4px solid #302b63;
+            border-radius: 0 8px 8px 0;
+            font-size: 15px;
+            color: #444;
+        }
+        blockquote p {
+            margin: 4px 0;
+        }
+        .screenshot-container {
+            margin: 24px 0;
+            text-align: center;
+        }
+        .screenshot-container img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+            border: 1px solid #e0e0e8;
+        }
+        .screenshot-container .caption {
+            font-size: 13px;
+            color: #888;
+            margin-top: 8px;
+            font-style: italic;
+        }
+        code {
+            background: #eef;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-family: 'SF Mono', Menlo, Consolas, monospace;
+            color: #d63384;
+        }
+        pre {
+            background: #1e1e2e;
+            color: #cdd6f4;
+            padding: 20px;
+            border-radius: 10px;
+            overflow-x: auto;
+            margin: 16px 0;
+            font-size: 13.5px;
+            line-height: 1.6;
+        }
+        pre code {
+            background: none;
+            padding: 0;
+            color: inherit;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid #e0e0e8;
+            margin: 40px 0;
+        }
+        strong {
+            font-weight: 600;
+        }
+        .footer {
+            text-align: center;
+            padding: 32px 0;
+            font-size: 13px;
+            color: #999;
+            border-top: 1px solid #e8e8f0;
+            margin-top: 60px;
+        }
+        .screenshot-container img {
+            cursor: zoom-in;
+            transition: opacity 0.2s;
+        }
+        .screenshot-container img:hover {
+            opacity: 0.85;
+        }
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.85);
+            z-index: 9999;
+            cursor: zoom-out;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+        }
+        .lightbox.active {
+            display: flex;
+        }
+        .lightbox img {
+            max-width: 95vw;
+            max-height: 92vh;
+            border-radius: 8px;
+            box-shadow: 0 8px 40px rgba(0,0,0,0.5);
+            object-fit: contain;
+        }
+        @media (max-width: 600px) {
+            .header { padding: 32px 0 28px; }
+            .header h1 { font-size: 20px; padding: 0 16px; }
+            .header .meta { font-size: 12px; gap: 12px; padding: 0 16px; }
+            .container { padding: 24px 16px 60px; }
+            h2 { font-size: 19px; margin: 36px 0 16px; }
+            h3 { font-size: 16px; margin: 24px 0 12px; }
+            h4 { font-size: 15px; margin: 20px 0 8px; }
+            p, li { font-size: 14.5px; }
+            ul, ol { padding-left: 20px; }
+            blockquote { padding: 12px 14px; font-size: 14px; }
+            pre { padding: 14px; font-size: 12.5px; border-radius: 8px; }
+            code { font-size: 13px; }
+            .screenshot-container img { border-radius: 8px; }
+            hr { margin: 28px 0; }
+        }
+        @media (prefers-color-scheme: dark) {
+            body { background: #1a1a2e; color: #e0e0e8; }
+            h2 { color: #a8a4d6; border-bottom-color: #333; }
+            h3 { color: #c8c4e6; }
+            h4 { color: #b0b0c8; }
+            p, li { color: #d0d0e0; }
+            blockquote { background: #252540; border-left-color: #6c63ff; color: #c0c0d0; }
+            code { background: #2a2a4a; color: #f0a0c0; }
+            pre { background: #0d0d1a; }
+            hr { border-top-color: #333; }
+            .screenshot-container img { border-color: #333; }
+            .footer { border-top-color: #333; color: #666; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>쿠팡 직원이 알리지 말라던 10분만에 대박 상품 찾는 소싱 방법 I 브랜드유통 상품 소싱 하는 방법 2탄</h1>
+        <div class="meta">
+            <span>모브스TV | 브랜드유통 전문가</span>
+            <span>10:34</span>
+            <span>20251002</span>
+        </div>
+    </div>
+    <div class="container">
+        <blockquote><p><strong>채널</strong>: 모브스TV | 브랜드유통 전문가 | <strong>길이</strong>: 10:34 | <strong>날짜</strong>: 2025.10.02</p></blockquote>
+<h2>핵심 내용</h2>
+<ul>
+<li><strong>브랜드 유통으로 돈을 벌기 위한 핵심은 '상품 소싱'이다.</strong> 온라인 판매에서 가장 어려운 것이 상품 소싱인데, 대부분의 초보 셀러들은 감으로 상품을 고르지만, 프로 셀러들은 데이터 기반으로 체계적인 방법을 사용하여 대박 상품을 찾아낸다. 이 영상은 브랜드유통 상품 소싱 2탄으로, 10분 안에 대박 상품을 찾는 구체적인 소싱 프로세스를 공개한다.</li>
+</ul>
+<ul>
+<li><strong>네이버 데이터랩의 '쇼핑인사이트'를 활용하여 시즌별 인기 검색어를 먼저 파악해야 한다.</strong> 작년 동일 시기의 분야별 인기 검색어 데이터를 조회하면, 올해에도 똑같이 검색될 확률이 높은 키워드를 미리 선점할 수 있다. 예를 들어 2024년 10~12월 패션잡화 분야에서는 어그슬리퍼, 어그, 어그부츠, 캐리어, 나이키운동화, 방한화, 머플러, 목도리 등이 TOP 인기 검색어였다.</li>
+</ul>
+<ul>
+<li><strong>일반 키워드가 아닌 '브랜드 키워드'를 노려야 한다.</strong> 아이템스카우트에서 키워드를 분석할 때, &quot;방한화&quot;와 같은 일반 키워드는 경쟁강도가 135.17(아주나쁨)으로 매우 높고, 네이버 상품지표도 나쁘다. 반면 &quot;아디다스 방한화&quot;와 같은 브랜드 플러스 키워드는 경쟁강도가 훨씬 낮고, 브랜드 파워를 활용하여 효율적으로 판매할 수 있다. 연관 키워드에서 브랜드명이 포함된 키워드를 찾아 공략하는 것이 핵심 전략이다.</li>
+</ul>
+<ul>
+<li><strong>시즌 상품은 시즌 전에 미리 준비해야 한다.</strong> &quot;아디다스 방한화&quot;의 검색량 추이 그래프를 보면, 10월부터 검색량이 급격히 상승하여 11~12월에 피크를 찍는다. 따라서 10월에 판매를 시작하려면 그보다 앞서서(8~9월) 상품을 준비하고, 쿠팡 등 플랫폼에 리스팅을 완료해 두어야 한다. 시즌이 지나면 검색량이 거의 0에 수렴하므로, 타이밍이 매우 중요하다.</li>
+</ul>
+<ul>
+<li><strong>실제 쿠팡 검색 결과를 확인하여 시장의 가격대와 경쟁 상황을 파악해야 한다.</strong> &quot;아디다스 삼바&quot;를 쿠팡에서 검색하면, 로켓배송 필터 기준으로 아디다스 삼바 OG가 33% 할인된 93,000원, 아디다스 삼바 VL 코트가 36% 할인된 69,700원 등으로 형성되어 있다. 이를 통해 판매자로켓 비율, 평균 판매가, 시장 규모 등을 파악한 후 진입 여부를 결정해야 한다.</li>
+</ul>
+<ul>
+<li><strong>2단계 프로세스를 따르면 된다: (1) 네이버 데이터랩으로 시장의 기본 수요 확인, (2) 아이템스카우트에서 키워드에 맞는 브랜드 검색.</strong> 이 두 단계만 거치면 10분 안에 잠재력 있는 대박 상품을 체계적으로 찾아낼 수 있다. 추가로 상품을 싸게 사는 방법과 AI를 활용한 소싱 방법 등은 채널의 다른 콘텐츠에서 다루고 있다.</li>
+</ul>
+<h2>상세 분석</h2>
+<h3>도입부: 브랜드 유통의 핵심 질문 [0:00 ~ 0:42]</h3>
+<p>영상은 발표자(브초)가 카메라 앞에 앉아 시청자에게 직접적인 질문을 던지며 시작된다. 화면에는 &quot;모브스TV&quot; 로고가 좌측 상단에 표시되어 있으며, &quot;브랜드 유통으로 돈을 벌려면 어떻게 해야 하는가?&quot;라는 대형 자막이 화면 하단에 등장한다.</p>
+<p>발표자는 &quot;여러분 온라인 판매할 때 가장 어려운 게 뭘까요?&quot;라고 질문을 던진다. 이는 시청자의 공감을 유도하기 위한 질문으로, 브랜드 유통에서 상품 소싱이 가장 핵심적이고 어려운 부분임을 강조하기 위한 도입부이다.</p>
+<div class="screenshot-container"><img src="images/segment_000.jpg" alt="도입부 - 브랜드 유통으로 돈을 벌려면" loading="lazy"><div class="caption">도입부 - 브랜드 유통으로 돈을 벌려면</div></div>
+<div class="screenshot-container"><img src="images/segment_001.jpg" alt="온라인 판매 시 가장 어려운 점 질문" loading="lazy"><div class="caption">온라인 판매 시 가장 어려운 점 질문</div></div>
+<h3>프로 셀러와 초보 셀러의 차이 [0:42 ~ 1:03]</h3>
+<p>발표자는 &quot;하지만 정말 잘 팔고 있는 프로 셀러들은&quot;이라는 자막과 함께, 잘 파는 셀러들의 비결을 언급한다. 초보 셀러들은 감(感)에 의존하여 상품을 선택하지만, 프로 셀러들은 데이터와 체계적인 분석 도구를 활용하여 시장에서 수요가 높은 상품을 찾아낸다는 점을 대비시킨다. 이 영상은 바로 그 프로 셀러들이 사용하는 데이터 기반 소싱 방법을 공개하는 것이 목적임을 밝힌다.</p>
+<div class="screenshot-container"><img src="images/segment_002.jpg" alt="프로 셀러들의 비결" loading="lazy"><div class="caption">프로 셀러들의 비결</div></div>
+<h3>STEP 1: 네이버 데이터랩 쇼핑인사이트 활용법 [1:03 ~ 2:06]</h3>
+<p>첫 번째 핵심 도구는 <strong>네이버 데이터랩(Naver DataLab)</strong>의 <strong>쇼핑인사이트</strong> 기능이다. 화면에는 네이버 데이터랩 웹사이트가 표시되며, 상단 메뉴에서 &quot;쇼핑인사이트&quot;를 선택한 모습이 보인다. 지역통계, 댓글통계 등 다른 탭도 보이지만, 핵심은 쇼핑인사이트이다.</p>
+<p>쇼핑인사이트의 핵심 기능은 <strong>&quot;분야별 인기 검색어&quot;</strong>이다. 화면에서는 <strong>패션의류</strong> 분야를 선택하고, <strong>일간</strong> 기준으로 조회한 결과가 표시된다. 2025년 9월 26일(금)~29일(월)의 인기 검색어가 나열되어 있으며:</p>
+<ul>
+<li><strong>2025.09.26.(금)</strong>: 1. 원피스, 2. 스웨이드자켓, 3. 트위드자켓, 4. 후드집업, 5. 가디건, 6. 여성가디건, 7. 블라우스, 8. 가을원피스</li>
+<li><strong>2025.09.27.(토)</strong>: 1. 원피스, 2. 스웨이드자켓, 3. 트위드자켓, 4. 지고트원피스, 5. 칼라주스, 6. 가을원피스, 7. 가디건, 8. 듀엘</li>
+<li><strong>2025.09.28.(일)</strong>: 1. 원피스, 2. 스웨이드자켓, 3. 지고트원피스, 4. 가디건, 5. 여성가디건, 6. (불확실), 7. 듀엘, 8. 블라우스</li>
+<li><strong>2025.09.29.(월)</strong>: 1. 원피스, 2. 스웨이드자켓, 3. 가디건, 4. 블라우스, 5. 여성가디건, 6. 트위드자켓, 7. 후드집업, 8. 바람막이</li>
+</ul>
+<p>발표자는 &quot;이제 작년 이맘때 사람들이 어떤 상품에&quot; 관심을 가졌는지 확인하는 것이 핵심이라고 설명한다. 즉, <strong>작년 동일 시기의 데이터를 보고, 올해 같은 시기에 어떤 상품이 인기를 끌지 예측하는 것</strong>이다.</p>
+<div class="screenshot-container"><img src="images/segment_003.jpg" alt="네이버 데이터랩 쇼핑인사이트 - 분야별 인기 검색어" loading="lazy"><div class="caption">네이버 데이터랩 쇼핑인사이트 - 분야별 인기 검색어</div></div>
+<h3>STEP 1-2: 패션잡화 분야 인기 검색어 분석 (2024년 10~12월) [2:06 ~ 2:49]</h3>
+<p>발표자는 분야를 <strong>패션잡화</strong>로 변경하고, 기간을 <strong>2024년 10월 1일 ~ 2024년 12월 31일</strong>로 설정하여 조회한다. 화면에는 <strong>패션잡화 클릭량 추이</strong> 그래프가 표시되며, 10~12월 동안의 클릭량 변화가 선 그래프로 나타난다. 클릭량은 10월 초 약 60~80 수준에서 시작하여, 11월 중순경 100에 가까운 피크를 여러 차례 찍고, 12월로 갈수록 점차 하락하는 추세를 보인다.</p>
+<p>우측에는 <strong>패션잡화 인기검색어 TOP 500</strong> (1/25페이지) 목록이 표시된다:</p>
+<ol>
+<li><strong>어그슬리퍼</strong></li>
+<li><strong>어그</strong></li>
+<li><strong>어그부츠</strong></li>
+<li><strong>캐리어</strong></li>
+<li><strong>나이키운동화</strong></li>
+<li><strong>방한화</strong></li>
+<li><strong>머플러</strong></li>
+<li><strong>목도리</strong></li>
+<li><strong>크록스</strong></li>
+<li><strong>운동화</strong></li>
+<li><strong>안전화</strong></li>
+<li><strong>카드지갑</strong></li>
+<li><strong>뉴발란스운동화</strong></li>
+<li><strong>어그타스만</strong></li>
+<li><strong>백팩</strong></li>
+</ol>
+<p>발표자는 &quot;올해 10월에도 똑같이 찾게 될 확률이 높은편&quot;이라는 자막과 함께, 작년 데이터를 기반으로 올해의 트렌드를 예측할 수 있음을 강조한다. &quot;지금 어그슬리퍼, 어그, 어그부츠&quot; 등이 상위에 있다는 것을 짚어주며, 이 키워드들이 올해 가을/겨울에도 반복될 가능성이 높다고 설명한다.</p>
+<div class="screenshot-container"><img src="images/segment_004.jpg" alt="패션잡화 클릭량 추이 그래프 및 인기검색어 TOP" loading="lazy"><div class="caption">패션잡화 클릭량 추이 그래프 및 인기검색어 TOP</div></div>
+<div class="screenshot-container"><img src="images/segment_005.jpg" alt="올해 10월에도 똑같이 찾게 될 확률이 높은편" loading="lazy"><div class="caption">올해 10월에도 똑같이 찾게 될 확률이 높은편</div></div>
+<div class="screenshot-container"><img src="images/segment_006.jpg" alt="인기검색어 상세 목록" loading="lazy"><div class="caption">인기검색어 상세 목록</div></div>
+<h3>STEP 1-3: 방한화 키워드 선정 및 분석 시작 [2:49 ~ 3:10]</h3>
+<p>발표자는 인기 검색어 목록 중에서 &quot;그러면 저는 여기 있는 것 중에서&quot; 하나를 골라 실제로 분석해보겠다고 선언한다. 선택한 키워드는 <strong>6위 &quot;방한화&quot;</strong>이다. &quot;이거는 그대로 방한화를 팔게 되면은&quot;이라고 말하며, 이 키워드를 그대로 가져가서 판매하는 것이 아니라, 한 단계 더 깊이 들어가야 한다는 점을 암시한다.</p>
+<div class="screenshot-container"><img src="images/segment_007.jpg" alt="방한화 키워드 선택" loading="lazy"><div class="caption">방한화 키워드 선택</div></div>
+<div class="screenshot-container"><img src="images/segment_008.jpg" alt="방한화를 그대로 팔게 되면" loading="lazy"><div class="caption">방한화를 그대로 팔게 되면</div></div>
+<h3>STEP 2: 아이템스카우트에서 키워드 분석 [3:10 ~ 4:13]</h3>
+<p>발표자는 <strong>아이템스카우트(itemscout)</strong> 사이트로 이동한다. 아이템스카우트는 키워드 분석 도구로, 상단 메뉴에 &quot;아이템소싱&quot;, &quot;아이템발굴&quot;, <strong>&quot;키워드분석&quot;</strong>, &quot;일간 | 실시간&quot;, &quot;유틸리티&quot; 등의 탭이 있다. 우측에는 &quot;멤버십&quot;, &quot;가이드&quot; 메뉴도 보인다.</p>
+<p><strong>&quot;방한화&quot;</strong>를 검색한 결과가 화면에 표시된다:</p>
+<p><strong>개요 데이터:</strong></p>
+<ul>
+<li>카테고리: 패션잡화 &gt; 남성신발 &gt; 부츠 (100%)</li>
+<li>상품수: <strong>643,417개</strong></li>
+<li>한 달 검색수: <strong>4,760회</strong></li>
+<li>경쟁강도: <strong>135.17</strong> (아주나쁨 - 빨간색 표시)</li>
+</ul>
+<p><strong>Top 10 / Top 40 매출 데이터:</strong></p>
+<ul>
+<li>Top 10: 6개월 매출 <strong>561만원</strong>, 6개월 판매량 <strong>95개</strong>, 평균 가격 <strong>55,200원</strong></li>
+<li>Top 40: 6개월 매출 <strong>937만원</strong>, 6개월 판매량 <strong>214개</strong>, 평균 가격 <strong>41,500원</strong></li>
+</ul>
+<p><strong>상표 정보:</strong> 방한화 - [없음]</p>
+<p><strong>쿠팡 상품지표 (보통):</strong></p>
+<ul>
+<li>쿠팡 경쟁강도: <strong>20.35</strong> (아주나쁨)</li>
+<li>로켓상품 비율: <strong>19.44%</strong> (아주좋음)</li>
+<li>판매자로켓 비율: <strong>40.28%</strong> (보통)</li>
+<li>평균 판매가: <strong>22,647원</strong></li>
+<li>평균 리뷰: <strong>892개</strong></li>
+<li>쿠팡 상품수: 96,855개 ÷ 월간 검색수(네이버) 4,760회</li>
+</ul>
+<p><strong>네이버 상품지표 (나쁨):</strong></p>
+<ul>
+<li>경쟁강도: <strong>135.17</strong> (아주나쁨)</li>
+<li>실거래상품 비율: <strong>68%</strong> (좋음)</li>
+<li>묶음상품 비율: <strong>65%</strong> (나쁨)</li>
+<li>해외상품 비율: <strong>5%</strong> (아주나쁨)</li>
+<li>1년 내 게시 비율: <strong>25%</strong> (아주나쁨) - 1개월 0%, 6개월 8%</li>
+</ul>
+<p><strong>네이버 광고지표 (보통):</strong></p>
+<ul>
+<li>광고클릭률: <strong>0.93%</strong> (보통) - PC 0.6%, MOBILE 1.05%</li>
+<li>클릭경쟁률: <strong>15,926.16</strong> (아주나쁨) - 상품수 643,417개 ÷ 클릭수 40회</li>
+<li>가격대비 광고비: <strong>0.005</strong> (아주좋음) - 광고비 174원 ÷ 평균가 35,942원</li>
+<li>클릭대비 광고비: <strong>4.31</strong> (아주나쁨) - 광고비 174원 ÷ 클릭수 40회</li>
+</ul>
+<p><strong>쇼핑성 키워드 분류:</strong></p>
+<ul>
+<li>섹션: 1위 - 쇼핑</li>
+<li>탭: 1위 - 쇼핑 (플러스스토어, 웹사이트, 카페 중고거래도 있음)</li>
+<li>이미지, 블로그, 카페, 지식iN, 인플루언서, 동영상, 뉴스 등</li>
+</ul>
+<p>발표자는 &quot;방한화라는 키워드를 검색을 했을 때&quot;, &quot;방한화라는 키워드는 일반 키워드입니다&quot;라고 강조한다. 일반 키워드로 진입하면 경쟁이 매우 치열하고, 상품수 대비 검색수가 압도적으로 부족하여 수익을 내기 어렵다는 것이다.</p>
+<p><strong>연관 키워드</strong> 목록:</p>
+<ul>
+<li>남자쪼리: 검색수 1,980 / 상품수 305,111</li>
+<li>트레킹샌들: 검색수 830 / 상품수 47,966</li>
+<li>전투화: 검색수 4,290 / 상품수 82,162</li>
+<li>방수방한화, 스포츠샌들, 남자부스, 노스페이스방한화, 아디다스 방한화, 겨울방한화, 낚시방한화 등</li>
+</ul>
+<div class="screenshot-container"><img src="images/segment_009.jpg" alt="아이템스카우트 - 방한화 키워드 분석 개요" loading="lazy"><div class="caption">아이템스카우트 - 방한화 키워드 분석 개요</div></div>
+<div class="screenshot-container"><img src="images/segment_010.jpg" alt="방한화 키워드는 일반 키워드" loading="lazy"><div class="caption">방한화 키워드는 일반 키워드</div></div>
+<h3>핵심 전략: 일반 키워드가 아닌 '브랜드 키워드'를 노려라 [4:13 ~ 4:55]</h3>
+<p>여기서 발표자가 가장 강조하는 핵심 전략이 등장한다. &quot;우리는 이 브랜드 키워드를 노려야 돼요&quot;라고 강하게 말한다.</p>
+<p>화면을 스크롤하면 연관 키워드 영역에서 <strong>브랜드 플러스 키워드</strong>들을 확인할 수 있다:</p>
+<ul>
+<li>남자쪼리: 1,980 / 305,111</li>
+<li>트레킹샌들: 830 / 47,966</li>
+<li>전투화: 4,290 / 82,162</li>
+<li>방수방한화: 420 / 69,743</li>
+<li>스포츠샌들: 1,700 / 298,722</li>
+<li>남자부스: 2,450 / 1,921,968</li>
+<li>방수신발: 2,660 / 1,957,793</li>
+<li><strong>노스페이스방한화</strong>: 2,460 / 10,205</li>
+<li><strong>아디다스 방한화</strong>: 280 / 1,123</li>
+<li>겨울방한화: 400 / 422,435</li>
+<li>낚시방한화: 70 / 14,825</li>
+<li>방한화남성: 790 / 456,599</li>
+<li>이웃도어샌들: 690 / 118,600</li>
+<li><strong>나이키방한화</strong></li>
+<li><strong>노스페이스 방한화</strong></li>
+<li>남성 방한화</li>
+</ul>
+<p>&quot;브랜드 플러스 키워드를 보실 수 있을 거예요&quot;라는 자막과 함께, <strong>&quot;아디다스 방한화&quot;, &quot;노스페이스방한화&quot;, &quot;나이키방한화&quot;</strong> 등 브랜드명이 포함된 키워드를 주목해야 한다고 설명한다. 이런 키워드는 일반 키워드 대비 상품수가 훨씬 적고, 브랜드 인지도 덕분에 전환율이 높다.</p>
+<p>또한 &quot;인플루언서 마케팅까지 다 해놓은 상태이기 때문에&quot;라고 언급하며, 브랜드 제품은 이미 브랜드 본사에서 대규모 마케팅(인플루언서 마케팅 포함)을 진행해 놓은 상태이므로, 유통 셀러는 별도의 마케팅 비용 없이도 브랜드 파워를 활용하여 판매할 수 있다는 장점을 강조한다.</p>
+<div class="screenshot-container"><img src="images/segment_014.jpg" alt="연관 키워드에서 브랜드 플러스 키워드 확인" loading="lazy"><div class="caption">연관 키워드에서 브랜드 플러스 키워드 확인</div></div>
+<div class="screenshot-container"><img src="images/segment_011.jpg" alt="브랜드 키워드를 노려야 한다" loading="lazy"><div class="caption">브랜드 키워드를 노려야 한다</div></div>
+<div class="screenshot-container"><img src="images/segment_016.jpg" alt="인플루언서 마케팅까지 다 해놓은 상태" loading="lazy"><div class="caption">인플루언서 마케팅까지 다 해놓은 상태</div></div>
+<h3>&quot;한 달 검색량수가 너무 낮은 거 아닌가?&quot; - 검색량의 비밀 [4:34 ~ 5:38]</h3>
+<p>발표자는 시청자들이 가질 수 있는 의문을 선제적으로 다룬다. &quot;한 달 검색량수가 너무 낮은 거 아닌가?&quot;라는 큰 자막이 화면에 표시된다. 아이템스카우트에서 방한화의 한 달 검색수는 4,760회에 불과한데, 이는 <strong>지금이 시즌이 아니기 때문</strong>이다.</p>
+<p>&quot;그렇다면 우리는 이런 곳에&quot;라고 말하며, <strong>브랜드 키워드</strong>의 세부 분석으로 들어간다. &quot;아디다스 방한화&quot;를 아이템스카우트에서 검색한 결과가 화면에 표시된다:</p>
+<p><strong>아디다스 방한화 키워드 분석:</strong></p>
+<ul>
+<li>쇼핑키워드 태그, 브랜드추정: 아디다스</li>
+<li>카테고리: 패션잡화 &gt; 남성신발 &gt; 슬립온 (100%)</li>
+<li>상품수: <strong>1,123개</strong> (방한화의 643,417개 대비 매우 적음)</li>
+<li>한 달 검색수: <strong>280회</strong></li>
+<li>경쟁강도: <strong>4.01</strong> (좋음 - 녹색 표시)</li>
+</ul>
+<p><strong>Top 10 / Top 40:</strong></p>
+<ul>
+<li>Top 10: 6개월 매출 211만원, 6개월 판매량 35개, 평균 가격 66,500원</li>
+<li>Top 40: 6개월 매출 217만원, 6개월 판매량 36개, 평균 가격 84,000원</li>
+</ul>
+<p><strong>상표 정보:</strong></p>
+<ul>
+<li>아디다스: 등록</li>
+<li>아디다스 방한화: 없음</li>
+<li>방한화: 없음</li>
+</ul>
+<p><strong>쿠팡 상품지표 (좋음):</strong></p>
+<ul>
+<li>쿠팡 경쟁강도: <strong>4.85</strong> (보통)</li>
+<li>로켓상품 비율: <strong>5.56%</strong> (아주좋음)</li>
+<li>판매자로켓 비율: <strong>22.22%</strong> (좋음)</li>
+<li>평균 판매가: <strong>63,969원</strong></li>
+<li>평균 리뷰: <strong>97개</strong></li>
+</ul>
+<p>발표자는 &quot;아까도 말씀드렸다시피 지금 시즌이 아니기 때문에&quot; 검색량이 적게 나오는 것이라고 설명한다. 시즌이 되면 검색량이 폭발적으로 증가한다.</p>
+<div class="screenshot-container"><img src="images/segment_012.jpg" alt="아디다스 방한화 분석 - 한 달 검색량수 낮은 이유" loading="lazy"><div class="caption">아디다스 방한화 분석 - 한 달 검색량수 낮은 이유</div></div>
+<div class="screenshot-container"><img src="images/segment_013.jpg" alt="아디다스 방한화 상세 데이터" loading="lazy"><div class="caption">아디다스 방한화 상세 데이터</div></div>
+<div class="screenshot-container"><img src="images/segment_017.jpg" alt="아디다스 방한화 - 시즌이 아니기 때문" loading="lazy"><div class="caption">아디다스 방한화 - 시즌이 아니기 때문</div></div>
+<h3>&quot;그러면 언제 준비해야 되나&quot; - 검색량 추이 그래프 분석 [5:59 ~ 6:41]</h3>
+<p>발표자는 &quot;그러면 언제 준비해야 되나&quot;라는 핵심 질문을 던진다. 화면에는 아이템스카우트의 <strong>검색수 추이 그래프</strong>가 표시된다. 이 그래프는 &quot;아디다스 방한화&quot; 키워드의 월별 검색수 변화를 보여준다.</p>
+<p><strong>검색수 추이 (2024.08 ~ 2025.10 예측):</strong></p>
+<ul>
+<li>2024년 8월~9월: 검색수 거의 0에 가까움</li>
+<li><strong>2024년 10월</strong>: 검색수 약 <strong>2,040회</strong>로 급상승 시작</li>
+<li>2024년 11월: 약 5,000~7,000회로 급격히 상승</li>
+<li><strong>2024년 12월</strong>: 약 <strong>13,000~15,000회</strong>로 피크</li>
+<li>2025년 1월: 약 5,000회로 급락</li>
+<li>2025년 2~3월: 약 3,000~4,000회</li>
+<li>2025년 4월 이후: 거의 0에 수렴</li>
+<li>2025년 10월(예측): 다시 상승 예상</li>
+</ul>
+<p>우측에는 추가 데이터가 표시된다:</p>
+<ul>
+<li><strong>기기별 클릭 비율</strong>: 모바일 90% / PC 9%</li>
+<li><strong>성별 클릭 비율</strong>: 여성 49% / 남성 50%</li>
+<li><strong>연령별 클릭 비율</strong>: 20대~30대가 가장 높은 비중</li>
+<li><strong>요일별 클릭 비율</strong>: 비교적 균등하게 분포</li>
+</ul>
+<p>발표자는 &quot;판매가 되는 경험을 하실 수 있으실 거예요&quot;라고 말하며, 시즌에 맞춰 미리 준비하면 확실히 판매가 이루어진다고 자신감을 보인다. 10월에 검색량이 시작되므로, <strong>8~9월에 미리 상품을 준비하고 리스팅을 완료</strong>해 두어야 한다는 것이 핵심 메시지이다.</p>
+<div class="screenshot-container"><img src="images/segment_019.jpg" alt="아디다스 방한화 검색수 추이 그래프" loading="lazy"><div class="caption">아디다스 방한화 검색수 추이 그래프</div></div>
+<h3>실전 사례: &quot;아디다스&quot; 브랜드 키워드 확장 분석 [6:41 ~ 7:23]</h3>
+<p>발표자는 브랜드 키워드를 더 넓게 확장하여 분석하는 방법을 보여준다. 아이템스카우트에서 &quot;아디다스&quot; 자체를 검색하면, 아디다스 브랜드 전체의 시장 규모와 인기 상품들을 파악할 수 있다.</p>
+<p><strong>아디다스 브랜드 전체 데이터:</strong></p>
+<ul>
+<li>상품수: <strong>3,691,185개</strong></li>
+<li>한 달 검색수: <strong>875,400회</strong></li>
+<li>경쟁강도: <strong>4.22</strong> (좋음)</li>
+</ul>
+<p><strong>상표 정보:</strong> 아디다스 - 등록</p>
+<ul>
+<li>의류 등(25류): 등록: 9</li>
+<li>직물 등(24류): 등록: 5</li>
+<li>레이스 및 자수표 ...: 등록: 5</li>
+<li>외 7건 보기</li>
+</ul>
+<p><strong>쿠팡 상품지표 (아주좋음):</strong></p>
+<ul>
+<li>쿠팡 경쟁강도: <strong>0.44</strong> (아주좋음)</li>
+<li>로켓상품 비율: <strong>45.83%</strong> (보통)</li>
+<li>판매자로켓 비율: <strong>30.56%</strong> (좋음)</li>
+<li>평균 판매가: <strong>52,728원</strong></li>
+<li>평균 리뷰: <strong>488개</strong></li>
+<li>쿠팡 상품수 387,475개 ÷ 월간 검색수(네이버) 875,400회</li>
+</ul>
+<p><strong>연관 키워드 (아디다스 관련):</strong></p>
+<ul>
+<li><strong>아디다스 삼바</strong>: 검색수 99,750 / 상품수 126,071</li>
+<li><strong>아디다스삼바</strong>: 검색수 99,750 / 상품수 125,829</li>
+<li>아디다스에보SI: 검색수 30,380 / 상품수 6,242</li>
+<li>아디다스슬개골: 검색수 510 / 상품수 47</li>
+<li>아디다스단화: 검색수 2,280 / 상품수 153,900</li>
+<li>아디다스키높이: 검색수 1,170 / 상품수 16,297</li>
+<li>아디다스샌배: 검색수 3,940 / 상품수 11,185</li>
+<li>아디다스티셔츠...: 검색수 2,040 / 상품수 138,060</li>
+<li>아디다스키티: 검색수 890 / 상품수 1,535</li>
+<li>아디다스의류: 검색수 620 / 상품수 2,061,705</li>
+<li>iz2466</li>
+<li>아디다스오리지널</li>
+<li>아디다스 골프화</li>
+<li>아디다스배캠버...</li>
+<li>아디다스스니커즈</li>
+</ul>
+<p>발표자는 &quot;어떤 것들이 많이 판매가 되고 있나&quot; 확인한다. 특히 <strong>&quot;아디다스 삼바&quot;</strong>가 검색수 99,750회로 압도적 1위인 점에 주목한다.</p>
+<div class="screenshot-container"><img src="images/segment_019.jpg" alt="아디다스 브랜드 전체 분석 - 연관 키워드" loading="lazy"><div class="caption">아디다스 브랜드 전체 분석 - 연관 키워드</div></div>
+<h3>실전 사례: &quot;아디다스 삼바&quot; 심층 분석 [7:02 ~ 7:44]</h3>
+<p>발표자는 아디다스의 연관 키워드 중 가장 검색량이 높은 <strong>&quot;아디다스 삼바&quot;</strong>를 클릭하여 심층 분석한다.</p>
+<p><strong>아디다스 삼바 키워드 분석:</strong></p>
+<ul>
+<li>상품수: <strong>126,071개</strong></li>
+<li>한 달 검색수: <strong>99,750회</strong></li>
+<li>경쟁강도: <strong>1.26</strong> (아주좋음)</li>
+</ul>
+<p>&quot;지금 상품수는 12만 개이고 검색량은 9만 9천 원&quot;이라는 자막이 표시된다. 경쟁강도가 1.26으로 <strong>아주 좋은</strong> 수준이라는 것은, 상품수 대비 검색량이 매우 높아 시장 진입 가능성이 크다는 의미이다.</p>
+<p><strong>상표 정보:</strong></p>
+<ul>
+<li>삼바: 등록</li>
+<li>아디다스: 등록</li>
+<li>아디다스 삼바: 없음</li>
+</ul>
+<div class="screenshot-container"><img src="images/segment_020.jpg" alt="아디다스 삼바 - 상품수 12만, 검색량 9만 9천" loading="lazy"><div class="caption">아디다스 삼바 - 상품수 12만, 검색량 9만 9천</div></div>
+<h3>쿠팡 실제 검색 결과 확인 [7:23 ~ 8:27]</h3>
+<p>발표자는 아이템스카우트에서의 분석을 마치고, 실제 <strong>쿠팡(Coupang)</strong> 사이트로 이동하여 &quot;아디다스 삼바&quot;를 직접 검색한다. 이를 통해 실제 시장 상황을 눈으로 확인하는 과정을 보여준다.</p>
+<p><strong>쿠팡 검색 결과 (&quot;아디다스 삼바&quot;):</strong></p>
+<ul>
+<li>연관검색어: 아디다스삼바og, 아디다스삼바, 아디다스운동화, 아디다스삼바260, 아디다스삼바adv, 삼바adv, 아디다스삼바론즈, 삼바론즈, 삼바운동화, 아디다스쌈바</li>
+<li>선택한 필터: <strong>로켓</strong> (로켓배송 상품만 보기)</li>
+<li>좌측 카테고리: R.LUX 만 보기, 로켓배송 만 보기, 로켓직구 만 보기</li>
+<li>에비뉴: 무료배송</li>
+<li>카테고리: 의류/잡화, 수입, 직구, 스포츠/레저 등</li>
+</ul>
+<p><strong>검색 결과 상품 목록 (로켓 필터 기준):</strong></p>
+<ol>
+<li><strong>아디다스 삼바 OG</strong> - 정가 139,000원 → <strong>33% 할인 93,000원</strong> (로켓배송, 내일(목) 도착 보장, 무료배송, 리뷰 1,270개)</li>
+<li><strong>아디다스 삼바 VL 코트 베이스 블랙 화이트 단화 여성 남성 남녀공용 스니커즈 운동화 +Groominglife 번들증정</strong> - 할인 02:24:43 남음, 정가 109,000원 → <strong>36% 할인 69,700원</strong> (판매자로켓, 내일(목) 도착 보장, 무료배송)</li>
+<li><strong>아디다스 삼바 OG</strong> - 정가 139,000원 → <strong>33% 할인 93,000원</strong> (로켓배송, 내일(목) 도착 보장, 무료배송, 리뷰 173개)</li>
+<li><strong>(매장정품) 아디다스 삼바 OG 남성 여성 스니커즈 신발 운동화 + 스포닉스 양말</strong> - 할인가 <strong>23% 128,000원대</strong> (판매자로켓)</li>
+</ol>
+<p>발표자는 &quot;아디다스삼바를 검색을 했을 때&quot;, &quot;12만 9천 원쯤에 형성이 되어 있는 걸 볼 수 있어요&quot;라고 설명하며, 시장의 평균 가격대를 파악한다. 이어서 &quot;아디다스 연관 키워드로 들어간 다음에&quot;라고 말하며, 연관 키워드를 활용한 추가 분석 방법을 언급한다.</p>
+<div class="screenshot-container"><img src="images/segment_021.jpg" alt="쿠팡 - 아디다스 삼바 검색 결과" loading="lazy"><div class="caption">쿠팡 - 아디다스 삼바 검색 결과</div></div>
+<div class="screenshot-container"><img src="images/segment_022.jpg" alt="쿠팡 - 아디다스 삼바 상품 목록 및 가격" loading="lazy"><div class="caption">쿠팡 - 아디다스 삼바 상품 목록 및 가격</div></div>
+<div class="screenshot-container"><img src="images/segment_023.jpg" alt="쿠팡 - 아디다스 연관 키워드 활용" loading="lazy"><div class="caption">쿠팡 - 아디다스 연관 키워드 활용</div></div>
+<h3>전체 프로세스 정리: 2단계 소싱 방법 [8:27 ~ 8:48]</h3>
+<p>발표자는 카메라 앞으로 돌아와, 화면 왼쪽에 표시된 <strong>메모보드</strong> 형태의 정리 카드를 통해 전체 프로세스를 요약한다.</p>
+<p><strong>소싱 프로세스 정리:</strong></p>
+<blockquote><p><strong>첫 번째.</strong><br><strong>네이버 데이터랩으로 시장의 기본 수요 확인</strong><br><br><strong>두 번째.</strong><br><strong>아이템 스카우트에서 키워드에 맞는 브랜드 검색</strong></p></blockquote>
+<p>이 두 단계만 따르면 10분 안에 잠재적인 대박 상품을 체계적으로 발굴할 수 있다는 것이 영상의 핵심 메시지이다.</p>
+<div class="screenshot-container"><img src="images/segment_024.jpg" alt="2단계 소싱 프로세스 정리" loading="lazy"><div class="caption">2단계 소싱 프로세스 정리</div></div>
+<h3>추가 안내 및 마무리 [8:48 ~ 10:34]</h3>
+<p>발표자는 마무리하며 몇 가지 추가 정보를 안내한다:</p>
+<ol>
+<li><strong>&quot;상품을 싸게 사는 방법도 아셨잖아요&quot;</strong> - 이전 영상(1탄)에서 다룬 내용을 상기시키며, 소싱뿐 아니라 매입 단가를 낮추는 방법도 중요하다고 강조한다.</li>
+<li><strong>&quot;제가 전부 알려드릴 겁니다&quot;</strong> - 앞으로 채널을 통해 브랜드 유통에 필요한 모든 노하우를 공개할 예정임을 밝힌다.</li>
+<li><strong>&quot;그래도 남들보다 훨씬 뛰어난 AI를 쓰실 수 있으실 거예요&quot;</strong> - AI를 활용한 상품 소싱 및 분석 방법도 별도로 다룰 예정임을 암시한다.</li>
+</ol>
+<p>마지막으로 <strong>구독, 좋아요, 알림 설정</strong> 아이콘이 화면에 표시되며, &quot;다음 컨텐츠로 곧 찾아뵙겠습니다!&quot;라는 자막과 함께 영상이 마무리된다. 엔딩 화면에는 &quot;추천 영상&quot;, &quot;구독&quot;, &quot;다음 영상&quot; 카드가 표시된다.</p>
+<div class="screenshot-container"><img src="images/segment_026.jpg" alt="상품을 싸게 사는 방법 안내" loading="lazy"><div class="caption">상품을 싸게 사는 방법 안내</div></div>
+<div class="screenshot-container"><img src="images/segment_027.jpg" alt="제가 전부 알려드릴 겁니다" loading="lazy"><div class="caption">제가 전부 알려드릴 겁니다</div></div>
+<div class="screenshot-container"><img src="images/segment_028.jpg" alt="AI 활용 소싱 방법 암시" loading="lazy"><div class="caption">AI 활용 소싱 방법 암시</div></div>
+<div class="screenshot-container"><img src="images/segment_029.jpg" alt="구독, 좋아요, 알림 설정" loading="lazy"><div class="caption">구독, 좋아요, 알림 설정</div></div>
+<div class="screenshot-container"><img src="images/segment_030.jpg" alt="엔딩 - 추천 영상, 구독, 다음 영상" loading="lazy"><div class="caption">엔딩 - 추천 영상, 구독, 다음 영상</div></div>
+<h2>주요 인용 및 발언</h2>
+<blockquote><p>&quot;브랜드 유통으로 돈을 벌려면 어떻게 해야 하는가?&quot;</p></blockquote>
+<blockquote><p>&quot;여러분 온라인 판매할 때 가장 어려운 게 뭘까요?&quot;</p></blockquote>
+<blockquote><p>&quot;하지만 정말 잘 팔고 있는 프로 셀러들은&quot; (데이터 기반으로 소싱한다)</p></blockquote>
+<blockquote><p>&quot;이제 작년 이맘때 사람들이 어떤 상품에&quot; (관심을 가졌는지 확인하라)</p></blockquote>
+<blockquote><p>&quot;올해 10월에도 똑같이 찾게 될 확률이 높은편&quot;</p></blockquote>
+<blockquote><p>&quot;방한화라는 키워드는 일반 키워드입니다&quot; (일반 키워드로는 경쟁에서 이기기 어렵다)</p></blockquote>
+<blockquote><p>&quot;우리는 이 브랜드 키워드를 노려야 돼요&quot;</p></blockquote>
+<blockquote><p>&quot;한 달 검색량수가 너무 낮은 거 아닌가?&quot; (시즌이 아니기 때문)</p></blockquote>
+<blockquote><p>&quot;인플루언서 마케팅까지 다 해놓은 상태이기 때문에&quot; (브랜드 유통의 장점)</p></blockquote>
+<blockquote><p>&quot;그러면 언제 준비해야 되나&quot; (시즌 전에 미리!)</p></blockquote>
+<blockquote><p>&quot;판매가 되는 경험을 하실 수 있으실 거예요&quot;</p></blockquote>
+<blockquote><p>&quot;제가 전부 알려드릴 겁니다&quot;</p></blockquote>
+<blockquote><p>&quot;그래도 남들보다 훨씬 뛰어난 AI를 쓰실 수 있으실 거예요&quot;</p></blockquote>
+<h2>결론 및 시사점</h2>
+<h3>핵심 메시지</h3>
+<p>이 영상의 핵심 메시지는 <strong>&quot;데이터 기반의 체계적인 상품 소싱이 브랜드 유통 성공의 열쇠&quot;</strong>라는 것이다. 감이나 직관에 의존하는 초보 셀러와 달리, 프로 셀러들은 네이버 데이터랩과 아이템스카우트 같은 분석 도구를 활용하여 시장 수요를 정확히 파악하고, 경쟁 우위를 가질 수 있는 브랜드 키워드를 선점한다.</p>
+<h3>실용적 시사점</h3>
+<ol>
+<li><strong>네이버 데이터랩 → 아이템스카우트 → 쿠팡 실제 검색</strong> 순서의 3단계(영상에서는 2단계로 요약) 프로세스를 따르면, 누구나 체계적으로 잠재 상품을 발굴할 수 있다.</li>
+</ol>
+<ol>
+<li><strong>일반 키워드 vs 브랜드 키워드</strong>의 경쟁강도 차이는 극명하다. &quot;방한화&quot;(경쟁강도 135.17, 아주나쁨) vs &quot;아디다스 방한화&quot;(경쟁강도 4.01, 좋음)의 차이가 이를 증명한다. 브랜드 키워드는 상품수가 적고, 브랜드 본사의 마케팅 효과를 무임승차할 수 있다.</li>
+</ol>
+<ol>
+<li><strong>시즌 상품의 타이밍</strong>이 매우 중요하다. 검색량 추이 그래프를 분석하면, 언제 준비를 시작해야 하고 언제 판매 피크가 오는지 정확히 예측할 수 있다. 방한화의 경우 10월부터 검색량이 시작되어 12월에 피크를 찍으므로, 8~9월에 미리 준비해야 한다.</li>
+</ol>
+<ol>
+<li><strong>아이템스카우트의 쿠팡/네이버 상품지표</strong>를 활용하면, 경쟁강도, 로켓상품 비율, 판매자로켓 비율, 평균 판매가, 평균 리뷰 수 등을 한눈에 파악하여 진입 가능성을 판단할 수 있다.</li>
+</ol>
+<ol>
+<li><strong>브랜드 유통의 최대 장점</strong>은 브랜드가 이미 인플루언서 마케팅 등 대규모 마케팅을 진행해 놓은 상태이므로, 셀러는 별도의 마케팅 비용 없이 브랜드 인지도를 활용하여 판매할 수 있다는 점이다.</li>
+</ol>
+<h3>영상 시리즈 맥락</h3>
+<p>이 영상은 &quot;브랜드유통 상품 소싱 하는 방법 <strong>2탄</strong>&quot;으로, 1탄에서는 상품을 싸게 사는 방법을 다뤘으며, 향후 AI를 활용한 소싱 방법 등 추가 콘텐츠가 예고되어 있다. 모브스TV 채널은 브랜드 유통 전문 채널로, 초보 셀러들이 체계적으로 브랜드 유통 비즈니스를 시작할 수 있도록 단계별 가이드를 제공하고 있다.</p>
+
+        <div class="footer">
+            Generated by VidDigest
+        </div>
+    </div>
+    <div class="lightbox" id="lightbox" onclick="this.classList.remove('active')">
+        <img id="lightbox-img" src="" alt="">
+    </div>
+    <script>
+        document.querySelectorAll('.screenshot-container img').forEach(function(img) {
+            img.addEventListener('click', function() {
+                var lb = document.getElementById('lightbox');
+                document.getElementById('lightbox-img').src = this.src;
+                lb.classList.add('active');
+            });
+        });
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') document.getElementById('lightbox').classList.remove('active');
+        });
+    </script>
+</body>
+</html>

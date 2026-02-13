@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>쿠팡 상품 소싱 방법! 유료강의 필요 없습니다 직접 보여드릴게요 - VidDigest</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.8;
+            color: #1a1a2e;
+            background: #f8f9fa;
+        }
+        .header {
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: white;
+            padding: 48px 0 40px;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 28px;
+            font-weight: 700;
+            max-width: 800px;
+            margin: 0 auto 16px;
+            padding: 0 24px;
+            line-height: 1.4;
+        }
+        .header .meta {
+            font-size: 14px;
+            opacity: 0.85;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 0 24px;
+        }
+        .header .meta span {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+        }
+        h2 {
+            font-size: 22px;
+            font-weight: 700;
+            color: #302b63;
+            margin: 48px 0 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e8e8f0;
+        }
+        h3 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #24243e;
+            margin: 32px 0 14px;
+        }
+        h4 {
+            font-size: 16px;
+            font-weight: 600;
+            color: #444;
+            margin: 24px 0 10px;
+        }
+        p {
+            margin: 12px 0;
+            font-size: 15.5px;
+            color: #2c2c3e;
+        }
+        ul, ol {
+            margin: 12px 0;
+            padding-left: 28px;
+        }
+        li {
+            margin: 8px 0;
+            font-size: 15.5px;
+            color: #2c2c3e;
+        }
+        li strong {
+            color: #302b63;
+        }
+        blockquote {
+            margin: 20px 0;
+            padding: 16px 20px;
+            background: #f0f0f8;
+            border-left: 4px solid #302b63;
+            border-radius: 0 8px 8px 0;
+            font-size: 15px;
+            color: #444;
+        }
+        blockquote p {
+            margin: 4px 0;
+        }
+        .screenshot-container {
+            margin: 24px 0;
+            text-align: center;
+        }
+        .screenshot-container img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+            border: 1px solid #e0e0e8;
+        }
+        .screenshot-container .caption {
+            font-size: 13px;
+            color: #888;
+            margin-top: 8px;
+            font-style: italic;
+        }
+        code {
+            background: #eef;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-family: 'SF Mono', Menlo, Consolas, monospace;
+            color: #d63384;
+        }
+        pre {
+            background: #1e1e2e;
+            color: #cdd6f4;
+            padding: 20px;
+            border-radius: 10px;
+            overflow-x: auto;
+            margin: 16px 0;
+            font-size: 13.5px;
+            line-height: 1.6;
+        }
+        pre code {
+            background: none;
+            padding: 0;
+            color: inherit;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid #e0e0e8;
+            margin: 40px 0;
+        }
+        strong {
+            font-weight: 600;
+        }
+        .footer {
+            text-align: center;
+            padding: 32px 0;
+            font-size: 13px;
+            color: #999;
+            border-top: 1px solid #e8e8f0;
+            margin-top: 60px;
+        }
+        .screenshot-container img {
+            cursor: zoom-in;
+            transition: opacity 0.2s;
+        }
+        .screenshot-container img:hover {
+            opacity: 0.85;
+        }
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.85);
+            z-index: 9999;
+            cursor: zoom-out;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+        }
+        .lightbox.active {
+            display: flex;
+        }
+        .lightbox img {
+            max-width: 95vw;
+            max-height: 92vh;
+            border-radius: 8px;
+            box-shadow: 0 8px 40px rgba(0,0,0,0.5);
+            object-fit: contain;
+        }
+        @media (max-width: 600px) {
+            .header { padding: 32px 0 28px; }
+            .header h1 { font-size: 20px; padding: 0 16px; }
+            .header .meta { font-size: 12px; gap: 12px; padding: 0 16px; }
+            .container { padding: 24px 16px 60px; }
+            h2 { font-size: 19px; margin: 36px 0 16px; }
+            h3 { font-size: 16px; margin: 24px 0 12px; }
+            h4 { font-size: 15px; margin: 20px 0 8px; }
+            p, li { font-size: 14.5px; }
+            ul, ol { padding-left: 20px; }
+            blockquote { padding: 12px 14px; font-size: 14px; }
+            pre { padding: 14px; font-size: 12.5px; border-radius: 8px; }
+            code { font-size: 13px; }
+            .screenshot-container img { border-radius: 8px; }
+            hr { margin: 28px 0; }
+        }
+        @media (prefers-color-scheme: dark) {
+            body { background: #1a1a2e; color: #e0e0e8; }
+            h2 { color: #a8a4d6; border-bottom-color: #333; }
+            h3 { color: #c8c4e6; }
+            h4 { color: #b0b0c8; }
+            p, li { color: #d0d0e0; }
+            blockquote { background: #252540; border-left-color: #6c63ff; color: #c0c0d0; }
+            code { background: #2a2a4a; color: #f0a0c0; }
+            pre { background: #0d0d1a; }
+            hr { border-top-color: #333; }
+            .screenshot-container img { border-color: #333; }
+            .footer { border-top-color: #333; color: #666; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>쿠팡 상품 소싱 방법! 유료강의 필요 없습니다 직접 보여드릴게요</h1>
+        <div class="meta">
+            <span>머니무어</span>
+            <span>30:01</span>
+            <span>20250812</span>
+        </div>
+    </div>
+    <div class="container">
+        <p>summary.md 파일 쓰기 권한이 아직 승인되지 않았습니다. 대신 분석 결과를 직접 출력하겠습니다.</p>
+<hr>
+<blockquote><p><strong>채널</strong>: 머니무어 | <strong>길이</strong>: 30:01 | <strong>날짜</strong>: 20250812</p></blockquote>
+<h2>핵심 내용</h2>
+<ul>
+<li><strong>데이터 기반 아이템 소싱이 핵심이다.</strong> 쿠팡에서 상품을 소싱할 때는 감이 아닌 데이터(조회수, 판매가, 리뷰수, 경쟁강도, 셀러 수준, 전환율)를 기반으로 체계적으로 접근해야 한다. 발표자는 자신이 직접 사용하는 엑셀 스프레드시트 기반의 2단계 소싱 프레임워크(STEP 1: DATA로 아이템 소싱 → STEP 2: 소싱 체크리스트)를 공개하며, 유료 강의 없이도 이 방법만으로 충분하다고 강조한다.</li>
+</ul>
+<ul>
+<li><strong>쿠팡 윙(Coupang Wing)의 &quot;인기 상품 검색&quot; 기능을 적극 활용해야 한다.</strong> 쿠팡 셀러 관리 페이지인 쿠팡 윙에서 제공하는 인기 상품 검색 도구를 통해 카테고리별 평균가, 가격 범위, 판매량 순 상품 목록, 인기 키워드 등을 확인할 수 있다. 이 데이터를 엑셀 시트에 정리하여 소싱 판단의 근거로 삼는다.</li>
+</ul>
+<ul>
+<li><strong>소싱 체크리스트 6가지 항목을 반드시 점검해야 한다.</strong> 가격대 판매가 1만원 이상, 부피 작을 것, 옵션(색상/사이즈) 적을 것, 인증 불필요, 머니무어 숨긴파일 활용, 판다랭크 확인 및 그래프 분석 등 6가지 소싱 체크 포인트를 하나씩 검증한다. 동시에 차별화 포인트(후킹영상, 사은품, 대량 판매, 색상, 소재, 단점→장점 가능 여부)와 단가 확인(국내 도매처, 중국 사입)도 병행한다.</li>
+</ul>
+<ul>
+<li><strong>ChatGPT를 활용한 소비자 후기 분석과 제품 기획이 차별화의 핵심이다.</strong> 경쟁 상품의 리뷰(별점 낮은 후기 포함)를 ChatGPT에 넣어 소비자 분석(성별, 나이대, 구매목적, 사용환경, 주요 불만 포인트, 긍정 요소)을 수행하고, 단점을 장점으로 승화시키는 제품 기획 포인트를 도출한다.</li>
+</ul>
+<ul>
+<li><strong>국내 도매처(도매꾹 등)와 중국 소싱(1688/AliPrice)을 비교하여 마진을 극대화한다.</strong> 마진계산기(엑셀)를 활용하여 ROAS 250% 이하, 마진율 45% 이상 기준으로 수익성을 검증한다. 실제 예시에서 월매출액 약 1,506만원, 월순이익 약 301만원의 시뮬레이션 결과를 보여준다.</li>
+</ul>
+<ul>
+<li><strong>이미 쿠팡에 다른 사람들이 팔고 있는 상품이라도 차별화 전략을 통해 진입할 수 있다.</strong> 핵심은 &quot;무조건 소싱&quot;이 아니라 경쟁강도와 셀러 수준을 고민하여 진입 여부를 판단하는 것이다.</li>
+</ul>
+<h2>상세 분석</h2>
+<h3>도입부 - &quot;이미 쿠팡에 다른 사람들이&quot; [0:00~1:00]</h3>
+<p>영상은 발표자(머니무어)가 책상 앞에 앉아 모니터를 보며 시작된다. 검은색 폴로셔츠를 입은 발표자는 손을 맞잡으며 자연스럽게 이야기를 시작한다. 화면 하단 자막에 <strong>&quot;이미 쿠팡에 다른 사람들이&quot;</strong> 라는 문구가 표시되며, 이미 쿠팡에서 다른 셀러들이 판매하고 있는 상품을 어떻게 소싱하고 차별화하여 진입할 수 있는지에 대한 주제를 암시한다.</p>
+<div class="screenshot-container"><img src="images/segment_000.jpg" alt="도입부 - 발표자 인트로" loading="lazy"><div class="caption">도입부 - 발표자 인트로</div></div>
+<h3>쿠팡 윙(Coupang Wing) 셀러 대시보드 소개 [1:00~2:00]</h3>
+<p>화면이 전환되어 <strong>쿠팡 윙(Coupang Wing)</strong> 셀러 관리 페이지가 표시된다. 왼쪽 사이드바에는 상품관리, 판매 성장, 가격관리, 로켓그로스, 주문/배송, 정산, 고객관리, 리어널, 프로모션, 광고센터, 라이브 &amp; 숏츠, 비즈니스 인사이트, 판매자정보, 공지사항, 온라인문의 등 다양한 메뉴가 나열되어 있다.</p>
+<p>대시보드 하단 주요 지표:</p>
+<ul>
+<li><strong>상품관리</strong>: 판매중 상품수 13개</li>
+<li><strong>판매자점수</strong>: 주문이행 100(초록색 체크), 배송지연 0</li>
+<li><strong>우수판매자</strong> 섹션 확인 가능</li>
+</ul>
+<div class="screenshot-container"><img src="images/segment_001.jpg" alt="쿠팡 윙 대시보드" loading="lazy"><div class="caption">쿠팡 윙 대시보드</div></div>
+<h3>STEP 1. DATA로 아이템 소싱 - 엑셀 프레임워크 소개 [2:00~4:00]</h3>
+<p>발표자는 자신이 직접 만든 <strong>엑셀 스프레드시트</strong>를 공개한다. &quot;머니무어 마진계산기&quot;와 &quot;숨긴파일&quot; 두 개의 탭으로 구성.</p>
+<p><strong>STEP 1. DATA로 아이템 소싱</strong> 항목:</p>
+<ul>
+<li><strong>조회수</strong> / <strong>판매가</strong> / <strong>리뷰수</strong> (노란색 하이라이트 입력란)</li>
+<li><strong>경쟁강도</strong>: &quot;무조건 소싱&quot; vs &quot;고민 - 중수 이상&quot;</li>
+<li><strong>셀러 수준</strong>: &quot;왕초보&quot; vs 고수/중수 이상</li>
+<li><strong>전환율</strong>: 7% (기본값)</li>
+<li><strong>월매출액</strong> / <strong>월순이익</strong>: 자동 계산</li>
+</ul>
+<p><strong>STEP 2. 소싱 체크리스트</strong> (3개 컬럼):</p>
+<p>소싱 체크 포인트:</p>
+<ol>
+<li>가격대 판매가 1만원 이상</li>
+<li>부피 작을것</li>
+<li>옵션(색상, 사이즈) 적을것</li>
+<li>인증 x</li>
+<li>머니무어 숨긴파일 활용</li>
+<li>판다랭크 확인 → 그래프</li>
+</ol>
+<p>차별화 포인트:</p>
+<ol>
+<li>후킹영상 / 2. 사은품 / 3. 대량 판매 / 4. 색상 / 5. 소재 / 6. 단점 → 장점 가능</li>
+</ol>
+<p>단가 확인:</p>
+<ol>
+<li>국내 도매처 / 2. 중국 사입</li>
+</ol>
+<div class="screenshot-container"><img src="images/segment_002.jpg" alt="엑셀 프레임워크" loading="lazy"><div class="caption">엑셀 프레임워크</div></div>
+<div class="screenshot-container"><img src="images/segment_003.jpg" alt="엑셀 프레임워크 - 옵션 확인" loading="lazy"><div class="caption">엑셀 프레임워크 - 옵션 확인</div></div>
+<h3>쿠팡 윙 &quot;인기 상품 검색&quot; 기능 활용법 [4:00~6:00]</h3>
+<p>쿠팡 윙의 <strong>&quot;상품 조회/소싱&quot;</strong> 메뉴에서 <strong>&quot;쿠팡 인기 상품 검색&quot;</strong> 기능을 시연한다.</p>
+<p><strong>여성 골프 패딩 카테고리:</strong></p>
+<ul>
+<li>평균가: <strong>66,615원</strong>, 최소 14,400원 ~ 최대 162,690원</li>
+<li>판매량 순 정렬</li>
+</ul>
+<p><strong>스킨/토너 카테고리:</strong></p>
+<ul>
+<li>평균가: <strong>17,426원</strong>, 최소 7,898원 ~ 최대 35,997원</li>
+<li>상위 상품: 라운드랩 독도 토너(50,558개 판매, 12,850원), 닥터지 토너(20,764개), 토니모리 모찌 토너(39,933개)</li>
+</ul>
+<div class="screenshot-container"><img src="images/segment_004.jpg" alt="쿠팡 인기 상품 검색 - 여성 골프 패딩" loading="lazy"><div class="caption">쿠팡 인기 상품 검색 - 여성 골프 패딩</div></div>
+<div class="screenshot-container"><img src="images/segment_005.jpg" alt="쿠팡 인기 상품 검색 - 스킨/토너" loading="lazy"><div class="caption">쿠팡 인기 상품 검색 - 스킨/토너</div></div>
+<h3>실전 소싱 예시: 유모차 컵홀더 아이템 발굴 [6:00~9:00]</h3>
+<p><strong>외출용품</strong> 카테고리에서 유모차 관련 상품 탐색. 발표자는 <strong>&quot;탐사 3in1 유모차 2구 컵홀더 + 스마트폰 거치대 세트&quot;</strong>에 주목한다.</p>
+<p>쿠팡 윙 상품 목록:</p>
+<ul>
+<li>노르디코 유모차 걸이 - 6,330개, 6,900원</li>
+<li><strong>탐사 3in1 유모차 컵홀더</strong> - 289개, <strong>14,350원</strong></li>
+<li>베이블퓨어리 유모차 T2 - 1,478개, 53,400원</li>
+<li>탐사 벨크로 유모차 걸이 - 182개, 3,900원</li>
+</ul>
+<p><strong>엑셀 데이터 입력 결과:</strong></p>
+<ul>
+<li>조회수: <strong>15,000</strong> / 판매가: <strong>14,350</strong> / 리뷰수: <strong>289</strong></li>
+<li>경쟁강도: 소싱(고민) / 셀러 수준: 고수(중수 이상)</li>
+<li>전환율: 7% / 월매출액: <strong>15,067,500원</strong> / 월순이익: <strong>3,013,500원</strong></li>
+</ul>
+<div class="screenshot-container"><img src="images/segment_006.jpg" alt="유모차 상품 목록" loading="lazy"><div class="caption">유모차 상품 목록</div></div>
+<div class="screenshot-container"><img src="images/segment_007.jpg" alt="데이터 입력" loading="lazy"><div class="caption">데이터 입력</div></div>
+<div class="screenshot-container"><img src="images/segment_008.jpg" alt="입력 완료" loading="lazy"><div class="caption">입력 완료</div></div>
+<h3>판다랭크 활용 - 검색량 트렌드 그래프 분석 [9:00~10:00]</h3>
+<p><strong>판다랭크</strong> 도구로 &quot;유모차 컵홀더&quot; 키워드 검색량 트렌드 확인.</p>
+<p>관련 키워드: 스토케(34,950), 휴대용유모차(28,600), 리안(26,850), <strong>컵홀더(13,180, 경쟁지수 140)</strong>, 스마트폰(12,920)</p>
+<ul>
+<li>&quot;최근 1년간 검색량이 <strong>-2.46% 감소</strong>&quot; (월간 기준)</li>
+<li>2022년 8월 최대치(~18,000) → 점차 하락 → 계절성 패턴(여름~가을 높음, 겨울 낮음)</li>
+</ul>
+<div class="screenshot-container"><img src="images/segment_009.jpg" alt="판다랭크 그래프" loading="lazy"><div class="caption">판다랭크 그래프</div></div>
+<h3>쿠팡 마켓플레이스 경쟁 상품 분석 [10:00~12:00]</h3>
+<p>쿠팡에서 &quot;유모차 컵홀더&quot; 검색. 필터: 종류, 컵홀더 수(1단/2단/3단), 거치 방식(스탠드/걸이/클립/조임나사/벨크로) 등</p>
+<p>상위 상품:</p>
+<ol>
+<li>베베폴드 3in1 - <strong>18,590원</strong></li>
+<li><strong>탐사 3in1</strong> - <strong>14,350원</strong> (로켓배송)</li>
+<li>르메이어 3in1 - <strong>15,900원</strong></li>
+<li>오가닉팩토리 올인원 - <strong>13,200원</strong> (576리뷰)</li>
+<li>오가닉팩토리 탱크 - <strong>16,910원</strong> (3,632리뷰)</li>
+<li>아가추 3 in 1 - <strong>17,750원</strong></li>
+</ol>
+<div class="screenshot-container"><img src="images/segment_010.jpg" alt="쿠팡 검색 1" loading="lazy"><div class="caption">쿠팡 검색 1</div></div>
+<div class="screenshot-container"><img src="images/segment_011.jpg" alt="쿠팡 검색 2" loading="lazy"><div class="caption">쿠팡 검색 2</div></div>
+<h3>경쟁 상품 리뷰 분석 - 단점 발굴 [13:00~14:00]</h3>
+<p>탐사 컵홀더 상품평 <strong>289개</strong> 중 부정 리뷰 분석:</p>
+<ul>
+<li><strong>하*준</strong> (별 1개, 2025.05.24): &quot;두달도 안되서 부서짐&quot;, &quot;홀더가 톡 떨어짐&quot;, &quot;텀블러 하나와 휴대폰인데 너무하네요&quot;, &quot;컵홀더는 왜 두개인지&quot;</li>
+<li><strong>박*주</strong> (별 1개, 2025.07.25): 유사한 내구성 불만</li>
+</ul>
+<p>핵심 발견: <strong>내구성 문제</strong>가 최대 불만 → 체크리스트 &quot;6. 단점 → 장점 가능&quot; 항목에 파란색 하이라이트</p>
+<div class="screenshot-container"><img src="images/segment_013.jpg" alt="리뷰 분석" loading="lazy"><div class="caption">리뷰 분석</div></div>
+<h3>상품 상세 정보 및 상품문의 분석 [14:00~16:00]</h3>
+<p><strong>탐사 3in1 유모차 컵홀더:</strong></p>
+<ul>
+<li>52% 할인 → <strong>14,350원</strong>, 로켓배송, 최대 718원 적립</li>
+<li>쿠팡상품번호: 8242852701</li>
+</ul>
+<p><strong>상품문의 분석:</strong></p>
+<ul>
+<li>호환성 문의 다수: &quot;다이치 유모차에 설치 가능?&quot; → 프레임 57mm 이하면 가능</li>
+<li>&quot;오이스터3에도 사용 가능?&quot; → 유사 답변</li>
+</ul>
+<p>유사 상품 비교: 르메이어(15,900원, 1,274리뷰), 베베폴드(18,590원, 99리뷰), 아이꿀라(7,550원, 127리뷰), 르메이어 다용도(5,800원, 1,332리뷰) 등</p>
+<div class="screenshot-container"><img src="images/segment_014.jpg" alt="상품 상세" loading="lazy"><div class="caption">상품 상세</div></div>
+<div class="screenshot-container"><img src="images/segment_015.jpg" alt="상품문의" loading="lazy"><div class="caption">상품문의</div></div>
+<h3>ChatGPT를 활용한 소비자 후기 분석 및 제품 기획 [16:00~18:00]</h3>
+<p><strong>ChatGPT 5</strong>에 리뷰 데이터 입력 → 체계적 소비자 분석 수행</p>
+<p><strong>1. 후기 기반 소비자 분석:</strong></p>
+<ul>
+<li>성별: 여성 비중 높음 (엄마 구매)</li>
+<li>나이대: 30~40대 초반 (육아 중)</li>
+<li>구매 목적: 외출 시 커피/텀블러/휴대폰 거치</li>
+<li>사용 환경: 디럭스 유모차, 줄즈 허브2, 웬건, 잉글레시나 등</li>
+<li><strong>주요 불만</strong>: 내구성 부족(2주~2개월 파손), 충격 취약, 호환성 문제, 스마트폰 거치대 크기 부족, 장착 불안정</li>
+<li><strong>긍정 요소</strong>: 2구 구조 편리, 대형 컵 수납, 저렴</li>
+</ul>
+<p><strong>2. 단점→장점 제품 기획:</strong></p>
+<ul>
+<li>(1) 내구성 → <strong>TPR/실리콘/유연 ABS 하이브리드 소재</strong> 사용</li>
+<li>(4) 파손 불안 → <strong>논슬립 실리콘 패드 + 높이 조절 링</strong></li>
+<li>&quot;1리터 대형 컵도 안전&quot;, &quot;텀블러+이유식병 동시 수납&quot;</li>
+<li>&quot;케이스/그립톡/팝소켓 그대로 거치&quot;</li>
+</ul>
+<div class="screenshot-container"><img src="images/segment_016.jpg" alt="ChatGPT 분석" loading="lazy"><div class="caption">ChatGPT 분석</div></div>
+<h3>국내 도매처 - 도매꾹 [18:00~20:00]</h3>
+<p><strong>도매꾹</strong> 사이트에서 유모차 컵홀더 국내 도매가 확인:</p>
+<ul>
+<li>카테고리: 1688상품관, 사업자전용, 묶음배송, 최저가, 베스트 등</li>
+</ul>
+<p><strong>도매꾹 검색 결과:</strong></p>
+<ul>
+<li>유모차 2in1 컵홀더 - <strong>2,280원</strong> (1등급, 최소 3개)</li>
+<li>고정형 유모차 컵홀더 거치대 - <strong>2,350원</strong> (3등급)</li>
+<li>거치형 유모차 컵홀더 자유 회전 - <strong>2,400원</strong> (2등급)</li>
+<li>유모차 자전거 컵 텀블러 홀더 - <strong>2,400원</strong> (2등급)</li>
+</ul>
+<p>국내 도매가 약 <strong>2,280~2,400원</strong> → 판매가 14,350원 대비 충분한 마진 확보 가능</p>
+<div class="screenshot-container"><img src="images/segment_018.jpg" alt="도매꾹" loading="lazy"><div class="caption">도매꾹</div></div>
+<div class="screenshot-container"><img src="images/segment_023.jpg" alt="도매꾹 가격" loading="lazy"><div class="caption">도매꾹 가격</div></div>
+<h3>중국 소싱 - AliPrice.com / 1688 [20:00~22:00]</h3>
+<p><strong>AliPrice.com</strong>에서 1688 플랫폼 검색. 지원 플랫폼: 1688, 1688 PRO, 타오바오, 알리바바, Amazon, 알리익스프레스, Shopee, SHEIN, Ozon 등</p>
+<p><strong>1688 검색 결과:</strong></p>
+<ul>
+<li>3.52위안($0.49) - 연간 2.5K+ 판매</li>
+<li>2.60위안($0.36) - 연간 2.5K+, 매구비율 53%</li>
+<li>22.00위안($3.07) - 다기능 거치대</li>
+<li>15.00위안($2.09)</li>
+</ul>
+<p>중국 원가 2.60~22.00위안 수준 → 한국 판매가 14,350원 대비 대폭 마진 가능</p>
+<div class="screenshot-container"><img src="images/segment_020.jpg" alt="AliPrice 1688" loading="lazy"><div class="caption">AliPrice 1688</div></div>
+<div class="screenshot-container"><img src="images/segment_025.jpg" alt="AliPrice 상세" loading="lazy"><div class="caption">AliPrice 상세</div></div>
+<h3>머니무어 마진계산기 활용 [21:00~23:00]</h3>
+<p>엑셀 &quot;머니무어 마진계산기&quot; 탭에서 수익성 검증.</p>
+<p><strong>기준</strong>: <strong>ND ROAS 250% 이하, 마진율 45% 이상</strong> (빨간 텍스트 강조)</p>
+<p>수동입력칸/자동입력칸 구분. 수식: <code>=IFERROR((11000/J5)/10000,0)</code></p>
+<p><strong>실제 계산 예시:</strong></p>
+<ul>
+<li>4,000원 원가 → 17,500원 판매가 → 11.38% 수수료 → <strong>7,658원 마진</strong> → <strong>43.76% 마진율</strong> → <strong>251%</strong> ROAS (기준 충족!)</li>
+<li>일부 항목은 마진 0원 (수익성 없음)</li>
+</ul>
+<div class="screenshot-container"><img src="images/segment_021.jpg" alt="마진계산기 1" loading="lazy"><div class="caption">마진계산기 1</div></div>
+<div class="screenshot-container"><img src="images/segment_022.jpg" alt="마진계산기 2" loading="lazy"><div class="caption">마진계산기 2</div></div>
+<h3>ChatGPT 마케팅 전략 [24:00~25:00]</h3>
+<p><strong>3. 마케팅 전략 키워드 &amp; 카피 아이디어:</strong></p>
+<ul>
+<li><strong>네이밍</strong>: &quot;안부러짐 컵홀더&quot;, &quot;탱크 컵홀더&quot;, &quot;올핸들 거치대&quot;</li>
+<li><strong>차별 포인트 영상</strong>: 유모차 접고 펴기 → 파손 X, 턱 넘기, 흔들림 테스트</li>
+<li><strong>고객 불안 해소</strong>: &quot;1년 무상 파손 교환&quot; 문구</li>
+<li><strong>육아맘 커뮤니티 타겟</strong>: 인스타/맘카페 &quot;육아템 꿀조합&quot; 콘텐츠</li>
+</ul>
+<div class="screenshot-container"><img src="images/segment_024.jpg" alt="마케팅 전략" loading="lazy"><div class="caption">마케팅 전략</div></div>
+<h3>최종 확인 및 마무리 [27:00~30:01]</h3>
+<p>쿠팡에서 &quot;유모차 컵홀더&quot; 최종 검색 + 마진계산기 동시 표시하여 실시간 수익성 검증.</p>
+<p>마지막 자막: <strong>&quot;네 여러분 어떠신가요&quot;</strong> → <strong>&quot;시작이 전부입니다 감사합니다&quot;</strong></p>
+<div class="screenshot-container"><img src="images/segment_028.jpg" alt="최종 검색" loading="lazy"><div class="caption">최종 검색</div></div>
+<div class="screenshot-container"><img src="images/segment_030.jpg" alt="마무리" loading="lazy"><div class="caption">마무리</div></div>
+<h2>주요 인용 및 발언</h2>
+<blockquote><p>&quot;이미 쿠팡에 다른 사람들이...&quot; — 경쟁자가 있어도 데이터와 차별화로 진입 가능</p></blockquote>
+<blockquote><p>&quot;네 여러분 어떠신가요&quot; — 30분 실전 시연 후 시청자에게 묻는 질문</p></blockquote>
+<blockquote><p>&quot;시작이 전부입니다 감사합니다&quot; — 완벽한 준비보다 실행이 중요하다는 핵심 메시지</p></blockquote>
+<h2>결론 및 시사점</h2>
+<h3>핵심 메시지</h3>
+<p>이 영상은 쿠팡 상품 소싱의 <strong>A to Z 전 과정</strong>을 30분간 실전 시연으로 보여주는 콘텐츠다. 유료 강의 없이 공개 프레임워크만으로 충분히 쿠팡 셀러를 시작할 수 있다고 주장한다.</p>
+<h3>실용적 시사점</h3>
+<ol>
+<li><strong>체계적 프레임워크</strong>: 데이터 기반 2단계(DATA 소싱 → 체크리스트 검증)로 소싱 실패 확률 감소</li>
+<li><strong>무료 도구 활용</strong>: 쿠팡 윙, 판다랭크, ChatGPT, AliPrice, 도매꾹 등으로 전문적 소싱 가능</li>
+<li><strong>차별화 전략</strong>: 경쟁 상품 부정 리뷰 분석 → &quot;단점을 장점으로 승화&quot;</li>
+<li><strong>마진 검증 필수</strong>: ROAS 250% 이하, 마진율 45% 이상 기준</li>
+<li><strong>AI 활용</strong>: ChatGPT로 소비자 분석, 제품 기획, 마케팅 전략까지 1인 셀러도 가능</li>
+<li><strong>다중 채널 비교</strong>: 국내 도매(도매꾹) + 중국 소싱(1688/AliPrice) 동시 비교</li>
+</ol>
+<h3>소싱 프로세스 전체 흐름</h3>
+<ol>
+<li>쿠팡 윙 인기 상품 검색 → 카테고리별 데이터 수집</li>
+<li>엑셀에 조회수/판매가/리뷰수/경쟁강도/셀러 수준 입력</li>
+<li>전환율 7% 기준 월매출액/월순이익 자동 계산</li>
+<li>소싱 체크리스트 6가지 점검</li>
+<li>판다랭크로 검색량 트렌드 확인</li>
+<li>경쟁 상품 리뷰 분석 (특히 부정 리뷰)</li>
+<li>ChatGPT로 소비자 분석 및 차별화 제품 기획</li>
+<li>국내 도매처 + 중국 소싱 단가 비교</li>
+<li>마진계산기로 최종 수익성 검증</li>
+<li>차별화 포인트 확정 후 상품 등록</li>
+</ol>
+<h3>영상에서 사용된 도구</h3>
+<ul>
+<li><strong>쿠팡 윙</strong>: 셀러 관리 및 인기 상품 검색</li>
+<li><strong>엑셀</strong>: 머니무어 마진계산기 + 숨긴파일(소싱 체크리스트)</li>
+<li><strong>판다랭크</strong>: 키워드 검색량 트렌드 분석</li>
+<li><strong>쿠팡 마켓플레이스</strong>: 경쟁 상품 검색, 리뷰/상품문의 분석</li>
+<li><strong>ChatGPT 5</strong>: 소비자 분석, 제품 기획, 마케팅 전략</li>
+<li><strong>도매꾹</strong>: 국내 도매가 확인</li>
+<li><strong>AliPrice.com (1688)</strong>: 중국 도매가 확인</li>
+</ul>
+
+        <div class="footer">
+            Generated by VidDigest
+        </div>
+    </div>
+    <div class="lightbox" id="lightbox" onclick="this.classList.remove('active')">
+        <img id="lightbox-img" src="" alt="">
+    </div>
+    <script>
+        document.querySelectorAll('.screenshot-container img').forEach(function(img) {
+            img.addEventListener('click', function() {
+                var lb = document.getElementById('lightbox');
+                document.getElementById('lightbox-img').src = this.src;
+                lb.classList.add('active');
+            });
+        });
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') document.getElementById('lightbox').classList.remove('active');
+        });
+    </script>
+</body>
+</html>

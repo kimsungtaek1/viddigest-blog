@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&quot;걍 싹 다 풀게요&quot; 쿠팡에서 마진 50% 상품 찾는 미친 소싱법ㅣ아무도 모름 - VidDigest</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.8;
+            color: #1a1a2e;
+            background: #f8f9fa;
+        }
+        .header {
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: white;
+            padding: 48px 0 40px;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 28px;
+            font-weight: 700;
+            max-width: 800px;
+            margin: 0 auto 16px;
+            padding: 0 24px;
+            line-height: 1.4;
+        }
+        .header .meta {
+            font-size: 14px;
+            opacity: 0.85;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 0 24px;
+        }
+        .header .meta span {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+        }
+        h2 {
+            font-size: 22px;
+            font-weight: 700;
+            color: #302b63;
+            margin: 48px 0 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e8e8f0;
+        }
+        h3 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #24243e;
+            margin: 32px 0 14px;
+        }
+        h4 {
+            font-size: 16px;
+            font-weight: 600;
+            color: #444;
+            margin: 24px 0 10px;
+        }
+        p {
+            margin: 12px 0;
+            font-size: 15.5px;
+            color: #2c2c3e;
+        }
+        ul, ol {
+            margin: 12px 0;
+            padding-left: 28px;
+        }
+        li {
+            margin: 8px 0;
+            font-size: 15.5px;
+            color: #2c2c3e;
+        }
+        li strong {
+            color: #302b63;
+        }
+        blockquote {
+            margin: 20px 0;
+            padding: 16px 20px;
+            background: #f0f0f8;
+            border-left: 4px solid #302b63;
+            border-radius: 0 8px 8px 0;
+            font-size: 15px;
+            color: #444;
+        }
+        blockquote p {
+            margin: 4px 0;
+        }
+        .screenshot-container {
+            margin: 24px 0;
+            text-align: center;
+        }
+        .screenshot-container img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+            border: 1px solid #e0e0e8;
+        }
+        .screenshot-container .caption {
+            font-size: 13px;
+            color: #888;
+            margin-top: 8px;
+            font-style: italic;
+        }
+        code {
+            background: #eef;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-family: 'SF Mono', Menlo, Consolas, monospace;
+            color: #d63384;
+        }
+        pre {
+            background: #1e1e2e;
+            color: #cdd6f4;
+            padding: 20px;
+            border-radius: 10px;
+            overflow-x: auto;
+            margin: 16px 0;
+            font-size: 13.5px;
+            line-height: 1.6;
+        }
+        pre code {
+            background: none;
+            padding: 0;
+            color: inherit;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid #e0e0e8;
+            margin: 40px 0;
+        }
+        strong {
+            font-weight: 600;
+        }
+        .footer {
+            text-align: center;
+            padding: 32px 0;
+            font-size: 13px;
+            color: #999;
+            border-top: 1px solid #e8e8f0;
+            margin-top: 60px;
+        }
+        .screenshot-container img {
+            cursor: zoom-in;
+            transition: opacity 0.2s;
+        }
+        .screenshot-container img:hover {
+            opacity: 0.85;
+        }
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.85);
+            z-index: 9999;
+            cursor: zoom-out;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+        }
+        .lightbox.active {
+            display: flex;
+        }
+        .lightbox img {
+            max-width: 95vw;
+            max-height: 92vh;
+            border-radius: 8px;
+            box-shadow: 0 8px 40px rgba(0,0,0,0.5);
+            object-fit: contain;
+        }
+        @media (max-width: 600px) {
+            .header { padding: 32px 0 28px; }
+            .header h1 { font-size: 20px; padding: 0 16px; }
+            .header .meta { font-size: 12px; gap: 12px; padding: 0 16px; }
+            .container { padding: 24px 16px 60px; }
+            h2 { font-size: 19px; margin: 36px 0 16px; }
+            h3 { font-size: 16px; margin: 24px 0 12px; }
+            h4 { font-size: 15px; margin: 20px 0 8px; }
+            p, li { font-size: 14.5px; }
+            ul, ol { padding-left: 20px; }
+            blockquote { padding: 12px 14px; font-size: 14px; }
+            pre { padding: 14px; font-size: 12.5px; border-radius: 8px; }
+            code { font-size: 13px; }
+            .screenshot-container img { border-radius: 8px; }
+            hr { margin: 28px 0; }
+        }
+        @media (prefers-color-scheme: dark) {
+            body { background: #1a1a2e; color: #e0e0e8; }
+            h2 { color: #a8a4d6; border-bottom-color: #333; }
+            h3 { color: #c8c4e6; }
+            h4 { color: #b0b0c8; }
+            p, li { color: #d0d0e0; }
+            blockquote { background: #252540; border-left-color: #6c63ff; color: #c0c0d0; }
+            code { background: #2a2a4a; color: #f0a0c0; }
+            pre { background: #0d0d1a; }
+            hr { border-top-color: #333; }
+            .screenshot-container img { border-color: #333; }
+            .footer { border-top-color: #333; color: #666; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>&quot;걍 싹 다 풀게요&quot; 쿠팡에서 마진 50% 상품 찾는 미친 소싱법ㅣ아무도 모름</h1>
+        <div class="meta">
+            <span>돈크라테스</span>
+            <span>19:20</span>
+            <span>20251120</span>
+        </div>
+    </div>
+    <div class="container">
+        <p>모든 스크린샷을 확인했습니다. 이제 상세한 분석 보고서를 작성하겠습니다.</p>
+<blockquote><p><strong>채널</strong>: 돈크라테스 | <strong>길이</strong>: 19:20 | <strong>날짜</strong>: 20251120</p></blockquote>
+<h2>핵심 내용</h2>
+<ul>
+<li><strong>쿠팡 로켓그로스에서 마진율 50%를 확보할 수 있는 겨울 시즌 상품 소싱법을 A to Z로 공개한다.</strong> 발표자는 자신의 매출 실적(5.30억, 2.50억, 1.29억 등)을 보여주며 실제로 효과가 검증된 방법임을 강조한다. 소싱부터 키워드 선정, 원가 계산, 판매가 설정, 사입량 결정까지 전 과정을 실시간 시연한다.</li>
+</ul>
+<ul>
+<li><strong>ChatGPT를 활용하여 겨울 시즌 키워드를 대량으로 추출하고, KC 인증이 필요 없는 상품만 필터링하는 방법을 제시한다.</strong> 겨울에 수요가 많은 시즌 상품의 키워드를 ChatGPT에 프롬프트를 입력해 뽑아내고, 중복 제거 및 검색량이 높은 대표 키워드 위주로 정리한다.</li>
+</ul>
+<ul>
+<li><strong>도매꼭(도매 사이트)과 중국 1688(알리바바) 사이트를 비교하여 원가를 최대한 낮추는 소싱 전략을 설명한다.</strong> 같은 상품이라도 도매꼭 국내 도매가보다 중국 1688에서 직접 소싱하면 원가가 크게 낮아져 마진율이 50% 이상 확보 가능하다는 것을 실제 계산기로 시연한다.</li>
+</ul>
+<ul>
+<li><strong>&quot;돈크라테스 마진계산기&quot;라는 자체 엑셀 툴을 사용하여 원가, 판매 수수료, 그로스 수수료, 판매가, 마진, 마진율, 최소광고효율을 한눈에 파악하는 프로세스를 보여준다.</strong> 이 마진계산기에는 판매 수수료 탭과 그로스 수수료 탭이 별도로 있어 쿠팡의 카테고리별 수수료를 정확히 반영할 수 있다.</li>
+</ul>
+<ul>
+<li><strong>겨울 시즌 상품의 판매 타이밍(10월~12월)과 소싱/사입 시점 전략, 그리고 반드시 지켜야 할 3가지 주의사항(패션류 금지, 자본 확인 후 사입량 결정, 가격 싸움 주의)을 상세히 안내한다.</strong> 12월 말 이후에는 재고가 남으면 큰 손실이 될 수 있으므로 사입량을 보수적으로 잡아야 한다고 강조한다.</li>
+</ul>
+<hr>
+<h2>상세 분석</h2>
+<h3>1. 도입 - 발표자 소개 및 실적 공개 [0:00 ~ 1:17]</h3>
+<p>영상은 발표자(돈크라테스)가 검은 마스크를 쓰고 회색 후디를 입은 채 카메라 앞에서 설명하는 형태로 시작된다. 화면 왼쪽에는 세 개의 매출 수치가 표시된다:</p>
+<ul>
+<li><strong>5.30억</strong> 매출 (원)</li>
+<li><strong>2.50억</strong> 매출 (원)</li>
+<li><strong>1.29억</strong> 매출 (원)</li>
+</ul>
+<p>발표자는 &quot;하시는 분들도 많이 계십니다&quot;라고 언급하며, 이 소싱법을 통해 많은 분들이 성과를 내고 있다는 점을 어필한다. 이어서 &quot;해결 방법 순서로 알려드리겠습니다&quot;라고 하며 본격적인 강의에 들어간다. 이 영상의 핵심은 쿠팡에서 마진 50%를 확보할 수 있는 상품을 찾는 구체적인 소싱 방법론을 처음부터 끝까지 모두 공개하겠다는 것이다.</p>
+<div class="screenshot-container"><img src="images/segment_000.jpg" alt="발표자와 매출 실적" loading="lazy"><div class="caption">발표자와 매출 실적</div></div>
+<div class="screenshot-container"><img src="images/segment_001.jpg" alt="해결 방법 순서 안내" loading="lazy"><div class="caption">해결 방법 순서 안내</div></div>
+<hr>
+<h3>2. 시즌 키워드 발굴 - 쿠팡 검색과 ChatGPT 활용 [1:17 ~ 2:34]</h3>
+<p>발표자는 먼저 쿠팡에서 겨울 시즌 상품의 키워드를 찾는 방법을 보여준다. 화면에는 쿠팡 검색 결과 페이지가 나타나며, 다양한 겨울 상품들이 표시된다:</p>
+<ul>
+<li><strong>프리미엄 어반스타일 발열조끼</strong> / 배터리 포함 / 화상감지 / 스마트 히팅 - 33% 할인, 별점 5점(36개 리뷰)</li>
+<li><strong>뉴메틱 발열조끼</strong> 온열 열선 방한용품 낚시 등산 산책 조끼 - 7% 할인 <strong>146,000원</strong></li>
+<li><strong>캠핑 피크닉 곰돌이 보온보냉백</strong>, 블랙, 1개 - 쿠팡추천 <strong>1,900원</strong></li>
+<li><strong>BEST 상품 푸드워머 접이식 보온 패드</strong>, 아이보리 - 49% 할인 <strong>39,900원</strong></li>
+<li><strong>동파방지 보온커버</strong> 1m, 5개 - 53% 할인 <strong>5,990원</strong></li>
+</ul>
+<p>발표자는 &quot;이 상품명에 '보온' 이라는 단어가 들어간&quot; 상품들에 주목한다. 이처럼 겨울 시즌에 맞는 대표 키워드(보온, 발열, 방한 등)를 먼저 파악하는 것이 첫 번째 단계이다.</p>
+<div class="screenshot-container"><img src="images/segment_002.jpg" alt="쿠팡 겨울 시즌 상품 검색 결과" loading="lazy"><div class="caption">쿠팡 겨울 시즌 상품 검색 결과</div></div>
+<p>이어서 발표자는 <strong>ChatGPT 5.1</strong>을 사용하여 겨울 시즌 키워드를 대량으로 추출하는 과정을 보여준다. ChatGPT에 입력한 프롬프트는 다음과 같다:</p>
+<blockquote><p>&quot;겨울에 수요가 많은 시즌 상품을 판매하려고 키워드를 뽑았어. 내가 정리한 키워드들 중에 중복되거나 비슷한 키워드가 있다면 더 검색량이 높은 키워드로 몰아주고 KC 인증같이 안전 인증을 받아야만 판매를 할 수 있는 제품들은 모두 제외시켜줘&quot;</p></blockquote>
+<p>화면 오른쪽에는 발표자가 이미 정리해놓은 겨울 시즌 키워드 목록이 보인다:</p>
+<p>보온국통, 보온보냉팩, 보온족통, 보온찜질물팩, 보온보냉병, 보온덮개, 농사용보온덮개, 발열조끼, 보냉백, 보온패드, 보온커버, 보온물병, 단열재/은박시트, 동파방지커버, 수도꼭지 보온덮개, 기모 자전거 오토바이 장갑, 발열 내의, 보냉가방, 농사용 보온덮개, 발열매트, 파티션, 캠핑 은박, 방한담요, 은박담요, 단열 뽁뽁이, 방한 터치장갑, 극세사 침대패드, 고양이 보온방석, 넥워머, 서리방지, 방한 등</p>
+<p>발표자는 &quot;내가 정리한 키워드들 중에서&quot; 중복을 제거하고 KC 인증이 필요한 상품을 걸러내라고 ChatGPT에 요청한다.</p>
+<div class="screenshot-container"><img src="images/segment_003.jpg" alt="ChatGPT로 겨울 키워드 정리" loading="lazy"><div class="caption">ChatGPT로 겨울 키워드 정리</div></div>
+<hr>
+<h3>3. ChatGPT가 정리한 최종 추천 키워드 리스트 [2:34 ~ 3:13]</h3>
+<p>ChatGPT가 정리해준 <strong>최종 추천 키워드 리스트</strong>가 화면에 표시된다. 조건은 (중복 제거 + KC 필수 제거 + 검색량 높은 대표키워드만)이다:</p>
+<ol>
+<li><strong>보온 국통</strong> ← KC 인증 받아야 하는 상품 (빨간 박스로 표시)</li>
+<li><strong>보온 족통</strong> ← KC 인증 받아야 하는 상품 (빨간 박스로 표시)</li>
+<li>보온보냉팩</li>
+<li>보온보냉병</li>
+<li>보온 물병</li>
+<li>보온 물주머니</li>
+<li>보온커버</li>
+<li>보온덮개 부직포</li>
+<li>단열재</li>
+<li>은박시트</li>
+<li>캠핑 은박</li>
+<li>단열 뽁뽁이</li>
+<li>방풍비닐</li>
+<li>동파방지커버</li>
+<li>수도 동파 방지커버</li>
+<li>월동용 부직포</li>
+<li>서리방지 월동피복</li>
+<li>기모 자전거/오토바이 장갑</li>
+<li>방한 터치장갑</li>
+<li>기모양말</li>
+<li>넥워머</li>
+<li>고양이 보온방석</li>
+<li>방한담요</li>
+<li>은박담요</li>
+<li>극세사 침대패드</li>
+</ol>
+<p>발표자는 1번과 2번(보온 국통, 보온 족통)에 빨간 박스를 쳐서 &quot;KC 인증 받아야 하는 상품&quot;이라고 표시하며, 이런 상품들은 제외해야 한다고 설명한다. &quot;나머지만 보시면 될 것 같습니다&quot;라고 하며 KC 인증이 불필요한 상품 위주로 진행할 것을 강조한다.</p>
+<div class="screenshot-container"><img src="images/segment_004.jpg" alt="ChatGPT 최종 추천 키워드 25개" loading="lazy"><div class="caption">ChatGPT 최종 추천 키워드 25개</div></div>
+<hr>
+<h3>4. 엑셀로 카테고리별 대표 키워드 및 연관 키워드 정리 [3:13 ~ 3:51]</h3>
+<p>발표자는 ChatGPT에서 뽑은 키워드들을 엑셀 스프레드시트로 체계적으로 정리한 화면을 보여준다. 엑셀은 A열(카테고리), B열(대표 키워드), C열(연관/확장 키워드)로 구성되어 있다:</p>
+<p>| 카테고리 | 대표 키워드 | 연관/확장 키워드 |</p>
+<p>|---|---|---|</p>
+<p>| 보온/보냉용품 | 보온족통 | 스테인리스족통, 도시락보온가방, 이유식보온통 |</p>
+<p>| 보온/보냉용품 | 보온물주머니 | 온수주머니, 찜질주머니, 수면보온주머니 |</p>
+<p>| 보온/보냉용품 | 보온보냉백 | 보냉가방, 피크닉보냉백, 장바구니보냉백, 도시락보냉가방 |</p>
+<p>| 단열/방풍용품 | 은박단열시트 | 창문단열시트, 단열뽁뽁이, 베란다단열비닐, 캠핑단열매트 |</p>
+<p>| 단열/방풍용품 | 보온덮개 | 수도보온덮개, 배관보온덮개, 보온시트 |</p>
+<p>| 단열/방풍용품 | 동파방지커버 | 수도계량기커버, 수도꼭지보온커버 |</p>
+<p>| 농사용 보온제품 | 농사용보온덮개 | 비닐하우스보온커버, 작물보온시트, 서리방지월동피복 |</p>
+<p>| 침구/실내용품 | 극세사침대패드 | 극세사이불, 겨울침구, 냉기차단러그, 방한매트 |</p>
+<p>| 침구/실내용품 | 은박담요 | 방한담요, 캠핑보온담요, 비상용보온담요 |</p>
+<p>| 의류/패션방한용품 | 방한기모양말 | 기모양말, 겨울양말, 수면양말 |</p>
+<p>| 의류/패션방한용품 | 넥워머 | 플리스목도리, 방한마스크, 워머후드 |</p>
+<p>| 생활/사무용품 | 파티션 | 이동식파티션, 방한파티션, 바람막이파티션 |</p>
+<p>| 반려동물용품 | 고양이보온방석 | 강아지보온매트, 펫방한하우스, 반려동물이불 |</p>
+<p>발표자는 &quot;대표 키워드와 연관 키워드까지&quot; 정리했다고 설명하며, 이렇게 카테고리별로 나누어 놓으면 체계적으로 소싱 작업을 진행할 수 있다고 한다.</p>
+<div class="screenshot-container"><img src="images/segment_005.jpg" alt="엑셀 카테고리별 키워드 정리" loading="lazy"><div class="caption">엑셀 카테고리별 키워드 정리</div></div>
+<hr>
+<h3>5. 쿠팡에서 키워드 검색 및 도매꼭에서 도매가 확인 [3:51 ~ 5:09]</h3>
+<p>발표자는 정리한 키워드 중 <strong>&quot;보온 물주머니&quot;</strong>를 선택하여 실제 소싱 과정을 시연한다. 먼저 쿠팡에서 &quot;보온 물주머니&quot;를 검색한다. 쿠팡 메인 페이지에서 검색어를 입력하는 모습이 보이고, 화면 하단에는 &quot;보온 물주머니&quot;라는 큰 텍스트가 표시된다.</p>
+<div class="screenshot-container"><img src="images/segment_006.jpg" alt="쿠팡에서 보온 물주머니 검색" loading="lazy"><div class="caption">쿠팡에서 보온 물주머니 검색</div></div>
+<p>이어서 <strong>도매꼭</strong>(도매꼭 돈버는 쇼핑) 사이트로 이동하여 &quot;보온 물주머니&quot;를 검색한다. 도매꼭 검색 결과:</p>
+<ul>
+<li>상품명으로 &quot;보온 물주머니&quot; 검색</li>
+<li><strong>총 1,406건</strong>이 검색됨</li>
+<li>카테고리 필터: 건강용품, 스포츠/레저, 출산, 생활용품, 디지털/가전, 패션잡화, 가구/인테리어, 의류/언더웨어, 화장품, 취미/도서, 유아/동, 식품</li>
+<li>원산지: 원산지 전체, 국산/국내산, 국외산</li>
+<li>배송: 배송 전체, 국내배송, 해외배송</li>
+<li>가격대, 최소구매수량 필터 옵션도 있음</li>
+</ul>
+<p>발표자는 &quot;'보온 물주머니' 검색해 볼게요&quot;라고 하며 도매 가격을 확인하기 시작한다.</p>
+<div class="screenshot-container"><img src="images/segment_007.jpg" alt="도매꼭에서 보온 물주머니 검색 - 1,406건" loading="lazy"><div class="caption">도매꼭에서 보온 물주머니 검색 - 1,406건</div></div>
+<hr>
+<h3>6. 돈크라테스 마진계산기 - 엑셀 툴 소개 [5:09 ~ 6:26]</h3>
+<p>발표자는 자신이 만든 <strong>&quot;돈크라테스 마진계산기&quot;</strong> 엑셀 시트를 공개한다. 이 마진계산기의 구조는 다음과 같다:</p>
+<p><strong>헤더(열 구성):</strong></p>
+<ul>
+<li><strong>1번</strong>: 키워드</li>
+<li><strong>2번</strong>: 원가</li>
+<li><strong>3번</strong>: 판매 수수료</li>
+<li><strong>4번</strong>: 그로스 수수료</li>
+<li><strong>판매가</strong> (E열)</li>
+<li><strong>마진</strong> (F열)</li>
+<li><strong>마진율</strong> (G열)</li>
+<li><strong>최소광고효율</strong> (H열)</li>
+</ul>
+<p>첫 번째 행에는 <strong>&quot;보온 물주머니 찜질팩&quot;</strong>이 입력되어 있고, 원가는 <strong>2,400원</strong>, 판매 수수료는 <strong>0.0%</strong>(아직 입력 전), 마진은 <strong>-2,400원</strong>(판매가 미입력으로 원가만 차감)으로 표시된다.</p>
+<p>발표자는 &quot;밑에 탭 보이세요?&quot;라고 하며 엑셀 하단의 탭을 가리킨다. <strong>마진계산기</strong>, <strong>판매 수수료</strong>, <strong>그로스 수수료</strong> 세 개의 탭이 있다. 판매 수수료 탭이 빨간 박스로 강조되어 있다.</p>
+<div class="screenshot-container"><img src="images/segment_008.jpg" alt="돈크라테스 마진계산기 초기 화면" loading="lazy"><div class="caption">돈크라테스 마진계산기 초기 화면</div></div>
+<p>이어서 발표자는 판매 수수료를 입력한다. &quot;보온 물주머니 찜질팩&quot;의 판매 수수료가 <strong>7.8%</strong>로 입력되고, &quot;정확한 카테고리 수수료 알고 싶다&quot;는 자막이 하단에 표시된다. 카테고리별 정확한 수수료를 아는 것이 마진 계산에서 매우 중요하다는 점을 강조한다.</p>
+<div class="screenshot-container"><img src="images/segment_009.jpg" alt="판매 수수료 7.8% 입력" loading="lazy"><div class="caption">판매 수수료 7.8% 입력</div></div>
+<hr>
+<h3>7. 쿠팡 윙 - 입출고/배송 비용 확인 (그로스 수수료) [6:26 ~ 7:05]</h3>
+<p>발표자는 <strong>쿠팡 윙(Coupang Wing)</strong> 사이트로 이동하여 그로스 수수료(입출고/배송 비용)를 확인한다. 쿠팡 윙의 왼쪽 메뉴에는:</p>
+<ul>
+<li>상품관리, 판매 성장, 가격관리, 로켓그로스, 주문/배송, 정산, 셀러필멧 빠른정산, 고객관리, 마이샵, 프로모션, 광고센터, 라이브 &amp; 숏츠, 비즈니스 인사이트</li>
+</ul>
+<p><strong>입출고/배송 비용</strong> 페이지가 열려 있다:</p>
+<ul>
+<li>카테고리에 따라 최종 입출고 및 배송 비용이 결정되며 판매 완료 시 비용이 부과됨</li>
+<li><strong>입출고비</strong>: 600원 부터 / 수량 당 (상품 입고 및 성품 출고를 처리하는 작업에 대한 비용)</li>
+<li><strong>배송비</strong>: 1,350원 부터 / 주문 당 (상품을 고객에게 배송하는 작업에 대한 비용)</li>
+</ul>
+<p><strong>입출고/배송 비용 계산기</strong> 팝업이 열려 있으며:</p>
+<ul>
+<li>카테고리: 생활용품 &gt; 생활잡화 &gt; 핫팩/아이스팩 &gt; 손난로/핫팩 재선택</li>
+<li>사이즈(mm): 가로, 세로, 높이 입력란</li>
+<li>무게(g): 무게 입력란</li>
+<li>판매가격(원): 판매가격 입력란</li>
+<li><strong>계산하기</strong> 버튼</li>
+</ul>
+<p>발표자는 &quot;대충 적으면 됩니다&quot;라고 하며 대략적인 사이즈와 무게를 입력하면 그로스 수수료를 알 수 있다고 설명한다. 참고로 하단의 엑셀 탭에는 그로스 수수료 정보가 이미 정리되어 있다.</p>
+<div class="screenshot-container"><img src="images/segment_010.jpg" alt="쿠팡 윙 입출고/배송 비용 계산기" loading="lazy"><div class="caption">쿠팡 윙 입출고/배송 비용 계산기</div></div>
+<hr>
+<h3>8. 마진 계산 완성 - 마진율 50% 달성 확인 [7:05 ~ 7:44]</h3>
+<p>모든 수치를 입력한 마진계산기의 최종 결과가 화면에 나타난다:</p>
+<p><strong>보온 물주머니 찜질팩:</strong></p>
+<ul>
+<li>원가: <strong>2,400원</strong></li>
+<li>판매 수수료: <strong>7.8%</strong></li>
+<li>그로스 수수료: <strong>2,800원</strong></li>
+<li>판매가: <strong>13,300원</strong></li>
+<li>마진: <strong>6,679원</strong></li>
+<li><strong>마진율: 50%</strong> (빨간 박스로 강조)</li>
+<li>최소광고효율: <strong>219%</strong></li>
+</ul>
+<p>발표자는 마진율 50%가 찍힌 것을 보여주며 매우 만족스러운 결과임을 강조한다. &quot;중국에서 사입을 해야 될 거 아니에요&quot;라는 자막이 나오며, 이 원가 2,400원은 도매꼭 기준이지만 중국에서 직접 소싱하면 더 낮출 수 있다는 점을 시사한다.</p>
+<div class="screenshot-container"><img src="images/segment_011.jpg" alt="마진율 50% 달성 - 최종 마진계산기" loading="lazy"><div class="caption">마진율 50% 달성 - 최종 마진계산기</div></div>
+<hr>
+<h3>9. 중국 1688(알리바바)에서 더 저렴한 소싱처 찾기 [7:44 ~ 9:01]</h3>
+<p>발표자는 중국 소싱 사이트 <strong>1688.com(알리바바)</strong>으로 이동한다. &quot;热水袋(열수대/핫워터백)&quot;으로 검색한 결과 다양한 물주머니 상품들이 표시된다. 화면에 보이는 중국 상품들:</p>
+<ul>
+<li>주수열수대가후방폭여 (注水热水袋加厚防爆女) - <strong>¥5.5</strong> / 10만+건 판매</li>
+<li>다양한 캐릭터 물주머니들 (곰, 고양이 등)</li>
+</ul>
+<p>발표자는 계산기를 열어 <strong>5.5 x 300 = 1,650</strong>을 계산한다. 즉, 중국 위안화 5.5원에 환율 약 300을 곱하면 한국 원화로 <strong>1,650원</strong>이 된다. &quot;1,650원이거든요&quot;라고 강조한다.</p>
+<div class="screenshot-container"><img src="images/segment_012.jpg" alt="1688에서 물주머니 검색 및 환율 계산" loading="lazy"><div class="caption">1688에서 물주머니 검색 및 환율 계산</div></div>
+<p>이어서 마진계산기에 중국 소싱 원가를 반영한 결과를 보여준다. 1688에서 더 큰 물주머니를 판매하고 있다고 언급하며(&quot;큰 물주머니 판매하고 있더라고요&quot;), 여러 가격대의 중국산 물주머니를 마진계산기에 입력한다:</p>
+<p>| 키워드 | 원가 | 판매 수수료 | 그로스 수수료 | 판매가 | 마진 |</p>
+<p>|---|---|---|---|---|---|</p>
+<p>| 보온 물주머니 찜질팩 | 2,400 | 7.8% | 2,800 | 13,300 | 6,679원 |</p>
+<p>| 중)보온 물주머니 찜질팩 | 1,650 | 7.8% | 2,800 | 13,300 | 7,429원 |</p>
+<div class="screenshot-container"><img src="images/segment_013.jpg" alt="1688과 마진계산기 비교" loading="lazy"><div class="caption">1688과 마진계산기 비교</div></div>
+<p>더 다양한 중국산 물주머니의 원가를 비교한 결과:</p>
+<p>| 키워드 | 원가 | 판매 수수료 | 그로스 수수료 | 판매가 | 마진 | 마진율 | 최소광고효율 |</p>
+<p>|---|---|---|---|---|---|---|---|</p>
+<p>| 보온 물주머니 찜질팩 (도매꼭) | 2,400 | 7.8% | 2,800 | 13,300 | 6,679원 | 50% | 219% |</p>
+<p>| 중)보온 물주머니 찜질팩1 | 1,650 | 7.8% | 2,800 | 13,300 | 7,429원 | 56% | 197% |</p>
+<p>| 중)보온 물주머니 찜질팩2 | 2,070 | 7.8% | 2,800 | 13,300 | 7,009원 | 53% | 209% |</p>
+<p>| 중)보온 물주머니 찜질팩3 | 1,440 | 7.8% | 2,800 | 13,300 | 7,639원 | 57% | 192% |</p>
+<p>발표자는 &quot;도매꼭 보다 훨씬 개선된 상품인데도 불구하고&quot; 중국 소싱이 마진율이 더 높다는 점을 강조한다. 중국산 원가가 1,440~2,070원 범위인 반면 도매꼭은 2,400원이다. 마진율은 <strong>50~57%</strong> 수준으로 모두 우수하다.</p>
+<div class="screenshot-container"><img src="images/segment_014.jpg" alt="중국 소싱 비교 마진계산기" loading="lazy"><div class="caption">중국 소싱 비교 마진계산기</div></div>
+<hr>
+<h3>10. 두 번째 상품 예시 - 수도꼭지 동파방지 커버 [9:40 ~ 10:57]</h3>
+<p>발표자는 두 번째 상품 예시로 <strong>&quot;수도꼭지 동파방지 커버&quot;</strong>를 선택한다. 마진계산기에 입력한 결과:</p>
+<ul>
+<li>원가 모두를 입력하고 판매가를 설정한 뒤 마진을 확인한다</li>
+<li>중)보온 물주머니 찜질팩1: 원가 1,650 → 판매가 11,500 → 마진 5,783원, 마진율 50%, 최소광고효율 219%</li>
+<li>중)보온 물주머니 찜질팩2: 원가 2,070 → 판매가 12,500 → 마진 6,278원, 마진율 50%, 최소광고효율 219%</li>
+<li>중)보온 물주머니 찜질팩3: 원가 1,440 → 판매가 11,000 → 마진 5,536원, 마진율 50%, 최소광고효율 219%</li>
+</ul>
+<p><strong>수도꼭지 동파방지 커버</strong>의 마진계산기 결과:</p>
+<ul>
+<li>원가: <strong>1,300원</strong></li>
+<li>판매 수수료: <strong>10.8%</strong></li>
+<li>그로스 수수료: <strong>2,575원</strong></li>
+<li>판매가: 미정 상태</li>
+</ul>
+<div class="screenshot-container"><img src="images/segment_015.jpg" alt="수도꼭지 동파방지 커버 마진계산" loading="lazy"><div class="caption">수도꼭지 동파방지 커버 마진계산</div></div>
+<p>쿠팡 윙의 입출고/배송 비용 계산기에서 수도꼭지 동파방지 커버의 그로스 수수료를 계산한다:</p>
+<ul>
+<li>사이즈 유형: <strong>극소형</strong></li>
+<li>부피: <strong>0.001CBM</strong></li>
+<li>입출고비: <strong>1,000원</strong></li>
+<li>배송비: <strong>1,575원</strong></li>
+<li><strong>총계: 2,575원</strong> (*VAT 별도) - 빨간 박스로 강조</li>
+</ul>
+<p>마진계산기 오른쪽에는 수도꼭지 동파방지 커버의 그로스 수수료 <strong>3,000원</strong>이 빨간 박스로 표시되어 있다. &quot;그럼 2,575원&quot;이라는 자막이 나온다.</p>
+<div class="screenshot-container"><img src="images/segment_016.jpg" alt="그로스 수수료 2,575원 확인" loading="lazy"><div class="caption">그로스 수수료 2,575원 확인</div></div>
+<hr>
+<h3>11. 1688에서 수도꼭지 동파방지 커버 소싱 [10:57 ~ 11:35]</h3>
+<p>발표자는 1688에서 수도꼭지 동파방지 커버(수룡두방동보온 / 户外水龙头防冻罩保温)를 검색한다. 다양한 상품이 표시되며:</p>
+<ul>
+<li><strong>¥1.64</strong> / 운임 1원 포함, 3700+건 판매 - &quot;분향재감7원, 근49천저가&quot; (빨간 박스로 선택)</li>
+<li><strong>¥0.5</strong> / 운임 10원 포함, 1.4만+건 - TEMU용</li>
+<li><strong>¥14.2</strong> / 포장비 포함, 2600+건 - 크로스보더용</li>
+<li><strong>¥2.4</strong> / 운임 5원 포함</li>
+</ul>
+<p>발표자는 &quot;제가 이거 월300 시리즈에서도 말했는데&quot;라고 언급하며 이전 영상 시리즈와의 연결을 시사한다.</p>
+<div class="screenshot-container"><img src="images/segment_017.jpg" alt="1688 수도꼭지 동파방지 커버 검색" loading="lazy"><div class="caption">1688 수도꼭지 동파방지 커버 검색</div></div>
+<p>쿠팡에서 &quot;동파방지 커버&quot;를 검색한 결과 다양한 상품이 표시된다:</p>
+<ul>
+<li>수도 동파 방지 커버 아웃 수도꼭지 보온덮개, 1개 - 65% 할인 <strong>9,800원</strong></li>
+<li>수도꼭지 동파방지 보온 커버 XL 블랙 36x68 - 35% 할인 <strong>12,900원</strong></li>
+<li>(1+1) 겨울 수도꼭지 동파방지 커버 배관 보온 단열 계량기 아웃 외부 보온커버 대형, 2개 - 27% 할인 <strong>15,000원</strong></li>
+<li>수도꼭지 동파방지 커버 수도관 보온재, 2개 - 30% 할인 <strong>13,800원</strong></li>
+<li>33% 할인 <strong>16,700원</strong> 등</li>
+</ul>
+<p>마진계산기에 수도꼭지 동파방지 커버의 최종 결과:</p>
+<ul>
+<li>원가: <strong>1,300원</strong> / 판매 수수료: <strong>10.8%</strong> / 그로스 수수료: <strong>2,575원</strong> / 판매가: <strong>10,900원</strong> / 마진: <strong>5,473원</strong> / <strong>마진율: 50%</strong> / 최소광고효율: 219%</li>
+<li>중)수도꼭지 동파방지 커버: 원가 <strong>1,185원</strong> → 판매가 <strong>9,800원</strong> → 마진 <strong>4,618원</strong> (노란색 하이라이트)</li>
+</ul>
+<p>&quot;키워드도 지금 몇 분 만에 수십 개씩 찾고&quot;라는 자막이 표시되며, 이 방법의 효율성을 강조한다.</p>
+<div class="screenshot-container"><img src="images/segment_018.jpg" alt="쿠팡 동파방지 커버 검색 및 마진 계산" loading="lazy"><div class="caption">쿠팡 동파방지 커버 검색 및 마진 계산</div></div>
+<hr>
+<h3>12. 겨울 시즌 상품 판매 타이밍 전략 [12:14 ~ 13:31]</h3>
+<p>발표자는 <strong>겨울상품 판매기간 그래프</strong>를 보여준다. X축은 시간(10월초~12월말), Y축은 판매량을 나타내는 곡선이다:</p>
+<ul>
+<li><strong>10월초</strong>: 최저점 (판매량 거의 없음)</li>
+<li><strong>10월중순</strong>: 약간 상승 후 완만한 유지</li>
+<li><strong>10월말~11월초</strong>: 완만한 유지</li>
+<li><strong>11월중순</strong>: 급격한 상승 시작</li>
+<li><strong>12월초</strong>: 급등 (피크를 향해)</li>
+<li><strong>12월말</strong>: 최고점 도달 후 급락 가능성</li>
+</ul>
+<p>&quot;요것도 근데 이 12월 말까지 되면요&quot;라는 자막이 표시되며, 12월 말이 되면 수요가 급감할 수 있다는 위험을 경고한다.</p>
+<div class="screenshot-container"><img src="images/segment_019.jpg" alt="겨울상품 판매기간 그래프 10월~12월" loading="lazy"><div class="caption">겨울상품 판매기간 그래프 10월~12월</div></div>
+<p>발표자는 그래프에 직접 빨간 펜으로 추가 표시를 한다:</p>
+<ul>
+<li><strong>10월초</strong>: &quot;소싱&quot; 시점 (빨간 글씨)</li>
+<li><strong>10월중순</strong>: 판매 준비 완료 시점 - &quot;10월 중순까지는 판매 준비가 완료될 거고&quot;</li>
+<li><strong>12월말</strong>: &quot;재고X&quot; (재고 소진 목표 시점) - 빨간 글씨</li>
+</ul>
+<p>이 그래프의 핵심 메시지는: 10월 초에 소싱을 시작하고, 10월 중순까지 판매 준비를 완료하며, 12월 말까지 재고를 모두 소진하는 것이 이상적이라는 것이다.</p>
+<div class="screenshot-container"><img src="images/segment_020.jpg" alt="판매 타이밍 전략 - 소싱과 재고 소진 시점" loading="lazy"><div class="caption">판매 타이밍 전략 - 소싱과 재고 소진 시점</div></div>
+<p>이어서 &quot;그럼 이제 도대체 몇 개씩 사입을 해야&quot;라는 자막과 함께, 발표자는 사입량 결정에 대해 설명한다. 그래프에 추가로:</p>
+<ul>
+<li><strong>10월중순~말</strong>: &quot;완(매 준비 완료)&quot; 표시</li>
+<li><strong>11월중~말</strong>: 본격 판매 구간</li>
+<li><strong>12월초</strong>: 피크 구간</li>
+<li><strong>12월말</strong>: &quot;재고X&quot; 재확인</li>
+</ul>
+<p>사입량은 판매 곡선을 보고 보수적으로 결정해야 하며, 시즌이 끝나면 재고가 남지 않도록 주의해야 한다고 강조한다.</p>
+<div class="screenshot-container"><img src="images/segment_021.jpg" alt="사입량 결정 가이드" loading="lazy"><div class="caption">사입량 결정 가이드</div></div>
+<hr>
+<h3>13. 도매꼭에서 국내 소싱 - 재고 및 가격 확인 [14:10 ~ 14:49]</h3>
+<p>발표자는 도매꼭에서 <strong>&quot;수도꼭지 동파방지커버&quot;</strong> 상품 상세 페이지를 보여준다:</p>
+<ul>
+<li>상품명: <strong>겨울 수도동파방지 수도꼭지커버 방한 보온덮개 소형 (즉시출고)</strong></li>
+<li>랭킹점수: 8,610점</li>
+<li>구매원로 상품수: 아직 556,971 상품</li>
+<li>수량(개): 1~ / 50~</li>
+<li>단가(원): <strong>1,300원</strong> / <strong>1,290원</strong> (50개 이상 시)</li>
+<li>구매수량: 최소구매수량 4개</li>
+<li>배송정보: 당일출고 (평균출고일 0.3일), 빠른배송, 택배/수량별비례 적용/주문시결제, 묶음배송 가능 (동일 출고지 상품만 가능)</li>
+<li>재고수량: <strong>99,851개</strong> (강조 표시)</li>
+<li>원산지: 수입산 / 아시아 / 중국</li>
+</ul>
+<p>발표자는 &quot;문의글 남겨서 확실하게&quot;라고 하며, 도매꼭에서 대량 구매 시에는 문의글을 통해 추가 할인이나 조건을 협상할 수 있다고 조언한다.</p>
+<div class="screenshot-container"><img src="images/segment_022.jpg" alt="도매꼭 수도꼭지 동파방지커버 상세 페이지" loading="lazy"><div class="caption">도매꼭 수도꼭지 동파방지커버 상세 페이지</div></div>
+<hr>
+<h3>14. 겨울 상품 진행 시 주의사항 3가지 [14:49 ~ 17:23]</h3>
+<p>발표자는 새 문서를 열어 <strong>&quot;겨울 상품 진행시 주의 사항&quot;</strong>이라는 제목을 적는다. &quot;주의사항에 대해서 알려드릴게요&quot;라는 자막이 표시된다.</p>
+<div class="screenshot-container"><img src="images/segment_023.jpg" alt="겨울 상품 진행 제목" loading="lazy"><div class="caption">겨울 상품 진행 제목</div></div>
+<p><strong>주의사항 1: 패션류 금지</strong></p>
+<p>발표자는 &quot;선정산이라고 해가지고&quot;라는 자막과 함께, 패션류(의류, 신발 등)는 절대 하지 말라고 강조한다. 패션류는 사이즈, 색상 등의 문제로 반품률이 높고, 시즌이 지나면 가치가 급락하기 때문이다.</p>
+<div class="screenshot-container"><img src="images/segment_024.jpg" alt="주의사항 1. 패션류 금지" loading="lazy"><div class="caption">주의사항 1. 패션류 금지</div></div>
+<p><strong>주의사항 2: 자본을 확인하고 사입량 결정</strong></p>
+<p>투입 가능한 자본 규모를 먼저 파악한 후, 그에 맞게 사입량을 결정해야 한다. 무리한 사입은 재고 부담으로 이어질 수 있다.</p>
+<p><strong>주의사항 3: 가격 싸움</strong></p>
+<p>&quot;판매가 자동으로 선정하고&quot;라는 자막과 함께, 경쟁자들과 무분별한 가격 인하 경쟁(가격 싸움)에 말려들지 말라고 경고한다. 가격을 너무 낮추면 마진이 사라지기 때문이다.</p>
+<div class="screenshot-container"><img src="images/segment_025.jpg" alt="주의사항 3가지 완성" loading="lazy"><div class="caption">주의사항 3가지 완성</div></div>
+<hr>
+<h3>15. 최종 마진계산기 - 월별 판매량 및 사입량 산정 [17:23 ~ 18:41]</h3>
+<p>발표자는 마진계산기의 최종 완성 버전을 보여준다. 기존 마진 정보에 추가로 <strong>URL</strong>, <strong>10월 판매량</strong>, <strong>11월 판매량</strong>, <strong>12월 판매량</strong>, <strong>썸네일</strong> 열이 추가되어 있다:</p>
+<p>| 키워드 | 원가 | 판매수수료 | 그로스수수료 | 판매가 | 마진 | 마진율 | 최소광고효율 | URL | 10월 판매량 | 11월 판매량 | 12월 판매량 |</p>
+<p>|---|---|---|---|---|---|---|---|---|---|---|---|</p>
+<p>| 보온 물주머니 찜질팩 | 2,400 | 7.8% | 2,800 | 13,300 | 6,679원 | 50% | 219% | domeggook.com/... | 100 | 123 | 180 |</p>
+<p>| 중)보온 물주머니 찜질팩1 | 1,650 | 7.8% | 2,800 | 13,300 | 7,429원 | 56% | 197% | 1688 URL | 150 | 159 | 238 |</p>
+<p>| 중)보온 물주머니 찜질팩2 | 2,070 | 7.8% | 2,800 | 13,300 | 7,009원 | 53% | 209% | 1688 URL | 200 | 190 | 257 |</p>
+<p>| 중)보온 물주머니 찜질팩3 | 1,440 | 7.8% | 2,800 | 13,300 | 7,639원 | 57% | 192% | 1688 URL | 250 | 267 | 296 |</p>
+<p>| 수도꼭지 동파방지 커버 | 1,300 | 10.8% | 2,575 | 10,900 | 5,473원 | 50% | 219% | domeggook.com/... | 300 | 328 | 426 |</p>
+<p>| 중)수도꼭지 동파방지 커버 | 1,185 | 10.8% | 2,575 | 10,600 | 5,323원 | 50% | 219% | 1688 URL | - | - | - |</p>
+<p>&quot;할 필요도 없죠&quot;라는 자막이 표시되며, 이 마진계산기를 활용하면 별도의 복잡한 계산 없이도 한눈에 수익성을 파악할 수 있다는 점을 강조한다.</p>
+<div class="screenshot-container"><img src="images/segment_027.jpg" alt="최종 마진계산기 - 월별 판매량 포함" loading="lazy"><div class="caption">최종 마진계산기 - 월별 판매량 포함</div></div>
+<hr>
+<h3>16. 마무리 및 채널 안내 [18:02 ~ 19:20]</h3>
+<p>발표자는 &quot;겨울 상품 소싱하고&quot;라는 자막과 함께 영상을 마무리한다. &quot;한 분 한 분 꼼꼼하게 봐드려야 되는데&quot;라고 하며 시청자 한 명 한 명에게 도움이 되고 싶다는 마음을 전한다.</p>
+<div class="screenshot-container"><img src="images/segment_027.jpg" alt="겨울 상품 소싱 마무리" loading="lazy"><div class="caption">겨울 상품 소싱 마무리</div></div>
+<p>&quot;두 번, 세 번 반복해가지고&quot;라는 자막이 나오며, 이 소싱법을 한 번이 아니라 반복적으로 실행하여 상품 라인업을 늘려가야 한다고 조언한다.</p>
+<div class="screenshot-container"><img src="images/segment_029.jpg" alt="반복 실행 강조" loading="lazy"><div class="caption">반복 실행 강조</div></div>
+<p>영상은 <strong>돈크라테스</strong> 로고(금색 &quot;돈&quot; + 은색 &quot;크라테스&quot; + 원화 동전 심볼)가 표시되면서 마무리된다.</p>
+<div class="screenshot-container"><img src="images/segment_030.jpg" alt="돈크라테스 채널 로고" loading="lazy"><div class="caption">돈크라테스 채널 로고</div></div>
+<hr>
+<h2>주요 인용 및 발언</h2>
+<blockquote><p>&quot;하시는 분들도 많이 계십니다&quot; - 이 소싱법의 검증된 효과를 강조</p></blockquote>
+<blockquote><p>&quot;해결 방법 순서로 알려드리겠습니다&quot; - 체계적인 설명 예고</p></blockquote>
+<blockquote><p>&quot;이 상품명에 '보온' 이라는 단어가 들어간&quot; - 겨울 시즌 키워드 핵심 파악법</p></blockquote>
+<blockquote><p>&quot;내가 정리한 키워드들 중에서&quot; - ChatGPT 활용 프롬프트의 핵심</p></blockquote>
+<blockquote><p>&quot;나머지만 보시면 될 것 같습니다&quot; - KC 인증 불필요 상품 중심 전략</p></blockquote>
+<blockquote><p>&quot;대표 키워드와 연관 키워드까지&quot; - 체계적 키워드 확장</p></blockquote>
+<blockquote><p>&quot;정확한 카테고리 수수료 알고 싶다&quot; - 수수료 정확도의 중요성</p></blockquote>
+<blockquote><p>&quot;대충 적으면 됩니다&quot; - 그로스 수수료 계산의 간편함</p></blockquote>
+<blockquote><p>&quot;중국에서 사입을 해야 될 거 아니에요&quot; - 중국 소싱의 필연성</p></blockquote>
+<blockquote><p>&quot;도매꼭 보다 훨씬 개선된 상품인데도 불구하고&quot; - 중국 소싱의 원가 우위</p></blockquote>
+<blockquote><p>&quot;키워드도 지금 몇 분 만에 수십 개씩 찾고&quot; - 효율적 키워드 발굴</p></blockquote>
+<blockquote><p>&quot;10월 중순까지는 판매 준비가 완료될 거고&quot; - 타이밍 전략</p></blockquote>
+<blockquote><p>&quot;그럼 이제 도대체 몇 개씩 사입을 해야&quot; - 사입량 결정의 중요성</p></blockquote>
+<blockquote><p>&quot;문의글 남겨서 확실하게&quot; - 도매 협상 팁</p></blockquote>
+<blockquote><p>&quot;판매가 자동으로 선정하고&quot; - 가격 전략</p></blockquote>
+<blockquote><p>&quot;한 분 한 분 꼼꼼하게 봐드려야 되는데&quot; - 시청자 배려</p></blockquote>
+<blockquote><p>&quot;두 번, 세 번 반복해가지고&quot; - 반복 실행의 중요성</p></blockquote>
+<hr>
+<h2>결론 및 시사점</h2>
+<p><strong>핵심 메시지:</strong></p>
+<p>이 영상은 쿠팡 로켓그로스에서 겨울 시즌 상품으로 마진율 50%를 달성하는 구체적인 소싱 프로세스를 A to Z까지 완전 공개한다. 단순한 이론이 아니라 실제 화면을 보여주며 따라할 수 있도록 구성되어 있다.</p>
+<p><strong>실용적 시사점:</strong></p>
+<ol>
+<li><strong>AI 활용의 실전화</strong>: ChatGPT를 단순 검색이 아닌 키워드 선별, KC 인증 필터링, 중복 제거 등 실무 작업에 활용하면 수십 개의 유효 키워드를 몇 분 만에 확보할 수 있다.</li>
+</ol>
+<ol>
+<li><strong>이중 소싱 전략</strong>: 도매꼭(국내 도매)과 1688(중국 도매)을 동시에 비교하여 원가를 최소화하는 것이 마진 극대화의 핵심이다. 같은 상품이라도 중국 소싱 시 원가가 30~40% 이상 절감 가능하다.</li>
+</ol>
+<ol>
+<li><strong>마진계산기의 체계화</strong>: 키워드, 원가, 판매 수수료, 그로스 수수료, 판매가, 마진, 마진율, 최소광고효율, URL, 월별 판매량까지 한 시트에서 관리하면 의사결정이 빨라진다.</li>
+</ol>
+<ol>
+<li><strong>시즌 상품의 타이밍 리스크</strong>: 겨울 시즌 상품은 10월~12월이 핵심 판매 기간이며, 12월 말 이후에는 수요가 급감한다. 소싱은 10월 초, 판매 준비 완료는 10월 중순, 재고 소진 목표는 12월 말로 잡아야 한다.</li>
+</ol>
+<ol>
+<li><strong>3가지 절대 수칙</strong>: 패션류 회피(반품 리스크), 자본 대비 사입량 조절(재고 리스크), 가격 싸움 지양(마진 붕괴 방지)을 반드시 지켜야 시즌 상품으로 안정적인 수익을 올릴 수 있다.</li>
+</ol>
+<ol>
+<li><strong>반복과 확장</strong>: 이 프로세스를 한 번이 아니라 여러 키워드/상품에 반복 적용하면 상품 포트폴리오가 늘어나면서 매출이 기하급수적으로 성장할 수 있다.</li>
+</ol>
+
+        <div class="footer">
+            Generated by VidDigest
+        </div>
+    </div>
+    <div class="lightbox" id="lightbox" onclick="this.classList.remove('active')">
+        <img id="lightbox-img" src="" alt="">
+    </div>
+    <script>
+        document.querySelectorAll('.screenshot-container img').forEach(function(img) {
+            img.addEventListener('click', function() {
+                var lb = document.getElementById('lightbox');
+                document.getElementById('lightbox-img').src = this.src;
+                lb.classList.add('active');
+            });
+        });
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') document.getElementById('lightbox').classList.remove('active');
+        });
+    </script>
+</body>
+</html>

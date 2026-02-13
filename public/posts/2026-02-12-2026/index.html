@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>유료강의 듣지 마세요. 2026 쿠팡 상품소싱편. - VidDigest</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.8;
+            color: #1a1a2e;
+            background: #f8f9fa;
+        }
+        .header {
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: white;
+            padding: 48px 0 40px;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 28px;
+            font-weight: 700;
+            max-width: 800px;
+            margin: 0 auto 16px;
+            padding: 0 24px;
+            line-height: 1.4;
+        }
+        .header .meta {
+            font-size: 14px;
+            opacity: 0.85;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 0 24px;
+        }
+        .header .meta span {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+        }
+        h2 {
+            font-size: 22px;
+            font-weight: 700;
+            color: #302b63;
+            margin: 48px 0 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e8e8f0;
+        }
+        h3 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #24243e;
+            margin: 32px 0 14px;
+        }
+        h4 {
+            font-size: 16px;
+            font-weight: 600;
+            color: #444;
+            margin: 24px 0 10px;
+        }
+        p {
+            margin: 12px 0;
+            font-size: 15.5px;
+            color: #2c2c3e;
+        }
+        ul, ol {
+            margin: 12px 0;
+            padding-left: 28px;
+        }
+        li {
+            margin: 8px 0;
+            font-size: 15.5px;
+            color: #2c2c3e;
+        }
+        li strong {
+            color: #302b63;
+        }
+        blockquote {
+            margin: 20px 0;
+            padding: 16px 20px;
+            background: #f0f0f8;
+            border-left: 4px solid #302b63;
+            border-radius: 0 8px 8px 0;
+            font-size: 15px;
+            color: #444;
+        }
+        blockquote p {
+            margin: 4px 0;
+        }
+        .screenshot-container {
+            margin: 24px 0;
+            text-align: center;
+        }
+        .screenshot-container img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+            border: 1px solid #e0e0e8;
+        }
+        .screenshot-container .caption {
+            font-size: 13px;
+            color: #888;
+            margin-top: 8px;
+            font-style: italic;
+        }
+        code {
+            background: #eef;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-family: 'SF Mono', Menlo, Consolas, monospace;
+            color: #d63384;
+        }
+        pre {
+            background: #1e1e2e;
+            color: #cdd6f4;
+            padding: 20px;
+            border-radius: 10px;
+            overflow-x: auto;
+            margin: 16px 0;
+            font-size: 13.5px;
+            line-height: 1.6;
+        }
+        pre code {
+            background: none;
+            padding: 0;
+            color: inherit;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid #e0e0e8;
+            margin: 40px 0;
+        }
+        strong {
+            font-weight: 600;
+        }
+        .footer {
+            text-align: center;
+            padding: 32px 0;
+            font-size: 13px;
+            color: #999;
+            border-top: 1px solid #e8e8f0;
+            margin-top: 60px;
+        }
+        .screenshot-container img {
+            cursor: zoom-in;
+            transition: opacity 0.2s;
+        }
+        .screenshot-container img:hover {
+            opacity: 0.85;
+        }
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.85);
+            z-index: 9999;
+            cursor: zoom-out;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+        }
+        .lightbox.active {
+            display: flex;
+        }
+        .lightbox img {
+            max-width: 95vw;
+            max-height: 92vh;
+            border-radius: 8px;
+            box-shadow: 0 8px 40px rgba(0,0,0,0.5);
+            object-fit: contain;
+        }
+        @media (max-width: 600px) {
+            .header { padding: 32px 0 28px; }
+            .header h1 { font-size: 20px; padding: 0 16px; }
+            .header .meta { font-size: 12px; gap: 12px; padding: 0 16px; }
+            .container { padding: 24px 16px 60px; }
+            h2 { font-size: 19px; margin: 36px 0 16px; }
+            h3 { font-size: 16px; margin: 24px 0 12px; }
+            h4 { font-size: 15px; margin: 20px 0 8px; }
+            p, li { font-size: 14.5px; }
+            ul, ol { padding-left: 20px; }
+            blockquote { padding: 12px 14px; font-size: 14px; }
+            pre { padding: 14px; font-size: 12.5px; border-radius: 8px; }
+            code { font-size: 13px; }
+            .screenshot-container img { border-radius: 8px; }
+            hr { margin: 28px 0; }
+        }
+        @media (prefers-color-scheme: dark) {
+            body { background: #1a1a2e; color: #e0e0e8; }
+            h2 { color: #a8a4d6; border-bottom-color: #333; }
+            h3 { color: #c8c4e6; }
+            h4 { color: #b0b0c8; }
+            p, li { color: #d0d0e0; }
+            blockquote { background: #252540; border-left-color: #6c63ff; color: #c0c0d0; }
+            code { background: #2a2a4a; color: #f0a0c0; }
+            pre { background: #0d0d1a; }
+            hr { border-top-color: #333; }
+            .screenshot-container img { border-color: #333; }
+            .footer { border-top-color: #333; color: #666; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>유료강의 듣지 마세요. 2026 쿠팡 상품소싱편.</h1>
+        <div class="meta">
+            <span>주프로 Channel</span>
+            <span>39:12</span>
+            <span>20251121</span>
+        </div>
+    </div>
+    <div class="container">
+        <p>이제 모든 스크린샷을 확인했습니다. 자막이 제공되지 않았지만, 스크린샷의 시각적 정보(텍스트, 화면 내용, 메모 등)를 기반으로 최대한 상세한 분석 보고서를 작성하겠습니다.</p>
+<blockquote><p><strong>채널</strong>: 주프로 Channel | <strong>길이</strong>: 39:12 | <strong>날짜</strong>: 20251121</p></blockquote>
+<h2>핵심 내용</h2>
+<ul>
+<li><strong>쿠팡에서 비싸게 팔아도 더 잘 팔리는 구조가 존재한다.</strong> 단순히 최저가 경쟁만이 답이 아니며, 광고비를 적절히 활용하면 높은 판매가에서도 충분히 매출을 올릴 수 있다. 다만 발표자는 광고비는 절대 공개하지 않는다고 밝히고 있다.</li>
+</ul>
+<ul>
+<li><strong>상품소싱의 핵심은 1688(중국 도매 플랫폼)이다.</strong> 발표자는 &quot;죽어도 1688 도매꾹&quot;이라고 강조하며, 중국 1688에서 상품을 소싱하는 것이 기본 전략임을 분명히 한다. 국내 도매 사이트보다 1688에서 직접 소싱하는 것이 원가 경쟁력 확보의 핵심이다.</li>
+</ul>
+<ul>
+<li><strong>상품소싱은 기계적이고 체계적인 프로세스로 접근해야 한다.</strong> &quot;어렵지 않게 기계적으로 할 수 있어&quot;라고 강조하며, 감이 아닌 데이터 기반의 판단 기준 3가지(시장의 크기, 탑플레이어 판매가, 적정원가)를 제시한다.</li>
+</ul>
+<ul>
+<li><strong>사계절 상품(연중 수요가 있는 상품)이 시즌 상품보다 안정적이다.</strong> 시즌상품은 폭발적 매출이 가능하지만, 사계절 상품은 80개 정도만 효자 상품으로 운영해도 안정적 수익을 올릴 수 있다. 구체적으로 깔창, 중목양말, 수면양말, 러닝벨트, 등산양말, 여성/남성 팬티, 주방화 등을 추천 아이템으로 제시한다.</li>
+</ul>
+<ul>
+<li><strong>1688 샘플 주문 후 검증 과정을 반드시 거쳐야 한다.</strong> &quot;뭐 팔지?&quot; 결정 후 바로 본발주를 하는 것이 아니라, 1688에서 5개 공장에 샘플을 주문하고, 약 1주일 후 샘플을 받아 품질을 확인한 뒤 본발주 또는 상폐(상품 폐기) 여부를 결정하는 프로세스를 따라야 한다.</li>
+</ul>
+<ul>
+<li><strong>마진 분석 스프레드시트를 활용한 체계적 수익 계산이 필수다.</strong> 판매가, 수익률, 순수익, 중국원가, 매입가(환율 280 기준), 그로스비용, 수수료(11.55%), 부가세 등을 엑셀로 정리하여 수익성을 사전에 검증해야 한다.</li>
+</ul>
+<hr>
+<h2>상세 분석</h2>
+<h3>1. 인트로: 쿠팡에서 비싸게 팔아도 잘 팔리는 비밀</h3>
+<p>영상은 쿠팡 메인 페이지를 보여주며 시작한다. 화면에는 &quot;비싸게 파는데 더 잘팔린다? 광고비는 절대 공개 안함&quot;이라는 대형 텍스트가 오버레이되어 있다. 쿠팡 홈페이지에는 &quot;오늘 밤 12시까지 주문해도 로켓배송은 내일 도착!&quot; 배너, 블랙프라이데이 UP TO 70% SALE 프로모션, &quot;오늘의 발견&quot; 코너 등이 보인다.</p>
+<p>발표자는 쿠팡에서 다른 판매자들보다 비싸게 파는데도 오히려 더 잘 팔리는 현상이 있다는 점을 화두로 던진다. 그 안에 무엇이 있는지, 어떤 전략이 숨어 있는지를 이 영상에서 밝히겠다고 예고한다. 다만 광고비만큼은 절대 공개하지 않겠다고 선을 긋는다.</p>
+<div class="screenshot-container"><img src="images/segment_000.jpg" alt="쿠팡 메인 페이지와 &quot;비싸게 파는데 더 잘팔린다?&quot; 텍스트" loading="lazy"><div class="caption">쿠팡 메인 페이지와 &quot;비싸게 파는데 더 잘팔린다?&quot; 텍스트</div></div>
+<h3>2. 쿠팡 신규 가입 쿠폰과 플랫폼 이해</h3>
+<p>쿠팡의 &quot;웰컴백 &amp; 첫구매&quot; 프로모션 화면이 보인다. 100% 당첨 쿠폰 지급 이벤트로 ~24,000원 쿠폰을 받을 수 있으며, 회원가입 및 본인인증 완료 후 지급되고 구매 이력이 없는 고객 한정이다. 하단 자막에 &quot;하면은 10~12일이면 와요&quot;라는 텍스트가 보이는데, 이는 1688에서 주문하면 상품이 도착하기까지 대략 10~12일이 소요된다는 것을 의미한다.</p>
+<p>쿠팡 상단 메뉴에는 쿠팡플레이, 로켓배송, 로켓프레시, 다시 구매, biz쿠팡비즈, 로켓직구, 골드박스, 이달의신상, 판매자특가 등 다양한 서비스가 나열되어 있다.</p>
+<div class="screenshot-container"><img src="images/segment_001.jpg" alt="쿠팡 웰컴백 쿠폰 ~24,000원 프로모션" loading="lazy"><div class="caption">쿠팡 웰컴백 쿠폰 ~24,000원 프로모션</div></div>
+<h3>3. 상품소싱의 기본 원칙: 1688과 도매꾹</h3>
+<p>발표자는 워드프로세서(한글 또는 유사 프로그램) 화면을 열어 노트를 작성하며 설명을 시작한다. 화면에는 다음과 같이 적혀 있다:</p>
+<p><strong>&quot;상품소싱?&quot;</strong></p>
+<p><strong>&quot;저희는 죽어도 1688 도매꾹&quot;</strong></p>
+<p>하단 자막: &quot;왜 왜 두 배 비싼 데에서 사서&quot;</p>
+<p>발표자는 상품소싱의 기본 원칙으로 1688(중국 알리바바 계열 도매 플랫폼)을 강력히 추천한다. 국내 도매 사이트인 도매꾹도 언급하지만, 핵심은 1688에서 직접 소싱하는 것이다. &quot;왜 두 배 비싼 데에서 사서&quot; 팔아야 하느냐는 질문에 대한 답으로, 국내 도매 사이트는 이미 중간 마진이 붙어 있어 원가가 높기 때문에 1688에서 직접 소싱해야 가격 경쟁력을 확보할 수 있다는 점을 강조한다.</p>
+<div class="screenshot-container"><img src="images/segment_002.jpg" alt="상품소싱 기본 원칙 - 1688 도매꾹" loading="lazy"><div class="caption">상품소싱 기본 원칙 - 1688 도매꾹</div></div>
+<h3>4. 상품소싱 프로세스: &quot;뭐 팔까?&quot; → 1688 샘플 주문</h3>
+<p>화면의 노트가 업데이트되어 다음과 같은 프로세스가 정리된다:</p>
+<p><strong>&quot;상품소싱?&quot;</strong></p>
+<p><strong>&quot;뭘팔까?&quot;</strong></p>
+<p><strong>&quot;뭐팔지? ---&gt; 1688샘플주문&quot;</strong></p>
+<p>상품소싱의 첫 번째 단계는 &quot;뭐 팔지?&quot;를 결정하는 것이고, 그 다음 단계가 1688에서 샘플을 주문하는 것이다. 이 두 단계가 상품소싱의 핵심 흐름이라는 것을 시각적으로 보여준다.</p>
+<div class="screenshot-container"><img src="images/segment_003.jpg" alt="뭐팔지? → 1688 샘플주문 프로세스" loading="lazy"><div class="caption">뭐팔지? → 1688 샘플주문 프로세스</div></div>
+<h3>5. 샘플 주문 후 분기: 본발주 vs 상폐</h3>
+<p>프로세스가 더 구체화된다:</p>
+<p><strong>&quot;뭐팔지? ---&gt; 1688샘플주문 -&gt; 본발주 / 상폐&quot;</strong></p>
+<p><strong>&quot;수건&quot; / &quot;샘플구입&quot;</strong></p>
+<p>하단 자막: &quot;그럼 론칭 못 하는 거예요&quot;</p>
+<p>1688에서 샘플을 주문한 뒤, 샘플의 품질을 확인하여 두 가지 분기로 나뉜다:</p>
+<ul>
+<li><strong>본발주</strong>: 샘플 품질이 만족스러우면 대량 발주로 진행</li>
+<li><strong>상폐(상품 폐기)</strong>: 샘플 품질이 기준에 미달하면 해당 상품을 포기</li>
+</ul>
+<p>&quot;수건&quot;은 소싱 예시 아이템으로 언급되며, &quot;샘플구입&quot;은 주황색으로 강조되어 있다. 샘플 검증 없이 바로 본발주를 하면 론칭 자체를 못 하게 될 수 있다는 경고도 함께 전달한다.</p>
+<div class="screenshot-container"><img src="images/segment_004.jpg" alt="본발주 vs 상폐 분기 프로세스" loading="lazy"><div class="caption">본발주 vs 상폐 분기 프로세스</div></div>
+<h3>6. 상품소싱을 기계적으로 하는 방법</h3>
+<p>화면에 새로운 내용이 정리된다:</p>
+<p><strong>&quot;상품소싱?&quot;</strong></p>
+<p><strong>&quot;어렵지 않게 기계적으로 할 수 있어&quot;</strong></p>
+<p>발표자는 상품소싱이 결코 어려운 일이 아니며, 기계적이고 체계적인 프로세스를 따르면 누구나 할 수 있다고 강조한다. 감이나 직관에 의존하는 것이 아니라 정해진 기준과 절차에 따라 판단하면 된다는 것이 핵심 메시지다.</p>
+<div class="screenshot-container"><img src="images/segment_005.jpg" alt="상품소싱 - 어렵지 않게 기계적으로 할 수 있어" loading="lazy"><div class="caption">상품소싱 - 어렵지 않게 기계적으로 할 수 있어</div></div>
+<h3>7. 상품소싱 판단 기준 3가지</h3>
+<p>발표자가 제시하는 상품소싱의 핵심 판단 기준이 구체적으로 정리된다:</p>
+<p><strong>&quot;상품소싱 명확하게 판단 2가지.&quot;</strong> (실제로는 3가지 기준이 나열됨)</p>
+<ol>
+<li><strong>시장의 크기</strong> - 해당 상품 카테고리의 전체 시장 규모를 파악</li>
+<li><strong>탑플레이어 판매가 (탑5)</strong> - 해당 카테고리 상위 5개 판매자의 판매가격을 조사</li>
+<li><strong>적정원가 (1688)</strong> - 1688에서의 적정 매입 원가를 확인</li>
+</ol>
+<p>하단에 강조 텍스트: <strong>&quot;그때가서 샘플주문을 들어가는거야.&quot;</strong> &quot;이해 가요&quot;</p>
+<p>이 3가지를 모두 확인한 후에야 비로소 샘플 주문 단계에 진입하는 것이다. 시장 크기가 충분하고, 탑플레이어의 판매가가 적절하며, 1688에서의 원가가 수익을 낼 수 있는 수준인지를 먼저 확인해야 한다.</p>
+<div class="screenshot-container"><img src="images/segment_006.jpg" alt="상품소싱 판단 기준 3가지" loading="lazy"><div class="caption">상품소싱 판단 기준 3가지</div></div>
+<h3>8. 실제 쿠팡 검색: 시장 조사 실습</h3>
+<p>발표자는 실제로 쿠팡 사이트에 접속하여 시장 조사를 실습한다. 쿠팡 메인 페이지에서 &quot;겨울 금 세제대전 - 생필품 반값세일&quot; 배너가 보이고, 시계절 습기제거제, Snuggle(스너글) 섬유유연제 등의 상품이 진열되어 있다. &quot;오늘의 발견&quot; 코너에는 삼성 세탁기, 백설 밀가루 등이 보인다.</p>
+<p>하단 자막: &quot;들어가라고 해요&quot;</p>
+<p>발표자가 시청자들에게 직접 쿠팡에 들어가서 실습해보라고 권유하는 장면이다.</p>
+<div class="screenshot-container"><img src="images/segment_007.jpg" alt="쿠팡 메인 페이지 - 시장 조사 시작" loading="lazy"><div class="caption">쿠팡 메인 페이지 - 시장 조사 시작</div></div>
+<h3>9. 쿠팡 검색 결과 분석: 양말 카테고리</h3>
+<p>쿠팡에서 양말 관련 검색 결과를 보여준다. 정렬은 &quot;판매량순&quot;으로 되어 있으며, 다양한 양말 상품들이 나열되어 있다:</p>
+<ul>
+<li><strong>비아워워치스트 남녀공용 큰숫자 저소음 학생 수능시계</strong>: 57% 할인, 8,900원 (로켓배송 아님)</li>
+<li><strong>소웨이브 인체공학 신발깔창 발편한 폭신한 아치 쿠션 구름깔창</strong>: 65% 할인, 9,800원 (판매자로켓)</li>
+<li><strong>베이스알파에센셜 여성용 무지 중목 양말 10켤레</strong>: 8,990원 (로켓배송), 리뷰 36,705개</li>
+<li><strong>컴바이미 털빠짐없는 무입빅 수면양말 4P</strong>: 35% 할인, 8,980원 (판매자로켓), 리뷰 1,592개</li>
+</ul>
+<p>하단 자막: <strong>&quot;수면 양말도 네 켤레에 8900원&quot;</strong></p>
+<p>수면양말이 4켤레에 8,900원이라는 가격대를 보여주며, 이 정도 판매가에서 수익을 낼 수 있는지를 분석하는 과정이다.</p>
+<div class="screenshot-container"><img src="images/segment_008.jpg" alt="쿠팡 양말 카테고리 검색 결과" loading="lazy"><div class="caption">쿠팡 양말 카테고리 검색 결과</div></div>
+<h3>10. 쿠팡 양말 카테고리 심층 분석</h3>
+<p>양말 카테고리의 추가 검색 결과:</p>
+<ul>
+<li><strong>베이스알파에센셜 기모 스타킹 유발 2p</strong>: 50% 할인, 6,990원 (로켓배송), 리뷰 5,803개</li>
+<li><strong>브리즈 남성용 장목 등산양말, 랜덤 발송, 10개</strong>: 13,900원 (로켓배송), 리뷰 20,855개</li>
+<li><strong>유니프랜드 아동용 기모 보온 레깅스</strong>: 7,900원 (로켓배송)</li>
+<li><strong>유니프랜드 아동용 히트 바이로프트 원 9부 발열 실내복 상하세트</strong>: 37% 할인, 9,900원 (로켓배송)</li>
+</ul>
+<p>오른쪽 하단에는 <strong>에이블팩토리 아동용 EVA 학교 실내화</strong>: 23% 할인, 4,500원, 리뷰 37,570개가 보인다.</p>
+<p>카테고리 필터에는 전체, 로켓직구, 패션의류/잡화, 쿠팡수입, 생활용품 등이 있다. 브랜드로는 블랙아크워크웨어, 엘쓰, 무식이네, 아키클래식, 삭스토리, 코지라벨 등이 나열되어 있다.</p>
+<div class="screenshot-container"><img src="images/segment_009.jpg" alt="쿠팡 양말 카테고리 심층 분석" loading="lazy"><div class="caption">쿠팡 양말 카테고리 심층 분석</div></div>
+<h3>11. 패션잡화 계절 전략: 시즌상품 vs 사계절상품</h3>
+<p>발표자가 노트에 핵심 전략을 정리한다:</p>
+<p><strong>&quot;패션잡화 계절.&quot;</strong></p>
+<p><strong>&quot;시즌상품(폭발) vs 사계절상품(80개 효자)&quot;</strong></p>
+<ol>
+<li>깔창</li>
+<li>수면양말</li>
+<li>러닝벨트</li>
+</ol>
+<p>하단 자막: <strong>&quot;여러분들한테 한 달에&quot;</strong></p>
+<p>패션잡화 카테고리에서 <strong>시즌상품</strong>은 특정 계절에 폭발적으로 팔리는 상품이고, <strong>사계절상품</strong>은 연중 꾸준히 팔리는 상품이다. 발표자는 사계절상품 80개 정도를 효자 상품으로 운영하는 전략을 제시한다. 초보 셀러에게는 사계절상품이 더 안정적이라는 의미다.</p>
+<p>구체적 추천 아이템으로 깔창, 수면양말, 러닝벨트를 1~3번으로 제시한다.</p>
+<div class="screenshot-container"><img src="images/segment_010.jpg" alt="시즌상품 vs 사계절상품 전략" loading="lazy"><div class="caption">시즌상품 vs 사계절상품 전략</div></div>
+<h3>12. 추천 아이템 리스트 확장</h3>
+<p>추천 아이템 리스트가 확장된다:</p>
+<ol>
+<li>깔창</li>
+<li>중목양말</li>
+<li>수면양말</li>
+<li>러닝벨트</li>
+<li>등산양말</li>
+<li>여성 팬티 / 남성팬티 (아래 보이기 시작)</li>
+</ol>
+<p>하단 자막: <strong>&quot;팬티 안 입는 사람 있어요&quot;</strong></p>
+<p>발표자는 팬티처럼 누구나 반드시 필요한 생필품 성격의 상품이 사계절 내내 수요가 있다는 점을 강조한다. &quot;팬티 안 입는 사람 있어요?&quot;라는 반문으로, 수요가 절대 사라지지 않는 상품군의 중요성을 설명한다.</p>
+<div class="screenshot-container"><img src="images/segment_011.jpg" alt="추천 아이템 리스트 1~6" loading="lazy"><div class="caption">추천 아이템 리스트 1~6</div></div>
+<h3>13. 최종 추천 아이템 리스트 완성</h3>
+<p>최종 추천 아이템 리스트:</p>
+<ol>
+<li>깔창</li>
+<li>중목양말</li>
+<li>수면양말</li>
+<li>러닝벨트</li>
+<li>등산양말</li>
+</ol>
+<p>하단 자막: <strong>&quot;소싱을&quot;</strong></p>
+<p>이 5가지 아이템이 사계절 꾸준히 팔리는 패션잡화 카테고리의 핵심 아이템으로 정리된다.</p>
+<div class="screenshot-container"><img src="images/segment_012.jpg" alt="최종 추천 아이템 리스트" loading="lazy"><div class="caption">최종 추천 아이템 리스트</div></div>
+<h3>14. 추천 아이템 리스트 + 주방화까지</h3>
+<p>리스트가 더 확장된 최종본:</p>
+<ol>
+<li>깔창</li>
+<li>중목양말</li>
+<li>수면양말</li>
+<li>등산양말</li>
+<li>여성 팬티 / 남성팬티</li>
+<li>주방화</li>
+</ol>
+<p><strong>Good</strong></p>
+<p>하단 자막: <strong>&quot;저희는 이제 숙제를 내주는데&quot;</strong></p>
+<p>6번째 아이템으로 <strong>주방화</strong>(주방에서 신는 신발)가 추가되고, 전체 리스트에 &quot;Good&quot;이라는 평가가 붙는다. 발표자는 수강생들에게 이 아이템들을 직접 소싱해보는 숙제를 내준다고 언급한다.</p>
+<div class="screenshot-container"><img src="images/segment_013.jpg" alt="최종 추천 아이템 6개 + Good 평가" loading="lazy"><div class="caption">최종 추천 아이템 6개 + Good 평가</div></div>
+<h3>15. 실제 소싱 실습: 깔창 검색</h3>
+<p>쿠팡에서 &quot;깔창&quot;을 실제로 검색한 결과 화면이다. 검색 결과 36개 상품이 표시되며, 쿠팡 랭킹순으로 정렬되어 있다.</p>
+<p>상위 노출 상품들:</p>
+<ul>
+<li><strong>광고</strong>: 힐링솔 아치플러스 족저근막 기능성 메모리폼 쿠션 신발 특허 깔창 (판매자로켓, 내일 도착 보장, 56% 할인, 리뷰 844개)</li>
+<li><strong>1위</strong>: 정형외과 추천 기능성 아치 깔창 남자/여성 깔창 평발 족저근막염 깔창 - 쿠폰할인 79% → <strong>5,800원</strong> (1개당 2,900원)</li>
+<li><strong>2위</strong>: 젠포 1+1 발편한 기능성 깔창, 270~275mm, 2세트, 블랙 - 67% 할인 → <strong>5,800원</strong> (1개당 2,900원)</li>
+<li><strong>3위</strong>: 풋캠프 메모리폼 군화 군대 군인 깔창 - 50% 할인 → <strong>15,700원</strong></li>
+</ul>
+<p>하단 자막: <strong>&quot;저가로 해 가지고 수요 가져가고&quot;</strong></p>
+<p>연관검색어로 족저근막엽깔창, 키높이깔창, 깔창, 남성신발깔창, 기능성깔창, 신발깔창, 여성깔창, 쿠션깔창, 메모리폼깔창, 여성신발깔창 등이 있다. 왼쪽 필터에는 로켓, R.LUX만 보기, 로켓배송만 보기, 로켓직구만 보기, 예비뉴 등의 옵션과 카테고리(전체, 로켓직구, 패션의류/잡화, 쿠팡수입, 생활용품), 브랜드(블랙아크워크웨어, 엘쓰, 무식이네 등), 상품 상태(새 상품, 박스 훼손, 재포장, 반품, 중고) 필터가 있다.</p>
+<div class="screenshot-container"><img src="images/segment_014.jpg" alt="쿠팡 &quot;깔창&quot; 검색 결과" loading="lazy"><div class="caption">쿠팡 &quot;깔창&quot; 검색 결과</div></div>
+<h3>16. 깔창 상위 판매자 가격 분석</h3>
+<p>깔창 검색 결과를 더 자세히 분석한다:</p>
+<ul>
+<li><strong>1위</strong>: 정형외과 추천 기능성 아치 깔창 - 할인 4일 남음, 39,000원 → 61% 할인 <strong>14,940원</strong> (판매자로켓, 무료배송, 리뷰 576개)</li>
+<li><strong>2위</strong>: 깔창 남자 여성 족저근 폭신한 신발깔창, 2개, 블랙 - 쿠폰할인 09:33:22, 26,000원 → 79% 할인 <strong>5,800원</strong> (1개당 2,900원, 판매자로켓, 리뷰 수 보임)</li>
+<li><strong>3위</strong>: 젠포 1+1 발편한 기능성 깔창 - 17,000원 → 67% 할인 <strong>5,800원</strong> (1개당 2,900원, 판매자로켓, 리뷰 5,850개)</li>
+<li>풋캠프 메모리폼 군화 군대 군인 깔창 - 32,000원 → 50% 할인 <strong>15,700원</strong> (판매자로켓, 리뷰 801개)</li>
+</ul>
+<p>하단 자막: <strong>&quot;1,2등이 5000원 대고&quot;</strong></p>
+<p>핵심 포인트: 깔창 카테고리에서 1, 2등 판매자의 실판매가가 5,000원대라는 것을 확인. 이는 탑플레이어의 판매가를 파악하는 실습 과정이다.</p>
+<div class="screenshot-container"><img src="images/segment_015.jpg" alt="깔창 상위 판매자 가격 분석" loading="lazy"><div class="caption">깔창 상위 판매자 가격 분석</div></div>
+<h3>17. 깔창 분석 결론: 최저가 수렴 → 패스!</h3>
+<p>분석 결과가 노트에 정리된다:</p>
+<ol>
+<li><strong>깔창 – 최저가수렴 빠르게 가고있음 패스!</strong> (빨간색으로 강조)</li>
+<li>중목양말 –</li>
+<li>수면양말</li>
+<li>등산양말</li>
+<li>여성 팬티 / 남성팬티</li>
+<li>주방화</li>
+</ol>
+<p>하단 자막: <strong>&quot;다음 중목양말 갑시다&quot;</strong></p>
+<p>깔창 카테고리는 상위 판매자들이 5,000원대로 <strong>최저가 수렴</strong>이 빠르게 진행되고 있어, 후발 주자가 진입하여 수익을 내기 어렵다고 판단하여 <strong>패스</strong>한다. 이것이 바로 &quot;탑플레이어 판매가&quot;를 확인하는 이유다. 상위 판매자들이 이미 저가로 경쟁하고 있다면, 그 시장에 진입해도 마진을 확보하기 어렵다.</p>
+<div class="screenshot-container"><img src="images/segment_016.jpg" alt="깔창 분석 결론 - 패스" loading="lazy"><div class="caption">깔창 분석 결론 - 패스</div></div>
+<h3>18. 중목양말 시장 조사</h3>
+<p>쿠팡에서 &quot;중목양말&quot;을 검색한 결과:</p>
+<p>연관검색어: 여성중목양말, 양말, 여성양말, 남성양말, 남자양말, 중목양말, 발목양말, 여자양말, 여성양말중목</p>
+<p>상위 판매 상품들:</p>
+<ul>
+<li><strong>1위</strong> (20켤레): 라온커넥션 국산 남자 정장 양말 장목 8켤레 - 26% 할인 <strong>15,400원</strong> (판매자로켓)</li>
+<li><strong>AD 광고</strong>: 바디인솔 프리미엄 무지 중목 양말 20 켤레 - 50% 할인 <strong>9,900원</strong> (판매자로켓, 리뷰 3,327개)</li>
+<li><strong>2위</strong>: 더베이직 남성용 리버 중목 양말 12켤레 - 21% 할인 <strong>11,850원</strong> (판매자로켓, 리뷰 31,189개)</li>
+<li><strong>3위</strong> (BEST AWARDS): 두발로 남성용 프리미엄 무지 중목 양말 10켤 - 31% 할인 <strong>12,900원</strong> (로켓배송, 리뷰 28,635개)</li>
+</ul>
+<p>카테고리 필터: 전체, 패선의류/잡화, 쿠팡수입, 로켓직구, 스포츠/레저</p>
+<p>중목양말 시장은 깔창과 달리 판매가가 9,900원~15,400원 수준으로, 최저가 수렴이 덜 진행된 상태로 보인다.</p>
+<div class="screenshot-container"><img src="images/segment_017.jpg" alt="쿠팡 &quot;중목양말&quot; 검색 결과" loading="lazy"><div class="caption">쿠팡 &quot;중목양말&quot; 검색 결과</div></div>
+<h3>19. 쿠팡브랜드 양말과 카테고리 진입 전략</h3>
+<p>노트에 새로운 분석 내용이 추가된다:</p>
+<p><strong>6. 주방화</strong></p>
+<p><strong>Good</strong></p>
+<p>그리고 새로운 페이지에:</p>
+<p><strong>&quot;쿠팡브랜드 양말 10켤레 9000원.&quot;</strong></p>
+<p>하단 자막: <strong>&quot;이 카테고리에 들어갈 거면은&quot;</strong></p>
+<p>쿠팡 자체 브랜드(쿠팡브랜드)가 양말 10켤레를 9,000원에 판매하고 있다는 점을 주목한다. 이 카테고리에 진입하려면 쿠팡브랜드와 경쟁해야 하므로, 원가 경쟁력이 매우 중요하다는 것을 시사한다.</p>
+<div class="screenshot-container"><img src="images/segment_018.jpg" alt="쿠팡브랜드 양말 10켤레 9000원 분석" loading="lazy"><div class="caption">쿠팡브랜드 양말 10켤레 9000원 분석</div></div>
+<h3>20. 마진 분석 스프레드시트: 수익 구조 분석</h3>
+<p>핵심적인 마진 분석 스프레드시트가 화면에 등장한다. &quot;마진조사&quot; 시트에 다음과 같은 데이터가 정리되어 있다:</p>
+<p><strong>컬럼 구성</strong>: 판매가 | 수익률 | 순수익 | 중국원가 | 매입가(280) | 그로스비용 | 수수료(11.55%) | 부가세</p>
+<p><strong>행 3</strong>: ₩9,000 | 94% | ₩2,619 | ¥10.00 | ₩2,800 | ₩2,250 | ₩1,040 | ₩291</p>
+<p><strong>행 4</strong>: ₩12,000 | 114% | ₩3,829 | ¥12.00 | ₩3,360 | ₩3,000 | ₩1,386 | ₩425</p>
+<p><strong>행 5</strong> (주황색 강조): ₩11,500 | 228% | ₩4,788 | ¥7.50 | ₩2,100 | ₩2,250 | ₩1,328 | ₩1,034</p>
+<p><strong>행 6</strong> (주황색 강조): ₩11,500 | 387% | ₩7,037 | ¥6.50 | ₩1,820 | ₩250 | ₩1,328 | ₩1,065</p>
+<p>수식 표시줄에 <strong>=D3/F3</strong>이 보이며, 이는 수익률 = 순수익 / 매입가로 계산됨을 보여준다.</p>
+<p>핵심 분석:</p>
+<ul>
+<li>판매가 9,000원일 때 순수익은 2,619원 (수익률 94%)</li>
+<li>판매가 12,000원일 때 순수익은 3,829원 (수익률 114%)</li>
+<li>중국원가가 7.5위안(약 2,100원)이면 11,500원 판매 시 순수익 4,788원 (수익률 228%)</li>
+<li>중국원가가 6.5위안(약 1,820원)이면 11,500원 판매 시 순수익 7,037원 (수익률 387%)</li>
+</ul>
+<p>매입가는 환율 280원 기준으로 계산되며, 수수료는 판매가의 11.55%가 적용된다.</p>
+<div class="screenshot-container"><img src="images/segment_019.jpg" alt="마진 분석 스프레드시트" loading="lazy"><div class="caption">마진 분석 스프레드시트</div></div>
+<h3>21. 중목양말 원가 분석과 수익성 검증</h3>
+<p>노트에 구체적인 원가 분석 내용이 정리된다:</p>
+<p><strong>&quot;쿠팡브랜드 양말 10켤레 9000원.&quot;</strong></p>
+<p><strong>&quot;나도 이거팔고싶어?&quot;</strong></p>
+<p><strong>&quot;원가.&quot;</strong></p>
+<p><strong>&quot;15위안 1300원&quot;</strong></p>
+<p><strong>&quot;1300원? 남기라고? 장난해?&quot;</strong></p>
+<p>하단 자막: <strong>&quot;벌자고 이 사업 시작한 줄 알아?&quot;</strong></p>
+<p>쿠팡브랜드와 동일한 양말을 1688에서 소싱하면 15위안(한화 약 1,300원)이 원가인데, 이 원가로 9,000원에 판매하면 수수료, 배송비, 부가세 등을 제외하면 남는 금액이 매우 적다. &quot;1300원 남기라고? 장난해?&quot;라는 반응으로, 쿠팡브랜드 가격에 맞춰 판매하면 수익성이 없다는 점을 보여준다.</p>
+<div class="screenshot-container"><img src="images/segment_020.jpg" alt="중목양말 원가 분석 - 15위안 1300원" loading="lazy"><div class="caption">중목양말 원가 분석 - 15위안 1300원</div></div>
+<h3>22. 중목양말 1688 소싱 전략: 더 저렴한 원가 찾기</h3>
+<p>더 구체적인 소싱 전략이 제시된다:</p>
+<p><strong>&quot;베이스알파 / 두발로 / 더베이직&quot;</strong> (쿠팡 상위 브랜드명)</p>
+<p><strong>&quot;쿠팡브랜드 양말 10켤레 9000원.&quot;</strong></p>
+<p><strong>&quot;개당 1.5위안짜리 양말 1688에서 소싱하면 ㄷ&quot;</strong></p>
+<p><strong>&quot;나도 이거팔고싶어?&quot;</strong></p>
+<p><strong>&quot;원가.&quot;</strong></p>
+<p><strong>&quot;15위안 1300원 * 100개 = 13만원&quot;</strong> (빨간색)</p>
+<p>핵심: 개당 1.5위안짜리 양말을 1688에서 소싱하면, 100개(10켤레 × 10세트) 기준 초기 투자금이 13만원이다. 상위 브랜드인 베이스알파, 두발로, 더베이직의 가격과 비교하여 경쟁력을 분석한다.</p>
+<div class="screenshot-container"><img src="images/segment_021.jpg" alt="중목양말 소싱 전략 - 개당 1.5위안" loading="lazy"><div class="caption">중목양말 소싱 전략 - 개당 1.5위안</div></div>
+<h3>23. 1688 실제 검색: 여성 중목양말(女式中筒袜)</h3>
+<p>1688 사이트에서 실제로 &quot;女式中筒袜&quot;(여성 중목양말)을 검색한 화면이다. 다양한 중국 양말 공장들의 상품이 나열된다:</p>
+<ul>
+<li>秋季新款灰色袜子女中(가을 신상 회색 여성 중목양말): <strong>¥1.29</strong>, 연간 매출 10만+</li>
+<li>秋冬波点袜子女中筒棉(가을겨울 도트 여성 중목양말): <strong>¥1.15</strong>, 10만+</li>
+<li>袜子女纯棉双针双路美(여성 순면 양말): <strong>¥5.3</strong>, 전국3100+</li>
+<li>¥12.80 → <strong>¥12.50</strong> (1~99개 기준)</li>
+<li>ins袜子女中筒袜秋冬款(ins 여성 중목양말): <strong>¥3</strong>, W585.59</li>
+<li>기타 다수 상품들</li>
+</ul>
+<p>하단 자막: <strong>&quot;개당 1.5위안&quot;</strong></p>
+<p>핵심 발견: 1688에서 여성 중목양말을 개당 <strong>1.5위안</strong>(한화 약 300원 수준)에 소싱할 수 있다는 것을 실제 검색으로 증명한다. 이 가격이면 쿠팡에서 충분한 마진을 확보할 수 있다.</p>
+<div class="screenshot-container"><img src="images/segment_022.jpg" alt="1688 여성 중목양말 검색 결과" loading="lazy"><div class="caption">1688 여성 중목양말 검색 결과</div></div>
+<h3>24. 1688 심층 검색: 더 저렴한 양말 공급처</h3>
+<p>1688 검색 결과를 더 스크롤하여 추가 공급처를 확인한다:</p>
+<ul>
+<li>Renaissance 秋冬新款(가을겨울 신상): <strong>¥7.5</strong>, 전국2800+, W1,463.99</li>
+<li>袜子女秋冬中筒袜女日系纯(일본식 여성 중목양말): <strong>¥0.85</strong>, 10만+, W165.92</li>
+<li>羊毛袜子女秋冬季中筒(양모 여성 중목양말): <strong>¥4.2</strong>, 전국10만+, W819.83</li>
+<li>瑜伽袜子女中筒袜春秋健身(요가 여성 중목양말): <strong>¥3.2</strong>, 10만+, W624.63</li>
+<li>白色袜子女中筒袜夏季薄款(흰색 여성 중목양말): <strong>¥1.05</strong>, 10만+, W204.96</li>
+</ul>
+<p>하단 자막: <strong>&quot;1.05 얼마나 좋아&quot;</strong></p>
+<p>특히 주목할 점은 <strong>¥1.05</strong>(한화 약 205원)짜리 양말이 존재한다는 것이다. 연간 판매량이 10만 개 이상인 검증된 공장에서 이 가격에 공급하고 있다. &quot;1.05 얼마나 좋아&quot;라는 감탄과 함께, 이 정도 원가라면 상당한 수익률을 기대할 수 있음을 보여준다.</p>
+<div class="screenshot-container"><img src="images/segment_023.jpg" alt="1688 양말 ¥1.05 최저가 발견" loading="lazy"><div class="caption">1688 양말 ¥1.05 최저가 발견</div></div>
+<h3>25. 1688 샘플 주문 프로세스 정리</h3>
+<p>노트에 구체적인 샘플 주문 프로세스가 정리된다:</p>
+<p>(검은 배경 강조 텍스트)</p>
+<p><strong>&quot;중목양말 개당 1.5위안짜리&quot;</strong></p>
+<p><strong>&quot;1688에서 5개공장 샘플주문해&quot;</strong></p>
+<p><strong>&quot;1주일&quot;</strong></p>
+<p><strong>15위안 1300원 * 100개 = 13만원</strong></p>
+<p><strong>1300원? 남기라고? 장난해?</strong></p>
+<p><strong>고작? 겨우?</strong></p>
+<p>하단 자막: <strong>&quot;이거 온 날 쿠팡에서&quot;</strong></p>
+<p>샘플 주문 프로세스:</p>
+<ol>
+<li>중목양말 개당 1.5위안짜리를 찾는다</li>
+<li>1688에서 <strong>5개 공장</strong>에 동시에 샘플을 주문한다</li>
+<li>약 <strong>1주일</strong> 후 샘플이 도착한다</li>
+<li>샘플 도착 후 품질을 비교하여 최적의 공장을 선정한다</li>
+<li>그 후 쿠팡에서 판매를 시작한다</li>
+</ol>
+<p>13만원이라는 초기 투자금(100개 기준)이 적어 보일 수 있지만, 이것은 테스트 물량이며 잘 팔리면 대량 발주로 전환한다.</p>
+<div class="screenshot-container"><img src="images/segment_024.jpg" alt="1688 5개 공장 샘플 주문 프로세스" loading="lazy"><div class="caption">1688 5개 공장 샘플 주문 프로세스</div></div>
+<h3>26. 전체 아이템 분석 결과 정리</h3>
+<p>6개 추천 아이템에 대한 분석 결과가 최종 정리된다:</p>
+<ol>
+<li><strong>깔창 – 최저가수렴 빠르게 가고있음 패스!</strong> (빨간색)</li>
+<li><strong>중목양말 – 1.5위안 이하 공장 5군데 샘플 고</strong> (검은색)</li>
+<li>수면양말 –</li>
+<li>등산양말</li>
+<li>여성 팬티 / 남성팬티</li>
+<li>주방화</li>
+</ol>
+<p><strong>Good</strong></p>
+<p>깔창은 최저가 수렴으로 패스, 중목양말은 1688에서 1.5위안 이하 공장 5군데를 찾아 샘플을 주문하는 것으로 결론. 나머지 아이템(수면양말, 등산양말, 여성/남성 팬티, 주방화)은 동일한 방식으로 분석을 진행해야 한다.</p>
+<div class="screenshot-container"><img src="images/segment_025.jpg" alt="전체 아이템 분석 결과" loading="lazy"><div class="caption">전체 아이템 분석 결과</div></div>
+<h3>27. 판매 수량 현실적 전망</h3>
+<p>노트에 현실적인 판매 수량 전망이 적혀 있다:</p>
+<p><strong>&quot;제가 여러분 하루 500개 팔라는 말씀이 아니야&quot;</strong></p>
+<p><strong>&quot;하루에 50~80개&quot;</strong></p>
+<p><strong>&quot;진짜 잘해버리면 하루 200개 이상 팔리기도해.&quot;</strong></p>
+<p><strong>싫어하는말</strong></p>
+<ol>
+<li><strong>도매꾹소싱해라 – 쓰레기</strong></li>
+<li><strong>대형 카테고리를 갈라 그래</strong> (하단 자막과 겹침)</li>
+</ol>
+<p>하단 자막: <strong>&quot;대형 카테고리를 갈라 그래&quot;</strong></p>
+<p>현실적인 판매 목표:</p>
+<ul>
+<li>일반적으로 <strong>하루 50~80개</strong> 판매가 현실적 목표</li>
+<li>잘 되면 <strong>하루 200개 이상</strong> 팔리기도 함</li>
+<li>하루 500개는 비현실적 기대이므로 그런 목표를 세울 필요 없음</li>
+</ul>
+<p>발표자가 싫어하는 조언들:</p>
+<ol>
+<li>&quot;도매꾹에서 소싱해라&quot; → <strong>쓰레기</strong>라고 일축 (도매꾹은 중간 마진이 붙어 원가가 높아 수익성이 떨어짐)</li>
+<li>&quot;대형 카테고리를 공략해라&quot; → 초보자에게 대형 카테고리 진입은 위험하다는 의미</li>
+</ol>
+<div class="screenshot-container"><img src="images/segment_026.jpg" alt="판매 수량 전망과 싫어하는 조언" loading="lazy"><div class="caption">판매 수량 전망과 싫어하는 조언</div></div>
+<h3>28. 1688에서 주방화 소싱: 실제 검색</h3>
+<p>1688에서 주방화(厨房鞋/雨鞋)를 검색한 결과 화면이다. 화면 왼쪽은 1688 검색 결과, 오른쪽에는 쿠팡 상품이 동시에 보인다.</p>
+<p>1688 검색 결과 (주방화/남성 방수 신발 관련):</p>
+<ul>
+<li>男士圆头冬闲雨靴塑料低筒防水鞋(남성 방수 신발): <strong>¥7.00</strong> (W1,447.78), 연간 매출 1.3K+</li>
+<li>牛筋底雨鞋男士劳保雨鞋(남성 노동 보호 장화): <strong>¥7.07</strong> (W1,462.25), 연간 매출 1.9K+</li>
+<li>双回男士雨鞋春秋低帮套脚防水鞋(남성 레인부츠): <strong>¥7.20</strong> (W1,489.14), 연간 매출 5.5K+</li>
+<li>四季雨鞋男加厚工地水(사계절 남성 장화): <strong>¥8.50</strong> (W1,758.01), 연간 매출 81K+</li>
+</ul>
+<p>오른쪽 쿠팡 화면:</p>
+<ul>
+<li>삭피엔스 여성용 밴드조인 없이 발이 편한 무압박 양말 8켤레 세트: 54% 할인 → <strong>12,650원</strong> (로켓배송)</li>
+<li>캘빈클라인 언더웨어 CK 남자 팬티 속옷 드로즈 사각 면 3장 세트 NU2664: 25% 할인 → <strong>38,800원</strong></li>
+</ul>
+<p>하단 자막: <strong>&quot;이거 이거 딱 봐도 주방화처럼&quot;</strong></p>
+<p>1688에서 주방화를 약 7~8.5위안(한화 1,400~1,750원)에 소싱할 수 있음을 보여준다. 주방에서 신을 수 있는 방수 기능의 신발을 찾고 있다.</p>
+<div class="screenshot-container"><img src="images/segment_027.jpg" alt="1688 주방화 검색 결과" loading="lazy"><div class="caption">1688 주방화 검색 결과</div></div>
+<h3>29. 주방화 추가 검색과 1688 고급 필터</h3>
+<p>1688에서 주방화를 추가로 검색한 결과. 상단 필터에 &quot;드랍쉬핑 지원&quot;, &quot;무료 배송 지원(드랍쉬핑 배송 무료)&quot;, &quot;인증공장&quot;, &quot;종합 체험 점수&quot;, &quot;24시간 내 픽업&quot;, &quot;48시간 내 픽업&quot; 등의 필터 옵션이 보인다.</p>
+<p>추가 상품들:</p>
+<ul>
+<li>新款雨鞋短筒男款时尚耐磨赶海(남성 레인부츠): <strong>¥17.90</strong> (W3,702.17), 연간 매출 131</li>
+<li>2025新款男士雨鞋防滑防水短筒(2025 신상 남성 방수 신발): <strong>¥13.00</strong> (W2,688.73), 연간 매출 974</li>
+<li>双回男士雨鞋春秋鞋低帮套脚防水鞋: <strong>¥7.20</strong> (W1,489.14), 연간 매출 5.5K+</li>
+<li>沙滩鞋男女潮水浮潜儿童沙水(비치슈즈): <strong>¥4.50</strong> (W930.71), 연간 매출 81K+</li>
+</ul>
+<p>오른쪽 쿠팡 화면에도 동일하게 삭피엔스 양말(12,650원)과 캘빈클라인 팬티(38,800원)가 보인다.</p>
+<p>하단 자막: <strong>&quot;안 나올 거 같아&quot;</strong></p>
+<p>일부 상품은 원하는 스타일의 주방화와 정확히 매칭되지 않을 수 있다는 점도 솔직하게 인정한다. 1688 소싱에서 항상 원하는 상품을 바로 찾을 수 있는 것은 아니며, 검색어를 바꿔가며 찾아야 한다.</p>
+<div class="screenshot-container"><img src="images/segment_028.jpg" alt="1688 주방화 추가 검색" loading="lazy"><div class="caption">1688 주방화 추가 검색</div></div>
+<h3>30. 마무리: 소싱의 핵심 원칙 정리</h3>
+<p>영상의 마무리 장면으로, 노트에 최종 정리가 되어 있다:</p>
+<p><strong>&quot;이런방식 소싱해나가셔야.&quot;</strong></p>
+<p><strong>&quot;소싱단계 명확하게 판단&quot;</strong></p>
+<p><strong>&quot;오늘 이야기 유익.&quot;</strong></p>
+<p>하단 자막: <strong>&quot;다음에 더 유익한 이야기로&quot;</strong></p>
+<p>발표자는 이 영상에서 설명한 방식대로 소싱을 해나가야 한다고 최종 정리한다. 소싱 단계에서 명확하게 판단하는 것이 가장 중요하며, 오늘 이야기가 유익했기를 바라고 다음에 더 유익한 이야기로 돌아오겠다고 마무리한다.</p>
+<div class="screenshot-container"><img src="images/segment_029.jpg" alt="마무리 - 소싱 핵심 원칙 정리" loading="lazy"><div class="caption">마무리 - 소싱 핵심 원칙 정리</div></div>
+<hr>
+<h2>주요 인용 및 발언</h2>
+<blockquote><p>&quot;비싸게 파는데 더 잘팔린다? 광고비는 절대 공개 안함&quot;</p></blockquote>
+<blockquote><p>&quot;저희는 죽어도 1688 도매꾹&quot;</p></blockquote>
+<blockquote><p>&quot;왜 두 배 비싼 데에서 사서&quot; (국내 도매 사이트의 높은 원가를 비판)</p></blockquote>
+<blockquote><p>&quot;그럼 론칭 못 하는 거예요&quot; (샘플 검증 없이 본발주하면 안 된다는 경고)</p></blockquote>
+<blockquote><p>&quot;어렵지 않게 기계적으로 할 수 있어&quot; (상품소싱은 체계적 프로세스)</p></blockquote>
+<blockquote><p>&quot;그때가서 샘플주문을 들어가는거야&quot; (3가지 기준 확인 후 샘플 주문)</p></blockquote>
+<blockquote><p>&quot;수면 양말도 네 켤레에 8900원&quot;</p></blockquote>
+<blockquote><p>&quot;팬티 안 입는 사람 있어요&quot; (사계절 수요가 있는 생필품의 중요성)</p></blockquote>
+<blockquote><p>&quot;1,2등이 5000원 대고&quot; (깔창 카테고리의 최저가 수렴 현상)</p></blockquote>
+<blockquote><p>&quot;1300원 남기라고? 장난해?&quot; (쿠팡브랜드 가격에 맞추면 수익 없음)</p></blockquote>
+<blockquote><p>&quot;1.05 얼마나 좋아&quot; (1688에서 발견한 초저가 양말)</p></blockquote>
+<blockquote><p>&quot;하루에 50~80개, 진짜 잘해버리면 하루 200개 이상 팔리기도해&quot;</p></blockquote>
+<blockquote><p>&quot;도매꾹소싱해라 – 쓰레기&quot; (도매꾹 소싱에 대한 강한 부정)</p></blockquote>
+<blockquote><p>&quot;이런방식 소싱해나가셔야. 소싱단계 명확하게 판단&quot;</p></blockquote>
+<hr>
+<h2>결론 및 시사점</h2>
+<h3>핵심 메시지</h3>
+<p>이 영상의 핵심 메시지는 <strong>쿠팡 상품소싱은 감이 아닌 체계적 프로세스</strong>라는 것이다. 유료 강의를 듣지 않아도, 정해진 기준과 절차에 따라 기계적으로 소싱하면 누구나 성공할 수 있다는 것이 발표자의 주장이다.</p>
+<h3>소싱 프로세스 요약</h3>
+<ol>
+<li><strong>&quot;뭐 팔지?&quot; 결정</strong> → 패션잡화 중 사계절 상품 위주로 선정</li>
+<li><strong>시장의 크기 확인</strong> → 쿠팡 검색으로 카테고리 규모 파악</li>
+<li><strong>탑플레이어 판매가 확인(탑5)</strong> → 최저가 수렴 여부 판단 (수렴 중이면 패스)</li>
+<li><strong>적정원가 확인(1688)</strong> → 1688에서 원가를 확인하고 마진 스프레드시트로 수익성 검증</li>
+<li><strong>1688 샘플 주문</strong> → 5개 공장에 동시 주문, 1주일 대기</li>
+<li><strong>샘플 검증 → 본발주 or 상폐</strong> → 품질 확인 후 진행 여부 결정</li>
+</ol>
+<h3>실용적 시사점</h3>
+<ul>
+<li>1688 직접 소싱이 원가 경쟁력의 핵심이며, 국내 도매 사이트(도매꾹 등)는 이미 마진이 붙어 있어 비추천</li>
+<li>쿠팡브랜드가 존재하는 카테고리에서는 그보다 더 저렴한 원가를 확보해야 경쟁 가능</li>
+<li>최저가 수렴이 빠르게 진행 중인 카테고리(예: 깔창)는 진입 자체를 피해야 함</li>
+<li>마진 분석 스프레드시트를 활용하여 판매가, 원가, 수수료(11.55%), 부가세, 그로스비용 등을 사전에 정밀 계산해야 함</li>
+<li>초기 투자금이 크지 않아도(100개 기준 13만원 수준) 테스트 판매가 가능하며, 검증 후 확장하는 전략이 리스크를 줄임</li>
+<li>하루 50~80개 판매가 현실적 목표이며, 잘 되면 200개 이상도 가능</li>
+</ul>
+
+        <div class="footer">
+            Generated by VidDigest
+        </div>
+    </div>
+    <div class="lightbox" id="lightbox" onclick="this.classList.remove('active')">
+        <img id="lightbox-img" src="" alt="">
+    </div>
+    <script>
+        document.querySelectorAll('.screenshot-container img').forEach(function(img) {
+            img.addEventListener('click', function() {
+                var lb = document.getElementById('lightbox');
+                document.getElementById('lightbox-img').src = this.src;
+                lb.classList.add('active');
+            });
+        });
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') document.getElementById('lightbox').classList.remove('active');
+        });
+    </script>
+</body>
+</html>
