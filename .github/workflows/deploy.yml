@@ -3,7 +3,14 @@ name: Deploy to Cloudflare Pages
 on:
   push:
     branches: [main]
+    paths:
+      - public/**
+      - .github/workflows/deploy.yml
   workflow_dispatch:
+
+concurrency:
+  group: cloudflare-pages
+  cancel-in-progress: true
 
 jobs:
   deploy:
@@ -14,16 +21,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - name: Publish to Cloudflare Pages
+        uses: cloudflare/pages-action@v1
         with:
-          node-version: '20'
-
-      - name: Install Wrangler
-        run: npm install -g wrangler@3
-
-      - name: Deploy to Cloudflare Pages
-        run: npx wrangler pages deploy public --project-name=viddigest-blog
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: viddigest-blog
+          directory: public
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+          branch: main
