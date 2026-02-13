@@ -1,7 +1,7 @@
 ;(function () {
   'use strict'
 
-  var PAGE_SIZE = 10
+  var PAGE_SIZE = 5
 
   // --------
   // Lightbox
