@@ -53,12 +53,182 @@
     }
   }
 
+  function cardText(anchor, selector) {
+    var el = anchor && anchor.querySelector ? anchor.querySelector(selector) : null
+    return el ? (el.textContent || '').trim() : ''
+  }
+
+  function cardMeta(anchor) {
+    var spans = Array.prototype.slice
+      .call(anchor.querySelectorAll('.post-meta span'))
+      .map(function (span) {
+        return (span.textContent || '').trim()
+      })
+      .filter(Boolean)
+
+    return {
+      category:
+        cardText(anchor, '.post-category-badge') ||
+        anchor.getAttribute('data-category') ||
+        '기타',
+      reading:
+        spans.find(function (text) {
+          return /분 읽기/.test(text)
+        }) || '',
+      date:
+        anchor.getAttribute('data-date') ||
+        spans
+          .slice()
+          .reverse()
+          .find(Boolean) ||
+        '',
+    }
+  }
+
+  function markdownSourceHref(href) {
+    if (!href) return '#'
+    var normalized = href.replace(/\/+$/, '')
+    var match = normalized.match(/\/md\/([^/]+)$/)
+    if (!match) return href
+    return normalized.replace(/\/md\/([^/]+)$/, '/md/posts/$1.md')
+  }
+
+  function createResourceCard(anchor) {
+    var meta = cardMeta(anchor)
+    var title = anchor.getAttribute('data-title') || cardText(anchor, '.post-title')
+    var excerpt =
+      anchor.getAttribute('data-excerpt') || cardText(anchor, '.post-excerpt')
+    var href = anchor.getAttribute('href') || anchor.href || '#'
+
+    var article = document.createElement('article')
+    article.className = 'resource-card'
+
+    var body = document.createElement('div')
+    body.className = 'resource-body'
+
+    var eyebrow = document.createElement('div')
+    eyebrow.className = 'resource-eyebrow'
+    eyebrow.textContent = 'MD'
+
+    var heading = document.createElement('h3')
+    heading.className = 'resource-title'
+
+    var titleLink = document.createElement('a')
+    titleLink.href = href
+    titleLink.textContent = title
+    heading.appendChild(titleLink)
+
+    var excerptEl = document.createElement('p')
+    excerptEl.className = 'resource-excerpt'
+    excerptEl.textContent =
+      excerpt || 'Claude와 Codex를 이용해 앱에서 대화형으로 다듬은 실행 문서입니다.'
+
+    var metaEl = document.createElement('div')
+    metaEl.className = 'resource-meta'
+    ;[meta.category, meta.reading, meta.date].filter(Boolean).forEach(function (item) {
+      var span = document.createElement('span')
+      span.textContent = item
+      metaEl.appendChild(span)
+    })
+
+    body.appendChild(eyebrow)
+    body.appendChild(heading)
+    body.appendChild(excerptEl)
+    body.appendChild(metaEl)
+
+    var actions = document.createElement('div')
+    actions.className = 'resource-actions'
+
+    var openLink = document.createElement('a')
+    openLink.className = 'resource-link'
+    openLink.href = href
+    openLink.textContent = '문서 보기'
+
+    var sourceLink = document.createElement('a')
+    sourceLink.className = 'resource-link resource-link-secondary'
+    sourceLink.href = markdownSourceHref(href)
+    sourceLink.textContent = '.md 파일'
+
+    actions.appendChild(openLink)
+    actions.appendChild(sourceLink)
+
+    article.appendChild(body)
+    article.appendChild(actions)
+    return article
+  }
+
+  function syncHomeCounts() {
+    var blogCountEl = document.getElementById('home-blog-count')
+    var mdCountEl = document.getElementById('home-md-count')
+    var blogCount = document.querySelectorAll('#post-list .post-card').length
+    var mdCount = document.querySelectorAll(
+      '#home-md-list .resource-card, #md-resource-list .resource-card'
+    ).length
+
+    if (blogCountEl) blogCountEl.textContent = String(blogCount)
+    if (mdCountEl) mdCountEl.textContent = String(mdCount)
+  }
+
+  function organizeLegacyHomeSections() {
+    var homeMdList = document.getElementById('home-md-list')
+    var postListEl = document.getElementById('post-list')
+    if (!homeMdList || !postListEl) return
+    if (homeMdList.querySelector('.resource-card')) {
+      syncHomeCounts()
+      return
+    }
+
+    var legacyMdCards = Array.prototype.slice
+      .call(postListEl.querySelectorAll('.post-card'))
+      .filter(function (card) {
+        var href = card.getAttribute('href') || card.href || ''
+        return /\/md\//.test(href)
+      })
+
+    if (legacyMdCards.length === 0) {
+      syncHomeCounts()
+      return
+    }
+
+    homeMdList.innerHTML = ''
+    legacyMdCards.slice(0, 4).forEach(function (card) {
+      homeMdList.appendChild(createResourceCard(card))
+    })
+
+    legacyMdCards.forEach(function (card) {
+      if (card.parentNode) card.parentNode.removeChild(card)
+    })
+
+    syncHomeCounts()
+  }
+
+  function organizeLegacyMdList() {
+    var resourceList = document.getElementById('md-resource-list')
+    if (!resourceList || resourceList.querySelector('.resource-card')) return
+
+    var legacyCards = Array.prototype.slice.call(
+      resourceList.querySelectorAll('.post-card')
+    )
+    if (legacyCards.length === 0) return
+
+    var fragment = document.createDocumentFragment()
+    legacyCards.forEach(function (card) {
+      fragment.appendChild(createResourceCard(card))
+    })
+    resourceList.innerHTML = ''
+    resourceList.appendChild(fragment)
+    syncHomeCounts()
+  }
+
+  organizeLegacyHomeSections()
+  organizeLegacyMdList()
+
   // ----------------------
   // Index: category + paging
   // ----------------------
-  var postList = document.querySelector('.post-list')
+  var postList = document.querySelector('#post-list')
   var allCards = Array.prototype.slice.call(
-    document.querySelectorAll('.post-card')
+    document.querySelectorAll('#post-list .post-card')
   )
   var allTabs = Array.prototype.slice.call(
     document.querySelectorAll('.cat-tab')

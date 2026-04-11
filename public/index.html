@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="VidDigest - YouTube 영상 요약 아카이브">
+    <meta name="description" content="VidDigest - 블로그와 MD 실행 문서를 Claude와 Codex로 정리하는 작업실">
     <link rel="canonical" href="https://viddigest-blog.pages.dev/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="VidDigest">
-    <meta property="og:description" content="VidDigest - YouTube 영상 요약 아카이브">
+    <meta property="og:description" content="VidDigest - 블로그와 MD 실행 문서를 Claude와 Codex로 정리하는 작업실">
     <meta property="og:url" content="https://viddigest-blog.pages.dev/">
     <meta property="og:image" content="https://img.youtube.com/vi/TpaIVtW3mh4/hqdefault.jpg">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="VidDigest">
-    <meta name="twitter:description" content="VidDigest - YouTube 영상 요약 아카이브">
+    <meta name="twitter:description" content="VidDigest - 블로그와 MD 실행 문서를 Claude와 Codex로 정리하는 작업실">
     <meta name="twitter:image" content="https://img.youtube.com/vi/TpaIVtW3mh4/hqdefault.jpg">
     <title>VidDigest</title>
     <link rel="stylesheet" href="css/style.css"></head>
@@ -20,15 +20,96 @@
     <div class="header">
         <h1>VidDigest</h1>
         <div class="meta">
-            <span>YouTube 영상 요약 아카이브</span>
+            <span>블로그와 MD 실행 문서</span>
+            <span>Claude + Codex workflow</span>
         </div>
         <div class="nav-links">
-            <a href="https://viddigest-blog.pages.dev/md/" class="nav-link">마크다운 포스트</a>
+            <a href="#blog-archive" class="nav-link">블로그</a>
+            <a href="https://viddigest-blog.pages.dev/md/" class="nav-link">MD</a>
         </div>
     </div>
-    <div class="container">        <div class="category-tabs">                <button class="cat-tab active" data-category="전체">전체</button>
+    <div class="container">
+        <section class="home-intro">
+            <p class="home-intro-lead">블로그는 인사이트를 모으고, MD는 바로 실행할 수 있는 문서로 바꿉니다.</p>
+            <p class="home-intro-copy">이 글들을 바탕으로 Claude와 Codex를 이용해 앱에서 대화형으로 다듬고, 마크다운 파일로 저장해 삶과 일을 실제로 개선하는 흐름을 만드는 것이 목표입니다.</p>
+        </section>
+
+        <section class="home-channel-grid">
+            <article class="home-channel-card">
+                <div class="channel-eyebrow">블로그</div>
+                <h2 class="channel-heading">인사이트를 모으는 아카이브</h2>
+                <p class="channel-copy">영상 요약과 핵심 메시지를 빠르게 훑고, 다시 참고할 수 있게 정리합니다.</p>
+                <div class="channel-stats">
+                    <span class="channel-stat"><strong id="home-blog-count">0</strong> posts</span>
+                </div>
+            </article>
+            <article class="home-channel-card">
+                <div class="channel-eyebrow">MD</div>
+                <h2 class="channel-heading">실행용 문서와 원본 파일</h2>
+                <p class="channel-copy">대화형으로 다듬은 실행 문서를 보고, 원문 <code>.md</code> 파일까지 바로 가져갈 수 있습니다.</p>
+                <div class="channel-stats">
+                    <span class="channel-stat"><strong id="home-md-count">0</strong> docs</span>
+                </div>
+            </article>
+        </section>
+
+        <section class="home-workflow" id="workflow">
+            <div class="workflow-step">
+                <span class="workflow-index">1</span>
+                <div>
+                    <h2 class="workflow-title">블로그</h2>
+                    <p class="workflow-copy">먼저 영상과 글을 요약해 핵심 맥락과 관점을 정리합니다.</p>
+                </div>
+            </div>
+            <div class="workflow-step">
+                <span class="workflow-index">2</span>
+                <div>
+                    <h2 class="workflow-title">MD</h2>
+                    <p class="workflow-copy">필요한 부분만 추려 체크리스트, 실행 매뉴얼, 연구 노트로 바꿉니다.</p>
+                </div>
+            </div>
+            <div class="workflow-step">
+                <span class="workflow-index">3</span>
+                <div>
+                    <h2 class="workflow-title">앱 대화</h2>
+                    <p class="workflow-copy">앱 안에서 Claude와 Codex로 계속 대화하며 문서를 갱신하고, 다시 <code>.md</code> 파일로 저장합니다.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-dual-grid">
+            <div class="home-column">
+                <div class="section-header">
+                    <h2 class="section-title section-title-large">최근 MD</h2>
+                    <p class="section-note">실행 문서와 원본 마크다운 파일을 함께 확인합니다.</p>
+                </div>
+                <div class="resource-list" id="home-md-list">
+                    <div class="empty-state compact-empty-state">
+                        <p>최근 MD를 불러오는 중입니다.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="home-column">
+                <div class="section-header">
+                    <h2 class="section-title section-title-large">최근 블로그</h2>
+                    <p class="section-note">블로그 아카이브에서 핵심 글을 추려 봅니다.</p>
+                </div>
+                <div class="mini-post-list">
+                    <a href="#blog-archive" class="mini-post">
+                        <div class="mini-post-title">블로그 아카이브 보기</div>
+                        <div class="mini-post-meta">영상 요약 글만 따로 모아 다시 읽기 쉽게 정리했습니다.</div>
+                    </a>
+                    <a href="https://viddigest-blog.pages.dev/md/" class="mini-post">
+                        <div class="mini-post-title">MD 문서 목록 보기</div>
+                        <div class="mini-post-meta">실행 문서와 원본 <code>.md</code> 파일을 함께 확인합니다.</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <div class="category-tabs">                <button class="cat-tab active" data-category="전체">전체</button>
                 <button class="cat-tab" data-category="기타">기타</button>
-        </div>        <h2 class="section-title section-title-large" id="all-posts">전체 글</h2>
+        </div>        <div class="section-header archive-header" id="blog-archive"><h2 class="section-title section-title-large">블로그 아카이브</h2><p class="section-note">영상 요약 글만 따로 모아 다시 읽기 쉽게 정리했습니다.</p></div>
         <div class="post-list" id="post-list">            <a href="https://viddigest-blog.pages.dev/posts/2026-04-11-자기계발에-빠질수록-오히려-불행해지는-이유-우리는-무엇을-타고나는가/" class="post-card" data-category="기타" data-slug="2026-04-11-자기계발에-빠질수록-오히려-불행해지는-이유-우리는-무엇을-타고나는가" data-title="자기계발에 빠질수록 오히려 불행해지는 이유 | 우리는 무엇을 타고나는가" data-channel="써니즈 오디오" data-tags="기타|써니즈오디오|핵심 내용|상세 분석|주요 인용 및 발언|결론 및 시사점|자기계발에|빠질수록|오히려|불행해지는" data-excerpt="&gt; 채널: 써니즈 오디오 | 길이: 20:36 | 날짜: 2025-09-14" data-date="2026-04-11" data-views="0">                <img src="https://img.youtube.com/vi/TpaIVtW3mh4/mqdefault.jpg" alt="" class="post-thumb" loading="lazy">                <div class="post-info">
                     <h2 class="post-title">자기계발에 빠질수록 오히려 불행해지는 이유 | 우리는 무엇을 타고나는가</h2>                <p class="post-excerpt">&gt; 채널: 써니즈 오디오 | 길이: 20:36 | 날짜: 2025-09-14</p>                    <div class="post-meta">
                         <span class="post-category-badge">기타</span>
