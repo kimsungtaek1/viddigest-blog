@@ -1,8 +1,76 @@
 (function() {
+    var readerStorageKey = 'viddigest-reader-font-size';
+    var readerSizes = [
+        { key: 'small', label: '소' },
+        { key: 'medium', label: '중' },
+        { key: 'large', label: '대' }
+    ];
+    var validReaderSizes = { small: true, medium: true, large: true };
+
     function safeNumber(value) {
         var parsed = parseInt(String(value || '0'), 10);
         return isNaN(parsed) ? 0 : parsed;
     }
+
+    function readReaderSize() {
+        try {
+            var saved = localStorage.getItem(readerStorageKey);
+            return validReaderSizes[saved] ? saved : 'medium';
+        } catch (error) {
+            return 'medium';
+        }
+    }
+
+    function writeReaderSize(size) {
+        try {
+            localStorage.setItem(readerStorageKey, size);
+        } catch (error) {}
+    }
+
+    function setReaderSize(size, shouldStore) {
+        if (!validReaderSizes[size]) size = 'medium';
+        document.documentElement.setAttribute('data-reader-font-size', size);
+        document.querySelectorAll('.reader-font-button').forEach(function(button) {
+            button.setAttribute('aria-pressed', button.getAttribute('data-font-size') === size ? 'true' : 'false');
+        });
+        if (shouldStore) writeReaderSize(size);
+    }
+
+    function initReaderControls(body) {
+        var container = document.querySelector('.container');
+        var isPostPage = body && body.getAttribute('data-post-slug');
+        if (!isPostPage || !container || document.querySelector('.reader-font-control')) return;
+
+        document.body.classList.add('reader-page');
+
+        var control = document.createElement('div');
+        control.className = 'reader-font-control';
+        control.setAttribute('aria-label', '본문 글자 크기');
+
+        var inner = document.createElement('div');
+        inner.className = 'reader-font-control-inner';
+        inner.setAttribute('role', 'group');
+        inner.setAttribute('aria-label', '본문 글자 크기');
+
+        readerSizes.forEach(function(size) {
+            var button = document.createElement('button');
+            button.type = 'button';
+            button.className = 'reader-font-button';
+            button.setAttribute('data-font-size', size.key);
+            button.setAttribute('title', '본문 글자 크기 ' + size.label);
+            button.textContent = size.label;
+            button.addEventListener('click', function() {
+                setReaderSize(size.key, true);
+            });
+            inner.appendChild(button);
+        });
+
+        control.appendChild(inner);
+        container.insertBefore(control, container.firstElementChild);
+        setReaderSize(readReaderSize(), false);
+    }
+
+    setReaderSize(readReaderSize(), false);
 
     function getStoredNumber(key) {
         try {
@@ -39,6 +107,7 @@
     // Post view counter
     var body = document.body;
     var currentSlug = body ? body.getAttribute('data-post-slug') : null;
+    initReaderControls(body);
     if (currentSlug) {
         var viewKey = 'vd:views:' + currentSlug;
         setStoredNumber(viewKey, getStoredNumber(viewKey) + 1);
