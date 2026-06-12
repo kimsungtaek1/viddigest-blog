@@ -488,6 +488,15 @@ body[data-post-slug] .container > ul li,
 body[data-post-slug] .container > ol li {
     font-size: var(--reader-body-font-size) !important;
 }
+body[data-post-slug] .toc-title,
+body[data-post-slug] .toc li,
+body[data-post-slug] .toc a,
+body[data-post-slug] .series-kicker,
+body[data-post-slug] .series-notice p,
+body[data-post-slug] .series-link span,
+body[data-post-slug] .series-link strong {
+    font-size: var(--reader-body-font-size) !important;
+}
 body[data-post-slug] .container > blockquote,
 body[data-post-slug] .container > blockquote p {
     font-size: var(--reader-quote-font-size) !important;

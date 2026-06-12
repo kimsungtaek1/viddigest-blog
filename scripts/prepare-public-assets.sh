@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-asset_version="${ASSET_VERSION:-${GITHUB_SHA:-20260612-reader}}"
+asset_version="${ASSET_VERSION:-${GITHUB_SHA:-20260612-reader-panels}}"
 asset_version="${asset_version:0:20}"
 
 export ASSET_VERSION="$asset_version"

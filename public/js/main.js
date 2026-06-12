@@ -46,6 +46,7 @@
             'body[data-post-slug] .container>h3{font-size:var(--reader-h3-font-size)!important}',
             'body[data-post-slug] .container>h4{font-size:var(--reader-h4-font-size)!important}',
             'body[data-post-slug] .container>p,body[data-post-slug] .container>ul li,body[data-post-slug] .container>ol li{font-size:var(--reader-body-font-size)!important}',
+            'body[data-post-slug] .toc-title,body[data-post-slug] .toc li,body[data-post-slug] .toc a,body[data-post-slug] .series-kicker,body[data-post-slug] .series-notice p,body[data-post-slug] .series-link span,body[data-post-slug] .series-link strong{font-size:var(--reader-body-font-size)!important}',
             'body[data-post-slug] .container>blockquote,body[data-post-slug] .container>blockquote p{font-size:var(--reader-quote-font-size)!important}',
             'body[data-post-slug] .container>pre,body[data-post-slug] .container>pre code{font-size:var(--reader-code-block-font-size)!important}',
             'body[data-post-slug] .container>p code,body[data-post-slug] .container>ul code,body[data-post-slug] .container>ol code{font-size:var(--reader-code-font-size)!important}'
