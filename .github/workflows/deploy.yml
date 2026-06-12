@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - public/**
+      - scripts/**
       - .github/workflows/deploy.yml
   workflow_dispatch:
 
@@ -20,6 +21,11 @@ jobs:
       deployments: write
     steps:
       - uses: actions/checkout@v4
+
+      - name: Prepare public assets
+        run: scripts/prepare-public-assets.sh
+        env:
+          ASSET_VERSION: ${{ github.sha }}
 
       - name: Publish to Cloudflare Pages
         uses: cloudflare/pages-action@v1
