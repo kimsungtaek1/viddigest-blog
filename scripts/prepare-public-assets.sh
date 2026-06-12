@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-asset_version="${ASSET_VERSION:-${GITHUB_SHA:-20260612-key-bold}}"
+asset_version="${ASSET_VERSION:-${GITHUB_SHA:-20260612-page-nav}}"
 asset_version="${asset_version:0:20}"
 
 export ASSET_VERSION="$asset_version"

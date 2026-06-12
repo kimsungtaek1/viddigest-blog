@@ -56,6 +56,52 @@
         document.head.appendChild(style);
     }
 
+    function normalizeSeriesHref(href) {
+        try {
+            var parsed = new URL(href, window.location.href);
+            if (parsed.origin !== window.location.origin && parsed.pathname.indexOf('/posts/') === 0) {
+                return parsed.pathname + parsed.search + parsed.hash;
+            }
+            return parsed.href;
+        } catch (error) {
+            return href || '#';
+        }
+    }
+
+    function createReaderPageLink(seriesLink, index, totalPages) {
+        var pageLink = document.createElement('a');
+        var pageText = seriesLink.querySelector('span');
+        var pageMatch = pageText ? (pageText.textContent || '').match(/(\d+)\s*\/\s*(\d+)/) : null;
+        var pageNumber = pageMatch ? pageMatch[1] : String(index + 1);
+
+        pageLink.className = 'reader-page-link';
+        pageLink.href = normalizeSeriesHref(seriesLink.href);
+        pageLink.textContent = 'Page ' + pageNumber;
+        pageLink.setAttribute('title', '시리즈 Page ' + pageNumber + ' / ' + totalPages + ' 보기');
+
+        if (seriesLink.classList.contains('current') || seriesLink.getAttribute('aria-current') === 'page') {
+            pageLink.classList.add('current');
+            pageLink.setAttribute('aria-current', 'page');
+        }
+
+        return pageLink;
+    }
+
+    function createReaderPageControl() {
+        var seriesLinks = Array.prototype.slice.call(document.querySelectorAll('.series-links .series-link'));
+        if (seriesLinks.length < 2) return null;
+
+        var pageControl = document.createElement('nav');
+        pageControl.className = 'reader-page-control';
+        pageControl.setAttribute('aria-label', '시리즈 페이지 이동');
+
+        seriesLinks.forEach(function(seriesLink, index) {
+            pageControl.appendChild(createReaderPageLink(seriesLink, index, seriesLinks.length));
+        });
+
+        return pageControl;
+    }
+
     function initReaderControls(body) {
         var container = document.querySelector('.container');
         var isPostPage = body && body.getAttribute('data-post-slug');
@@ -87,6 +133,8 @@
         });
 
         control.appendChild(inner);
+        var pageControl = createReaderPageControl();
+        if (pageControl) control.appendChild(pageControl);
         container.insertBefore(control, container.firstElementChild);
         setReaderSize(readReaderSize(), false);
     }
