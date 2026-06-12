@@ -47,6 +47,8 @@
             'body[data-post-slug] .container>h4{font-size:var(--reader-h4-font-size)!important}',
             'body[data-post-slug] .container>p,body[data-post-slug] .container>ul li,body[data-post-slug] .container>ol li{font-size:var(--reader-body-font-size)!important}',
             'body[data-post-slug] .toc-title,body[data-post-slug] .toc li,body[data-post-slug] .toc a,body[data-post-slug] .series-kicker,body[data-post-slug] .series-notice p,body[data-post-slug] .series-link span,body[data-post-slug] .series-link strong{font-size:var(--reader-body-font-size)!important}',
+            'body[data-post-slug] .key-content-highlight,body[data-post-slug] .key-content-highlight p,body[data-post-slug] .key-content-highlight li{font-weight:700!important}',
+            'body[data-post-slug] .key-content-highlight strong{font-weight:800!important}',
             'body[data-post-slug] .container>blockquote,body[data-post-slug] .container>blockquote p{font-size:var(--reader-quote-font-size)!important}',
             'body[data-post-slug] .container>pre,body[data-post-slug] .container>pre code{font-size:var(--reader-code-block-font-size)!important}',
             'body[data-post-slug] .container>p code,body[data-post-slug] .container>ul code,body[data-post-slug] .container>ol code{font-size:var(--reader-code-font-size)!important}'
@@ -89,6 +91,45 @@
         setReaderSize(readReaderSize(), false);
     }
 
+    function normalizeHeadingText(value) {
+        return String(value || '').replace(/-/g, ' ').replace(/\s+/g, ' ').trim();
+    }
+
+    function isKeyContentHeading(heading) {
+        if (!heading || heading.tagName !== 'H2') return false;
+
+        var headingText = normalizeHeadingText(heading.textContent);
+        var headingId = normalizeHeadingText(heading.id);
+        var keyLabels = [
+            '핵심 내용',
+            '핵심 요약',
+            '주요 내용',
+            '주요 요약',
+            '결론 및 시사점'
+        ];
+
+        return keyLabels.some(function(label) {
+            return headingText.indexOf(label) !== -1 || headingId.indexOf(label) !== -1;
+        });
+    }
+
+    function markKeyContentSections(body) {
+        var container = document.querySelector('.container');
+        if (!body || !body.getAttribute('data-post-slug') || !container) return;
+
+        container.querySelectorAll(':scope > h2').forEach(function(heading) {
+            if (!isKeyContentHeading(heading)) return;
+
+            var sectionNode = heading.nextElementSibling;
+            while (sectionNode && sectionNode.tagName !== 'H2') {
+                if (!sectionNode.classList.contains('toc') && !sectionNode.classList.contains('series-notice')) {
+                    sectionNode.classList.add('key-content-highlight');
+                }
+                sectionNode = sectionNode.nextElementSibling;
+            }
+        });
+    }
+
     setReaderSize(readReaderSize(), false);
 
     function getStoredNumber(key) {
@@ -127,6 +168,7 @@
     var body = document.body;
     var currentSlug = body ? body.getAttribute('data-post-slug') : null;
     initReaderControls(body);
+    markKeyContentSections(body);
     if (currentSlug) {
         var viewKey = 'vd:views:' + currentSlug;
         setStoredNumber(viewKey, getStoredNumber(viewKey) + 1);

@@ -497,6 +497,14 @@ body[data-post-slug] .series-link span,
 body[data-post-slug] .series-link strong {
     font-size: var(--reader-body-font-size) !important;
 }
+body[data-post-slug] .key-content-highlight,
+body[data-post-slug] .key-content-highlight p,
+body[data-post-slug] .key-content-highlight li {
+    font-weight: 700 !important;
+}
+body[data-post-slug] .key-content-highlight strong {
+    font-weight: 800 !important;
+}
 body[data-post-slug] .container > blockquote,
 body[data-post-slug] .container > blockquote p {
     font-size: var(--reader-quote-font-size) !important;
