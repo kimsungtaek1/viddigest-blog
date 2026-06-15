@@ -2,18 +2,22 @@ import 'package:flutter/material.dart';
 
 import '../models/viddigest_post.dart';
 import '../services/local_ai_service.dart';
+import '../services/reader_settings_controller.dart';
 import '../services/viddigest_repository.dart';
 import 'post_detail_screen.dart';
+import 'settings_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({
     required this.repository,
     required this.aiService,
+    required this.settingsController,
     super.key,
   });
 
   final VidDigestRepository repository;
   final LocalAiService aiService;
+  final ReaderSettingsController settingsController;
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();
@@ -52,12 +56,26 @@ class _HomeScreenState extends State<HomeScreen> {
     await _postsFuture;
   }
 
+  void _openSettings() {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (_) =>
+            SettingsScreen(settingsController: widget.settingsController),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: const Text('VidDigest'),
         actions: [
+          IconButton(
+            tooltip: '설정',
+            icon: const Icon(Icons.settings_rounded),
+            onPressed: _openSettings,
+          ),
           IconButton(
             tooltip: '새로고침',
             icon: const Icon(Icons.refresh_rounded),

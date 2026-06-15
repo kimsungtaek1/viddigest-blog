@@ -1,8 +1,9 @@
+import 'package:flutter_test/flutter_test.dart';
 import 'package:http/http.dart' as http;
 import 'package:http/testing.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:flutter_test/flutter_test.dart';
 import 'package:viddigest_mobile/models/viddigest_post.dart';
+import 'package:viddigest_mobile/services/reader_settings_controller.dart';
 import 'package:viddigest_mobile/services/viddigest_repository.dart';
 
 void main() {
@@ -79,5 +80,22 @@ void main() {
     );
     expect(article.images.single.label, '도입 장면');
     expect(article.blocks.whereType<ArticleImageBlock>(), hasLength(1));
+  });
+
+  test('ReaderSettingsController persists selected text size', () async {
+    SharedPreferences.setMockInitialValues({});
+    final controller = ReaderSettingsController();
+    await controller.load();
+
+    expect(controller.textScale, ReaderSettingsController.defaultTextScale);
+
+    await controller.setTextScale(1.3);
+    final restored = ReaderSettingsController();
+    await restored.load();
+
+    expect(restored.textScale, 1.3);
+
+    controller.dispose();
+    restored.dispose();
   });
 }
