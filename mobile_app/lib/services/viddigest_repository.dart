@@ -38,20 +38,27 @@ class VidDigestRepository {
   }
 
   Future<ArticleText> loadArticle(VidDigestPost post) async {
-    final response = await _client
-        .get(Uri.parse(post.postUrl))
-        .timeout(const Duration(seconds: 12));
-    if (response.statusCode < 200 || response.statusCode >= 300) {
-      throw const FormatException('article response was not successful');
-    }
+    final loaded = await _loadArticleResponse(post);
 
-    final document = html_parser.parse(response.body);
+    final document = html_parser.parse(loaded.body);
     final title = document.querySelector('h1')?.text.trim() ?? post.title;
-    final body = _extractArticleBody(document);
+    final blocks = _extractArticleBlocks(document, loaded.url);
+    final body = blocks
+        .whereType<ArticleParagraphBlock>()
+        .map((block) => block.text)
+        .join('\n\n')
+        .trim();
+    final images = blocks
+        .whereType<ArticleImageBlock>()
+        .map((block) => block.image)
+        .toList(growable: false);
     return ArticleText(
       title: title.isEmpty ? post.title : title,
       body: body,
+      blocks: blocks,
+      images: images,
       loadedFromNetwork: true,
+      sourceUrl: loaded.url,
     );
   }
 
@@ -64,10 +71,42 @@ class VidDigestRepository {
         .whereType<Map<String, dynamic>>()
         .map(VidDigestPost.fromJson)
         .where((post) => post.title.isNotEmpty && post.slug.isNotEmpty)
-        .toList(growable: false);
+        .toList(growable: false)
+      ..sort((a, b) {
+        final dateCompare = b.date.compareTo(a.date);
+        if (dateCompare != 0) {
+          return dateCompare;
+        }
+        return b.title.compareTo(a.title);
+      });
   }
 
-  String _extractArticleBody(dom.Document document) {
+  Future<_LoadedArticle> _loadArticleResponse(VidDigestPost post) async {
+    final candidates = <String>[
+      post.postUrl,
+      'https://viddigest-blog.pages.dev/md/${post.slug}/',
+    ];
+    Object? lastError;
+    for (final url in candidates) {
+      try {
+        final response = await _client
+            .get(Uri.parse(url))
+            .timeout(const Duration(seconds: 12));
+        if (response.statusCode >= 200 && response.statusCode < 300) {
+          return _LoadedArticle(url: url, body: response.body);
+        }
+        lastError = FormatException('article response failed for $url');
+      } catch (error) {
+        lastError = error;
+      }
+    }
+    if (lastError != null) {
+      throw lastError;
+    }
+    throw const FormatException('article response was not successful');
+  }
+
+  List<ArticleBlock> _extractArticleBlocks(dom.Document document, String url) {
     final root =
         document.querySelector('article') ??
         document.querySelector('.post-content') ??
@@ -75,12 +114,34 @@ class VidDigestRepository {
         document.querySelector('main') ??
         document.body;
     if (root == null) {
-      return '';
+      return const [];
     }
 
-    final buffer = StringBuffer();
-    final nodes = root.querySelectorAll('h1, h2, h3, p, li, blockquote');
+    final blocks = <ArticleBlock>[];
+    final seenImages = <String>{};
+    final nodes = root.querySelectorAll(
+      'h1, h2, h3, p, li, blockquote, .screenshot-container, img',
+    );
     for (final node in nodes) {
+      if (_hasAncestor(node, 'screenshot-container') &&
+          !node.classes.contains('screenshot-container')) {
+        continue;
+      }
+      if (node.classes.contains('screenshot-container')) {
+        final image = _extractImage(node, url);
+        if (image != null && seenImages.add(image.url)) {
+          blocks.add(ArticleImageBlock(image));
+        }
+        continue;
+      }
+      if (node.localName == 'img') {
+        final image = _extractImage(node, url);
+        if (image != null && seenImages.add(image.url)) {
+          blocks.add(ArticleImageBlock(image));
+        }
+        continue;
+      }
+
       final text = _normalizeWhitespace(node.text);
       if (text.length < 2) {
         continue;
@@ -88,10 +149,46 @@ class VidDigestRepository {
       if (_isBoilerplate(text)) {
         continue;
       }
-      buffer.writeln(text);
-      buffer.writeln();
+      blocks.add(ArticleParagraphBlock(text));
     }
-    return buffer.toString().trim();
+    return blocks;
+  }
+
+  ArticleImage? _extractImage(dom.Element node, String articleUrl) {
+    final img = node.localName == 'img' ? node : node.querySelector('img');
+    if (img == null) {
+      return null;
+    }
+    final src = img.attributes['src']?.trim() ?? '';
+    if (src.isEmpty) {
+      return null;
+    }
+    final caption = _normalizeWhitespace(
+      node.querySelector('.caption')?.text ?? '',
+    );
+    return ArticleImage(
+      url: _absoluteUrl(articleUrl, src),
+      alt: _normalizeWhitespace(img.attributes['alt'] ?? ''),
+      caption: caption,
+    );
+  }
+
+  String _absoluteUrl(String articleUrl, String value) {
+    if (value.startsWith('//')) {
+      return 'https:$value';
+    }
+    return Uri.parse(articleUrl).resolve(value).toString();
+  }
+
+  bool _hasAncestor(dom.Element node, String className) {
+    var parent = node.parent;
+    while (parent != null) {
+      if (parent.classes.contains(className)) {
+        return true;
+      }
+      parent = parent.parent;
+    }
+    return false;
   }
 
   String _normalizeWhitespace(String value) {
@@ -108,4 +205,11 @@ class VidDigestRepository {
         lower.contains('page 2') ||
         lower.contains('page 3');
   }
+}
+
+class _LoadedArticle {
+  const _LoadedArticle({required this.url, required this.body});
+
+  final String url;
+  final String body;
 }

@@ -68,6 +68,9 @@ class _PostDetailScreenState extends State<PostDetailScreen> {
             final body = article?.body.trim().isNotEmpty == true
                 ? article!.body
                 : widget.post.excerpt;
+            final blocks = article?.blocks.isNotEmpty == true
+                ? article!.blocks
+                : <ArticleBlock>[ArticleParagraphBlock(body)];
 
             return ListView(
               padding: const EdgeInsets.fromLTRB(16, 8, 16, 28),
@@ -113,7 +116,7 @@ class _PostDetailScreenState extends State<PostDetailScreen> {
                     onOpenOriginal: _openOriginal,
                   ),
                 const SizedBox(height: 14),
-                Text(body, style: theme.textTheme.bodyLarge),
+                _ArticleBlocks(blocks: blocks),
                 if (widget.post.tags.isNotEmpty) ...[
                   const SizedBox(height: 24),
                   Wrap(
@@ -130,6 +133,80 @@ class _PostDetailScreenState extends State<PostDetailScreen> {
           },
         ),
       ),
+    );
+  }
+}
+
+class _ArticleBlocks extends StatelessWidget {
+  const _ArticleBlocks({required this.blocks});
+
+  final List<ArticleBlock> blocks;
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        for (final block in blocks) ...[
+          if (block is ArticleParagraphBlock)
+            Padding(
+              padding: const EdgeInsets.only(bottom: 14),
+              child: Text(block.text, style: theme.textTheme.bodyLarge),
+            )
+          else if (block is ArticleImageBlock)
+            Padding(
+              padding: const EdgeInsets.only(bottom: 18),
+              child: _ArticleImageView(image: block.image),
+            ),
+        ],
+      ],
+    );
+  }
+}
+
+class _ArticleImageView extends StatelessWidget {
+  const _ArticleImageView({required this.image});
+
+  final ArticleImage image;
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        ClipRRect(
+          borderRadius: BorderRadius.circular(8),
+          child: DecoratedBox(
+            decoration: const BoxDecoration(color: Color(0xFFE8ECE5)),
+            child: Image.network(
+              image.url,
+              width: double.infinity,
+              fit: BoxFit.contain,
+              loadingBuilder: (context, child, progress) {
+                if (progress == null) {
+                  return child;
+                }
+                return const AspectRatio(
+                  aspectRatio: 16 / 9,
+                  child: Center(child: CircularProgressIndicator()),
+                );
+              },
+              errorBuilder: (context, error, stackTrace) {
+                return const AspectRatio(
+                  aspectRatio: 16 / 9,
+                  child: Center(child: Icon(Icons.broken_image_rounded)),
+                );
+              },
+            ),
+          ),
+        ),
+        if (image.label.isNotEmpty) ...[
+          const SizedBox(height: 6),
+          Text(image.label, style: theme.textTheme.labelMedium),
+        ],
+      ],
     );
   }
 }

@@ -53,7 +53,7 @@ class VidDigestPost {
     if (videoId.isEmpty) {
       return '';
     }
-    return 'https://img.youtube.com/vi/$videoId/mqdefault.jpg';
+    return 'https://img.youtube.com/vi/$videoId/hqdefault.jpg';
   }
 
   bool get hasVideo => videoId.isNotEmpty;
@@ -105,12 +105,53 @@ class ArticleText {
   const ArticleText({
     required this.title,
     required this.body,
+    required this.blocks,
+    required this.images,
     required this.loadedFromNetwork,
+    required this.sourceUrl,
   });
 
   final String title;
   final String body;
+  final List<ArticleBlock> blocks;
+  final List<ArticleImage> images;
   final bool loadedFromNetwork;
+  final String sourceUrl;
 
   bool get isEmpty => body.trim().isEmpty;
+}
+
+abstract class ArticleBlock {
+  const ArticleBlock();
+}
+
+class ArticleParagraphBlock extends ArticleBlock {
+  const ArticleParagraphBlock(this.text);
+
+  final String text;
+}
+
+class ArticleImageBlock extends ArticleBlock {
+  const ArticleImageBlock(this.image);
+
+  final ArticleImage image;
+}
+
+class ArticleImage {
+  const ArticleImage({
+    required this.url,
+    required this.alt,
+    required this.caption,
+  });
+
+  final String url;
+  final String alt;
+  final String caption;
+
+  String get label {
+    if (caption.isNotEmpty) {
+      return caption;
+    }
+    return alt;
+  }
 }
