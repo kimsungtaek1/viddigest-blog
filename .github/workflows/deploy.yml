@@ -27,6 +27,37 @@ jobs:
         env:
           ASSET_VERSION: ${{ github.sha }}
 
+      - name: Validate generated reader assets
+        run: |
+          required_css=(
+            "--reader-body-font-size"
+            "body[data-post-slug] .container > p"
+            ".toc ul"
+            "list-style: none"
+            ".reader-font-control"
+            ".reader-page-control"
+          )
+          required_js=(
+            "viddigest-reader-font-size"
+            "createReaderPageControl"
+            "initReaderControls(body)"
+            "markKeyContentSections(body)"
+          )
+
+          for token in "${required_css[@]}"; do
+            grep -Fq -- "$token" public/css/style.css || {
+              echo "Missing CSS token: $token" >&2
+              exit 1
+            }
+          done
+
+          for token in "${required_js[@]}"; do
+            grep -Fq -- "$token" public/js/main.js || {
+              echo "Missing JS token: $token" >&2
+              exit 1
+            }
+          done
+
       - name: Publish to Cloudflare Pages
         uses: cloudflare/pages-action@v1
         with:
