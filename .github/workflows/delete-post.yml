@@ -1,0 +1,44 @@
+name: Delete post
+
+on:
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: Post slug to delete
+        required: true
+        type: string
+      requested_by:
+        description: GitHub login that requested deletion
+        required: false
+        type: string
+
+concurrency:
+  group: delete-post-${{ inputs.slug }}
+  cancel-in-progress: false
+
+jobs:
+  delete:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Delete generated post files
+        run: node scripts/delete-post.mjs "$DELETE_SLUG"
+        env:
+          DELETE_SLUG: ${{ inputs.slug }}
+
+      - name: Commit deletion
+        run: |
+          if git diff --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git config user.name "VidDigest Admin"
+          git config user.email "actions@users.noreply.github.com"
+          git add public/index.html public/posts.json public/sitemap.xml public/posts
+          git commit -m "Delete post: $DELETE_SLUG"
+          git push
+        env:
+          DELETE_SLUG: ${{ inputs.slug }}
