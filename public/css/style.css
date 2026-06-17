@@ -417,11 +417,12 @@ blockquote p { margin: 4px 0; }
 }
 .toc ul {
     margin: 0;
-    padding-left: 18px;
+    padding-left: 0;
+    list-style: none;
 }
 .toc li {
     margin: 4px 0;
-    list-style: decimal;
+    list-style: none;
     font-size: 14px;
     color: #474760;
 }
@@ -430,8 +431,8 @@ blockquote p { margin: 4px 0; }
     color: inherit;
 }
 .toc a:hover { color: #302b63; text-decoration: underline; }
-.toc-l3 { margin-left: 14px; list-style: lower-alpha; }
-.toc-l4 { margin-left: 28px; list-style: disc; }
+.toc-l3 { margin-left: 14px; }
+.toc-l4 { margin-left: 28px; }
 .screenshot-container {
     margin: 24px 0;
     text-align: center;
