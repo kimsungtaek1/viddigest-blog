@@ -1,8 +1,184 @@
 (function() {
+    var readerStorageKey = 'viddigest-reader-font-size';
+    var readerSizes = [
+        { key: 'small', label: '소' },
+        { key: 'medium', label: '중' },
+        { key: 'large', label: '대' }
+    ];
+    var validReaderSizes = { small: true, medium: true, large: true };
+
     function safeNumber(value) {
         var parsed = parseInt(String(value || '0'), 10);
         return isNaN(parsed) ? 0 : parsed;
     }
+
+    function readReaderSize() {
+        try {
+            var saved = localStorage.getItem(readerStorageKey);
+            return validReaderSizes[saved] ? saved : 'medium';
+        } catch (error) {
+            return 'medium';
+        }
+    }
+
+    function writeReaderSize(size) {
+        try {
+            localStorage.setItem(readerStorageKey, size);
+        } catch (error) {}
+    }
+
+    function setReaderSize(size, shouldStore) {
+        if (!validReaderSizes[size]) size = 'medium';
+        document.documentElement.setAttribute('data-reader-font-size', size);
+        document.querySelectorAll('.reader-font-button').forEach(function(button) {
+            button.setAttribute('aria-pressed', button.getAttribute('data-font-size') === size ? 'true' : 'false');
+        });
+        if (shouldStore) writeReaderSize(size);
+    }
+
+    function ensureReaderTypographyOverrides() {
+        if (document.getElementById('reader-font-override')) return;
+
+        var style = document.createElement('style');
+        style.id = 'reader-font-override';
+        style.textContent = [
+            'body[data-post-slug] .container>h2{font-size:var(--reader-h2-font-size)!important}',
+            'body[data-post-slug] .container>h3{font-size:var(--reader-h3-font-size)!important}',
+            'body[data-post-slug] .container>h4{font-size:var(--reader-h4-font-size)!important}',
+            'body[data-post-slug] .container>p,body[data-post-slug] .container>ul li,body[data-post-slug] .container>ol li{font-size:var(--reader-body-font-size)!important}',
+            'body[data-post-slug] .toc-title,body[data-post-slug] .toc li,body[data-post-slug] .toc a,body[data-post-slug] .series-kicker,body[data-post-slug] .series-notice p,body[data-post-slug] .series-link span,body[data-post-slug] .series-link strong{font-size:var(--reader-body-font-size)!important}',
+            'body[data-post-slug] .key-content-highlight,body[data-post-slug] .key-content-highlight p,body[data-post-slug] .key-content-highlight li{font-weight:700!important}',
+            'body[data-post-slug] .key-content-highlight strong{font-weight:800!important}',
+            'body[data-post-slug] .container>blockquote,body[data-post-slug] .container>blockquote p{font-size:var(--reader-quote-font-size)!important}',
+            'body[data-post-slug] .container>pre,body[data-post-slug] .container>pre code{font-size:var(--reader-code-block-font-size)!important}',
+            'body[data-post-slug] .container>p code,body[data-post-slug] .container>ul code,body[data-post-slug] .container>ol code{font-size:var(--reader-code-font-size)!important}'
+        ].join('');
+        document.head.appendChild(style);
+    }
+
+    function normalizeSeriesHref(href) {
+        try {
+            var parsed = new URL(href, window.location.href);
+            if (parsed.origin !== window.location.origin && parsed.pathname.indexOf('/posts/') === 0) {
+                return parsed.pathname + parsed.search + parsed.hash;
+            }
+            return parsed.href;
+        } catch (error) {
+            return href || '#';
+        }
+    }
+
+    function createReaderPageLink(seriesLink, index, totalPages) {
+        var pageLink = document.createElement('a');
+        var pageText = seriesLink.querySelector('span');
+        var pageMatch = pageText ? (pageText.textContent || '').match(/(\d+)\s*\/\s*(\d+)/) : null;
+        var pageNumber = pageMatch ? pageMatch[1] : String(index + 1);
+
+        pageLink.className = 'reader-page-link';
+        pageLink.href = normalizeSeriesHref(seriesLink.href);
+        pageLink.textContent = 'Page ' + pageNumber;
+        pageLink.setAttribute('title', '시리즈 Page ' + pageNumber + ' / ' + totalPages + ' 보기');
+
+        if (seriesLink.classList.contains('current') || seriesLink.getAttribute('aria-current') === 'page') {
+            pageLink.classList.add('current');
+            pageLink.setAttribute('aria-current', 'page');
+        }
+
+        return pageLink;
+    }
+
+    function createReaderPageControl() {
+        var seriesLinks = Array.prototype.slice.call(document.querySelectorAll('.series-links .series-link'));
+        if (seriesLinks.length < 2) return null;
+
+        var pageControl = document.createElement('nav');
+        pageControl.className = 'reader-page-control';
+        pageControl.setAttribute('aria-label', '시리즈 페이지 이동');
+
+        seriesLinks.forEach(function(seriesLink, index) {
+            pageControl.appendChild(createReaderPageLink(seriesLink, index, seriesLinks.length));
+        });
+
+        return pageControl;
+    }
+
+    function initReaderControls(body) {
+        var container = document.querySelector('.container');
+        var isPostPage = body && body.getAttribute('data-post-slug');
+        if (!isPostPage || !container || document.querySelector('.reader-font-control')) return;
+
+        ensureReaderTypographyOverrides();
+        document.body.classList.add('reader-page');
+
+        var control = document.createElement('div');
+        control.className = 'reader-font-control';
+        control.setAttribute('aria-label', '본문 글자 크기');
+
+        var inner = document.createElement('div');
+        inner.className = 'reader-font-control-inner';
+        inner.setAttribute('role', 'group');
+        inner.setAttribute('aria-label', '본문 글자 크기');
+
+        readerSizes.forEach(function(size) {
+            var button = document.createElement('button');
+            button.type = 'button';
+            button.className = 'reader-font-button';
+            button.setAttribute('data-font-size', size.key);
+            button.setAttribute('title', '본문 글자 크기 ' + size.label);
+            button.textContent = size.label;
+            button.addEventListener('click', function() {
+                setReaderSize(size.key, true);
+            });
+            inner.appendChild(button);
+        });
+
+        control.appendChild(inner);
+        var pageControl = createReaderPageControl();
+        if (pageControl) control.appendChild(pageControl);
+        container.insertBefore(control, container.firstElementChild);
+        setReaderSize(readReaderSize(), false);
+    }
+
+    function normalizeHeadingText(value) {
+        return String(value || '').replace(/-/g, ' ').replace(/\s+/g, ' ').trim();
+    }
+
+    function isKeyContentHeading(heading) {
+        if (!heading || heading.tagName !== 'H2') return false;
+
+        var headingText = normalizeHeadingText(heading.textContent);
+        var headingId = normalizeHeadingText(heading.id);
+        var keyLabels = [
+            '핵심 내용',
+            '핵심 요약',
+            '주요 내용',
+            '주요 요약',
+            '결론 및 시사점'
+        ];
+
+        return keyLabels.some(function(label) {
+            return headingText.indexOf(label) !== -1 || headingId.indexOf(label) !== -1;
+        });
+    }
+
+    function markKeyContentSections(body) {
+        var container = document.querySelector('.container');
+        if (!body || !body.getAttribute('data-post-slug') || !container) return;
+
+        container.querySelectorAll(':scope > h2').forEach(function(heading) {
+            if (!isKeyContentHeading(heading)) return;
+
+            var sectionNode = heading.nextElementSibling;
+            while (sectionNode && sectionNode.tagName !== 'H2') {
+                if (!sectionNode.classList.contains('toc') && !sectionNode.classList.contains('series-notice')) {
+                    sectionNode.classList.add('key-content-highlight');
+                }
+                sectionNode = sectionNode.nextElementSibling;
+            }
+        });
+    }
+
+    setReaderSize(readReaderSize(), false);
 
     function getStoredNumber(key) {
         try {
@@ -39,6 +215,8 @@
     // Post view counter
     var body = document.body;
     var currentSlug = body ? body.getAttribute('data-post-slug') : null;
+    initReaderControls(body);
+    markKeyContentSections(body);
     if (currentSlug) {
         var viewKey = 'vd:views:' + currentSlug;
         setStoredNumber(viewKey, getStoredNumber(viewKey) + 1);
