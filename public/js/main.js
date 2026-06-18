@@ -473,40 +473,9 @@
         var blogCountEl = document.getElementById('home-blog-count');
         var mdCountEl = document.getElementById('home-md-count');
         var blogCount = document.querySelectorAll('#post-list .post-card').length;
-        var mdCount = document.querySelectorAll('#home-md-list .resource-card, #md-resource-list .resource-card').length;
+        var mdCount = document.querySelectorAll('#md-resource-list .resource-card').length;
         if (blogCountEl) blogCountEl.textContent = String(blogCount);
         if (mdCountEl) mdCountEl.textContent = String(mdCount);
-    }
-
-    function organizeLegacyHomeSections() {
-        var homeMdList = document.getElementById('home-md-list');
-        var postList = document.getElementById('post-list');
-        if (!homeMdList || !postList) return;
-        if (homeMdList.querySelector('.resource-card')) {
-            syncHomeCounts();
-            return;
-        }
-
-        var legacyMdCards = Array.prototype.slice.call(postList.querySelectorAll('.post-card')).filter(function(card) {
-            var href = card.getAttribute('href') || card.href || '';
-            return /\/md\//.test(href);
-        });
-
-        if (legacyMdCards.length === 0) {
-            syncHomeCounts();
-            return;
-        }
-
-        homeMdList.innerHTML = '';
-        legacyMdCards.slice(0, 4).forEach(function(card) {
-            homeMdList.appendChild(createResourceCard(card));
-        });
-
-        legacyMdCards.forEach(function(card) {
-            if (card.parentNode) card.parentNode.removeChild(card);
-        });
-
-        syncHomeCounts();
     }
 
     function organizeLegacyMdList() {
@@ -525,7 +494,6 @@
         syncHomeCounts();
     }
 
-    organizeLegacyHomeSections();
     organizeLegacyMdList();
 
     // Index page setup
