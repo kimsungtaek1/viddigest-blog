@@ -27,7 +27,7 @@ jobs:
         env:
           ASSET_VERSION: ${{ github.sha }}
 
-      - name: Validate generated reader assets
+      - name: Validate generated shared assets
         run: |
           required_css=(
             "--reader-body-font-size"
@@ -36,12 +36,17 @@ jobs:
             "list-style: none"
             ".reader-font-control"
             ".reader-page-control"
+            ".admin-control"
+            ".admin-post-actions"
           )
           required_js=(
             "viddigest-reader-font-size"
             "createReaderPageControl"
             "initReaderControls(body)"
             "markKeyContentSections(body)"
+            "/api/auth/me"
+            "renderPostListAdminActions"
+            "/api/posts/"
           )
 
           for token in "${required_css[@]}"; do
