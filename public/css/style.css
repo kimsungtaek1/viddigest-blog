@@ -642,6 +642,26 @@ strong { font-weight: 600; }
     box-shadow: 0 6px 20px rgba(0,0,0,0.10);
     transform: translateY(-2px);
 }
+.admin-post-card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.admin-post-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+    min-height: 34px;
+    padding: 0 4px;
+}
+.admin-post-status {
+    min-width: 0;
+    color: #5f5f78;
+    font-size: 12px;
+    line-height: 1.35;
+    text-align: right;
+}
 .post-thumb {
     width: 220px;
     height: 124px;
@@ -1125,6 +1145,19 @@ strong { font-weight: 600; }
     .reader-page-link { color: #d8d5ff; }
     .reader-page-link:hover { background: #303052; }
     .reader-page-link.current { background: #6c63ff; color: white; }
+    .admin-control {
+        background: rgba(37,37,64,0.94);
+        border-color: #4b4b70;
+        box-shadow: 0 10px 28px rgba(0,0,0,0.35);
+    }
+    .admin-button-muted {
+        background: #252540;
+        border-color: #5c5c86;
+        color: #d8d8e8;
+    }
+    .admin-user { color: #ececff; }
+    .admin-readonly, .admin-message, .admin-post-status { color: #b7b7cf; }
+    .admin-message-error { color: #ffb4ab; }
     .archive-link { background: #252540; border-color: #444; color: #c4c4d8; }
     .archive-link:hover, .archive-link.active { border-color: #a8a4d6; color: #a8a4d6; background: #2f2f50; }
     .mini-post-title, .post-title, .adjacent-title { color: #e0e0e8; }

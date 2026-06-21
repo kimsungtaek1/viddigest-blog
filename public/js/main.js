@@ -259,6 +259,216 @@
         });
     }
 
+    function apiJson(url, options) {
+        var requestOptions = options || {};
+        requestOptions.credentials = 'include';
+        return fetch(url, requestOptions).then(function(response) {
+            return response.json().catch(function() {
+                return {};
+            }).then(function(data) {
+                if (!response.ok) {
+                    var error = new Error(data.error || '요청을 처리하지 못했습니다.');
+                    error.data = data;
+                    throw error;
+                }
+                return data;
+            });
+        });
+    }
+
+    function setAdminMessage(control, text, isError) {
+        var message = control.querySelector('.admin-message');
+        setAdminMessageElement(message, text, isError);
+    }
+
+    function setAdminMessageElement(message, text, isError) {
+        if (!message) return;
+        message.textContent = text || '';
+        message.classList.toggle('admin-message-error', Boolean(isError));
+    }
+
+    function createAdminButton(label, className) {
+        var button = document.createElement('button');
+        button.type = 'button';
+        button.className = className || 'admin-button';
+        button.textContent = label;
+        return button;
+    }
+
+    function requestPostDeletion(slug, title, button, message) {
+        if (!slug) return;
+        var ok = window.confirm('이 글을 삭제할까요?\n\n' + (title || slug));
+        if (!ok) return;
+
+        var idleLabel = button.textContent || '삭제';
+        button.disabled = true;
+        button.textContent = '요청 중';
+        setAdminMessageElement(message, '', false);
+
+        apiJson('/api/posts/' + encodeURIComponent(slug) + '/delete', {
+            method: 'POST'
+        }).then(function() {
+            button.textContent = '삭제 대기';
+            setAdminMessageElement(message, 'GitHub Actions에서 삭제와 배포를 진행합니다.', false);
+        }).catch(function(error) {
+            button.disabled = false;
+            button.textContent = idleLabel;
+            setAdminMessageElement(message, error.message || '삭제 요청 실패', true);
+        });
+    }
+
+    function postCardFrame(card) {
+        if (!card || !card.parentElement) return card;
+        return card.parentElement.classList.contains('admin-post-card') ? card.parentElement : card;
+    }
+
+    function setPostCardVisible(card, visible) {
+        var frame = postCardFrame(card);
+        if (frame && frame !== card) {
+            frame.style.display = visible ? '' : 'none';
+            card.style.display = '';
+            return;
+        }
+        if (card) card.style.display = visible ? '' : 'none';
+    }
+
+    function ensurePostCardFrame(card) {
+        if (!card || !card.parentNode) return null;
+        if (card.parentElement && card.parentElement.classList.contains('admin-post-card')) {
+            return card.parentElement;
+        }
+
+        var wasHidden = card.style.display === 'none';
+        var frame = document.createElement('div');
+        frame.className = 'admin-post-card';
+        card.parentNode.insertBefore(frame, card);
+        frame.appendChild(card);
+        if (wasHidden) {
+            frame.style.display = 'none';
+            card.style.display = '';
+        }
+        return frame;
+    }
+
+    function directChildByClass(parent, className) {
+        if (!parent) return null;
+        for (var i = 0; i < parent.children.length; i += 1) {
+            if (parent.children[i].classList.contains(className)) return parent.children[i];
+        }
+        return null;
+    }
+
+    function renderPostListAdminActions(state) {
+        var cards = Array.prototype.slice.call(document.querySelectorAll('#post-list .post-card'));
+        var canDelete = Boolean(state && state.admin);
+
+        cards.forEach(function(card) {
+            var frame = ensurePostCardFrame(card);
+            if (!frame) return;
+
+            var existing = directChildByClass(frame, 'admin-post-actions');
+            if (existing) existing.parentNode.removeChild(existing);
+            frame.classList.toggle('has-admin-action', canDelete);
+            if (!canDelete) return;
+
+            var slug = card.getAttribute('data-slug') || '';
+            if (!slug) return;
+
+            var actions = document.createElement('div');
+            actions.className = 'admin-post-actions';
+
+            var message = document.createElement('span');
+            message.className = 'admin-post-status';
+
+            var button = createAdminButton('삭제', 'admin-button admin-button-danger admin-post-delete');
+            var title = card.getAttribute('data-title') || cardText(card, '.post-title') || slug;
+            button.addEventListener('click', function() {
+                requestPostDeletion(slug, title, button, message);
+            });
+
+            actions.appendChild(message);
+            actions.appendChild(button);
+            frame.appendChild(actions);
+        });
+    }
+
+    function renderAdminControl(state) {
+        var control = document.getElementById('admin-control');
+        if (!control) {
+            control = document.createElement('div');
+            control.id = 'admin-control';
+            control.className = 'admin-control';
+            document.body.appendChild(control);
+        }
+
+        control.innerHTML = '';
+
+        var message = document.createElement('div');
+        message.className = 'admin-message';
+
+        if (!state || !state.configured) {
+            var disabled = createAdminButton('로그인 설정 필요', 'admin-button admin-button-muted');
+            disabled.disabled = true;
+            control.appendChild(disabled);
+            control.appendChild(message);
+            setAdminMessage(control, 'OAuth 환경 변수를 설정해야 합니다.', true);
+            return;
+        }
+
+        if (!state.authenticated) {
+            var login = createAdminButton('GitHub 로그인', 'admin-button');
+            login.addEventListener('click', function() {
+                var returnTo = window.location.pathname + window.location.search + window.location.hash;
+                window.location.href = '/api/auth/login?returnTo=' + encodeURIComponent(returnTo);
+            });
+            control.appendChild(login);
+            control.appendChild(message);
+            return;
+        }
+
+        var user = document.createElement('span');
+        user.className = 'admin-user';
+        user.textContent = state.user && state.user.login ? state.user.login : '로그인됨';
+        control.appendChild(user);
+
+        if (state.admin && currentSlug) {
+            var deleteButton = createAdminButton('삭제', 'admin-button admin-button-danger');
+            deleteButton.addEventListener('click', function() {
+                requestPostDeletion(currentSlug, shareTitle || currentSlug, deleteButton, message);
+            });
+            control.appendChild(deleteButton);
+        } else if (!state.admin) {
+            var badge = document.createElement('span');
+            badge.className = 'admin-readonly';
+            badge.textContent = '읽기 전용';
+            control.appendChild(badge);
+        }
+
+        var logout = createAdminButton('로그아웃', 'admin-button admin-button-muted');
+        logout.addEventListener('click', function() {
+            logout.disabled = true;
+            apiJson('/api/auth/logout', { method: 'POST' }).then(function() {
+                var signedOutState = { configured: true, authenticated: false, admin: false, user: null };
+                renderAdminControl(signedOutState);
+                renderPostListAdminActions(signedOutState);
+            }).catch(function() {
+                logout.disabled = false;
+            });
+        });
+        control.appendChild(logout);
+        control.appendChild(message);
+    }
+
+    function initAdminControl() {
+        if (!window.fetch || !document.body) return;
+        apiJson('/api/auth/me').then(function(state) {
+            renderAdminControl(state);
+            renderPostListAdminActions(state);
+        }).catch(function() {});
+    }
+
+    initAdminControl();
+
     function cardText(anchor, selector) {
         var el = anchor && anchor.querySelector ? anchor.querySelector(selector) : null;
         return el ? (el.textContent || '').trim() : '';
@@ -492,12 +702,12 @@
             var totalPages = Math.max(1, Math.ceil(filteredCards.length / state.pageSize));
             if (state.page > totalPages) state.page = totalPages;
 
-            cards.forEach(function(card) { card.style.display = 'none'; });
+            cards.forEach(function(card) { setPostCardVisible(card, false); });
 
             var start = (state.page - 1) * state.pageSize;
             var end = start + state.pageSize;
             filteredCards.slice(start, end).forEach(function(card) {
-                card.style.display = '';
+                setPostCardVisible(card, true);
             });
 
             if (prevBtn) prevBtn.disabled = state.page <= 1;
