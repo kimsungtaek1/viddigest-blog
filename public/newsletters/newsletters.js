@@ -4,6 +4,7 @@
     var list = document.getElementById('newsletter-list');
     var status = document.getElementById('newsletter-status');
     var search = document.getElementById('newsletter-search');
+    var category = document.getElementById('newsletter-category');
     var language = document.getElementById('newsletter-language');
     var source = document.getElementById('newsletter-source');
     var sourceStrip = document.getElementById('newsletter-source-strip');
@@ -11,6 +12,7 @@
     var feedCount = document.getElementById('newsletter-feed-count');
     var updatedAt = document.getElementById('newsletter-updated-at');
     var snapshot = { feeds: [], items: [] };
+    var preferredCategories = ['자기계발', '사업', '법률', '컴퓨터 사이언스', '양자컴퓨터', '제약'];
 
     function formatDate(value, includeTime) {
         if (!value) return '날짜 미상';
@@ -58,6 +60,33 @@
         });
     }
 
+    function renderCategories() {
+        category.textContent = '';
+        var allOption = document.createElement('option');
+        allOption.value = '';
+        allOption.textContent = '전체 카테고리';
+        category.appendChild(allOption);
+
+        var categories = [];
+        snapshot.feeds.forEach(function (feed) {
+            var value = feed.category || '';
+            if (value && !categories.includes(value)) categories.push(value);
+        });
+        categories.sort(function (left, right) {
+            var leftIndex = preferredCategories.indexOf(left);
+            var rightIndex = preferredCategories.indexOf(right);
+            var leftRank = leftIndex < 0 ? preferredCategories.length : leftIndex;
+            var rightRank = rightIndex < 0 ? preferredCategories.length : rightIndex;
+            return leftRank - rightRank || left.localeCompare(right, 'ko');
+        });
+        categories.forEach(function (value) {
+            var option = document.createElement('option');
+            option.value = value;
+            option.textContent = value;
+            category.appendChild(option);
+        });
+    }
+
     function cardFor(item) {
         var card = document.createElement('a');
         card.className = 'newsletter-card';
@@ -85,10 +114,12 @@
 
     function renderItems() {
         var query = (search.value || '').trim().toLocaleLowerCase('ko-KR');
+        var selectedCategory = category.value || '';
         var selectedLanguage = language.value || '';
         var selectedSource = source.value || '';
         var items = snapshot.items.filter(function (item) {
             if (selectedSource && item.feedId !== selectedSource) return false;
+            if (selectedCategory && item.category !== selectedCategory) return false;
             if ((selectedLanguage === 'ko' || selectedLanguage === 'en') && item.language !== selectedLanguage) return false;
             if (!query) return true;
             return [item.title, item.summary, item.source, item.category]
@@ -124,12 +155,33 @@
         itemCount.textContent = String(snapshot.items.length);
         feedCount.textContent = String(snapshot.feeds.length);
         updatedAt.textContent = formatDate(snapshotData.generatedAt, true);
+        renderCategories();
         renderSources();
         renderItems();
     }
 
+    function resetIncompatibleSource() {
+        if (!source.value) return;
+        var selectedFeed = snapshot.feeds.find(function (feed) { return feed.id === source.value; });
+        if (!selectedFeed) {
+            source.value = '';
+            return;
+        }
+        if (category.value && selectedFeed.category !== category.value) source.value = '';
+        if ((language.value === 'ko' || language.value === 'en') && selectedFeed.language !== language.value) {
+            source.value = '';
+        }
+    }
+
     search.addEventListener('input', renderItems);
-    language.addEventListener('change', renderItems);
+    category.addEventListener('change', function () {
+        resetIncompatibleSource();
+        renderItems();
+    });
+    language.addEventListener('change', function () {
+        resetIncompatibleSource();
+        renderItems();
+    });
     source.addEventListener('change', renderItems);
 
     fetch('./newsletters.json', { cache: 'no-store', headers: { Accept: 'application/json' } })

@@ -304,17 +304,23 @@ def collect(
 
     feed_states: list[dict[str, Any]] = []
     collected_items: list[dict[str, Any]] = []
+    feed_limits: dict[str, int] = {}
+    feed_order: dict[str, int] = {}
     successful_feeds = 0
 
-    for feed in feeds:
+    for feed_index, feed in enumerate(feeds):
         feed_id = str(feed.get("id") or "").strip()
         feed_title = str(feed.get("title") or feed_id).strip()
         feed_url = str(feed.get("url") or "").strip()
         feed_language = str(feed.get("language") or "").strip().lower()
         if not feed_id or not feed_title or not feed_url:
             raise ValueError("각 RSS 설정에는 id, title, url이 필요합니다.")
+        if feed_id in feed_limits:
+            raise ValueError(f"중복 RSS id는 사용할 수 없습니다: {feed_id}")
         if feed_language not in {"ko", "en"}:
             raise ValueError("RSS language는 ko 또는 en이어야 합니다.")
+        feed_limits[feed_id] = max(1, int(feed.get("maxItems", max_per_feed)))
+        feed_order[feed_id] = feed_index
 
         error = ""
         parsed_items: list[dict[str, Any]] = []
@@ -322,7 +328,8 @@ def collect(
         try:
             parsed = parse_feed(fetcher(feed_url), feed, checked_at, summary_limit)
             parsed_items = parsed["items"]
-            site_url = parsed.get("siteUrl") or site_url
+            if not site_url:
+                site_url = parsed.get("siteUrl") or ""
             successful_feeds += 1
         except Exception as exc:  # Keep the last good items when one public feed is temporarily unavailable.
             error = plain_text(str(exc), 180) or exc.__class__.__name__
@@ -341,7 +348,7 @@ def collect(
             item["category"] = str(feed.get("category") or "기타")
             item["language"] = feed_language
 
-        feed_items = sorted(
+        feed_items = list(
             (
                 item
                 for item in merged.values()
@@ -351,10 +358,8 @@ def collect(
                     excluded_title_prefixes,
                     excluded_title_keywords,
                 )
-            ),
-            key=lambda item: (item.get("publishedAt") or item.get("collectedAt") or "", item.get("id") or ""),
-            reverse=True,
-        )[:max_per_feed]
+            )
+        )
         collected_items.extend(feed_items)
         feed_states.append(
             {
@@ -364,7 +369,7 @@ def collect(
                 "siteUrl": normalize_url(site_url),
                 "category": str(feed.get("category") or "기타"),
                 "language": feed_language,
-                "itemCount": len(feed_items),
+                "itemCount": 0,
                 "lastCheckedAt": checked_at,
                 "error": error,
             }
@@ -374,14 +379,38 @@ def collect(
         raise RuntimeError("모든 RSS 수집이 실패했습니다. 기존 뉴스레터 데이터는 그대로 유지합니다.")
 
     collected_items.sort(
-        key=lambda item: (item.get("publishedAt") or item.get("collectedAt") or "", item.get("id") or ""),
+        key=lambda item: (
+            item.get("publishedAt") or item.get("collectedAt") or "",
+            -feed_order.get(str(item.get("feedId") or ""), len(feeds)),
+            item.get("id") or "",
+        ),
         reverse=True,
     )
+    selected_items: list[dict[str, Any]] = []
+    selected_by_feed: dict[str, int] = {}
+    seen_urls: set[str] = set()
+    for item in collected_items:
+        if len(selected_items) >= max_total:
+            break
+        feed_id = str(item.get("feedId") or "")
+        if selected_by_feed.get(feed_id, 0) >= feed_limits.get(feed_id, max_per_feed):
+            continue
+        unique_url = normalize_url(str(item.get("url") or ""))
+        unique_key = unique_url or str(item.get("id") or "")
+        if not unique_key or unique_key in seen_urls:
+            continue
+        seen_urls.add(unique_key)
+        selected_items.append(item)
+        selected_by_feed[feed_id] = selected_by_feed.get(feed_id, 0) + 1
+
+    for feed_state in feed_states:
+        feed_state["itemCount"] = selected_by_feed.get(str(feed_state.get("id") or ""), 0)
+
     snapshot = {
         "version": 1,
         "generatedAt": checked_at,
         "feeds": feed_states,
-        "items": collected_items[:max_total],
+        "items": selected_items,
     }
     changed = semantic_snapshot(snapshot) != semantic_snapshot(previous)
     if changed:

@@ -85,7 +85,11 @@ jobs:
             and (.feeds | type == "array")
             and (.items | type == "array")
             and all(.feeds[]; (.language == "ko" or .language == "en"))
-            and all(.items[]; (.language == "ko" or .language == "en"))' \
+            and all(.feeds[]; (.category | type == "string") and (.category | length > 0))
+            and all(.items[]; (.language == "ko" or .language == "en"))
+            and all(.items[]; (.category | type == "string") and (.category | length > 0))
+            and (["자기계발", "사업", "법률", "컴퓨터 사이언스", "양자컴퓨터", "제약"] - [.feeds[].category] | length == 0)
+            and (([.items[].url] | length) == ([.items[].url] | unique | length))' \
             public/newsletters/newsletters.json >/dev/null
 
       - name: Publish to Cloudflare Pages

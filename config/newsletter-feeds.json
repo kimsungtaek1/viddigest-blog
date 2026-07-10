@@ -1,6 +1,6 @@
 {
   "maxItemsPerFeed": 24,
-  "maxTotalItems": 144,
+  "maxTotalItems": 216,
   "retentionDays": 180,
   "summaryMaxCharacters": 320,
   "excludeTitlePrefixes": [
@@ -11,7 +11,8 @@
     "[게시판]",
     "[알림]",
     "[보도자료]",
-    "[플레이BN]"
+    "[플레이BN]",
+    "- 브런치"
   ],
   "excludeTitleKeywords": [
     "날씨",
@@ -38,6 +39,60 @@
     "사명 변경"
   ],
   "feeds": [
+    {
+      "id": "self-development-korea",
+      "title": "브런치 자기계발·커리어",
+      "url": "https://news.google.com/rss/search?q=site%3Abrunch.co.kr+%28%EC%9E%90%EA%B8%B0%EA%B3%84%EB%B0%9C+OR+%EC%BB%A4%EB%A6%AC%EC%96%B4+OR+%EC%83%9D%EC%82%B0%EC%84%B1+OR+%EC%8A%B5%EA%B4%80%29&hl=ko&gl=KR&ceid=KR%3Ako",
+      "siteUrl": "https://brunch.co.kr/keyword/%EC%9E%90%EA%B8%B0%EA%B3%84%EB%B0%9C",
+      "category": "자기계발",
+      "language": "ko",
+      "maxItems": 12
+    },
+    {
+      "id": "venturesquare-business",
+      "title": "벤처스퀘어",
+      "url": "https://www.venturesquare.net/rss/news",
+      "siteUrl": "https://www.venturesquare.net/news/",
+      "category": "사업",
+      "language": "ko",
+      "maxItems": 12
+    },
+    {
+      "id": "koreanbar-law",
+      "title": "법조신문",
+      "url": "https://news.koreanbar.or.kr/rss/allArticle.xml",
+      "siteUrl": "https://news.koreanbar.or.kr/",
+      "category": "법률",
+      "language": "ko",
+      "maxItems": 12
+    },
+    {
+      "id": "naver-d2",
+      "title": "NAVER D2",
+      "url": "https://d2.naver.com/d2.atom",
+      "siteUrl": "https://d2.naver.com/",
+      "category": "컴퓨터 사이언스",
+      "language": "ko",
+      "maxItems": 12
+    },
+    {
+      "id": "quantumtimes",
+      "title": "양자신문",
+      "url": "https://cdn.quantumtimes.net/rss/gn_rss_allArticle.xml",
+      "siteUrl": "https://www.quantumtimes.net/",
+      "category": "양자컴퓨터",
+      "language": "ko",
+      "maxItems": 12
+    },
+    {
+      "id": "pharmnews",
+      "title": "팜뉴스",
+      "url": "https://www.pharmnews.com/rss/allArticle.xml",
+      "siteUrl": "https://www.pharmnews.com/",
+      "category": "제약",
+      "language": "ko",
+      "maxItems": 12
+    },
     {
       "id": "ai-times-korea",
       "title": "AI타임스",
@@ -75,7 +130,7 @@
       "title": "Lenny's Newsletter",
       "url": "https://www.lennysnewsletter.com/feed",
       "siteUrl": "https://www.lennysnewsletter.com/",
-      "category": "사업·제품",
+      "category": "사업",
       "language": "en"
     },
     {
@@ -83,7 +138,7 @@
       "title": "The Pragmatic Engineer",
       "url": "https://newsletter.pragmaticengineer.com/feed",
       "siteUrl": "https://newsletter.pragmaticengineer.com/",
-      "category": "개발",
+      "category": "컴퓨터 사이언스",
       "language": "en"
     }
   ]

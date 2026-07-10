@@ -7,7 +7,7 @@
     <link rel="canonical" href="https://viddigest-blog.pages.dev/newsletters/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="뉴스레터 - VidDigest">
-    <meta property="og:description" content="한국어 뉴스와 해외 AI, 개발, 사업 뉴스레터의 새 글을 한곳에서 확인하세요.">
+    <meta property="og:description" content="자기계발, 사업, 법률, 컴퓨터 사이언스, 양자컴퓨터, 제약 뉴스를 한곳에서 확인하세요.">
     <meta property="og:url" content="https://viddigest-blog.pages.dev/newsletters/">
     <title>뉴스레터 - VidDigest</title>
     <link rel="stylesheet" href="../css/style.css">
@@ -31,7 +31,7 @@
             <div>
                 <p class="newsletter-eyebrow">AUTOMATIC READING LIST</p>
                 <h2 id="newsletter-title">새 글만 모으고,<br>원문은 그대로 연결합니다.</h2>
-                <p class="newsletter-intro">기존 VidDigest 블로그 글과 완전히 분리된 공간입니다. AI·테크·사업 중심 원문을 먼저 보여주며, 날씨·인사·부고 같은 잡음은 수집 단계에서 제외합니다.</p>
+                <p class="newsletter-intro">기존 VidDigest 블로그 글과 완전히 분리된 공간입니다. 자기계발·사업·법률·컴퓨터 사이언스·양자컴퓨터·제약까지 모으며, 날씨·인사·부고 같은 잡음은 제외합니다.</p>
             </div>
             <dl class="newsletter-stats" aria-label="수집 현황">
                 <div><dt>수집 글</dt><dd id="newsletter-item-count">—</dd></div>
@@ -43,7 +43,13 @@
         <section class="newsletter-toolbar" aria-label="뉴스레터 검색과 필터">
             <label class="newsletter-search">
                 <span>검색</span>
-                <input id="newsletter-search" type="search" placeholder="제목, 설명, 발행처 검색" autocomplete="off">
+                <input id="newsletter-search" type="search" placeholder="제목, 설명, 카테고리, 발행처 검색" autocomplete="off">
+            </label>
+            <label class="newsletter-category-filter">
+                <span>카테고리</span>
+                <select id="newsletter-category">
+                    <option value="">전체 카테고리</option>
+                </select>
             </label>
             <label class="newsletter-language-filter">
                 <span>언어</span>

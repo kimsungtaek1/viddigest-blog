@@ -212,6 +212,61 @@ class NewsletterCollectorTests(unittest.TestCase):
             self.assertEqual(migrated_snapshot["items"][0]["source"], "Korean News")
             self.assertEqual(migrated_snapshot["items"][0]["category"], "Global")
 
+    def test_feed_limits_and_cross_feed_url_deduplication(self):
+        first_xml = b"""<rss version="2.0"><channel><title>First</title>
+        <item><title>Shared from first</title><link>https://example.com/shared</link><guid>first-shared</guid>
+        <pubDate>Fri, 10 Jul 2026 04:00:00 GMT</pubDate></item>
+        <item><title>First unique</title><link>https://example.com/first</link><guid>first-unique</guid>
+        <pubDate>Fri, 10 Jul 2026 02:00:00 GMT</pubDate></item></channel></rss>"""
+        second_xml = b"""<rss version="2.0"><channel><title>Second</title>
+        <item><title>Shared from second</title><link>https://example.com/shared</link><guid>second-shared</guid>
+        <pubDate>Fri, 10 Jul 2026 04:00:00 GMT</pubDate></item>
+        <item><title>Second unique</title><link>https://example.com/second</link><guid>second-unique</guid>
+        <pubDate>Fri, 10 Jul 2026 03:00:00 GMT</pubDate></item>
+        <item><title>Second extra</title><link>https://example.com/extra</link><guid>second-extra</guid>
+        <pubDate>Fri, 10 Jul 2026 01:00:00 GMT</pubDate></item></channel></rss>"""
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            config = root / "feeds.json"
+            output = root / "newsletters.json"
+            config_data = {
+                "maxItemsPerFeed": 3,
+                "maxTotalItems": 4,
+                "feeds": [
+                    {
+                        "id": "first",
+                        "title": "First",
+                        "url": "https://example.com/first-feed",
+                        "siteUrl": "https://example.com/",
+                        "category": "사업",
+                        "language": "en",
+                    },
+                    {
+                        "id": "second",
+                        "title": "Second",
+                        "url": "https://example.com/second-feed",
+                        "siteUrl": "https://example.com/",
+                        "category": "법률",
+                        "language": "en",
+                        "maxItems": 1,
+                    },
+                ],
+            }
+            config.write_text(json.dumps(config_data), encoding="utf-8")
+            feed_data = {
+                "https://example.com/first-feed": first_xml,
+                "https://example.com/second-feed": second_xml,
+            }
+            snapshot, changed = collector.collect(config, output, fetcher=feed_data.__getitem__)
+
+            self.assertTrue(changed)
+            self.assertEqual(
+                [item["url"] for item in snapshot["items"]],
+                ["https://example.com/shared", "https://example.com/second", "https://example.com/first"],
+            )
+            self.assertEqual(len({item["url"] for item in snapshot["items"]}), 3)
+            self.assertEqual({feed["id"]: feed["itemCount"] for feed in snapshot["feeds"]}, {"first": 2, "second": 1})
+
 
 if __name__ == "__main__":
     unittest.main()

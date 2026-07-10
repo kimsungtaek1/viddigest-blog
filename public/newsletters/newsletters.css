@@ -86,7 +86,7 @@
 
 .newsletter-toolbar {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) 180px 240px;
+    grid-template-columns: minmax(0, 1fr) 190px 180px 220px;
     gap: 14px;
     margin-top: 34px;
 }
@@ -259,13 +259,18 @@
         border-radius: 20px;
     }
 
-    .newsletter-toolbar,
     .newsletter-list {
         grid-template-columns: 1fr;
     }
 
     .newsletter-toolbar {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 12px;
+    }
+
+    .newsletter-search,
+    .newsletter-source-filter {
+        grid-column: 1 / -1;
     }
 
     .newsletter-card {
@@ -275,6 +280,14 @@
 }
 
 @media (max-width: 480px) {
+    .newsletter-toolbar {
+        grid-template-columns: 1fr;
+    }
+
+    .newsletter-toolbar label {
+        grid-column: auto;
+    }
+
     .newsletter-stats {
         grid-template-columns: 1fr 1fr;
     }
