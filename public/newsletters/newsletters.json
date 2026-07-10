@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-07-10T09:55:07Z",
+  "generatedAt": "2026-07-10T15:05:15Z",
   "feeds": [
     {
       "id": "self-development-korea",
@@ -10,7 +10,7 @@
       "category": "자기계발",
       "language": "ko",
       "itemCount": 12,
-      "lastCheckedAt": "2026-07-10T09:55:07Z",
+      "lastCheckedAt": "2026-07-10T15:05:15Z",
       "error": ""
     },
     {
@@ -21,7 +21,7 @@
       "category": "사업",
       "language": "ko",
       "itemCount": 12,
-      "lastCheckedAt": "2026-07-10T09:55:07Z",
+      "lastCheckedAt": "2026-07-10T15:05:15Z",
       "error": ""
     },
     {
@@ -32,7 +32,7 @@
       "category": "법률",
       "language": "ko",
       "itemCount": 12,
-      "lastCheckedAt": "2026-07-10T09:55:07Z",
+      "lastCheckedAt": "2026-07-10T15:05:15Z",
       "error": ""
     },
     {
@@ -43,7 +43,7 @@
       "category": "컴퓨터 사이언스",
       "language": "ko",
       "itemCount": 12,
-      "lastCheckedAt": "2026-07-10T09:55:07Z",
+      "lastCheckedAt": "2026-07-10T15:05:15Z",
       "error": ""
     },
     {
@@ -54,7 +54,7 @@
       "category": "양자컴퓨터",
       "language": "ko",
       "itemCount": 12,
-      "lastCheckedAt": "2026-07-10T09:55:07Z",
+      "lastCheckedAt": "2026-07-10T15:05:15Z",
       "error": ""
     },
     {
@@ -65,7 +65,7 @@
       "category": "제약",
       "language": "ko",
       "itemCount": 12,
-      "lastCheckedAt": "2026-07-10T09:55:07Z",
+      "lastCheckedAt": "2026-07-10T15:05:15Z",
       "error": ""
     },
     {
@@ -76,7 +76,7 @@
       "category": "한국 AI",
       "language": "ko",
       "itemCount": 24,
-      "lastCheckedAt": "2026-07-10T09:55:07Z",
+      "lastCheckedAt": "2026-07-10T15:05:15Z",
       "error": ""
     },
     {
@@ -87,8 +87,8 @@
       "category": "한국 AI",
       "language": "ko",
       "itemCount": 24,
-      "lastCheckedAt": "2026-07-10T09:55:07Z",
-      "error": ""
+      "lastCheckedAt": "2026-07-10T15:05:15Z",
+      "error": "URLError"
     },
     {
       "id": "byline-network",
@@ -98,7 +98,7 @@
       "category": "한국 테크",
       "language": "ko",
       "itemCount": 24,
-      "lastCheckedAt": "2026-07-10T09:55:07Z",
+      "lastCheckedAt": "2026-07-10T15:05:15Z",
       "error": ""
     },
     {
@@ -109,7 +109,7 @@
       "category": "AI",
       "language": "en",
       "itemCount": 24,
-      "lastCheckedAt": "2026-07-10T09:55:07Z",
+      "lastCheckedAt": "2026-07-10T15:05:15Z",
       "error": ""
     },
     {
@@ -120,7 +120,7 @@
       "category": "사업",
       "language": "en",
       "itemCount": 20,
-      "lastCheckedAt": "2026-07-10T09:55:07Z",
+      "lastCheckedAt": "2026-07-10T15:05:15Z",
       "error": ""
     },
     {
@@ -131,11 +131,35 @@
       "category": "컴퓨터 사이언스",
       "language": "en",
       "itemCount": 20,
-      "lastCheckedAt": "2026-07-10T09:55:07Z",
+      "lastCheckedAt": "2026-07-10T15:05:15Z",
       "error": ""
     }
   ],
   "items": [
+    {
+      "id": "b623791bb5bf48f37443e4db",
+      "feedId": "koreanbar-law",
+      "source": "법조신문",
+      "category": "법률",
+      "language": "ko",
+      "title": "[로펌소식] LKB평산, 교동면옥 집단식중독사건 단체소송 제기… 피해자 257명 참여",
+      "url": "https://news.koreanbar.or.kr/news/articleView.html?idxno=35874",
+      "publishedAt": "2026-07-10T19:29:38Z",
+      "collectedAt": "2026-07-10T15:05:15Z",
+      "summary": "법무법인 LKB평산(대표변호사 윤웅걸)은 경기도 용인시 기흥구 영덕동에 있는 ‘교동면옥 용인영덕점’에서 발생한 집단 식중독 사건의 피해자들을 대리하여 금일 교동면옥 본사인 주식회사 교동에프앤비를 상대로 집단소송을 제기했다고 10일 밝혔다.집단소송 전담 수행팀은 정원두(사시 44회), 송시현(변시 2회), 김민호(변시 3회) 변호사 등으로 구성됐다. 1차로 전체 피해자 중 257명이 소송에 참여해 이날 수원지법에 소장을 접수했다.이번 사건은 주식회사 교동에프앤비가 직영점으로 운영하는 ‘교동면옥 용인영덕점’에 방문하거나 배달을 통해 음"
+    },
+    {
+      "id": "b7077d9646009ae33e395f06",
+      "feedId": "koreanbar-law",
+      "source": "법조신문",
+      "category": "법률",
+      "language": "ko",
+      "title": "제15회 여성변호사대회 개최… “연대·협력 중요”",
+      "url": "https://news.koreanbar.or.kr/news/articleView.html?idxno=35872",
+      "publishedAt": "2026-07-10T19:14:27Z",
+      "collectedAt": "2026-07-10T15:05:15Z",
+      "summary": "한국여성변호사회(회장 허윤정)는 지난 8일 서울 양재동 엘타워 오르체홀에서 ‘2026년 제15회 여성변호사대회’를 열었다고 10일 밝혔다.행사에는 김정욱 대한변호사협회장, 조순열 서울지방변호사회 회장을 비롯해 기우종(사시 36회) 법원행정처 차장, 조배숙(사시 22회)·김미애(사시 44회)·최보윤(사시 51회)·이소희(변시 6회) 국민의힘 의원, 전지현(사시 51회) 양육비이행관리원 원장, 이재환(사시 45회) 한국사내변호사회 회장, 채용현(변시 4회) 한국법조인협회 회장 등 법조인 200여 명이 참석했다.허윤정 회장은 환영사에서"
+    },
     {
       "id": "0d75b354e71b02ff30fc1fc8",
       "feedId": "pharmnews",
@@ -209,6 +233,18 @@
       "summary": "[팜뉴스=우정민 기자] 55세 이상 고령 비만 환자에게서도 대사비만수술이 안전하게 시행될 수 있으며 당뇨병 등 주요 대사질환의 개선까지 확인됐다는 연구 결과가 나왔다.김상현 순천향대서울병원 외과 교수, 이윤택 이대서울병원 외과 교수를 비롯해 이한홍·서호석 서울성모병원 외과 교수, 박영석 분당서울대병원 외과 교수, 손상용 아주대병원 외과 교수, 이창민 고려대안산병원 외과 교수로 구성된 연구팀은 지난 5월 대한외과학회 공식 학술지 Annals of Surgical Treatment and Research에 이 같은 내용의 논문을 발표했"
     },
     {
+      "id": "d02196dcf19049566e73c499",
+      "feedId": "venturesquare-business",
+      "source": "벤처스퀘어",
+      "category": "사업",
+      "language": "ko",
+      "title": "스누피 75주년 특별전 도록에 담긴 한국제지 기술…’아르떼’ 문화예술 시장 공략",
+      "url": "https://www.venturesquare.net/1097956/",
+      "publishedAt": "2026-07-10T14:20:17Z",
+      "collectedAt": "2026-07-10T15:05:15Z",
+      "summary": "한국제지가 프리미엄 러프글로스지 '아르떼'를 우양미술관 《스누피 75주년 특별전》 공식 도록에 적용했다. 회사는 문화예술 분야 협업을 확대하며 전시 도록과 사진집 등 고부가 인쇄물 시장에서 프리미엄 인쇄용지 경쟁력을 강화할 계획이다. The post 스누피 75주년 특별전 도록에 담긴 한국제지 기술…’아르떼’ 문화예술 시장 공략 appeared first on 벤처스퀘어 ."
+    },
+    {
       "id": "2dbd47255f62f0f41397d620",
       "feedId": "pharmnews",
       "source": "팜뉴스",
@@ -221,6 +257,114 @@
       "summary": "[팜뉴스=우정민 기자] AI 신약개발 전문기업 신테카바이오(대표이사 정종선)가 자사의 AI 바이오 슈퍼컴센터(ABSC)를 기반으로 아토리서치와 AI 데이터센터 코로케이션(Colocation) 공급 계약을 체결했다고 9일 공시했다.계약 상대방인 아토리서치(대표이사 정재웅)는 GPUaaS 및 GPU 토큰 서비스 사업을 하는 곳으로, 이번 계약에 따라 신테카바이오는 최대 2MW(2,000kW) 규모까지 단계적으로 AI 인프라를 수용하기 위한 코로케이션 서비스를 제공할 예정이다.이번 계약은 AI 특화 클라우드 서비스 ‘네오 클라우드(NEO"
     },
     {
+      "id": "a2b4777763018f0b481ee062",
+      "feedId": "venturesquare-business",
+      "source": "벤처스퀘어",
+      "category": "사업",
+      "language": "ko",
+      "title": "서울의 색을 펜에 담았다…모나미, ‘2026 서울색’ 프리미엄 153 출시",
+      "url": "https://www.venturesquare.net/1097946/",
+      "publishedAt": "2026-07-10T14:10:17Z",
+      "collectedAt": "2026-07-10T15:05:15Z",
+      "summary": "모나미가 서울시의 2026 서울색 '모닝옐로우'를 적용한 프리미엄 필기구 '153 시그니처'를 출시한다. 공공기관과의 제품 개발 및 공동 마케팅 협업도 확대하며 브랜드 굿즈 파트너십을 강화할 계획이다. The post 서울의 색을 펜에 담았다…모나미, ‘2026 서울색’ 프리미엄 153 출시 appeared first on 벤처스퀘어 ."
+    },
+    {
+      "id": "bf762eb94f3f9836b34d7e62",
+      "feedId": "venturesquare-business",
+      "source": "벤처스퀘어",
+      "category": "사업",
+      "language": "ko",
+      "title": "“고객이 직접 창고 관리한다”…아이엠박스, 참여형 ‘커뮤니티 매니저’ 도입",
+      "url": "https://www.venturesquare.net/1097939/",
+      "publishedAt": "2026-07-10T14:05:53Z",
+      "collectedAt": "2026-07-10T15:05:15Z",
+      "summary": "아이엠박스가 고객이 직접 지점 관리에 참여하는 '커뮤니티 매니저' 프로그램을 도입한다. 정기 점검과 시설 관리에 참여한 고객에게는 월 최대 5만원의 보관료 할인과 특별 리워드를 제공하며 고객 참여형 운영 문화를 확대할 계획이다. The post “고객이 직접 창고 관리한다”…아이엠박스, 참여형 ‘커뮤니티 매니저’ 도입 appeared first on 벤처스퀘어 ."
+    },
+    {
+      "id": "705c7d10fae3be691ffba7ee",
+      "feedId": "venturesquare-business",
+      "source": "벤처스퀘어",
+      "category": "사업",
+      "language": "ko",
+      "title": "AI가 가품 잡고 특허법인이 대응한다…위고페어, 서울AI허브 AX 사업 선정",
+      "url": "https://www.venturesquare.net/1097935/",
+      "publishedAt": "2026-07-10T14:02:40Z",
+      "collectedAt": "2026-07-10T15:05:15Z",
+      "summary": "위고페어가 특허법인 더웨이브와 함께 서울AI허브 '2026 AI 전환(AX) 지원사업'에 선정됐다. 양사는 AI 기반 가품 탐지와 지재권 침해 대응 업무를 자동화해 브랜드 보호 효율을 높이고 특허법인 대상 AI 서비스 사업을 확대할 계획이다. The post AI가 가품 잡고 특허법인이 대응한다…위고페어, 서울AI허브 AX 사업 선정 appeared first on 벤처스퀘어 ."
+    },
+    {
+      "id": "8145b2c0874bfa11a877e8e6",
+      "feedId": "venturesquare-business",
+      "source": "벤처스퀘어",
+      "category": "사업",
+      "language": "ko",
+      "title": "bhc·아웃백도 AI가 고객 읽는다…다이닝브랜즈, 덱스터크레마 ‘애드플로러’ 도입",
+      "url": "https://www.venturesquare.net/1097916/",
+      "publishedAt": "2026-07-10T13:55:06Z",
+      "collectedAt": "2026-07-10T15:05:15Z",
+      "summary": "덱스터크레마가 다이닝브랜즈그룹에 AI 마케팅 솔루션 '애드플로러'를 공급한다. 검색 데이터와 VOC를 통합 분석해 고객 페르소나를 생성하고, 메뉴 개발과 마케팅 전략까지 데이터 기반 의사결정을 지원한다. The post bhc·아웃백도 AI가 고객 읽는다…다이닝브랜즈, 덱스터크레마 ‘애드플로러’ 도입 appeared first on 벤처스퀘어 ."
+    },
+    {
+      "id": "8a5ed2a41dd3ddb5af40d357",
+      "feedId": "venturesquare-business",
+      "source": "벤처스퀘어",
+      "category": "사업",
+      "language": "ko",
+      "title": "미국은 스테이블코인 속도전…DAXA·MRI, 한국 디지털자산 전략 논의한다",
+      "url": "https://www.venturesquare.net/1097913/",
+      "publishedAt": "2026-07-10T13:50:17Z",
+      "collectedAt": "2026-07-10T15:05:15Z",
+      "summary": "DAXA와 MRI가 미국 디지털자산 정책 변화와 한국의 대응 전략을 주제로 세미나를 개최한다. 미국 스테이블코인 법안과 원화 스테이블코인 제도 설계, 국내 입법 방향 등을 중심으로 정책 전문가와 국회의원들이 논의를 이어갈 예정이다. The post 미국은 스테이블코인 속도전…DAXA·MRI, 한국 디지털자산 전략 논의한다 appeared first on 벤처스퀘어 ."
+    },
+    {
+      "id": "28f9afc1753d05aa5c3f0d42",
+      "feedId": "self-development-korea",
+      "source": "브런치 자기계발·커리어",
+      "category": "자기계발",
+      "language": "ko",
+      "title": "불안끄기 - 브런치",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5US2F4Yk5OZjlTaDRTeTI0MDE0MGJjcEVLekNLVUZhTkNhUGtwWXBKVzFodVJrVGdzc1RLdGZCYTRmUWk5Q0pkdVdGQW9XRWdub2c?oc=5",
+      "publishedAt": "2026-07-10T12:21:54Z",
+      "collectedAt": "2026-07-10T15:05:15Z",
+      "summary": "불안끄기 브런치"
+    },
+    {
+      "id": "60bcb4c7c2b1cd1a065cb71f",
+      "feedId": "self-development-korea",
+      "source": "브런치 자기계발·커리어",
+      "category": "자기계발",
+      "language": "ko",
+      "title": "비상식적인 조직은 유능한 직원도 무능하게 만든다 - 브런치",
+      "url": "https://news.google.com/rss/articles/CBMiREFVX3lxTFB0OXpoU0kySnBEWmVlQnlHd280VTktRVIwa2M2VVZoTVgyODdBLTY0dmlfanpRS3FGd3hpOFN1M3JZWGJS?oc=5",
+      "publishedAt": "2026-07-10T12:07:52Z",
+      "collectedAt": "2026-07-10T04:57:27Z",
+      "summary": "비상식적인 조직은 유능한 직원도 무능하게 만든다 브런치"
+    },
+    {
+      "id": "e02735bb574bcc32df6686bc",
+      "feedId": "venturesquare-business",
+      "source": "벤처스퀘어",
+      "category": "사업",
+      "language": "ko",
+      "title": "실증 현장이 경쟁력이 됐다…애드, 대전 실증지원사업 우수기업 선정",
+      "url": "https://www.venturesquare.net/1097900/",
+      "publishedAt": "2026-07-10T11:51:49Z",
+      "collectedAt": "2026-07-10T15:05:15Z",
+      "summary": "애드가 대전 실증지원사업 우수기업으로 선정되며 현장 실증 성과를 인정받았다. 회사는 실증 데이터를 기반으로 AI 기술을 고도화하고 사업 확대와 후속 투자 유치에 나설 계획이다. The post 실증 현장이 경쟁력이 됐다…애드, 대전 실증지원사업 우수기업 선정 appeared first on 벤처스퀘어 ."
+    },
+    {
+      "id": "892ca0c9a9cf72291b546abe",
+      "feedId": "venturesquare-business",
+      "source": "벤처스퀘어",
+      "category": "사업",
+      "language": "ko",
+      "title": "일본 라쿠텐이 택한 첫 K-뷰티 브랜드…베라모어, 프리A 투자 유치",
+      "url": "https://www.venturesquare.net/1097897/",
+      "publishedAt": "2026-07-10T11:45:31Z",
+      "collectedAt": "2026-07-10T15:05:15Z",
+      "summary": "베라모어가 라쿠텐 캐피탈로부터 프리 시리즈A 투자를 유치했다. 라쿠텐의 첫 K-뷰티 투자 사례로, 일본 시장을 기반으로 글로벌 브랜드 확장에 속도를 낼 계획이다. The post 일본 라쿠텐이 택한 첫 K-뷰티 브랜드…베라모어, 프리A 투자 유치 appeared first on 벤처스퀘어 ."
+    },
+    {
       "id": "5be5c3989203057a8ca0c201",
       "feedId": "koreanbar-law",
       "source": "법조신문",
@@ -231,6 +375,30 @@
       "publishedAt": "2026-07-10T11:34:36Z",
       "collectedAt": "2026-07-10T04:57:27Z",
       "summary": "대한변호사협회가 국회에서 추진 중인 검찰의 보완수사권 폐지를 위한 형사소송법 개정에 대해 국민의 피해 방지와 실체적 진실 발견을 위한 형사사법제도 개선 방향을 제시했다.대한변호사협회(협회장 김정욱)는 10일 이같은 내용의 성명을 내고 “최근 국회에서 논의 중인 형사소송법 개정 등 수사제도 개편 방향과 관련해, 형사사법체계의 근간을 설계함에 있어 ‘국민의 피해 방지’와 ‘실체적 진실 발견’이 단 하나의 절대적 기준이 돼야 한다”고 밝혔다.이어 “어느 기관이든 일방적인 권한을 독점하면 결국 부패하기 마련”이라며 “형사사법체계는 상호 견"
+    },
+    {
+      "id": "b19db117b4ec37dbf19f0648",
+      "feedId": "venturesquare-business",
+      "source": "벤처스퀘어",
+      "category": "사업",
+      "language": "ko",
+      "title": "AI로 몽골 도시 품는다…트러스테이, 경제사절단서 스마트시티 협력 본격화",
+      "url": "https://www.venturesquare.net/1097886/",
+      "publishedAt": "2026-07-10T11:25:02Z",
+      "collectedAt": "2026-07-10T15:05:15Z",
+      "summary": "트러스테이가 한·몽골 경제사절단에 AI 솔루션 기업으로 유일하게 참여해 몽골 다르항시와 스마트시티 구축 협약을 체결했다. AI 기반 도시 안전관제와 주거 플랫폼 실증을 시작으로 중앙아시아 시장 진출을 본격화한다. The post AI로 몽골 도시 품는다…트러스테이, 경제사절단서 스마트시티 협력 본격화 appeared first on 벤처스퀘어 ."
+    },
+    {
+      "id": "57a0a3bb0d2d12eb8ca6826a",
+      "feedId": "byline-network",
+      "source": "바이라인네트워크",
+      "category": "한국 테크",
+      "language": "ko",
+      "title": "국내 스타트업 갈라파고스, 규제와 제도가 만든다",
+      "url": "https://byline.network/2026/07/45273982/",
+      "publishedAt": "2026-07-10T10:38:41Z",
+      "collectedAt": "2026-07-10T15:05:15Z",
+      "summary": "최지영 코리아스타트업포럼 대표는 10일 국회의원회관에서 열린 ‘K-스타트업을 세계 무대로!’ 세미나에서 정책 제언을 맡아 이같이 말했다. 이번 세미나는 국내 스타트업의 글로벌 경쟁력 강화를 위해 마련됐다. 이날 최 대표는 국내 스타트업의 해외 성장을 위해 ▲글로벌 정합성에 맞는 규제 설계 ▲해외 인재 유치 ▲딥테크·피지컬 인공지능(AI)을 중심으로 하는 공공조달을 제언했다. 특히 국내 규제 설계 문제는 국내 스타트업들이 성장 가능성이 있음에도 제동이 걸려 역차별을 받고 있다는 점에서 대책 마련의 필요성이 제기됐다."
     },
     {
       "id": "e9dd49a4fcf9616a0f90d03a",
@@ -339,18 +507,6 @@
       "publishedAt": "2026-07-10T09:08:01Z",
       "collectedAt": "2026-07-10T09:55:07Z",
       "summary": "AI 코딩 도구로 잘 알려진 커서(Cursor)가 이메일 작성과 스프레드시트 관리, 문서 작업까지 수행하는 범용 AI 에이전트를 개발 중인 것으로 알려졌다. 개발자 중심 서비스에서 일반 기업 사용자까지 영역을 확대하며 앤트로픽의 \\'클로드 코워크\\'와 오픈AI의 \\'챗GPT 워크\\'가 경쟁하는 기업용 AI 업무 자동화 시장에 진출하려는 움직임이다.10일(현지시간) 디 인포메이션에 따르면, 커서는 내부적으로 \\'샌드(Sand)\\'라는 코드명의 범용 AI 에이전트를 개발하고 있다.이 프로젝트는 기존 개발자를 위한 코딩 도구와 달리, 일반 사무직과"
-    },
-    {
-      "id": "60bcb4c7c2b1cd1a065cb71f",
-      "feedId": "self-development-korea",
-      "source": "브런치 자기계발·커리어",
-      "category": "자기계발",
-      "language": "ko",
-      "title": "비상식적인 조직은 유능한 직원도 무능하게 만든다 - 브런치",
-      "url": "https://news.google.com/rss/articles/CBMiREFVX3lxTFB0OXpoU0kySnBEWmVlQnlHd280VTktRVIwa2M2VVZoTVgyODdBLTY0dmlfanpRS3FGd3hpOFN1M3JZWGJS?oc=5",
-      "publishedAt": "2026-07-10T09:04:00Z",
-      "collectedAt": "2026-07-10T04:57:27Z",
-      "summary": "비상식적인 조직은 유능한 직원도 무능하게 만든다 브런치"
     },
     {
       "id": "36f8f13a1fee918a4ea2dce3",
@@ -785,6 +941,18 @@
       "summary": "인공지능(AI)이 전 영역에서 폭넓게 활용되는 가운데 수사 분야에서는 보조 수단으로만 활용해야 한다는 진단이 나왔다. AI에 판단 권한을 넘기는 것을 경계하고, 최종 결정은 인간이 맡아야 한다는 것이다. 강병탁 AI스페라 대표는 최근 한국범죄학회와 한국융합보안학회가 공동 개최한 하계학술대회 특별세션 전문가 토론에 참여해 AI 기반 디지털 포렌식의 책임 문제와 보안기술 활용 방향을 논의했다고 10일 밝혔다. 강 대표는 “AI가 수사 과정의 최종"
     },
     {
+      "id": "d8a36c0f05ef8a33e37d6d33",
+      "feedId": "venturesquare-business",
+      "source": "벤처스퀘어",
+      "category": "사업",
+      "language": "ko",
+      "title": "PE 투자 성패, 결국 사람에 달렸다…브리스캔영, 리더십 실사 솔루션 출시",
+      "url": "https://www.venturesquare.net/1097804/",
+      "publishedAt": "2026-07-10T01:42:24Z",
+      "collectedAt": "2026-07-10T15:05:15Z",
+      "summary": "브리스캔영이 PE 투자 과정에서 CEO와 경영진의 실행력을 검증하는 국내 최초 리더십 솔루션 'PE 익스큐션 알파'를 출시했다. 투자 전 실사부터 인수 후 조직 안정화와 성과관리까지 지원하며 PE 시장의 새로운 HRDD 모델을 제시했다. The post PE 투자 성패, 결국 사람에 달렸다…브리스캔영, 리더십 실사 솔루션 출시 appeared first on 벤처스퀘어 ."
+    },
+    {
       "id": "0d2e59a42ee5fdee23db1256",
       "feedId": "venturesquare-business",
       "source": "벤처스퀘어",
@@ -809,30 +977,6 @@
       "summary": "인투씨엔에스가 경기수의컨퍼런스에서 AI 기능을 기본 탑재한 차세대 동물병원 EMR '인투벳'과 클라우드 솔루션을 공개한다. 네이버 플레이스 플러스 연동 서비스를 통해 병원의 검색 노출 경쟁력까지 강화하며 디지털 병원 운영 환경을 제시했다. The post AI 음성 차팅부터 네이버 검색 연동까지…인투씨엔에스, 동물병원 DX 제시 appeared first on 벤처스퀘어 ."
     },
     {
-      "id": "3e8acbf1b44c021019d376ef",
-      "feedId": "venturesquare-business",
-      "source": "벤처스퀘어",
-      "category": "사업",
-      "language": "ko",
-      "title": "미니창고 다락, LG전자와 첫 협업…셀프스토리지 ‘생활 인프라’로 확장",
-      "url": "https://www.venturesquare.net/1097775/",
-      "publishedAt": "2026-07-10T01:24:06Z",
-      "collectedAt": "2026-07-10T04:57:27Z",
-      "summary": "세컨신드롬이 LG전자 공식 온라인몰 LGE닷컴과 업계 최초 협업을 통해 셀프스토리지와 가전을 결합한 생활 인프라 서비스를 선보인다. 양사는 상호 할인 프로모션과 AIoT 기반 스마트 보관 서비스를 앞세워 공간 관리 시장 공략을 강화할 계획이다. The post 미니창고 다락, LG전자와 첫 협업…셀프스토리지 ‘생활 인프라’로 확장 appeared first on 벤처스퀘어 ."
-    },
-    {
-      "id": "b4195137cbc0be46c179c700",
-      "feedId": "venturesquare-business",
-      "source": "벤처스퀘어",
-      "category": "사업",
-      "language": "ko",
-      "title": "딥엑스, 유럽 성공모델 APAC로 확대…에브넷과 15개국 공급망 구축",
-      "url": "https://www.venturesquare.net/1097768/",
-      "publishedAt": "2026-07-10T01:21:00Z",
-      "collectedAt": "2026-07-10T04:57:27Z",
-      "summary": "딥엑스가 글로벌 유통기업 에브넷과 협력을 확대하며 아시아·태평양 15개국을 대상으로 피지컬 AI 반도체 공급망 구축에 나선다. 유럽에서 검증한 고객 발굴과 기술검증(PoC) 모델을 APAC 시장으로 확장해 스마트팩토리, 로봇, 산업 AI 등 다양한 분야에서 사업화를 가... The post 딥엑스, 유럽 성공모델 APAC로 확대…에브넷과 15개국 공급망 구축 appeared first on 벤처스퀘어 ."
-    },
-    {
       "id": "b9ba1ede226356cdc6e0455b",
       "feedId": "etnews-ai",
       "source": "전자신문 AI",
@@ -843,18 +987,6 @@
       "publishedAt": "2026-07-10T01:20:35Z",
       "collectedAt": "2026-07-10T04:20:48Z",
       "summary": "KT클라우드는 금융 특화 데이터센터인 '여의도 데이터센터(이하 여의도 DC)' 증설 공사에 착수하고, 차세대 금융 인프라 구축에 나선다고 10일 밝혔다. 이번 증설은 금융시장 구조 변화와 글로벌 투자 확대에 따른 인프라 수요 증가에 대응하기 위한 전략적 투자다. KT클라우드는는 여의도 DC를 금융기관과 거래소, 글로벌 클라우드를 연결하는 금융 인프라 거점으로 육성할 계획이다. 국내 금융시장은 복수 거래시장 체제 확산과 디지털 거래 증가 등으로"
-    },
-    {
-      "id": "0bfc5ca97f32852ec1f4d7e3",
-      "feedId": "venturesquare-business",
-      "source": "벤처스퀘어",
-      "category": "사업",
-      "language": "ko",
-      "title": "두나무, 서울시와 손잡고 청년 디지털 금융교육 확대",
-      "url": "https://www.venturesquare.net/1097760/",
-      "publishedAt": "2026-07-10T01:15:07Z",
-      "collectedAt": "2026-07-10T04:57:27Z",
-      "summary": "두나무와 서울시가 청년 대상 디지털 금융교육 확대를 위해 업무협약을 체결했다. 양측은 업클래스 교육과 청년 금융 골든벨 등을 통해 디지털자산 이해와 금융사기 예방, 미래 금융 역량 강화에 나설 계획이다. The post 두나무, 서울시와 손잡고 청년 디지털 금융교육 확대 appeared first on 벤처스퀘어 ."
     },
     {
       "id": "8f3a9c7a51ac58ba5a2af127",
@@ -869,30 +1001,6 @@
       "summary": "한국의 AI·반도체 메가프로젝트가 전력 인프라 확충 속도에 따라 차질을 빚을 수 있다는 분석이 나왔다. 대규모 데이터센터와 반도체 제조시설이 들어설 경우 전력 수요가 급증하지만, 현재 계획된 발전·송전 체계만으로는 이를 안정적으로 감당하기 어렵다는 지적이다.우드매킨지는 9일(현지시간) 공개한 보고서에서 호남권에 추진 중인 약 800조원 규모 반도체·AI 데이터센터 클러스터를 주요 사례로 들었다.보고서에 따르면, 클러스터가 완성되면 호남권 최대 전력수요는 현재 11.8기가와트(GW)에서 19.1GW로 늘어날 수 있다. 반면 2030년"
     },
     {
-      "id": "5b3dfca83f5eba94a99e451c",
-      "feedId": "venturesquare-business",
-      "source": "벤처스퀘어",
-      "category": "사업",
-      "language": "ko",
-      "title": "산업용 드론도 ‘낙하산 시대’…DJI, Matrice 400 안전장치 출시",
-      "url": "https://www.venturesquare.net/1097745/",
-      "publishedAt": "2026-07-10T01:12:42Z",
-      "collectedAt": "2026-07-10T04:57:27Z",
-      "summary": "DJI가 산업용 드론 Matrice 400 전용 낙하산 AP100을 출시했다. 독립 전원과 이중화 설계, 600ms 이내 자동 전개 기능을 적용해 산업 현장의 드론 운용 안전성을 높이고 유럽 주요 운용 안전 기준 대응도 지원한다. The post 산업용 드론도 ‘낙하산 시대’…DJI, Matrice 400 안전장치 출시 appeared first on 벤처스퀘어 ."
-    },
-    {
-      "id": "5745a99b3ec812e6d25c7aaf",
-      "feedId": "venturesquare-business",
-      "source": "벤처스퀘어",
-      "category": "사업",
-      "language": "ko",
-      "title": "AI가 네트워크 이상을 먼저 찾는다…넷스카우트, 글로벌 리더 3년 연속 선정",
-      "url": "https://www.venturesquare.net/1097734/",
-      "publishedAt": "2026-07-10T01:05:34Z",
-      "collectedAt": "2026-07-10T04:57:27Z",
-      "summary": "넷스카우트가 QKS그룹의 'SPARK Matrix: Network Observability Q2 2026'에서 3년 연속 리더로 선정됐다. AI 기반 스마트 데이터와 심층 패킷 분석 기술을 앞세워 네트워크 가시성 분야 경쟁력을 인정받았다. The post AI가 네트워크 이상을 먼저 찾는다…넷스카우트, 글로벌 리더 3년 연속 선정 appeared first on 벤처스퀘어 ."
-    },
-    {
       "id": "bbb0aff0efebfe18e775bfe3",
       "feedId": "ai-times-korea",
       "source": "AI타임스",
@@ -903,30 +1011,6 @@
       "publishedAt": "2026-07-10T01:05:00Z",
       "collectedAt": "2026-07-10T04:34:15Z",
       "summary": "인도에서 최근 준공된 재생에너지 용량의 약 3분의 1이 송전망 제약에 따른 출력제어 위험에 놓였다는 분석이 나왔다. 발전소 건설보다 송전망 확충과 계통 접속이 인도 재생에너지 확대의 핵심 병목으로 떠오르고 있다는 의미다.신용평가사 ICRA 분석에 따르면, 2026년 5월 기준 최근 준공된 재생에너지 용량 54.8기가와트(GW) 가운데 약 33%가 임시 일반망 접속(T-GNA) 방식으로 전력을 송전하고 있다. T-GNA는 장기 송전 접속이 확정되기 전 임시로 전력을 보내는 방식이라, 계통 혼잡이 생기면 출력제어 위험이 커질 수 있다."
-    },
-    {
-      "id": "7a1856672c24a15cd3df0f49",
-      "feedId": "venturesquare-business",
-      "source": "벤처스퀘어",
-      "category": "사업",
-      "language": "ko",
-      "title": "AI 인재부터 글로벌 채용까지…메가존클라우드, 몽골 교육 협력 확대",
-      "url": "https://www.venturesquare.net/1097726/",
-      "publishedAt": "2026-07-10T01:02:08Z",
-      "collectedAt": "2026-07-10T04:57:27Z",
-      "summary": "메가존클라우드가 몽골 후레정보통신대학교와 AI·클라우드 인재 양성을 위한 업무협약을 체결했다. 양측은 교육과정 공동 개발, 인턴십, 글로벌 채용 연계는 물론 소버린 AI와 피지컬 AI 분야까지 협력을 확대할 계획이다. The post AI 인재부터 글로벌 채용까지…메가존클라우드, 몽골 교육 협력 확대 appeared first on 벤처스퀘어 ."
-    },
-    {
-      "id": "38aa03b54cf829e9426920f7",
-      "feedId": "venturesquare-business",
-      "source": "벤처스퀘어",
-      "category": "사업",
-      "language": "ko",
-      "title": "이불 세탁 157만채…런드리고, 여름 성수기 무료 세탁 프로모션",
-      "url": "https://www.venturesquare.net/1097722/",
-      "publishedAt": "2026-07-10T00:58:44Z",
-      "collectedAt": "2026-07-10T04:57:27Z",
-      "summary": "런드리고가 누적 이불 세탁 157만채를 기록했다. 회사는 여름 성수기를 맞아 신규 고객 첫 이불 무료 세탁과 기존 회원 대상 1+1 프로모션을 진행하며 고객 확대에 나선다. The post 이불 세탁 157만채…런드리고, 여름 성수기 무료 세탁 프로모션 appeared first on 벤처스퀘어 ."
     },
     {
       "id": "24b2f10d51cc48c450d10347",
@@ -1119,42 +1203,6 @@
       "publishedAt": "2026-07-09T13:00:00Z",
       "collectedAt": "2026-07-10T02:12:51Z",
       "summary": "Learn how GPT-5.6 powers Microsoft 365 Copilot with stronger AI capabilities across Word, Excel, PowerPoint, Chat, and Cowork for faster, higher-quality work."
-    },
-    {
-      "id": "c7cad7d2bb71c2b430ec3888",
-      "feedId": "venturesquare-business",
-      "source": "벤처스퀘어",
-      "category": "사업",
-      "language": "ko",
-      "title": "AI가 쿠버네티스 운영까지 맡는다…솔트웨어, 운영 자동화 전략 공개",
-      "url": "https://www.venturesquare.net/1097647/",
-      "publishedAt": "2026-07-09T12:52:00Z",
-      "collectedAt": "2026-07-10T04:57:27Z",
-      "summary": "솔트웨어가 'AI로 완성하는 쿠버네티스' 세미나를 열고 AI 기반 쿠버네티스 운영 자동화 전략을 공개했다. 참가 기업에는 Amazon EKS 구축부터 AI 에이전트 기반 운영까지 지원하는 무상 프로그램도 제공한다. The post AI가 쿠버네티스 운영까지 맡는다…솔트웨어, 운영 자동화 전략 공개 appeared first on 벤처스퀘어 ."
-    },
-    {
-      "id": "d4d2a1ab975a8975093f5193",
-      "feedId": "venturesquare-business",
-      "source": "벤처스퀘어",
-      "category": "사업",
-      "language": "ko",
-      "title": "제조 현장에 ‘AI 두뇌’ 심는다…미소정보기술, 산업부 AX 국책사업 주관",
-      "url": "https://www.venturesquare.net/1097632/",
-      "publishedAt": "2026-07-09T12:44:29Z",
-      "collectedAt": "2026-07-10T04:57:27Z",
-      "summary": "미소정보기술이 총 75억 원 규모의 산업부 '산업현장 문제해결형 산업AI 에이전트 기술개발' 과제 주관기업으로 선정됐다. 에코프로비엠과 제조 현장 실증을 진행하며 AI 에이전트 기반 제조 AX 모델을 구축하고, 반도체와 소재 산업 등으로 확산을 추진한다. The post 제조 현장에 ‘AI 두뇌’ 심는다…미소정보기술, 산업부 AX 국책사업 주관 appeared first on 벤처스퀘어 ."
-    },
-    {
-      "id": "22a0dafb0350264a1a66d7f4",
-      "feedId": "venturesquare-business",
-      "source": "벤처스퀘어",
-      "category": "사업",
-      "language": "ko",
-      "title": "디엘지, 국내외 M&A 리그테이블 상위권…크로스보더·신산업 자문 경쟁력 입증",
-      "url": "https://www.venturesquare.net/1097629/",
-      "publishedAt": "2026-07-09T12:41:57Z",
-      "collectedAt": "2026-07-10T04:57:27Z",
-      "summary": "법무법인 디엘지가 2026년 상반기 블룸버그 M&A 리그테이블 국내 4위, 더벨 M&A 리그테이블 거래종결·거래발표 부문 각각 13위를 기록했다. 기술·AI·바이오 등 신산업과 크로스보더 거래 자문을 확대하며 M&A 경쟁력을 강화하고 있다. The post 디엘지, 국내외 M&A 리그테이블 상위권…크로스보더·신산업 자문 경쟁력 입증 appeared first on 벤처스퀘어 ."
     },
     {
       "id": "69410fecdfc0dec998c3259f",
@@ -1481,18 +1529,6 @@
       "summary": "개인정보보호위원회는 개인정보 보호 법규를 위반한 락앤락, 유베이스, 썬포토 등 3개 사업자에 총 7억100만원의 과징금과 540만원의 과태료를 부과했다고 9일 밝혔다. 락앤락에는 과징금 5억300만원과 과태료 540만원이 부과됐다. 해커는 2024년 4월 메일 서버 취약점을 악용해 내부 시스템에 침입한 뒤 5월 회원 데이터베이스(DB)를 유출했다. 같은 해 11월에는 내부 시스템에 다시 침입해 파일서버 내 업무자료 등을 빼냈다. 두 차례 유출로"
     },
     {
-      "id": "10dbbbdbd2f32fa4c0f874b9",
-      "feedId": "byline-network",
-      "source": "바이라인네트워크",
-      "category": "한국 테크",
-      "language": "ko",
-      "title": "공정위, 미래에셋컨설팅 코빗 인수 승인",
-      "url": "https://byline.network/2026/07/0709-3/",
-      "publishedAt": "2026-07-09T01:52:56Z",
-      "collectedAt": "2026-07-10T04:14:57Z",
-      "summary": "공정거래위원회가 미래에셋그룹의 비금융계열사인 미래에셋컨설팅의 코빗 주식 취득에 대해 기업결합을 승인했다. 공정위는 이번 기업결합이 시장에서의 경쟁을 제한할 가능성이 크지 않다고 판단했다고 9일 밝혔다. 미래에셋컨설팅은 코빗 주식 92.06%를 약 1334억원에 취득한다."
-    },
-    {
       "id": "3ef85dad49c6d7a21060bf54",
       "feedId": "etnews-ai",
       "source": "전자신문 AI",
@@ -1791,30 +1827,6 @@
       "publishedAt": "2026-07-07T00:00:00Z",
       "collectedAt": "2026-07-10T02:12:51Z",
       "summary": "See how Australian Payments Plus uses ChatGPT Enterprise and Codex to move faster through payments complexity. AP+ saves time, improves quality, and keeps human judgment central."
-    },
-    {
-      "id": "5e1fe76381602892b64e4699",
-      "feedId": "koreanbar-law",
-      "source": "법조신문",
-      "category": "법률",
-      "language": "ko",
-      "title": "‘가짜 판례’ 법원 제출시 과태료 최대 500만 원… 이성윤 의원, 민·형소법 개정안 발의",
-      "url": "https://news.koreanbar.or.kr/news/articleView.html?idxno=35837",
-      "publishedAt": "2026-07-06T17:40:41Z",
-      "collectedAt": "2026-07-10T04:57:27Z",
-      "summary": "허위 법령이나 판례를 인용해 법원에 제출하는 행위를 제재하는 법안이 국회에 발의됐다. 생성형 인공지능(AI) 확산으로 존재하지 않는 판례 등이 소송 자료에 활용되는 사례가 늘어난 데 따른 것이다.6일 국회의안정보시스템에 따르면 이성윤 더불어민주당 의원은 지난 3일 허위 법령·판례를 인용해 법원에 제출하는 행위를 제재하는 규정을 담은 민사소송법 및 형사소송법 개정안을 대표발의 했다.재판 중 허위의 물적 증거를 만들어 제출하는 행위는 현행법상 증거인멸죄, 무고죄, 사기죄, 문서위조 관련 범죄 등으로 형사 처벌이 가능하다. 하지만 최근"
-    },
-    {
-      "id": "c975fc7cf3920142e6cc1a72",
-      "feedId": "koreanbar-law",
-      "source": "법조신문",
-      "category": "법률",
-      "language": "ko",
-      "title": "법무부·경찰, 오늘부터 전자발찌범 접근금지명령 정보 실시간 공유",
-      "url": "https://news.koreanbar.or.kr/news/articleView.html?idxno=35835",
-      "publishedAt": "2026-07-06T17:10:42Z",
-      "collectedAt": "2026-07-10T04:57:27Z",
-      "summary": "성폭력, 살인 등으로 전자발찌를 착용한 범죄자가 스토킹 등으로 피해자 접근금지 명령을 받을 경우 법무부와 경찰이 관련 정보를 공유하기로 했다. 법무부(장관 정성호)와 경찰청(청장 직무대행 유재성)은 6일 이 같은 내용의 ‘법무부-경찰 간 고위험 대상자 협력 대응 방안’을 시행한다.이번 방안은 성폭력 범죄로 전자발찌를 착용 중이던 김훈이 피해자에 대한 접근금지 명령을 받고도 피해자에게 접근해 살해한, 이른바 ‘남양주 스토킹 살인사건’을 계기로 마련됐다. 기존에는 2024년 1월 12일 시행된 스토킹처벌법과 전자장치부착법에 따라 ‘위치"
     },
     {
       "id": "d6bf68c21e267df885a445a2",
@@ -2619,18 +2631,6 @@
       "publishedAt": "2026-04-14T07:00:00Z",
       "collectedAt": "2026-07-10T04:57:27Z",
       "summary": "누워서 하는 자기계발 브런치"
-    },
-    {
-      "id": "a149b2d68a347dac6bbf406f",
-      "feedId": "self-development-korea",
-      "source": "브런치 자기계발·커리어",
-      "category": "자기계발",
-      "language": "ko",
-      "title": "07화 06화. 자기계발과 재테크 - 브런치",
-      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE0xMkoyTnV3MUFTeFpveFF6LV9LMlNnekRwcktrZVdFMmREN3F2T3lyaWlibDZmZnlVYlh1c2wxbFFQMHNZRnJpV3o5WQ?oc=5",
-      "publishedAt": "2026-04-10T00:28:12Z",
-      "collectedAt": "2026-07-10T04:57:27Z",
-      "summary": "07화 06화. 자기계발과 재테크 브런치"
     }
   ]
 }
