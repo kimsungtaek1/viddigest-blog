@@ -9,6 +9,7 @@ import html
 import json
 import re
 import sys
+import unicodedata
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
@@ -251,6 +252,32 @@ def within_retention(item: dict[str, Any], cutoff: datetime) -> bool:
     return parsed.astimezone(timezone.utc) >= cutoff
 
 
+def normalized_filter_values(config: dict[str, Any], key: str) -> tuple[str, ...]:
+    values = config.get(key) or []
+    if not isinstance(values, list):
+        raise ValueError(f"{key}는 문자열 배열이어야 합니다.")
+    return tuple(
+        normalized
+        for value in values
+        if (normalized := unicodedata.normalize("NFKC", str(value)).strip().casefold())
+    )
+
+
+def title_is_excluded(title: str, prefixes: tuple[str, ...], keywords: tuple[str, ...]) -> bool:
+    normalized = unicodedata.normalize("NFKC", title or "").strip().casefold()
+    if not normalized:
+        return False
+    if any(normalized.startswith(prefix) for prefix in prefixes):
+        return True
+    for keyword in keywords:
+        if keyword.isascii() and keyword.isalnum():
+            if re.search(rf"(?<![a-z0-9]){re.escape(keyword)}(?![a-z0-9])", normalized):
+                return True
+        elif keyword in normalized:
+            return True
+    return False
+
+
 def collect(
     config_path: Path,
     output_path: Path,
@@ -265,6 +292,8 @@ def collect(
     max_total = max(max_per_feed, int(config.get("maxTotalItems", 96)))
     retention_days = max(1, int(config.get("retentionDays", 180)))
     summary_limit = max(80, int(config.get("summaryMaxCharacters", 320)))
+    excluded_title_prefixes = normalized_filter_values(config, "excludeTitlePrefixes")
+    excluded_title_keywords = normalized_filter_values(config, "excludeTitleKeywords")
     checked_at = utc_now()
     cutoff = datetime.now(timezone.utc) - timedelta(days=retention_days)
     previous = load_json(output_path, {"version": 1, "generatedAt": "", "feeds": [], "items": []})
@@ -313,7 +342,16 @@ def collect(
             item["language"] = feed_language
 
         feed_items = sorted(
-            (item for item in merged.values() if within_retention(item, cutoff)),
+            (
+                item
+                for item in merged.values()
+                if within_retention(item, cutoff)
+                and not title_is_excluded(
+                    str(item.get("title") or ""),
+                    excluded_title_prefixes,
+                    excluded_title_keywords,
+                )
+            ),
             key=lambda item: (item.get("publishedAt") or item.get("collectedAt") or "", item.get("id") or ""),
             reverse=True,
         )[:max_per_feed]

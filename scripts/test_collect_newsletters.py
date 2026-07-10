@@ -1,4 +1,5 @@
 import importlib.util
+import json
 import tempfile
 import unittest
 from pathlib import Path
@@ -126,6 +127,59 @@ class NewsletterCollectorTests(unittest.TestCase):
             snapshot, changed = collector.collect(config, output, fetcher=lambda _: xml)
             self.assertTrue(changed)
             self.assertEqual(snapshot["items"], [])
+
+    def test_title_filters_prune_existing_items_before_feed_limit(self):
+        xml = """<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel>
+        <title>한국어 뉴스</title>
+        <item><title>[인사] 회사 임원</title><link>https://example.com/personnel</link>
+        <guid>personnel</guid><pubDate>Fri, 10 Jul 2026 04:00:00 GMT</pubDate></item>
+        <item><title>태풍 북상 소식</title><link>https://example.com/weather</link>
+        <guid>weather</guid><pubDate>Fri, 10 Jul 2026 03:00:00 GMT</pubDate></item>
+        <item><title>AI 도구 활용법</title><link>https://example.com/ai</link>
+        <guid>ai</guid><pubDate>Fri, 10 Jul 2026 02:00:00 GMT</pubDate></item>
+        <item><title>스타트업 성장 전략</title><link>https://example.com/business</link>
+        <guid>business</guid><pubDate>Fri, 10 Jul 2026 01:00:00 GMT</pubDate></item>
+        </channel></rss>""".encode("utf-8")
+        empty_xml = b"""<rss version="2.0"><channel><title>Empty</title></channel></rss>"""
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            config = root / "feeds.json"
+            output = root / "newsletters.json"
+            config_data = {
+                "maxItemsPerFeed": 4,
+                "maxTotalItems": 4,
+                "feeds": [
+                    {
+                        "id": "korean",
+                        "title": "한국어 뉴스",
+                        "url": "https://example.com/feed",
+                        "siteUrl": "https://example.com/",
+                        "category": "한국 뉴스",
+                        "language": "ko",
+                    }
+                ],
+            }
+            config.write_text(json.dumps(config_data, ensure_ascii=False), encoding="utf-8")
+            first_snapshot, _ = collector.collect(config, output, fetcher=lambda _: xml)
+            self.assertEqual(len(first_snapshot["items"]), 4)
+
+            config_data["maxItemsPerFeed"] = 2
+            config_data["maxTotalItems"] = 2
+            config_data["excludeTitlePrefixes"] = ["[인사]"]
+            config_data["excludeTitleKeywords"] = ["태풍"]
+            config.write_text(json.dumps(config_data, ensure_ascii=False), encoding="utf-8")
+            filtered_snapshot, changed = collector.collect(config, output, fetcher=lambda _: empty_xml)
+
+            self.assertTrue(changed)
+            self.assertEqual(
+                [item["title"] for item in filtered_snapshot["items"]],
+                ["AI 도구 활용법", "스타트업 성장 전략"],
+            )
+
+            self.assertTrue(collector.title_is_excluded("기업 MOU 체결", (), ("mou",)))
+            self.assertTrue(collector.title_is_excluded("기업 ＭｏＵ 체결", (), ("mou",)))
+            self.assertFalse(collector.title_is_excluded("Mouse 입력 장치 활용법", (), ("mou",)))
+            self.assertFalse(collector.title_is_excluded("Run autonomous coding agents", (), ("mou",)))
 
     def test_korean_text_and_language_metadata_are_preserved(self):
         xml = """<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel>
