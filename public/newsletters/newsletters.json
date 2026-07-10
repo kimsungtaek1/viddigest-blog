@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-07-10T02:27:20Z",
+  "generatedAt": "2026-07-10T02:36:34Z",
   "feeds": [
     {
       "id": "openai-news",
@@ -9,7 +9,7 @@
       "siteUrl": "https://openai.com/news",
       "category": "AI",
       "itemCount": 24,
-      "lastCheckedAt": "2026-07-10T02:27:20Z",
+      "lastCheckedAt": "2026-07-10T02:36:34Z",
       "error": ""
     },
     {
@@ -19,7 +19,7 @@
       "siteUrl": "https://www.lennysnewsletter.com/",
       "category": "사업·제품",
       "itemCount": 20,
-      "lastCheckedAt": "2026-07-10T02:27:20Z",
+      "lastCheckedAt": "2026-07-10T02:36:34Z",
       "error": ""
     },
     {
@@ -29,18 +29,18 @@
       "siteUrl": "https://newsletter.pragmaticengineer.com/",
       "category": "개발",
       "itemCount": 20,
-      "lastCheckedAt": "2026-07-10T02:27:20Z",
+      "lastCheckedAt": "2026-07-10T02:36:34Z",
       "error": ""
     },
     {
       "id": "ai-normal-technology",
       "title": "AI as Normal Technology",
       "url": "https://aisnakeoil.substack.com/feed",
-      "siteUrl": "https://www.normaltech.ai/",
+      "siteUrl": "https://aisnakeoil.substack.com/",
       "category": "AI",
       "itemCount": 8,
-      "lastCheckedAt": "2026-07-10T02:27:20Z",
-      "error": ""
+      "lastCheckedAt": "2026-07-10T02:36:34Z",
+      "error": "HTTP Error 403: Forbidden"
     }
   ],
   "items": [
