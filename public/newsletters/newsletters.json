@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-07-10T04:36:29Z",
+  "generatedAt": "2026-07-10T04:39:16Z",
   "feeds": [
     {
       "id": "ai-times-korea",
@@ -10,19 +10,19 @@
       "category": "한국 AI",
       "language": "ko",
       "itemCount": 24,
-      "lastCheckedAt": "2026-07-10T04:36:29Z",
+      "lastCheckedAt": "2026-07-10T04:39:16Z",
       "error": ""
     },
     {
       "id": "etnews-ai",
       "title": "전자신문 AI",
       "url": "https://rss.etnews.com/04046.xml",
-      "siteUrl": "https://www.etnews.com/",
+      "siteUrl": "https://www.etnews.com/news/section.html?id1=04&id2=046",
       "category": "한국 AI",
       "language": "ko",
       "itemCount": 24,
-      "lastCheckedAt": "2026-07-10T04:36:29Z",
-      "error": ""
+      "lastCheckedAt": "2026-07-10T04:39:16Z",
+      "error": "URLError"
     },
     {
       "id": "byline-network",
@@ -32,7 +32,7 @@
       "category": "한국 테크",
       "language": "ko",
       "itemCount": 19,
-      "lastCheckedAt": "2026-07-10T04:36:29Z",
+      "lastCheckedAt": "2026-07-10T04:39:16Z",
       "error": ""
     },
     {
@@ -43,7 +43,7 @@
       "category": "AI",
       "language": "en",
       "itemCount": 24,
-      "lastCheckedAt": "2026-07-10T04:36:29Z",
+      "lastCheckedAt": "2026-07-10T04:39:16Z",
       "error": ""
     },
     {
@@ -54,7 +54,7 @@
       "category": "사업·제품",
       "language": "en",
       "itemCount": 20,
-      "lastCheckedAt": "2026-07-10T04:36:29Z",
+      "lastCheckedAt": "2026-07-10T04:39:16Z",
       "error": ""
     },
     {
@@ -65,7 +65,7 @@
       "category": "개발",
       "language": "en",
       "itemCount": 20,
-      "lastCheckedAt": "2026-07-10T04:36:29Z",
+      "lastCheckedAt": "2026-07-10T04:39:16Z",
       "error": ""
     }
   ],
