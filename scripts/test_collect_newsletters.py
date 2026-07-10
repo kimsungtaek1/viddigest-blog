@@ -21,7 +21,13 @@ class NewsletterCollectorTests(unittest.TestCase):
         </item></channel></rss>"""
         parsed = collector.parse_feed(
             xml,
-            {"id": "example", "title": "Example", "category": "AI", "siteUrl": "https://example.com/"},
+            {
+                "id": "example",
+                "title": "Example",
+                "category": "AI",
+                "language": "en",
+                "siteUrl": "https://example.com/",
+            },
             "2026-07-10T02:00:00Z",
             320,
         )
@@ -31,6 +37,7 @@ class NewsletterCollectorTests(unittest.TestCase):
         self.assertEqual(item["url"], "https://example.com/post")
         self.assertEqual(item["summary"], "Hello reader .")
         self.assertEqual(item["publishedAt"], "2026-07-10T01:00:00Z")
+        self.assertEqual(item["language"], "en")
 
     def test_parses_atom_link_and_summary(self):
         xml = b"""<?xml version="1.0"?><feed xmlns="http://www.w3.org/2005/Atom">
@@ -72,7 +79,7 @@ class NewsletterCollectorTests(unittest.TestCase):
             config = root / "feeds.json"
             output = root / "newsletters.json"
             config.write_text(
-                '{"feeds":[{"id":"example","title":"Example","url":"https://example.com/feed","siteUrl":"https://example.com/","category":"AI"}]}',
+                '{"feeds":[{"id":"example","title":"Example","url":"https://example.com/feed","siteUrl":"https://example.com/","category":"AI","language":"en"}]}',
                 encoding="utf-8",
             )
             _, first_changed = collector.collect(config, output, fetcher=lambda _: xml)
@@ -91,7 +98,7 @@ class NewsletterCollectorTests(unittest.TestCase):
             config = root / "feeds.json"
             output = root / "newsletters.json"
             config.write_text(
-                '{"feeds":[{"id":"example","title":"Example","url":"https://example.com/feed","siteUrl":"https://example.com/","category":"AI"}]}',
+                '{"feeds":[{"id":"example","title":"Example","url":"https://example.com/feed","siteUrl":"https://example.com/","category":"AI","language":"en"}]}',
                 encoding="utf-8",
             )
             collector.collect(config, output, fetcher=lambda _: xml)
@@ -113,12 +120,43 @@ class NewsletterCollectorTests(unittest.TestCase):
             config = root / "feeds.json"
             output = root / "newsletters.json"
             config.write_text(
-                '{"retentionDays":30,"feeds":[{"id":"example","title":"Example","url":"https://example.com/feed","siteUrl":"https://example.com/","category":"AI"}]}',
+                '{"retentionDays":30,"feeds":[{"id":"example","title":"Example","url":"https://example.com/feed","siteUrl":"https://example.com/","category":"AI","language":"en"}]}',
                 encoding="utf-8",
             )
             snapshot, changed = collector.collect(config, output, fetcher=lambda _: xml)
             self.assertTrue(changed)
             self.assertEqual(snapshot["items"], [])
+
+    def test_korean_text_and_language_metadata_are_preserved(self):
+        xml = """<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel>
+        <title>한국어 뉴스</title><item><title>새로운 인공지능 소식</title>
+        <link>https://example.com/korean</link><guid>korean</guid>
+        <description>한국어 설명입니다.</description></item></channel></rss>""".encode("utf-8")
+        empty_xml = b"""<rss version="2.0"><channel><title>Empty</title></channel></rss>"""
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            config = root / "feeds.json"
+            output = root / "newsletters.json"
+            config.write_text(
+                '{"feeds":[{"id":"korean","title":"한국어 뉴스","url":"https://example.com/feed",'
+                '"siteUrl":"https://example.com/","category":"한국 뉴스","language":"ko"}]}',
+                encoding="utf-8",
+            )
+            first_snapshot, _ = collector.collect(config, output, fetcher=lambda _: xml)
+            self.assertEqual(first_snapshot["feeds"][0]["language"], "ko")
+            self.assertEqual(first_snapshot["items"][0]["title"], "새로운 인공지능 소식")
+            self.assertEqual(first_snapshot["items"][0]["language"], "ko")
+
+            config.write_text(
+                '{"feeds":[{"id":"korean","title":"Korean News","url":"https://example.com/feed",'
+                '"siteUrl":"https://example.com/","category":"Global","language":"en"}]}',
+                encoding="utf-8",
+            )
+            migrated_snapshot, changed = collector.collect(config, output, fetcher=lambda _: empty_xml)
+            self.assertTrue(changed)
+            self.assertEqual(migrated_snapshot["items"][0]["language"], "en")
+            self.assertEqual(migrated_snapshot["items"][0]["source"], "Korean News")
+            self.assertEqual(migrated_snapshot["items"][0]["category"], "Global")
 
 
 if __name__ == "__main__":

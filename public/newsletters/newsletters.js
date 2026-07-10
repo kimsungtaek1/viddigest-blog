@@ -4,6 +4,7 @@
     var list = document.getElementById('newsletter-list');
     var status = document.getElementById('newsletter-status');
     var search = document.getElementById('newsletter-search');
+    var language = document.getElementById('newsletter-language');
     var source = document.getElementById('newsletter-source');
     var sourceStrip = document.getElementById('newsletter-source-strip');
     var itemCount = document.getElementById('newsletter-item-count');
@@ -63,6 +64,7 @@
         card.href = item.url;
         card.target = '_blank';
         card.rel = 'noopener noreferrer';
+        if (item.language === 'ko' || item.language === 'en') card.lang = item.language;
 
         var top = document.createElement('div');
         top.className = 'newsletter-card-top';
@@ -83,9 +85,11 @@
 
     function renderItems() {
         var query = (search.value || '').trim().toLocaleLowerCase('ko-KR');
+        var selectedLanguage = language.value || '';
         var selectedSource = source.value || '';
         var items = snapshot.items.filter(function (item) {
             if (selectedSource && item.feedId !== selectedSource) return false;
+            if ((selectedLanguage === 'ko' || selectedLanguage === 'en') && item.language !== selectedLanguage) return false;
             if (!query) return true;
             return [item.title, item.summary, item.source, item.category]
                 .filter(Boolean)
@@ -94,13 +98,22 @@
                 .includes(query);
         });
 
+        if (selectedLanguage === 'ko-first') {
+            items.sort(function (left, right) {
+                var leftRank = left.language === 'ko' ? 0 : (left.language === 'en' ? 1 : 2);
+                var rightRank = right.language === 'ko' ? 0 : (right.language === 'en' ? 1 : 2);
+                return leftRank - rightRank;
+            });
+        }
+
         list.textContent = '';
         if (!items.length) {
             appendText(list, 'p', 'newsletter-empty', '조건에 맞는 뉴스레터 글이 없습니다.');
         } else {
             items.forEach(function (item) { list.appendChild(cardFor(item)); });
         }
-        status.textContent = '전체 ' + snapshot.items.length + '개 중 ' + items.length + '개를 표시합니다.';
+        var modeLabel = selectedLanguage === 'ko-first' ? '한국어 우선 · ' : '';
+        status.textContent = modeLabel + '전체 ' + snapshot.items.length + '개 중 ' + items.length + '개를 표시합니다.';
     }
 
     function render(snapshotData) {
@@ -116,6 +129,7 @@
     }
 
     search.addEventListener('input', renderItems);
+    language.addEventListener('change', renderItems);
     source.addEventListener('change', renderItems);
 
     fetch('./newsletters.json', { cache: 'no-store', headers: { Accept: 'application/json' } })

@@ -184,6 +184,7 @@ def parse_feed(xml_data: bytes, feed: dict[str, Any], collected_at: str, summary
                 "feedId": str(feed["id"]),
                 "source": str(feed["title"]),
                 "category": str(feed.get("category") or "기타"),
+                "language": str(feed.get("language") or "und").lower(),
                 "title": title,
                 "url": url,
                 "publishedAt": published_at,
@@ -280,8 +281,11 @@ def collect(
         feed_id = str(feed.get("id") or "").strip()
         feed_title = str(feed.get("title") or feed_id).strip()
         feed_url = str(feed.get("url") or "").strip()
+        feed_language = str(feed.get("language") or "").strip().lower()
         if not feed_id or not feed_title or not feed_url:
             raise ValueError("각 RSS 설정에는 id, title, url이 필요합니다.")
+        if feed_language not in {"ko", "en"}:
+            raise ValueError("RSS language는 ko 또는 en이어야 합니다.")
 
         error = ""
         parsed_items: list[dict[str, Any]] = []
@@ -303,6 +307,11 @@ def collect(
                 item["collectedAt"] = old_item["collectedAt"]
             merged[item["id"]] = item
 
+        for item in merged.values():
+            item["source"] = feed_title
+            item["category"] = str(feed.get("category") or "기타")
+            item["language"] = feed_language
+
         feed_items = sorted(
             (item for item in merged.values() if within_retention(item, cutoff)),
             key=lambda item: (item.get("publishedAt") or item.get("collectedAt") or "", item.get("id") or ""),
@@ -316,6 +325,7 @@ def collect(
                 "url": feed_url,
                 "siteUrl": normalize_url(site_url),
                 "category": str(feed.get("category") or "기타"),
+                "language": feed_language,
                 "itemCount": len(feed_items),
                 "lastCheckedAt": checked_at,
                 "error": error,

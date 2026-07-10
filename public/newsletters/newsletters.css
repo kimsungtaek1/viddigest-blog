@@ -86,7 +86,7 @@
 
 .newsletter-toolbar {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) 240px;
+    grid-template-columns: minmax(0, 1fr) 180px 240px;
     gap: 14px;
     margin-top: 34px;
 }

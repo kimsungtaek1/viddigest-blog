@@ -1,29 +1,56 @@
 {
   "maxItemsPerFeed": 24,
-  "maxTotalItems": 96,
+  "maxTotalItems": 144,
   "retentionDays": 180,
   "summaryMaxCharacters": 320,
   "feeds": [
+    {
+      "id": "yonhap-news",
+      "title": "연합뉴스",
+      "url": "https://www.yna.co.kr/rss/news.xml",
+      "siteUrl": "https://www.yna.co.kr/",
+      "category": "한국 뉴스",
+      "language": "ko"
+    },
+    {
+      "id": "etnews-ai",
+      "title": "전자신문 AI",
+      "url": "https://rss.etnews.com/04046.xml",
+      "siteUrl": "https://www.etnews.com/news/section.html?id1=04&id2=046",
+      "category": "한국 AI",
+      "language": "ko"
+    },
+    {
+      "id": "byline-network",
+      "title": "바이라인네트워크",
+      "url": "https://byline.network/feed/",
+      "siteUrl": "https://byline.network/",
+      "category": "한국 테크",
+      "language": "ko"
+    },
     {
       "id": "openai-news",
       "title": "OpenAI News",
       "url": "https://openai.com/news/rss.xml",
       "siteUrl": "https://openai.com/news/",
-      "category": "AI"
+      "category": "AI",
+      "language": "en"
     },
     {
       "id": "lennys-newsletter",
       "title": "Lenny's Newsletter",
       "url": "https://www.lennysnewsletter.com/feed",
       "siteUrl": "https://www.lennysnewsletter.com/",
-      "category": "사업·제품"
+      "category": "사업·제품",
+      "language": "en"
     },
     {
       "id": "pragmatic-engineer",
       "title": "The Pragmatic Engineer",
       "url": "https://newsletter.pragmaticengineer.com/feed",
       "siteUrl": "https://newsletter.pragmaticengineer.com/",
-      "category": "개발"
+      "category": "개발",
+      "language": "en"
     }
   ]
 }

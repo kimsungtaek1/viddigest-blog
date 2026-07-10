@@ -81,7 +81,11 @@ jobs:
             echo "Newsletter assets must not read or contain posts.json." >&2
             exit 1
           fi
-          jq -e '.version == 1 and (.feeds | type == "array") and (.items | type == "array")' \
+          jq -e '.version == 1
+            and (.feeds | type == "array")
+            and (.items | type == "array")
+            and all(.feeds[]; (.language == "ko" or .language == "en"))
+            and all(.items[]; (.language == "ko" or .language == "en"))' \
             public/newsletters/newsletters.json >/dev/null
 
       - name: Publish to Cloudflare Pages
