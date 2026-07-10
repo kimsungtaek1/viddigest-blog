@@ -81,13 +81,18 @@ jobs:
             echo "Newsletter assets must not read or contain posts.json." >&2
             exit 1
           fi
-          jq -e '.version == 1
+          jq -e '. as $snapshot
+            | .version == 1
+            and (.categoryOrder | type == "array")
             and (.feeds | type == "array")
             and (.items | type == "array")
             and all(.feeds[]; (.language == "ko" or .language == "en"))
             and all(.feeds[]; (.category | type == "string") and (.category | length > 0))
+            and all(.feeds[]; (.kind | type == "string") and (.priority | type == "number") and (.featured | type == "boolean"))
+            and all(.feeds[]; (.categories | type == "array") and (.itemCount | type == "number"))
             and all(.items[]; (.language == "ko" or .language == "en"))
             and all(.items[]; (.category | type == "string") and (.category | length > 0))
+            and all(.items[]; .feedId as $id | any($snapshot.feeds[]; .id == $id))
             and (["자기계발", "사업", "법률", "컴퓨터 사이언스", "양자컴퓨터", "제약"] - [.feeds[].category] | length == 0)
             and (([.items[].url] | length) == ([.items[].url] | unique | length))' \
             public/newsletters/newsletters.json >/dev/null

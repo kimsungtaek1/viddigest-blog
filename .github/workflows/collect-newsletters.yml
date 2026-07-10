@@ -23,7 +23,7 @@ permissions:
 jobs:
   collect:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
 
@@ -66,8 +66,8 @@ jobs:
         run: |
           expected_sha="${{ steps.commit.outputs.commit_sha }}"
           for attempt in $(seq 1 15); do
-            current_sha="$(gh api "repos/${GITHUB_REPOSITORY}/commits/main" --jq .sha 2>/dev/null || true)"
-            if [ "$current_sha" = "$expected_sha" ]; then
+            compare_status="$(gh api "repos/${GITHUB_REPOSITORY}/compare/${expected_sha}...main" --jq .status 2>/dev/null || true)"
+            if [ "$compare_status" = "identical" ] || [ "$compare_status" = "ahead" ]; then
               exit 0
             fi
             sleep 2

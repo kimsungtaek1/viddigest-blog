@@ -8,11 +8,15 @@
     var language = document.getElementById('newsletter-language');
     var source = document.getElementById('newsletter-source');
     var sourceStrip = document.getElementById('newsletter-source-strip');
+    var loadMore = document.getElementById('newsletter-load-more');
     var itemCount = document.getElementById('newsletter-item-count');
     var feedCount = document.getElementById('newsletter-feed-count');
     var updatedAt = document.getElementById('newsletter-updated-at');
-    var snapshot = { feeds: [], items: [] };
-    var preferredCategories = ['자기계발', '사업', '법률', '컴퓨터 사이언스', '양자컴퓨터', '제약'];
+    var snapshot = { feeds: [], items: [], categoryOrder: [] };
+    var fallbackCategories = ['종합·해설', '자기계발', '사업', '법률', '컴퓨터 사이언스', 'AI', '양자컴퓨터', '제약'];
+    var pageSize = 60;
+    var visibleLimit = pageSize;
+    var sourceChipLimit = 12;
 
     function formatDate(value, includeTime) {
         if (!value) return '날짜 미상';
@@ -40,24 +44,69 @@
         return element;
     }
 
+    function filteredItems(ignoreSource) {
+        var query = (search.value || '').trim().toLocaleLowerCase('ko-KR');
+        var selectedCategory = category.value || '';
+        var selectedLanguage = language.value || '';
+        var selectedSource = ignoreSource ? '' : (source.value || '');
+        return snapshot.items.filter(function (item) {
+            if (selectedSource && item.feedId !== selectedSource) return false;
+            if (selectedCategory && item.category !== selectedCategory) return false;
+            if ((selectedLanguage === 'ko' || selectedLanguage === 'en') && item.language !== selectedLanguage) return false;
+            if (!query) return true;
+            return [item.title, item.summary, item.source, item.category]
+                .filter(Boolean)
+                .join(' ')
+                .toLocaleLowerCase('ko-KR')
+                .includes(query);
+        });
+    }
+
     function renderSources() {
+        var selectedSource = source.value || '';
+        var counts = {};
+        filteredItems(true).forEach(function (item) {
+            counts[item.feedId] = (counts[item.feedId] || 0) + 1;
+        });
+        var compatibleFeeds = snapshot.feeds.filter(function (feed) { return counts[feed.id] > 0; });
+        compatibleFeeds.sort(function (left, right) {
+            var featuredRank = Number(Boolean(right.featured)) - Number(Boolean(left.featured));
+            var languageRank = (left.language === 'ko' ? 0 : 1) - (right.language === 'ko' ? 0 : 1);
+            return featuredRank
+                || languageRank
+                || Number(right.priority || 0) - Number(left.priority || 0)
+                || String(left.title || '').localeCompare(String(right.title || ''), 'ko');
+        });
+        if (selectedSource && !counts[selectedSource]) selectedSource = '';
+
         source.textContent = '';
         var allOption = document.createElement('option');
         allOption.value = '';
-        allOption.textContent = '전체 발행처';
+        allOption.textContent = '전체 발행처 (' + compatibleFeeds.length + ')';
         source.appendChild(allOption);
-        sourceStrip.textContent = '';
-
-        snapshot.feeds.forEach(function (feed) {
+        compatibleFeeds.forEach(function (feed) {
             var option = document.createElement('option');
             option.value = feed.id || '';
-            option.textContent = feed.title || feed.id || '알 수 없는 발행처';
+            option.textContent = (feed.title || feed.id || '알 수 없는 발행처') + ' (' + counts[feed.id] + ')';
             source.appendChild(option);
+        });
+        source.value = selectedSource;
 
-            var chip = appendText(sourceStrip, 'span', 'newsletter-source-chip', option.textContent);
+        sourceStrip.textContent = '';
+        compatibleFeeds.slice(0, sourceChipLimit).forEach(function (feed) {
+            var label = (feed.title || feed.id || '알 수 없는 발행처') + ' ' + counts[feed.id];
+            var chip = appendText(sourceStrip, 'span', 'newsletter-source-chip', label);
             chip.dataset.error = feed.error ? 'true' : 'false';
             if (feed.error) chip.title = feed.error;
         });
+        if (compatibleFeeds.length > sourceChipLimit) {
+            appendText(
+                sourceStrip,
+                'span',
+                'newsletter-source-chip newsletter-source-chip-more',
+                '+' + (compatibleFeeds.length - sourceChipLimit) + '개 소스'
+            );
+        }
     }
 
     function renderCategories() {
@@ -68,10 +117,11 @@
         category.appendChild(allOption);
 
         var categories = [];
-        snapshot.feeds.forEach(function (feed) {
-            var value = feed.category || '';
+        snapshot.items.forEach(function (item) {
+            var value = item.category || '';
             if (value && !categories.includes(value)) categories.push(value);
         });
+        var preferredCategories = snapshot.categoryOrder.length ? snapshot.categoryOrder : fallbackCategories;
         categories.sort(function (left, right) {
             var leftIndex = preferredCategories.indexOf(left);
             var rightIndex = preferredCategories.indexOf(right);
@@ -113,22 +163,8 @@
     }
 
     function renderItems() {
-        var query = (search.value || '').trim().toLocaleLowerCase('ko-KR');
-        var selectedCategory = category.value || '';
         var selectedLanguage = language.value || '';
-        var selectedSource = source.value || '';
-        var items = snapshot.items.filter(function (item) {
-            if (selectedSource && item.feedId !== selectedSource) return false;
-            if (selectedCategory && item.category !== selectedCategory) return false;
-            if ((selectedLanguage === 'ko' || selectedLanguage === 'en') && item.language !== selectedLanguage) return false;
-            if (!query) return true;
-            return [item.title, item.summary, item.source, item.category]
-                .filter(Boolean)
-                .join(' ')
-                .toLocaleLowerCase('ko-KR')
-                .includes(query);
-        });
-
+        var items = filteredItems(false);
         if (selectedLanguage === 'ko-first') {
             items.sort(function (left, right) {
                 var leftRank = left.language === 'ko' ? 0 : (left.language === 'en' ? 1 : 2);
@@ -137,20 +173,24 @@
             });
         }
 
+        var visibleItems = items.slice(0, visibleLimit);
         list.textContent = '';
         if (!items.length) {
             appendText(list, 'p', 'newsletter-empty', '조건에 맞는 뉴스레터 글이 없습니다.');
         } else {
-            items.forEach(function (item) { list.appendChild(cardFor(item)); });
+            visibleItems.forEach(function (item) { list.appendChild(cardFor(item)); });
         }
         var modeLabel = selectedLanguage === 'ko-first' ? '한국어 우선 · ' : '';
-        status.textContent = modeLabel + '전체 ' + snapshot.items.length + '개 중 ' + items.length + '개를 표시합니다.';
+        status.textContent = modeLabel + '조건에 맞는 ' + items.length + '개 중 ' + visibleItems.length + '개를 표시합니다.';
+        loadMore.hidden = visibleItems.length >= items.length;
+        loadMore.textContent = loadMore.hidden ? '더 보기' : '더 보기 · ' + (items.length - visibleItems.length) + '개 남음';
     }
 
     function render(snapshotData) {
         snapshot = {
             feeds: Array.isArray(snapshotData.feeds) ? snapshotData.feeds : [],
-            items: Array.isArray(snapshotData.items) ? snapshotData.items : []
+            items: Array.isArray(snapshotData.items) ? snapshotData.items : [],
+            categoryOrder: Array.isArray(snapshotData.categoryOrder) ? snapshotData.categoryOrder : []
         };
         itemCount.textContent = String(snapshot.items.length);
         feedCount.textContent = String(snapshot.feeds.length);
@@ -160,29 +200,23 @@
         renderItems();
     }
 
-    function resetIncompatibleSource() {
-        if (!source.value) return;
-        var selectedFeed = snapshot.feeds.find(function (feed) { return feed.id === source.value; });
-        if (!selectedFeed) {
-            source.value = '';
-            return;
-        }
-        if (category.value && selectedFeed.category !== category.value) source.value = '';
-        if ((language.value === 'ko' || language.value === 'en') && selectedFeed.language !== language.value) {
-            source.value = '';
-        }
+    function renderAfterFilterChange() {
+        visibleLimit = pageSize;
+        renderSources();
+        renderItems();
     }
 
-    search.addEventListener('input', renderItems);
-    category.addEventListener('change', function () {
-        resetIncompatibleSource();
+    search.addEventListener('input', renderAfterFilterChange);
+    category.addEventListener('change', renderAfterFilterChange);
+    language.addEventListener('change', renderAfterFilterChange);
+    source.addEventListener('change', function () {
+        visibleLimit = pageSize;
         renderItems();
     });
-    language.addEventListener('change', function () {
-        resetIncompatibleSource();
+    loadMore.addEventListener('click', function () {
+        visibleLimit += pageSize;
         renderItems();
     });
-    source.addEventListener('change', renderItems);
 
     fetch('./newsletters.json', { cache: 'no-store', headers: { Accept: 'application/json' } })
         .then(function (response) {
@@ -193,6 +227,7 @@
         .catch(function () {
             status.textContent = '뉴스레터 목록을 불러오지 못했습니다.';
             list.textContent = '';
+            loadMore.hidden = true;
             appendText(list, 'p', 'newsletter-error', '잠시 후 다시 시도해 주세요. 기존 블로그 글에는 영향이 없습니다.');
         });
 }());

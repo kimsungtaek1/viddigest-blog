@@ -143,6 +143,12 @@
     color: #a44b38;
 }
 
+.newsletter-source-chip-more {
+    border-style: dashed;
+    background: transparent;
+    color: #756a81;
+}
+
 .newsletter-status {
     margin: 26px 0 14px;
     color: #726a79;
@@ -228,6 +234,32 @@
     padding-top: 22px;
     color: #817988;
     font-size: 12px;
+}
+
+.newsletter-load-more {
+    display: block;
+    min-width: 220px;
+    margin: 28px auto 0;
+    padding: 14px 24px;
+    border: 1px solid #d4ccdf;
+    border-radius: 999px;
+    background: #fff;
+    color: #4f3d6b;
+    font: inherit;
+    font-size: 13px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.newsletter-load-more:hover,
+.newsletter-load-more:focus-visible {
+    border-color: #8d7ca8;
+    box-shadow: 0 8px 22px rgba(47, 37, 64, 0.08);
+    outline: none;
+}
+
+.newsletter-load-more[hidden] {
+    display: none;
 }
 
 .newsletter-open-label {
@@ -329,7 +361,8 @@
     .newsletter-stats div,
     .newsletter-toolbar input,
     .newsletter-toolbar select,
-    .newsletter-card {
+    .newsletter-card,
+    .newsletter-load-more {
         border-color: #494157;
         background: #252132;
         color: #ece7f1;
@@ -346,6 +379,7 @@
     }
 
     .newsletter-source-chip,
+    .newsletter-source-chip-more,
     .newsletter-card-category {
         border-color: #4a4257;
         background: #302a3d;
