@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-07-10T02:36:34Z",
+  "generatedAt": "2026-07-10T02:40:41Z",
   "feeds": [
     {
       "id": "openai-news",
@@ -9,7 +9,7 @@
       "siteUrl": "https://openai.com/news",
       "category": "AI",
       "itemCount": 24,
-      "lastCheckedAt": "2026-07-10T02:36:34Z",
+      "lastCheckedAt": "2026-07-10T02:40:41Z",
       "error": ""
     },
     {
@@ -19,7 +19,7 @@
       "siteUrl": "https://www.lennysnewsletter.com/",
       "category": "사업·제품",
       "itemCount": 20,
-      "lastCheckedAt": "2026-07-10T02:36:34Z",
+      "lastCheckedAt": "2026-07-10T02:40:41Z",
       "error": ""
     },
     {
@@ -29,32 +29,11 @@
       "siteUrl": "https://newsletter.pragmaticengineer.com/",
       "category": "개발",
       "itemCount": 20,
-      "lastCheckedAt": "2026-07-10T02:36:34Z",
+      "lastCheckedAt": "2026-07-10T02:40:41Z",
       "error": ""
-    },
-    {
-      "id": "ai-normal-technology",
-      "title": "AI as Normal Technology",
-      "url": "https://aisnakeoil.substack.com/feed",
-      "siteUrl": "https://aisnakeoil.substack.com/",
-      "category": "AI",
-      "itemCount": 8,
-      "lastCheckedAt": "2026-07-10T02:36:34Z",
-      "error": "HTTP Error 403: Forbidden"
     }
   ],
   "items": [
-    {
-      "id": "199b7863576a980a9151458e",
-      "feedId": "ai-normal-technology",
-      "source": "AI as Normal Technology",
-      "category": "AI",
-      "title": "Up the Stack: How AI’s Escape From the Commodity Trap Risks Enterprise Lock-in",
-      "url": "https://www.normaltech.ai/p/up-the-stack-how-ais-escape-from",
-      "publishedAt": "2026-07-09T22:29:33Z",
-      "collectedAt": "2026-07-10T02:12:51Z",
-      "summary": "Critics and boosters are both looking in the wrong place"
-    },
     {
       "id": "65d950b85a9a97056486a2a2",
       "feedId": "lennys-newsletter",
@@ -661,17 +640,6 @@
       "summary": "Anthropic’s new model, Fable, has restrictions many users find unacceptable. Also: a new trend of smart model routing, Coinbase’s core service has no automatic cross-zone failover, and more."
     },
     {
-      "id": "2093c68b555a07d05aac15f0",
-      "feedId": "ai-normal-technology",
-      "source": "AI as Normal Technology",
-      "category": "AI",
-      "title": "Why AI hasn’t replaced software engineers, and won’t",
-      "url": "https://www.normaltech.ai/p/why-ai-hasnt-replaced-software-engineers",
-      "publishedAt": "2026-06-11T02:29:51Z",
-      "collectedAt": "2026-07-10T02:12:51Z",
-      "summary": "Coding agents as normal technology"
-    },
-    {
       "id": "ab41ebb486e68ac65a12432a",
       "feedId": "pragmatic-engineer",
       "source": "The Pragmatic Engineer",
@@ -738,17 +706,6 @@
       "summary": "A deepdive into today’s tech jobs market, with exclusive data on software engineering jobs, the AI engineering boom, whether AI engineering is “replacing” software engineering hiring, and more"
     },
     {
-      "id": "411acec4d6c628fdd25472ac",
-      "feedId": "ai-normal-technology",
-      "source": "AI as Normal Technology",
-      "category": "AI",
-      "title": "Did Google’s AI agents really build an operating system for $916?",
-      "url": "https://www.normaltech.ai/p/did-googles-ai-agents-really-build",
-      "publishedAt": "2026-05-22T22:24:18Z",
-      "collectedAt": "2026-07-10T02:12:51Z",
-      "summary": "The importance of independent evaluation"
-    },
-    {
       "id": "3d6ce47bae8b7125368f108f",
       "feedId": "pragmatic-engineer",
       "source": "The Pragmatic Engineer",
@@ -758,17 +715,6 @@
       "publishedAt": "2026-05-21T17:01:39Z",
       "collectedAt": "2026-07-10T02:12:51Z",
       "summary": "Negative feedback greets Google’s redesigned AI IDE, why Google’s product ecosystem is so chaotic, Meta cuts 10% of staff as it hits record revenue and profits, and more"
-    },
-    {
-      "id": "8676a6adfb3e66471eb4d9c2",
-      "feedId": "ai-normal-technology",
-      "source": "AI as Normal Technology",
-      "category": "AI",
-      "title": "Do AI Risks Require Extraordinary Government Intervention?",
-      "url": "https://www.normaltech.ai/p/do-ai-risks-require-extraordinary",
-      "publishedAt": "2026-05-21T13:19:41Z",
-      "collectedAt": "2026-07-10T02:12:51Z",
-      "summary": "Let’s not skip the hard work of AI governance"
     },
     {
       "id": "b1e5f4ea5fdc3a8cf2aed221",
@@ -791,50 +737,6 @@
       "publishedAt": "2026-05-19T16:43:10Z",
       "collectedAt": "2026-07-10T02:12:51Z",
       "summary": "Tradeoffs of AI tooling, why adopting AI at company-level is hard, what’s changed in two years, and more. The third and final part of a series analyzing our 2026 AI survey results"
-    },
-    {
-      "id": "e42ffdd5df6be38dc45c3542",
-      "feedId": "ai-normal-technology",
-      "source": "AI as Normal Technology",
-      "category": "AI",
-      "title": "Open-world evaluations for measuring frontier AI capabilities",
-      "url": "https://www.normaltech.ai/p/open-world-evaluations-for-measuring",
-      "publishedAt": "2026-04-16T17:47:29Z",
-      "collectedAt": "2026-07-10T02:12:51Z",
-      "summary": "Introducing CRUX, a new project for evaluating AI on long, messy tasks"
-    },
-    {
-      "id": "863b6602cbcedd76dd536f8f",
-      "feedId": "ai-normal-technology",
-      "source": "AI as Normal Technology",
-      "category": "AI",
-      "title": "New Paper: Towards a science of AI agent reliability",
-      "url": "https://www.normaltech.ai/p/new-paper-towards-a-science-of-ai",
-      "publishedAt": "2026-02-24T13:07:19Z",
-      "collectedAt": "2026-07-10T02:12:51Z",
-      "summary": "Quantifying the capability-reliability gap"
-    },
-    {
-      "id": "fb7e7923079492b2271b5bbc",
-      "feedId": "ai-normal-technology",
-      "source": "AI as Normal Technology",
-      "category": "AI",
-      "title": "AI Won’t Automatically Make Legal Services Cheaper",
-      "url": "https://www.normaltech.ai/p/ai-wont-automatically-make-legal",
-      "publishedAt": "2026-02-12T19:26:05Z",
-      "collectedAt": "2026-07-10T02:12:51Z",
-      "summary": "Applying the AI as Normal Technology framework to legal services"
-    },
-    {
-      "id": "b01a57531ef5bb2e05222b98",
-      "feedId": "ai-normal-technology",
-      "source": "AI as Normal Technology",
-      "category": "AI",
-      "title": "Fact checking Moravec's paradox",
-      "url": "https://www.normaltech.ai/p/fact-checking-moravecs-paradox",
-      "publishedAt": "2026-01-29T22:35:47Z",
-      "collectedAt": "2026-07-10T02:12:51Z",
-      "summary": "This famous aphorism is neither true nor useful"
     }
   ]
 }
