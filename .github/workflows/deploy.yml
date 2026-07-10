@@ -41,6 +41,7 @@ jobs:
           )
           required_js=(
             "viddigest-reader-font-size"
+            "ensureNewsletterNavigation"
             "createReaderPageControl"
             "initReaderControls(body)"
             "markKeyContentSections(body)"
@@ -62,6 +63,26 @@ jobs:
               exit 1
             }
           done
+
+          newsletter_files=(
+            "public/newsletters/index.html"
+            "public/newsletters/newsletters.css"
+            "public/newsletters/newsletters.js"
+            "public/newsletters/newsletters.json"
+          )
+          for file in "${newsletter_files[@]}"; do
+            test -s "$file" || {
+              echo "Missing newsletter asset: $file" >&2
+              exit 1
+            }
+          done
+          grep -Fq "fetch('./newsletters.json'" public/newsletters/newsletters.js
+          if grep -R -Fq "posts.json" public/newsletters; then
+            echo "Newsletter assets must not read or contain posts.json." >&2
+            exit 1
+          fi
+          jq -e '.version == 1 and (.feeds | type == "array") and (.items | type == "array")' \
+            public/newsletters/newsletters.json >/dev/null
 
       - name: Publish to Cloudflare Pages
         uses: cloudflare/pages-action@v1

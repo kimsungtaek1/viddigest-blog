@@ -7,6 +7,33 @@
     ];
     var validReaderSizes = { small: true, medium: true, large: true };
 
+    function ensureNewsletterNavigation() {
+        var header = document.querySelector('.header');
+        if (!header || header.querySelector('.nav-links a[href*="/newsletters/"]')) return;
+
+        var navigation = header.querySelector('.nav-links');
+        if (!navigation) {
+            navigation = document.createElement('nav');
+            navigation.className = 'nav-links';
+            navigation.setAttribute('aria-label', '주요 메뉴');
+
+            var blogLink = document.createElement('a');
+            blogLink.className = 'nav-link';
+            blogLink.href = '/';
+            blogLink.textContent = '블로그';
+            navigation.appendChild(blogLink);
+            header.appendChild(navigation);
+        }
+
+        var newsletterLink = document.createElement('a');
+        newsletterLink.className = 'nav-link';
+        newsletterLink.href = '/newsletters/';
+        newsletterLink.textContent = '뉴스레터';
+        navigation.appendChild(newsletterLink);
+    }
+
+    ensureNewsletterNavigation();
+
     function safeNumber(value) {
         var parsed = parseInt(String(value || '0'), 10);
         return isNaN(parsed) ? 0 : parsed;

@@ -3,3 +3,6 @@
 
 /js/*
   Cache-Control: public, max-age=300, must-revalidate
+
+/newsletters/newsletters.json
+  Cache-Control: public, max-age=0, must-revalidate

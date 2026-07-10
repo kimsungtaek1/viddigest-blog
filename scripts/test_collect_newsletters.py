@@ -1,0 +1,125 @@
+import importlib.util
+import tempfile
+import unittest
+from pathlib import Path
+
+
+SCRIPT = Path(__file__).with_name("collect-newsletters.py")
+SPEC = importlib.util.spec_from_file_location("collect_newsletters", SCRIPT)
+collector = importlib.util.module_from_spec(SPEC)
+assert SPEC and SPEC.loader
+SPEC.loader.exec_module(collector)
+
+
+class NewsletterCollectorTests(unittest.TestCase):
+    def test_parses_rss_and_strips_html(self):
+        xml = b"""<?xml version="1.0"?><rss version="2.0"><channel>
+        <title>Example</title><link>https://example.com/</link><item>
+        <title>First &amp; Best</title><link>https://example.com/post?utm_source=test</link>
+        <guid>post-1</guid><pubDate>Fri, 10 Jul 2026 01:00:00 GMT</pubDate>
+        <description><![CDATA[<p>Hello <strong>reader</strong>.</p><script>bad()</script>]]></description>
+        </item></channel></rss>"""
+        parsed = collector.parse_feed(
+            xml,
+            {"id": "example", "title": "Example", "category": "AI", "siteUrl": "https://example.com/"},
+            "2026-07-10T02:00:00Z",
+            320,
+        )
+        self.assertEqual(len(parsed["items"]), 1)
+        item = parsed["items"][0]
+        self.assertEqual(item["title"], "First & Best")
+        self.assertEqual(item["url"], "https://example.com/post")
+        self.assertEqual(item["summary"], "Hello reader .")
+        self.assertEqual(item["publishedAt"], "2026-07-10T01:00:00Z")
+
+    def test_parses_atom_link_and_summary(self):
+        xml = b"""<?xml version="1.0"?><feed xmlns="http://www.w3.org/2005/Atom">
+        <title>Atom Example</title><link href="https://example.com/"/><entry>
+        <title>Atom item</title><link rel="alternate" href="https://example.com/atom"/>
+        <id>tag:example,2026:1</id><updated>2026-07-10T03:00:00Z</updated>
+        <summary type="html">A concise update</summary></entry></feed>"""
+        parsed = collector.parse_feed(
+            xml,
+            {"id": "atom", "title": "Atom", "category": "개발", "siteUrl": "https://example.com/"},
+            "2026-07-10T04:00:00Z",
+            320,
+        )
+        self.assertEqual(parsed["items"][0]["url"], "https://example.com/atom")
+        self.assertEqual(parsed["items"][0]["publishedAt"], "2026-07-10T03:00:00Z")
+
+    def test_parses_rss_one_rdf_sibling_item(self):
+        xml = b"""<?xml version="1.0"?><rdf:RDF
+        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        xmlns="http://purl.org/rss/1.0/"><channel><title>RDF Feed</title>
+        <link>https://example.com/</link></channel><item><title>RDF item</title>
+        <link>https://example.com/rdf-item</link><description>RDF summary</description>
+        </item></rdf:RDF>"""
+        parsed = collector.parse_feed(
+            xml,
+            {"id": "rdf", "title": "RDF", "category": "개발", "siteUrl": "https://example.com/"},
+            "2026-07-10T04:00:00Z",
+            320,
+        )
+        self.assertEqual(len(parsed["items"]), 1)
+        self.assertEqual(parsed["items"][0]["title"], "RDF item")
+
+    def test_second_identical_collection_is_a_noop(self):
+        xml = b"""<rss version="2.0"><channel><title>Example</title><item>
+        <title>Stable item</title><link>https://example.com/stable</link><guid>stable</guid>
+        </item></channel></rss>"""
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            config = root / "feeds.json"
+            output = root / "newsletters.json"
+            config.write_text(
+                '{"feeds":[{"id":"example","title":"Example","url":"https://example.com/feed","siteUrl":"https://example.com/","category":"AI"}]}',
+                encoding="utf-8",
+            )
+            _, first_changed = collector.collect(config, output, fetcher=lambda _: xml)
+            first_content = output.read_text(encoding="utf-8")
+            _, second_changed = collector.collect(config, output, fetcher=lambda _: xml)
+            self.assertTrue(first_changed)
+            self.assertFalse(second_changed)
+            self.assertEqual(output.read_text(encoding="utf-8"), first_content)
+
+    def test_all_feed_outage_preserves_existing_snapshot(self):
+        xml = b"""<rss version="2.0"><channel><title>Example</title><item>
+        <title>Saved item</title><link>https://example.com/saved</link><guid>saved</guid>
+        </item></channel></rss>"""
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            config = root / "feeds.json"
+            output = root / "newsletters.json"
+            config.write_text(
+                '{"feeds":[{"id":"example","title":"Example","url":"https://example.com/feed","siteUrl":"https://example.com/","category":"AI"}]}',
+                encoding="utf-8",
+            )
+            collector.collect(config, output, fetcher=lambda _: xml)
+            previous = output.read_text(encoding="utf-8")
+
+            def fail_fetch(_):
+                raise OSError("network down")
+
+            with self.assertRaisesRegex(RuntimeError, "모든 RSS 수집이 실패"):
+                collector.collect(config, output, fetcher=fail_fetch)
+            self.assertEqual(output.read_text(encoding="utf-8"), previous)
+
+    def test_retention_removes_expired_items(self):
+        xml = b"""<rss version="2.0"><channel><title>Example</title><item>
+        <title>Old item</title><link>https://example.com/old</link><guid>old</guid>
+        <pubDate>Wed, 01 Jan 2020 00:00:00 GMT</pubDate></item></channel></rss>"""
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            config = root / "feeds.json"
+            output = root / "newsletters.json"
+            config.write_text(
+                '{"retentionDays":30,"feeds":[{"id":"example","title":"Example","url":"https://example.com/feed","siteUrl":"https://example.com/","category":"AI"}]}',
+                encoding="utf-8",
+            )
+            snapshot, changed = collector.collect(config, output, fetcher=lambda _: xml)
+            self.assertTrue(changed)
+            self.assertEqual(snapshot["items"], [])
+
+
+if __name__ == "__main__":
+    unittest.main()
