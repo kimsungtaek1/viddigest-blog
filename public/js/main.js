@@ -549,7 +549,7 @@
 
         var excerptEl = document.createElement('p');
         excerptEl.className = 'resource-excerpt';
-        excerptEl.textContent = excerpt || 'Claude와 Codex를 이용해 앱에서 대화형으로 다듬은 실행 문서입니다.';
+        excerptEl.textContent = excerpt || '선택한 AI 모델을 이용해 앱에서 대화형으로 다듬은 실행 문서입니다.';
 
         var metaEl = document.createElement('div');
         metaEl.className = 'resource-meta';
