@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-05T10:41:42Z",
+  "generatedAt": "2026-09-05T15:18:39Z",
   "categoryOrder": [
     "종합·해설",
     "자기계발",
@@ -26,8 +26,8 @@
         "자기계발"
       ],
       "itemCount": 8,
-      "lastCheckedAt": "2026-09-05T10:41:42Z",
-      "lastSuccessAt": "2026-09-05T10:41:42Z",
+      "lastCheckedAt": "2026-09-05T15:18:39Z",
+      "lastSuccessAt": "2026-09-05T15:18:39Z",
       "error": ""
     },
     {
@@ -44,8 +44,8 @@
         "사업"
       ],
       "itemCount": 6,
-      "lastCheckedAt": "2026-09-05T10:41:42Z",
-      "lastSuccessAt": "2026-09-05T10:41:42Z",
+      "lastCheckedAt": "2026-09-05T15:18:39Z",
+      "lastSuccessAt": "2026-09-05T15:18:39Z",
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
         "법률"
       ],
       "itemCount": 6,
-      "lastCheckedAt": "2026-09-05T10:41:42Z",
-      "lastSuccessAt": "2026-09-05T10:41:42Z",
+      "lastCheckedAt": "2026-09-05T15:18:39Z",
+      "lastSuccessAt": "2026-09-05T15:18:39Z",
       "error": ""
     },
     {
@@ -80,8 +80,8 @@
         "컴퓨터 사이언스"
       ],
       "itemCount": 8,
-      "lastCheckedAt": "2026-09-05T10:41:42Z",
-      "lastSuccessAt": "2026-09-05T10:41:42Z",
+      "lastCheckedAt": "2026-09-05T15:18:39Z",
+      "lastSuccessAt": "2026-09-05T15:18:39Z",
       "error": ""
     },
     {
@@ -98,8 +98,8 @@
         "양자컴퓨터"
       ],
       "itemCount": 8,
-      "lastCheckedAt": "2026-09-05T10:41:42Z",
-      "lastSuccessAt": "2026-09-05T10:41:42Z",
+      "lastCheckedAt": "2026-09-05T15:18:39Z",
+      "lastSuccessAt": "2026-09-05T15:18:39Z",
       "error": ""
     },
     {
@@ -116,8 +116,8 @@
         "제약"
       ],
       "itemCount": 8,
-      "lastCheckedAt": "2026-09-05T10:41:42Z",
-      "lastSuccessAt": "2026-09-05T10:41:42Z",
+      "lastCheckedAt": "2026-09-05T15:18:39Z",
+      "lastSuccessAt": "2026-09-05T15:18:39Z",
       "error": ""
     },
     {
@@ -136,8 +136,8 @@
         "AI"
       ],
       "itemCount": 6,
-      "lastCheckedAt": "2026-09-05T10:41:42Z",
-      "lastSuccessAt": "2026-09-05T10:41:42Z",
+      "lastCheckedAt": "2026-09-05T15:18:39Z",
+      "lastSuccessAt": "2026-09-05T15:18:39Z",
       "error": ""
     },
     {
@@ -155,9 +155,9 @@
         "AI"
       ],
       "itemCount": 6,
-      "lastCheckedAt": "2026-09-05T10:41:42Z",
+      "lastCheckedAt": "2026-09-05T15:18:39Z",
       "lastSuccessAt": "2026-09-05T10:41:42Z",
-      "error": ""
+      "error": "URLError"
     },
     {
       "id": "byline-network",
@@ -173,8 +173,8 @@
         "컴퓨터 사이언스"
       ],
       "itemCount": 6,
-      "lastCheckedAt": "2026-09-05T10:41:42Z",
-      "lastSuccessAt": "2026-09-05T10:41:42Z",
+      "lastCheckedAt": "2026-09-05T15:18:39Z",
+      "lastSuccessAt": "2026-09-05T15:18:39Z",
       "error": ""
     },
     {
@@ -191,8 +191,8 @@
         "AI"
       ],
       "itemCount": 8,
-      "lastCheckedAt": "2026-09-05T10:41:42Z",
-      "lastSuccessAt": "2026-09-05T10:41:42Z",
+      "lastCheckedAt": "2026-09-05T15:18:39Z",
+      "lastSuccessAt": "2026-09-05T15:18:39Z",
       "error": ""
     },
     {
@@ -209,8 +209,8 @@
         "사업"
       ],
       "itemCount": 8,
-      "lastCheckedAt": "2026-09-05T10:41:42Z",
-      "lastSuccessAt": "2026-09-05T10:41:42Z",
+      "lastCheckedAt": "2026-09-05T15:18:39Z",
+      "lastSuccessAt": "2026-09-05T15:18:39Z",
       "error": ""
     },
     {
@@ -227,8 +227,8 @@
         "컴퓨터 사이언스"
       ],
       "itemCount": 8,
-      "lastCheckedAt": "2026-09-05T10:41:42Z",
-      "lastSuccessAt": "2026-09-05T10:41:42Z",
+      "lastCheckedAt": "2026-09-05T15:18:39Z",
+      "lastSuccessAt": "2026-09-05T15:18:39Z",
       "error": ""
     },
     {
@@ -247,7 +247,7 @@
         "AI"
       ],
       "itemCount": 8,
-      "lastCheckedAt": "2026-09-05T10:41:42Z",
+      "lastCheckedAt": "2026-09-05T15:18:39Z",
       "lastSuccessAt": "2026-07-14T03:39:18Z",
       "error": "HTTP Error 405: Not Allowed"
     },
@@ -262,12 +262,13 @@
       "priority": 88,
       "featured": true,
       "categories": [
+        "사업",
         "컴퓨터 사이언스",
         "AI"
       ],
       "itemCount": 8,
-      "lastCheckedAt": "2026-09-05T10:41:42Z",
-      "lastSuccessAt": "2026-09-05T10:41:42Z",
+      "lastCheckedAt": "2026-09-05T15:18:39Z",
+      "lastSuccessAt": "2026-09-05T15:18:39Z",
       "error": ""
     },
     {
@@ -285,8 +286,8 @@
         "제약"
       ],
       "itemCount": 3,
-      "lastCheckedAt": "2026-09-05T10:41:42Z",
-      "lastSuccessAt": "2026-09-05T10:41:42Z",
+      "lastCheckedAt": "2026-09-05T15:18:39Z",
+      "lastSuccessAt": "2026-09-05T15:18:39Z",
       "error": ""
     },
     {
@@ -304,8 +305,8 @@
         "제약"
       ],
       "itemCount": 3,
-      "lastCheckedAt": "2026-09-05T10:41:42Z",
-      "lastSuccessAt": "2026-09-05T10:41:42Z",
+      "lastCheckedAt": "2026-09-05T15:18:39Z",
+      "lastSuccessAt": "2026-09-05T15:18:39Z",
       "error": ""
     },
     {
@@ -323,8 +324,8 @@
         "제약"
       ],
       "itemCount": 3,
-      "lastCheckedAt": "2026-09-05T10:41:42Z",
-      "lastSuccessAt": "2026-09-05T10:41:42Z",
+      "lastCheckedAt": "2026-09-05T15:18:39Z",
+      "lastSuccessAt": "2026-09-05T15:18:39Z",
       "error": ""
     },
     {
@@ -343,8 +344,8 @@
         "제약"
       ],
       "itemCount": 3,
-      "lastCheckedAt": "2026-09-05T10:41:42Z",
-      "lastSuccessAt": "2026-09-05T10:41:42Z",
+      "lastCheckedAt": "2026-09-05T15:18:39Z",
+      "lastSuccessAt": "2026-09-05T15:18:39Z",
       "error": ""
     },
     {
@@ -361,8 +362,8 @@
         "AI"
       ],
       "itemCount": 3,
-      "lastCheckedAt": "2026-09-05T10:41:42Z",
-      "lastSuccessAt": "2026-09-05T10:41:42Z",
+      "lastCheckedAt": "2026-09-05T15:18:39Z",
+      "lastSuccessAt": "2026-09-05T15:18:39Z",
       "error": ""
     },
     {
@@ -380,8 +381,8 @@
         "컴퓨터 사이언스"
       ],
       "itemCount": 3,
-      "lastCheckedAt": "2026-09-05T10:41:42Z",
-      "lastSuccessAt": "2026-09-05T10:41:42Z",
+      "lastCheckedAt": "2026-09-05T15:18:39Z",
+      "lastSuccessAt": "2026-09-05T15:18:39Z",
       "error": ""
     },
     {
@@ -400,8 +401,8 @@
         "AI"
       ],
       "itemCount": 5,
-      "lastCheckedAt": "2026-09-05T10:41:42Z",
-      "lastSuccessAt": "2026-09-05T10:41:42Z",
+      "lastCheckedAt": "2026-09-05T15:18:39Z",
+      "lastSuccessAt": "2026-09-05T15:18:39Z",
       "error": ""
     },
     {
@@ -420,8 +421,8 @@
         "법률"
       ],
       "itemCount": 5,
-      "lastCheckedAt": "2026-09-05T10:41:42Z",
-      "lastSuccessAt": "2026-09-05T10:41:42Z",
+      "lastCheckedAt": "2026-09-05T15:18:39Z",
+      "lastSuccessAt": "2026-09-05T15:18:39Z",
       "error": ""
     },
     {
@@ -439,8 +440,8 @@
         "제약"
       ],
       "itemCount": 4,
-      "lastCheckedAt": "2026-09-05T10:41:42Z",
-      "lastSuccessAt": "2026-09-05T10:41:42Z",
+      "lastCheckedAt": "2026-09-05T15:18:39Z",
+      "lastSuccessAt": "2026-09-05T15:18:39Z",
       "error": ""
     },
     {
@@ -457,8 +458,8 @@
         "사업"
       ],
       "itemCount": 6,
-      "lastCheckedAt": "2026-09-05T10:41:42Z",
-      "lastSuccessAt": "2026-09-05T10:41:42Z",
+      "lastCheckedAt": "2026-09-05T15:18:39Z",
+      "lastSuccessAt": "2026-09-05T15:18:39Z",
       "error": ""
     },
     {
@@ -476,8 +477,8 @@
         "AI"
       ],
       "itemCount": 5,
-      "lastCheckedAt": "2026-09-05T10:41:42Z",
-      "lastSuccessAt": "2026-09-05T10:41:42Z",
+      "lastCheckedAt": "2026-09-05T15:18:39Z",
+      "lastSuccessAt": "2026-09-05T15:18:39Z",
       "error": ""
     },
     {
@@ -494,8 +495,8 @@
         "AI"
       ],
       "itemCount": 4,
-      "lastCheckedAt": "2026-09-05T10:41:42Z",
-      "lastSuccessAt": "2026-09-05T10:41:42Z",
+      "lastCheckedAt": "2026-09-05T15:18:39Z",
+      "lastSuccessAt": "2026-09-05T15:18:39Z",
       "error": ""
     },
     {
@@ -513,8 +514,8 @@
         "AI"
       ],
       "itemCount": 5,
-      "lastCheckedAt": "2026-09-05T10:41:42Z",
-      "lastSuccessAt": "2026-09-05T10:41:42Z",
+      "lastCheckedAt": "2026-09-05T15:18:39Z",
+      "lastSuccessAt": "2026-09-05T15:18:39Z",
       "error": ""
     },
     {
@@ -532,8 +533,8 @@
         "AI"
       ],
       "itemCount": 4,
-      "lastCheckedAt": "2026-09-05T10:41:42Z",
-      "lastSuccessAt": "2026-09-05T10:41:42Z",
+      "lastCheckedAt": "2026-09-05T15:18:39Z",
+      "lastSuccessAt": "2026-09-05T15:18:39Z",
       "error": ""
     },
     {
@@ -550,8 +551,8 @@
         "AI"
       ],
       "itemCount": 4,
-      "lastCheckedAt": "2026-09-05T10:41:42Z",
-      "lastSuccessAt": "2026-09-05T10:41:42Z",
+      "lastCheckedAt": "2026-09-05T15:18:39Z",
+      "lastSuccessAt": "2026-09-05T15:18:39Z",
       "error": ""
     },
     {
@@ -570,8 +571,8 @@
         "AI"
       ],
       "itemCount": 4,
-      "lastCheckedAt": "2026-09-05T10:41:42Z",
-      "lastSuccessAt": "2026-09-05T10:41:42Z",
+      "lastCheckedAt": "2026-09-05T15:18:39Z",
+      "lastSuccessAt": "2026-09-05T15:18:39Z",
       "error": ""
     },
     {
@@ -588,7 +589,7 @@
         "컴퓨터 사이언스"
       ],
       "itemCount": 5,
-      "lastCheckedAt": "2026-09-05T10:41:42Z",
+      "lastCheckedAt": "2026-09-05T15:18:39Z",
       "lastSuccessAt": "2026-08-20T01:54:08Z",
       "error": "syntax error: line 1, column 0"
     },
@@ -607,8 +608,8 @@
         "제약"
       ],
       "itemCount": 4,
-      "lastCheckedAt": "2026-09-05T10:41:42Z",
-      "lastSuccessAt": "2026-09-05T10:41:42Z",
+      "lastCheckedAt": "2026-09-05T15:18:39Z",
+      "lastSuccessAt": "2026-09-05T15:18:39Z",
       "error": ""
     },
     {
@@ -625,8 +626,8 @@
         "제약"
       ],
       "itemCount": 4,
-      "lastCheckedAt": "2026-09-05T10:41:42Z",
-      "lastSuccessAt": "2026-09-05T10:41:42Z",
+      "lastCheckedAt": "2026-09-05T15:18:39Z",
+      "lastSuccessAt": "2026-09-05T15:18:39Z",
       "error": ""
     },
     {
@@ -643,8 +644,8 @@
         "사업"
       ],
       "itemCount": 5,
-      "lastCheckedAt": "2026-09-05T10:41:42Z",
-      "lastSuccessAt": "2026-09-05T10:41:42Z",
+      "lastCheckedAt": "2026-09-05T15:18:39Z",
+      "lastSuccessAt": "2026-09-05T15:18:39Z",
       "error": ""
     },
     {
@@ -661,8 +662,8 @@
         "사업"
       ],
       "itemCount": 5,
-      "lastCheckedAt": "2026-09-05T10:41:42Z",
-      "lastSuccessAt": "2026-09-05T10:41:42Z",
+      "lastCheckedAt": "2026-09-05T15:18:39Z",
+      "lastSuccessAt": "2026-09-05T15:18:39Z",
       "error": ""
     }
   ],
@@ -694,16 +695,55 @@
       "summary": ""
     },
     {
+      "id": "e52ae5737f764c1dcca86694",
+      "feedId": "geeknews",
+      "source": "GeekNews",
+      "category": "컴퓨터 사이언스",
+      "language": "ko",
+      "title": "Nitter, 폐쇄 조치 이전보다 작동하는 인스턴스가 늘어남",
+      "url": "https://news.hada.io/topic?id=33257",
+      "publishedAt": "2026-09-05T13:31:55Z",
+      "collectedAt": "2026-09-05T15:18:39Z",
+      "feedPosition": 1,
+      "summary": "공개 목록에는 정상 작동 13개 와 속도 제한 상태 8개를 합쳐 총 21개의 활성 Nitter 인스턴스가 등록돼 있음 정상 작동 인스턴스는 일반 웹 주소 10개와 Tor 전용 3개 로 구성됨 xcancel.com을 포함한 6개 인스턴스 는 과거에 운영됐지만 ..."
+    },
+    {
+      "id": "5aaa0788437331bcb8ad009d",
+      "feedId": "geeknews",
+      "source": "GeekNews",
+      "category": "사업",
+      "language": "ko",
+      "title": "Statichost.eu - 100% 유럽 기반 정적 사이트 호스팅",
+      "url": "https://news.hada.io/topic?id=33255",
+      "publishedAt": "2026-09-05T12:31:23Z",
+      "collectedAt": "2026-09-05T15:18:39Z",
+      "feedPosition": 2,
+      "summary": "Statichost.eu 는 Git 배포부터 CDN까지 유럽 기업이 소유한 인프라에서 운영되는 정적 웹사이트 호스팅 서비스임 Git 저장소를 여러 정적 사이트 생성기로 빌드하며, Git push·CMS 업데이트·웹훅을 통한 자동 재빌드 를 지원함 사용자 지정 도메인과 자동 ..."
+    },
+    {
+      "id": "2f7da0be3bc5c73d1c358958",
+      "feedId": "donga-useful",
+      "source": "동아일보",
+      "category": "AI",
+      "language": "ko",
+      "title": "하하-양세찬, 빅뱅에 도전장? ‘런닝맨’ AI 노래에 표절 의혹 - 스포츠동아",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9TZHVoTkwxVGtPaEFMVS1lYXR4UDRYNW9KcVd3Rmh3dHdSLWJnNFZBNEdhYzgtNG83T3JIaHUzNE5EUVdHcUpwdlNNX0xpeUw4SENaLXl5ZWRqb2ZUcFJGVnlFMUNxaWhnOXJSV0lR?oc=5",
+      "publishedAt": "2026-09-05T11:00:00Z",
+      "collectedAt": "2026-09-05T15:18:39Z",
+      "feedPosition": 1,
+      "summary": ""
+    },
+    {
       "id": "16c2bf94d876f532602c1c38",
       "feedId": "chosun-economy",
       "source": "조선일보",
       "category": "제약",
       "language": "ko",
-      "title": "김승원 법무후보, 식약처 청탁의혹 반박 …“심사 평균보다 더 걸려”",
+      "title": "김승원 법무후보, 식약처 청탁의혹 반박 …“동물실험조작 몰랐고, 승인 속도 빠르지 않았다”",
       "url": "https://www.chosun.com/economy/economy_general/2026/09/05/G5TGIMTFHFRTKYZZMIZWGZDBMU",
       "publishedAt": "2026-09-05T10:25:45Z",
       "collectedAt": "2026-09-05T10:41:42Z",
-      "feedPosition": 0,
+      "feedPosition": 4,
       "summary": ""
     },
     {
@@ -712,12 +752,25 @@
       "source": "AI타임스",
       "category": "AI",
       "language": "ko",
-      "title": "“AI는 돈 벌고 사람은 취업난, 사실일까”…’AI 현황 보고서’ 저자가 밝힌 현주소",
+      "title": "“AI는 돈 벌고 사람은 취업난, 사실일까”…’AI 현황 보고서’ 저자의 진단",
       "url": "https://www.aitimes.com/news/articleView.html?idxno=214893",
       "publishedAt": "2026-09-05T10:25:04Z",
       "collectedAt": "2026-09-05T10:41:42Z",
       "feedPosition": 0,
       "summary": "AI 전문 벤처캐피털 에어 스트릿 캐피털의 창립자이자 파트너이며 ‘AI 현황 보고서(State of AI Report)’의 저자인 네이선 베나이치가 한국을 찾았다. 여전히 ‘AI 도입 초기’라는 점을 강조하면서도 실질적인 수익성도 대폭 증가하고 있다는 점을 강조했다. 일레븐랩스는 3일 ‘이그제큐티브 조찬 세션’을 진행, 네이선 베나이치 에어스트릿 캐피털 창립자를 초청해 글로벌 AI 동향을 소개했다. 베나이치 창립자는 일레븐랩스의 초기 투자자이기도 하다. 그가 저자로 참여하는 AI현황 보고서는 AI 연구와 산업, 정책, 안전성 등 최"
+    },
+    {
+      "id": "3506857c3c9388e5fec4915f",
+      "feedId": "hani-useful",
+      "source": "한겨레",
+      "category": "제약",
+      "language": "ko",
+      "title": "한동훈 “김승원, 뻔뻔한 거짓말”…김 후보자-제약 브로커 통화 녹취 공개 - 한겨레",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5rQWpnczhIQzVYNFlBVHo1YUZKcWtlaW1Lb3daTjZmY0JCOXVBZzNEVUVFVVVxcEJET0l2MndVYU5oV2ViQ1FhXzVIWWxuSGpJVzFLbTdTcnkyMEF2Sm5NZTFFYnhsT0dtdGdnM0xwU1FieFFm?oc=5",
+      "publishedAt": "2026-09-05T09:58:00Z",
+      "collectedAt": "2026-09-05T10:41:42Z",
+      "feedPosition": 0,
+      "summary": ""
     },
     {
       "id": "27af7cfae2579c8e70571460",
@@ -755,7 +808,7 @@
       "url": "https://www.hankyung.com/article/2026090559567",
       "publishedAt": "2026-09-05T08:54:23Z",
       "collectedAt": "2026-09-05T10:41:42Z",
-      "feedPosition": 6,
+      "feedPosition": 21,
       "summary": ""
     },
     {
@@ -781,7 +834,7 @@
       "url": "https://news.hada.io/topic?id=33252",
       "publishedAt": "2026-09-05T08:31:53Z",
       "collectedAt": "2026-09-05T10:41:42Z",
-      "feedPosition": 2,
+      "feedPosition": 5,
       "summary": "Mullvad는 2022년부터 운영한 공개 DNS over HTTPS(DoH) 서버를 종료하고, 운영 자원을 Quad9 재정 지원 에 투입함 Mullvad VPN에서는 트래픽이 이미 암호화되고 내부 DNS가 모든 쿼리를 처리하므로 별도의 공개 DoH 서버가 필요하지 않음 VPN 밖에서는 Mu..."
     },
     {
@@ -794,7 +847,7 @@
       "url": "https://www.medipana.com/news/articleView.html?idxno=417119",
       "publishedAt": "2026-09-05T07:44:21Z",
       "collectedAt": "2026-09-05T04:36:13Z",
-      "feedPosition": 1,
+      "feedPosition": 2,
       "summary": ""
     },
     {
@@ -937,7 +990,7 @@
       "url": "https://news.hada.io/topic?id=33251",
       "publishedAt": "2026-09-05T06:32:15Z",
       "collectedAt": "2026-09-05T10:41:42Z",
-      "feedPosition": 3,
+      "feedPosition": 6,
       "summary": "2026년 미국 성인의 89% 가 정부 부패가 만연하다고 답해 20년 내 최고치를 기록했으며, 전년보다 10%포인트 상승함 민주당 지지층의 응답률은 2024년 57%에서 2025년 76%, 2026년 91% 로 급등했고 무당파는 90%, 공화당 지지층은 83%를 기록함 2025년 미..."
     },
     {
@@ -950,7 +1003,7 @@
       "url": "https://zdnet.co.kr/view?no=20260905073057",
       "publishedAt": "2026-09-05T06:24:45Z",
       "collectedAt": "2026-09-05T10:41:42Z",
-      "feedPosition": 3,
+      "feedPosition": 4,
       "summary": ""
     },
     {
@@ -963,7 +1016,7 @@
       "url": "https://zdnet.co.kr/view?no=20260905071613",
       "publishedAt": "2026-09-05T06:23:31Z",
       "collectedAt": "2026-09-05T10:41:42Z",
-      "feedPosition": 4,
+      "feedPosition": 5,
       "summary": ""
     },
     {
@@ -976,7 +1029,7 @@
       "url": "https://zdnet.co.kr/view?no=20260904190508",
       "publishedAt": "2026-09-05T06:19:51Z",
       "collectedAt": "2026-09-05T10:41:42Z",
-      "feedPosition": 5,
+      "feedPosition": 6,
       "summary": ""
     },
     {
@@ -1002,7 +1055,7 @@
       "url": "https://www.hitnews.co.kr/news/articleView.html?idxno=78931",
       "publishedAt": "2026-09-05T06:05:00Z",
       "collectedAt": "2026-09-05T04:36:13Z",
-      "feedPosition": 0,
+      "feedPosition": 1,
       "summary": ""
     },
     {
@@ -1015,7 +1068,7 @@
       "url": "https://www.hitnews.co.kr/news/articleView.html?idxno=78930",
       "publishedAt": "2026-09-05T06:03:00Z",
       "collectedAt": "2026-09-05T04:36:13Z",
-      "feedPosition": 2,
+      "feedPosition": 3,
       "summary": ""
     },
     {
@@ -1028,7 +1081,7 @@
       "url": "https://news.hada.io/topic?id=33250",
       "publishedAt": "2026-09-05T06:02:11Z",
       "collectedAt": "2026-09-05T10:41:42Z",
-      "feedPosition": 4,
+      "feedPosition": 7,
       "summary": "ARM64 베어메탈 하이퍼바이저에서 CTR_EL0 인터셉트를 켤 때 기기가 멈춘 원인은 분기 예측에 따른 추측적 명령어 인출 이 실행 가능하게 매핑된 MMIO 영역에 접근했기 때문이었음 직접 호출인 bl 은 작동하고 간접 호출인 blr 은 실패했으며, ..."
     },
     {
@@ -1041,7 +1094,7 @@
       "url": "https://www.hitnews.co.kr/news/articleView.html?idxno=78902",
       "publishedAt": "2026-09-05T06:00:00Z",
       "collectedAt": "2026-09-05T04:36:13Z",
-      "feedPosition": 5,
+      "feedPosition": 6,
       "summary": ""
     },
     {
@@ -1054,7 +1107,7 @@
       "url": "https://www.medipana.com/news/articleView.html?idxno=417103",
       "publishedAt": "2026-09-05T06:00:00Z",
       "collectedAt": "2026-09-05T04:36:13Z",
-      "feedPosition": 8,
+      "feedPosition": 9,
       "summary": ""
     },
     {
@@ -1067,7 +1120,7 @@
       "url": "https://www.medipana.com/news/articleView.html?idxno=417097",
       "publishedAt": "2026-09-05T06:00:00Z",
       "collectedAt": "2026-09-05T04:36:13Z",
-      "feedPosition": 9,
+      "feedPosition": 10,
       "summary": ""
     },
     {
@@ -1080,7 +1133,7 @@
       "url": "https://www.mk.co.kr/news/economy/12144977",
       "publishedAt": "2026-09-05T05:59:04Z",
       "collectedAt": "2026-09-05T04:36:13Z",
-      "feedPosition": 3,
+      "feedPosition": 4,
       "summary": ""
     },
     {
@@ -1093,20 +1146,7 @@
       "url": "https://www.hankyung.com/article/2026090558497",
       "publishedAt": "2026-09-05T05:48:39Z",
       "collectedAt": "2026-09-05T10:41:42Z",
-      "feedPosition": 19,
-      "summary": ""
-    },
-    {
-      "id": "3506857c3c9388e5fec4915f",
-      "feedId": "hani-useful",
-      "source": "한겨레",
-      "category": "제약",
-      "language": "ko",
-      "title": "한동훈 “김승원, 뻔뻔한 거짓말”…김 후보자-제약 브로커 통화 녹취 공개 - 한겨레",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5rQWpnczhIQzVYNFlBVHo1YUZKcWtlaW1Lb3daTjZmY0JCOXVBZzNEVUVFVVVxcEJET0l2MndVYU5oV2ViQ1FhXzVIWWxuSGpJVzFLbTdTcnkyMEF2Sm5NZTFFYnhsT0dtdGdnM0xwU1FieFFm?oc=5",
-      "publishedAt": "2026-09-05T05:48:00Z",
-      "collectedAt": "2026-09-05T10:41:42Z",
-      "feedPosition": 0,
+      "feedPosition": 34,
       "summary": ""
     },
     {
@@ -1119,7 +1159,7 @@
       "url": "https://zdnet.co.kr/view?no=20260905143455",
       "publishedAt": "2026-09-05T05:35:12Z",
       "collectedAt": "2026-09-05T10:41:42Z",
-      "feedPosition": 8,
+      "feedPosition": 9,
       "summary": ""
     },
     {
@@ -1132,7 +1172,7 @@
       "url": "https://www.hankyung.com/article/2026090558347",
       "publishedAt": "2026-09-05T05:28:24Z",
       "collectedAt": "2026-09-05T10:41:42Z",
-      "feedPosition": 25,
+      "feedPosition": 40,
       "summary": ""
     },
     {
@@ -1158,7 +1198,7 @@
       "url": "https://www.chosun.com/economy/tech_it/2026/09/05/HFTDGMRUGE3DMMLGHE3DQNRRGU",
       "publishedAt": "2026-09-05T05:24:05Z",
       "collectedAt": "2026-09-05T10:41:42Z",
-      "feedPosition": 16,
+      "feedPosition": 20,
       "summary": ""
     },
     {
@@ -1171,7 +1211,7 @@
       "url": "https://www.chosun.com/economy/tech_it/2026/09/05/GM3TCYTBMNRGMOBXMMYTCMTBMY",
       "publishedAt": "2026-09-05T04:29:29Z",
       "collectedAt": "2026-09-05T04:36:13Z",
-      "feedPosition": 19,
+      "feedPosition": 23,
       "summary": ""
     },
     {
@@ -1180,12 +1220,12 @@
       "source": "GeekNews",
       "category": "컴퓨터 사이언스",
       "language": "ko",
-      "title": "모든 Chromium 버전에 영향을 주는 실제 악용 중인 샌드박스 원격 코드 실행 취약점",
+      "title": "Chrome, 실제 공격에 악용된 V8 코드 실행 취약점 수정",
       "url": "https://news.hada.io/topic?id=33249",
       "publishedAt": "2026-09-05T03:31:59Z",
       "collectedAt": "2026-09-05T04:36:13Z",
-      "feedPosition": 5,
-      "summary": "CVE-2026-85046 은 Chrome 152.0.7977.82 이전 버전의 V8 타입 혼동 취약점으로, 조작된 HTML 페이지를 통해 샌드박스 내부에서 임의 코드를 실행할 수 있음 공격 복잡도가 낮고 사전 권한도 필요 없지만 사용자 상호작용이 요구되며, 기밀성·무결성·가용성 에 모두 ..."
+      "feedPosition": 8,
+      "summary": "Google이 실제 공격에 악용된 V8 취약점 CVE-2026-85046 을 수정한 Chrome 보안 업데이트를 배포함 조작된 HTML 페이지를 통해 브라우저 샌드박스 내부에서 임의 코드 실행 이 가능한 취약점 공격 복잡도가 낮고 사전 권한도 필요 없지만 사용..."
     },
     {
       "id": "dac805a69436d3fd738dc7e8",
@@ -1197,7 +1237,7 @@
       "url": "https://news.hada.io/topic?id=33248",
       "publishedAt": "2026-09-05T03:01:26Z",
       "collectedAt": "2026-09-05T04:36:13Z",
-      "feedPosition": 6,
+      "feedPosition": 9,
       "summary": "AI의 윤리·환경 문제와 직접 코딩하는 즐거움 때문에 사용을 꺼렸지만, 복잡한 프로젝트에서 Cursor에 의존 하면서 문제 해결 습관이 달라지기 시작함 Cursor의 답을 기다리며 뜨개질하다 잘못된 무늬를 발견했을 때, 자신도 모르게 AI부터 찾으려 했다는 사실 에 충..."
     },
     {
@@ -1236,7 +1276,7 @@
       "url": "https://news.hada.io/topic?id=33247",
       "publishedAt": "2026-09-05T02:32:48Z",
       "collectedAt": "2026-09-05T04:36:13Z",
-      "feedPosition": 7,
+      "feedPosition": 10,
       "summary": "75개 저장소와 1,163개 프롬프트 변형으로 진행한 16,893회 실험 가운데, 51개 코드베이스·18개 분야의 유효 세션 5,292개를 1차 분석함 정보 탐색 방식이 달라 세 에이전트가 같은 제품을 선택한 비율은 42% 에 그쳤으며, Claude Code의 자체 구현 비율은 19%로 C..."
     },
     {
@@ -1249,7 +1289,7 @@
       "url": "https://zdnet.co.kr/view?no=20260905105030",
       "publishedAt": "2026-09-05T01:50:30Z",
       "collectedAt": "2026-09-05T04:36:13Z",
-      "feedPosition": 10,
+      "feedPosition": 11,
       "summary": ""
     },
     {
@@ -1262,7 +1302,7 @@
       "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9xRFVLUmhjZ2trMU5SWDdJVGlsa3JUMDZYaHlWLWVXS0VmNWVtbkZEeVozOHJQbk1saURmWmF0T3pvb3ZscDJURjFSZlFPRFBMOGFXX2tR?oc=5",
       "publishedAt": "2026-09-05T01:39:43Z",
       "collectedAt": "2026-09-05T10:41:42Z",
-      "feedPosition": 69,
+      "feedPosition": 70,
       "summary": ""
     },
     {
@@ -1277,45 +1317,6 @@
       "collectedAt": "2026-09-05T04:36:13Z",
       "feedPosition": 1,
       "summary": ""
-    },
-    {
-      "id": "f9dfde676b72eac8be60700d",
-      "feedId": "self-development-korea",
-      "source": "브런치 자기계발·커리어",
-      "category": "자기계발",
-      "language": "ko",
-      "title": "회장님이 전하는 5가지 비밀 - 브런치",
-      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBUOUtMaHZfMjlnX3NtZW5saTZKT2NYV09yUjloMDNIbmxGOEtrS0NpRDZ0UjN2WHFubUtRTmxOeS1CTzFGYlVjVVFMU1NBNXhi?oc=5",
-      "publishedAt": "2026-09-05T00:41:43Z",
-      "collectedAt": "2026-09-05T10:41:42Z",
-      "feedPosition": 95,
-      "summary": ""
-    },
-    {
-      "id": "11908ef809bbd20fa9fa8df2",
-      "feedId": "geeknews",
-      "source": "GeekNews",
-      "category": "AI",
-      "language": "ko",
-      "title": "wigolo - AI 에이전트를 위한 로컬 우선 웹 검색/수집 도구",
-      "url": "https://news.hada.io/topic?id=33246",
-      "publishedAt": "2026-09-05T00:30:02Z",
-      "collectedAt": "2026-09-05T04:36:13Z",
-      "feedPosition": 8,
-      "summary": "AI 에이전트에 검색/페이지 읽기/크롤링/데이터 추출/캐시/유사 문서 검색/리서치 기능을 하나의 MCP 인터페이스로 제공함 검색은 18개 엔진 을 함께 조회한 뒤 결과를 합치고 로컬 모델로 재정렬 하며, 각 결과에 원문 발췌와 출처 위치/인용 ID/평..."
-    },
-    {
-      "id": "4b6200892e47d7e7ebea1f2f",
-      "feedId": "geeknews",
-      "source": "GeekNews",
-      "category": "AI",
-      "language": "ko",
-      "title": "DHH가 바라본 프로그래밍의 미래: 직접 코딩에서 AI 에이전트 팀 운영으로 [유튜브]",
-      "url": "https://news.hada.io/topic?id=33245",
-      "publishedAt": "2026-09-05T00:15:02Z",
-      "collectedAt": "2026-09-05T04:36:13Z",
-      "feedPosition": 9,
-      "summary": "최근 AI 발전은 수십 년치 변화에 해당하며, DHH는 Opus 4.5와 에이전트 하네스 를 기점으로 AI가 보조 도구에서 문제 해결 전반을 맡는 제작 주체로 바뀌었다고 평가 Omarchy Quattro는 최근 3개월간 코드의 거의 100%를 에이전트가 작성했으며, DHH는 여러 에이전트를 병렬로 운용하..."
     },
     {
       "id": "a18d118cebb49ca38054f0e3",
@@ -1353,7 +1354,7 @@
       "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE12TTlHY1Z3eXNYd0Y1dHhqZXZQYWpTbEZTUUQ2WWlDYV9wZWN0eTFGTlJROFk2U1VNUVFuZGwxWHdrcXpxZy12N1ZIaVpvYktTZ3JJSGRYT1gxVTNjRDFmQTRZSGI5UXpNd1pFQTlGU05LZw?oc=5",
       "publishedAt": "2026-09-05T00:00:00Z",
       "collectedAt": "2026-09-05T04:36:13Z",
-      "feedPosition": 1,
+      "feedPosition": 2,
       "summary": ""
     },
     {
@@ -1392,7 +1393,7 @@
       "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9EM2J3MkctdEh1djhlaThPdjVCWmNWNVJJTklxd09YNjBUbVBnSDRTUFgzRnFPMkdTbi1OWHBHN2dUUmlhOXE3ekZzcGZfZDNKYTdMZHNINVZCSlUtUDhrYjhTd3pvRWxS?oc=5",
       "publishedAt": "2026-09-04T23:19:00Z",
       "collectedAt": "2026-09-04T20:48:50Z",
-      "feedPosition": 5,
+      "feedPosition": 6,
       "summary": ""
     },
     {
@@ -1431,7 +1432,7 @@
       "url": "https://www.medipana.com/news/articleView.html?idxno=417111",
       "publishedAt": "2026-09-04T22:10:54Z",
       "collectedAt": "2026-09-04T16:26:18Z",
-      "feedPosition": 14,
+      "feedPosition": 15,
       "summary": ""
     },
     {
@@ -1444,7 +1445,7 @@
       "url": "https://www.mk.co.kr/news/economy/12144802",
       "publishedAt": "2026-09-04T17:57:24Z",
       "collectedAt": "2026-09-04T11:25:19Z",
-      "feedPosition": 11,
+      "feedPosition": 12,
       "summary": ""
     },
     {
@@ -1457,7 +1458,7 @@
       "url": "https://www.mk.co.kr/news/economy/12144797",
       "publishedAt": "2026-09-04T17:57:23Z",
       "collectedAt": "2026-09-04T11:25:19Z",
-      "feedPosition": 14,
+      "feedPosition": 15,
       "summary": ""
     },
     {
@@ -1522,20 +1523,7 @@
       "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBXcU1ZYzdPUTRrQnFiS0NWNlZBV05LSlRLeHVtcGZyRS1vYUd6WGxDYmJEYUFFdDVfS24wS1BWZUtGTEVxcjNSOWN0WG5QSVdQeHNoVkNEWGxIZVh3WEg3VHhHUDB3cDkxenV6ZXdfSl9YSFZxX0HSAWZBVV95cUxPSHYtS3NFWUo4QzJMYzNLV1NPdmRaTTlMZ2taMkRzUk1qWEVIbzNsazJTMnFhM3hKR2ZsSTdHcVVqNEpVR3Q4V3N0cnhLaWFTdGQ2Q1YwT2V4bklCRXA4WlRuZW5LbGc?oc=5",
       "publishedAt": "2026-09-04T16:40:00Z",
       "collectedAt": "2026-09-04T20:48:50Z",
-      "feedPosition": 1,
-      "summary": ""
-    },
-    {
-      "id": "975ae2ed733c07aef9cd7e2d",
-      "feedId": "donga-useful",
-      "source": "동아일보",
-      "category": "AI",
-      "language": "ko",
-      "title": "오픈AI, ‘GPT-6 아스트라’ 공개 “AGI 시대” - 동아일보",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBuSkNvamlMb3ZPX0tlSm5BNE9mcGN6Rkx2TkVnSjFUZEJrcExRTlg3TDhER3FLNUlCVDdkZFVzMmgwTEUxUlNjQmQ3b3hueTlKRlNPc19NR0w4TkxyVk9NcjlXSndQVGV5dF9GVGFXQkFSSFlV0gFmQVVfeXFMTld1VE9wMm5ZZXVBMk9Tdkl6ZEdPSFZla1Ayd2VOb1BnUU1Wd1FQb0tBbk1GdzBRMzZfOEVDN2Ryd2kyT2xiM3VWUDdPMGNMMEQ1aWNJTE5MSm9VZXoxQnk4ay1hVHhR?oc=5",
-      "publishedAt": "2026-09-04T16:40:00Z",
-      "collectedAt": "2026-09-04T20:48:50Z",
-      "feedPosition": 3,
+      "feedPosition": 2,
       "summary": ""
     },
     {
@@ -1574,7 +1562,7 @@
       "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBGaUNSejYtLWMtVENjRWh6OE1neHVrUjlfNnFHenhJZk9aRDJ5SkZKVjg3U045dXVubG1leER2cEJnR0hIWU9kNlJiZjVINDNJMzZxYkZn?oc=5",
       "publishedAt": "2026-09-04T16:03:10Z",
       "collectedAt": "2026-09-05T04:36:13Z",
-      "feedPosition": 54,
+      "feedPosition": 57,
       "summary": ""
     },
     {
@@ -1600,7 +1588,7 @@
       "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5EbDVHZjBvUWozT0JVd2dwQmJxM0djSW5RT2xVa3h3ZHlteE42MzY3WTNyQW9qMmNlWk4tMFhIZjBpM0NNaUlISjlETzhzWjNxSV90OW13?oc=5",
       "publishedAt": "2026-09-04T16:01:08Z",
       "collectedAt": "2026-09-04T16:26:18Z",
-      "feedPosition": 90,
+      "feedPosition": 94,
       "summary": ""
     },
     {
@@ -1613,7 +1601,7 @@
       "url": "https://www.hitnews.co.kr/news/articleView.html?idxno=78922",
       "publishedAt": "2026-09-04T15:53:28Z",
       "collectedAt": "2026-09-04T11:25:19Z",
-      "feedPosition": 9,
+      "feedPosition": 10,
       "summary": ""
     },
     {
@@ -1825,6 +1813,19 @@
       "summary": "국민 누구나 무료로 사용하는 인공지능(AI) 서비스 '모두의 AI' 프로젝트가 시작됐다. 성공 전략으로 오픈AI·앤트로픽 등 외산 서비스와 차별화, 민·관 협력이 제시됐다. SK텔레콤, KT, 카카오 등 3개 컨소시엄 주관기업은 4일 서울 중구 한국프레스센터에서 과학기술정보통신부가 주최한 '모두의 AI' 프로젝트 사업자 간담회에서 국민 수요에 기반한 AI 챗봇과 에이전트 서비스로 외산 효용성을 넘어서는 서비스를 제공하겠다는 포부를 밝혔다. 카카"
     },
     {
+      "id": "f9dfde676b72eac8be60700d",
+      "feedId": "self-development-korea",
+      "source": "브런치 자기계발·커리어",
+      "category": "자기계발",
+      "language": "ko",
+      "title": "회장님이 전하는 5가지 비밀 - 브런치",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBUOUtMaHZfMjlnX3NtZW5saTZKT2NYV09yUjloMDNIbmxGOEtrS0NpRDZ0UjN2WHFubUtRTmxOeS1CTzFGYlVjVVFMU1NBNXhi?oc=5",
+      "publishedAt": "2026-09-04T06:56:37Z",
+      "collectedAt": "2026-09-05T10:41:42Z",
+      "feedPosition": 93,
+      "summary": ""
+    },
+    {
       "id": "b4a4c5ff5402f64f2c3f6533",
       "feedId": "platum",
       "source": "플래텀",
@@ -1964,7 +1965,7 @@
       "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE02Mk9JSFNHbzRmc0phSkFnMG9rQmQ0Q19SUUFwUFZRRzJzYklzem1rNGFoLXp2ejcwSzJSTzdoM0N4Zml3OHE2WlJGSQ?oc=5",
       "publishedAt": "2026-09-04T03:31:37Z",
       "collectedAt": "2026-09-04T20:48:50Z",
-      "feedPosition": 92,
+      "feedPosition": 90,
       "summary": ""
     },
     {
