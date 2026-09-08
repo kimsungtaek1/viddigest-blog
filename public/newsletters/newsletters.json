@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-07T21:34:15Z",
+  "generatedAt": "2026-09-08T04:45:50Z",
   "categoryOrder": [
     "종합·해설",
     "자기계발",
@@ -26,9 +26,9 @@
         "자기계발"
       ],
       "itemCount": 8,
-      "lastCheckedAt": "2026-09-07T21:34:15Z",
+      "lastCheckedAt": "2026-09-08T04:45:50Z",
       "lastSuccessAt": "2026-09-07T21:34:15Z",
-      "error": ""
+      "error": "HTTP Error 503: Service Unavailable"
     },
     {
       "id": "venturesquare-business",
@@ -44,8 +44,8 @@
         "사업"
       ],
       "itemCount": 6,
-      "lastCheckedAt": "2026-09-07T21:34:15Z",
-      "lastSuccessAt": "2026-09-07T21:34:15Z",
+      "lastCheckedAt": "2026-09-08T04:45:50Z",
+      "lastSuccessAt": "2026-09-08T04:45:50Z",
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
         "법률"
       ],
       "itemCount": 6,
-      "lastCheckedAt": "2026-09-07T21:34:15Z",
-      "lastSuccessAt": "2026-09-07T21:34:15Z",
+      "lastCheckedAt": "2026-09-08T04:45:50Z",
+      "lastSuccessAt": "2026-09-08T04:45:50Z",
       "error": ""
     },
     {
@@ -80,8 +80,8 @@
         "컴퓨터 사이언스"
       ],
       "itemCount": 8,
-      "lastCheckedAt": "2026-09-07T21:34:15Z",
-      "lastSuccessAt": "2026-09-07T21:34:15Z",
+      "lastCheckedAt": "2026-09-08T04:45:50Z",
+      "lastSuccessAt": "2026-09-08T04:45:50Z",
       "error": ""
     },
     {
@@ -98,8 +98,8 @@
         "양자컴퓨터"
       ],
       "itemCount": 8,
-      "lastCheckedAt": "2026-09-07T21:34:15Z",
-      "lastSuccessAt": "2026-09-07T21:34:15Z",
+      "lastCheckedAt": "2026-09-08T04:45:50Z",
+      "lastSuccessAt": "2026-09-08T04:45:50Z",
       "error": ""
     },
     {
@@ -116,8 +116,8 @@
         "제약"
       ],
       "itemCount": 8,
-      "lastCheckedAt": "2026-09-07T21:34:15Z",
-      "lastSuccessAt": "2026-09-07T21:34:15Z",
+      "lastCheckedAt": "2026-09-08T04:45:50Z",
+      "lastSuccessAt": "2026-09-08T04:45:50Z",
       "error": ""
     },
     {
@@ -135,8 +135,8 @@
         "AI"
       ],
       "itemCount": 6,
-      "lastCheckedAt": "2026-09-07T21:34:15Z",
-      "lastSuccessAt": "2026-09-07T21:34:15Z",
+      "lastCheckedAt": "2026-09-08T04:45:50Z",
+      "lastSuccessAt": "2026-09-08T04:45:50Z",
       "error": ""
     },
     {
@@ -151,12 +151,13 @@
       "featured": false,
       "categories": [
         "컴퓨터 사이언스",
-        "AI"
+        "AI",
+        "양자컴퓨터"
       ],
       "itemCount": 6,
-      "lastCheckedAt": "2026-09-07T21:34:15Z",
-      "lastSuccessAt": "2026-09-07T12:42:36Z",
-      "error": "URLError"
+      "lastCheckedAt": "2026-09-08T04:45:50Z",
+      "lastSuccessAt": "2026-09-08T04:45:50Z",
+      "error": ""
     },
     {
       "id": "byline-network",
@@ -172,8 +173,8 @@
         "컴퓨터 사이언스"
       ],
       "itemCount": 6,
-      "lastCheckedAt": "2026-09-07T21:34:15Z",
-      "lastSuccessAt": "2026-09-07T21:34:15Z",
+      "lastCheckedAt": "2026-09-08T04:45:50Z",
+      "lastSuccessAt": "2026-09-08T04:45:50Z",
       "error": ""
     },
     {
@@ -190,8 +191,8 @@
         "AI"
       ],
       "itemCount": 8,
-      "lastCheckedAt": "2026-09-07T21:34:15Z",
-      "lastSuccessAt": "2026-09-07T21:34:15Z",
+      "lastCheckedAt": "2026-09-08T04:45:50Z",
+      "lastSuccessAt": "2026-09-08T04:45:50Z",
       "error": ""
     },
     {
@@ -208,8 +209,8 @@
         "사업"
       ],
       "itemCount": 8,
-      "lastCheckedAt": "2026-09-07T21:34:15Z",
-      "lastSuccessAt": "2026-09-07T21:34:15Z",
+      "lastCheckedAt": "2026-09-08T04:45:50Z",
+      "lastSuccessAt": "2026-09-08T04:45:50Z",
       "error": ""
     },
     {
@@ -226,8 +227,8 @@
         "컴퓨터 사이언스"
       ],
       "itemCount": 8,
-      "lastCheckedAt": "2026-09-07T21:34:15Z",
-      "lastSuccessAt": "2026-09-07T21:34:15Z",
+      "lastCheckedAt": "2026-09-08T04:45:50Z",
+      "lastSuccessAt": "2026-09-08T04:45:50Z",
       "error": ""
     },
     {
@@ -246,7 +247,7 @@
         "AI"
       ],
       "itemCount": 8,
-      "lastCheckedAt": "2026-09-07T21:34:15Z",
+      "lastCheckedAt": "2026-09-08T04:45:50Z",
       "lastSuccessAt": "2026-07-14T03:39:18Z",
       "error": "HTTP Error 405: Not Allowed"
     },
@@ -261,12 +262,13 @@
       "priority": 88,
       "featured": true,
       "categories": [
+        "사업",
         "컴퓨터 사이언스",
         "AI"
       ],
       "itemCount": 8,
-      "lastCheckedAt": "2026-09-07T21:34:15Z",
-      "lastSuccessAt": "2026-09-07T21:34:15Z",
+      "lastCheckedAt": "2026-09-08T04:45:50Z",
+      "lastSuccessAt": "2026-09-08T04:45:50Z",
       "error": ""
     },
     {
@@ -284,9 +286,9 @@
         "AI"
       ],
       "itemCount": 3,
-      "lastCheckedAt": "2026-09-07T21:34:15Z",
+      "lastCheckedAt": "2026-09-08T04:45:50Z",
       "lastSuccessAt": "2026-09-07T21:34:15Z",
-      "error": ""
+      "error": "HTTP Error 503: Service Unavailable"
     },
     {
       "id": "chosun-economy",
@@ -300,11 +302,12 @@
       "featured": true,
       "categories": [
         "사업",
+        "AI",
         "제약"
       ],
       "itemCount": 3,
-      "lastCheckedAt": "2026-09-07T21:34:15Z",
-      "lastSuccessAt": "2026-09-07T21:34:15Z",
+      "lastCheckedAt": "2026-09-08T04:45:50Z",
+      "lastSuccessAt": "2026-09-08T04:45:50Z",
       "error": ""
     },
     {
@@ -322,9 +325,9 @@
         "AI"
       ],
       "itemCount": 3,
-      "lastCheckedAt": "2026-09-07T21:34:15Z",
+      "lastCheckedAt": "2026-09-08T04:45:50Z",
       "lastSuccessAt": "2026-09-07T21:34:15Z",
-      "error": ""
+      "error": "HTTP Error 503: Service Unavailable"
     },
     {
       "id": "joongang-useful",
@@ -341,9 +344,9 @@
         "제약"
       ],
       "itemCount": 3,
-      "lastCheckedAt": "2026-09-07T21:34:15Z",
+      "lastCheckedAt": "2026-09-08T04:45:50Z",
       "lastSuccessAt": "2026-09-07T21:34:15Z",
-      "error": ""
+      "error": "HTTP Error 503: Service Unavailable"
     },
     {
       "id": "hankyung-all",
@@ -357,11 +360,12 @@
       "featured": true,
       "categories": [
         "사업",
-        "AI"
+        "AI",
+        "제약"
       ],
       "itemCount": 3,
-      "lastCheckedAt": "2026-09-07T21:34:15Z",
-      "lastSuccessAt": "2026-09-07T21:34:15Z",
+      "lastCheckedAt": "2026-09-08T04:45:50Z",
+      "lastSuccessAt": "2026-09-08T04:45:50Z",
       "error": ""
     },
     {
@@ -379,8 +383,8 @@
         "AI"
       ],
       "itemCount": 3,
-      "lastCheckedAt": "2026-09-07T21:34:15Z",
-      "lastSuccessAt": "2026-09-07T21:34:15Z",
+      "lastCheckedAt": "2026-09-08T04:45:50Z",
+      "lastSuccessAt": "2026-09-08T04:45:50Z",
       "error": ""
     },
     {
@@ -399,8 +403,8 @@
         "AI"
       ],
       "itemCount": 5,
-      "lastCheckedAt": "2026-09-07T21:34:15Z",
-      "lastSuccessAt": "2026-09-07T21:34:15Z",
+      "lastCheckedAt": "2026-09-08T04:45:50Z",
+      "lastSuccessAt": "2026-09-08T04:45:50Z",
       "error": ""
     },
     {
@@ -419,8 +423,8 @@
         "법률"
       ],
       "itemCount": 5,
-      "lastCheckedAt": "2026-09-07T21:34:15Z",
-      "lastSuccessAt": "2026-09-07T21:34:15Z",
+      "lastCheckedAt": "2026-09-08T04:45:50Z",
+      "lastSuccessAt": "2026-09-08T04:45:50Z",
       "error": ""
     },
     {
@@ -438,8 +442,8 @@
         "제약"
       ],
       "itemCount": 4,
-      "lastCheckedAt": "2026-09-07T21:34:15Z",
-      "lastSuccessAt": "2026-09-07T21:34:15Z",
+      "lastCheckedAt": "2026-09-08T04:45:50Z",
+      "lastSuccessAt": "2026-09-08T04:45:50Z",
       "error": ""
     },
     {
@@ -456,8 +460,8 @@
         "사업"
       ],
       "itemCount": 6,
-      "lastCheckedAt": "2026-09-07T21:34:15Z",
-      "lastSuccessAt": "2026-09-07T21:34:15Z",
+      "lastCheckedAt": "2026-09-08T04:45:50Z",
+      "lastSuccessAt": "2026-09-08T04:45:50Z",
       "error": ""
     },
     {
@@ -471,12 +475,11 @@
       "priority": 66,
       "featured": false,
       "categories": [
-        "사업",
-        "법률"
+        "사업"
       ],
       "itemCount": 5,
-      "lastCheckedAt": "2026-09-07T21:34:15Z",
-      "lastSuccessAt": "2026-09-07T21:34:15Z",
+      "lastCheckedAt": "2026-09-08T04:45:50Z",
+      "lastSuccessAt": "2026-09-08T04:45:50Z",
       "error": ""
     },
     {
@@ -490,12 +493,12 @@
       "priority": 62,
       "featured": false,
       "categories": [
-        "컴퓨터 사이언스",
+        "사업",
         "AI"
       ],
       "itemCount": 4,
-      "lastCheckedAt": "2026-09-07T21:34:15Z",
-      "lastSuccessAt": "2026-09-07T21:34:15Z",
+      "lastCheckedAt": "2026-09-08T04:45:50Z",
+      "lastSuccessAt": "2026-09-08T04:45:50Z",
       "error": ""
     },
     {
@@ -513,8 +516,8 @@
         "AI"
       ],
       "itemCount": 5,
-      "lastCheckedAt": "2026-09-07T21:34:15Z",
-      "lastSuccessAt": "2026-09-07T21:34:15Z",
+      "lastCheckedAt": "2026-09-08T04:45:50Z",
+      "lastSuccessAt": "2026-09-08T04:45:50Z",
       "error": ""
     },
     {
@@ -529,12 +532,11 @@
       "featured": false,
       "categories": [
         "사업",
-        "컴퓨터 사이언스",
         "AI"
       ],
       "itemCount": 4,
-      "lastCheckedAt": "2026-09-07T21:34:15Z",
-      "lastSuccessAt": "2026-09-07T21:34:15Z",
+      "lastCheckedAt": "2026-09-08T04:45:50Z",
+      "lastSuccessAt": "2026-09-08T04:45:50Z",
       "error": ""
     },
     {
@@ -548,11 +550,12 @@
       "priority": 62,
       "featured": false,
       "categories": [
+        "사업",
         "AI"
       ],
       "itemCount": 4,
-      "lastCheckedAt": "2026-09-07T21:34:15Z",
-      "lastSuccessAt": "2026-09-07T21:34:15Z",
+      "lastCheckedAt": "2026-09-08T04:45:50Z",
+      "lastSuccessAt": "2026-09-08T04:45:50Z",
       "error": ""
     },
     {
@@ -566,12 +569,12 @@
       "priority": 64,
       "featured": false,
       "categories": [
-        "사업",
+        "컴퓨터 사이언스",
         "AI"
       ],
       "itemCount": 4,
-      "lastCheckedAt": "2026-09-07T21:34:15Z",
-      "lastSuccessAt": "2026-09-07T21:34:15Z",
+      "lastCheckedAt": "2026-09-08T04:45:50Z",
+      "lastSuccessAt": "2026-09-08T04:45:50Z",
       "error": ""
     },
     {
@@ -588,7 +591,7 @@
         "컴퓨터 사이언스"
       ],
       "itemCount": 5,
-      "lastCheckedAt": "2026-09-07T21:34:15Z",
+      "lastCheckedAt": "2026-09-08T04:45:50Z",
       "lastSuccessAt": "2026-08-20T01:54:08Z",
       "error": "syntax error: line 1, column 0"
     },
@@ -603,11 +606,12 @@
       "priority": 62,
       "featured": false,
       "categories": [
+        "AI",
         "제약"
       ],
       "itemCount": 4,
-      "lastCheckedAt": "2026-09-07T21:34:15Z",
-      "lastSuccessAt": "2026-09-07T21:34:15Z",
+      "lastCheckedAt": "2026-09-08T04:45:50Z",
+      "lastSuccessAt": "2026-09-08T04:45:50Z",
       "error": ""
     },
     {
@@ -621,11 +625,12 @@
       "priority": 60,
       "featured": false,
       "categories": [
+        "AI",
         "제약"
       ],
       "itemCount": 4,
-      "lastCheckedAt": "2026-09-07T21:34:15Z",
-      "lastSuccessAt": "2026-09-07T21:34:15Z",
+      "lastCheckedAt": "2026-09-08T04:45:50Z",
+      "lastSuccessAt": "2026-09-08T04:45:50Z",
       "error": ""
     },
     {
@@ -642,8 +647,8 @@
         "사업"
       ],
       "itemCount": 5,
-      "lastCheckedAt": "2026-09-07T21:34:15Z",
-      "lastSuccessAt": "2026-09-07T21:34:15Z",
+      "lastCheckedAt": "2026-09-08T04:45:50Z",
+      "lastSuccessAt": "2026-09-08T04:45:50Z",
       "error": ""
     },
     {
@@ -660,271 +665,1103 @@
         "사업"
       ],
       "itemCount": 5,
-      "lastCheckedAt": "2026-09-07T21:34:15Z",
-      "lastSuccessAt": "2026-09-07T21:34:15Z",
+      "lastCheckedAt": "2026-09-08T04:45:50Z",
+      "lastSuccessAt": "2026-09-08T04:45:50Z",
       "error": ""
     }
   ],
   "items": [
     {
-      "id": "75dfb17e18f901bffdcb43ed",
-      "feedId": "hitnews",
-      "source": "히트뉴스",
-      "category": "제약",
-      "language": "ko",
-      "title": "로수젯ODT가 만든 '급여 장벽'… 제약회사 셈법이 복잡해졌다",
-      "url": "https://www.hitnews.co.kr/news/articleView.html?idxno=78964",
-      "publishedAt": "2026-09-08T06:06:00Z",
-      "collectedAt": "2026-09-07T21:34:15Z",
-      "feedPosition": 0,
-      "summary": ""
-    },
-    {
-      "id": "e347d888fee15978ec6b1754",
-      "feedId": "hitnews",
-      "source": "히트뉴스",
-      "category": "제약",
-      "language": "ko",
-      "title": "FDA, 해외임상 실사 강화… K-바이오, '中 임상'도 변수되나",
-      "url": "https://www.hitnews.co.kr/news/articleView.html?idxno=78970",
-      "publishedAt": "2026-09-08T06:05:00Z",
-      "collectedAt": "2026-09-07T21:34:15Z",
-      "feedPosition": 1,
-      "summary": ""
-    },
-    {
-      "id": "b9babccf54729ce9fd59ac19",
-      "feedId": "medipana",
-      "source": "메디파나뉴스",
-      "category": "제약",
-      "language": "ko",
-      "title": "상반기 제약·바이오 R&D 인력 9170명…비중 15% 유지",
-      "url": "https://www.medipana.com/news/articleView.html?idxno=417208",
-      "publishedAt": "2026-09-08T06:04:00Z",
-      "collectedAt": "2026-09-07T21:34:15Z",
-      "feedPosition": 0,
-      "summary": ""
-    },
-    {
-      "id": "716a96c8440d15c6ffabeb01",
-      "feedId": "medipana",
-      "source": "메디파나뉴스",
-      "category": "제약",
-      "language": "ko",
-      "title": "대웅제약, 인니 생산거점 확장…DPI·Selatox 1400억 보증",
-      "url": "https://www.medipana.com/news/articleView.html?idxno=417202",
-      "publishedAt": "2026-09-08T06:03:00Z",
-      "collectedAt": "2026-09-07T21:34:15Z",
-      "feedPosition": 1,
-      "summary": ""
-    },
-    {
-      "id": "18481ac9d5ffbb2f834b2c40",
-      "feedId": "hitnews",
-      "source": "히트뉴스",
-      "category": "제약",
-      "language": "ko",
-      "title": "[영상] 탈모약, 새 투자처 부상… JW신약 일주일 새 55% 급등",
-      "url": "https://www.hitnews.co.kr/news/articleView.html?idxno=78962",
-      "publishedAt": "2026-09-08T06:01:00Z",
-      "collectedAt": "2026-09-07T21:34:15Z",
-      "feedPosition": 5,
-      "summary": ""
-    },
-    {
-      "id": "af27877bb8e68124260dd4fe",
-      "feedId": "pharmnews",
-      "source": "팜뉴스",
-      "category": "제약",
-      "language": "ko",
-      "title": "수급안정선도기업 약가특례, 품절대란 막는 '안전장치' 부상",
-      "url": "https://www.pharmnews.com/news/articleView.html?idxno=306118",
-      "publishedAt": "2026-09-08T06:00:00Z",
-      "collectedAt": "2026-09-07T21:34:15Z",
-      "feedPosition": 0,
-      "summary": "신규 제네릭 등재 계획이 없으면 지정을 받아도 실질적 혜택이 전무한 구조라는 문제의식이 확산되면서, 수급안정선도화제약기업에 준혁신형 제약기업과 동일한 '47% 우대·3년 유예' 수준의 기등재 재평가 완충장치를 마련해야 한다는 업계 여론이 빠르게 무르익고 있다.본지가 지난달 19일 [정책기획] 보도를 통해 기등재 재평가 국면에서 수급안정선도기업이 놓인 사각지대를 짚은 이후, 이 문제를 바라보는 시선이 한층 정교해진 모습이다.막연한 형평성 호소를 넘어, 어떤 수치를 어떤 논리로 적용해야 하는지에 대한 공감대가 구체적 윤곽을 갖춰가는 단"
-    },
-    {
-      "id": "f16ad970d52cbcc35ed40119",
-      "feedId": "it-chosun",
-      "source": "IT조선",
+      "id": "fcd86ce4db09c34eeba5e1b4",
+      "feedId": "mk-economy",
+      "source": "매일경제",
       "category": "AI",
       "language": "ko",
-      "title": "멍청해진 구글, 그리고 GPT-6 아스트라의 출시 [이승현의 AI네이티브]",
-      "url": "https://it.chosun.com/news/articleView.html?idxno=2023092169662",
-      "publishedAt": "2026-09-08T06:00:00Z",
-      "collectedAt": "2026-09-07T21:34:15Z",
+      "title": "“AI가 카드 혜택 비교해준다”…커넥셔너리, 신한카드와 AI 엔진 공동개발",
+      "url": "https://www.mk.co.kr/news/economy/12146962",
+      "publishedAt": "2026-09-08T13:38:58Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
       "feedPosition": 0,
       "summary": ""
     },
     {
-      "id": "10c01b65ce0df688a7795019",
-      "feedId": "it-chosun",
-      "source": "IT조선",
+      "id": "7886ccee9f702b3f389fd722",
+      "feedId": "digitaltoday",
+      "source": "디지털투데이",
       "category": "AI",
       "language": "ko",
-      "title": "‘시장 없는 국가대표 AI’…성능 점수만으로 챗GPT 잡겠나 [줌인IT]",
-      "url": "https://it.chosun.com/news/articleView.html?idxno=2023092169630",
-      "publishedAt": "2026-09-08T06:00:00Z",
-      "collectedAt": "2026-09-07T21:34:15Z",
-      "feedPosition": 2,
-      "summary": ""
-    },
-    {
-      "id": "e42a0e804ecbbb30e3464632",
-      "feedId": "pharmnews",
-      "source": "팜뉴스",
-      "category": "제약",
-      "language": "ko",
-      "title": "\"단순 증상 완화 넘어 '면역 방어벽' 구축으로 일상 복귀\"",
-      "url": "https://www.pharmnews.com/news/articleView.html?idxno=306117",
-      "publishedAt": "2026-09-08T05:58:00Z",
-      "collectedAt": "2026-09-07T21:34:15Z",
-      "feedPosition": 2,
-      "summary": "[팜뉴스=우정민 기자] \"단순 증상 완화 넘어 '체내 면역 방어벽' 구축으로 환자의 일상 복귀에 최선의 노력을 기울이고 있습니다.\"김상현 동원요양병원 대표원장은 최근 팜뉴스와 인터뷰에서 이렇게 강조했다.수술과 항암을 견디는 환자들에게 사후 면역 관리와 회복 조절은 필수 과제다. 이에 동원요양병원은 통합 케어 체계를 도입해 항암 부작용 완화와 회복을 돕는 보완책을 제시하고 있다.센터 중심의 다각적인 관리를 제공하며 환자들의 안정적인 일상 복귀를 돕는 김 원장은 \"치료의 중심에는 언제나 환자가 있어야 한다\"며 체계적인 케어 시스템의 중"
-    },
-    {
-      "id": "371a864f0747576d70d80827",
-      "feedId": "pharmnews",
-      "source": "팜뉴스",
-      "category": "제약",
-      "language": "ko",
-      "title": "약가 규제에 인재 놓치는 韓ㆍ日 제약, 임금 정체 우려",
-      "url": "https://www.pharmnews.com/news/articleView.html?idxno=306113",
-      "publishedAt": "2026-09-08T05:55:00Z",
-      "collectedAt": "2026-09-07T21:34:15Z",
+      "title": "AI가 '속으로 생각'하기 시작했다?…아스트라가 띄운 불투명 재귀",
+      "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=698953",
+      "publishedAt": "2026-09-08T13:33:44Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
       "feedPosition": 3,
-      "summary": "[팜뉴스=우정민 기자] 한일 제약업계에 인재 확보 비상이 걸렸다. 양국 정부의 상시적인 약가 인하 정책과 대외 경영 환경 악화가 맞물리면서, 제약 기업들의 보상 여력이 크게 위축되고 고숙련 전문 인력 유출 우려가 가중되는 양상이다.일본 노동시장은 역사적인 임금 상승 흐름 속에 전체 평균 5.01%의 상승률을 기록했다. 일본 노동조합총연합회인 렌고에 따르면 올해 춘계 노사협상 최종 결과 전체 산업의 임금 인상률은 3년 연속 5%를 넘었다.일본경제단체연합회인 게이단렌의 대기업 대상 1차 조사 결과 역시 5.46%에 달했으며, 정보통신"
-    },
-    {
-      "id": "b276ea50fa72e8002eb1b59e",
-      "feedId": "pharmnews",
-      "source": "팜뉴스",
-      "category": "제약",
-      "language": "ko",
-      "title": "美 중증 원형탈모 첫 지침, 먹는 JAK 억제제 1차 치료 권고",
-      "url": "https://www.pharmnews.com/news/articleView.html?idxno=306111",
-      "publishedAt": "2026-09-08T05:53:00Z",
-      "collectedAt": "2026-09-07T21:34:15Z",
-      "feedPosition": 4,
-      "summary": "[팜뉴스=우정민 기자] 미국 성인 중증 원형탈모증 전문가 치료 지침이 마련됐다. 미국 국립원형탈모재단(NAAF)과 미국모발연구학회(AHRS)는 지난 2일, 공동 개발한 가이드라인을 의학 학술지 'JAMA Dermatology'에 발표했다.이번 가이드라인에는 미국 내 원형탈모증 전문가 31명이 참여했으며, 2025년 5월부터 11월까지 세 차례의 익명 델파이(Delphi) 설문조사가 시행됐다.합의 기준은 전문가 동의율 70% 이상으로 설정됐다. 전문가들은 환자의 두피 모발 손실률이 50%에서 100% 사이인 경우를 '중증 원형탈모증'"
-    },
-    {
-      "id": "bfda70f43bd669ad97d5a520",
-      "feedId": "digitaltoday",
-      "source": "디지털투데이",
-      "category": "AI",
-      "language": "ko",
-      "title": "AI 캐릭터챗 이용자 미성년자 비중 커...보호장치 과제로",
-      "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=698817",
-      "publishedAt": "2026-09-08T05:42:35Z",
-      "collectedAt": "2026-09-07T21:34:15Z",
-      "feedPosition": 0,
       "summary": ""
     },
     {
-      "id": "9e877ae458bfd37cdf63810e",
-      "feedId": "digitaltoday",
-      "source": "디지털투데이",
-      "category": "AI",
-      "language": "ko",
-      "title": "오픈AI \"AI 시대, 기업 보안도 에이전트 중심으로 전환해야\"",
-      "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=698824",
-      "publishedAt": "2026-09-07T21:14:37Z",
-      "collectedAt": "2026-09-07T12:42:36Z",
-      "feedPosition": 4,
-      "summary": ""
-    },
-    {
-      "id": "7a598943793e9ac932e22832",
-      "feedId": "digitaltoday",
-      "source": "디지털투데이",
-      "category": "컴퓨터 사이언스",
-      "language": "ko",
-      "title": "GPT-6 아스트라, 코딩 67점으로 최상위권…작업당 비용 효율은 두각",
-      "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=698832",
-      "publishedAt": "2026-09-07T21:09:00Z",
-      "collectedAt": "2026-09-07T12:42:36Z",
-      "feedPosition": 5,
-      "summary": ""
-    },
-    {
-      "id": "8ec44da044fb562ab258e0d0",
+      "id": "cfd332ca019df9b54dce5427",
       "feedId": "digitaltoday",
       "source": "디지털투데이",
       "category": "사업",
       "language": "ko",
-      "title": "일본, 암호화폐 금융상품 재분류...시바이누 ETF 적격성 경쟁서 앞서",
-      "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=698829",
-      "publishedAt": "2026-09-07T21:09:00Z",
-      "collectedAt": "2026-09-07T12:42:36Z",
-      "feedPosition": 8,
-      "summary": ""
-    },
-    {
-      "id": "a3c0955eae95ad1d8a2b90d5",
-      "feedId": "chosun-economy",
-      "source": "조선일보",
-      "category": "사업",
-      "language": "ko",
-      "title": "스마일게이트인베가 투자한 ‘헌 옷 수거’ 리클…핀테크 품으로",
-      "url": "https://www.chosun.com/economy/smb-venture/2026/09/08/MVSGCMTEGBSGMMBXGQ4WINTFHA",
-      "publishedAt": "2026-09-07T21:07:56Z",
-      "collectedAt": "2026-09-07T21:34:15Z",
+      "title": "'로봇 직원' 현실로 온다…기업 60% \"5년 내 로봇 운영\"",
+      "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=698930",
+      "publishedAt": "2026-09-08T13:31:55Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
       "feedPosition": 11,
       "summary": ""
     },
     {
-      "id": "36136d40c3f10fb8926a5809",
-      "feedId": "chosun-economy",
-      "source": "조선일보",
-      "category": "제약",
+      "id": "ef0ee297a04566d634a2e9b3",
+      "feedId": "bloter",
+      "source": "블로터",
+      "category": "사업",
       "language": "ko",
-      "title": "FDA 문턱 넘고 빅파마 딜까지…K바이오 ‘글로벌 인재’ 확보전",
-      "url": "https://www.chosun.com/economy/science/2026/09/08/MVSDCOJRMNQTEYTDGA2GKY3DGU",
-      "publishedAt": "2026-09-07T21:04:38Z",
-      "collectedAt": "2026-09-07T21:34:15Z",
-      "feedPosition": 12,
+      "title": "[신한금융 주주 빅3]① 캐피털그룹, 10여년 만에 복귀한 미국 운용사",
+      "url": "https://www.bloter.net/news/articleView.html?idxno=673048",
+      "publishedAt": "2026-09-08T12:56:10Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 0,
       "summary": ""
     },
     {
-      "id": "91e27502363a487093391490",
-      "feedId": "chosun-economy",
-      "source": "조선일보",
+      "id": "d5acbd4c0d3deb97a56b5087",
+      "feedId": "medipana",
+      "source": "메디파나뉴스",
       "category": "제약",
       "language": "ko",
-      "title": "“영업사원 줄이고 외주 맡겼더니”…제약사 CSO 전환 ‘브레이크’ 셈법 복잡해졌다",
-      "url": "https://www.chosun.com/economy/science/2026/09/08/G43TCMLCG4ZTCNRVGE3WMZTCGY",
-      "publishedAt": "2026-09-07T21:02:26Z",
-      "collectedAt": "2026-09-07T21:34:15Z",
-      "feedPosition": 13,
+      "title": "약값 낮추고 임상 당기고…美 제약정책 판 바꾼다",
+      "url": "https://www.medipana.com/news/articleView.html?idxno=417250",
+      "publishedAt": "2026-09-08T12:00:37Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 2,
       "summary": ""
     },
     {
-      "id": "e082acec5b04d36292ee21c8",
-      "feedId": "hankyung-all",
-      "source": "한국경제",
+      "id": "fde58ca9980648061f27a84a",
+      "feedId": "bloter",
+      "source": "블로터",
+      "category": "사업",
+      "language": "ko",
+      "title": "[HLB 확장의 대가]② 투자주식 75% 엘레바·이뮤노믹…손상차손 지속",
+      "url": "https://www.bloter.net/news/articleView.html?idxno=672897",
+      "publishedAt": "2026-09-08T12:00:07Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 1,
+      "summary": ""
+    },
+    {
+      "id": "ded2017c714cce565bf624d0",
+      "feedId": "medipana",
+      "source": "메디파나뉴스",
+      "category": "제약",
+      "language": "ko",
+      "title": "광동제약 MRO, 수출 성장 지속…베트남까지 영토 확장",
+      "url": "https://www.medipana.com/news/articleView.html?idxno=417211",
+      "publishedAt": "2026-09-08T11:55:00Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 4,
+      "summary": ""
+    },
+    {
+      "id": "5bcd761825149b2195d0d449",
+      "feedId": "medipana",
+      "source": "메디파나뉴스",
+      "category": "제약",
+      "language": "ko",
+      "title": "레모나 다시 웃었다…경남제약, OTC 확장 속도",
+      "url": "https://www.medipana.com/news/articleView.html?idxno=417207",
+      "publishedAt": "2026-09-08T11:50:00Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 6,
+      "summary": ""
+    },
+    {
+      "id": "ba8fc4e16a28fd48aac0028e",
+      "feedId": "it-chosun",
+      "source": "IT조선",
       "category": "AI",
       "language": "ko",
-      "title": "[여기는 논설실] AI가 읽는 '탐욕과 공포'의 온도",
-      "url": "https://www.hankyung.com/article/202609079699i",
-      "publishedAt": "2026-09-07T21:00:08Z",
-      "collectedAt": "2026-09-07T21:34:15Z",
+      "title": "김경훈 오픈AI 대표 “기업 데이터 연결해야 AI가 일한다”",
+      "url": "https://it.chosun.com/news/articleView.html?idxno=2023092169680",
+      "publishedAt": "2026-09-08T11:32:53Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 2,
+      "summary": ""
+    },
+    {
+      "id": "13b2f2b7d01db6693c59d6e9",
+      "feedId": "digitaltoday",
+      "source": "디지털투데이",
+      "category": "사업",
+      "language": "ko",
+      "title": "삼보산업 최재훈 대표이사, 소유 주식 수량 7만8316주 감소",
+      "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=698945",
+      "publishedAt": "2026-09-08T11:32:01Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 18,
+      "summary": ""
+    },
+    {
+      "id": "01d20cb0cf98f553af792e46",
+      "feedId": "digitaltoday",
+      "source": "디지털투데이",
+      "category": "AI",
+      "language": "ko",
+      "title": "[디투피플]\"마케팅 AI, 핵심은 AI로 할 수 없는 라스트마일...K-기업 수출 도우미 될 것\"",
+      "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=698941",
+      "publishedAt": "2026-09-08T11:31:11Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 19,
+      "summary": ""
+    },
+    {
+      "id": "df91b24e5216d878222a0bdb",
+      "feedId": "techm",
+      "source": "테크M",
+      "category": "사업",
+      "language": "ko",
+      "title": "이호성 하나은행장, '사람 살리는 금융' 캠페인 동참...\"금융 취약계층 보호 충실히 이행할 것\"",
+      "url": "https://www.techm.kr/news/articleView.html?idxno=155005",
+      "publishedAt": "2026-09-08T11:13:21Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 8,
+      "summary": ""
+    },
+    {
+      "id": "cbadb8571b7f18be843bdc81",
+      "feedId": "medipana",
+      "source": "메디파나뉴스",
+      "category": "AI",
+      "language": "ko",
+      "title": "노인 우울 전조 AI로 잡는다…삼성서울병원, 180억 연구 착수",
+      "url": "https://www.medipana.com/news/articleView.html?idxno=417254",
+      "publishedAt": "2026-09-08T11:13:08Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 15,
+      "summary": ""
+    },
+    {
+      "id": "6d31c16cfbf5f0377ecc823f",
+      "feedId": "pharmnews",
+      "source": "팜뉴스",
+      "category": "제약",
+      "language": "ko",
+      "title": "일동제약, 한국화이자제약과 편두통 치료제 '너텍 구강붕해정' 공동 판촉 계약 체결",
+      "url": "https://www.pharmnews.com/news/articleView.html?idxno=306137",
+      "publishedAt": "2026-09-08T11:08:02Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 0,
+      "summary": "[팜뉴스=김응민 기자] 일동제약은 한국화이자제약과 편두통 치료 신약 '너텍 구강붕해정(성분명 리메제판트, 이하 너텍)'에 대한 국내 유통 및 공동 판촉 계약을 체결했다고 8일 밝혔다.이번 계약에 따라 일동제약은 너텍의 국내 유통을 전담하며, 이달부터 한국화이자제약과 공동으로 병·의원 대상 마케팅 및 영업 활동을 전개할 방침이다.너텍은 칼시토닌 유전자 관련 펩타이드(CGRP) 수용체 길항제 계열의 전문의약품(용량 75mg)이다. 성인의 전조 증상 동반 여부와 무관한 편두통 급성기 치료뿐 아니라 성인 삽화성 편두통 예방 적응증을 동시에"
+    },
+    {
+      "id": "a8f504631edbdb0c9cb46e49",
+      "feedId": "it-chosun",
+      "source": "IT조선",
+      "category": "AI",
+      "language": "ko",
+      "title": "앤트로픽, 8조 규모 AI 스타트업 인수 철회",
+      "url": "https://it.chosun.com/news/articleView.html?idxno=2023092169681",
+      "publishedAt": "2026-09-08T11:06:57Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 5,
+      "summary": ""
+    },
+    {
+      "id": "2405b223158ac67f1e00850c",
+      "feedId": "pharmnews",
+      "source": "팜뉴스",
+      "category": "제약",
+      "language": "ko",
+      "title": "[부음] 장준희 애드파마 R&D대표 부친상",
+      "url": "https://www.pharmnews.com/news/articleView.html?idxno=306136",
+      "publishedAt": "2026-09-08T11:05:00Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 1,
+      "summary": "장준희 애드파마 R&D대표(전 대화제약 상무) 부친 고(故) 장용환 장로 8일 소천. *발인: 2026년 9월 10일 08시 30분*빈소: 동해전문장례식장 1층 VIP실(강원특별자치도 동해시 중앙로 199)*장지: 삼척미로선영*전화: 033-531-4740"
+    },
+    {
+      "id": "5dc5d86cc114ca212ca65b0a",
+      "feedId": "it-chosun",
+      "source": "IT조선",
+      "category": "컴퓨터 사이언스",
+      "language": "ko",
+      "title": "반도체 끌고 소비 밀고… 2분기 GDP 0.6% 성장",
+      "url": "https://it.chosun.com/news/articleView.html?idxno=2023092169679",
+      "publishedAt": "2026-09-08T10:58:27Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 7,
+      "summary": ""
+    },
+    {
+      "id": "fc69ad9c14f92804b29178f7",
+      "feedId": "bloter",
+      "source": "블로터",
+      "category": "사업",
+      "language": "ko",
+      "title": "[금융★들의 궤적] 장민영 기업은행장, 역대급 텃밭에 생산적금융 일군다",
+      "url": "https://www.bloter.net/news/articleView.html?idxno=673021",
+      "publishedAt": "2026-09-08T10:44:04Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 5,
+      "summary": ""
+    },
+    {
+      "id": "8436ede24e25361e335a4cb9",
+      "feedId": "mk-economy",
+      "source": "매일경제",
+      "category": "사업",
+      "language": "ko",
+      "title": "“엔화 바닥 찍었나” 전문가가 꼽은 투자처 따로 있다는데",
+      "url": "https://www.mk.co.kr/news/economy/12146796",
+      "publishedAt": "2026-09-08T10:38:39Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
       "feedPosition": 3,
       "summary": ""
     },
     {
-      "id": "5212ed8b41e6ba44f593c8ae",
+      "id": "bdd0c12522c0911f44d4f59f",
+      "feedId": "bloter",
+      "source": "블로터",
+      "category": "사업",
+      "language": "ko",
+      "title": "대원산업, 이사회 의결 없이 특관자와 거래…허위 공시 가능성",
+      "url": "https://www.bloter.net/news/articleView.html?idxno=673020",
+      "publishedAt": "2026-09-08T10:34:29Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 6,
+      "summary": ""
+    },
+    {
+      "id": "b3935c75bbea787d6c7813b7",
+      "feedId": "techm",
+      "source": "테크M",
+      "category": "AI",
+      "language": "ko",
+      "title": "'전략 전문가' 차상훈, 아이즈엔터 CSO로 합류...AI·콘텐츠 결합 사업 힘 싣는다",
+      "url": "https://www.techm.kr/news/articleView.html?idxno=154999",
+      "publishedAt": "2026-09-08T10:31:56Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 11,
+      "summary": ""
+    },
+    {
+      "id": "fcdd133981a92ff9fbcd5e10",
+      "feedId": "it-chosun",
+      "source": "IT조선",
+      "category": "AI",
+      "language": "ko",
+      "title": "플레이디, 네이버에 광고 입찰가·소재 추천하는 AI 솔루션 공급",
+      "url": "https://it.chosun.com/news/articleView.html?idxno=2023092169669",
+      "publishedAt": "2026-09-08T10:23:06Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 9,
+      "summary": ""
+    },
+    {
+      "id": "a7fba60fe1f021f96390a089",
+      "feedId": "hitnews",
+      "source": "히트뉴스",
+      "category": "제약",
+      "language": "ko",
+      "title": "셀트리온, 일본 바이오클러스터와 유망 바이오 기업 육성",
+      "url": "https://www.hitnews.co.kr/news/articleView.html?idxno=78979",
+      "publishedAt": "2026-09-08T10:21:31Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 2,
+      "summary": ""
+    },
+    {
+      "id": "097daa25afa56ad29e555164",
+      "feedId": "pharmnews",
+      "source": "팜뉴스",
+      "category": "제약",
+      "language": "ko",
+      "title": "셀트리온, 日 고베 클러스터와 '글로벌 스케일업' 출범... 유망 바이오 스타트업 육성",
+      "url": "https://www.pharmnews.com/news/articleView.html?idxno=306134",
+      "publishedAt": "2026-09-08T10:18:59Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 2,
+      "summary": "[팜뉴스=김응민 기자] 셀트리온은 일본 고베 바이오메디컬 혁신 클러스터(KBIC)와 협력해 유망 바이오 스타트업을 육성하는 '2026 KBIC-셀트리온 글로벌 스케일업 프로그램'을 추진한다고 8일 밝혔다. 양측은 이날 도쿄 일본 라이프사이언스 혁신 네트워크(LINK-J) 사옥에서 오프라인 설명회를 열고 모집 절차에 돌입했다.이번 사업은 국내 기업이 일본 바이오 클러스터와 공동 기획·운영하는 민관 협력 오픈 이노베이션 프로그램이다. 기술 검증부터 글로벌 상업화 단계까지 스타트업의 전주기 성장을 지원하는 것을 목적으로 한다.모집 기간은"
+    },
+    {
+      "id": "034289e356c7f545024b68c5",
+      "feedId": "techm",
+      "source": "테크M",
+      "category": "AI",
+      "language": "ko",
+      "title": "[테크M 이슈] 컴투스, AI 게임 시대 '서비스'로 답하다...'하이브 액실'로 개발·운영 생태계 확장",
+      "url": "https://www.techm.kr/news/articleView.html?idxno=154998",
+      "publishedAt": "2026-09-08T10:09:47Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 12,
+      "summary": ""
+    },
+    {
+      "id": "dbbdf3d8b0eb14957fecab98",
+      "feedId": "mk-economy",
+      "source": "매일경제",
+      "category": "사업",
+      "language": "ko",
+      "title": "“취업 힘든 청년들, 대출마저 가혹”…정책서민금융 이용 과반이 2030 [금융가 톺아보기]",
+      "url": "https://www.mk.co.kr/news/economy/12146747",
+      "publishedAt": "2026-09-08T10:09:07Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 6,
+      "summary": ""
+    },
+    {
+      "id": "50863855b3a7e878f3ad86a4",
+      "feedId": "pharmnews",
+      "source": "팜뉴스",
+      "category": "제약",
+      "language": "ko",
+      "title": "코오롱생명과학, 'CPHI 밀라노 2026' 참가... API 공급망 및 CDMO 솔루션 공개",
+      "url": "https://www.pharmnews.com/news/articleView.html?idxno=306133",
+      "publishedAt": "2026-09-08T10:04:28Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 3,
+      "summary": "[팜뉴스=김응민 기자] 코오롱생명과학은 오는 10월 6일부터 8일까지 이탈리아 밀라노에서 열리는 세계 제약산업 전시회 'CPHI 월드와이드 2026(CPHI Milan 2026)'에 단독 부스로 참가한다고 8일 밝혔다.코오롱생명과학은 이번 전시회에서 기존 원료의약품(API) 공급망을 비롯해 신규 개발 품목과 위탁개발생산(CDMO) 서비스를 소개할 계획이다. 회사는 일본 의약품의료기기종합기구(PMDA)의 품질 실사 적합 판정을 유지하고 있으며, 브라질 위생감시국(ANVISA)의 우수 의약품 제조 및 품질관리 기준(GMP) 인증을 획득"
+    },
+    {
+      "id": "0f469a2b4c71a515174096ff",
+      "feedId": "pharmnews",
+      "source": "팜뉴스",
+      "category": "제약",
+      "language": "ko",
+      "title": "박셀바이오, KSMO 2026서 ‘VCB-1102’ 연구 발표",
+      "url": "https://www.pharmnews.com/news/articleView.html?idxno=306125",
+      "publishedAt": "2026-09-08T09:45:00Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 4,
+      "summary": "[팜뉴스=우정민 기자] 박셀바이오의 자가유래 NK세포치료제 ‘VCB-1102’가 활용된 연구가 대한종양내과학회 국제학술대회(KSMO 2026)에서 발표됐다. 연구진은 NK세포와 종양미세환경의 관계를 분석하고 간세포암 치료와 관련한 연구 결과를 제시했다.KSMO 2026은 지난 2일부터 4일까지 서울 그랜드 인터컨티넨탈 파르나스에서 열렸다. 김현종 화순전남대학교병원 종양내과 교수는 4일 ‘종양미세환경을 재구성해 간세포암 면역항암제 병용요법의 치료 효과를 높이는 NK세포의 역할’을 주제로 연구 결과를 구연 발표했다.이번 연구에는 김현종"
+    },
+    {
+      "id": "ea590bca74529e662c6cd961",
+      "feedId": "pharmnews",
+      "source": "팜뉴스",
+      "category": "제약",
+      "language": "ko",
+      "title": "GC녹십자, 산자부·KEIT 'AI 활용 백신 제조·품질관리' 국책과제 주관기관 선정",
+      "url": "https://www.pharmnews.com/news/articleView.html?idxno=306131",
+      "publishedAt": "2026-09-08T09:41:55Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 5,
+      "summary": "[팜뉴스=김응민 기자] GC녹십자는 산업통상자원부와 한국산업기술기획평가원(KEIT)이 주관하는 'AI 활용 백신 제조변동성 제어 및 지능형 품질관리 시스템 개발' 과제의 주관연구기관으로 선정됐다고 8일 밝혔다. 이번 과제에는 국립목포대학교, 대구가톨릭대학교, 전남바이오진흥원이 공동연구기관으로 참여한다.해당 사업은 2026년부터 2030년까지 총 4년 6개월간 진행된다. 참여 기관들은 화순 바이오특화단지와 GC녹십자 화순공장의 메신저 리보핵산-지질나노입자(mRNA-LNP) 제조 시설을 거점으로 인공지능 기반 스마트 제조·품질관리(AI"
+    },
+    {
+      "id": "0c785c6dc8e7dc418b8f226d",
+      "feedId": "hitnews",
+      "source": "히트뉴스",
+      "category": "제약",
+      "language": "ko",
+      "title": "GC녹십자, mRNA 백신 'AI-GMP' 개발과제 주관기관 선정",
+      "url": "https://www.hitnews.co.kr/news/articleView.html?idxno=78981",
+      "publishedAt": "2026-09-08T09:39:47Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 3,
+      "summary": ""
+    },
+    {
+      "id": "4c8bfe04938af1ae4f6aa62e",
+      "feedId": "pharmnews",
+      "source": "팜뉴스",
+      "category": "제약",
+      "language": "ko",
+      "title": "법제처, 한약사 의료기관 공동탕전실 조제 불허",
+      "url": "https://www.pharmnews.com/news/articleView.html?idxno=306130",
+      "publishedAt": "2026-09-08T09:36:54Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 7,
+      "summary": "[팜뉴스=우정민 기자] 약국을 개설한 한약사가 자신의 약국 조제실이 아닌 의료기관의 공동 탕전실을 이용해 한약을 조제하는 행위는 허용되지 않는다는 법령해석이 나왔다.약사법상 약국 개설등록 제도가 시설 내 업무 수행을 특정하고 있어 다른 의료기관 시설을 이용할 수 없다는 취지다.현행 약사법령 제2조제3호에 따르면 약국은 약사나 한약사가 수여할 목적으로 의약품 조제 업무를 수행하는 장소다. 대법원은 지난 2008년 판결(2008도3423)을 통해 약국 개설등록 제도는 업무가 등록된 시설 내에서 이뤄지도록 제한하는 데 취지가 있음을 판시"
+    },
+    {
+      "id": "3a73d662f7510be700d41a45",
+      "feedId": "pharmnews",
+      "source": "팜뉴스",
+      "category": "제약",
+      "language": "ko",
+      "title": "동화약품, 활명수 128주년 기념판 판매 수익금 대한적십자사에 전달",
+      "url": "https://www.pharmnews.com/news/articleView.html?idxno=306128",
+      "publishedAt": "2026-09-08T09:32:34Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 8,
+      "summary": "[팜뉴스=김응민 기자] 동화약품은 2025년 출시한 '활명수 128주년 기념판'의 판매 수익금을 '생명을 살리는 물' 캠페인 기금으로 대한적십자사 서울지사에 전달했다고 8일 밝혔다.대한적십자사 서울지사에서 열린 전달식에는 유준하 동화약품 대표이사와 권영규 대한적십자사 서울지사 회장, 허혜숙 사무처장 등이 참석해 네팔 현지 지원 사업 진행 경과를 점검했다.이번 기부금은 네팔 산쿠와사바아 사바포카리 농촌 지역의 수도 및 위생 시설 개·보수와 주민 보건위생 교육 캠페인에 투입된다. 대한적십자사는 현지 제1·2마을을 대상으로 2023년부터"
+    },
+    {
+      "id": "04adca057a2781ba9a3db981",
+      "feedId": "hitnews",
+      "source": "히트뉴스",
+      "category": "제약",
+      "language": "ko",
+      "title": "안국약품-셀비온, 방사성의약품 혁신신약 공동연구 협력",
+      "url": "https://www.hitnews.co.kr/news/articleView.html?idxno=78980",
+      "publishedAt": "2026-09-08T09:32:10Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 4,
+      "summary": ""
+    },
+    {
+      "id": "6acd75e5634302684059fba6",
+      "feedId": "techm",
+      "source": "테크M",
+      "category": "AI",
+      "language": "ko",
+      "title": "[글로벌] 엔비디아론 부족하다...메타, 자체 AI칩 '아이리스' 생산 돌입",
+      "url": "https://www.techm.kr/news/articleView.html?idxno=154991",
+      "publishedAt": "2026-09-08T09:01:56Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 15,
+      "summary": ""
+    },
+    {
+      "id": "c4de4b0432a282b5359f5468",
+      "feedId": "hitnews",
+      "source": "히트뉴스",
+      "category": "AI",
+      "language": "ko",
+      "title": "새 인재 찾는 한독, AI 역량검사 넣었다",
+      "url": "https://www.hitnews.co.kr/news/articleView.html?idxno=78976",
+      "publishedAt": "2026-09-08T09:01:16Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 5,
+      "summary": ""
+    },
+    {
+      "id": "9dfc0b6caef5ac7ce24fad18",
+      "feedId": "bloter",
+      "source": "블로터",
+      "category": "사업",
+      "language": "ko",
+      "title": "[벤처머니 선순환] 자본과 사람이 교차한 ‘윈윈’ 서사 | 노바렉스·캡스톤",
+      "url": "https://www.bloter.net/news/articleView.html?idxno=672849",
+      "publishedAt": "2026-09-08T09:00:00Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 13,
+      "summary": ""
+    },
+    {
+      "id": "820ac5b50a51cd3199fe4f88",
+      "feedId": "chosun-economy",
+      "source": "조선일보",
+      "category": "제약",
+      "language": "ko",
+      "title": "발암 가능성 크림 홍콩선 판매중단, 싱가포르선 리콜… 국내에선 “문제없다”는 에이피알·식약처",
+      "url": "https://www.chosun.com/economy/market_trend/2026/09/08/HEZGMNTEMVSDGYLDGFSTAMRSHE",
+      "publishedAt": "2026-09-08T04:32:48Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 2,
+      "summary": ""
+    },
+    {
+      "id": "69b6f94a29f72e48e7fcae20",
+      "feedId": "chosun-economy",
+      "source": "조선일보",
+      "category": "사업",
+      "language": "ko",
+      "title": "내년부터 우유 과자 평균 내용량보다 적게 담으면 처벌… 첨단산업 측정기술 지원",
+      "url": "https://www.chosun.com/economy/economy_general/2026/09/08/HAZTKZJYGVSTQMBUMRQTAZLCMY",
+      "publishedAt": "2026-09-08T04:12:51Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 8,
+      "summary": ""
+    },
+    {
+      "id": "f900ed12fef6f38e35de7952",
+      "feedId": "chosun-economy",
+      "source": "조선일보",
+      "category": "AI",
+      "language": "ko",
+      "title": "샘 올트먼 “韓, AI 강국 될 조건 갖춰…삼성·삼성SDS와 협력 강화”",
+      "url": "https://www.chosun.com/economy/tech_it/2026/09/08/GYYDSMRTMU4TQODBMJTGMODCMY",
+      "publishedAt": "2026-09-08T04:08:17Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 9,
+      "summary": ""
+    },
+    {
+      "id": "69c7795c803df61384a1ac5b",
+      "feedId": "hankyung-all",
+      "source": "한국경제",
+      "category": "사업",
+      "language": "ko",
+      "title": "\"원청 나와라, 우리도 성과급 달라\" 노조 요구 폭발…기업들 '전전긍긍' [김대영의 노무스쿨]",
+      "url": "https://www.hankyung.com/article/202609080753g",
+      "publishedAt": "2026-09-08T04:00:04Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 0,
+      "summary": ""
+    },
+    {
+      "id": "db069859614165a0c00af702",
+      "feedId": "etnews-ai",
+      "source": "전자신문 AI",
+      "category": "AI",
+      "language": "ko",
+      "title": "테라텍, KSC 2026서 NPU·AI 자원관리·HPC 아우르는 차세대 AI 인프라 공개",
+      "url": "https://www.etnews.com/20260908000175",
+      "publishedAt": "2026-09-08T03:55:14Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 0,
+      "summary": "테라텍(대표 공영삼)은 9일까지 서울 스위스 그랜드호텔 컨벤션센터에서 개최되는 '한국슈퍼컴퓨팅 콘퍼런스(KSC 2026)'에서 신경망처리장치(NPU) 기반 인공지능(AI) 인프라와 고성능컴퓨터(HPC) 사용자 환경을 연계한 차세대 AI·HPC 인프라 모델을 선보였다고 8일 밝혔다. 이번 전시에서 테라텍이 제시하는 핵심은 특정 AI 가속기나 개별 솔루션 자체가 아니다. AI 워크로드의 특성에 따라 적절한 컴퓨팅 자원을 선택하고, 이를 효율적으로"
+    },
+    {
+      "id": "b45344b18d912e429d009284",
+      "feedId": "byline-network",
+      "source": "바이라인네트워크",
+      "category": "컴퓨터 사이언스",
+      "language": "ko",
+      "title": "[그게뭔가요] 오픈AI 에이전트들이 훔친 ‘비밀 게시판’",
+      "url": "https://byline.network/2026/09/ai-wiki",
+      "publishedAt": "2026-09-08T03:54:08Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 0,
+      "summary": "최근 AI 업계에 다시 한번 파장이 일었다. 오픈AI의 내부 AI 에이전트들이 낡은 독일 위키 사이트를 무단으로 점거해, 자기들끼리 정보를 주고받는 게시판으로 써왔다는 사실이 외부 연구자들에 의해 새롭게 드러난 것이다. 더 논란이 된 것은 오픈AI가 이 사실을 이미 알고 있었으면서도 몇 주 동안 공개하지 않았다는 정황이다. 대체 무슨 일이 있었던 걸까."
+    },
+    {
+      "id": "98eecba0cb7c892e3619a60c",
+      "feedId": "ai-times-korea",
+      "source": "AI타임스",
+      "category": "AI",
+      "language": "ko",
+      "title": "오픈AI, 29일 데브데이서 인프라 구축 없는 '관리형 에이전트' 공개 유력",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=214976",
+      "publishedAt": "2026-09-08T03:50:05Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 0,
+      "summary": "오픈AI가 오는 29일(현지시간) 미국 샌프란시스코에서 열리는 개발자 행사 \\'데브데이\\'에서 인프라 구축 없이 에이전트를 운영할 수 있는 \\'관리형 에이전트(Managed Agents)\\' 서비스를 공개할 것이라는 관측이 나왔다. 7일 테스팅카탈로그에 따르면, 오픈AI는 개발자가 플랫폼 내에서 에이전트, 실행 환경, 세션을 직접 생성하고 관리하는 기능을 준비 중인 것으로 포착됐다. 최근 AI 에이전트가 실제 업무를 수행하는 단계로 진화함에 따라, 주요 AI·클라우드 기업들이 보안과 메모리, 서버 실행 환경을 통합해 제공하는 관리형 에이전"
+    },
+    {
+      "id": "22940d91f9149390efa2bc83",
+      "feedId": "ai-times-korea",
+      "source": "AI타임스",
+      "category": "AI",
+      "language": "ko",
+      "title": "젠슨 황 \"AGI 시대 도래했다\"...오픈AI '아스트라'에 축하 메시지",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=214974",
+      "publishedAt": "2026-09-08T03:32:57Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 1,
+      "summary": "젠슨 황 엔비디아 CEO가 오픈AI의 \\'GPT-6 아스트라\\' 출시를 축하하며 \\\"AGI가 도래했다\\\"고 선언했다. 황 CEO는 6일(현지시간) X를 통해 \\\"챗GPT에서 o1, 아스트라까지 4년 만에 AGI가 도래했다. 오픈AI 팀에 축하한다\\\"고 밝혔다.특히 아스트라가 엔비디아의 그레이스 블랙웰(Grace Blackwell) 기반\\' NV링크72\\' 시스템에서 10만장 규모의 GPU 인프라를 활용해 훈련됐다는 점을 강조했다. 앞으로 40만개의 GPU를 추가로 가동할 예정이라고 덧붙였다.오픈AI는 아스트라를 가장 지능적이고 정렬된 모델로 소개"
+    },
+    {
+      "id": "0d25e802f67b009e6bc77b98",
+      "feedId": "zdnet-korea",
+      "source": "ZDNet Korea",
+      "category": "AI",
+      "language": "ko",
+      "title": "삼성SDS, 기업용 AI 플랫폼 '패브릭스 2.0' 내달 출시…에이전트 운영 고도화",
+      "url": "https://zdnet.co.kr/view?no=20260908122112",
+      "publishedAt": "2026-09-08T03:22:29Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 0,
+      "summary": ""
+    },
+    {
+      "id": "342492c939312cf65e037c95",
+      "feedId": "byline-network",
+      "source": "바이라인네트워크",
+      "category": "컴퓨터 사이언스",
+      "language": "ko",
+      "title": "솔트웨어, 데이터브릭스 DPP 파트너 자격 획득",
+      "url": "https://byline.network/2026/09/0908-3",
+      "publishedAt": "2026-09-08T03:22:14Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 1,
+      "summary": "솔트웨어가 2026년 데이터브릭스 관련 사업을 본격화한 데 이어 8일 데이터브릭스 딜리버리 파트너 프로그램(DPP) 파트너 자격을 획득했다고 밝혔다."
+    },
+    {
+      "id": "6ae26eb23d4c323bf4166c99",
+      "feedId": "hankyung-all",
+      "source": "한국경제",
+      "category": "제약",
+      "language": "ko",
+      "title": "비만치료제 불법 반입 급증…7개월만에 작년의 3.9배",
+      "url": "https://www.hankyung.com/article/2026090810357",
+      "publishedAt": "2026-09-08T03:19:54Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 3,
+      "summary": ""
+    },
+    {
+      "id": "5462d6960bfd4ffdf9ed3d37",
+      "feedId": "ai-times-korea",
+      "source": "AI타임스",
+      "category": "사업",
+      "language": "ko",
+      "title": "\"로봇이 단열재 시공도 척척\"...빅웨이브, 주택 현장에 휴머노이드 투입",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=214980",
+      "publishedAt": "2026-09-08T03:18:42Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 2,
+      "summary": "빅웨이브로보틱스(대표 김민교)는 공간제작소와 협력해 모듈러 주택 생산과 시공 현장에 휴머노이드 로봇을 단계적으로 적용한다고 8일 밝혔다.공간제작소는 목조 모듈러 주택 전문 기업으로 주택 상당 부분을 공장에서 사전 제작하는 공법과 로봇 자동화 라인을 갖추고 있다. 양사는 해당 자동화 라인에 휴머노이드를 추가 배치해 공정 효율을 높인다는 계획이다.우선 적용 분야는 단열재 시공이다. 작업자의 호흡기와 피부에 해로운 자재를 다루는 공정으로, 모양이 불규칙한 \\'비정형 대상물\\' 특성상 기존 레거시 로봇 투입에 한계가 있었던 문제를 해결한다는"
+    },
+    {
+      "id": "03f3114a3ad78c458be82b6c",
+      "feedId": "zdnet-korea",
+      "source": "ZDNet Korea",
+      "category": "사업",
+      "language": "ko",
+      "title": "[현장] \"금융권, 안전한 보안위해 외부 데이터와 코드 검증 꼭 해야\"",
+      "url": "https://zdnet.co.kr/view?no=20260908121646",
+      "publishedAt": "2026-09-08T03:16:46Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 1,
+      "summary": ""
+    },
+    {
+      "id": "9dee78b254161fdfc7d26584",
+      "feedId": "zdnet-korea",
+      "source": "ZDNet Korea",
+      "category": "AI",
+      "language": "ko",
+      "title": "제주 ‘에너지제로 마을’ 조성…태양광·ESS·히트펌프, AI 통합관리",
+      "url": "https://zdnet.co.kr/view?no=20260908121111",
+      "publishedAt": "2026-09-08T03:11:11Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 2,
+      "summary": ""
+    },
+    {
+      "id": "fd75492d741e5ea1720faaf9",
+      "feedId": "hankyung-all",
+      "source": "한국경제",
+      "category": "AI",
+      "language": "ko",
+      "title": "AI·반도체 지역인재 1.4만명 양성…6개 초광역 모델에 최대 600억씩",
+      "url": "https://www.hankyung.com/article/202609080786i",
+      "publishedAt": "2026-09-08T03:00:05Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 6,
+      "summary": ""
+    },
+    {
+      "id": "8f6c3ef01ae925b1272d1e36",
+      "feedId": "ai-times-korea",
+      "source": "AI타임스",
+      "category": "AI",
+      "language": "ko",
+      "title": "아티피셜 애널리시스 평가 체제 개편...'아스트라' 공동 1위로 상승",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=214973",
+      "publishedAt": "2026-09-08T02:58:15Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 3,
+      "summary": "AI 모델의 성능을 평가하는 대표적인 지표 중 하나인 아티피셜 애널리시스의 \\'지능 지수(AAII)\\'가 실제 업무 환경을 반영하는 장기 에이전트 작업 중심으로 개편됐다. 새로운 평가 방식이 적용되면서 기존 평가에서 5위에 머물렀던 \\'GPT-6 아스트라\\'의 순위가 크게 상승해 \\'클로드 페이블 5.1\\'과 공동 1위에 올랐다.아티피셜 애널리시스는 6일(현지시간) 기존 벤치마크에서 나타난 단순한 편법이나 특정 데이터에 대한 편향, 최고 성능 모델 간 점수 포화 문제를 줄이고 실제 업무와 유사한 장기 에이전트 작업 수행 능력을 정밀하게 측정하"
+    },
+    {
+      "id": "06187eb710a194b224539802",
+      "feedId": "byline-network",
+      "source": "바이라인네트워크",
+      "category": "컴퓨터 사이언스",
+      "language": "ko",
+      "title": "김창훈 대구대 교수 “AIDC 보안, 흩어진 통제 하나로 묶어야”",
+      "url": "https://byline.network/2026/09/7-499",
+      "publishedAt": "2026-09-08T02:52:46Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 2,
+      "summary": "“인공지능 데이터센터(AIDC)는 인프라와 클라우드, AI 계층이 모두 연결돼 있습니다. 보안 제품을 애플리케이션 프로그래밍 인터페이스(API)로 묶는 것만으로는 부족합니다. 하나의 일관된 정책 아래 통제해야 합니다.” 김창훈 대구대학교 사이버보안전공 교수는 7일 경기 성남시 밀리토피아 호텔 바이마린에서 열린 ‘AIDC 보안 기술 워크숍’에서 AIDC 보안의 핵심 과제로 보안 통제의 오케스트레이션을 꼽으며 이같이 강조했다. 김 교수는 AIDC에서는 인프라와 클라우드, AI 계층의 보안 시스템이 각각 움직이는 방식에서 벗어나 탐지 정보와 접근통제, 격리 조치를 제로…"
+    },
+    {
+      "id": "b789449e3597fd7a4af142a1",
+      "feedId": "ai-times-korea",
+      "source": "AI타임스",
+      "category": "AI",
+      "language": "ko",
+      "title": "\"AI가 알아서 다크웹 뒤진다\"...S2W, 범죄수사 특화 에이전트 'DRI' 출시",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=214975",
+      "publishedAt": "2026-09-08T02:45:25Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 4,
+      "summary": "에스투더블유(S2W, 대표 서상덕)는 범죄수사에 특화된 AI 에이전트 \\'DRI\\'를 출시했다고 8일 밝혔다.DRI는 자체 안보 AI 플랫폼 \\'자비스\\'에 탑재되며, 다크웹·텔레그램·해킹 포럼 등에서 수집한 빅데이터를 지식 컨텍스트로 연계해 위협을 분석하고 수사에 필요한 인텔리전스를 제공한다. 다크웹 모니터링, 랜섬웨어 추적 등 9종의 조사 전략 중 질의 의도에 가장 적합한 방식을 자동 선택해 수사 효율성을 높인 것이 특징이다.특히 자연어 질의만으로도 다양한 분석 도구를 유기적으로 조합해 익명 계정의 활동 이력과 자금 거래 내역, 공격"
+    },
+    {
+      "id": "8df801676acba0c0b13baf6e",
       "feedId": "geeknews",
       "source": "GeekNews",
       "category": "컴퓨터 사이언스",
       "language": "ko",
-      "title": "BZip3 - BZip2의 더 낫고, 더 빠르고, 더 강력한 정신적 후속작",
-      "url": "https://news.hada.io/topic?id=33330",
-      "publishedAt": "2026-09-07T20:32:39Z",
-      "collectedAt": "2026-09-07T21:34:15Z",
+      "title": "VoiceStudio - 음성 복제, 더빙, 받아쓰기를 로컬에서 처리하는 오픈소스 스튜디오",
+      "url": "https://news.hada.io/topic?id=33349",
+      "publishedAt": "2026-09-08T02:45:02Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 1,
+      "summary": "계정이나 API 키, 구독 없이 내 컴퓨터에서 음성 작업 을 처리하는 데스크톱 앱으로, 필요한 모델을 내려받으면 오프라인에서도 사용 가능 깨끗한 음성 샘플 5~15초로 별도 학습 없이 목소리를 복제 하고, 입력한 문장을 그 목소리로 읽게 할 수 있음 기존 ..."
+    },
+    {
+      "id": "7f99a37ec32a9a2c1cd2a96b",
+      "feedId": "ai-times-korea",
+      "source": "AI타임스",
+      "category": "AI",
+      "language": "ko",
+      "title": "한컴, 퓨리오사AI '레니게이드' 탑재한 AX 제품 개발한다",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=214977",
+      "publishedAt": "2026-09-08T02:44:47Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 5,
+      "summary": "한컴(대표 김연수)은 한컴이노스트림, 퓨리오사AI와 AI 전환(AX) 사업 협력을 위한 3자 업무협약(MOU)을 체결했다고 8일 밝혔다.이들은 한컴의 에이전틱 운영체제(OS)와 퓨리오사AI의 2세대 AI 가속기 \\'레니게이드(RNGD)\\'를 결합한 AX 어플라이언스 패키지를 공동 개발한다.한컴은 에이전틱 OS 기반 솔루션 개발을, 퓨리오사AI는 RNGD와 소프트웨어 스택 제공을, 한컴이노스트림은 신경망처리장치(NPU) 전문인력 양성과 시장 수요 발굴을 담당한다.한컴이노스트림은 퓨리오사AI의 NPU 공인 교육기관(ATC)으로서 교육과정의"
+    },
+    {
+      "id": "dc46ad7577aaab1f4c04192f",
+      "feedId": "zdnet-korea",
+      "source": "ZDNet Korea",
+      "category": "사업",
+      "language": "ko",
+      "title": "‘29회 전기안전대상’…은탑산업훈장 하영복 에디슨전기 대표",
+      "url": "https://zdnet.co.kr/view?no=20260908113233",
+      "publishedAt": "2026-09-08T02:32:33Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 8,
+      "summary": ""
+    },
+    {
+      "id": "9781b4cbd27127f1f3e1f80a",
+      "feedId": "zdnet-korea",
+      "source": "ZDNet Korea",
+      "category": "AI",
+      "language": "ko",
+      "title": "플레이디, 네이버에 AI 광고 솔루션 공급…중소 광고주 운영 돕는다",
+      "url": "https://zdnet.co.kr/view?no=20260908111949",
+      "publishedAt": "2026-09-08T02:23:31Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 9,
+      "summary": ""
+    },
+    {
+      "id": "1e6c735a5263ac20a16115f1",
+      "feedId": "etnews-ai",
+      "source": "전자신문 AI",
+      "category": "AI",
+      "language": "ko",
+      "title": "[ICT시사용어] 네오클라우드(Neocloud)",
+      "url": "https://www.etnews.com/20260908000158",
+      "publishedAt": "2026-09-08T02:12:03Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 1,
+      "summary": "네오클라우드(Neocloud)는 인공지능(AI) 개발과 운영에 필요한 그래픽처리장치(GPU) 등 고성능 컴퓨팅 자원을 전문적으로 제공하는 클라우드 사업자 또는 서비스를 뜻한다. 아마존웹서비스(AWS), 마이크로소프트(MS), 구글클라우드 등 기존 하이퍼스케일러가 범용 클라우드 서비스를 제공하는 것과 달리 AI 학습과 추론에 특화된 인프라를 제공하는 것이 특징이다. 생성형 AI 확산으로 대규모 GPU 수요가 급증하면서 네오클라우드가 새로운 클라우"
+    },
+    {
+      "id": "a61f9c4065046148cd254d7a",
+      "feedId": "inews24-it",
+      "source": "아이뉴스24 IT",
+      "category": "AI",
+      "language": "ko",
+      "title": "SOOP 플레이디, 네이버에 AI 광고 솔루션 '애드인사이트' 공급",
+      "url": "https://www.inews24.com/view/2003012",
+      "publishedAt": "2026-09-08T02:05:56Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 2,
+      "summary": ""
+    },
+    {
+      "id": "46da6585e102e8c052253623",
+      "feedId": "inews24-it",
+      "source": "아이뉴스24 IT",
+      "category": "AI",
+      "language": "ko",
+      "title": "NHN, 게임·AI 해커톤 'NAN 2026' 종료",
+      "url": "https://www.inews24.com/view/2003036",
+      "publishedAt": "2026-09-08T02:05:40Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 3,
+      "summary": ""
+    },
+    {
+      "id": "d7c408a55a9a9af0cfc1a928",
+      "feedId": "etnews-ai",
+      "source": "전자신문 AI",
+      "category": "AI",
+      "language": "ko",
+      "title": "가천대, 전교생 AI 교육체계 가동…65개 전 학과 AX 전환 본격화",
+      "url": "https://www.etnews.com/20260908000141",
+      "publishedAt": "2026-09-08T01:55:33Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 2,
+      "summary": "가천대학교는 전교생과 모든 전공을 아우르는 인공지능(AI) 융합교육 체계를 구축해 대학 전반의 AI 전환에 나선다고 8일 밝혔다. 가천대는 AI 융합교육을 65개 전 학과에 적용할 계획이다. 가천대는 지난 2일 재학생을 대상으로 AI중심대학 사업설명회를 열고 'AX-GACHON' 추진 방향과 교육체계를 공개했다. AI 전환(AX)을 대학 교육 전반으로 확대해 AI 전문인재와 전공별 융합인재를 함께 양성하는 구상이다. 가천대는 지난 5월 과학기술"
+    },
+    {
+      "id": "5700f984b823205f20b7e7b8",
+      "feedId": "etnews-ai",
+      "source": "전자신문 AI",
+      "category": "AI",
+      "language": "ko",
+      "title": "뤼튼, 청소년 '크랙' 이용 하루 3시간·월 10만원 결제 제한",
+      "url": "https://www.etnews.com/20260908000138",
+      "publishedAt": "2026-09-08T01:50:09Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 3,
+      "summary": "뤼튼테크놀로지스가 인공지능(AI) 캐릭터 채팅 서비 '크랙'의 청소년 하루 이용 시간을 최대 3시간으로 제한하고 월 결제액에는 10만원의 상한을 적용하기로 했다. 뤼튼은 8일 크랙의 청소년 일일 이용 시간과 월 결제액 상한 설정을 골자로 하는 청소년 보호 정책 강화 계획을 발표했다. 청소년 하루 이용 시간의 경우 국내외 사례 검토와 전문가 자문을 거쳐 하루 최대 3시간으로 설정할 계획이다. 만약 청소년이 하루 3시간 이상 서비스를 이용할 경우에"
+    },
+    {
+      "id": "b374c95f4b4f556dd0898f2f",
+      "feedId": "geeknews",
+      "source": "GeekNews",
+      "category": "컴퓨터 사이언스",
+      "language": "ko",
+      "title": "Lovable의 하트는 어떻게 만들어졌나",
+      "url": "https://news.hada.io/topic?id=33347",
+      "publishedAt": "2026-09-08T01:39:30Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 2,
+      "summary": "Lovable의 첫 디자이너이자 네 번째 직원 은 화면 디자인뿐 아니라 고객 정의, 제품 경험, 커뮤니티와 브랜드까지 맡으며 초기 제품을 함께 만들어감 2024년 11월 출시 때 사용한 시각 정체성은 30분 만에 만든 시제품 이었으며, 60일 만에 ARR 1,000만 달러에 도달하..."
+    },
+    {
+      "id": "5279ac9ae1581f31248e8765",
+      "feedId": "geeknews",
+      "source": "GeekNews",
+      "category": "AI",
+      "language": "ko",
+      "title": "Build vs Buy - AI로 개발은 싸졌지만, 3년 뒤 유지보수는 누가 맡을까?",
+      "url": "https://news.hada.io/topic?id=33346",
+      "publishedAt": "2026-09-08T01:35:35Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 3,
+      "summary": "AI는 소프트웨어의 초기 개발 비용 을 크게 낮췄지만, 수년간 유지보수와 보안, 장애 대응을 책임지는 운영 비용 까지 없애지는 못함 직접 만들지는 가격뿐 아니라 장애나 침해의 피해 범위, 장기 운영 책임자, 사업 차별화, 교체할 경로 를 기준으로..."
+    },
+    {
+      "id": "b88e3b5ae6f0bbf39fe7d25d",
+      "feedId": "geeknews",
+      "source": "GeekNews",
+      "category": "사업",
+      "language": "ko",
+      "title": "‘You Can See Everything’ 리뷰: Nathan Fielder가 들여다본 Elizabeth Holmes",
+      "url": "https://news.hada.io/topic?id=33345",
+      "publishedAt": "2026-09-08T01:34:19Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 4,
+      "summary": "Nathan Fielder와 Lance Oppenheim 이 공동 연출한 174분 다큐멘터리는 투자자 사기로 11년형을 선고받은 Elizabeth Holmes의 수감 전 일상을 따라가며, 유무죄보다 그가 자신의 이야기를 믿는 방식을 파고듦 Holmes는 Theranos 기기가 작동했고 검사에 필요한 화학적 문제만 해결하지..."
+    },
+    {
+      "id": "19c89d513d612226b842bf48",
+      "feedId": "inews24-it",
+      "source": "아이뉴스24 IT",
+      "category": "AI",
+      "language": "ko",
+      "title": "ETRI, 육사와 미래 국방 AI 공동개발…'개인형 AI 참모' 만든다",
+      "url": "https://www.inews24.com/view/2003021",
+      "publishedAt": "2026-09-08T01:32:57Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 5,
+      "summary": ""
+    },
+    {
+      "id": "f8bf4ebc07f8ec5087634d00",
+      "feedId": "geeknews",
+      "source": "GeekNews",
+      "category": "컴퓨터 사이언스",
+      "language": "ko",
+      "title": "지속형 에이전트 시대를 위한 Grok Bot 설계",
+      "url": "https://news.hada.io/topic?id=33343",
+      "publishedAt": "2026-09-08T01:10:18Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 6,
+      "summary": "Grok Bot은 정체성·기억·실행 환경을 유지하는 에이전트 에 장기적인 책임을 맡길 수 있도록, 개별 대화 기록 대신 Bot 목록을 제품의 중심에 둠 인터페이스를 Bots·Chats·Prompts·Tools·Artifacts 라는 다섯 개념으로 정리하고, 아바타 움직임과 필요할 때만 확인하..."
+    },
+    {
+      "id": "0682aec9173f0f1e31cff0ad",
+      "feedId": "geeknews",
+      "source": "GeekNews",
+      "category": "컴퓨터 사이언스",
+      "language": "ko",
+      "title": "Xteink X3, 70달러짜리 초소형 전자책 리더",
+      "url": "https://news.hada.io/topic?id=33342",
+      "publishedAt": "2026-09-08T01:07:20Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 7,
+      "summary": "신용카드 크기의 자석식 전자책 리더 Xteink X3는 iPhone 뒷면에 붙여 부담 없이 휴대할 수 있어, 자투리 시간을 독서 시간으로 바꿔 줌 한 페이지에 한두 문단만 들어가는 작은 화면 이 계속 읽도록 유도하며, 사용 후기에서는 한 달간 책 3권을 읽고 iPhone의 일평..."
+    },
+    {
+      "id": "25905823692585cc59e8d174",
+      "feedId": "etnews-ai",
+      "source": "전자신문 AI",
+      "category": "양자컴퓨터",
+      "language": "ko",
+      "title": "노르마, 퀀티넘 스타트업 파트너 프로그램 참여",
+      "url": "https://www.etnews.com/20260908000099",
+      "publishedAt": "2026-09-08T01:04:33Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 5,
+      "summary": "노르마(대표 정현철)는 양자 컴퓨팅 업체 퀀티넘이 추진하는 '스타트업 파트너 프로그램'에 합류했다고 8일 밝혔다. 퀀티넘이 보유한 양자컴퓨팅 자원에 접근할 수 있게 된다. 노르마는 퀀티넘 양자 인프라를 통해 새로운 솔루션을 탐색하고 활용 사례를 발굴할 계획이라고 설명했다. 퀀티넘은 세계적인 양자 컴퓨팅 전문 기업이다. 2021년 하니웰의 퀀텀 솔류션과 케임브리지 퀀텀의 합병으로 설립됐다. 노르마는 자사의 양자 프로그램 실행 및 개발 환경인 '"
+    },
+    {
+      "id": "0b8ac7b3c63952acea2d5307",
+      "feedId": "geeknews",
+      "source": "GeekNews",
+      "category": "컴퓨터 사이언스",
+      "language": "ko",
+      "title": "CarPlay 탑재·미탑재 차량 판매의 우연한 A/B 테스트, 결과는 놀랍지 않았다",
+      "url": "https://news.hada.io/topic?id=33340",
+      "publishedAt": "2026-09-08T01:03:41Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 9,
+      "summary": "GM이 전기차에서 CarPlay와 Android Auto를 빼는 동안 , GM의 차량 기술을 공유하는 Honda Prologue는 두 기능을 유지함 Honda Prologue와 Chevrolet Blazer EV는 기본 구조를 공유하지만 스마트폰 연동 지원이 달라, CarPlay 유무를 비교하는 우연한 ‘A/B 테스트’"
+    },
+    {
+      "id": "ee7cc7346cb07108f6158843",
+      "feedId": "geeknews",
+      "source": "GeekNews",
+      "category": "컴퓨터 사이언스",
+      "language": "ko",
+      "title": "스마트폰 제조사들, EU의 수리 정보 공개 의무도 제대로 지키지 않아",
+      "url": "https://news.hada.io/topic?id=33339",
+      "publishedAt": "2026-09-08T01:00:58Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 10,
+      "summary": "EU가 스마트폰·태블릿의 수리 정보 공개를 의무화한 지 1년이 지났지만, Right to Repair Europe 조사에서 기기의 80% 이상 이 필요한 수리 정보를 제공하지 않는 것으로 나타남 제조사는 수리 용이성 점수를 자체 신고 하고 수리 정보를 공개해야 하지만, 최근 1년간..."
+    },
+    {
+      "id": "5f6fc6d60da069d6e33aa34a",
+      "feedId": "venturesquare-business",
+      "source": "벤처스퀘어",
+      "category": "사업",
+      "language": "ko",
+      "title": "30개 언어로 매물·문의 번역…다방, 외국인 주거 탐색 장벽 낮춘다",
+      "url": "https://www.venturesquare.net/1111635",
+      "publishedAt": "2026-09-08T00:51:09Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
       "feedPosition": 0,
-      "summary": "BZip3 는 BZip2의 정신적 후속 압축 도구로, 특히 텍스트와 코드 압축에 강점을 가지며 더 높은 압축률과 성능을 목표로 함 0차 문맥 혼합 엔트로피 코더 , 접미사 배열 기반 Burrows-Wheeler 변환, RLE 및 Lempel Ziv+Prediction 처리를 결합함 Perl5의 역..."
+      "summary": "다방이 매물 검색과 공인중개사 문의를 30개 이상의 언어로 이용할 수 있는 ‘외국인전용관’을 출시했다. 외국인 이용자는 보증금과 월세, 관리비 등 주요 정보를 원하는 언어로 확인하고 이메일을 통해 중개사와 양방향 번역으로 소통할 수 있다. 다방은 국내 체류 외국인과 유... The post 30개 언어로 매물·문의 번역…다방, 외국인 주거 탐색 장벽 낮춘다 appeared first on 벤처스퀘어 ."
+    },
+    {
+      "id": "8562486b8a998a3a397d6b1b",
+      "feedId": "venturesquare-business",
+      "source": "벤처스퀘어",
+      "category": "사업",
+      "language": "ko",
+      "title": "한국 진출 첫 고객, 펀딩에서 찾는다…와디즈, 18개국 창업가 실전 교육",
+      "url": "https://www.venturesquare.net/1111632",
+      "publishedAt": "2026-09-08T00:45:15Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 1,
+      "summary": "와디즈가 글로벌 스타트업 센터와 함께 18개국 출신 외국인 창업가 30여 명을 대상으로 크라우드펀딩 실전 교육을 진행했다. 참가자들은 한국 소비자를 겨냥한 프로젝트 소개와 리워드·가격을 설계하고 AI 번역, 인증, 물류, 마케팅 지원 체계를 살펴봤다. 펀딩을 희망하는 ... The post 한국 진출 첫 고객, 펀딩에서 찾는다…와디즈, 18개국 창업가 실전 교육 appeared first on 벤처스퀘어 ."
+    },
+    {
+      "id": "6a9eb6f19f68561d676d2a0d",
+      "feedId": "venturesquare-business",
+      "source": "벤처스퀘어",
+      "category": "사업",
+      "language": "ko",
+      "title": "청소년 AI 대화에 시간·결제 한도…뤼튼, ‘크랙’ 보호정책 2027년 시행",
+      "url": "https://www.venturesquare.net/1111620",
+      "publishedAt": "2026-09-08T00:38:22Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 2,
+      "summary": "뤼튼이 AI 엔터테인먼트 플랫폼 ‘크랙’의 청소년 기본 이용시간을 하루 3시간, 월 결제액을 10만원으로 설정할 계획이다. 한도를 초과하려면 보호자 인증과 동의를 거쳐야 하며 콘텐츠 필터, 작품 검수, 연령 인증 등 기존 보호 체계도 보완한다. 뤼튼은 2026년 말까지... The post 청소년 AI 대화에 시간·결제 한도…뤼튼, ‘크랙’ 보호정책 2027년 시행 appeared first on 벤처스퀘어 ."
+    },
+    {
+      "id": "48c45cf6191b67e5bb0f45d5",
+      "feedId": "uppity-moneyletter",
+      "source": "어피티 머니레터",
+      "category": "사업",
+      "language": "ko",
+      "title": "💰삼성 하닉 주가 밀어올린 챗GPT 신모델",
+      "url": "https://uppity.co.kr/%f0%9f%92%b0%ec%82%bc%ec%84%b1-%ed%95%98%eb%8b%89-%ec%a3%bc%ea%b0%80-%eb%b0%80%ec%96%b4%ec%98%ac%eb%a6%b0-%ec%b1%97gpt-%ec%8b%a0%eb%aa%a8%eb%8d%b8",
+      "publishedAt": "2026-09-08T00:31:34Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 0,
+      "summary": ""
+    },
+    {
+      "id": "21bd955054c49c1f0db63119",
+      "feedId": "venturesquare-business",
+      "source": "벤처스퀘어",
+      "category": "사업",
+      "language": "ko",
+      "title": "서울대·칭화대·HKUST·도쿄대 투자기관 한자리에…아시아 대학벤처 연결",
+      "url": "https://www.venturesquare.net/1111616",
+      "publishedAt": "2026-09-08T00:31:20Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 3,
+      "summary": "서울대학교기술지주와 이데일리가 9월 17일 서울대학교에서 첫 글로벌 대학 벤처 포럼을 개최한다. 서울대와 칭화대, 홍콩과기대, 도쿄대의 투자·기술사업화 기관이 참여하고 각 기관이 추천한 딥테크 기업 11개사가 기술을 소개한다. 참여 기업은 IR과 전시, 일대일 투자 미... The post 서울대·칭화대·HKUST·도쿄대 투자기관 한자리에…아시아 대학벤처 연결 appeared first on 벤처스퀘어 ."
+    },
+    {
+      "id": "7337084bf03e1b48a0ea68d1",
+      "feedId": "inews24-it",
+      "source": "아이뉴스24 IT",
+      "category": "사업",
+      "language": "ko",
+      "title": "델, 중소·중견기업용 노트북 '프로 에센셜 14·15' 공개",
+      "url": "https://www.inews24.com/view/2002994",
+      "publishedAt": "2026-09-08T00:30:00Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 12,
+      "summary": ""
+    },
+    {
+      "id": "65dca304a547627a990f032f",
+      "feedId": "venturesquare-business",
+      "source": "벤처스퀘어",
+      "category": "사업",
+      "language": "ko",
+      "title": "K-푸드 수출 규정, AI가 찾아 답한다…베스핀글로벌, aT ‘채티’ 고도화",
+      "url": "https://www.venturesquare.net/1111608",
+      "publishedAt": "2026-09-08T00:21:09Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 4,
+      "summary": "베스핀글로벌이 한국농수산식품유통공사의 대화형 수출정보 검색 서비스 ‘채티’ 고도화 사업을 맡는다. 헬프나우 AI를 기반으로 LLM·RAG·OCR 기능을 개선하고 시장·법규·데이터 분석 에이전트가 협업하는 구조를 적용한다. 수출기업은 국가별 통계와 비관세장벽, 검역·라벨... The post K-푸드 수출 규정, AI가 찾아 답한다…베스핀글로벌, aT ‘채티’ 고도화 appeared first on 벤처스퀘어 ."
+    },
+    {
+      "id": "198d7a5c9d3e359e2a86d71a",
+      "feedId": "etnews-ai",
+      "source": "전자신문 AI",
+      "category": "컴퓨터 사이언스",
+      "language": "ko",
+      "title": "케이스마텍, '혁신 프리미어 1000' 선정",
+      "url": "https://www.etnews.com/20260908000051",
+      "publishedAt": "2026-09-08T00:17:47Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 6,
+      "summary": "케이스마텍은 금융위원회와 산업 관련 부처가 공동으로 추진한 '혁신 프리미어 1000'에 선정됐다고 8일 밝혔다. 프리미어 1000은 혁신성과 성장성을 갖춘 중소·중견 기업을 발굴하고 정책금융을 연계하는 프로그램이다. 케이스마텍은 ICT와 디지털 분야 사이버 보안 기술을 중심으로 성장전략을 제시, 대상 기업에 선정됐다고 설명했다. 회사는 금융·IoT·클라우드·모빌리티 분야에서 암호 기반 인증과 키 관리 기술을 개발해온 곳이다. HSM(Har"
+    },
+    {
+      "id": "e1ab65585e235cc783f457f4",
+      "feedId": "startup-recipe",
+      "source": "스타트업레시피",
+      "category": "사업",
+      "language": "ko",
+      "title": "미라 무라티 씽킹머신스, 10억 달러 유치 논의 중",
+      "url": "https://startuprecipe.co.kr/archives/5832777",
+      "publishedAt": "2026-09-08T00:00:00Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 3,
+      "summary": ""
+    },
+    {
+      "id": "17eb1db13cd22aefb256d040",
+      "feedId": "quantumtimes",
+      "source": "양자신문",
+      "category": "양자컴퓨터",
+      "language": "ko",
+      "title": "싱가포르 금융권, ‘Q-Day’ 전에 양자내성암호 전환 끝내야…AAT 켄 린 로드맵 제시",
+      "url": "https://www.quantumtimes.net/news/articleView.html?idxno=56951",
+      "publishedAt": "2026-09-07T23:10:00Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 0,
+      "summary": "싱가포르 금융기관이 기존 공개키 암호체계를 위협할 수 있는 양자컴퓨터 등장에 대비해 양자내성암호(Post-Quantum Cryptography, PQC) 전환 작업을 서둘러야 한다는 주장이 나왔다. 암호자산 현황을 먼저 파악하고 핵심 시스템의 전환 우선순위를 정한 뒤 외부 공급업체 대응과 실제 업무환경 검증까지 단계적으로 준비해야 한다는 내용이다.켄 린(Ken Lin) 아이레스 어플라이드 퀀텀 테크놀로지스(Aires Applied Quantum Technologies, AAT) 공동창업자 겸 최고경영자(CEO)는 지난 7일(현지시간"
+    },
+    {
+      "id": "8b9910f19b8a5904b273c384",
+      "feedId": "venturesquare-business",
+      "source": "벤처스퀘어",
+      "category": "사업",
+      "language": "ko",
+      "title": "아이디어를 온라인 비즈니스로…아임웹·캔바, 디자인·웹 제작 교육 협력",
+      "url": "https://www.venturesquare.net/1111600",
+      "publishedAt": "2026-09-07T23:09:09Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 5,
+      "summary": "아임웹과 캔바가 디자인 기획부터 AI 기반 웹사이트 구현까지 연결하는 공동 교육 및 콘텐츠 개발에 나선다. 첫 협업으로 오는 10일 캔바 화이트보드와 아임웹 커스텀 위젯 스튜디오를 활용하는 실습형 웨비나를 개최한다. 참가자는 사이트 콘셉트 기획과 AI 위젯 구현, 배너... The post 아이디어를 온라인 비즈니스로…아임웹·캔바, 디자인·웹 제작 교육 협력 appeared first on 벤처스퀘어 ."
+    },
+    {
+      "id": "d332c6dc6f28df267c061fa6",
+      "feedId": "quantumtimes",
+      "source": "양자신문",
+      "category": "양자컴퓨터",
+      "language": "ko",
+      "title": "마니팔고등교육아카데미, 미·인도 TRUST 펠로십 호스트 기관 선정",
+      "url": "https://www.quantumtimes.net/news/articleView.html?idxno=56950",
+      "publishedAt": "2026-09-07T23:00:00Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 1,
+      "summary": "마니팔고등교육아카데미(MAHE)가 미국과 인도의 과학·기술 협력을 강화하기 위한 ‘미·인도 TRUST 펠로십(US-India TRUST Fellowship) 2026-27’의 인도 호스트 기관으로 선정됐다. 인도에서 펠로십 연구자를 받아들이는 기관은 MAHE를 포함해 인도공과대학교 마드라스(IIT Madras), 인도과학원(IISc) 벵갈루루 등 3곳이다.MAHE는 지난 7일(현지시간) 미·인도 TRUST 펠로십 2026-27의 인도 호스트 기관으로 참여한다고 발표했다. 인도 정부가 우수기관으로 지정한 명문대학 가운데 하나인 MAH"
     },
     {
       "id": "d9d9cc52948a2e4451cdb93d",
@@ -964,32 +1801,6 @@
       "collectedAt": "2026-09-07T21:34:15Z",
       "feedPosition": 55,
       "summary": ""
-    },
-    {
-      "id": "6d253b31f3450781f730ea3b",
-      "feedId": "mk-economy",
-      "source": "매일경제",
-      "category": "사업",
-      "language": "ko",
-      "title": "한미 '원전동맹' 업그레이드 … 대미펀드 70% 발전사업 투자",
-      "url": "https://www.mk.co.kr/news/economy/12146530",
-      "publishedAt": "2026-09-07T19:55:51Z",
-      "collectedAt": "2026-09-07T12:42:36Z",
-      "feedPosition": 2,
-      "summary": ""
-    },
-    {
-      "id": "f417b9c69052dcfef1309f78",
-      "feedId": "geeknews",
-      "source": "GeekNews",
-      "category": "컴퓨터 사이언스",
-      "language": "ko",
-      "title": "1024바이트로 Python 인터프리터 만들기",
-      "url": "https://news.hada.io/topic?id=33329",
-      "publishedAt": "2026-09-07T19:33:33Z",
-      "collectedAt": "2026-09-07T21:34:15Z",
-      "feedPosition": 1,
-      "summary": "매크로나 라이브러리 편법 없이 C 소스 1024바이트 에 Python 문법 일부를 실행하는 인터프리터를 담음 토큰화·AST·바이트코드 생성 대신 소스를 파싱하면서 즉시 실행 하며, 반복문과 함수 호출은 소스 위치를 이동해 다시 파싱하는 방식으로 처리함 정수 ..."
     },
     {
       "id": "8cb64521c9e801ae549fbb33",
@@ -1044,58 +1855,6 @@
       "summary": ""
     },
     {
-      "id": "d8cfa0671cd9b3d99304af4a",
-      "feedId": "geeknews",
-      "source": "GeekNews",
-      "category": "컴퓨터 사이언스",
-      "language": "ko",
-      "title": "스위스 연방정부, 컴퓨터 3,000대에서 Microsoft를 대체한다",
-      "url": "https://news.hada.io/topic?id=33328",
-      "publishedAt": "2026-09-07T18:33:12Z",
-      "collectedAt": "2026-09-07T21:34:15Z",
-      "feedPosition": 2,
-      "summary": "스위스 연방정부가 전체 인력의 약 7%인 3,000명 을 대상으로 Microsoft 365를 오픈소스 대안으로 전환하는 파일럿을 시작했으며, 2027년 말 완료를 목표로 함 직원 172명이 참여한 openDesk 개념검증 에서 문서 처리와 이메일은 긍정적인 평가를 받..."
-    },
-    {
-      "id": "4608723f7d3b24de73cc95ea",
-      "feedId": "it-chosun",
-      "source": "IT조선",
-      "category": "사업",
-      "language": "ko",
-      "title": "쿠콘, 신용회복위에 금융 마이데이터 구축…52개 지부 적용",
-      "url": "https://it.chosun.com/news/articleView.html?idxno=2023092169641",
-      "publishedAt": "2026-09-07T18:16:20Z",
-      "collectedAt": "2026-09-07T12:42:36Z",
-      "feedPosition": 8,
-      "summary": ""
-    },
-    {
-      "id": "66e619d1726ffad2bcca49dc",
-      "feedId": "it-chosun",
-      "source": "IT조선",
-      "category": "AI",
-      "language": "ko",
-      "title": "현대리바트몰 가구 검색에 AI 쓴다… 플래티어 ‘젠서 서치’ 적용",
-      "url": "https://it.chosun.com/news/articleView.html?idxno=2023092169646",
-      "publishedAt": "2026-09-07T18:14:50Z",
-      "collectedAt": "2026-09-07T12:42:36Z",
-      "feedPosition": 9,
-      "summary": ""
-    },
-    {
-      "id": "6849412ba72e3e857528b359",
-      "feedId": "mk-economy",
-      "source": "매일경제",
-      "category": "사업",
-      "language": "ko",
-      "title": "'대미투자 1호' 텍사스 발전소… 원전 8기 건설도 논의",
-      "url": "https://www.mk.co.kr/news/economy/12146468",
-      "publishedAt": "2026-09-07T18:04:44Z",
-      "collectedAt": "2026-09-07T12:42:36Z",
-      "feedPosition": 3,
-      "summary": ""
-    },
-    {
       "id": "d31b6aead5443ba7e5312248",
       "feedId": "thescoop-cover",
       "source": "더스쿠프 Cover Story",
@@ -1107,84 +1866,6 @@
       "collectedAt": "2026-09-07T12:42:36Z",
       "feedPosition": 0,
       "summary": "사람들의 감성이 경제를 움직이기도 한다. 미래 전망을 물어보는 소비자심리지수 조사 결과는 물가 등 실제 통계 지표에 상당한 영향을 준다. 한은이 이번에 개편한 뉴스심리지수는 소비자심리지수라는 전망을 다시 전망해 보려는 시도다.미래를 내다보려는 시도는 인간의 본성이지만, 과거의 경험만으로 미래를 점치는 데는 한계가 있다. 그렇지만 한계에 도전하는 것 또한 인간의 본성이다. 국내총생산(GDP), 소비자물가지수(CPI)는 이미 물가가 오르거나 성장한 이후에 그 숫자를 집계해야 확정된다.하지만 경제를 전망해 미리 계획을 세워둬야 하는 각국"
-    },
-    {
-      "id": "678a731b57ee19ec5ce7dd9f",
-      "feedId": "mk-economy",
-      "source": "매일경제",
-      "category": "AI",
-      "language": "ko",
-      "title": "AI 데이터센터 신청 60%, 서울·경기 등 수도권에 몰려",
-      "url": "https://www.mk.co.kr/news/economy/12146407",
-      "publishedAt": "2026-09-07T17:55:52Z",
-      "collectedAt": "2026-09-07T12:42:36Z",
-      "feedPosition": 5,
-      "summary": ""
-    },
-    {
-      "id": "c971dee61cbfc4812037ff63",
-      "feedId": "bloter",
-      "source": "블로터",
-      "category": "사업",
-      "language": "ko",
-      "title": "한진칼 지분경쟁 깜짝등장 'JAL' 백기사냐 단순투자냐",
-      "url": "https://www.bloter.net/news/articleView.html?idxno=672984",
-      "publishedAt": "2026-09-07T17:40:00Z",
-      "collectedAt": "2026-09-07T12:42:36Z",
-      "feedPosition": 8,
-      "summary": ""
-    },
-    {
-      "id": "f71b4e1234602ba2e10307bd",
-      "feedId": "techm",
-      "source": "테크M",
-      "category": "AI",
-      "language": "ko",
-      "title": "기후위기 대응부터 청년 일자리·지역 발전까지...'AI 기후테크'에서 해법 찾는다",
-      "url": "https://www.techm.kr/news/articleView.html?idxno=154992",
-      "publishedAt": "2026-09-07T17:36:33Z",
-      "collectedAt": "2026-09-07T12:42:36Z",
-      "feedPosition": 3,
-      "summary": ""
-    },
-    {
-      "id": "f75173b722792c1ebcbfcd21",
-      "feedId": "medipana",
-      "source": "메디파나뉴스",
-      "category": "제약",
-      "language": "ko",
-      "title": "유유제약, AI 활용 IR영상 공개…투자자 소통 강화",
-      "url": "https://www.medipana.com/news/articleView.html?idxno=417198",
-      "publishedAt": "2026-09-07T17:22:22Z",
-      "collectedAt": "2026-09-07T12:42:36Z",
-      "feedPosition": 14,
-      "summary": ""
-    },
-    {
-      "id": "0aac77635585fd1521a4d978",
-      "feedId": "bloter",
-      "source": "블로터",
-      "category": "사업",
-      "language": "ko",
-      "title": "KH필룩스 \"제넨셀 투자금 회수 못해 소송…오히려 피해자\"",
-      "url": "https://www.bloter.net/news/articleView.html?idxno=672987",
-      "publishedAt": "2026-09-07T17:18:15Z",
-      "collectedAt": "2026-09-07T12:42:36Z",
-      "feedPosition": 9,
-      "summary": ""
-    },
-    {
-      "id": "1b44d5bb78c7216c1ccdb245",
-      "feedId": "medipana",
-      "source": "메디파나뉴스",
-      "category": "제약",
-      "language": "ko",
-      "title": "일동바이오사이언스, '비타푸드 아시아' 참가…글로벌 공략",
-      "url": "https://www.medipana.com/news/articleView.html?idxno=417197",
-      "publishedAt": "2026-09-07T17:13:50Z",
-      "collectedAt": "2026-09-07T12:42:36Z",
-      "feedPosition": 15,
-      "summary": ""
     },
     {
       "id": "6edad4eec64932aca9a03238",
@@ -1200,123 +1881,6 @@
       "summary": "심판을 밀쳐 징계를 받았다는 이유만으로 축구 지도자 활동을 평생 제한하는 대한축구협회 규정은 헌법상 직업선택의 자유를 과도하게 제한해 무효라는 대법원 판단이 나왔다.7일 법조계에 따르면 대법원 민사1부(주심 천대엽 대법관)는 2026년 7월 16일 한 대학교에서 축구부 감독으로 근무했던 A씨가 대한축구협회(이하 ‘축협’)를 상대로 낸 징계처분무효확인 소송 상고심(2026다202519)에서 축협 측 상고를 기각하고, A씨에게 지도자 자격이 있다고 확인한 원심을 확정했다.A씨는 2022년 11월 한 경기에서 경기 종료 후 심판에게 판정"
     },
     {
-      "id": "e742d4151cfad373651fb421",
-      "feedId": "bloter",
-      "source": "블로터",
-      "category": "법률",
-      "language": "ko",
-      "title": "[가비아 M&A] 특별위원회가 답할 개정상법 속 '공평대우'",
-      "url": "https://www.bloter.net/news/articleView.html?idxno=672892",
-      "publishedAt": "2026-09-07T16:42:16Z",
-      "collectedAt": "2026-09-07T12:42:36Z",
-      "feedPosition": 10,
-      "summary": ""
-    },
-    {
-      "id": "59558ca7225fdc9c1adf1b9c",
-      "feedId": "geeknews",
-      "source": "GeekNews",
-      "category": "AI",
-      "language": "ko",
-      "title": "브레인롯에서 벗어나기 위한 휴가",
-      "url": "https://news.hada.io/topic?id=33327",
-      "publishedAt": "2026-09-07T16:33:54Z",
-      "collectedAt": "2026-09-07T21:34:15Z",
-      "feedPosition": 3,
-      "summary": "소프트웨어 엔지니어로서 업무에 익숙해지고 AI로 생산성도 높아졌지만 사고는 느리고 얕아졌다고 느껴, 2주간의 휴가 를 독서와 새로운 학습에 사용함 숏폼·게임·만화·TV 프로그램으로 지루할 틈이 없어지고 취침 전 둠스크롤링 에 독서가 밀려나자, 지난 1년간 손..."
-    },
-    {
-      "id": "66c8f0e089ffb1631494665f",
-      "feedId": "pharmnews",
-      "source": "팜뉴스",
-      "category": "제약",
-      "language": "ko",
-      "title": "만성두드러기 치료망 넓힌다, 노바티스·유한양행 협력",
-      "url": "https://www.pharmnews.com/news/articleView.html?idxno=306114",
-      "publishedAt": "2026-09-07T16:22:12Z",
-      "collectedAt": "2026-09-07T12:42:36Z",
-      "feedPosition": 7,
-      "summary": "[팜뉴스=우정민 기자] 한국노바티스와 유한양행이 만성자발성두드러기 의약품 유통을 공동 진행한다. 한국노바티스㈜는 의약품 '랩시도'(성분명 레미브루티닙)의 국내 유통·판매 및 프로모션을 위해 유한양행과 파트너십 계약을 체결했다고 7일 밝혔다. 양사는 지난 3일 최종 계약 체결을 기념하는 행사를 가졌다.이번 계약에 따라 해당 의약품의 국내 유통은 유한양행이 담당한다. 종합병원 판촉활동은 한국노바티스가, 병·의원(클리닉) 판촉활동은 유한양행이 각각 진행할 예정이다.이 의약품은 지난 4월 H1 항히스타민제 치료에 적절히 조절되지 않는 성인"
-    },
-    {
-      "id": "15101f3d95e0fff8e0d52df3",
-      "feedId": "bloter",
-      "source": "블로터",
-      "category": "사업",
-      "language": "ko",
-      "title": "[재계 머니무브] ㈜LG, '벤처투자·주주환원·자산 매각' 늘었다",
-      "url": "https://www.bloter.net/news/articleView.html?idxno=672927",
-      "publishedAt": "2026-09-07T16:14:58Z",
-      "collectedAt": "2026-09-07T12:42:36Z",
-      "feedPosition": 15,
-      "summary": ""
-    },
-    {
-      "id": "498108c83b9c3929f5de4e97",
-      "feedId": "zdnet-korea",
-      "source": "ZDNet Korea",
-      "category": "AI",
-      "language": "ko",
-      "title": "하이센스, IFA 2026에서 일상 속 'AI 컴패니언' 경험 선보여",
-      "url": "https://zdnet.co.kr/view?no=20260908011002",
-      "publishedAt": "2026-09-07T16:10:02Z",
-      "collectedAt": "2026-09-07T21:34:15Z",
-      "feedPosition": 2,
-      "summary": ""
-    },
-    {
-      "id": "a4b12c6501eea5e7af5afe2e",
-      "feedId": "techm",
-      "source": "테크M",
-      "category": "AI",
-      "language": "ko",
-      "title": "엔키화이트햇, KB국민은행에 '오펜 AI DAST' 공급...진단·점검 전 과정 자동화",
-      "url": "https://www.techm.kr/news/articleView.html?idxno=154987",
-      "publishedAt": "2026-09-07T16:04:56Z",
-      "collectedAt": "2026-09-07T12:42:36Z",
-      "feedPosition": 4,
-      "summary": ""
-    },
-    {
-      "id": "4caf464d73ee17cef97d802c",
-      "feedId": "techm",
-      "source": "테크M",
-      "category": "컴퓨터 사이언스",
-      "language": "ko",
-      "title": "네이버클라우드, 대만 공공 시장 확산 속도...신주시 협업 툴로 '라인웍스' 도입",
-      "url": "https://www.techm.kr/news/articleView.html?idxno=154986",
-      "publishedAt": "2026-09-07T16:04:23Z",
-      "collectedAt": "2026-09-07T12:42:36Z",
-      "feedPosition": 5,
-      "summary": ""
-    },
-    {
-      "id": "b790c41ecdf972bde16aadb8",
-      "feedId": "techm",
-      "source": "테크M",
-      "category": "AI",
-      "language": "ko",
-      "title": "메가존클라우드, '에어 스튜디오' 기반 한미약품 품질보증 AI 에이전트 구축",
-      "url": "https://www.techm.kr/news/articleView.html?idxno=154984",
-      "publishedAt": "2026-09-07T16:04:00Z",
-      "collectedAt": "2026-09-07T12:42:36Z",
-      "feedPosition": 6,
-      "summary": ""
-    },
-    {
-      "id": "91ec50df8982b88c086c05f2",
-      "feedId": "geeknews",
-      "source": "GeekNews",
-      "category": "AI",
-      "language": "ko",
-      "title": "Terence Tao: “AI만으로 수학 문제를 성급하게 푸는 것”의 위험",
-      "url": "https://news.hada.io/topic?id=33326",
-      "publishedAt": "2026-09-07T16:02:30Z",
-      "collectedAt": "2026-09-07T21:34:15Z",
-      "feedPosition": 4,
-      "summary": "순수수학의 난제 는 정답뿐 아니라 해결 과정에서 새로운 통찰과 이론을 만드는 데 가치가 있으며, 과정을 공개하지 않는 AI 단독 해결은 이 역할을 훼손할 수 있음 Navier-Stokes 전역 정칙성 문제 를 인간 수학자가 AI와 함께 시행착오를 분석하며 풀면 유체역학을..."
-    },
-    {
       "id": "a92a457869ef425cd5fa124f",
       "feedId": "hani-useful",
       "source": "한겨레",
@@ -1327,19 +1891,6 @@
       "publishedAt": "2026-09-07T15:42:00Z",
       "collectedAt": "2026-09-07T21:34:15Z",
       "feedPosition": 59,
-      "summary": ""
-    },
-    {
-      "id": "49d2e8039c5987c5c8d7dabb",
-      "feedId": "bloter",
-      "source": "블로터",
-      "category": "사업",
-      "language": "ko",
-      "title": "DB손보 오너家 김병은, 부사장 승진…경영기획실장 오른 배경",
-      "url": "https://www.bloter.net/news/articleView.html?idxno=672907",
-      "publishedAt": "2026-09-07T15:41:58Z",
-      "collectedAt": "2026-09-07T12:42:36Z",
-      "feedPosition": 19,
       "summary": ""
     },
     {
@@ -1356,19 +1907,6 @@
       "summary": ""
     },
     {
-      "id": "475a02dec7edbf5334b7bfc1",
-      "feedId": "hitnews",
-      "source": "히트뉴스",
-      "category": "제약",
-      "language": "ko",
-      "title": "원료의약품 개발도 AI·자동화로…KDRA, 합성·공정 혁신기술 공유",
-      "url": "https://www.hitnews.co.kr/news/articleView.html?idxno=78954",
-      "publishedAt": "2026-09-07T15:04:25Z",
-      "collectedAt": "2026-09-07T12:42:36Z",
-      "feedPosition": 12,
-      "summary": ""
-    },
-    {
       "id": "f666fc347a9fc04108498cbf",
       "feedId": "lennys-newsletter",
       "source": "Lenny's Newsletter",
@@ -1380,19 +1918,6 @@
       "collectedAt": "2026-09-07T21:34:15Z",
       "feedPosition": 0,
       "summary": "Your weekly listens from How I AI, part of the Lenny’s Podcast Network"
-    },
-    {
-      "id": "d9b5a6d94a1029cc6bae94c3",
-      "feedId": "pharmnews",
-      "source": "팜뉴스",
-      "category": "제약",
-      "language": "ko",
-      "title": "한미약품, 과기정통부 'AX 원스톱 바우처' 선정",
-      "url": "https://www.pharmnews.com/news/articleView.html?idxno=306110",
-      "publishedAt": "2026-09-07T14:30:34Z",
-      "collectedAt": "2026-09-07T12:42:36Z",
-      "feedPosition": 8,
-      "summary": "[팜뉴스=김응민 기자] 한미약품은 과학기술정보통신부가 주관하고 정보통신산업진흥원(NIPA)이 전담하는 'AX 원스톱 바우처 지원사업'의 제약·바이오 부문 지원 대상 기업으로 선정돼 인공지능(AI) 기반 품질보증(QA) 솔루션 실증에 착수했다고 7일 밝혔다.사업 정식 명칭은 '한미 큐에이전트(Hanmi Q-Agent)'다. 한미약품은 지난달 28일 서울 송파구 한미 C&C스퀘어에서 컨소시엄 참여사인 삼성SDS, 메가존클라우드, 셀렉트스타 관계자들과 사업 발족식을 가졌다.한미약품이 사내 표준작업지침서(SOP)와 기간계 시스템(MES·L"
     },
     {
       "id": "0df36b5d91a95762dce203d6",
@@ -1417,7 +1942,7 @@
       "url": "https://byline.network/2026/09/7-498",
       "publishedAt": "2026-09-07T14:15:18Z",
       "collectedAt": "2026-09-07T21:34:15Z",
-      "feedPosition": 0,
+      "feedPosition": 4,
       "summary": "한동안 주춤했던 다중접속역할수행게임(MMORPG) 장르가 국내 모바일게임 시장에서 다시 한번 저력을 보이고 있다. 최근 출시한 작품들이 연달아 흥행에 성공하면서 시장 판도가 변화하는 모습이다. 신작뿐 아니라 장수 작품도 꾸준한 성과를 이어가면서 해당 장르를 선호하는 콘크리트 이용자층이 여전히 건재하다는 분석이 나온다."
     },
     {
@@ -1430,177 +1955,8 @@
       "url": "https://byline.network/2026/09/3472983423420",
       "publishedAt": "2026-09-07T14:09:10Z",
       "collectedAt": "2026-09-07T21:34:15Z",
-      "feedPosition": 1,
+      "feedPosition": 5,
       "summary": "윤성호 마키나락스 대표(CEO)는 3일 서울 강남구에서 열린 ‘ATTENTION 2026’에서 이같이 말했다. 이는 마키나락스가 그간 쌓아 온 성과가 ‘현장 중심’이었음을 강조하는 과정에서 나온 말이다. 윤 대표는 오차가 허용되지 않는 현장에서 AI가 작동한다는 점을 강조하며, 국내 최초로 군사 훈련에 AI가 적용된 사례에 마키나락스의 기술이 쓰였다고 소개했다."
-    },
-    {
-      "id": "0b7f22f4a390861cf4cc7376",
-      "feedId": "pharmnews",
-      "source": "팜뉴스",
-      "category": "제약",
-      "language": "ko",
-      "title": "제약보국(製藥報國)의 선도자(先導者)를 찾아서",
-      "url": "https://www.pharmnews.com/news/articleView.html?idxno=306109",
-      "publishedAt": "2026-09-07T14:00:00Z",
-      "collectedAt": "2026-09-07T12:42:36Z",
-      "feedPosition": 9,
-      "summary": "1990년대 중반까지 국내 제약업계는 전 국민 의료보험의 정착과 의약품 시장의 확대를 바탕으로 비교적 안정적인 성장을 이어가는 한편, 신약 개발을 기업의 새로운 성장동력으로 받아들이며 연구개발 역량을 축적하던 중이었다.이러한 변화의 배경에는 정부의 지속적인 연구개발 지원이 있었다. 1980년대 후반 과학기술처의 기업 주도 특정연구개발사업에서 싹튼 지원체계는 1990년대 들어 국책연구개발사업과 선도기술개발사업(G7 프로젝트)으로 확대되면서 기업의 신약 개발을 뒷받침했다.이어 1998년 신약 개발과 임상연구 지원 예산이 보건복지부로 이"
-    },
-    {
-      "id": "205f2f18a79cbfb7e64f132c",
-      "feedId": "hankyung-all",
-      "source": "한국경제",
-      "category": "사업",
-      "language": "ko",
-      "title": "李 대통령 \"문화예술, 재정 투자 효율 높아…일자리도 해결\"",
-      "url": "https://www.hankyung.com/article/202609079767i",
-      "publishedAt": "2026-09-07T13:49:06Z",
-      "collectedAt": "2026-09-07T21:34:15Z",
-      "feedPosition": 17,
-      "summary": ""
-    },
-    {
-      "id": "f4c618606f1b6ded78f13a70",
-      "feedId": "zdnet-korea",
-      "source": "ZDNet Korea",
-      "category": "AI",
-      "language": "ko",
-      "title": "장병탁 교수 \"피지컬 AI는 이제 시작…데이터 팩토리 더 투자해야\"",
-      "url": "https://zdnet.co.kr/view?no=20260907222818",
-      "publishedAt": "2026-09-07T13:44:03Z",
-      "collectedAt": "2026-09-07T21:34:15Z",
-      "feedPosition": 3,
-      "summary": ""
-    },
-    {
-      "id": "6645aae9afc01e51cff929a1",
-      "feedId": "geeknews",
-      "source": "GeekNews",
-      "category": "컴퓨터 사이언스",
-      "language": "ko",
-      "title": "GrapheneOS, 기본 앱과 보안 클립보드 전면 개편",
-      "url": "https://news.hada.io/topic?id=33325",
-      "publishedAt": "2026-09-07T13:32:28Z",
-      "collectedAt": "2026-09-07T21:34:15Z",
-      "feedPosition": 5,
-      "summary": "기본 Messaging 앱 의 낡은 인터페이스를 Android Compose 로 전면 재작성하고 있으며, 여러 개선과 버그 수정을 담은 새 버전을 게시 당일 늦게 출시할 예정임 장기적으로 RCS 와 Messaging Layer Security(MLS) 기반 종단간 암호화"
-    },
-    {
-      "id": "c6475d495618dae14dcd84a7",
-      "feedId": "zdnet-korea",
-      "source": "ZDNet Korea",
-      "category": "사업",
-      "language": "ko",
-      "title": "한-프, 장관급 ‘전략산업대화’ 신설…산업·통상·공급망 전략적 협력체계",
-      "url": "https://zdnet.co.kr/view?no=20260907222952",
-      "publishedAt": "2026-09-07T13:29:52Z",
-      "collectedAt": "2026-09-07T21:34:15Z",
-      "feedPosition": 4,
-      "summary": ""
-    },
-    {
-      "id": "7cb54f285da3aae438dca87a",
-      "feedId": "venturesquare-business",
-      "source": "벤처스퀘어",
-      "category": "사업",
-      "language": "ko",
-      "title": "관리비 자동화 넘어 주거 AI로…한국주택정보, MS ‘마중’서 2억원 지원",
-      "url": "https://www.venturesquare.net/1111533",
-      "publishedAt": "2026-09-07T13:20:16Z",
-      "collectedAt": "2026-09-07T21:34:15Z",
-      "feedPosition": 0,
-      "summary": "비아파트 관리 SaaS ‘관리비책’을 운영하는 한국주택정보가 중기부·마이크로소프트의 글로벌기업 협업 프로그램 ‘마중’에 선정돼 사업화 자금 2억원과 Azure 기술 지원을 받는다. 회사는 관리비 부과·수납·정산 데이터를 기반으로 Azure AI Foundry 기반 주거... The post 관리비 자동화 넘어 주거 AI로…한국주택정보, MS ‘마중’서 2억원 지원 appeared first on 벤처스퀘어 ."
-    },
-    {
-      "id": "3f06b81796746ab50cac18d0",
-      "feedId": "venturesquare-business",
-      "source": "벤처스퀘어",
-      "category": "사업",
-      "language": "ko",
-      "title": "게임스컴서 직접 플레이된 K-인디게임…인디크래프트, 투자·퍼블리싱 접점 확대",
-      "url": "https://www.venturesquare.net/1111526",
-      "publishedAt": "2026-09-07T13:11:19Z",
-      "collectedAt": "2026-09-07T21:34:15Z",
-      "feedPosition": 1,
-      "summary": "인디크래프트가 독일 게임스컴 2026에서 지난해보다 두 배 확대된 홍보부스를 운영하고 국내 인디게임 선정작을 해외 투자사와 퍼블리셔에게 소개했다. 현장에서는 선정작 체험과 네트워킹, 퍼블리싱·투자 상담과 함께 뉴질랜드·퀘벡 게임단체와의 MOU 추진 논의가 이뤄졌다. 조... The post 게임스컴서 직접 플레이된 K-인디게임…인디크래프트, 투자·퍼블리싱 접점 확대 appeared first on 벤처스퀘어 ."
-    },
-    {
-      "id": "6335e9ad35ccf2285dabdf1c",
-      "feedId": "venturesquare-business",
-      "source": "벤처스퀘어",
-      "category": "사업",
-      "language": "ko",
-      "title": "불꽃축제에 모인 100명의 파트너…티오더, ‘소상공인 AX’ 협력망 넓힌다",
-      "url": "https://www.venturesquare.net/1111513",
-      "publishedAt": "2026-09-07T13:04:56Z",
-      "collectedAt": "2026-09-07T21:34:15Z",
-      "feedPosition": 2,
-      "summary": "티오더가 POS·VAN사와 프랜차이즈, 광고주 등 비즈니스 파트너 100여명을 본사로 초청해 서울세계불꽃축제 관람 네트워킹 행사를 열었다. 티오더는 이날 테이블오더를 넘어 AI가 매장 운영을 지원하는 ‘티오더 AI’를 중심으로 결제·유통·금융·마케팅 서비스를 연결하는 ... The post 불꽃축제에 모인 100명의 파트너…티오더, ‘소상공인 AX’ 협력망 넓힌다 appeared first on 벤처스퀘어 ."
-    },
-    {
-      "id": "7ec3fd4c2e1d57224df2bdb2",
-      "feedId": "geeknews",
-      "source": "GeekNews",
-      "category": "AI",
-      "language": "ko",
-      "title": "Anubis에 WebAssembly를 탑재하기까지 1년이 걸렸다",
-      "url": "https://news.hada.io/topic?id=33323",
-      "publishedAt": "2026-09-07T13:01:08Z",
-      "collectedAt": "2026-09-07T21:34:15Z",
-      "feedPosition": 6,
-      "summary": "Anubis 는 AI 기업의 공격적인 웹사이트 스크래핑으로 인한 서비스 중단과 이용자의 접근 불가를 막기 위해 관리자가 설치하는 서버 보호 도구임 이메일 스팸을 줄이기 위해 제안된 Hashcash 와 유사한 작업 증명(Proof-of-Work) 방식을 사용함"
-    },
-    {
-      "id": "c5abac095bbe00494eb0520c",
-      "feedId": "venturesquare-business",
-      "source": "벤처스퀘어",
-      "category": "사업",
-      "language": "ko",
-      "title": "게임 넘어 AI·로보틱스까지…크래프톤, 모디 총리와 인도 투자 청사진 공유",
-      "url": "https://www.venturesquare.net/1111506",
-      "publishedAt": "2026-09-07T12:56:19Z",
-      "collectedAt": "2026-09-07T21:34:15Z",
-      "feedPosition": 3,
-      "summary": "장병규 크래프톤 의장이 나렌드라 모디 인도 총리와 만나 인도 게임·기술·디지털 엔터테인먼트 생태계의 성장과 협력 방안을 논의했다. 크래프톤은 기존 2억5000만달러에 이어 향후 3~4년간 같은 규모를 추가로 투자하고, 네이버·미래에셋과 조성한 6억7000만달러 규모 펀... The post 게임 넘어 AI·로보틱스까지…크래프톤, 모디 총리와 인도 투자 청사진 공유 appeared first on 벤처스퀘어 ."
-    },
-    {
-      "id": "fff15de9abbc8a785bfe6a54",
-      "feedId": "venturesquare-business",
-      "source": "벤처스퀘어",
-      "category": "사업",
-      "language": "ko",
-      "title": "CCTV부터 출입통제까지 한 화면에…버카다, 현대차 사옥서 AI 물리보안 시연",
-      "url": "https://www.venturesquare.net/1111495",
-      "publishedAt": "2026-09-07T12:50:03Z",
-      "collectedAt": "2026-09-07T21:34:15Z",
-      "feedPosition": 4,
-      "summary": "버카다가 현대자동차의 임직원 대상 보안 캠페인에 초청돼 강남·양재 사옥에서 클라우드 기반 물리 보안 솔루션을 시연한다. 행사에서는 통합 관리 플랫폼 Verkada Command와 돔 카메라 CD63-E를 활용한 자연어 영상 검색, 통합 타임라인, 인원 점유율 분석 기능... The post CCTV부터 출입통제까지 한 화면에…버카다, 현대차 사옥서 AI 물리보안 시연 appeared first on 벤처스퀘어 ."
-    },
-    {
-      "id": "8ea59e07b791bb8026aded05",
-      "feedId": "venturesquare-business",
-      "source": "벤처스퀘어",
-      "category": "사업",
-      "language": "ko",
-      "title": "AI 말라리아 진단, 개별 병원 넘어 국가 체계로…노을 ‘마이랩’ 베냉 공공조달",
-      "url": "https://www.venturesquare.net/1111478",
-      "publishedAt": "2026-09-07T12:38:53Z",
-      "collectedAt": "2026-09-07T21:34:15Z",
-      "feedPosition": 5,
-      "summary": "노을의 AI 기반 말라리아 진단 솔루션 ‘마이랩 말라리아’가 베냉 보건부 공공조달 입찰을 수주하고 국가말라리아통제프로그램의 정식 진단 플랫폼으로 편입됐다. 베냉 아동 211명을 대상으로 한 현지 평가에서 수동 현미경 대비 민감도 98.82%, 특이도 100%를 기록했으... The post AI 말라리아 진단, 개별 병원 넘어 국가 체계로…노을 ‘마이랩’ 베냉 공공조달 appeared first on 벤처스퀘어 ."
-    },
-    {
-      "id": "2ab2aa56366eda7c5a37edc6",
-      "feedId": "geeknews",
-      "source": "GeekNews",
-      "category": "컴퓨터 사이언스",
-      "language": "ko",
-      "title": "LG 스마트 TV, 화면이 꺼진 상태에서도 오디오 기록·로컬 기기 탐색 확인",
-      "url": "https://news.hada.io/topic?id=33322",
-      "publishedAt": "2026-09-07T12:32:57Z",
-      "collectedAt": "2026-09-07T12:42:36Z",
-      "feedPosition": 0,
-      "summary": "Gamers Nexus 가 G5를 포함한 시판 LG OLED TV를 조사해, 가정 내 다른 기기를 탐색하고 화면이 꺼진 것처럼 보이는 대기 상태에서도 마이크 오디오를 수집 할 수 있음을 확인함 네트워크 패킷 분석 에서 휴대전화·스마트워치 탐색과 내부 IP 주소, ..."
     },
     {
       "id": "be9ea805ef3904cec9e92cb8",
@@ -1616,84 +1972,6 @@
       "summary": "Watch now | 🎙️ Learn how Stripe scaled AI to everyone at a complex global company by building context, governance, and a shared skills platform directly into their internal agent"
     },
     {
-      "id": "3c8ff5c54628463a1ef944a7",
-      "feedId": "zdnet-korea",
-      "source": "ZDNet Korea",
-      "category": "AI",
-      "language": "ko",
-      "title": "AI 데이터센터가 미국 농촌 땅값 바꾼다…상반기 부지 매입 8조 700억 원",
-      "url": "https://zdnet.co.kr/view?no=20260907205711",
-      "publishedAt": "2026-09-07T11:57:11Z",
-      "collectedAt": "2026-09-07T21:34:15Z",
-      "feedPosition": 8,
-      "summary": ""
-    },
-    {
-      "id": "2583ae2388b45ebc5905f178",
-      "feedId": "pharmnews",
-      "source": "팜뉴스",
-      "category": "제약",
-      "language": "ko",
-      "title": "에이앤알피사이언스, 불응성 암 모델 실증",
-      "url": "https://www.pharmnews.com/news/articleView.html?idxno=306106",
-      "publishedAt": "2026-09-07T11:51:57Z",
-      "collectedAt": "2026-09-07T04:50:05Z",
-      "feedPosition": 11,
-      "summary": "[팜뉴스=우정민 기자] 에이앤알피사이언스가 불응성 암을 대상으로 종양미세환경을 반영한 ‘TME SCREEN’ 기술의 실증을 마쳤다고 밝혔다.불응성 암은 항암제 치료에 반응하지 않거나 치료 반응이 충분하지 않은 경우를 말한다.항암제 개발 과정에서는 후보물질의 반응을 확인하기 위한 다양한 암 모델이 활용되고 있으며, 최근에는 암세포뿐 아니라 종양 주변의 세포와 혈관, 세포외기질 등을 포함하는 종양미세환경(Tumor Microenvironment, TME)을 함께 고려하는 연구도 진행되고 있다.이와 관련해 에이앤알피사이언스가 개발한 TM"
-    },
-    {
-      "id": "605b228fe96b009373ac80f3",
-      "feedId": "hankyung-all",
-      "source": "한국경제",
-      "category": "사업",
-      "language": "ko",
-      "title": "대미투자 기대감에 12차 전기본까지…원전주 '들썩'",
-      "url": "https://www.hankyung.com/article/202609079708i",
-      "publishedAt": "2026-09-07T11:42:31Z",
-      "collectedAt": "2026-09-07T12:42:36Z",
-      "feedPosition": 35,
-      "summary": ""
-    },
-    {
-      "id": "3dd8c55b844f9b9557c42f2d",
-      "feedId": "zdnet-korea",
-      "source": "ZDNet Korea",
-      "category": "AI",
-      "language": "ko",
-      "title": "테이텀 시큐리티, ‘사이버 보안 특화 AI’ 개발 참여",
-      "url": "https://zdnet.co.kr/view?no=20260907203426",
-      "publishedAt": "2026-09-07T11:34:26Z",
-      "collectedAt": "2026-09-07T21:34:15Z",
-      "feedPosition": 10,
-      "summary": ""
-    },
-    {
-      "id": "94583db6172b5cddf2745b9c",
-      "feedId": "ai-times-korea",
-      "source": "AI타임스",
-      "category": "AI",
-      "language": "ko",
-      "title": "에임인텔리전스 \"AGI급 '아스트라'도 보안 공백 여전...다음은 로봇·자율주행\"",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=214964",
-      "publishedAt": "2026-09-07T10:20:00Z",
-      "collectedAt": "2026-09-07T21:34:15Z",
-      "feedPosition": 0,
-      "summary": "에임인텔리전스가 AI 에이전트와 피지컬 AI 시대로의 전환에 맞춰 통제 불능 리스크를 방지하기 위한 지속적·실시간 보안 레이어 구축의 필요성을 강조했다.박하언 에임인텔리전스 최고 기술책임자(CTO)는 7일 삼성금융캠퍼스에서 열린 ‘AI 리스크 컨퍼런스 서울 2026’에서 \\'AI 통제의 최전선: 모델에서 에이전트, 피지컬 AI까지\\'를 주제로 발표를 진행했다.박 CTO는 클라우드시큐리티얼라이언스(CSA) 통계자료를 인용해 \\\"기업의 82%가량이 자체적으로 파악하지 못한 그림자 AI 에이전트를 보유 중이며, 절반 이상은 AI 에이전트가 권"
-    },
-    {
-      "id": "21b173906a509ee18f710131",
-      "feedId": "etnews-ai",
-      "source": "전자신문 AI",
-      "category": "AI",
-      "language": "ko",
-      "title": "15초를 90분으로…100% AI 제작 영화 '스틸레이' 공개",
-      "url": "https://www.etnews.com/20260907000460",
-      "publishedAt": "2026-09-07T09:38:42Z",
-      "collectedAt": "2026-09-07T12:42:36Z",
-      "feedPosition": 0,
-      "summary": "인공지능(AI) 영상 생성 도구로 15초를 반복 생산해 90분 러닝타임의 영화가 10월 개봉한다. 라온컴퍼니플러스와 아이노스튜디오가 공동 제작한 로봇 공상과학(SF) 액션영화 '스틸레이'다. 아이노스튜디오는 로봇 SF 액션물이라는 방향성을 중심으로 기획·스토리 발전·제작·포스트 프로덕션 등 영화 제작 전과정을 100% AI 도구로 제작했다. 국내 기업 중에는 아직 AI 영상 생성 서비스를 제공하는 기업이 없는 상황에서 시댄스·클링·힉스필드·구글"
-    },
-    {
       "id": "e234d67f73ed713f1ca47fa5",
       "feedId": "byline-network",
       "source": "바이라인네트워크",
@@ -1703,125 +1981,8 @@
       "url": "https://byline.network/2026/09/7-497",
       "publishedAt": "2026-09-07T09:22:46Z",
       "collectedAt": "2026-09-07T12:42:36Z",
-      "feedPosition": 2,
-      "summary": "“요구사항 분석조차 안 되는데 다른 것을 논해서 무엇을 하겠습니까?” 김승주 고려대학교 정보보호대학원 교수는 7일 경기 성남시 밀리토피아 호텔 바이마린에서 열린 ‘AIDC 보안 기술 워크숍’에서 AI 보안 내재화의 출발점은 보안 제품이나 도구 도입이 아니라 요구사항을 제대로 정의하는 것이라고 강조했다. 김 교수는 이날 ‘AI 보안내재화는 왜 특히 더 어려운가?’를 주제로 발표했다."
-    },
-    {
-      "id": "902979e6ecb656a5ae107f7b",
-      "feedId": "byline-network",
-      "source": "바이라인네트워크",
-      "category": "컴퓨터 사이언스",
-      "language": "ko",
-      "title": "텍스트 한 줄에 뚫리는 AI, “듀얼 LLM 격리가 해법”",
-      "url": "https://byline.network/2026/09/0907-3",
-      "publishedAt": "2026-09-07T09:17:22Z",
-      "collectedAt": "2026-09-07T12:42:36Z",
-      "feedPosition": 3,
-      "summary": "인공지능(AI)이 사용자 대신 검색하고 판단하며 각종 작업을 수행하는 에이전트(Agent) 시대가 본격화하면서, 외부 데이터를 악용해 AI의 판단과 행동을 조작하는 ‘프롬프트 삽입(Prompt Injection)’ 공격이 새로운 보안 위협으로 떠오르고 있다."
-    },
-    {
-      "id": "00961a8f1ffb1a6f8d4d7263",
-      "feedId": "ai-times-korea",
-      "source": "AI타임스",
-      "category": "AI",
-      "language": "ko",
-      "title": "[9월7일] 순천 AI 영상 뉴스 - 순천서 ‘2026 다문화 한마음축제’ 등",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=214950",
-      "publishedAt": "2026-09-07T09:13:18Z",
-      "collectedAt": "2026-09-07T12:42:36Z",
-      "feedPosition": 1,
-      "summary": "주영효 기자 society@aitimes.comPowered by AItimes AI Solution"
-    },
-    {
-      "id": "ca6147adc4b3e147060fb43d",
-      "feedId": "ai-times-korea",
-      "source": "AI타임스",
-      "category": "AI",
-      "language": "ko",
-      "title": "앤트로픽, '클로드' 수요 폭증에 11개월간 695조 인프라 확보",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=214933",
-      "publishedAt": "2026-09-07T09:12:43Z",
-      "collectedAt": "2026-09-07T12:42:36Z",
-      "feedPosition": 2,
-      "summary": "앤트로픽이 AI 서비스 수요 폭증에 대응하기 위해 최근 1년간 최대 5170억달러(약 695조원) 규모의 클라우드 컴퓨팅과 데이터센터 계약을 확보한 것으로 나타났다. 5일(현지시간) 디 인포메이션에 따르면, 앤트로픽은 지난해 10월 이후 앞으로 수년간 사용할 수 있는 최소 14.8기가와트(GW) 규모의 컴퓨팅 용량 확보 계약을 체결했다. 이는 기존에 확보했던 1~2GW를 훌쩍 웃도는 수준이다. 공격적인 인프라 확보는 올해 예상보다 빠르게 증가한 ‘클로드 코드’와 ‘코워크’ 수요에 따른 것이다. AI 코딩과 업무 자동화 서비스 이용자"
-    },
-    {
-      "id": "9fda7c48b58f16bd5c09edf4",
-      "feedId": "ai-times-korea",
-      "source": "AI타임스",
-      "category": "AI",
-      "language": "ko",
-      "title": "챗GPT,'개인 문체' 학습 기능 테스트...\"AI가 쓴 티 벗어난다\"",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=214961",
-      "publishedAt": "2026-09-07T09:05:18Z",
-      "collectedAt": "2026-09-07T12:42:36Z",
-      "feedPosition": 3,
-      "summary": "AI가 사용자의 요구에 맞춰 글을 작성하는 것을 넘어, 사용자가 평소 쓰는 말투와 표현 방식까지 학습해 \\'나만의 문체\\'로 글을 만들어주는 방향으로 진화하고 있다. AI가 작성한 티가 나는 문제를 줄여줄 것으로 보인다.5일(현지시간) 테스팅카탈로그에 따르면, 오픈AI는 사용자의 고유한 글쓰기 습관을 학습해 개인의 어조와 문체를 그대로 반영한 글을 작성하는 새로운 \\'글쓰기 스타일(Writing Style)\\' 기능을 챗GPT에서 테스트하고 있는 것으로 알려졌다.이메일이나 문서, 메시지 등 사용자가 실제로 작성한 텍스트를 참고해 챗GPT가"
-    },
-    {
-      "id": "2594cb3ab05096872c0a8db9",
-      "feedId": "etnews-ai",
-      "source": "전자신문 AI",
-      "category": "AI",
-      "language": "ko",
-      "title": "“AI 모델보다 관리자 페이지가 더 위험”…인터넷에 노출된 AI 서버",
-      "url": "https://www.etnews.com/20260907000453",
-      "publishedAt": "2026-09-07T09:02:05Z",
-      "collectedAt": "2026-09-07T12:42:36Z",
-      "feedPosition": 2,
-      "summary": "인공지능(AI) 서비스 확산으로 기업의 AI 관리자·개발 서버가 새로운 보안 사각지대로 떠오르고 있다. 강병탁 AI스페라 대표는 7일 경기도 성남시 밀리토피아 호텔 바이마린에서 열린 'AIDC 보안 기술 워크숍'에서 AI 모델 자체보다 인터넷에 노출된 관리자·운영 페이지가 실제 공격 경로로 악용될 위험이 크다고 경고했다. 강 대표는 “공격자는 AI 모델을 직접 공격하는 것보다 레이(Ray), 주피터(Jupyter), 올라마(Ollama) 같은"
-    },
-    {
-      "id": "4402f451496a15ce9c1607b7",
-      "feedId": "ai-times-korea",
-      "source": "AI타임스",
-      "category": "사업",
-      "language": "ko",
-      "title": "'제미나이' 말 믿고 산에 올랐다가 고립...등산객 일행, 다음날 구조",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=214962",
-      "publishedAt": "2026-09-07T08:59:13Z",
-      "collectedAt": "2026-09-07T12:42:36Z",
-      "feedPosition": 4,
-      "summary": "미국 캘리포니아주에서 등산객 3명이 구글의 \\'제미나이\\' 등을 이용해 산행 계획을 세웠다가 정상에 오르는 데 예상보다 훨씬 긴 시간이 걸리고 하산 중 길을 잃으면서 고립되는 사고가 발생했다. 이들은 충분한 식량과 물, 장비를 준비하지 않은 채 산행을 강행했고, 결국 이튿날 산림청 레인저와 자원봉사 구조대에 의해 구조됐다.5일(현지시간) 비즈니스인사이더에 따르면, 사고는 캘리포니아주 북부 캐스케이드산맥에 위치한 해발 1만4179피트(약 4322m)의 샤스타산에서 발생했다.20세 남성 3명으로 구성된 일행은 샤스타산의 클리어 크릭 루트"
-    },
-    {
-      "id": "faeccb309988e7879948fcdc",
-      "feedId": "byline-network",
-      "source": "바이라인네트워크",
-      "category": "컴퓨터 사이언스",
-      "language": "ko",
-      "title": "[커머스BN] “사실상 쿠팡만 유리”…정산주기 단축의 역설",
-      "url": "https://byline.network/2026/09/07_commercebn-3",
-      "publishedAt": "2026-09-07T08:47:44Z",
-      "collectedAt": "2026-09-07T12:42:36Z",
-      "feedPosition": 4,
-      "summary": "이번 법안의 긍정적인 측면은 납품업체들이 대금을 보다 빠르게 받을 수 있다는 점입니다. 그동안 쿠팡, 컬리처럼 규모가 큰 기업들이 대금을 오랜 기간 쥐고 있었던 탓에, 납품업체는 대금을 받기 전까지 현금 부족에 시달려야 했습니다. 하지만 이 법안이 정말 납품업체에 무조건 좋은 일인지, 업계 안에서는 의문도 나옵니다. 유통업체는 그동안 납품업체에 지급할 대금을 쥐고 있는 기간 동안 그 자금을 굴려왔습니다. 지급기한이 줄면 이 자금을 굴릴 시간이 그만큼 짧아집니다. 유통업체 입장에서는 이 부족분을 어떻게든 메워야 하는데, 그 방식에 따라 정작 손해를 보는 쪽이 달라질…"
-    },
-    {
-      "id": "0a8501ee4aef415e0d37a36d",
-      "feedId": "ai-times-korea",
-      "source": "AI타임스",
-      "category": "AI",
-      "language": "ko",
-      "title": "오픈AI 수석 과학자의 경고...\"외계인 같은 AI, 자기개선에 대비해야\"",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=214932",
-      "publishedAt": "2026-09-07T08:40:23Z",
-      "collectedAt": "2026-09-07T12:42:36Z",
       "feedPosition": 6,
-      "summary": "AI가 인간의 능력을 빠르게 넘어서는 가운데 자기개선까지 현실화할 가능성이 커지면서, 오픈AI에서조차 속도 조절과 강력한 안전장치를 요구하는 목소리가 커지고 있다. 야쿠부 파초키 오픈AI 수석 과학자는 6일(현지시간) 장문의 블로그 게시물을 통해 AI 발전 속도가 앞으로도 유지되면 수년 안에 기계가 스스로 AI 개발을 진전시키는 재귀적 자기개선(RSI) 단계로 진입할 수 있다고 전망하면서 \\\"지속적인 기계 지능의 급격한 상승에 따른 결과에 아무도 준비돼 있지 않다\\\"고 경고했다.그는 2023년 오픈AI의 추론 모델 연구 프로젝트인 ‘R"
-    },
-    {
-      "id": "32aef7ff266655fdb71e9600",
-      "feedId": "etnews-ai",
-      "source": "전자신문 AI",
-      "category": "AI",
-      "language": "ko",
-      "title": "'프리비브리지'로 데이터·AI모델 함께 보호…AI 협업 길 연다",
-      "url": "https://www.etnews.com/20260907000414",
-      "publishedAt": "2026-09-07T08:00:00Z",
-      "collectedAt": "2026-09-07T12:42:36Z",
-      "feedPosition": 3,
-      "summary": "민감데이터와 AI 모델을 서로 공개하지 않고 협업할 수 있는 프라이버시 보호 플랫폼 '프리비브리지(PrivyBridge)'가 AIDC 보안 기술로 제시됐다. 신뢰실행환경(TEE)을 기반으로 양측의 핵심 자산을 함께 보호하는 게 핵심이다. 백윤흥 서울대 교수는 7일 경기도 성남시 밀리토피아 호텔 바이마린에서 열린 'AIDC 보안 기술 워크숍'에서 “TEE는 실행 중인 데이터를 하드웨어 경계 안에서 보호해 신뢰 대상을 서버 운영자에서 검증된 실행환"
+      "summary": "“요구사항 분석조차 안 되는데 다른 것을 논해서 무엇을 하겠습니까?” 김승주 고려대학교 정보보호대학원 교수는 7일 경기 성남시 밀리토피아 호텔 바이마린에서 열린 ‘AIDC 보안 기술 워크숍’에서 AI 보안 내재화의 출발점은 보안 제품이나 도구 도입이 아니라 요구사항을 제대로 정의하는 것이라고 강조했다. 김 교수는 이날 ‘AI 보안내재화는 왜 특히 더 어려운가?’를 주제로 발표했다."
     },
     {
       "id": "f15e0cf8b413cb8d15e180e9",
@@ -1876,110 +2037,6 @@
       "summary": "1. 사실관계1) 원고 A와 B는 2022년 2월경. 부모로부터 서울 강남구 소재 아파트 1채의 각 2분의 1 지분을 증여받고 구 상증세법상 보충적 평가방법에 따른 공동주택가격인 약 30억 원을 증여재산가액으로 하여 증여세를 신고·납부하였다.2) 이에 대해 피고는 감정평가액인 약 53억 원을 증여재산가액으로 하여 원고들에게 증여세를 부과하였다.2. 쟁점이 사건의 쟁점은 납세자가 보충적 평가방법으로 증여세를 신고·납부하였는데 과세관청이 감정가액의 평균을 시가로 보아 증여세를 부과할 수 있는지 여부이다.3. 대상 판결의 요지구 상증세법"
     },
     {
-      "id": "430e9ae0f46f4536ab3a5de7",
-      "feedId": "inews24-it",
-      "source": "아이뉴스24 IT",
-      "category": "AI",
-      "language": "ko",
-      "title": "'AI 전용 앱스토어' 허깅페이스 품는 엔비디아⋯K-AI 업계, 기대 반 우려 반",
-      "url": "https://www.inews24.com/view/2002768",
-      "publishedAt": "2026-09-07T07:40:30Z",
-      "collectedAt": "2026-09-07T12:42:36Z",
-      "feedPosition": 2,
-      "summary": ""
-    },
-    {
-      "id": "76181d64a859f699fb32d06b",
-      "feedId": "byline-network",
-      "source": "바이라인네트워크",
-      "category": "컴퓨터 사이언스",
-      "language": "ko",
-      "title": "오픈AI 에이전트, 사람이 쓰던 위키 점령 사건",
-      "url": "https://byline.network/2026/09/wiki-agent",
-      "publishedAt": "2026-09-07T07:40:05Z",
-      "collectedAt": "2026-09-07T12:42:36Z",
-      "feedPosition": 5,
-      "summary": "오픈AI의 에이전트들이 독일의 한 위키 사이트를 점령한 사건이 벌어졌다. 사람이 사용하기 위해 만들어진 위키 사이트에 AI 에이전트가 수많은 글을 쓴 것이다. 무대는 독일어로 된 프로그래밍 개발자용 위키 DSEwiki다. 지난 5월부터 7월까지 석 달 가까이, 오픈AI 에이전트로 추정되는 계정들이 이 사이트에 약 1만8000건의 글을 남겼다."
-    },
-    {
-      "id": "1e27b08efa4590340b1465ba",
-      "feedId": "inews24-it",
-      "source": "아이뉴스24 IT",
-      "category": "AI",
-      "language": "ko",
-      "title": "AI 활용을 위한 '7가지 약속' 外 [과학게시판]",
-      "url": "https://www.inews24.com/view/2002821",
-      "publishedAt": "2026-09-07T07:10:53Z",
-      "collectedAt": "2026-09-07T12:42:36Z",
-      "feedPosition": 4,
-      "summary": ""
-    },
-    {
-      "id": "2592daa2e8b4bbb48d00d1bd",
-      "feedId": "inews24-it",
-      "source": "아이뉴스24 IT",
-      "category": "AI",
-      "language": "ko",
-      "title": "오픈AI 최신 AI 아스트라가 5위?…AAII 벤치마크 실효성 논란",
-      "url": "https://www.inews24.com/view/2002764",
-      "publishedAt": "2026-09-07T07:06:23Z",
-      "collectedAt": "2026-09-07T12:42:36Z",
-      "feedPosition": 6,
-      "summary": ""
-    },
-    {
-      "id": "bd1e794fca6a79f121393648",
-      "feedId": "etnews-ai",
-      "source": "전자신문 AI",
-      "category": "컴퓨터 사이언스",
-      "language": "ko",
-      "title": "구글 업은 위즈, 韓 본격 공략…K시큐리티 안방 위협",
-      "url": "https://www.etnews.com/20260907000333",
-      "publishedAt": "2026-09-07T07:00:00Z",
-      "collectedAt": "2026-09-07T12:42:36Z",
-      "feedPosition": 7,
-      "summary": "구글이 품은 클라우드 보안업체 위즈(Wiz)가 한국 시장 공략에 속도를 내고 있다. 국내 대형 고객사가 늘어나자 영업부터 기술 지원까지 현지 조직 전반을 키우고 있다. 위즈를 비롯한 글로벌 보안업체들의 한국 시장 공세가 거세지면서 국내 보안업계의 경쟁력 강화가 시급하다. 7일 업계에 따르면 위즈는 최근 한국 영업 총괄 책임자를 비롯해 대기업 고객 영업 담당자, 솔루션 엔지니어링 팀장, 선임 기술계정관리자 등 핵심 인력 채용에 나섰다. 위즈는 아"
-    },
-    {
-      "id": "925a223b6764618db25fdb75",
-      "feedId": "etnews-ai",
-      "source": "전자신문 AI",
-      "category": "AI",
-      "language": "ko",
-      "title": "[ET시론] AI 대전환 승부처는 현장의 암묵지다",
-      "url": "https://www.etnews.com/20260907000090",
-      "publishedAt": "2026-09-07T07:00:00Z",
-      "collectedAt": "2026-09-07T12:42:36Z",
-      "feedPosition": 8,
-      "summary": "거대언어모델(LLM)이 인공지능(AI) 시대의 본격적인 시작을 열었다. 그러나, 문을 여는 것과 그 안에서 가치를 만드는 것은 전혀 다른 일이다. 산업 현장에 AI를 적용해 생산성을 높이고 제품과 서비스 품질을 개선하는 일은 선택이 아니라 반드시 해내야 하는 대전환이다. 이 대전환에서 집중해야 할 것은 속도이며, 속도를 결정하는 것은 모델의 크기나 성능이 아니라 데이터다. 기업의 진짜 자산은 화려한 비전 보고서에 있지 않다. 생산 라인의 센서값"
-    },
-    {
-      "id": "e5229373a79c424a824fd635",
-      "feedId": "etnews-ai",
-      "source": "전자신문 AI",
-      "category": "AI",
-      "language": "ko",
-      "title": "[뉴스줌인] K-시큐리티 살릴 보안 AI…'성능' 입증이 관건",
-      "url": "https://www.etnews.com/20260907000365",
-      "publishedAt": "2026-09-07T07:00:00Z",
-      "collectedAt": "2026-09-07T12:42:36Z",
-      "feedPosition": 9,
-      "summary": "글로벌 보안업체들이 한국 시장 공략을 강화하면서 국내 보안기업의 경쟁력 제고를 위한 보안 특화 인공지능(AI) 개발이 중요해지고 있다. 의미 있는 성과를 내기 위해서는 개발 목표를 명확히 해야 한다는 조언이 나온다. 김승주 고려대 정보보호대학원 교수는 “독자 파운데이션 모델을 활용하는 것이 목표인지, 세계와 견줄 만한 사이버보안 AI를 만드는 것이 목표인지 명확히 해야 한다”며 “세계 최고 수준의 사이버보안 AI를 만드는 것이 목표라면 특정 독"
-    },
-    {
-      "id": "4dc61cc541fc1ef6ce494298",
-      "feedId": "inews24-it",
-      "source": "아이뉴스24 IT",
-      "category": "AI",
-      "language": "ko",
-      "title": "메가존클라우드, 한미약품 품질보증 AI 에이전트 구축 착수",
-      "url": "https://www.inews24.com/view/2002657",
-      "publishedAt": "2026-09-07T05:22:19Z",
-      "collectedAt": "2026-09-07T12:42:36Z",
-      "feedPosition": 13,
-      "summary": ""
-    },
-    {
       "id": "4fc9a6016196c9e65bef1287",
       "feedId": "quantumtimes",
       "source": "양자신문",
@@ -1989,7 +2046,7 @@
       "url": "https://www.quantumtimes.net/news/articleView.html?idxno=56949",
       "publishedAt": "2026-09-07T04:48:25Z",
       "collectedAt": "2026-09-07T04:50:05Z",
-      "feedPosition": 0,
+      "feedPosition": 2,
       "summary": "양자컴퓨팅 전문기업 노르마가 글로벌 양자컴퓨팅 기업 퀀티넘(Quantinuum)의 ‘스타트업 파트너 프로그램(Startup Partner Program)’에 합류했다. 노르마는 퀀티넘의 양자컴퓨팅 인프라와 자체 개발 환경을 연계해 인공지능(AI)과 양자컴퓨팅을 결합한 응용 서비스 검증과 산업 활용 사례 발굴에 나선다.이번 프로그램 합류로 노르마는 퀀티넘의 넥서스 개발자 플랫폼(Nexus Developer Platform)을 통해 양자컴퓨팅 자원에 접근할 수 있게 됐다. 이를 기반으로 새로운 양자 솔루션을 검증하고 실제 산업 환경에"
     },
     {
@@ -2002,7 +2059,7 @@
       "url": "https://uppity.co.kr/%f0%9f%92%b0%eb%82%b4%ea%b0%80-%eb%af%b8%ea%b5%ad-%eb%ac%bc%ea%b0%80-%ec%a7%80%ed%91%9c%eb%a5%bc-%ec%b1%99%ea%b2%a8%eb%b4%90%ec%95%bc-%ed%95%98%eb%8a%94-%ec%9d%b4%ec%9c%a0",
       "publishedAt": "2026-09-07T01:18:57Z",
       "collectedAt": "2026-09-07T04:50:05Z",
-      "feedPosition": 0,
+      "feedPosition": 1,
       "summary": ""
     },
     {
@@ -2093,7 +2150,7 @@
       "url": "https://www.quantumtimes.net/news/articleView.html?idxno=56948",
       "publishedAt": "2026-09-06T23:50:00Z",
       "collectedAt": "2026-09-07T04:50:05Z",
-      "feedPosition": 1,
+      "feedPosition": 3,
       "summary": "퀀텀 파운드리 코펜하겐(Quantum Foundry Copenhagen)이 덴마크 코펜하겐에 5300㎡ 규모의 양자칩 제조시설을 구축하고 상업 규모의 생산 기반 확보에 나선다. 퀀텀 파운드리 코펜하겐과 노보 노디스크 재단(Novo Nordisk Foundation)은 지난 4일(현지시간) 차세대 양자칩 생산에 필요한 첨단 제조 장비를 개발하고 생산 규모를 확대하기 위한 새로운 시설 설립 계획을 발표했다.새 시설은 2027년 개소를 목표로 하며 양자칩 제조에 필요한 다양한 공정을 하나의 공간에 결합하는 것이 특징이다. 양자 소재의 나"
     },
     {
@@ -2106,7 +2163,7 @@
       "url": "https://www.quantumtimes.net/news/articleView.html?idxno=56945",
       "publishedAt": "2026-09-06T23:40:00Z",
       "collectedAt": "2026-09-07T04:50:05Z",
-      "feedPosition": 2,
+      "feedPosition": 4,
       "summary": "대만의 사이언텍(Scientek Corporation)과 양자컴퓨팅 소프트웨어 기업 클래식큐(Classiq)가 대만 반도체와 연구·학술 분야에서 양자 소프트웨어 활용을 확대하기 위한 시장 진출 협약을 체결했다고 지난 2일(현지시간) 발표했다. 양사는 사이언텍이 보유한 현지 네트워크를 기반으로 클래식큐의 하드웨어 비종속 양자 소프트웨어 플랫폼에 대한 접근성을 넓힐 계획이다.협약에 따라 사이언텍은 대만의 반도체 기업과 연구기관, 대학, 정부기관을 비롯한 기존 네트워크 내 고객들에게 클래식큐의 플랫폼을 소개한다. 양사는 플랫폼 도입과 함"
     },
     {
@@ -2145,7 +2202,7 @@
       "url": "https://www.quantumtimes.net/news/articleView.html?idxno=56944",
       "publishedAt": "2026-09-06T23:20:00Z",
       "collectedAt": "2026-09-07T04:50:05Z",
-      "feedPosition": 3,
+      "feedPosition": 5,
       "summary": "독일 율리히 연구센터(Forschungszentrum Jülich)가 포획 이온 방식의 양자컴퓨터를 기존 슈퍼컴퓨팅 환경에 결합하며 양자컴퓨팅과 고성능컴퓨팅을 연계한 연구 기반 확대에 나섰다. 율리히 연구센터는 지난 3일(현지시간) 포획 이온 양자컴퓨터 ‘지온(JION)’을 공식 출범하고 연구기관과 기업이 양자 프로세서와 기존 슈퍼컴퓨터를 함께 활용할 수 있는 환경을 구축했다고 발표했다.지온은 ‘율리히 포획 이온 양자컴퓨터(Jülich trapped-ion quantum computer)’를 의미하며 율리히 슈퍼컴퓨팅 센터(Jüli"
     },
     {
@@ -2158,7 +2215,7 @@
       "url": "https://www.quantumtimes.net/news/articleView.html?idxno=56943",
       "publishedAt": "2026-09-06T23:10:00Z",
       "collectedAt": "2026-09-07T04:50:05Z",
-      "feedPosition": 4,
+      "feedPosition": 6,
       "summary": "일본 이화학연구소(RIKEN)가 양자컴퓨팅과 고성능컴퓨팅을 연계하는 양자-HPC 하이브리드 플랫폼에 큐나시스(QunaSys)의 양자 소프트웨어 개발 키트 ‘큐리 SDK 엔터프라이즈(QURI SDK Enterprise)’를 공식 채택했다. 양자컴퓨팅 알고리즘과 소프트웨어 개발을 전문으로 하는 큐나시스는 지난 3일(현지시간) 이화학연구소의 ‘제이에이치피시-퀀텀(JHPC-quantum)’ 프로젝트에 자사 개발 환경이 도입됐다고 발표했다.일본 도쿄도 분쿄구에 본사를 둔 큐나시스는 테닌 얀(Tennin Yan) 대표이사 겸 최고경영자가 이끄"
     },
     {
@@ -2171,34 +2228,8 @@
       "url": "https://www.quantumtimes.net/news/articleView.html?idxno=56942",
       "publishedAt": "2026-09-06T23:00:00Z",
       "collectedAt": "2026-09-07T04:50:05Z",
-      "feedPosition": 5,
-      "summary": "쿠파이 네트워크(QuFi Network)가 디지털 자산과 금융 거래를 양자컴퓨터 시대의 보안 위협으로부터 보호하기 위한 포스트퀀텀 검증 인프라를 선보였다. 기존 블록체인과 금융 정산망 자체를 변경하는 대신 가치가 실제로 이동하기 전에 별도의 계층에서 암호학적 검증을 수행하는 구조를 앞세웠다.쿠파이 네트워크는 지난 4일(현지시간) 디지털 자산과 금융 인프라, 디지털 소유권, 토큰화된 경제적 가치에 양자내성 검증 기능을 제공하는 ‘쿠파이 플랫폼(QuFi Platform)’을 출시했다고 발표했다. 플랫폼은 기존 정산 네트워크를 변경하지"
-    },
-    {
-      "id": "cf1a073d8873f6268ed316a4",
-      "feedId": "quantumtimes",
-      "source": "양자신문",
-      "category": "양자컴퓨터",
-      "language": "ko",
-      "title": "퀀티넘, Quantum Expo Korea 2026서 헬리오스 진공 챔버 시연 장치 선보여",
-      "url": "https://www.quantumtimes.net/news/articleView.html?idxno=56941",
-      "publishedAt": "2026-09-06T23:00:00Z",
-      "collectedAt": "2026-09-07T04:50:05Z",
-      "feedPosition": 6,
-      "summary": "퀀티넘(Quantinuum)이 오는 9월 9일부터 11일까지 서울 코엑스 B홀에서 열리는 ‘국제양자산업대전 2026(Quantum Expo Korea 2026)’에 참가해 양자컴퓨터 ‘헬리오스(Helios)’의 진공 챔버 시연 장치와 양자컴퓨팅 개발·응용 소프트웨어를 소개한다.전시장에 설치되는 시연 장치는 헬리오스 진공 챔버에서 이온을 포획하고 제어한 뒤 측정하는 구조를 보여준다. 양자 연산의 주요 단계에서 레이저 시스템이 맡는 역할도 확인할 수 있다. 퀀티넘 싱가포르 총괄 마빈 리(Marvin Lee) 박사는 현장 기술진이 시연"
-    },
-    {
-      "id": "29192643b1ad6d64cf81a908",
-      "feedId": "quantumtimes",
-      "source": "양자신문",
-      "category": "양자컴퓨터",
-      "language": "ko",
-      "title": "MIT, 저장·상호작용 분리한 ‘암 큐비트’ 개발…양자 오류 보정 속도 높인다",
-      "url": "https://www.quantumtimes.net/news/articleView.html?idxno=56947",
-      "publishedAt": "2026-09-06T22:50:00Z",
-      "collectedAt": "2026-09-07T04:50:05Z",
       "feedPosition": 7,
-      "summary": "매사추세츠공과대학교(MIT) 연구진이 양자정보 저장과 외부 상호작용 기능을 분리한 새로운 큐비트 구조를 개발했다. 큐비트의 안정성을 유지하면서 다른 양자 소자와 빠르게 상호작용할 수 있도록 설계한 것으로, 향후 양자 오류 보정에 필요한 연산 속도를 높이고 대규모 양자컴퓨터 구축에 활용될 가능성이 제시됐다.매사추세츠공과대학교는 지난 3일(현지시간) 양자정보를 저장하는 구성요소와 다른 큐비트 및 전자회로와 상호작용하는 구성요소를 하나의 구조로 결합한 ‘암 큐비트(arm qubit)’ 아키텍처를 개발했다고 발표했다. 시뮬레이션에서는 기존"
+      "summary": "쿠파이 네트워크(QuFi Network)가 디지털 자산과 금융 거래를 양자컴퓨터 시대의 보안 위협으로부터 보호하기 위한 포스트퀀텀 검증 인프라를 선보였다. 기존 블록체인과 금융 정산망 자체를 변경하는 대신 가치가 실제로 이동하기 전에 별도의 계층에서 암호학적 검증을 수행하는 구조를 앞세웠다.쿠파이 네트워크는 지난 4일(현지시간) 디지털 자산과 금융 인프라, 디지털 소유권, 토큰화된 경제적 가치에 양자내성 검증 기능을 제공하는 ‘쿠파이 플랫폼(QuFi Platform)’을 출시했다고 발표했다. 플랫폼은 기존 정산 네트워크를 변경하지"
     },
     {
       "id": "42277d6db48725b430f01323",
@@ -2305,17 +2336,17 @@
       "summary": "# 미국에서 일자리가 얼마나 늘었는지가 우리에게 그렇게 중요한 일일까요. 미국에 취업할 계획이 없다면 별 상관없는 숫자처럼 보일 수도 있습니다. # 그런데 미국의 고용지표가 발표되는 날이면 전세계 금융시장이 촉각을 곤두세웁니다. 미국 국채금리와 달러가 출렁이고 주식시장도 반응합니다. 멀리 떨어진 한국의 금리와 환율도 영향을 받습니다. 결국 내 대출금리와도 연결됩니다. # 도대체 미국의 일자리 숫자와 내가 은행에 내는 대출이자는 어떻게 연결돼 있는 걸까요.■ 매월 첫 금요일, 고용보고서 = 미 노동부는 매달 첫 금요일께 ‘고용상황보고"
     },
     {
-      "id": "18f572aea59fc16d539c9619",
-      "feedId": "startup-recipe",
-      "source": "스타트업레시피",
+      "id": "9141f8d2fa62c668da2c4a59",
+      "feedId": "thescoop-trace",
+      "source": "더스쿠프 추적+",
       "category": "사업",
       "language": "ko",
-      "title": "[이번주투자] 델타엑스‧트위니…역시 자본의 선택은 AI‧딥테크",
-      "url": "https://startuprecipe.co.kr/archives/5832663",
-      "publishedAt": "2026-09-05T01:00:00Z",
-      "collectedAt": "2026-09-05T04:36:13Z",
-      "feedPosition": 3,
-      "summary": ""
+      "title": "매출 수백억 회사 ‘수천억원’에 인수… 고려아연 모험과 위험 사이",
+      "url": "https://www.thescoop.co.kr/news/articleView.html?idxno=311480",
+      "publishedAt": "2026-09-04T12:44:52Z",
+      "collectedAt": "2026-09-08T04:45:50Z",
+      "feedPosition": 0,
+      "summary": "# 회사가 돈을 댑니다. 이 돈을 받은 사모펀드(PEF)는 회장 일가가 투자한 회사에 거액을 베팅합니다. 돈이 마치 선순환하는 듯 굴러다닙니다. 바로 이것이 고려아연 최윤범 회장 일가의 ‘원아시아펀드 논란’의 골자입니다.# 논란의 도마에 올라 있는 고려아연의 ‘투자 이슈’는 또 있습니다. 2022년 당기순손실을 기록한 미국 전자폐기물 리사이클링 업체(이그니오홀딩스)를 5800억원이란 거금을 주고 인수한 건입니다. 이 이슈는 한국뿐만 아니라 미국에서도 ‘법적 소송’이 진행 중입니다. 그만큼 중대한 문제란 겁니다.# 그런데도 누군가는"
     },
     {
       "id": "f9dfde676b72eac8be60700d",
@@ -2353,7 +2384,7 @@
       "url": "https://uppity.co.kr/%f0%9f%92%b0%ea%b8%88%eb%a6%ac-%ec%98%a4%eb%a5%bc-%eb%95%8c-%eb%b3%b4%ed%97%98%ec%82%ac-%ec%a3%bc%ea%b0%80%eb%8f%84-%ea%b0%99%ec%9d%b4-%ec%98%a4%eb%a5%b8%eb%8b%a4",
       "publishedAt": "2026-09-04T01:35:58Z",
       "collectedAt": "2026-09-04T04:40:10Z",
-      "feedPosition": 1,
+      "feedPosition": 2,
       "summary": ""
     },
     {
@@ -2483,7 +2514,7 @@
       "url": "https://uppity.co.kr/%f0%9f%92%b014%eb%85%84-%ea%b0%84-%ec%9d%bc%ed%96%88%eb%8a%94%eb%8d%b0-%eb%b6%80%ec%b1%84%eb%a7%8c-1%ec%96%b5%ec%9d%b4%eb%84%a4%ec%9a%94",
       "publishedAt": "2026-09-03T01:03:26Z",
       "collectedAt": "2026-09-03T04:38:31Z",
-      "feedPosition": 2,
+      "feedPosition": 3,
       "summary": ""
     },
     {
@@ -2535,7 +2566,7 @@
       "url": "https://www.thescoop.co.kr/news/articleView.html?idxno=311459",
       "publishedAt": "2026-09-02T12:12:44Z",
       "collectedAt": "2026-09-06T04:46:20Z",
-      "feedPosition": 0,
+      "feedPosition": 1,
       "summary": "# 고려아연과 영풍이 ‘9월 임시주주총회’를 앞두고 또다시 세게 붙었습니다. 최윤범 고려아연 회장 일가가 보유한 회사(비상장)에 어느 사모펀드(PEF)가 거액을 투자한 게 논란의 도마에 올랐습니다. 단순한 사모펀드가 아니라는 게 논란거리입니다. 공교롭게도 이 사모펀드의 최대 출자자는 고려아연입니다.# 이를 두고 누군가는 “경영권 분쟁 과정에서 나온 단순한 의혹에 불과하다”고 말할지 모르지만, 그렇게 보긴 힘듭니다. 이 논란의 밑단엔 이재명 대통령의 주가조작 엄벌론, 국세청의 세무조사 이유 등 숱한 이슈거리가 깔려 있기 때문입니다."
     },
     {
@@ -2574,7 +2605,7 @@
       "url": "https://uppity.co.kr/%f0%9f%92%b0%ec%a7%80%ec%98%a5%ec%97%90%ec%84%9c-%ec%82%b4%ec%95%84-%eb%8f%8c%ec%95%84%ec%98%a8-%ec%86%8c%ed%94%84%ed%8a%b8%ec%9b%a8%ec%96%b4-%ec%a3%bc%ec%8b%9d",
       "publishedAt": "2026-09-02T02:04:27Z",
       "collectedAt": "2026-09-02T04:41:53Z",
-      "feedPosition": 3,
+      "feedPosition": 4,
       "summary": ""
     },
     {
@@ -2667,19 +2698,6 @@
       "collectedAt": "2026-09-01T11:44:43Z",
       "feedPosition": 2,
       "summary": "저희 팀은 데이터 입수 플랫폼의 배치 워크플로를 Airflow 2.10.2로 운영하고 있습니다. 2025년 4월 Airflow 3.0이 릴리스되었고, UI 개선과 다양한 신규 기능이 포함되었습니다. 이 변화가 저희 운영 환경에 필요하다고 판단했고 도입을 위한 PoC(Proof of Concept)를 진행했습니다. 이 글은 그 PoC 과정에서 Python의 멀티프로세싱 방식 중 하나인 fork로 인해 발생한 문제를 발견해 해결하고 기여한 과정을 다루는 시리즈의 1편입니다. 1편에서는 이 문제를 이해하는 데 필요한 배경지식을 다룹니다. Airflow가 task를…"
-    },
-    {
-      "id": "dbb97115d55b31f2e09cddc3",
-      "feedId": "uppity-moneyletter",
-      "source": "어피티 머니레터",
-      "category": "사업",
-      "language": "ko",
-      "title": "💰투자자라면 주목해야 하는 두 가지 숫자",
-      "url": "https://uppity.co.kr/%f0%9f%92%b0%ed%88%ac%ec%9e%90%ec%9e%90%eb%9d%bc%eb%a9%b4-%ec%a3%bc%eb%aa%a9%ed%95%b4%ec%95%bc-%ed%95%98%eb%8a%94-%eb%91%90-%ea%b0%80%ec%a7%80-%ec%88%ab%ec%9e%90",
-      "publishedAt": "2026-09-01T01:08:29Z",
-      "collectedAt": "2026-09-01T05:16:50Z",
-      "feedPosition": 4,
-      "summary": ""
     },
     {
       "id": "5ac9b1d65ddb8ca5526f2ea7",
@@ -2782,7 +2800,7 @@
       "url": "https://www.thescoop.co.kr/news/articleView.html?idxno=311333",
       "publishedAt": "2026-08-21T12:04:13Z",
       "collectedAt": "2026-08-24T13:17:04Z",
-      "feedPosition": 1,
+      "feedPosition": 2,
       "summary": "# 주택의 층간소음을 막기 위한 법령의 기준은 모두 ‘바닥충격음 차단성능’이다. 한줄로 요약하면 다음과 같다. “… 경량충격음·중량충격음 49㏈(데시벨) 이하의 성능을 갖출 것(주택건설기준 등에 관한 규정·주택법 시행령)….” 바닥충격음 성능검사 기준도, 시공사의 분양가 인상의 근거도 바로 이 규정이다. # 그럼 시공사가 이 기준을 충족하지 못하면 어떻게 해야 할까. 당연히 ‘시공 하자’로 판단해 시공사에 벌칙을 부과해야 한다. 그런데, 어찌 된 일인지 ‘벌칙 규정’이 없다. 하자를 판단하는 규정이 있긴 하지만 ‘바닥충격음 차단 성"
     },
     {
@@ -2808,7 +2826,7 @@
       "url": "https://www.thescoop.co.kr/news/articleView.html?idxno=311321",
       "publishedAt": "2026-08-20T12:16:21Z",
       "collectedAt": "2026-08-22T07:02:15Z",
-      "feedPosition": 2,
+      "feedPosition": 3,
       "summary": "입시와 학업 부담에 짓눌린 청소년들에게 고카페인은 단순한 기호식품이 아닌 각성 도구이자 생존 전략으로 굳어졌다. 1년 전 더스쿠프가 이 문제를 짚었지만, 달라진 건 거의 없다. 고등학생 10명 중 3명은 여전히 주 3회 이상 고카페인 음료를 마신다. 정부가 학교 안에선 고카페인 식품 판매를 막고 있지만, 교문 밖은 여전히 규제의 사각지대다. 이대로 괜찮은 걸까.우리는 지난해 ‘수험생 젤리, 스터디 젤리… 입시지옥서 고카페인에 물드는 아이들(더스쿠프 662호·2025년 8월 13일)’이란 기사를 통해 청소년의 고카페인 노출 실태를 짚"
     },
     {
@@ -2873,7 +2891,7 @@
       "url": "https://www.thescoop.co.kr/news/articleView.html?idxno=311300",
       "publishedAt": "2026-08-19T13:24:46Z",
       "collectedAt": "2026-08-21T07:10:19Z",
-      "feedPosition": 3,
+      "feedPosition": 4,
       "summary": "여기 개인정보의 유출을 막지 못한 두 기업이 있습니다. 한 기업은 유출 규모는 많지만 2차 피해가 적습니다. 다른 한 기업은 유출 건수가 적은 반면 2차 피해가 상당합니다. 이들 기업에 과징금을 부과하는 공적 기관은 무엇을 기준으로 삼아야 할까요? 유출 규모일까요? 피해의 중대함일까요? ‘KT 과징금 논란’을 이야기할 때 우리가 반드시 던져야 할 질문입니다. 더스쿠프 視리즈 ‘KT 과징금 논쟁’ 2편입니다. ☞ 視리즈_KT 과징금 논쟁 1편 KT, ‘과징금 싸게 먹었다’ 비판 나도는 이유 2편 해외에선 ‘유출 피해의 질’ 더 따진다"
     },
     {
@@ -2914,19 +2932,6 @@
       "collectedAt": "2026-08-18T18:59:34Z",
       "feedPosition": 7,
       "summary": "Trend: more CTOs, VPEs, and Heads of Engineering are walking away from their high-status, in-demand positions. There are many reasons, mostly related to AI, and to \"founder mode\""
-    },
-    {
-      "id": "e73de6c8662cee8155082e6c",
-      "feedId": "thescoop-trace",
-      "source": "더스쿠프 추적+",
-      "category": "법률",
-      "language": "ko",
-      "title": "KT, ‘과징금 싸게 먹었다’ 비판 나도는 이유 [KT 과징금 논쟁➀]",
-      "url": "https://www.thescoop.co.kr/news/articleView.html?idxno=311283",
-      "publishedAt": "2026-08-18T13:09:48Z",
-      "collectedAt": "2026-08-20T07:09:11Z",
-      "feedPosition": 4,
-      "summary": "# 법을 위반한 기업에 부과하는 과징금은 행정 처분 이상의 의미를 갖고 있습니다. 기업을 견제하는 수단이자 사고의 재발을 방지하는 강력한 안전장치이기도 합니다. 이런 점에서 과징금을 산정하는 잣대는 뚜렷해야 합니다. 누구나 납득할 만한 원칙이 있어야 한다는 겁니다.# 최근 개인정보보호위원회(이하 개보위)가 ‘해킹발 개인정보 유출 사태’를 이유로 KT에 부과한 과징금을 두고 논란이 일고 있습니다. “사안의 중대성에 비해 과징금 액수가 턱없이 적다”는 게 골자인데, 그 밑단엔 개보위의 과징금 산정 원칙이 엄정하지 않다는 불만이 깔려 있"
     },
     {
       "id": "70ecb497a4dba4316a19d82c",
