@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-13T16:24:36Z",
+  "generatedAt": "2026-09-13T20:54:16Z",
   "categoryOrder": [
     "종합·해설",
     "자기계발",
@@ -26,8 +26,8 @@
         "자기계발"
       ],
       "itemCount": 8,
-      "lastCheckedAt": "2026-09-13T16:24:36Z",
-      "lastSuccessAt": "2026-09-13T16:24:36Z",
+      "lastCheckedAt": "2026-09-13T20:54:16Z",
+      "lastSuccessAt": "2026-09-13T20:54:16Z",
       "error": ""
     },
     {
@@ -44,8 +44,8 @@
         "사업"
       ],
       "itemCount": 6,
-      "lastCheckedAt": "2026-09-13T16:24:36Z",
-      "lastSuccessAt": "2026-09-13T16:24:36Z",
+      "lastCheckedAt": "2026-09-13T20:54:16Z",
+      "lastSuccessAt": "2026-09-13T20:54:16Z",
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
         "법률"
       ],
       "itemCount": 6,
-      "lastCheckedAt": "2026-09-13T16:24:36Z",
-      "lastSuccessAt": "2026-09-13T16:24:36Z",
+      "lastCheckedAt": "2026-09-13T20:54:16Z",
+      "lastSuccessAt": "2026-09-13T20:54:16Z",
       "error": ""
     },
     {
@@ -80,8 +80,8 @@
         "컴퓨터 사이언스"
       ],
       "itemCount": 8,
-      "lastCheckedAt": "2026-09-13T16:24:36Z",
-      "lastSuccessAt": "2026-09-13T16:24:36Z",
+      "lastCheckedAt": "2026-09-13T20:54:16Z",
+      "lastSuccessAt": "2026-09-13T20:54:16Z",
       "error": ""
     },
     {
@@ -98,8 +98,8 @@
         "양자컴퓨터"
       ],
       "itemCount": 8,
-      "lastCheckedAt": "2026-09-13T16:24:36Z",
-      "lastSuccessAt": "2026-09-13T16:24:36Z",
+      "lastCheckedAt": "2026-09-13T20:54:16Z",
+      "lastSuccessAt": "2026-09-13T20:54:16Z",
       "error": ""
     },
     {
@@ -116,8 +116,8 @@
         "제약"
       ],
       "itemCount": 8,
-      "lastCheckedAt": "2026-09-13T16:24:36Z",
-      "lastSuccessAt": "2026-09-13T16:24:36Z",
+      "lastCheckedAt": "2026-09-13T20:54:16Z",
+      "lastSuccessAt": "2026-09-13T20:54:16Z",
       "error": ""
     },
     {
@@ -135,8 +135,8 @@
         "AI"
       ],
       "itemCount": 6,
-      "lastCheckedAt": "2026-09-13T16:24:36Z",
-      "lastSuccessAt": "2026-09-13T16:24:36Z",
+      "lastCheckedAt": "2026-09-13T20:54:16Z",
+      "lastSuccessAt": "2026-09-13T20:54:16Z",
       "error": ""
     },
     {
@@ -150,11 +150,13 @@
       "priority": 72,
       "featured": false,
       "categories": [
+        "사업",
+        "컴퓨터 사이언스",
         "AI"
       ],
       "itemCount": 6,
-      "lastCheckedAt": "2026-09-13T16:24:36Z",
-      "lastSuccessAt": "2026-09-13T16:24:36Z",
+      "lastCheckedAt": "2026-09-13T20:54:16Z",
+      "lastSuccessAt": "2026-09-13T20:54:16Z",
       "error": ""
     },
     {
@@ -171,8 +173,8 @@
         "컴퓨터 사이언스"
       ],
       "itemCount": 6,
-      "lastCheckedAt": "2026-09-13T16:24:36Z",
-      "lastSuccessAt": "2026-09-13T16:24:36Z",
+      "lastCheckedAt": "2026-09-13T20:54:16Z",
+      "lastSuccessAt": "2026-09-13T20:54:16Z",
       "error": ""
     },
     {
@@ -189,8 +191,8 @@
         "AI"
       ],
       "itemCount": 8,
-      "lastCheckedAt": "2026-09-13T16:24:36Z",
-      "lastSuccessAt": "2026-09-13T16:24:36Z",
+      "lastCheckedAt": "2026-09-13T20:54:16Z",
+      "lastSuccessAt": "2026-09-13T20:54:16Z",
       "error": ""
     },
     {
@@ -207,8 +209,8 @@
         "사업"
       ],
       "itemCount": 8,
-      "lastCheckedAt": "2026-09-13T16:24:36Z",
-      "lastSuccessAt": "2026-09-13T16:24:36Z",
+      "lastCheckedAt": "2026-09-13T20:54:16Z",
+      "lastSuccessAt": "2026-09-13T20:54:16Z",
       "error": ""
     },
     {
@@ -225,8 +227,8 @@
         "컴퓨터 사이언스"
       ],
       "itemCount": 8,
-      "lastCheckedAt": "2026-09-13T16:24:36Z",
-      "lastSuccessAt": "2026-09-13T16:24:36Z",
+      "lastCheckedAt": "2026-09-13T20:54:16Z",
+      "lastSuccessAt": "2026-09-13T20:54:16Z",
       "error": ""
     },
     {
@@ -245,7 +247,7 @@
         "AI"
       ],
       "itemCount": 8,
-      "lastCheckedAt": "2026-09-13T16:24:36Z",
+      "lastCheckedAt": "2026-09-13T20:54:16Z",
       "lastSuccessAt": "2026-07-14T03:39:18Z",
       "error": "HTTP Error 405: Not Allowed"
     },
@@ -261,12 +263,11 @@
       "featured": true,
       "categories": [
         "법률",
-        "컴퓨터 사이언스",
-        "AI"
+        "컴퓨터 사이언스"
       ],
       "itemCount": 8,
-      "lastCheckedAt": "2026-09-13T16:24:36Z",
-      "lastSuccessAt": "2026-09-13T16:24:36Z",
+      "lastCheckedAt": "2026-09-13T20:54:16Z",
+      "lastSuccessAt": "2026-09-13T20:54:16Z",
       "error": ""
     },
     {
@@ -283,8 +284,8 @@
         "AI"
       ],
       "itemCount": 3,
-      "lastCheckedAt": "2026-09-13T16:24:36Z",
-      "lastSuccessAt": "2026-09-13T16:24:36Z",
+      "lastCheckedAt": "2026-09-13T20:54:16Z",
+      "lastSuccessAt": "2026-09-13T20:54:16Z",
       "error": ""
     },
     {
@@ -302,8 +303,8 @@
         "AI"
       ],
       "itemCount": 3,
-      "lastCheckedAt": "2026-09-13T16:24:36Z",
-      "lastSuccessAt": "2026-09-13T16:24:36Z",
+      "lastCheckedAt": "2026-09-13T20:54:16Z",
+      "lastSuccessAt": "2026-09-13T20:54:16Z",
       "error": ""
     },
     {
@@ -317,11 +318,12 @@
       "priority": 64,
       "featured": true,
       "categories": [
+        "사업",
         "AI"
       ],
       "itemCount": 3,
-      "lastCheckedAt": "2026-09-13T16:24:36Z",
-      "lastSuccessAt": "2026-09-13T16:24:36Z",
+      "lastCheckedAt": "2026-09-13T20:54:16Z",
+      "lastSuccessAt": "2026-09-13T20:54:16Z",
       "error": ""
     },
     {
@@ -335,12 +337,11 @@
       "priority": 66,
       "featured": true,
       "categories": [
-        "컴퓨터 사이언스",
         "AI"
       ],
       "itemCount": 3,
-      "lastCheckedAt": "2026-09-13T16:24:36Z",
-      "lastSuccessAt": "2026-09-13T16:24:36Z",
+      "lastCheckedAt": "2026-09-13T20:54:16Z",
+      "lastSuccessAt": "2026-09-13T20:54:16Z",
       "error": ""
     },
     {
@@ -358,8 +359,8 @@
         "컴퓨터 사이언스"
       ],
       "itemCount": 3,
-      "lastCheckedAt": "2026-09-13T16:24:36Z",
-      "lastSuccessAt": "2026-09-13T16:24:36Z",
+      "lastCheckedAt": "2026-09-13T20:54:16Z",
+      "lastSuccessAt": "2026-09-13T20:54:16Z",
       "error": ""
     },
     {
@@ -377,8 +378,8 @@
         "법률"
       ],
       "itemCount": 3,
-      "lastCheckedAt": "2026-09-13T16:24:36Z",
-      "lastSuccessAt": "2026-09-13T16:24:36Z",
+      "lastCheckedAt": "2026-09-13T20:54:16Z",
+      "lastSuccessAt": "2026-09-13T20:54:16Z",
       "error": ""
     },
     {
@@ -396,8 +397,8 @@
         "사업"
       ],
       "itemCount": 5,
-      "lastCheckedAt": "2026-09-13T16:24:36Z",
-      "lastSuccessAt": "2026-09-13T16:24:36Z",
+      "lastCheckedAt": "2026-09-13T20:54:16Z",
+      "lastSuccessAt": "2026-09-13T20:54:16Z",
       "error": ""
     },
     {
@@ -415,8 +416,8 @@
         "사업"
       ],
       "itemCount": 5,
-      "lastCheckedAt": "2026-09-13T16:24:36Z",
-      "lastSuccessAt": "2026-09-13T16:24:36Z",
+      "lastCheckedAt": "2026-09-13T20:54:16Z",
+      "lastSuccessAt": "2026-09-13T20:54:16Z",
       "error": ""
     },
     {
@@ -434,8 +435,8 @@
         "제약"
       ],
       "itemCount": 4,
-      "lastCheckedAt": "2026-09-13T16:24:36Z",
-      "lastSuccessAt": "2026-09-13T16:24:36Z",
+      "lastCheckedAt": "2026-09-13T20:54:16Z",
+      "lastSuccessAt": "2026-09-13T20:54:16Z",
       "error": ""
     },
     {
@@ -452,8 +453,8 @@
         "사업"
       ],
       "itemCount": 6,
-      "lastCheckedAt": "2026-09-13T16:24:36Z",
-      "lastSuccessAt": "2026-09-13T16:24:36Z",
+      "lastCheckedAt": "2026-09-13T20:54:16Z",
+      "lastSuccessAt": "2026-09-13T20:54:16Z",
       "error": ""
     },
     {
@@ -472,8 +473,8 @@
         "AI"
       ],
       "itemCount": 5,
-      "lastCheckedAt": "2026-09-13T16:24:36Z",
-      "lastSuccessAt": "2026-09-13T16:24:36Z",
+      "lastCheckedAt": "2026-09-13T20:54:16Z",
+      "lastSuccessAt": "2026-09-13T20:54:16Z",
       "error": ""
     },
     {
@@ -491,8 +492,8 @@
         "AI"
       ],
       "itemCount": 4,
-      "lastCheckedAt": "2026-09-13T16:24:36Z",
-      "lastSuccessAt": "2026-09-13T16:24:36Z",
+      "lastCheckedAt": "2026-09-13T20:54:16Z",
+      "lastSuccessAt": "2026-09-13T20:54:16Z",
       "error": ""
     },
     {
@@ -511,8 +512,8 @@
         "AI"
       ],
       "itemCount": 5,
-      "lastCheckedAt": "2026-09-13T16:24:36Z",
-      "lastSuccessAt": "2026-09-13T16:24:36Z",
+      "lastCheckedAt": "2026-09-13T20:54:16Z",
+      "lastSuccessAt": "2026-09-13T20:54:16Z",
       "error": ""
     },
     {
@@ -530,8 +531,8 @@
         "AI"
       ],
       "itemCount": 4,
-      "lastCheckedAt": "2026-09-13T16:24:36Z",
-      "lastSuccessAt": "2026-09-13T16:24:36Z",
+      "lastCheckedAt": "2026-09-13T20:54:16Z",
+      "lastSuccessAt": "2026-09-13T20:54:16Z",
       "error": ""
     },
     {
@@ -548,8 +549,8 @@
         "AI"
       ],
       "itemCount": 4,
-      "lastCheckedAt": "2026-09-13T16:24:36Z",
-      "lastSuccessAt": "2026-09-13T16:24:36Z",
+      "lastCheckedAt": "2026-09-13T20:54:16Z",
+      "lastSuccessAt": "2026-09-13T20:54:16Z",
       "error": ""
     },
     {
@@ -566,8 +567,8 @@
         "AI"
       ],
       "itemCount": 4,
-      "lastCheckedAt": "2026-09-13T16:24:36Z",
-      "lastSuccessAt": "2026-09-13T16:24:36Z",
+      "lastCheckedAt": "2026-09-13T20:54:16Z",
+      "lastSuccessAt": "2026-09-13T20:54:16Z",
       "error": ""
     },
     {
@@ -584,7 +585,7 @@
         "컴퓨터 사이언스"
       ],
       "itemCount": 5,
-      "lastCheckedAt": "2026-09-13T16:24:36Z",
+      "lastCheckedAt": "2026-09-13T20:54:16Z",
       "lastSuccessAt": "2026-08-20T01:54:08Z",
       "error": "syntax error: line 1, column 0"
     },
@@ -604,8 +605,8 @@
         "제약"
       ],
       "itemCount": 4,
-      "lastCheckedAt": "2026-09-13T16:24:36Z",
-      "lastSuccessAt": "2026-09-13T16:24:36Z",
+      "lastCheckedAt": "2026-09-13T20:54:16Z",
+      "lastSuccessAt": "2026-09-13T20:54:16Z",
       "error": ""
     },
     {
@@ -622,8 +623,8 @@
         "제약"
       ],
       "itemCount": 4,
-      "lastCheckedAt": "2026-09-13T16:24:36Z",
-      "lastSuccessAt": "2026-09-13T16:24:36Z",
+      "lastCheckedAt": "2026-09-13T20:54:16Z",
+      "lastSuccessAt": "2026-09-13T20:54:16Z",
       "error": ""
     },
     {
@@ -640,8 +641,8 @@
         "사업"
       ],
       "itemCount": 5,
-      "lastCheckedAt": "2026-09-13T16:24:36Z",
-      "lastSuccessAt": "2026-09-13T16:24:36Z",
+      "lastCheckedAt": "2026-09-13T20:54:16Z",
+      "lastSuccessAt": "2026-09-13T20:54:16Z",
       "error": ""
     },
     {
@@ -658,8 +659,8 @@
         "사업"
       ],
       "itemCount": 5,
-      "lastCheckedAt": "2026-09-13T16:24:36Z",
-      "lastSuccessAt": "2026-09-13T16:24:36Z",
+      "lastCheckedAt": "2026-09-13T20:54:16Z",
+      "lastSuccessAt": "2026-09-13T20:54:16Z",
       "error": ""
     }
   ],
@@ -704,6 +705,45 @@
       "summary": ""
     },
     {
+      "id": "17a018a255ddd7517f0756e2",
+      "feedId": "geeknews",
+      "source": "GeekNews",
+      "category": "컴퓨터 사이언스",
+      "language": "ko",
+      "title": "유럽의 ‘덜 쓰기’는 인정받는 것보다 더 큰 역할을 하고 있음",
+      "url": "https://news.hada.io/topic?id=33648",
+      "publishedAt": "2026-09-13T20:52:19Z",
+      "collectedAt": "2026-09-13T20:54:16Z",
+      "feedPosition": 0,
+      "summary": "EU는 생산액 1유로당 에너지 사용량을 1995년보다 약 44% 줄였으며 , 오랜 효율 개선과 에너지 전환이 호르무즈 해협 봉쇄 충격을 견디는 기반이 됨 단열, 히트펌프, 자전거 인프라는 연료 수입과 가계 지출을 지속적으로 줄이지만, GDP 중심 평가 는 이런 개선을 소..."
+    },
+    {
+      "id": "60efd990a4a07697205adc73",
+      "feedId": "geeknews",
+      "source": "GeekNews",
+      "category": "컴퓨터 사이언스",
+      "language": "ko",
+      "title": "미 세관 감독관, 국토안보부 PC에서 하드웨어를 훔친 혐의로 적발",
+      "url": "https://news.hada.io/topic?id=33647",
+      "publishedAt": "2026-09-13T20:49:19Z",
+      "collectedAt": "2026-09-13T20:54:16Z",
+      "feedPosition": 1,
+      "summary": "FBI가 메인주 세관국경보호국 감독관 Terry “Jiajia” Liu 를 정부 재산 절도 및 훼손 혐의로 체포하고 기소함 혐의 대상은 국경 시설 3곳의 국토안보부 컴퓨터 최소 46대 로, CPU와 메모리, 하드 드라이브를 빼내 저성능 부품으로 교체 한 것으로 ..."
+    },
+    {
+      "id": "de715a1b4b50295abb66273a",
+      "feedId": "geeknews",
+      "source": "GeekNews",
+      "category": "컴퓨터 사이언스",
+      "language": "ko",
+      "title": "그네를 타던 아이를 체포하는 데 사용된 Flock 카메라",
+      "url": "https://news.hada.io/topic?id=33646",
+      "publishedAt": "2026-09-13T20:46:19Z",
+      "collectedAt": "2026-09-13T20:54:16Z",
+      "feedPosition": 2,
+      "summary": "미국 놀이터와 물놀이장의 Flock 감시 카메라 확산이 아이들의 일상적인 놀이를 처벌과 통제 대상으로 만든다는 비판이 담긴 영상임 Springdale에서는 그네를 타다 파손 사고에 연루된 10세와 12세 자매가 형사 혐의로 법정에 섰으나 , 고의성이 없어 책임이 인정되..."
+    },
+    {
       "id": "865526f3d5b339e9d7dff9f7",
       "feedId": "digitaltoday",
       "source": "디지털투데이",
@@ -717,6 +757,175 @@
       "summary": ""
     },
     {
+      "id": "381864526feb24a10fe34aa2",
+      "feedId": "chosun-economy",
+      "source": "조선일보",
+      "category": "사업",
+      "language": "ko",
+      "title": "한국 기업이 개발한 고정밀 골프 거리측정기, 10만원대 조선몰 단독 특가",
+      "url": "https://www.chosun.com/economy/startup_story/2026/04/06/YKGO34KXZVDMZLU7UFDJI5G234",
+      "publishedAt": "2026-09-13T20:25:00Z",
+      "collectedAt": "2026-09-13T20:54:16Z",
+      "feedPosition": 1,
+      "summary": ""
+    },
+    {
+      "id": "d927c9155678b8de3804ff0e",
+      "feedId": "joongang-useful",
+      "source": "중앙일보",
+      "category": "AI",
+      "language": "ko",
+      "title": "“AI시대, 그래도 땅이 권력”…美정치학자가 본 집값 급등 전말 - 중앙일보",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1DZE5palZGSnVSYnpfVTVmNHhYMWlISUZtZ0ppYlJ3MjlUZ0Z0MVFZcEEwTTJyeWFMSHlEaXkwWHR6OERVZHhndlR5M1lqSE9LUnk0TzlB?oc=5",
+      "publishedAt": "2026-09-13T20:20:33Z",
+      "collectedAt": "2026-09-13T20:54:16Z",
+      "feedPosition": 92,
+      "summary": ""
+    },
+    {
+      "id": "24a929b2fbdfff0bea52a3e9",
+      "feedId": "geeknews",
+      "source": "GeekNews",
+      "category": "컴퓨터 사이언스",
+      "language": "ko",
+      "title": "Base84도 파일명에 쓰일 만함",
+      "url": "https://news.hada.io/topic?id=33645",
+      "publishedAt": "2026-09-13T20:08:19Z",
+      "collectedAt": "2026-09-13T20:54:16Z",
+      "feedPosition": 3,
+      "summary": "TurboCrypt 가 Windows 지원을 위해 암호화된 파일명 인코딩을 Base91에서 Base84 로 전환함 Base84는 공백을 제외한 출력 가능한 ASCII 문자에서 Windows 금지 문자와 마침표를 뺀 84개 문자 를 사용해 Linux, macOS, Windows 파일명과 호환됨 ..."
+    },
+    {
+      "id": "595ff4efa3e197c32ba27ff4",
+      "feedId": "geeknews",
+      "source": "GeekNews",
+      "category": "컴퓨터 사이언스",
+      "language": "ko",
+      "title": "프로그래밍 언어의 몇 가지 좋은 아이디어",
+      "url": "https://news.hada.io/topic?id=33644",
+      "publishedAt": "2026-09-13T20:05:19Z",
+      "collectedAt": "2026-09-13T20:54:16Z",
+      "feedPosition": 4,
+      "summary": "흐름 타이핑 , 차용 검사 , 계약 프로그래밍은 각각 타입 추론, 메모리 접근 규칙, 불변식 명시를 통해 프로그램을 다루는 유용한 언어 기능임 Crystal의 흐름 타이핑 은 코드 위치에 따라 변수의 타입을 추론하고, 여러 타입이 가능하면 유니온 타입..."
+    },
+    {
+      "id": "8078c0e8854b8d12efb05fbd",
+      "feedId": "hani-useful",
+      "source": "한겨레",
+      "category": "AI",
+      "language": "ko",
+      "title": "손끝 진동까지 계산해준다…AI 코치의 ‘메달 과외’ [아하! 아시안게임] - 한겨레",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFA4bGNlSlVKZVoyQnI1c01LNDhyemNaZDNjNllSbjhRM3pKTVl6YTBVV0JqLWZ4QkJGdENESGoyRk52aU5hRmtZMjVobVFzcmt2OVRkalUzbDdTM0pVQkpjRUVnMHJveng5OEtiUmViTFhBYmhmRlJJ?oc=5",
+      "publishedAt": "2026-09-13T20:00:00Z",
+      "collectedAt": "2026-09-13T20:54:16Z",
+      "feedPosition": 1,
+      "summary": ""
+    },
+    {
+      "id": "e99143d66d042a1f9825a5a1",
+      "feedId": "geeknews",
+      "source": "GeekNews",
+      "category": "법률",
+      "language": "ko",
+      "title": "David Sacks: OpenAI와 Anthropic은 최전선 모델의 발전 속도를 조절하는 데 규제가 필요하지 않다",
+      "url": "https://news.hada.io/topic?id=33643",
+      "publishedAt": "2026-09-13T19:49:43Z",
+      "collectedAt": "2026-09-13T20:54:16Z",
+      "feedPosition": 5,
+      "summary": "Dario가 최전선의 발전 속도를 조절 해야 한다고 썼고 Sam도 동의한 데 대해, David Sacks는 “그렇게 하라”고 답함 Sacks는 자신의 반응이 사람들에게 의외일 수 있음 을 인정함 속도 조절을 요구한 두 사람에게 “ 당신들이 바로 최전선 ..."
+    },
+    {
+      "id": "f2f2176b93c8c1e3273f0493",
+      "feedId": "geeknews",
+      "source": "GeekNews",
+      "category": "컴퓨터 사이언스",
+      "language": "ko",
+      "title": "자동차가 수집해 제3자에게 판매하는 데이터",
+      "url": "https://news.hada.io/topic?id=33642",
+      "publishedAt": "2026-09-13T19:46:43Z",
+      "collectedAt": "2026-09-13T20:54:16Z",
+      "feedPosition": 6,
+      "summary": "자동차 제조사들은 운전 행동 데이터 를 수집해 외부 업체와 공유하며, GM은 과속 빈도와 야간 운전 여부 등을 보험업계와 거래하는 데이터 중개업체에 판매해 왔음 미국 FTC는 GM이 소비자 신용정보 보고기관과 제3자 데이터 중개업체에 5년간 고객 데이터를 판매하지 못하도..."
+    },
+    {
+      "id": "bde63fe605bfbf3343f72258",
+      "feedId": "geeknews",
+      "source": "GeekNews",
+      "category": "컴퓨터 사이언스",
+      "language": "ko",
+      "title": "나는 Tesla, Inc.로부터 사이버 공격을 받고 있다",
+      "url": "https://news.hada.io/topic?id=33640",
+      "publishedAt": "2026-09-13T19:40:43Z",
+      "collectedAt": "2026-09-13T20:54:16Z",
+      "feedPosition": 8,
+      "summary": "NTP Pool 자원봉사 서버에 Tesla 호스트명을 겨냥한 취약점 스캔 이 지속 유입됐으며, 8월 21일 이후 Assetnote 호스트에서 온 요청이 5만 건을 넘음 pool-ntp.tesla.com 이 pool.ntp.org 의 CNAME 으로 설정돼 있어, 스캐너가 외부 자원봉사..."
+    },
+    {
+      "id": "b9a043b1a5260907252180df",
+      "feedId": "donga-useful",
+      "source": "동아일보",
+      "category": "AI",
+      "language": "ko",
+      "title": "[초대석]“AI 시대엔 어른도 ‘과학 문해력’ 필요” - donga.com",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5kWTQxUnhNQk1Yb0NaT25CNFRHVTRySTk3bndoY0hpdUtzMUw3MnhHNlVCRlNRa1FrSnhPVkFtS2VyUVRzYk03VGRLalBGOEVmWXJsYjgwQzNhY3MzcVNWTnRDMW92YTFXLUlsYzlRcUJvblJtV2fSAWZBVV95cUxPeDAzQkptalRSdmhOWU12OUNPX1RBb2NpUkVTTFhRZmNtTTU2QUgzcUpob2lkRTRLX28xYjMwaWZPOHdiOGJmVmRfN3JRc25neWF2Wm5XQW16OGtvdjhxN3o5aU9NUkE?oc=5",
+      "publishedAt": "2026-09-13T19:30:00Z",
+      "collectedAt": "2026-09-13T20:54:16Z",
+      "feedPosition": 2,
+      "summary": ""
+    },
+    {
+      "id": "19c46f126e4bc7621e4f75e6",
+      "feedId": "donga-useful",
+      "source": "동아일보",
+      "category": "AI",
+      "language": "ko",
+      "title": "필즈상 25인 “AI가 난제 해결, 수학 연구에 해 끼쳐” - donga.com",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9rc3MwYjRKR1VZSHZSczBxeDhCVnJGY2p0NldfTklqQnl2X2d3UzF4WWVlcEpsMi0tcHlBQmtpUUkzUjh2MmJXS28tRDJVWmxfSTZ6bzNIbElzeEZFOEYzMW0xZzNLNTM3S3N1a2hkX1FYcVNKV3fSAWZBVV95cUxPeHJJQXp3N2ZEQ2NNNnlsOGRuQzc2Q2dPZE5XalBackg4XzJuMU1NUDN0LTlBbXBNNjZsYzhaSEszZUJpVVV0UXVLSm4tQk9IdTJTVGRBNFdyMHVHTUN1QXNuZjNtSFE?oc=5",
+      "publishedAt": "2026-09-13T19:30:00Z",
+      "collectedAt": "2026-09-13T20:54:16Z",
+      "feedPosition": 3,
+      "summary": ""
+    },
+    {
+      "id": "b9f77e02c6c42bbab03f1468",
+      "feedId": "donga-useful",
+      "source": "동아일보",
+      "category": "사업",
+      "language": "ko",
+      "title": "정부사업 탈락에도 먼저 준 무주… 결국 기본소득 따냈다 - donga.com",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9iaEQtMC1lRHAtSlNuemM3amdxQV8zR3VvZWpZUFR3M0ZiZzRvVktKdXFNMFZ2V2JLZ2hmM080bzhydnZhZllMVndGdTRCbDhzOEVRX0duN3Q5Sk01S2QzbUl1Z1hhVTJGOW5iQ3V0OTdJekMxMGfSAWZBVV95cUxPMmNxblRMZkxFMUk1clBuNUY2VUhLU3NlT05FX0V1YUNqdjdCS0VPaWxQZzhEZkczTjJuUTdpRGVqZ3NuU2VJNmQwd0lIYWhmZ3VHZ0VqVzd3cTAtOC1EaWhpU3FLZlE?oc=5",
+      "publishedAt": "2026-09-13T19:30:00Z",
+      "collectedAt": "2026-09-13T20:54:16Z",
+      "feedPosition": 4,
+      "summary": ""
+    },
+    {
+      "id": "6967d9cd802289c7034f551c",
+      "feedId": "etnews-ai",
+      "source": "전자신문 AI",
+      "category": "사업",
+      "language": "ko",
+      "title": "[민선 9기, 새 4년을 묻다]이기형 김포시장, 97개 공약 재정비…첨단산업 육성·교통 동시 확충",
+      "url": "https://www.etnews.com/20260913000088",
+      "publishedAt": "2026-09-13T19:00:00Z",
+      "collectedAt": "2026-09-13T20:54:16Z",
+      "feedPosition": 0,
+      "summary": "시민들은 행정이 삶을 더 세심하게 살피고, 약속한 일을 제대로 실행하면서 그 과정을 투명하게 보여주기를 요구했다고 생각한다. 민선 9기가 먼저 바꿀 것은 행정의 방향과 태도다. 교통이 불편한 곳에는 수요응답형 교통을 확대하고, 통학 문제와 과밀학급을 챙기겠다. 지역화폐와 출산·돌봄 지원처럼 가계에 직접 도움이 되는 정책도 우선 추진할 계획이다. 전임 시정의 정책도 시민에게 필요하면 이어가겠다. 5호선과 인천2호선 연장, GTX-D 등 광역교통망"
+    },
+    {
+      "id": "d01692bd14da325cdcc5d46e",
+      "feedId": "etnews-ai",
+      "source": "전자신문 AI",
+      "category": "컴퓨터 사이언스",
+      "language": "ko",
+      "title": "[민선 9기, 새 4년을 묻다]이상일 용인시장 “반도체·교통망 속도…150만 도시 기반 구축”",
+      "url": "https://www.etnews.com/20260914000001",
+      "publishedAt": "2026-09-13T19:00:00Z",
+      "collectedAt": "2026-09-13T20:54:16Z",
+      "feedPosition": 1,
+      "summary": "시 승격 30년 만에 처음으로 시정의 연속성을 살릴 수 있게 됐다. 지난 4년간 용인을 세계적인 반도체 중심도시로 만들고, 현장에서 시민의 어려움을 해결하려고 노력한 점을 평가해 주셨다고 생각한다. 시민이 맡긴 기회에 일과 성과로 보답해야 한다는 무거운 책임감을 느낀다. 민선 8기에는 용인의 미래를 위한 주요 계획을 확정하는 데 집중했다. 민선 9기에는 이를 직접 실행하거나 중앙정부와 경기도 계획으로 확정하는 데 주력하려고 한다. '용인 르네상"
+    },
+    {
       "id": "eceeb33b5f7f66e5faeed6cc",
       "feedId": "bloter",
       "source": "블로터",
@@ -727,6 +936,19 @@
       "publishedAt": "2026-09-13T19:00:00Z",
       "collectedAt": "2026-09-13T11:58:51Z",
       "feedPosition": 1,
+      "summary": ""
+    },
+    {
+      "id": "04999206b859806d4ead27aa",
+      "feedId": "chosun-economy",
+      "source": "조선일보",
+      "category": "AI",
+      "language": "ko",
+      "title": "“AI가 인류 죽일 확률 10%”… 통제 불능 AI 앞 인류는 침팬지 신세",
+      "url": "https://www.chosun.com/economy/money/2026/09/14/NSXHZ5D235C3HBMCIOQDXTPDXE",
+      "publishedAt": "2026-09-13T18:00:00Z",
+      "collectedAt": "2026-09-13T20:54:16Z",
+      "feedPosition": 9,
       "summary": ""
     },
     {
@@ -795,32 +1017,6 @@
       "summary": ""
     },
     {
-      "id": "e259ca303ae06f9cd8ae3c04",
-      "feedId": "geeknews",
-      "source": "GeekNews",
-      "category": "법률",
-      "language": "ko",
-      "title": "누구에게 정렬되어 있는가?",
-      "url": "https://news.hada.io/topic?id=33629",
-      "publishedAt": "2026-09-13T15:39:48Z",
-      "collectedAt": "2026-09-13T16:24:36Z",
-      "feedPosition": 0,
-      "summary": "에이전트 개발자가 전문성을 갖춘 영역과 달리, 요구사항을 제대로 명시하거나 결과의 정확성과 위험을 판단할 수 없는 영역에서는 모델의 사전 성향(priors) 에 크게 의존하게 됨 소프트웨어 생성에서 드러나는 불만족스러운 기본 동작은 복식부기, 금융, 법률, 운영처럼 직접 전문..."
-    },
-    {
-      "id": "d81c1f5ee9ec73fb0df2f082",
-      "feedId": "geeknews",
-      "source": "GeekNews",
-      "category": "컴퓨터 사이언스",
-      "language": "ko",
-      "title": "Flock 직원, 공공장소 카메라 설치를 촬영하던 기자를 경찰에 신고",
-      "url": "https://news.hada.io/topic?id=33628",
-      "publishedAt": "2026-09-13T15:36:47Z",
-      "collectedAt": "2026-09-13T16:24:36Z",
-      "feedPosition": 1,
-      "summary": "Flock Safety 설치기사가 공공도로에서 카메라 설치를 촬영하고 다음 작업 장소를 확인하려 뒤따른 기자를 911에 신고 해 경찰이 차량을 정차시킴 현장 경찰은 기자가 법을 어기거나 스토킹으로 보일 만큼 가까이 따라가지 않았다고 판단했으며, 기자는 약 17분 뒤 ..."
-    },
-    {
       "id": "d9e27dde94fc931267aca7e1",
       "feedId": "it-chosun",
       "source": "IT조선",
@@ -843,33 +1039,7 @@
       "url": "https://www.chosun.com/economy/tech_it/2026/09/14/3NUC4CUI4RAH7ITYHEPKECSDUM",
       "publishedAt": "2026-09-13T15:34:00Z",
       "collectedAt": "2026-09-13T16:24:36Z",
-      "feedPosition": 11,
-      "summary": ""
-    },
-    {
-      "id": "0573a740ccd809cfaf869b33",
-      "feedId": "chosun-economy",
-      "source": "조선일보",
-      "category": "AI",
-      "language": "ko",
-      "title": "“제조 AI 선점하기 위해서 데이터 모아 스케일 키워야”",
-      "url": "https://www.chosun.com/economy/industry-company/2026/09/14/HKHSNTMIFVESVEFF6KZTKO2SS4",
-      "publishedAt": "2026-09-13T15:33:00Z",
-      "collectedAt": "2026-09-13T16:24:36Z",
-      "feedPosition": 13,
-      "summary": ""
-    },
-    {
-      "id": "f1855aa2029f0c20cabebb92",
-      "feedId": "chosun-economy",
-      "source": "조선일보",
-      "category": "사업",
-      "language": "ko",
-      "title": "주택금융公, 전세사기 피해 3898명 채무 조정",
-      "url": "https://www.chosun.com/economy/economy_general/2026/09/14/P4JNMVQWJBCMFI6H7LAJEY2N2Q",
-      "publishedAt": "2026-09-13T15:32:00Z",
-      "collectedAt": "2026-09-13T16:24:36Z",
-      "feedPosition": 19,
+      "feedPosition": 22,
       "summary": ""
     },
     {
@@ -886,58 +1056,6 @@
       "summary": ""
     },
     {
-      "id": "18734a11be3014e89c46e00d",
-      "feedId": "donga-useful",
-      "source": "동아일보",
-      "category": "AI",
-      "language": "ko",
-      "title": "최태원 “AI, 버블 우려 씻으려면 이익 창출해 재투자할 수 있어야” - 동아일보",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1lOEl5Ynk1YU1TbkdNVm9QdGhOSUM5UXlGcHY2M29GYURiR2ttaWpUeUlsaGhkZFFCYTBLbUxxTm5raThSSWhGelVuNDBZWjNXRzQ0OXpSUUZNeno4cm1QMmxnc0RjanNWNWw1V0duV3JyLV80enfSAWZBVV95cUxNYjhlX1RqZWVpNFRFZnFBN1JkcFNleG55NU1rdGs1TGVZWmJMN25JVk15dDNZSjBBQTR5bG93LUpDa0IyRTU3dkVma2drMjZXc3hOMWZ5RTFublZKQmhRYUg3X2tNNXc?oc=5",
-      "publishedAt": "2026-09-13T15:30:00Z",
-      "collectedAt": "2026-09-13T16:24:36Z",
-      "feedPosition": 2,
-      "summary": ""
-    },
-    {
-      "id": "18fba9dae5223a1fe4d462fa",
-      "feedId": "donga-useful",
-      "source": "동아일보",
-      "category": "AI",
-      "language": "ko",
-      "title": "137개 과제 100% 성공… 韓 AI, 구글-MS 제쳤다 - 동아일보",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE90OUxaLVpUemVzbWRLVnN3b1NBRVYtM2hoTGduOXQwQ2FpUzdrWUljSElneHR2bVlyLUlIS0tiemRYTnVodkQwdFA3V20tZGpnMTBpMGJXTHhrU1YtNTc4N0NPRHo0YmYyQ1E0YkJ4ONIBZkFVX3lxTE5OVTlrS1FsRHAyM1pIUk04SzIzOVFVNHB4Z2xIdEJCT25ZTXctV1ROVnZ2LXZuT1BPMk51T2tSSHRyV0otY2RiSlNVVHMxN3FmTlZiam03VnZCMjEtWTl5b2dJd25oUQ?oc=5",
-      "publishedAt": "2026-09-13T15:30:00Z",
-      "collectedAt": "2026-09-13T16:24:36Z",
-      "feedPosition": 5,
-      "summary": ""
-    },
-    {
-      "id": "108394cb4f53ad60c8b7a4c7",
-      "feedId": "donga-useful",
-      "source": "동아일보",
-      "category": "AI",
-      "language": "ko",
-      "title": "[DBR]소비자 선호 광고 학습한 AI, 기발함은 부족했다 - 동아일보",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9OMzVoU3NkTU16WFp2ZzhFNEU4Y2ZpOUtSMnBjS1hkWEZrN0VWeFJCZ0VTejJwTVZRRFVkYzVVUmRRZ1FnZ0c1bDhzTmdBSlNfYXAyclpaeEx0S3BXY2FYNG1CUmd0LU8xRXFYUVRraGoyelRmYVHSAWZBVV95cUxORHBndnVpZXlyV1oxUUxuNmVWYTk2UmdTOUhkYW1tZHhUczVWX1RYUXNYQ2E1TkpPYWJmc08xcl82MjF4UUZpT0pJMEl1NXpaNUtrOVdUVDBmTEE0N2FRUXA3amJmU1E?oc=5",
-      "publishedAt": "2026-09-13T15:30:00Z",
-      "collectedAt": "2026-09-13T16:24:36Z",
-      "feedPosition": 6,
-      "summary": ""
-    },
-    {
-      "id": "30643baf0915ee000be461b5",
-      "feedId": "geeknews",
-      "source": "GeekNews",
-      "category": "컴퓨터 사이언스",
-      "language": "ko",
-      "title": "프론트엔드 상태 관리의 네 가지 난제, Bunja로 풀어보기",
-      "url": "https://news.hada.io/topic?id=33627",
-      "publishedAt": "2026-09-13T15:05:44Z",
-      "collectedAt": "2026-09-13T16:24:36Z",
-      "feedPosition": 2,
-      "summary": "프론트엔드 상태 관리에는 잘 풀기 어려운 네 가지 문제가 있음 상태의 공유 범위를 바꾸기 어려움 공유 상태의 수명을 표현하기 어려움 파생 상태를 효율적으로 공유하기 어려움 상태를 기능 단위로 응집시키기 어려움 이건 사실 코드에서 상태를 컴포넌트 트"
-    },
-    {
       "id": "34763988c8ecd1dd75110ffc",
       "feedId": "etnews-ai",
       "source": "전자신문 AI",
@@ -947,34 +1065,8 @@
       "url": "https://www.etnews.com/20260911000293",
       "publishedAt": "2026-09-13T14:59:00Z",
       "collectedAt": "2026-09-13T16:24:36Z",
-      "feedPosition": 0,
+      "feedPosition": 2,
       "summary": "전남 신안 자은도 선착장에서 30~40분 정도 배를 타고 나가자 바다 한 가운데 우뚝 솟은 기둥들이 눈에 들어오기 시작했다. 먼 시야에서 들어온 첫 모습은 바람개비 같았지만 가까이 다가갈수록 드러난 풍력발전기의 실제 모습은 웅장함 그 자체였다. 발전 단지를 운영하고 있는 전남해상풍력 김진철 대표는 “블레이드(날개) 길이만 97m”라며 “터빈 높이와 블레이드를 합치면 남산타워에 맞먹는다”고 말했다. 지근 거리서 한 눈에 들어온 바다 위 거대 타워"
-    },
-    {
-      "id": "bc94d6495557e61287ab657f",
-      "feedId": "geeknews",
-      "source": "GeekNews",
-      "category": "AI",
-      "language": "ko",
-      "title": "수학 그 이후",
-      "url": "https://news.hada.io/topic?id=33625",
-      "publishedAt": "2026-09-13T14:34:56Z",
-      "collectedAt": "2026-09-13T16:24:36Z",
-      "feedPosition": 3,
-      "summary": "AI가 난제의 답을 내놓더라도 수학이 끝나는 것은 아님 . 진정한 해결에는 사람이 이해하고 활용할 수 있는 증명이 필요하며, 수학의 목적도 문제 풀이에 국한되지 않음 OpenAI는 Navier–Stokes 존재성과 매끄러움 문제 의 AI 생성 해법을 발표했지만, 그 결과가 수..."
-    },
-    {
-      "id": "4dffa8a483b9103d083f1a9d",
-      "feedId": "geeknews",
-      "source": "GeekNews",
-      "category": "AI",
-      "language": "ko",
-      "title": "P(doom)",
-      "url": "https://news.hada.io/topic?id=33623",
-      "publishedAt": "2026-09-13T13:34:07Z",
-      "collectedAt": "2026-09-13T16:24:36Z",
-      "feedPosition": 5,
-      "summary": "AI의 주된 위험은 인류 멸종 보다 비공개 모델 기업에 권력과 경제적 이익이 집중되고, 나머지 사회가 비용과 피해를 떠안는 데 있음 Anthropic과 OpenAI 중심의 개발 속도 조절 은 공공 데이터로 성장한 소수 미국 기업에 기술의 사용 주체와 방식을 결정할 권한까지..."
     },
     {
       "id": "f5b6560eb0e99cbfdcde9bc2",
@@ -988,19 +1080,6 @@
       "collectedAt": "2026-09-13T04:54:57Z",
       "feedPosition": 12,
       "summary": ""
-    },
-    {
-      "id": "75d28d024355cbea3b6b0c5f",
-      "feedId": "geeknews",
-      "source": "GeekNews",
-      "category": "AI",
-      "language": "ko",
-      "title": "PuzzleMask: 평범한 문장을 잠재적 AI 공격 수단으로 오용하기",
-      "url": "https://news.hada.io/topic?id=33622",
-      "publishedAt": "2026-09-13T13:03:02Z",
-      "collectedAt": "2026-09-13T16:24:36Z",
-      "feedPosition": 6,
-      "summary": "일반적인 줄글 속에 악성 명령을 숨겨 사전 검증망을 무력화하고 고성능 인공지능을 조종하는 보안 취약점이 드러났다. 전문 번역 연구진은 인공지능 정책 검사를 무력화하는 프롬프트 조작 기술을 공개했다. 이 기법은 특수 기호 없이 순수한 영어 일반 문장만 활용한다"
     },
     {
       "id": "3092f12f5b455dd94648918d",
@@ -1029,19 +1108,6 @@
       "summary": ""
     },
     {
-      "id": "e92a02827104b7dae52c7bf2",
-      "feedId": "geeknews",
-      "source": "GeekNews",
-      "category": "컴퓨터 사이언스",
-      "language": "ko",
-      "title": "macOS 패키지 관리자 Homebrew v7",
-      "url": "https://news.hada.io/topic?id=33618",
-      "publishedAt": "2026-09-13T12:37:34Z",
-      "collectedAt": "2026-09-13T11:58:51Z",
-      "feedPosition": 10,
-      "summary": "macOS 15 Sequoia, 26 Tahoe, 27 Golden Gate 까지만 Tier 1 지원 대상 Intel Mac은 Tier 3로 강등, 2027년 9월 이후 지원 중단 예정 brew install homebrew-app : 공식 GUI 앱 출시 brew vulns : npm audit과 비슷한 취약점 검사 기능 추가..."
-    },
-    {
       "id": "b17551e22bfc213ee2290916",
       "feedId": "zdnet-korea",
       "source": "ZDNet Korea",
@@ -1051,7 +1117,7 @@
       "url": "https://zdnet.co.kr/view?no=20260913210555",
       "publishedAt": "2026-09-13T12:06:09Z",
       "collectedAt": "2026-09-13T16:24:36Z",
-      "feedPosition": 1,
+      "feedPosition": 5,
       "summary": ""
     },
     {
@@ -1079,19 +1145,6 @@
       "collectedAt": "2026-09-13T04:54:57Z",
       "feedPosition": 5,
       "summary": ""
-    },
-    {
-      "id": "f982f476e8e91e993c0f21db",
-      "feedId": "geeknews",
-      "source": "GeekNews",
-      "category": "컴퓨터 사이언스",
-      "language": "ko",
-      "title": "Interim 컴퓨터 박물관",
-      "url": "https://news.hada.io/topic?id=33621",
-      "publishedAt": "2026-09-13T11:36:57Z",
-      "collectedAt": "2026-09-13T11:58:51Z",
-      "feedPosition": 7,
-      "summary": "Interim Computer Museum(ICM) 은 빈티지 하드웨어에 현대적 개선을 더한 상호작용형 전시로 컴퓨팅 역사를 보존하고 공유함 전시는 방문자가 직접 체험 하며 컴퓨팅 기술의 발전 과정을 탐색할 수 있도록 구성됨 ICM은 501(c)(3) 비영리 자선단체..."
     },
     {
       "id": "bb07c3f4d25ed815ba54f289",
@@ -1185,19 +1238,6 @@
       "summary": ""
     },
     {
-      "id": "0df32b02e83da75d4af2a7a0",
-      "feedId": "hani-useful",
-      "source": "한겨레",
-      "category": "AI",
-      "language": "ko",
-      "title": "[사설] AI 수장들도 “통제 불능” 경고, 개발 속도조절 나서야 - 한겨레",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE51WTJ4ZmJ3ZE5zSUVkOHhiVk5FaXcwTnlZWlZhVVctMExZd1pQT2wzaFRMM3Z2eDgwY0ZFb191R2o1ZmJ3X0dqNUlCRFEwTGh2ZjgtZTM4WEhxVThRdzlrY2JSSWZaX3cxbEE?oc=5",
-      "publishedAt": "2026-09-13T09:45:00Z",
-      "collectedAt": "2026-09-13T16:24:36Z",
-      "feedPosition": 5,
-      "summary": ""
-    },
-    {
       "id": "ce0e290b11a3239b0d235e4e",
       "feedId": "zdnet-korea",
       "source": "ZDNet Korea",
@@ -1207,7 +1247,7 @@
       "url": "https://zdnet.co.kr/view?no=20260913182700",
       "publishedAt": "2026-09-13T09:27:11Z",
       "collectedAt": "2026-09-13T11:58:51Z",
-      "feedPosition": 2,
+      "feedPosition": 6,
       "summary": ""
     },
     {
@@ -1272,7 +1312,7 @@
       "url": "https://www.etnews.com/20260913000078",
       "publishedAt": "2026-09-13T08:16:14Z",
       "collectedAt": "2026-09-13T11:58:51Z",
-      "feedPosition": 1,
+      "feedPosition": 3,
       "summary": "경기 용인특례시가 반도체 소재·부품·장비(소부장) 기업 임원을 위한 인공지능(AI) 최고위 과정을 가동했다. 용인시는 지난 10일 라마다용인호텔 자스민홀에서 울산과학기술원(UNIST)과 '제6기 UNIST 반도체 AI 최고위 과정' 입학식을 열었다고 13일 밝혔다. 행사에는 황준기 용인시 제2부시장과 권순용 UNIST 공과대학장, 5기 원우 대표 등이 참석했다. 6기에는 와이씨켐, 스크린에스피이코리아, 저스템, 이엔에프테크놀로지, 예리코코리아,"
     },
     {
@@ -1298,7 +1338,7 @@
       "url": "https://zdnet.co.kr/view?no=20260913065945",
       "publishedAt": "2026-09-13T07:00:02Z",
       "collectedAt": "2026-09-13T11:58:51Z",
-      "feedPosition": 5,
+      "feedPosition": 9,
       "summary": ""
     },
     {
@@ -1311,7 +1351,7 @@
       "url": "https://zdnet.co.kr/view?no=20260913143726",
       "publishedAt": "2026-09-13T06:30:37Z",
       "collectedAt": "2026-09-13T11:58:51Z",
-      "feedPosition": 6,
+      "feedPosition": 10,
       "summary": ""
     },
     {
@@ -1324,20 +1364,7 @@
       "url": "https://zdnet.co.kr/view?no=20260913133339",
       "publishedAt": "2026-09-13T06:28:06Z",
       "collectedAt": "2026-09-13T11:58:51Z",
-      "feedPosition": 7,
-      "summary": ""
-    },
-    {
-      "id": "6b443b4f4070eaa458da9c30",
-      "feedId": "joongang-useful",
-      "source": "중앙일보",
-      "category": "컴퓨터 사이언스",
-      "language": "ko",
-      "title": "TSMC도 모자란다…엔비디아·한미반도체까지 엮인 ‘다음 병목’ [월스트리트 스무디]｜Global Money Club - 중앙일보",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5leURzQ19aU1NLRTZROXNzcEIwSWFGVVZaZ0tfNkV6aldnTkFfWnFsdTk1dDFzNllhcmxWU2RFUDRvQTU5MkFQVFE0OWwtMm5sZ2JIWGs2OHhhaWM?oc=5",
-      "publishedAt": "2026-09-13T06:00:00Z",
-      "collectedAt": "2026-09-13T11:58:51Z",
-      "feedPosition": 81,
+      "feedPosition": 11,
       "summary": ""
     },
     {
@@ -1363,7 +1390,7 @@
       "url": "https://www.etnews.com/20260913000069",
       "publishedAt": "2026-09-13T04:54:23Z",
       "collectedAt": "2026-09-13T11:58:51Z",
-      "feedPosition": 3,
+      "feedPosition": 5,
       "summary": "세계 인공지능(AI) 산업을 이끄는 주요 기업 수장들이 한목소리로 '속도 조절'을 꺼내든 배경에는 최근 AI 기술의 급격한 발전에 따른 위협의 고도화가 있다. 생성형 AI 초기만 해도 환각이나 편향, 딥페이크와 같은 위험이 주를 이뤘다면, AI 에이전트가 확산하면서 위험의 범위가 실제 행동으로 이어지고 있기 때문이다. AI의 '재귀적 자기개선' 능력으로 인간이 AI를 이해하고 통제할 수 있는 능력을 상실할 수 있다는 우려도 따른다. AI 에이전"
     },
     {
@@ -1398,7 +1425,7 @@
       "source": "AI타임스",
       "category": "법률",
       "language": "ko",
-      "title": "구글, 코딩 강화 위해 스타트업 메카나이즈 인재 흡수…2조원대 계약",
+      "title": "구글, 코딩 강화 위해 스타트업 메카나이즈 인재 흡수",
       "url": "https://www.aitimes.com/news/articleView.html?idxno=215205",
       "publishedAt": "2026-09-13T02:37:03Z",
       "collectedAt": "2026-09-13T04:54:57Z",
@@ -1597,7 +1624,7 @@
       "url": "https://www.etnews.com/20260911000245",
       "publishedAt": "2026-09-12T07:00:00Z",
       "collectedAt": "2026-09-12T10:53:52Z",
-      "feedPosition": 4,
+      "feedPosition": 6,
       "summary": "물리세계에 인공지능(AI) 기술을 적용하는 피지컬 AI의 무분별한 도입이 지속되면 세계에서 관련 소송이 2000건을 웃돌 것이라는 전망이 나왔다. 충분한 AI 위험 가드레일 등 통제나 운영 역량이 전제되지 않는 피지컬 AI 적용은 심각한 안전사고나 법적 책임에 직면할 가능성이 크다는 이유다. 가트너는 최근 '최고정보책임자(CIO) 필수 과제: 시뮬레이션Ops(SimOps)와 월드모델을 통한 피지컬 AI 구현' 리포트를 통해 이같이 밝혔다. 기업"
     },
     {
@@ -1705,19 +1732,6 @@
       "summary": "[팜뉴스=김응민 기자] 대한약사회가 오는 20일 서울 광화문에서 전국 약사 총궐기대회를 개최한다. 정부의 비대면 진료 약 배송 확대가 갖는 부작용을 알리고 보건의료 상업화를 저지하겠다는 의지다.대한약사회 국민건강권 사수 비상대책위원회 투쟁전략팀은 지난 11일 제1차 투쟁전략회의를 열고, 오는 20일 서울 광화문에서 열리는 '전국 약사 총궐기대회'의 세부 실행 계획과 정책 대응 방향을 논의했다고 밝혔다.대한약사회는 이번 궐기대회의 기조를 단순한 직역 반발이 아닌 국민건강권 보호와 건강보험 재정 건전성 유지, 영리 플랫폼 중심의 보건의"
     },
     {
-      "id": "5ceb8b9cdb3b6ca70d024b74",
-      "feedId": "etnews-ai",
-      "source": "전자신문 AI",
-      "category": "AI",
-      "language": "ko",
-      "title": "기업 절반이 CISO 둔다…AI 확산에 역할도 '전사 위험관리'로",
-      "url": "https://www.etnews.com/20260911000235",
-      "publishedAt": "2026-09-12T03:00:00Z",
-      "collectedAt": "2026-09-12T04:41:27Z",
-      "feedPosition": 5,
-      "summary": "인공지능(AI)이 기업 업무 전반으로 파고들면서 최고정보보호책임자(CISO)의 역할도 달라지고 있다. 사이버보안을 책임지는 '보안 게이트키퍼'를 넘어 조직 곳곳에 흩어진 AI 위험을 연결하고 조정하는 역할이 커지고 있다. 딜로이트는 최근 발간한 'AI가 일상화된 기업에서 CISO 역할 재정립' 보고서를 통해 AI 확산으로 CISO의 역할이 전사 위험관리 영역으로 확대되고 있다고 밝혔다. 딜로이트는 CISO의 평가 기준이 사이버보안을 넘어 △AI"
-    },
-    {
       "id": "169b6a778af59e65ec9d6aac",
       "feedId": "startup-recipe",
       "source": "스타트업레시피",
@@ -1742,19 +1756,6 @@
       "collectedAt": "2026-09-12T04:41:27Z",
       "feedPosition": 3,
       "summary": ""
-    },
-    {
-      "id": "b0d6049529f4b8455549714e",
-      "feedId": "etnews-ai",
-      "source": "전자신문 AI",
-      "category": "AI",
-      "language": "ko",
-      "title": "공무원이 직접 만든 AI로 행정 혁신…전북 대통령상·광진구 총리상",
-      "url": "https://www.etnews.com/20260911000288",
-      "publishedAt": "2026-09-12T00:00:00Z",
-      "collectedAt": "2026-09-12T04:41:27Z",
-      "feedPosition": 6,
-      "summary": "공무원이 직접 개발한 인공지능(AI)이 지방행정의 일하는 방식을 바꾸고 있다. 행정안전부가 지난 10일, 11일 양일간 제주에서 진행한 '제43회 지역정보화(지방정부 AI) 우수사례 발표대회'에서 전북특별자치도와 서울 광진구가 각각 대통령상과 국무총리상을 받았다. 이날 발표대회에서는 전국 15개 시·도가 제출한 24개 사례 가운데 8개가 본선에 올라 경쟁했다. 올해 본선에는 공무원이 생성형 AI와 바이브코딩을 활용해 업무용 프로그램과 기능을 직"
     },
     {
       "id": "18a8d32add1328a857eabc7b",
