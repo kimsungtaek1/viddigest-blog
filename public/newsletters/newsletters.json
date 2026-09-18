@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-18T11:23:49Z",
+  "generatedAt": "2026-09-18T16:29:48Z",
   "categoryOrder": [
     "종합·해설",
     "자기계발",
@@ -26,9 +26,9 @@
         "자기계발"
       ],
       "itemCount": 8,
-      "lastCheckedAt": "2026-09-18T11:23:49Z",
+      "lastCheckedAt": "2026-09-18T16:29:48Z",
       "lastSuccessAt": "2026-09-18T11:23:49Z",
-      "error": ""
+      "error": "HTTP Error 503: Service Unavailable"
     },
     {
       "id": "venturesquare-business",
@@ -44,8 +44,8 @@
         "사업"
       ],
       "itemCount": 6,
-      "lastCheckedAt": "2026-09-18T11:23:49Z",
-      "lastSuccessAt": "2026-09-18T11:23:49Z",
+      "lastCheckedAt": "2026-09-18T16:29:48Z",
+      "lastSuccessAt": "2026-09-18T16:29:48Z",
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
         "법률"
       ],
       "itemCount": 6,
-      "lastCheckedAt": "2026-09-18T11:23:49Z",
-      "lastSuccessAt": "2026-09-18T11:23:49Z",
+      "lastCheckedAt": "2026-09-18T16:29:48Z",
+      "lastSuccessAt": "2026-09-18T16:29:48Z",
       "error": ""
     },
     {
@@ -80,8 +80,8 @@
         "컴퓨터 사이언스"
       ],
       "itemCount": 8,
-      "lastCheckedAt": "2026-09-18T11:23:49Z",
-      "lastSuccessAt": "2026-09-18T11:23:49Z",
+      "lastCheckedAt": "2026-09-18T16:29:48Z",
+      "lastSuccessAt": "2026-09-18T16:29:48Z",
       "error": ""
     },
     {
@@ -98,8 +98,8 @@
         "양자컴퓨터"
       ],
       "itemCount": 8,
-      "lastCheckedAt": "2026-09-18T11:23:49Z",
-      "lastSuccessAt": "2026-09-18T11:23:49Z",
+      "lastCheckedAt": "2026-09-18T16:29:48Z",
+      "lastSuccessAt": "2026-09-18T16:29:48Z",
       "error": ""
     },
     {
@@ -116,8 +116,8 @@
         "제약"
       ],
       "itemCount": 8,
-      "lastCheckedAt": "2026-09-18T11:23:49Z",
-      "lastSuccessAt": "2026-09-18T11:23:49Z",
+      "lastCheckedAt": "2026-09-18T16:29:48Z",
+      "lastSuccessAt": "2026-09-18T16:29:48Z",
       "error": ""
     },
     {
@@ -136,8 +136,8 @@
         "제약"
       ],
       "itemCount": 6,
-      "lastCheckedAt": "2026-09-18T11:23:49Z",
-      "lastSuccessAt": "2026-09-18T11:23:49Z",
+      "lastCheckedAt": "2026-09-18T16:29:48Z",
+      "lastSuccessAt": "2026-09-18T16:29:48Z",
       "error": ""
     },
     {
@@ -156,8 +156,8 @@
         "AI"
       ],
       "itemCount": 6,
-      "lastCheckedAt": "2026-09-18T11:23:49Z",
-      "lastSuccessAt": "2026-09-18T11:23:49Z",
+      "lastCheckedAt": "2026-09-18T16:29:48Z",
+      "lastSuccessAt": "2026-09-18T16:29:48Z",
       "error": ""
     },
     {
@@ -174,8 +174,8 @@
         "컴퓨터 사이언스"
       ],
       "itemCount": 6,
-      "lastCheckedAt": "2026-09-18T11:23:49Z",
-      "lastSuccessAt": "2026-09-18T11:23:49Z",
+      "lastCheckedAt": "2026-09-18T16:29:48Z",
+      "lastSuccessAt": "2026-09-18T16:29:48Z",
       "error": ""
     },
     {
@@ -192,8 +192,8 @@
         "AI"
       ],
       "itemCount": 8,
-      "lastCheckedAt": "2026-09-18T11:23:49Z",
-      "lastSuccessAt": "2026-09-18T11:23:49Z",
+      "lastCheckedAt": "2026-09-18T16:29:48Z",
+      "lastSuccessAt": "2026-09-18T16:29:48Z",
       "error": ""
     },
     {
@@ -210,8 +210,8 @@
         "사업"
       ],
       "itemCount": 8,
-      "lastCheckedAt": "2026-09-18T11:23:49Z",
-      "lastSuccessAt": "2026-09-18T11:23:49Z",
+      "lastCheckedAt": "2026-09-18T16:29:48Z",
+      "lastSuccessAt": "2026-09-18T16:29:48Z",
       "error": ""
     },
     {
@@ -228,8 +228,8 @@
         "컴퓨터 사이언스"
       ],
       "itemCount": 8,
-      "lastCheckedAt": "2026-09-18T11:23:49Z",
-      "lastSuccessAt": "2026-09-18T11:23:49Z",
+      "lastCheckedAt": "2026-09-18T16:29:48Z",
+      "lastSuccessAt": "2026-09-18T16:29:48Z",
       "error": ""
     },
     {
@@ -248,7 +248,7 @@
         "AI"
       ],
       "itemCount": 8,
-      "lastCheckedAt": "2026-09-18T11:23:49Z",
+      "lastCheckedAt": "2026-09-18T16:29:48Z",
       "lastSuccessAt": "2026-07-14T03:39:18Z",
       "error": "HTTP Error 405: Not Allowed"
     },
@@ -263,12 +263,13 @@
       "priority": 88,
       "featured": true,
       "categories": [
+        "사업",
         "컴퓨터 사이언스",
         "AI"
       ],
       "itemCount": 8,
-      "lastCheckedAt": "2026-09-18T11:23:49Z",
-      "lastSuccessAt": "2026-09-18T11:23:49Z",
+      "lastCheckedAt": "2026-09-18T16:29:48Z",
+      "lastSuccessAt": "2026-09-18T16:29:48Z",
       "error": ""
     },
     {
@@ -286,9 +287,9 @@
         "AI"
       ],
       "itemCount": 3,
-      "lastCheckedAt": "2026-09-18T11:23:49Z",
+      "lastCheckedAt": "2026-09-18T16:29:48Z",
       "lastSuccessAt": "2026-09-18T11:23:49Z",
-      "error": ""
+      "error": "HTTP Error 503: Service Unavailable"
     },
     {
       "id": "chosun-economy",
@@ -301,12 +302,11 @@
       "priority": 66,
       "featured": true,
       "categories": [
-        "사업",
         "AI"
       ],
       "itemCount": 3,
-      "lastCheckedAt": "2026-09-18T11:23:49Z",
-      "lastSuccessAt": "2026-09-18T11:23:49Z",
+      "lastCheckedAt": "2026-09-18T16:29:48Z",
+      "lastSuccessAt": "2026-09-18T16:29:48Z",
       "error": ""
     },
     {
@@ -323,9 +323,9 @@
         "사업"
       ],
       "itemCount": 3,
-      "lastCheckedAt": "2026-09-18T11:23:49Z",
+      "lastCheckedAt": "2026-09-18T16:29:48Z",
       "lastSuccessAt": "2026-09-18T11:23:49Z",
-      "error": ""
+      "error": "HTTP Error 503: Service Unavailable"
     },
     {
       "id": "joongang-useful",
@@ -342,9 +342,9 @@
         "AI"
       ],
       "itemCount": 3,
-      "lastCheckedAt": "2026-09-18T11:23:49Z",
+      "lastCheckedAt": "2026-09-18T16:29:48Z",
       "lastSuccessAt": "2026-09-18T11:23:49Z",
-      "error": ""
+      "error": "HTTP Error 503: Service Unavailable"
     },
     {
       "id": "hankyung-all",
@@ -357,12 +357,11 @@
       "priority": 76,
       "featured": true,
       "categories": [
-        "사업",
-        "컴퓨터 사이언스"
+        "사업"
       ],
       "itemCount": 3,
-      "lastCheckedAt": "2026-09-18T11:23:49Z",
-      "lastSuccessAt": "2026-09-18T11:23:49Z",
+      "lastCheckedAt": "2026-09-18T16:29:48Z",
+      "lastSuccessAt": "2026-09-18T16:29:48Z",
       "error": ""
     },
     {
@@ -379,8 +378,8 @@
         "사업"
       ],
       "itemCount": 3,
-      "lastCheckedAt": "2026-09-18T11:23:49Z",
-      "lastSuccessAt": "2026-09-18T11:23:49Z",
+      "lastCheckedAt": "2026-09-18T16:29:48Z",
+      "lastSuccessAt": "2026-09-18T16:29:48Z",
       "error": ""
     },
     {
@@ -398,8 +397,8 @@
         "사업"
       ],
       "itemCount": 5,
-      "lastCheckedAt": "2026-09-18T11:23:49Z",
-      "lastSuccessAt": "2026-09-18T11:23:49Z",
+      "lastCheckedAt": "2026-09-18T16:29:48Z",
+      "lastSuccessAt": "2026-09-18T16:29:48Z",
       "error": ""
     },
     {
@@ -417,8 +416,8 @@
         "사업"
       ],
       "itemCount": 5,
-      "lastCheckedAt": "2026-09-18T11:23:49Z",
-      "lastSuccessAt": "2026-09-18T11:23:49Z",
+      "lastCheckedAt": "2026-09-18T16:29:48Z",
+      "lastSuccessAt": "2026-09-18T16:29:48Z",
       "error": ""
     },
     {
@@ -435,8 +434,8 @@
         "종합·해설"
       ],
       "itemCount": 4,
-      "lastCheckedAt": "2026-09-18T11:23:49Z",
-      "lastSuccessAt": "2026-09-18T11:23:49Z",
+      "lastCheckedAt": "2026-09-18T16:29:48Z",
+      "lastSuccessAt": "2026-09-18T16:29:48Z",
       "error": ""
     },
     {
@@ -453,8 +452,8 @@
         "사업"
       ],
       "itemCount": 6,
-      "lastCheckedAt": "2026-09-18T11:23:49Z",
-      "lastSuccessAt": "2026-09-18T11:23:49Z",
+      "lastCheckedAt": "2026-09-18T16:29:48Z",
+      "lastSuccessAt": "2026-09-18T16:29:48Z",
       "error": ""
     },
     {
@@ -472,8 +471,8 @@
         "AI"
       ],
       "itemCount": 5,
-      "lastCheckedAt": "2026-09-18T11:23:49Z",
-      "lastSuccessAt": "2026-09-18T11:23:49Z",
+      "lastCheckedAt": "2026-09-18T16:29:48Z",
+      "lastSuccessAt": "2026-09-18T16:29:48Z",
       "error": ""
     },
     {
@@ -491,8 +490,8 @@
         "AI"
       ],
       "itemCount": 4,
-      "lastCheckedAt": "2026-09-18T11:23:49Z",
-      "lastSuccessAt": "2026-09-18T11:23:49Z",
+      "lastCheckedAt": "2026-09-18T16:29:48Z",
+      "lastSuccessAt": "2026-09-18T16:29:48Z",
       "error": ""
     },
     {
@@ -506,12 +505,13 @@
       "priority": 66,
       "featured": false,
       "categories": [
+        "사업",
         "컴퓨터 사이언스",
         "AI"
       ],
       "itemCount": 5,
-      "lastCheckedAt": "2026-09-18T11:23:49Z",
-      "lastSuccessAt": "2026-09-18T11:23:49Z",
+      "lastCheckedAt": "2026-09-18T16:29:48Z",
+      "lastSuccessAt": "2026-09-18T16:29:48Z",
       "error": ""
     },
     {
@@ -530,8 +530,8 @@
         "AI"
       ],
       "itemCount": 4,
-      "lastCheckedAt": "2026-09-18T11:23:49Z",
-      "lastSuccessAt": "2026-09-18T11:23:49Z",
+      "lastCheckedAt": "2026-09-18T16:29:48Z",
+      "lastSuccessAt": "2026-09-18T16:29:48Z",
       "error": ""
     },
     {
@@ -548,8 +548,8 @@
         "AI"
       ],
       "itemCount": 4,
-      "lastCheckedAt": "2026-09-18T11:23:49Z",
-      "lastSuccessAt": "2026-09-18T11:23:49Z",
+      "lastCheckedAt": "2026-09-18T16:29:48Z",
+      "lastSuccessAt": "2026-09-18T16:29:48Z",
       "error": ""
     },
     {
@@ -568,8 +568,8 @@
         "AI"
       ],
       "itemCount": 4,
-      "lastCheckedAt": "2026-09-18T11:23:49Z",
-      "lastSuccessAt": "2026-09-18T11:23:49Z",
+      "lastCheckedAt": "2026-09-18T16:29:48Z",
+      "lastSuccessAt": "2026-09-18T16:29:48Z",
       "error": ""
     },
     {
@@ -586,7 +586,7 @@
         "컴퓨터 사이언스"
       ],
       "itemCount": 5,
-      "lastCheckedAt": "2026-09-18T11:23:49Z",
+      "lastCheckedAt": "2026-09-18T16:29:48Z",
       "lastSuccessAt": "2026-08-20T01:54:08Z",
       "error": "syntax error: line 1, column 0"
     },
@@ -605,8 +605,8 @@
         "제약"
       ],
       "itemCount": 4,
-      "lastCheckedAt": "2026-09-18T11:23:49Z",
-      "lastSuccessAt": "2026-09-18T11:23:49Z",
+      "lastCheckedAt": "2026-09-18T16:29:48Z",
+      "lastSuccessAt": "2026-09-18T16:29:48Z",
       "error": ""
     },
     {
@@ -624,8 +624,8 @@
         "제약"
       ],
       "itemCount": 4,
-      "lastCheckedAt": "2026-09-18T11:23:49Z",
-      "lastSuccessAt": "2026-09-18T11:23:49Z",
+      "lastCheckedAt": "2026-09-18T16:29:48Z",
+      "lastSuccessAt": "2026-09-18T16:29:48Z",
       "error": ""
     },
     {
@@ -642,8 +642,8 @@
         "사업"
       ],
       "itemCount": 5,
-      "lastCheckedAt": "2026-09-18T11:23:49Z",
-      "lastSuccessAt": "2026-09-18T11:23:49Z",
+      "lastCheckedAt": "2026-09-18T16:29:48Z",
+      "lastSuccessAt": "2026-09-18T16:29:48Z",
       "error": ""
     },
     {
@@ -660,8 +660,8 @@
         "사업"
       ],
       "itemCount": 5,
-      "lastCheckedAt": "2026-09-18T11:23:49Z",
-      "lastSuccessAt": "2026-09-18T11:23:49Z",
+      "lastCheckedAt": "2026-09-18T16:29:48Z",
+      "lastSuccessAt": "2026-09-18T16:29:48Z",
       "error": ""
     }
   ],
@@ -676,7 +676,7 @@
       "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=701844",
       "publishedAt": "2026-09-18T20:18:09Z",
       "collectedAt": "2026-09-18T11:23:49Z",
-      "feedPosition": 0,
+      "feedPosition": 3,
       "summary": ""
     },
     {
@@ -689,7 +689,7 @@
       "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=701843",
       "publishedAt": "2026-09-18T20:11:16Z",
       "collectedAt": "2026-09-18T11:23:49Z",
-      "feedPosition": 1,
+      "feedPosition": 4,
       "summary": ""
     },
     {
@@ -702,7 +702,7 @@
       "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=701839",
       "publishedAt": "2026-09-18T19:02:01Z",
       "collectedAt": "2026-09-18T11:23:49Z",
-      "feedPosition": 7,
+      "feedPosition": 10,
       "summary": ""
     },
     {
@@ -754,7 +754,7 @@
       "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=701811",
       "publishedAt": "2026-09-18T17:47:02Z",
       "collectedAt": "2026-09-18T11:23:49Z",
-      "feedPosition": 36,
+      "feedPosition": 39,
       "summary": ""
     },
     {
@@ -901,6 +901,71 @@
       "summary": ""
     },
     {
+      "id": "046f28c53634e9aea54554c6",
+      "feedId": "geeknews",
+      "source": "GeekNews",
+      "category": "AI",
+      "language": "ko",
+      "title": "무한 파라미터 LLM: 실시간 데이터로 가중치 생성 및 적응",
+      "url": "https://news.hada.io/topic?id=33899",
+      "publishedAt": "2026-09-18T15:42:19Z",
+      "collectedAt": "2026-09-18T16:29:48Z",
+      "feedPosition": 0,
+      "summary": "Infinite-Parameter LLM 은 사용자 제공 사실, 수정 사항 등 실시간 상호작용 데이터를 프롬프트에만 두지 않고, 추론 중 가중치에 반영하는 아키텍처 제안임 작은 하이퍼네트워크 가 공유 기반 네트워크에 적용할 저랭크 가중치 변화량을 생성하므로, MoE처럼 모든 ..."
+    },
+    {
+      "id": "ffacab4ceca937273b23b3ba",
+      "feedId": "geeknews",
+      "source": "GeekNews",
+      "category": "사업",
+      "language": "ko",
+      "title": "Warren Buffett, Berkshire 이사회 의장직에서 물러나고 아들을 후임으로 지명",
+      "url": "https://news.hada.io/topic?id=33898",
+      "publishedAt": "2026-09-18T15:42:17Z",
+      "collectedAt": "2026-09-18T16:29:48Z",
+      "feedPosition": 1,
+      "summary": "Warren Buffett 이 Berkshire Hathaway 이사회 의장직에서 물러나며, 즉시 명예 의장으로 전환함 후임 의장은 아들인 Howard G. Buffett 이 맡게 됨 의장직에서는 물러나지만 이사회에는 계속 남음 Berkshire Hathaway를 투자 강..."
+    },
+    {
+      "id": "85ff75e25db0649fc64f545e",
+      "feedId": "chosun-economy",
+      "source": "조선일보",
+      "category": "AI",
+      "language": "ko",
+      "title": "“AI 속도전 멈춰라” 들끓는 미국",
+      "url": "https://www.chosun.com/economy/economy_general/2026/09/19/MGYSSQ3JHFAPPEOQLVZ7KDWQQ4",
+      "publishedAt": "2026-09-18T15:34:00Z",
+      "collectedAt": "2026-09-18T16:29:48Z",
+      "feedPosition": 4,
+      "summary": ""
+    },
+    {
+      "id": "5e90777a5b21dcda0f58e4ef",
+      "feedId": "geeknews",
+      "source": "GeekNews",
+      "category": "AI",
+      "language": "ko",
+      "title": "GLM 코딩 에이전트 ZCode, 사용자 모르게 Git 이력을 업로드함",
+      "url": "https://news.hada.io/topic?id=33897",
+      "publishedAt": "2026-09-18T14:52:18Z",
+      "collectedAt": "2026-09-18T16:29:48Z",
+      "feedPosition": 2,
+      "summary": "Z.ai의 데스크톱 코딩 앱 ZCode 가 로그인 상태에서 전체 작업 공간과 Git 이력 등을 암호화해 Aliyun OSS 로 업로드하는 동작이 역공학 분석에서 확인됨 아카이브 복호화에 필요한 개인 키는 Z.ai 클라우드에만 존재 함. 사용자 디스크에 저장된 암..."
+    },
+    {
+      "id": "e4215421eaab145c696b18e9",
+      "feedId": "geeknews",
+      "source": "GeekNews",
+      "category": "AI",
+      "language": "ko",
+      "title": "Bend 2와 바이브 코딩의 함정",
+      "url": "https://news.hada.io/topic?id=33896",
+      "publishedAt": "2026-09-18T14:52:17Z",
+      "collectedAt": "2026-09-18T16:29:48Z",
+      "feedPosition": 3,
+      "summary": "바이브 코딩 은 문제를 충분히 이해하기 전에 큰 규모의 해법을 완성하게 해, 기존에 더 나은 접근법이 있다는 사실을 놓치게 할 수 있음 Bend 2 는 사람이 법칙을 작성하고 AI가 구현과 증명을 만들면 컴파일러가 증명의 타당성을 검사하는 언어지만, 데모의 단순한..."
+    },
+    {
       "id": "d6e96e1b26a76585c1e04d9a",
       "feedId": "mk-economy",
       "source": "매일경제",
@@ -910,7 +975,7 @@
       "url": "https://www.mk.co.kr/news/economy/12156497",
       "publishedAt": "2026-09-18T14:51:02Z",
       "collectedAt": "2026-09-18T11:23:49Z",
-      "feedPosition": 19,
+      "feedPosition": 22,
       "summary": ""
     },
     {
@@ -925,6 +990,19 @@
       "collectedAt": "2026-09-18T11:23:49Z",
       "feedPosition": 0,
       "summary": "[팜뉴스=우정민 기자] 의약품품질연구재단이 대한민국약전 제13개정 사전구입을 접수한다. 재단은 의약품 기준서인 대한민국약전 제13개정판과 관련 참고자료의 사전구입 신청을 받는다고 밝혔다.대한민국약전은 의약품 등의 제법, 성상, 성능, 품질 및 저장법 등 세부 기준을 정한 기준서로, 2019년 제12개정 고시 이후 11회에 걸친 일부 개정 내용과 최근 개정 사항이 종합 반영됐다.이번 출판물에는 통칙, 제제총칙, 의약품각조, 일반시험법, 일반정보 고시 내용과 함께 미국, 유럽, 일본 약전의 품질 정보 번역자료 64건 및 국·영문 찾아보"
+    },
+    {
+      "id": "3591fa9572abde0ae25cddd2",
+      "feedId": "geeknews",
+      "source": "GeekNews",
+      "category": "컴퓨터 사이언스",
+      "language": "ko",
+      "title": "나는 패스키가 마음에 들지 않는다",
+      "url": "https://news.hada.io/topic?id=33895",
+      "publishedAt": "2026-09-18T14:42:17Z",
+      "collectedAt": "2026-09-18T16:29:48Z",
+      "feedPosition": 4,
+      "summary": "패스키 는 피싱과 서버 데이터 유출에 강하지만, 개인에게는 영구적인 계정 접근 상실, 자동 계정 정지, 기기 분실이 더 큰 위험일 수 있음 일반 로그인 과정의 피싱을 막더라도 계정 보안은 가장 취약한 복구 수단 에 좌우되며, SMS, 이메일 링크, 보안 질문 등을 없..."
     },
     {
       "id": "1c764027b7405b5cf35d26ad",
@@ -962,7 +1040,7 @@
       "url": "https://www.mk.co.kr/news/economy/12156478",
       "publishedAt": "2026-09-18T14:27:12Z",
       "collectedAt": "2026-09-18T11:23:49Z",
-      "feedPosition": 20,
+      "feedPosition": 23,
       "summary": ""
     },
     {
@@ -1044,6 +1122,58 @@
       "summary": ""
     },
     {
+      "id": "f4d35eb44b63a646c6befd43",
+      "feedId": "geeknews",
+      "source": "GeekNews",
+      "category": "컴퓨터 사이언스",
+      "language": "ko",
+      "title": "CrowdSec 소스 코드 유출",
+      "url": "https://news.hada.io/topic?id=33894",
+      "publishedAt": "2026-09-18T13:32:17Z",
+      "collectedAt": "2026-09-18T16:29:48Z",
+      "feedPosition": 5,
+      "summary": "CrowdSec 이 2026년 5월 발생한 GitHub 비공개 소스 코드 유출을 9월 16일 통보받고 확인함 CrowdSec에 따르면 고객 데이터나 로그인 정보는 유출되지 않았으며 , 현재까지 횡적 이동에 악용할 수 있는 토큰이나 자격 증명 등의 유출도 발견하지 못함 유출 ..."
+    },
+    {
+      "id": "fb9aaa7d230d5b1707352ea6",
+      "feedId": "geeknews",
+      "source": "GeekNews",
+      "category": "컴퓨터 사이언스",
+      "language": "ko",
+      "title": "황금 못, 그리고 Vale(n) 프로그래밍 언어의 부활",
+      "url": "https://news.hada.io/topic?id=33893",
+      "publishedAt": "2026-09-18T13:12:18Z",
+      "collectedAt": "2026-09-18T16:29:48Z",
+      "feedPosition": 6,
+      "summary": "Valen 은 Rust 라이브러리를 직접 활용하면서 언어 경계를 넘는 제네릭과 메모리 안전성을 지원하려는 실험적 언어이며, Rust 그래픽 라이브러리를 호출해 첫 렌더링에 성공함 C ABI를 통한 연동 대신 rustc 내부 API 와 컴파일러 패치를 이용해, Valen의 타입이 Rus..."
+    },
+    {
+      "id": "304ae4e24c8ba29eb9a6da02",
+      "feedId": "geeknews",
+      "source": "GeekNews",
+      "category": "컴퓨터 사이언스",
+      "language": "ko",
+      "title": "주의: 저명한 Rust 개발자를 겨냥한 표적 공격",
+      "url": "https://news.hada.io/topic?id=33892",
+      "publishedAt": "2026-09-18T13:12:17Z",
+      "collectedAt": "2026-09-18T16:29:48Z",
+      "feedPosition": 7,
+      "summary": "rust-lang 구성원과 인기 크레이트 소유자의 기기와 계정을 탈취해 악성코드를 배포 하려는 공격 캠페인이 진행 중인 것으로 추정됨 공격자는 채용, 프로젝트, 계약 기회를 미끼로 화상 통화 를 마련한 뒤, 오디오 코덱 설치나 명령 실행을 유도함 간단한 신..."
+    },
+    {
+      "id": "bff9a7aebedf082210b6697a",
+      "feedId": "zdnet-korea",
+      "source": "ZDNet Korea",
+      "category": "사업",
+      "language": "ko",
+      "title": "DXC 엔지니어링과 록소, 기업 규모 자율주행 상용차 조기 도입 위해 협력",
+      "url": "https://zdnet.co.kr/view?no=20260918221002",
+      "publishedAt": "2026-09-18T13:10:02Z",
+      "collectedAt": "2026-09-18T16:29:48Z",
+      "feedPosition": 1,
+      "summary": ""
+    },
+    {
       "id": "d6d1d03eeed8550841da76a8",
       "feedId": "medipana",
       "source": "메디파나뉴스",
@@ -1070,6 +1200,19 @@
       "summary": ""
     },
     {
+      "id": "cf83e92c17915944eec610d6",
+      "feedId": "zdnet-korea",
+      "source": "ZDNet Korea",
+      "category": "AI",
+      "language": "ko",
+      "title": "미국·중국 안보 전문가, AI에 핵무기식 통제선 제안…\"AI 사고 전용 군사 핫라인 필요\"",
+      "url": "https://zdnet.co.kr/view?no=20260918210302",
+      "publishedAt": "2026-09-18T12:03:02Z",
+      "collectedAt": "2026-09-18T16:29:48Z",
+      "feedPosition": 2,
+      "summary": ""
+    },
+    {
       "id": "66e805325c8748398e8f14a2",
       "feedId": "hitnews",
       "source": "히트뉴스",
@@ -1083,6 +1226,19 @@
       "summary": ""
     },
     {
+      "id": "da4d769034fe395d86cdb19a",
+      "feedId": "zdnet-korea",
+      "source": "ZDNet Korea",
+      "category": "AI",
+      "language": "ko",
+      "title": "[카드뉴스] AI, 전기세가 모자라요!",
+      "url": "https://zdnet.co.kr/view?no=20260918104843",
+      "publishedAt": "2026-09-18T11:13:47Z",
+      "collectedAt": "2026-09-18T16:29:48Z",
+      "feedPosition": 3,
+      "summary": ""
+    },
+    {
       "id": "904533424c5706376723b83e",
       "feedId": "donga-useful",
       "source": "동아일보",
@@ -1093,6 +1249,19 @@
       "publishedAt": "2026-09-18T11:07:06Z",
       "collectedAt": "2026-09-18T11:23:49Z",
       "feedPosition": 4,
+      "summary": ""
+    },
+    {
+      "id": "1fab7a99997a6d7d89f67730",
+      "feedId": "hankyung-all",
+      "source": "한국경제",
+      "category": "사업",
+      "language": "ko",
+      "title": "\"설립 2년 만에 7500억 회사 됐다\"…투자자들 몰린 '이 기술'",
+      "url": "https://www.hankyung.com/article/2026091844761",
+      "publishedAt": "2026-09-18T11:00:07Z",
+      "collectedAt": "2026-09-18T16:29:48Z",
+      "feedPosition": 23,
       "summary": ""
     },
     {
@@ -1144,7 +1313,7 @@
       "url": "https://www.hankyung.com/article/2026091845671",
       "publishedAt": "2026-09-18T10:00:02Z",
       "collectedAt": "2026-09-18T11:23:49Z",
-      "feedPosition": 5,
+      "feedPosition": 31,
       "summary": ""
     },
     {
@@ -1172,19 +1341,6 @@
       "collectedAt": "2026-09-18T11:23:49Z",
       "feedPosition": 2,
       "summary": ""
-    },
-    {
-      "id": "8fdd073bc910efe4a516accc",
-      "feedId": "geeknews",
-      "source": "GeekNews",
-      "category": "AI",
-      "language": "ko",
-      "title": "LLM과 함께 글 쓰는 법",
-      "url": "https://news.hada.io/topic?id=33887",
-      "publishedAt": "2026-09-18T09:42:16Z",
-      "collectedAt": "2026-09-18T11:23:49Z",
-      "feedPosition": 0,
-      "summary": "LLM은 대필 작가가 아니라 교정 편집자 로 활용해야 함. 글은 직접 쓰고, 좋은 모델에 초안을 넘겨 결함을 찾게 하는 방식임 첫 번째 원칙은 LLM이 제안한 표현을 단 한 단어도 쓰지 않는 것 임. 매력적인 문구라도 모델이 글의 개성을 획일화하는 방식을 모두 알아채..."
     },
     {
       "id": "051adffdbae275fca4544404",
@@ -1235,7 +1391,7 @@
       "url": "https://www.hankyung.com/article/2026091844471",
       "publishedAt": "2026-09-18T09:26:48Z",
       "collectedAt": "2026-09-18T11:23:49Z",
-      "feedPosition": 11,
+      "feedPosition": 37,
       "summary": ""
     },
     {
@@ -1252,16 +1408,29 @@
       "summary": "초지능 AI가 인류를 멸종시킬 수 있다는 경고가 잇따르는 가운데, AI 분야의 개척자로 꼽히는 앤드류 응 스탠포드대학교 교수가 이러한 주장을 강하게 비판했다. 그는 AI의 현실적인 위험에 대해서는 대응해야 하지만, 이를 인류 멸종 위협으로 확대하는 것은 과학적 근거보다 SF에 가깝다고 주장했다.응 교수는 17일(현지시간) 블룸버그TV와의 인터뷰에서 빅테크 기업과 AI 연구진이 AI 붐 초기부터 잠재적인 재앙을 강조하며 과도한 홍보 효과를 누리고, 자신들에게 유리한 규제 환경을 조성하려 했다고 지적했다.그는 최근 다시 AI의 실존적"
     },
     {
-      "id": "d192aa888bfa9fc357c7f37c",
-      "feedId": "hankyung-all",
-      "source": "한국경제",
+      "id": "de247b19fe703173d686e519",
+      "feedId": "zdnet-korea",
+      "source": "ZDNet Korea",
+      "category": "AI",
+      "language": "ko",
+      "title": "\"사이버 공격, AI시대 맞아 운영 전반 확대\"",
+      "url": "https://zdnet.co.kr/view?no=20260918172913",
+      "publishedAt": "2026-09-18T09:17:59Z",
+      "collectedAt": "2026-09-18T16:29:48Z",
+      "feedPosition": 8,
+      "summary": ""
+    },
+    {
+      "id": "20be179dbd451d6028e8e96b",
+      "feedId": "zdnet-korea",
+      "source": "ZDNet Korea",
       "category": "컴퓨터 사이언스",
       "language": "ko",
-      "title": "[책꽂이] '반도체 패권 지도' 등",
-      "url": "https://www.hankyung.com/article/2026091844521",
-      "publishedAt": "2026-09-18T09:22:08Z",
-      "collectedAt": "2026-09-18T11:23:49Z",
-      "feedPosition": 14,
+      "title": "라온시큐어 \"가상 실습 환경, 사이버 보안 분야 적용\"",
+      "url": "https://zdnet.co.kr/view?no=20260918171748",
+      "publishedAt": "2026-09-18T09:15:38Z",
+      "collectedAt": "2026-09-18T16:29:48Z",
+      "feedPosition": 9,
       "summary": ""
     },
     {
@@ -1326,33 +1495,7 @@
       "url": "https://www.chosun.com/economy/tech_it/2026/09/18/MY3DANTGGUZTMNZYGQYTKMBTGQ",
       "publishedAt": "2026-09-18T08:56:04Z",
       "collectedAt": "2026-09-18T11:23:49Z",
-      "feedPosition": 17,
-      "summary": ""
-    },
-    {
-      "id": "79e47fc4cf868019e2cb594b",
-      "feedId": "zdnet-korea",
-      "source": "ZDNet Korea",
-      "category": "AI",
-      "language": "ko",
-      "title": "미래전장용 작전 AI플랫폼 첫 시연…\"분석서 지휘까지 20초\"",
-      "url": "https://zdnet.co.kr/view?no=20260918175356",
-      "publishedAt": "2026-09-18T08:53:56Z",
-      "collectedAt": "2026-09-18T11:23:49Z",
-      "feedPosition": 1,
-      "summary": ""
-    },
-    {
-      "id": "dae9bf8fdf6fb357068b5101",
-      "feedId": "zdnet-korea",
-      "source": "ZDNet Korea",
-      "category": "AI",
-      "language": "ko",
-      "title": "\"클로드로 오픈AI 뚫었다\"…직원 계정 넘어 내부 코드 저장소까지 접근",
-      "url": "https://zdnet.co.kr/view?no=20260918174723",
-      "publishedAt": "2026-09-18T08:50:16Z",
-      "collectedAt": "2026-09-18T11:23:49Z",
-      "feedPosition": 4,
+      "feedPosition": 30,
       "summary": ""
     },
     {
@@ -1395,19 +1538,6 @@
       "summary": "주요 AI 코딩 에이전트 전반에서 \\'스킬\\'을 업데이트하는 과정에서 치명적인 구조적 보안 결함이 드러났다. 사용자가 아무런 클릭을 하지 않아도 시스템 제어권을 해커에게 완전히 빼앗기는 치명적 문제로, 현재는 모두 해결된 상태다.사이버 보안 스타트업 에어(Air)는 18일 발표한 연구 보고서를 통해 앤트로픽의 \\'클로드 코드\\', 오픈AI의 \\'코덱스\\', 구글의 \\'제미나이 CLI\\', 마이크로소프트(MS)의 \\'깃허브 코파일럿\\' 등 4종의 AI 코딩 에이전트에서 제로 클릭(Zero-Click) 원격 코드 실행 취약점인 \\'플러그인4쉘(Plugin"
     },
     {
-      "id": "5cecc543c9303d25e5125c9d",
-      "feedId": "zdnet-korea",
-      "source": "ZDNet Korea",
-      "category": "AI",
-      "language": "ko",
-      "title": "[AI는 지금] AI 위험 경고만 해선 안 된다…팔란티어, '기업 책임론' 제기",
-      "url": "https://zdnet.co.kr/view?no=20260918173443",
-      "publishedAt": "2026-09-18T08:38:20Z",
-      "collectedAt": "2026-09-18T11:23:49Z",
-      "feedPosition": 7,
-      "summary": ""
-    },
-    {
       "id": "49db8cea22b04603a3bc985a",
       "feedId": "chosun-economy",
       "source": "조선일보",
@@ -1417,7 +1547,7 @@
       "url": "https://www.chosun.com/economy/tech_it/2026/09/18/GJRGKMZUHBRDMZDCGI2DEMRWGA",
       "publishedAt": "2026-09-18T08:35:53Z",
       "collectedAt": "2026-09-18T11:23:49Z",
-      "feedPosition": 19,
+      "feedPosition": 32,
       "summary": ""
     },
     {
@@ -1432,19 +1562,6 @@
       "collectedAt": "2026-09-18T11:23:49Z",
       "feedPosition": 1,
       "summary": "“AI는 기술을 더 똑똑하게 만들지만, 차이를 만드는 건 어떤 오디언스가 중요한지, 어떤 성과를 만들 건지 결정하는 마케터의 몫입니다. AI가 똑똑해지면 마케터의 판단 중요성이 더 커집니다.”"
-    },
-    {
-      "id": "ef996ed871b2f83dab90cc0b",
-      "feedId": "chosun-economy",
-      "source": "조선일보",
-      "category": "사업",
-      "language": "ko",
-      "title": "“15년 전엔 지으라더니”… 석탄발전 조기 폐지안에 기업들 울분",
-      "url": "https://www.chosun.com/economy/industry-company/2026/09/18/V55PZWYSXVFEDFLYE2BSQCSSJE",
-      "publishedAt": "2026-09-18T08:26:37Z",
-      "collectedAt": "2026-09-18T11:23:49Z",
-      "feedPosition": 11,
-      "summary": ""
     },
     {
       "id": "0fa7d74703c23468378a511b",
@@ -1499,19 +1616,6 @@
       "summary": ""
     },
     {
-      "id": "c93a110efbb16e893b16c59d",
-      "feedId": "zdnet-korea",
-      "source": "ZDNet Korea",
-      "category": "AI",
-      "language": "ko",
-      "title": "생성 AI에서 행동하는 AI로…AX 2.0 시대 준비하라",
-      "url": "https://zdnet.co.kr/view?no=20260918164318",
-      "publishedAt": "2026-09-18T07:58:15Z",
-      "collectedAt": "2026-09-18T11:23:49Z",
-      "feedPosition": 24,
-      "summary": ""
-    },
-    {
       "id": "7f1fcd4d5395595a87488983",
       "feedId": "inews24-it",
       "source": "아이뉴스24 IT",
@@ -1522,19 +1626,6 @@
       "publishedAt": "2026-09-18T07:57:11Z",
       "collectedAt": "2026-09-18T11:23:49Z",
       "feedPosition": 9,
-      "summary": ""
-    },
-    {
-      "id": "036fcf6bb5b7d06d4d25dc28",
-      "feedId": "zdnet-korea",
-      "source": "ZDNet Korea",
-      "category": "컴퓨터 사이언스",
-      "language": "ko",
-      "title": "로옴, BMW 차세대 전기차 플랫폼에 SiC 반도체 공급",
-      "url": "https://zdnet.co.kr/view?no=20260918144201",
-      "publishedAt": "2026-09-18T07:54:41Z",
-      "collectedAt": "2026-09-18T11:23:49Z",
-      "feedPosition": 26,
       "summary": ""
     },
     {
@@ -1549,19 +1640,6 @@
       "collectedAt": "2026-09-18T11:23:49Z",
       "feedPosition": 10,
       "summary": ""
-    },
-    {
-      "id": "a0b8c906c3d11ceb2525eb70",
-      "feedId": "geeknews",
-      "source": "GeekNews",
-      "category": "컴퓨터 사이언스",
-      "language": "ko",
-      "title": "Qwen 3.8 Omni Flash",
-      "url": "https://news.hada.io/topic?id=33884",
-      "publishedAt": "2026-09-18T07:42:16Z",
-      "collectedAt": "2026-09-18T11:23:49Z",
-      "feedPosition": 3,
-      "summary": "Qwen3.8-Omni-Flash 는 텍스트, 이미지, 오디오, 비디오를 입력받아 콘텐츠 이해부터 작업 계획, 도구 호출, 결과물 제작까지 수행하는 네이티브 옴니모달 모델로, 100만 토큰 컨텍스트 를 지원함 Qwen 공개 평가에서 이전 Qwen3.5-Omni-Plus보다 29개 평가 ..."
     },
     {
       "id": "b7c0966dcbc5ad726696a2f7",
@@ -1707,19 +1785,6 @@
       "summary": "문지연 대표가 이끄는 줄컴퍼니의 스킨케어 브랜드 듀릭서 포뮬러가 현대백화점 판교점에 문을 연 더마뷰티 전문 편집숍 코오드에서 3일간 팝업을 진행한다. 대표 제품 ‘글레이셔 앰플 미스트’를 직접 체험하고 성분과 개발 배경 등 제품 정보를 살펴볼 수 있도록 구성했다. 듀릭... The post 듀릭서 포뮬러, 성분·효능 따지는 소비자 만난다…현대百 더마뷰티 코오드 팝업 appeared first on 벤처스퀘어 ."
     },
     {
-      "id": "c37cd6c4221f12815375a027",
-      "feedId": "geeknews",
-      "source": "GeekNews",
-      "category": "AI",
-      "language": "ko",
-      "title": "OpenAI 해킹",
-      "url": "https://news.hada.io/topic?id=33880",
-      "publishedAt": "2026-09-18T05:42:16Z",
-      "collectedAt": "2026-09-18T11:23:49Z",
-      "feedPosition": 5,
-      "summary": "Hacktron이 libheif 원격 코드 실행 취약점과 OpenAI SSO 설정 오류 를 결합해 여러 OpenAI 직원의 ChatGPT 계정을 탈취하고, 연결된 Codex로 내부 저장소에 접근함 공격은 포럼 이미지 업로드 에서 시작됐지만, 다른 서비스로 접근이 확장된 원인은 Op..."
-    },
-    {
       "id": "9101e22bf48a5653f92f2dbe",
       "feedId": "venturesquare-business",
       "source": "벤처스퀘어",
@@ -1783,71 +1848,6 @@
       "collectedAt": "2026-09-18T11:23:49Z",
       "feedPosition": 7,
       "summary": "크리니티(대표 유병선)가 18일 서울 삼성동 웨스틴 서울 파르나스 호텔에서 열린 'CAIO 서밋 2026'에 참가해 AI 시대 기업의 소통·협업과 보안을 아우르는 기술 전략을 선보였다. 전자신문이 주최하는 CAIO 서밋은 기업의 AI 에이전트, AI 오케스트레이션, AI 보안·거버넌스와 기업 운영체계 변화를 다룬다. 크리니티는 이번 행사에서 AI 소통 협업툴 '써팀(SirTEAM)'과 함께 메일 스팸 차단 및 메일 DLP(Data Loss P"
-    },
-    {
-      "id": "f51c34c870166286efed3f47",
-      "feedId": "geeknews",
-      "source": "GeekNews",
-      "category": "컴퓨터 사이언스",
-      "language": "ko",
-      "title": "사진작가 오스틴 만의 iPhone 18 Pro 카메라 리뷰",
-      "url": "https://news.hada.io/topic?id=33879",
-      "publishedAt": "2026-09-18T04:02:16Z",
-      "collectedAt": "2026-09-18T04:50:42Z",
-      "feedPosition": 6,
-      "summary": "콜로라도 Dunton에서 일주일간 시험한 iPhone 18 Pro는 가변 조리개와 수동 제어 로 얕은 심도, 모션 블러 등 의도적인 사진 표현의 자유를 넓힘 가변 조리개 는 저조도 집광 능력을 50% 높이고 장면에 맞춰 심도를 조절함. 특별한 표현 목적이 없다면 자동 설정을 유..."
-    },
-    {
-      "id": "8a1dfefb533f41a1f2764f28",
-      "feedId": "geeknews",
-      "source": "GeekNews",
-      "category": "컴퓨터 사이언스",
-      "language": "ko",
-      "title": "존 그루버의 iPhone 18 Pro 리뷰",
-      "url": "https://news.hada.io/topic?id=33878",
-      "publishedAt": "2026-09-18T03:42:17Z",
-      "collectedAt": "2026-09-18T04:50:42Z",
-      "feedPosition": 7,
-      "summary": "전작보다 빠르고 카메라, 발열 관리와 배터리도 나아졌지만 새 제품이라는 설렘은 적음 . 외형보다 내부 완성도를 높이던 과거 iPhone의 ‘S 세대’에 가까운 업그레이드 메인 카메라의 가변 조리개 로 들어오는 빛과 배경이 흐려지는 정도를 조절하며, 기본 Camera ..."
-    },
-    {
-      "id": "90e87429e5ae6afef7c62892",
-      "feedId": "geeknews",
-      "source": "GeekNews",
-      "category": "컴퓨터 사이언스",
-      "language": "ko",
-      "title": "일본의 100세 이상 인구, 10만 명 넘어",
-      "url": "https://news.hada.io/topic?id=33877",
-      "publishedAt": "2026-09-18T03:42:16Z",
-      "collectedAt": "2026-09-18T04:50:42Z",
-      "feedPosition": 8,
-      "summary": "일본 후생노동성 집계에서 100세 이상 인구가 처음으로 10만 명을 넘어 10만 7,677명을 기록했으며, 이 가운데 88%가 여성임 전문가들은 일본인의 장수 요인으로 건강한 식단과 활동적인 생활 을 꼽으며, 고령층도 걷기, 대중교통 이용, 자전거 타기, 스트레칭을 꾸..."
-    },
-    {
-      "id": "0f6b3687901e2756b543b74e",
-      "feedId": "geeknews",
-      "source": "GeekNews",
-      "category": "AI",
-      "language": "ko",
-      "title": "섹스, AI, 그리고 종말",
-      "url": "https://news.hada.io/topic?id=33876",
-      "publishedAt": "2026-09-18T02:02:16Z",
-      "collectedAt": "2026-09-18T04:50:42Z",
-      "feedPosition": 9,
-      "summary": "미국 AI 안전 논의를 이끄는 인물과 기관에는 합리주의 커뮤니티의 인적 관계와 자금망 이 깊이 얽혀 있음. AI 멸종 경고의 타당성과 별개로, 이들의 판단과 감독 체계를 독립적으로 검증할 필요가 있음 LessWrong, Harry Potter 팬픽, 교육 워크숍과 공동 의례는 인류를 구할..."
-    },
-    {
-      "id": "eb1b22fbf40747af7915b952",
-      "feedId": "geeknews",
-      "source": "GeekNews",
-      "category": "컴퓨터 사이언스",
-      "language": "ko",
-      "title": "macOS 27 Golden Gate 리뷰",
-      "url": "https://news.hada.io/topic?id=33875",
-      "publishedAt": "2026-09-18T01:52:16Z",
-      "collectedAt": "2026-09-18T04:50:42Z",
-      "feedPosition": 10,
-      "summary": "Tahoe의 Liquid Glass 디자인을 다듬고 일상 기능을 보강 한 업데이트로, Apple Intelligence도 실용성이 높아졌지만 전체 비활성화와 모델 삭제 옵션은 사라짐 유리 효과의 강도를 조절하고 창 모서리, 제목 표시줄과 사이드바를 정리해 화면의 시각적 혼잡과 불편 ..."
     },
     {
       "id": "d98de5363c24dfc2c10db342",
@@ -1976,7 +1976,7 @@
       "url": "https://www.mk.co.kr/news/economy/12155731",
       "publishedAt": "2026-09-17T17:50:40Z",
       "collectedAt": "2026-09-17T11:48:51Z",
-      "feedPosition": 32,
+      "feedPosition": 35,
       "summary": ""
     },
     {
