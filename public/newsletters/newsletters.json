@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-05T05:49:45Z",
+  "generatedAt": "2026-10-05T14:51:16Z",
   "categoryOrder": [
     "종합·해설",
     "자기계발",
@@ -26,8 +26,8 @@
         "자기계발"
       ],
       "itemCount": 8,
-      "lastCheckedAt": "2026-10-05T05:49:45Z",
-      "lastSuccessAt": "2026-10-05T05:49:45Z",
+      "lastCheckedAt": "2026-10-05T14:51:16Z",
+      "lastSuccessAt": "2026-10-05T14:51:16Z",
       "error": ""
     },
     {
@@ -44,8 +44,8 @@
         "사업"
       ],
       "itemCount": 6,
-      "lastCheckedAt": "2026-10-05T05:49:45Z",
-      "lastSuccessAt": "2026-10-05T05:49:45Z",
+      "lastCheckedAt": "2026-10-05T14:51:16Z",
+      "lastSuccessAt": "2026-10-05T14:51:16Z",
       "error": ""
     },
     {
@@ -62,8 +62,8 @@
         "법률"
       ],
       "itemCount": 6,
-      "lastCheckedAt": "2026-10-05T05:49:45Z",
-      "lastSuccessAt": "2026-10-05T05:49:45Z",
+      "lastCheckedAt": "2026-10-05T14:51:16Z",
+      "lastSuccessAt": "2026-10-05T14:51:16Z",
       "error": ""
     },
     {
@@ -80,8 +80,8 @@
         "컴퓨터 사이언스"
       ],
       "itemCount": 8,
-      "lastCheckedAt": "2026-10-05T05:49:45Z",
-      "lastSuccessAt": "2026-10-05T05:49:45Z",
+      "lastCheckedAt": "2026-10-05T14:51:16Z",
+      "lastSuccessAt": "2026-10-05T14:51:16Z",
       "error": ""
     },
     {
@@ -98,8 +98,8 @@
         "양자컴퓨터"
       ],
       "itemCount": 8,
-      "lastCheckedAt": "2026-10-05T05:49:45Z",
-      "lastSuccessAt": "2026-10-05T05:49:45Z",
+      "lastCheckedAt": "2026-10-05T14:51:16Z",
+      "lastSuccessAt": "2026-10-05T14:51:16Z",
       "error": ""
     },
     {
@@ -116,8 +116,8 @@
         "제약"
       ],
       "itemCount": 8,
-      "lastCheckedAt": "2026-10-05T05:49:45Z",
-      "lastSuccessAt": "2026-10-05T05:49:45Z",
+      "lastCheckedAt": "2026-10-05T14:51:16Z",
+      "lastSuccessAt": "2026-10-05T14:51:16Z",
       "error": ""
     },
     {
@@ -135,8 +135,8 @@
         "AI"
       ],
       "itemCount": 6,
-      "lastCheckedAt": "2026-10-05T05:49:45Z",
-      "lastSuccessAt": "2026-10-05T05:49:45Z",
+      "lastCheckedAt": "2026-10-05T14:51:16Z",
+      "lastSuccessAt": "2026-10-05T14:51:16Z",
       "error": ""
     },
     {
@@ -151,12 +151,11 @@
       "featured": false,
       "categories": [
         "사업",
-        "법률",
         "AI"
       ],
       "itemCount": 6,
-      "lastCheckedAt": "2026-10-05T05:49:45Z",
-      "lastSuccessAt": "2026-10-05T05:49:45Z",
+      "lastCheckedAt": "2026-10-05T14:51:16Z",
+      "lastSuccessAt": "2026-10-05T14:51:16Z",
       "error": ""
     },
     {
@@ -173,8 +172,8 @@
         "컴퓨터 사이언스"
       ],
       "itemCount": 6,
-      "lastCheckedAt": "2026-10-05T05:49:45Z",
-      "lastSuccessAt": "2026-10-05T05:49:45Z",
+      "lastCheckedAt": "2026-10-05T14:51:16Z",
+      "lastSuccessAt": "2026-10-05T14:51:16Z",
       "error": ""
     },
     {
@@ -191,8 +190,8 @@
         "AI"
       ],
       "itemCount": 8,
-      "lastCheckedAt": "2026-10-05T05:49:45Z",
-      "lastSuccessAt": "2026-10-05T05:49:45Z",
+      "lastCheckedAt": "2026-10-05T14:51:16Z",
+      "lastSuccessAt": "2026-10-05T14:51:16Z",
       "error": ""
     },
     {
@@ -209,8 +208,8 @@
         "사업"
       ],
       "itemCount": 8,
-      "lastCheckedAt": "2026-10-05T05:49:45Z",
-      "lastSuccessAt": "2026-10-05T05:49:45Z",
+      "lastCheckedAt": "2026-10-05T14:51:16Z",
+      "lastSuccessAt": "2026-10-05T14:51:16Z",
       "error": ""
     },
     {
@@ -227,8 +226,8 @@
         "컴퓨터 사이언스"
       ],
       "itemCount": 8,
-      "lastCheckedAt": "2026-10-05T05:49:45Z",
-      "lastSuccessAt": "2026-10-05T05:49:45Z",
+      "lastCheckedAt": "2026-10-05T14:51:16Z",
+      "lastSuccessAt": "2026-10-05T14:51:16Z",
       "error": ""
     },
     {
@@ -247,7 +246,7 @@
         "AI"
       ],
       "itemCount": 8,
-      "lastCheckedAt": "2026-10-05T05:49:45Z",
+      "lastCheckedAt": "2026-10-05T14:51:16Z",
       "lastSuccessAt": "2026-07-14T03:39:18Z",
       "error": "HTTP Error 405: Not Allowed"
     },
@@ -262,11 +261,15 @@
       "priority": 88,
       "featured": true,
       "categories": [
-        "컴퓨터 사이언스"
+        "사업",
+        "법률",
+        "컴퓨터 사이언스",
+        "AI",
+        "제약"
       ],
       "itemCount": 8,
-      "lastCheckedAt": "2026-10-05T05:49:45Z",
-      "lastSuccessAt": "2026-10-05T05:49:45Z",
+      "lastCheckedAt": "2026-10-05T14:51:16Z",
+      "lastSuccessAt": "2026-10-05T14:51:16Z",
       "error": ""
     },
     {
@@ -281,12 +284,11 @@
       "featured": true,
       "categories": [
         "사업",
-        "법률",
-        "AI"
+        "컴퓨터 사이언스"
       ],
       "itemCount": 3,
-      "lastCheckedAt": "2026-10-05T05:49:45Z",
-      "lastSuccessAt": "2026-10-05T05:49:45Z",
+      "lastCheckedAt": "2026-10-05T14:51:16Z",
+      "lastSuccessAt": "2026-10-05T14:51:16Z",
       "error": ""
     },
     {
@@ -301,12 +303,11 @@
       "featured": true,
       "categories": [
         "사업",
-        "법률",
         "AI"
       ],
       "itemCount": 3,
-      "lastCheckedAt": "2026-10-05T05:49:45Z",
-      "lastSuccessAt": "2026-10-05T05:49:45Z",
+      "lastCheckedAt": "2026-10-05T14:51:16Z",
+      "lastSuccessAt": "2026-10-05T14:51:16Z",
       "error": ""
     },
     {
@@ -324,8 +325,8 @@
         "AI"
       ],
       "itemCount": 3,
-      "lastCheckedAt": "2026-10-05T05:49:45Z",
-      "lastSuccessAt": "2026-10-05T05:49:45Z",
+      "lastCheckedAt": "2026-10-05T14:51:16Z",
+      "lastSuccessAt": "2026-10-05T14:51:16Z",
       "error": ""
     },
     {
@@ -342,8 +343,8 @@
         "AI"
       ],
       "itemCount": 3,
-      "lastCheckedAt": "2026-10-05T05:49:45Z",
-      "lastSuccessAt": "2026-10-05T05:49:45Z",
+      "lastCheckedAt": "2026-10-05T14:51:16Z",
+      "lastSuccessAt": "2026-10-05T14:51:16Z",
       "error": ""
     },
     {
@@ -357,12 +358,12 @@
       "priority": 76,
       "featured": true,
       "categories": [
-        "AI",
-        "제약"
+        "컴퓨터 사이언스",
+        "AI"
       ],
       "itemCount": 3,
-      "lastCheckedAt": "2026-10-05T05:49:45Z",
-      "lastSuccessAt": "2026-10-05T05:49:45Z",
+      "lastCheckedAt": "2026-10-05T14:51:16Z",
+      "lastSuccessAt": "2026-10-05T14:51:16Z",
       "error": ""
     },
     {
@@ -376,11 +377,12 @@
       "priority": 74,
       "featured": true,
       "categories": [
-        "사업"
+        "컴퓨터 사이언스",
+        "AI"
       ],
       "itemCount": 3,
-      "lastCheckedAt": "2026-10-05T05:49:45Z",
-      "lastSuccessAt": "2026-10-05T05:49:45Z",
+      "lastCheckedAt": "2026-10-05T14:51:16Z",
+      "lastSuccessAt": "2026-10-05T14:51:16Z",
       "error": ""
     },
     {
@@ -399,8 +401,8 @@
         "컴퓨터 사이언스"
       ],
       "itemCount": 5,
-      "lastCheckedAt": "2026-10-05T05:49:45Z",
-      "lastSuccessAt": "2026-10-05T05:49:45Z",
+      "lastCheckedAt": "2026-10-05T14:51:16Z",
+      "lastSuccessAt": "2026-10-05T14:51:16Z",
       "error": ""
     },
     {
@@ -419,8 +421,8 @@
         "법률"
       ],
       "itemCount": 5,
-      "lastCheckedAt": "2026-10-05T05:49:45Z",
-      "lastSuccessAt": "2026-10-05T05:49:45Z",
+      "lastCheckedAt": "2026-10-05T14:51:16Z",
+      "lastSuccessAt": "2026-10-05T14:51:16Z",
       "error": ""
     },
     {
@@ -437,8 +439,8 @@
         "사업"
       ],
       "itemCount": 4,
-      "lastCheckedAt": "2026-10-05T05:49:45Z",
-      "lastSuccessAt": "2026-10-05T05:49:45Z",
+      "lastCheckedAt": "2026-10-05T14:51:16Z",
+      "lastSuccessAt": "2026-10-05T14:51:16Z",
       "error": ""
     },
     {
@@ -455,8 +457,8 @@
         "사업"
       ],
       "itemCount": 6,
-      "lastCheckedAt": "2026-10-05T05:49:45Z",
-      "lastSuccessAt": "2026-10-05T05:49:45Z",
+      "lastCheckedAt": "2026-10-05T14:51:16Z",
+      "lastSuccessAt": "2026-10-05T14:51:16Z",
       "error": ""
     },
     {
@@ -471,12 +473,12 @@
       "featured": false,
       "categories": [
         "사업",
-        "AI",
-        "제약"
+        "컴퓨터 사이언스",
+        "AI"
       ],
       "itemCount": 5,
-      "lastCheckedAt": "2026-10-05T05:49:45Z",
-      "lastSuccessAt": "2026-10-05T05:49:45Z",
+      "lastCheckedAt": "2026-10-05T14:51:16Z",
+      "lastSuccessAt": "2026-10-05T14:51:16Z",
       "error": ""
     },
     {
@@ -495,8 +497,8 @@
         "제약"
       ],
       "itemCount": 4,
-      "lastCheckedAt": "2026-10-05T05:49:45Z",
-      "lastSuccessAt": "2026-10-05T05:49:45Z",
+      "lastCheckedAt": "2026-10-05T14:51:16Z",
+      "lastSuccessAt": "2026-10-05T14:51:16Z",
       "error": ""
     },
     {
@@ -510,11 +512,12 @@
       "priority": 66,
       "featured": false,
       "categories": [
+        "컴퓨터 사이언스",
         "AI"
       ],
       "itemCount": 5,
-      "lastCheckedAt": "2026-10-05T05:49:45Z",
-      "lastSuccessAt": "2026-10-05T05:49:45Z",
+      "lastCheckedAt": "2026-10-05T14:51:16Z",
+      "lastSuccessAt": "2026-10-05T14:51:16Z",
       "error": ""
     },
     {
@@ -532,8 +535,8 @@
         "AI"
       ],
       "itemCount": 4,
-      "lastCheckedAt": "2026-10-05T05:49:45Z",
-      "lastSuccessAt": "2026-10-05T05:49:45Z",
+      "lastCheckedAt": "2026-10-05T14:51:16Z",
+      "lastSuccessAt": "2026-10-05T14:51:16Z",
       "error": ""
     },
     {
@@ -548,12 +551,12 @@
       "featured": false,
       "categories": [
         "사업",
-        "컴퓨터 사이언스",
+        "법률",
         "AI"
       ],
       "itemCount": 4,
-      "lastCheckedAt": "2026-10-05T05:49:45Z",
-      "lastSuccessAt": "2026-10-05T05:49:45Z",
+      "lastCheckedAt": "2026-10-05T14:51:16Z",
+      "lastSuccessAt": "2026-10-05T14:51:16Z",
       "error": ""
     },
     {
@@ -567,14 +570,12 @@
       "priority": 64,
       "featured": false,
       "categories": [
-        "법률",
-        "컴퓨터 사이언스",
         "AI",
         "제약"
       ],
       "itemCount": 4,
-      "lastCheckedAt": "2026-10-05T05:49:45Z",
-      "lastSuccessAt": "2026-10-05T05:49:45Z",
+      "lastCheckedAt": "2026-10-05T14:51:16Z",
+      "lastSuccessAt": "2026-10-05T14:51:16Z",
       "error": ""
     },
     {
@@ -591,7 +592,7 @@
         "컴퓨터 사이언스"
       ],
       "itemCount": 5,
-      "lastCheckedAt": "2026-10-05T05:49:45Z",
+      "lastCheckedAt": "2026-10-05T14:51:16Z",
       "lastSuccessAt": "2026-08-20T01:54:08Z",
       "error": "syntax error: line 1, column 0"
     },
@@ -609,8 +610,8 @@
         "제약"
       ],
       "itemCount": 4,
-      "lastCheckedAt": "2026-10-05T05:49:45Z",
-      "lastSuccessAt": "2026-10-05T05:49:45Z",
+      "lastCheckedAt": "2026-10-05T14:51:16Z",
+      "lastSuccessAt": "2026-10-05T14:51:16Z",
       "error": ""
     },
     {
@@ -628,8 +629,8 @@
         "제약"
       ],
       "itemCount": 4,
-      "lastCheckedAt": "2026-10-05T05:49:45Z",
-      "lastSuccessAt": "2026-10-05T05:49:45Z",
+      "lastCheckedAt": "2026-10-05T14:51:16Z",
+      "lastSuccessAt": "2026-10-05T14:51:16Z",
       "error": ""
     },
     {
@@ -646,8 +647,8 @@
         "사업"
       ],
       "itemCount": 5,
-      "lastCheckedAt": "2026-10-05T05:49:45Z",
-      "lastSuccessAt": "2026-10-05T05:49:45Z",
+      "lastCheckedAt": "2026-10-05T14:51:16Z",
+      "lastSuccessAt": "2026-10-05T14:51:16Z",
       "error": ""
     },
     {
@@ -664,24 +665,271 @@
         "사업"
       ],
       "itemCount": 5,
-      "lastCheckedAt": "2026-10-05T05:49:45Z",
-      "lastSuccessAt": "2026-10-05T05:49:45Z",
+      "lastCheckedAt": "2026-10-05T14:51:16Z",
+      "lastSuccessAt": "2026-10-05T14:51:16Z",
       "error": ""
     }
   ],
   "items": [
     {
-      "id": "2e5d92efd0ceae9782788703",
+      "id": "1e48ce98391c7b2bec29db50",
+      "feedId": "bloter",
+      "source": "블로터",
+      "category": "사업",
+      "language": "ko",
+      "title": "'시총 200억대' 토박스코리아, 상장 후 첫 기업가치 제고",
+      "url": "https://www.bloter.net/news/articleView.html?idxno=674971",
+      "publishedAt": "2026-10-05T22:00:00Z",
+      "collectedAt": "2026-10-05T14:51:16Z",
+      "feedPosition": 0,
+      "summary": ""
+    },
+    {
+      "id": "79d62777d0db08985ebbe17d",
+      "feedId": "bloter",
+      "source": "블로터",
+      "category": "컴퓨터 사이언스",
+      "language": "ko",
+      "title": "한미반도체 MSVP 국산화 5년…TC본더 잇는 새 매출원 부상",
+      "url": "https://www.bloter.net/news/articleView.html?idxno=674929",
+      "publishedAt": "2026-10-05T19:00:00Z",
+      "collectedAt": "2026-10-05T14:51:16Z",
+      "feedPosition": 3,
+      "summary": ""
+    },
+    {
+      "id": "20d7a17085d1d3fb5728339c",
+      "feedId": "mk-economy",
+      "source": "매일경제",
+      "category": "AI",
+      "language": "ko",
+      "title": "6년 연속 정보보호 S등급이라더니…은행권, AI 해킹엔 ‘무주공산’",
+      "url": "https://www.mk.co.kr/news/economy/12168655",
+      "publishedAt": "2026-10-05T18:47:45Z",
+      "collectedAt": "2026-10-05T14:51:16Z",
+      "feedPosition": 2,
+      "summary": ""
+    },
+    {
+      "id": "df34cd7a997b2917b77b3c65",
+      "feedId": "bloter",
+      "source": "블로터",
+      "category": "사업",
+      "language": "ko",
+      "title": "[어바웃C] 동화약품 글로벌사업팀 격상…장진혁 ‘활명수 세계화’ 과제",
+      "url": "https://www.bloter.net/news/articleView.html?idxno=674938",
+      "publishedAt": "2026-10-05T18:00:00Z",
+      "collectedAt": "2026-10-05T14:51:16Z",
+      "feedPosition": 4,
+      "summary": ""
+    },
+    {
+      "id": "cf4b1d1c4d2796dd464af5aa",
+      "feedId": "mk-economy",
+      "source": "매일경제",
+      "category": "컴퓨터 사이언스",
+      "language": "ko",
+      "title": "6년연속 '정보보호 100점'의 허상",
+      "url": "https://www.mk.co.kr/news/economy/12168619",
+      "publishedAt": "2026-10-05T17:34:41Z",
+      "collectedAt": "2026-10-05T14:51:16Z",
+      "feedPosition": 4,
+      "summary": ""
+    },
+    {
+      "id": "60d15d79270769e2298137da",
+      "feedId": "mk-economy",
+      "source": "매일경제",
+      "category": "컴퓨터 사이언스",
+      "language": "ko",
+      "title": "\"해킹 당한 금융사들 또 당했다\"",
+      "url": "https://www.mk.co.kr/news/economy/12168602",
+      "publishedAt": "2026-10-05T17:29:50Z",
+      "collectedAt": "2026-10-05T14:51:16Z",
+      "feedPosition": 5,
+      "summary": ""
+    },
+    {
+      "id": "d3c451ec0779aabd63fd29b7",
+      "feedId": "bloter",
+      "source": "블로터",
+      "category": "사업",
+      "language": "ko",
+      "title": "[콘퍼런스콜] 美 사업 밀린 쓰리빌리언, 외형성장 타격 덜한 까닭은",
+      "url": "https://www.bloter.net/news/articleView.html?idxno=675033",
+      "publishedAt": "2026-10-05T16:02:31Z",
+      "collectedAt": "2026-10-05T14:51:16Z",
+      "feedPosition": 7,
+      "summary": ""
+    },
+    {
+      "id": "c18d2437944a4822c82b6207",
       "feedId": "bloter",
       "source": "블로터",
       "category": "AI",
       "language": "ko",
-      "title": "데이터·권한까지 넓어진 AI 공격 표면…SK쉴더스가 본 레드티밍",
-      "url": "https://www.bloter.net/news/articleView.html?idxno=674907",
-      "publishedAt": "2026-10-05T14:00:00Z",
-      "collectedAt": "2026-10-05T05:49:45Z",
-      "feedPosition": 1,
+      "title": "[AI시대 일의 재편] 확보한 시간 '기획·신뢰'에 쏟는 슈퍼브AI",
+      "url": "https://www.bloter.net/news/articleView.html?idxno=674963",
+      "publishedAt": "2026-10-05T16:00:00Z",
+      "collectedAt": "2026-10-05T14:51:16Z",
+      "feedPosition": 8,
       "summary": ""
+    },
+    {
+      "id": "f3d9573a2db62727627eb211",
+      "feedId": "digitaltoday",
+      "source": "디지털투데이",
+      "category": "AI",
+      "language": "ko",
+      "title": "리플렉션, 미국산 오픈 웨이트 모델로 AI판 대공세 예고",
+      "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=705010",
+      "publishedAt": "2026-10-05T15:36:16Z",
+      "collectedAt": "2026-10-05T14:51:16Z",
+      "feedPosition": 3,
+      "summary": ""
+    },
+    {
+      "id": "8d04504b9657823aeb473dc3",
+      "feedId": "it-chosun",
+      "source": "IT조선",
+      "category": "AI",
+      "language": "ko",
+      "title": "트럼프 \"AI 대신 SI(초지능) 써라\" 행정명령… 머스크도 동조",
+      "url": "https://it.chosun.com/news/articleView.html?idxno=2023092171429",
+      "publishedAt": "2026-10-05T14:57:20Z",
+      "collectedAt": "2026-10-05T14:51:16Z",
+      "feedPosition": 2,
+      "summary": ""
+    },
+    {
+      "id": "b6b54ca8acdb3c8e517007f1",
+      "feedId": "it-chosun",
+      "source": "IT조선",
+      "category": "AI",
+      "language": "ko",
+      "title": "가수 사칭 AI 음원 범람… 소니뮤직, 26만곡 삭제 요구",
+      "url": "https://it.chosun.com/news/articleView.html?idxno=2023092171428",
+      "publishedAt": "2026-10-05T14:47:36Z",
+      "collectedAt": "2026-10-05T14:51:16Z",
+      "feedPosition": 3,
+      "summary": ""
+    },
+    {
+      "id": "38de3f1fceb4c6a6391b2ade",
+      "feedId": "self-development-korea",
+      "source": "브런치 자기계발·커리어",
+      "category": "자기계발",
+      "language": "ko",
+      "title": "디자이너에서 운영기획 총괄까지 - 브런치",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5tN3QtSUZMVUZ3dWhWbUtrYWd0cldSX29VSHpFS0dlUWNId2JHRXRGc1BoZ0tLVEtEdWdaclNaRkhHRlFqcmRUS01WUGl2Y3cyTEhmb3pRd05lQQ?oc=5",
+      "publishedAt": "2026-10-05T14:38:00Z",
+      "collectedAt": "2026-10-05T14:51:16Z",
+      "feedPosition": 81,
+      "summary": ""
+    },
+    {
+      "id": "4ae1d02b28f34000469ca118",
+      "feedId": "donga-useful",
+      "source": "동아일보",
+      "category": "AI",
+      "language": "ko",
+      "title": "[사설]‘100점 보안’ 바보 만든 AI 해킹… 이런 심사론 ‘먹잇감’만 양산 - donga.com",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFA5em54aDBYdkVzTmhrTGV3ZkpQSjV4LWJjVlNTVWE1Z0RWQkNWU3RzbU45bjFHbTRPam0wbzRpbU80OWwtRFNFQjAwbWxHdFV3eWRFVDRGNVM4Ym1hUm9EVUhYREc1VUVxdEQwWllpOXhzT3U0NHfSAWZBVV95cUxNeXFKNFpXWHA4a3Vqc2dzQkpzSW92REJjaEszVmk1enZWM3NqZ0hBaUZUU0hpcFdMZmtyaFoyRU1YOWxsQUt5MURJSVI5bC1obXB1eGJwVENTNVZBMTRJLVdhRlFVY0E?oc=5",
+      "publishedAt": "2026-10-05T14:27:00Z",
+      "collectedAt": "2026-10-05T14:51:16Z",
+      "feedPosition": 4,
+      "summary": ""
+    },
+    {
+      "id": "8b8bf8eeffe9c4c46aaffb0b",
+      "feedId": "donga-useful",
+      "source": "동아일보",
+      "category": "사업",
+      "language": "ko",
+      "title": "[사설]“근로기준법 적용 땐 사업 못 해”… 영세업자들의 하소연 - donga.com",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBMZzM0NXl2N052MjhxQlhJZkZIdmtyTHJVaEw2MUhwX3BHNHhtQjBUQ0ZCY1duSVpFUC00b0NYNV82VEZaT1NRelVNUk5Yay03Ukh5eDg1enVvbEtWdmhHZUt0MGlOOFh1blR0ajdvTzdYc1RnRHfSAWZBVV95cUxOYjdvVXdtUWVtdnNUc2NyVl9uX252Yk5JRVE5V3JUa1B0Z3Y5QXBISmg1SXhDdHVUVU0tem9lbm9CcGZ1aXVrcEZYN25DeUppcVAtVEJka3VGVWZ4RUFCMnR6YnlfTFE?oc=5",
+      "publishedAt": "2026-10-05T14:24:00Z",
+      "collectedAt": "2026-10-05T14:51:16Z",
+      "feedPosition": 13,
+      "summary": ""
+    },
+    {
+      "id": "d56e246ddd8885fb959f8f3d",
+      "feedId": "donga-useful",
+      "source": "동아일보",
+      "category": "AI",
+      "language": "ko",
+      "title": "[주성하 기자의 서울과 평양 사이]군사분계선에 AI 경계도로를 깔자 - donga.com",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9PeDZONjAyLXUxSlR3WXNVWG91am1fcHdlbkRXdjlYNmFIcDYtTXhhN1lGU19mZG5PbEtfNHZyUXhiZDJIeHhLLXNTeWlHR2c5d0ozVHdWT3JuYzJ2TGI1UGhwcVBpQjI3YnFUUGZGbXV6MGpQSEHSAWZBVV95cUxPV09IaGlyUjZYdTlGUDV6TTZQYjEtblhMZ3Y5bFV5TzF1SHFkNjR4d3VHc0Y3YkFTZ0ZBRlY2MkxTR3NYM2d1SFNhMFhCQ1BDV3Q0am55LXNUTUsteDFuT2l5RHdPS1E?oc=5",
+      "publishedAt": "2026-10-05T14:09:00Z",
+      "collectedAt": "2026-10-05T14:51:16Z",
+      "feedPosition": 17,
+      "summary": ""
+    },
+    {
+      "id": "54a6ee2fa438c4d5f6e2e816",
+      "feedId": "inews24-it",
+      "source": "아이뉴스24 IT",
+      "category": "AI",
+      "language": "ko",
+      "title": "삼성·SK, SEDEX서 차세대 HBM 격돌…AI칩·소부장도 총출동",
+      "url": "https://www.inews24.com/view/2011804",
+      "publishedAt": "2026-10-05T14:04:51Z",
+      "collectedAt": "2026-10-05T14:51:16Z",
+      "feedPosition": 0,
+      "summary": ""
+    },
+    {
+      "id": "a77eee023bd30db326e396ad",
+      "feedId": "hani-useful",
+      "source": "한겨레",
+      "category": "사업",
+      "language": "ko",
+      "title": "[단독] 전기차 전환 빨라지면 경제 부담?…“GDP·소비·수출 모두 증가” - 한겨레",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1UV0k4YUUyMW1RZUdkdUJIM25oUGtpVjRVdzJCWmRKNXloQU9zVFhiZ0lIT19fRDRtU1BuaXoycEdDVjNxS19CYVdBNXdPWFVRQzhHcmF5WlBPMHJxUTFHNDlzbldQSzdaZGxQaw?oc=5",
+      "publishedAt": "2026-10-05T14:01:14Z",
+      "collectedAt": "2026-10-05T14:51:16Z",
+      "feedPosition": 18,
+      "summary": ""
+    },
+    {
+      "id": "a26a481b50bb89c48b228626",
+      "feedId": "hani-useful",
+      "source": "한겨레",
+      "category": "컴퓨터 사이언스",
+      "language": "ko",
+      "title": "LG전자, 북미 데이터센터에 5GW 냉각설비 공급…2∼3조원 추산 - 한겨레",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9RX211TlAyVjR5T0VoQy1XNDFWSjFCbE9Cdkh3TERYME9VMk9SVm82c09tNVBrb1M1enNHbkNmRDltYjdkUzcxMjVJWENSMG5vcHluS1BXVlFPY2h5RDhvR3ZUM3l2WlBXeGc?oc=5",
+      "publishedAt": "2026-10-05T13:49:00Z",
+      "collectedAt": "2026-10-05T14:51:16Z",
+      "feedPosition": 36,
+      "summary": ""
+    },
+    {
+      "id": "47a217fe9c5f5195f7765ea1",
+      "feedId": "geeknews",
+      "source": "GeekNews",
+      "category": "제약",
+      "language": "ko",
+      "title": "Apple과 해커의 미래",
+      "url": "https://news.hada.io/topic?id=34827",
+      "publishedAt": "2026-10-05T13:40:41Z",
+      "collectedAt": "2026-10-05T14:51:16Z",
+      "feedPosition": 0,
+      "summary": "AI 에이전트가 소프트웨어를 만들고 컴퓨터를 조작하는 환경 에서는 Apple의 보호 장치와 앱 중심 설계가 사용자가 원하는 작업을 막는 제약이 될 수 있음 Claude와 Codex만 실행하던 Mac Mini가 해킹됐지만, 상시 실행 중인 Claude가 이상을 감지 하고 침입 분석과 ..."
+    },
+    {
+      "id": "7ac602e7d101743f6b090b55",
+      "feedId": "geeknews",
+      "source": "GeekNews",
+      "category": "AI",
+      "language": "ko",
+      "title": "Web Search API",
+      "url": "https://news.hada.io/topic?id=34826",
+      "publishedAt": "2026-10-05T13:37:41Z",
+      "collectedAt": "2026-10-05T14:51:16Z",
+      "feedPosition": 1,
+      "summary": "Cloudflare가 Web Search API 를 베타로 공개해, AI 에이전트와 애플리케이션이 인터넷을 검색하고 실시간 정보를 근거로 응답할 수 있게 함 출시 시점에는 Ceramic.ai, Exa, Linkup 의 세 검색 제공업체를 선택할 수 있음 세 제공업체 모두 Cloudflare를 통..."
     },
     {
       "id": "e4117d80498f74992759be36",
@@ -693,21 +941,112 @@
       "url": "https://it.chosun.com/news/articleView.html?idxno=2023092171426",
       "publishedAt": "2026-10-05T13:29:03Z",
       "collectedAt": "2026-10-05T05:49:45Z",
-      "feedPosition": 0,
+      "feedPosition": 4,
       "summary": ""
     },
     {
-      "id": "ece0031b77c2e5a6e1d4e445",
-      "feedId": "bloter",
-      "source": "블로터",
+      "id": "4fa2e4c17b0f96daa9faa882",
+      "feedId": "hankyung-all",
+      "source": "한국경제",
       "category": "AI",
       "language": "ko",
-      "title": "독파모 3차 '2개팀 선발' 유지…프론티어 AI는 별도 공모",
-      "url": "https://www.bloter.net/news/articleView.html?idxno=674965",
-      "publishedAt": "2026-10-05T12:00:00Z",
-      "collectedAt": "2026-10-05T05:49:45Z",
+      "title": "LG전자 '美 AI센터 냉각설비' 5조 계약 따냈다",
+      "url": "https://www.hankyung.com/article/2026100539141",
+      "publishedAt": "2026-10-05T13:13:15Z",
+      "collectedAt": "2026-10-05T14:51:16Z",
       "feedPosition": 3,
       "summary": ""
+    },
+    {
+      "id": "a29f26a772d948ee14589d79",
+      "feedId": "hankyung-all",
+      "source": "한국경제",
+      "category": "컴퓨터 사이언스",
+      "language": "ko",
+      "title": "美, 데이터센터 반대여론에도 건설 계속…2027년 90GW 전망",
+      "url": "https://www.hankyung.com/article/202610053953i",
+      "publishedAt": "2026-10-05T13:05:32Z",
+      "collectedAt": "2026-10-05T14:51:16Z",
+      "feedPosition": 5,
+      "summary": ""
+    },
+    {
+      "id": "ee95755a0519f307ac7a7d99",
+      "feedId": "chosun-economy",
+      "source": "조선일보",
+      "category": "AI",
+      "language": "ko",
+      "title": "LG전자, 美서 5GW 규모 AI 데이터센터 냉각 수주…K가전 새 돌파구",
+      "url": "https://www.chosun.com/economy/tech_it/2026/10/05/TLHSB5NWOBAIXHIFDH6KNWLQ2Y",
+      "publishedAt": "2026-10-05T13:00:00Z",
+      "collectedAt": "2026-10-05T14:51:16Z",
+      "feedPosition": 2,
+      "summary": ""
+    },
+    {
+      "id": "265d66a884d34934f4f7181b",
+      "feedId": "geeknews",
+      "source": "GeekNews",
+      "category": "법률",
+      "language": "ko",
+      "title": "Huawei와 Qualcomm, 포괄적 특허 라이선스 계약 발표",
+      "url": "https://news.hada.io/topic?id=34824",
+      "publishedAt": "2026-10-05T12:37:38Z",
+      "collectedAt": "2026-10-05T14:51:16Z",
+      "feedPosition": 3,
+      "summary": "Huawei와 Qualcomm 이 5G, 컴퓨팅, AI, 네트워킹 등 여러 기술 분야의 특허 포트폴리오를 상호 사용하도록 허용하는 다년간 라이선스 계약 을 체결함 계약에는 Qualcomm이 컴퓨팅, AI, 네트워킹 및 기타 기술 분야의 Huawei 미국 특허 일부를 매입 하..."
+    },
+    {
+      "id": "ae212f8219d64efaff02f90b",
+      "feedId": "geeknews",
+      "source": "GeekNews",
+      "category": "사업",
+      "language": "ko",
+      "title": "유럽의 새로운 로봇 유니콘: 독일 RobCo, 기업가치 약 1.5조원 달성",
+      "url": "https://news.hada.io/topic?id=34823",
+      "publishedAt": "2026-10-05T12:34:38Z",
+      "collectedAt": "2026-10-05T14:51:16Z",
+      "feedPosition": 4,
+      "summary": "독일 뮌헨 기반 RobCo 가 신규 투자와 장기근속 직원의 구주 매각을 결합한 거래로 기업가치 10억 달러($1b)를 돌파 했으며, 9개월 만에 가치가 두 배로 늘어남 서비스형 로봇(Robotics-as-a-Service) 모델을 통해 제조업체가 대규모 초기 투자 없이..."
+    },
+    {
+      "id": "b5e7301f59f74ea4b49b95d0",
+      "feedId": "geeknews",
+      "source": "GeekNews",
+      "category": "AI",
+      "language": "ko",
+      "title": "MCPB로 로컬 MCP 서버를 Claude Desktop 원클릭 확장으로 만들기",
+      "url": "https://news.hada.io/topic?id=34822",
+      "publishedAt": "2026-10-05T12:33:48Z",
+      "collectedAt": "2026-10-05T14:51:16Z",
+      "feedPosition": 5,
+      "summary": "Anthropic 공식 문서. MCPB(.mcpb)는 로컬 MCP 서버와 manifest.json을 담은 zip 하나로, Claude Desktop이 브라우저 확장처럼 설치하는 방법입니다.(파일 더블클릭, 창에 드래그, 또는 Settings → Extensions → Advanced settings → Install Extension…). 서버는 사용자 PC에서 stdio로 돌아 로컬 파일·로컬 도구..."
+    },
+    {
+      "id": "51d8a5559b660edb7d84104e",
+      "feedId": "lennys-newsletter",
+      "source": "Lenny's Newsletter",
+      "category": "사업",
+      "language": "en",
+      "title": "How OpenAI uses ChatGPT Sites (live at DevDay!) | Kath Korevec (Product Lead)",
+      "url": "https://www.lennysnewsletter.com/p/how-openai-uses-chatgpt-sites-live",
+      "publishedAt": "2026-10-05T12:04:54Z",
+      "collectedAt": "2026-10-05T14:51:16Z",
+      "feedPosition": 0,
+      "summary": "Watch now (36 mins) | 🎙️ Kath Korevec demos ChatGPT Sites live at OpenAI DevDay, showing how to turn Slack, Notion, and calendar data into internal tools that adapt to each person on your team"
+    },
+    {
+      "id": "58957510d6be5dc25c077e73",
+      "feedId": "ai-times-korea",
+      "source": "AI타임스",
+      "category": "AI",
+      "language": "ko",
+      "title": "구글, 'AI 프로' 국내 한정 40% 할인...연간 구독권 프로모션 진행",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=215976",
+      "publishedAt": "2026-10-05T12:01:19Z",
+      "collectedAt": "2026-10-05T14:51:16Z",
+      "feedPosition": 0,
+      "summary": "10월31일까지 ‘구글 AI 프로’ 연간 구독권을 40% 할인된 가격으로 구매할 수 있다. 신규 연간 구독자를 대상으로 기존 연간 플랜 요금인 29만 원에서 40% 할인된 17만4000원(월 환산 1만4500원)에 이용 가능하다.구글이 ‘구글 AI 프로(Google AI Pro)’ 캠페인과 동시에 국내 이용자 대상 특별 할인 프로모션을 진행한다고 5일 밝혔다. 구글은 이전부터 AI 서비스의 특별 프로모션을 주기적으로 선보이고 있다. 2025년 8월에는 대학생을 대상으로 AI 프로 1년 무료 이용권을 제공했으며, 같은 해 12월에는"
     },
     {
       "id": "b1fb4e9d8c8eabc42d9fcbeb",
@@ -719,7 +1058,7 @@
       "url": "https://it.chosun.com/news/articleView.html?idxno=2023092171358",
       "publishedAt": "2026-10-05T12:00:00Z",
       "collectedAt": "2026-10-05T05:49:45Z",
-      "feedPosition": 1,
+      "feedPosition": 5,
       "summary": ""
     },
     {
@@ -732,7 +1071,59 @@
       "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=704801",
       "publishedAt": "2026-10-05T12:00:00Z",
       "collectedAt": "2026-10-05T05:49:45Z",
-      "feedPosition": 0,
+      "feedPosition": 4,
+      "summary": ""
+    },
+    {
+      "id": "e53e4809ad83f02f8195a1a1",
+      "feedId": "hani-useful",
+      "source": "한겨레",
+      "category": "컴퓨터 사이언스",
+      "language": "ko",
+      "title": "신한은행 해킹 IP, 올해 초부터 토스뱅크도 접근 시도 - 한겨레",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFA5SGpXQTRValkyd3AtSlktX0R5YlZrT1M4ZWFXVU1jSExQWVYxWWxpT2lpYTBobWw0eDJHdWdZLTJKWXhfTGtPRTNpc0hGaU5BSGh6bjhSdWZ4U3VuYkpmSGdiSGZITWs?oc=5",
+      "publishedAt": "2026-10-05T11:58:00Z",
+      "collectedAt": "2026-10-05T14:51:16Z",
+      "feedPosition": 55,
+      "summary": ""
+    },
+    {
+      "id": "52866c217571f036e5c043ff",
+      "feedId": "ai-times-korea",
+      "source": "AI타임스",
+      "category": "AI",
+      "language": "ko",
+      "title": "클로드, 18개 분야 36편 논문 원고 작성… 앤트로픽이 조명한 AI 과학 연구",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=215979",
+      "publishedAt": "2026-10-05T11:48:07Z",
+      "collectedAt": "2026-10-05T14:51:16Z",
+      "feedPosition": 1,
+      "summary": "앤트로픽이 매슈 슈워츠 하버드대학교 물리학 교수의 기고문 \\'클로드형 과학(Claude-shaped science)\\'을 공식 블로그에 게재하며 프론티어 모델을 활용한 과학 연구의 새로운 접근법을 조명했다. 이번 작업은 AI 모델에 거대한 과학적 난제를 곧바로 던져주던 기존 방식에서 벗어나, LLM이 잘 해결할 수 있는 영역인 \\'클로드형(Claude-shaped) 문제\\'를 찾아내 밀착 적용했다는 점에서 의미가 크다.슈워츠 교수는 1일(현지시간) 공개된 글을 통해 AI 성과 발표와 연구자들이 현장에서 느끼는 체감 사이의 간극을 전기공학·"
+    },
+    {
+      "id": "ff5a7a7326afffb454823c22",
+      "feedId": "geeknews",
+      "source": "GeekNews",
+      "category": "컴퓨터 사이언스",
+      "language": "ko",
+      "title": "내 35mm 필름 스캔 파이프라인 자동화하기",
+      "url": "https://news.hada.io/topic?id=34821",
+      "publishedAt": "2026-10-05T11:33:47Z",
+      "collectedAt": "2026-10-05T14:51:16Z",
+      "feedPosition": 6,
+      "summary": "한 롤 36장을 스캔하고 편집하는 데 평균 4시간 이 걸리던 작업에서, VueScan을 이용한 수동 스캔은 유지하고 이후 변환, 먼지 제거, 메타데이터 생성과 게시를 자동화함 처음에는 Claude가 SANE으로 스캐너를 직접 제어 하게 했지만, 스캔 영역의 X/Y 방향을 반대로..."
+    },
+    {
+      "id": "2d68d19e8692e20c69e8d0b0",
+      "feedId": "hankyung-all",
+      "source": "한국경제",
+      "category": "AI",
+      "language": "ko",
+      "title": "폭스콘, AI수요 힙입어 3분기 매출 47% 급증",
+      "url": "https://www.hankyung.com/article/202610053926i",
+      "publishedAt": "2026-10-05T11:29:08Z",
+      "collectedAt": "2026-10-05T14:51:16Z",
+      "feedPosition": 15,
       "summary": ""
     },
     {
@@ -745,33 +1136,33 @@
       "url": "https://www.medipana.com/news/articleView.html?idxno=418746",
       "publishedAt": "2026-10-05T11:20:53Z",
       "collectedAt": "2026-10-05T05:49:45Z",
+      "feedPosition": 5,
+      "summary": ""
+    },
+    {
+      "id": "24e8880ea9c005da30cc064a",
+      "feedId": "ai-times-korea",
+      "source": "AI타임스",
+      "category": "AI",
+      "language": "ko",
+      "title": "앤트로픽, 10월6일까지 '음성 인터뷰어' 가동…대화록 공개·음성 학습 수집 결합",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=215978",
+      "publishedAt": "2026-10-05T11:20:00Z",
+      "collectedAt": "2026-10-05T14:51:16Z",
+      "feedPosition": 2,
+      "summary": "앤트로픽이 지난 9월29일 공식 연구 발표를 시작으로, 대화형 AI 연구 도구인 \\'앤트로픽 인터뷰어(Anthropic Interviewer)\\'를 일반 클로드 및 클로드 코드 사용자 대상으로 전면 가동하며 대규모 질적 연구에 나섰다.앤트로픽 인터뷰어는 연구진의 질문 프레임워크를 바탕으로 능동적인 인터뷰를 수행하는 연구 에이전트로, 지난 2025년 12월 처음 등장했다.당시 8만명 이상의 비공개 인터뷰를 통해 요약 보고서 형태만 냈던 것과 달리, 9월29일부터 10월6일까지 진행되는 이번 2차 연구는 데이터 수집 방식과 공개 범위가 대"
+    },
+    {
+      "id": "6da704fd19781d83cb28d3b0",
+      "feedId": "zdnet-korea",
+      "source": "ZDNet Korea",
+      "category": "컴퓨터 사이언스",
+      "language": "ko",
+      "title": "\"해킹 비상 한국 이제 시작\"...보안전문가들 CSF 구축 등 해법 제시",
+      "url": "https://zdnet.co.kr/view?no=20261005201759",
+      "publishedAt": "2026-10-05T11:17:59Z",
+      "collectedAt": "2026-10-05T14:51:16Z",
       "feedPosition": 1,
-      "summary": ""
-    },
-    {
-      "id": "4dd2cf6a51a5a0547d1fcb07",
-      "feedId": "it-chosun",
-      "source": "IT조선",
-      "category": "법률",
-      "language": "ko",
-      "title": "올트먼 “AI 혜택 위해 일부 위험 감수해야”… 앤트로픽과 규제 시각차",
-      "url": "https://it.chosun.com/news/articleView.html?idxno=2023092171423",
-      "publishedAt": "2026-10-05T11:15:00Z",
-      "collectedAt": "2026-10-05T05:49:45Z",
-      "feedPosition": 4,
-      "summary": ""
-    },
-    {
-      "id": "c6bfb20566e97f0c76f00db5",
-      "feedId": "mk-economy",
-      "source": "매일경제",
-      "category": "사업",
-      "language": "ko",
-      "title": "[단독] 지방 살리겠다며 15조 내걸고…지역활성화 펀드, 3년간 투자 1800억",
-      "url": "https://www.mk.co.kr/news/economy/12168323",
-      "publishedAt": "2026-10-05T11:04:53Z",
-      "collectedAt": "2026-10-05T05:49:45Z",
-      "feedPosition": 4,
       "summary": ""
     },
     {
@@ -784,21 +1175,34 @@
       "url": "https://www.medipana.com/news/articleView.html?idxno=418745",
       "publishedAt": "2026-10-05T10:57:17Z",
       "collectedAt": "2026-10-05T05:49:45Z",
-      "feedPosition": 2,
+      "feedPosition": 6,
       "summary": ""
     },
     {
-      "id": "6ac5b7db516349b86a00074c",
-      "feedId": "it-chosun",
-      "source": "IT조선",
-      "category": "컴퓨터 사이언스",
+      "id": "630f175629e555e3b4038e28",
+      "feedId": "ai-times-korea",
+      "source": "AI타임스",
+      "category": "AI",
       "language": "ko",
-      "title": "금융권 해킹, 6개 은행서 IP 등 공통 흔적… 정상 조회 기능 악용",
-      "url": "https://it.chosun.com/news/articleView.html?idxno=2023092171422",
-      "publishedAt": "2026-10-05T10:52:17Z",
-      "collectedAt": "2026-10-05T05:49:45Z",
-      "feedPosition": 5,
-      "summary": ""
+      "title": "뉴럴링크, 5만시간 뇌 데이터 사전학습…BCI도 '파운데이션 모델' 시대 열렸다",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=215977",
+      "publishedAt": "2026-10-05T10:48:15Z",
+      "collectedAt": "2026-10-05T14:51:16Z",
+      "feedPosition": 3,
+      "summary": "뇌-컴퓨터 인터페이스(BCI) 전문 뉴럴링크가 레이블이 지정되지 않은 5만시간 분량의 원시 신경 데이터로 디코딩 AI 모델을 사전학습하는 데 성공했다. 자연어 처리와 컴퓨터 비전 분야를 혁신했던 대규모 자기지도 학습 방식을 BCI 디코딩 체계에 본격 도입한 것으로 평가받는다.뉴럴링크는 1일(현지시간) 자사의 BCI 플랫폼을 뒷받침하는 AI 훈련 기술 방식의 연구 업데이트를 공개했다. 그동안 공개된 BCI 디코딩 모델 중 최대 규모인 5만 시간 분량의 신경 기록을 활용해 파운데이션 모델 방식의 사전학습을 완료했다는 내용이다.이번 연구"
+    },
+    {
+      "id": "071d4b3846d6c19fff1535f8",
+      "feedId": "geeknews",
+      "source": "GeekNews",
+      "category": "사업",
+      "language": "ko",
+      "title": "덴마크 데이터 유출로 880만 명의 개인정보 노출",
+      "url": "https://news.hada.io/topic?id=34820",
+      "publishedAt": "2026-10-05T10:32:35Z",
+      "collectedAt": "2026-10-05T14:51:16Z",
+      "feedPosition": 7,
+      "summary": "덴마크 중앙인구등록부(CPR) 에서 약 880만 명 의 이름, 주소, CPR 번호 등에 대한 무단 접근이 확인됨 외부인이 덴마크 기업에 부여된 합법적인 CPR 조회 권한 을 악용해 정보에 접근함 조사 결과, 이름과 주소 보호 를 ..."
     },
     {
       "id": "4389d74c8c7c5da02891f1e8",
@@ -810,34 +1214,60 @@
       "url": "https://www.medipana.com/news/articleView.html?idxno=418744",
       "publishedAt": "2026-10-05T10:24:10Z",
       "collectedAt": "2026-10-05T05:49:45Z",
-      "feedPosition": 3,
-      "summary": ""
-    },
-    {
-      "id": "fbc8f2d1e7b638ab5334c82e",
-      "feedId": "mk-economy",
-      "source": "매일경제",
-      "category": "사업",
-      "language": "ko",
-      "title": "우리금융 다함께 적금2 출시…최고 연 9.0% 금리",
-      "url": "https://www.mk.co.kr/news/economy/12168307",
-      "publishedAt": "2026-10-05T10:17:48Z",
-      "collectedAt": "2026-10-05T05:49:45Z",
       "feedPosition": 7,
       "summary": ""
     },
     {
-      "id": "05f18c517e9bf4ca1e783d33",
-      "feedId": "bloter",
-      "source": "블로터",
+      "id": "4426029786351c72fb168e92",
+      "feedId": "ai-times-korea",
+      "source": "AI타임스",
+      "category": "법률",
+      "language": "ko",
+      "title": "'인간 vs 로봇' 케이지 파이트, 캘리포니아서 ‘중단 명령’ 받았다",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=215975",
+      "publishedAt": "2026-10-05T10:19:04Z",
+      "collectedAt": "2026-10-05T14:51:16Z",
+      "feedPosition": 4,
+      "summary": "미국의 로봇 스타트업 REK가 샌프란시스코에서 추진한 인간과 휴머노이드 로봇 간의 케이지 파이트 경기를 두고 캘리포니아주 규제 당국의 제재가 내려졌다.4일(현지시간) 톰스하드웨어에 따르면, 캘리포니아주 체육위원회(CSAC)는 최근 REK와 창립자 겸 CEO인 시크스 리브에게 허가받지 않은 인간 대 로봇 대결의 개최와 홍보, 후원을 즉각 중단하라는 내용을 담은 \\'활동 중지 명령서\\'를 발송했다.CSAC는 주정부의 사전 승인이나 라이선스 없이 이러한 격투 이벤트를 조직할 경우 비즈니스 및 전문직 법률 위반에 따라 경범죄 처벌 조항이 적용"
+    },
+    {
+      "id": "9e01b57635ad9a354c666e69",
+      "feedId": "geeknews",
+      "source": "GeekNews",
+      "category": "컴퓨터 사이언스",
+      "language": "ko",
+      "title": "Android에서 시스템 수준으로 광고 차단하기",
+      "url": "https://news.hada.io/topic?id=34819",
+      "publishedAt": "2026-10-05T10:07:38Z",
+      "collectedAt": "2026-10-05T14:51:16Z",
+      "feedPosition": 8,
+      "summary": "시스템 수준 광고 차단 은 특정 브라우저뿐 아니라 모든 앱과 Android 자체에 적용되며, 대개 DNS 조회 결과를 바꿔 알려진 광고 서버에 연결하지 못하게 함 선택지는 광고 차단 DNS 서비스 , 광고 차단 기능이 있는 VPN, 루팅 없이 사용하는 차단 앱, 루팅 후"
+    },
+    {
+      "id": "1254ab0794c149105ee7a440",
+      "feedId": "ai-times-korea",
+      "source": "AI타임스",
       "category": "AI",
       "language": "ko",
-      "title": "[AI가 바꾸는 보안] 안랩, 에이전틱 적용의 조건은 '통제된 자율성'",
-      "url": "https://www.bloter.net/news/articleView.html?idxno=674857",
+      "title": "KAIST, 데이터 변화해도 검색 정확도 유지하는 ‘CONDA’ 기술 개발",
+      "url": "https://www.aitimes.com/news/articleView.html?idxno=215974",
+      "publishedAt": "2026-10-05T10:05:00Z",
+      "collectedAt": "2026-10-05T14:51:16Z",
+      "feedPosition": 5,
+      "summary": "KAIST 연구진이 ‘AI가 최신 정보를 더 정확하고 빠르게 찾는 기술’을 개발했다. 서비스 적용도 진행한다는 계획이다.한국과학기술원(KAIST, 총장 배충식)은 김민수 전산학부 교수 연구팀이 데이터가 지속적으로 추가, 삭제되는 환경에서도 높은 검색 정확도를 안정적으로 유지하는 동적 벡터 검색 기술 ‘콘다(CONDA, Connectivity-Aware Dynamic Index)’를 개발했다고 5일 밝혔다. 생성 AI는 학습이 끝난 뒤 새롭게 등장한 정보를 스스로 알지 못한다. 이를 보완하기 위해 최신 뉴스나 기업 내부 문서 등을 검"
+    },
+    {
+      "id": "0215f891b3c3cebe176529b2",
+      "feedId": "openai-news",
+      "source": "OpenAI News",
+      "category": "AI",
+      "language": "en",
+      "title": "Building advertising for the way people use AI",
+      "url": "https://openai.com/index/new-chatgpt-ads-format-and-measurement",
       "publishedAt": "2026-10-05T10:00:00Z",
-      "collectedAt": "2026-10-05T05:49:45Z",
-      "feedPosition": 6,
-      "summary": ""
+      "collectedAt": "2026-10-05T14:51:16Z",
+      "feedPosition": 0,
+      "summary": "OpenAI introduces a new visual ad format in ChatGPT and expands measurement tools, attribution partnerships, and brand suitability for advertisers."
     },
     {
       "id": "dbf80b87152c7814a0c251fe",
@@ -849,6 +1279,19 @@
       "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=704957",
       "publishedAt": "2026-10-05T10:00:00Z",
       "collectedAt": "2026-10-05T05:49:45Z",
+      "feedPosition": 6,
+      "summary": ""
+    },
+    {
+      "id": "a95fb6099fb7e006486d3cbd",
+      "feedId": "zdnet-korea",
+      "source": "ZDNet Korea",
+      "category": "AI",
+      "language": "ko",
+      "title": "JEDEC, 첫 '실리콘 포토닉스' 신뢰성 표준 발표…AI인프라 변혁 예고",
+      "url": "https://zdnet.co.kr/view?no=20261005183555",
+      "publishedAt": "2026-10-05T09:43:20Z",
+      "collectedAt": "2026-10-05T14:51:16Z",
       "feedPosition": 2,
       "summary": ""
     },
@@ -862,7 +1305,7 @@
       "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=705006",
       "publishedAt": "2026-10-05T09:17:21Z",
       "collectedAt": "2026-10-05T05:49:45Z",
-      "feedPosition": 4,
+      "feedPosition": 8,
       "summary": ""
     },
     {
@@ -875,34 +1318,21 @@
       "url": "https://www.techm.kr/news/articleView.html?idxno=155829",
       "publishedAt": "2026-10-05T09:15:00Z",
       "collectedAt": "2026-10-05T05:49:45Z",
-      "feedPosition": 4,
-      "summary": ""
-    },
-    {
-      "id": "7c76436246fe4a9be4ca713b",
-      "feedId": "bloter",
-      "source": "블로터",
-      "category": "사업",
-      "language": "ko",
-      "title": "[코인이담] 발행보다 활용…KBW2026서 살펴본 온체인 금융의 미래",
-      "url": "https://www.bloter.net/news/articleView.html?idxno=674995",
-      "publishedAt": "2026-10-05T09:13:50Z",
-      "collectedAt": "2026-10-05T05:49:45Z",
       "feedPosition": 7,
       "summary": ""
     },
     {
-      "id": "a64ca87833d2820d7af87dda",
-      "feedId": "digitaltoday",
-      "source": "디지털투데이",
-      "category": "사업",
+      "id": "209949997f01112dff5207ce",
+      "feedId": "etnews-ai",
+      "source": "전자신문 AI",
+      "category": "AI",
       "language": "ko",
-      "title": "우리은행, 최고 연 9% '우리금융 다함께 적금2' 출시",
-      "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=704956",
-      "publishedAt": "2026-10-05T09:00:00Z",
-      "collectedAt": "2026-10-05T05:49:45Z",
-      "feedPosition": 7,
-      "summary": ""
+      "title": "구글, 저가·무료 가입자 '제미나이' 고급기능 사용 제한",
+      "url": "https://www.etnews.com/20261005000133",
+      "publishedAt": "2026-10-05T09:06:49Z",
+      "collectedAt": "2026-10-05T14:51:16Z",
+      "feedPosition": 0,
+      "summary": "구글이 생성형 인공지능(AI) 서비스 '제미나이' 무료·저가 요금제 이용자의 고급 모델 접근을 제한한다. 구글은 4일(현지시간) 고객센터 공지를 통해 이달부터 요금제별 접근 가능한 AI 모델 등급을 9일부터 조정한다고 밝혔다. 저가 요금제 가입자와 무료 이용자의 '프로' 모델 접근을 막는 것이다. 무료 이용자도 일부 사용할 수 있었던 제미나이 프로 모델은 앞으로 월 구독료가 19.99달러(2만9000원)인 'AI 프로' 요금제부터 제공된다. 무"
     },
     {
       "id": "7b6cd0d25b8a84f1fa224e79",
@@ -914,34 +1344,125 @@
       "url": "https://www.medipana.com/news/articleView.html?idxno=418743",
       "publishedAt": "2026-10-05T08:27:06Z",
       "collectedAt": "2026-10-05T05:49:45Z",
+      "feedPosition": 8,
+      "summary": ""
+    },
+    {
+      "id": "917f109899a6486367919e52",
+      "feedId": "chosun-economy",
+      "source": "조선일보",
+      "category": "사업",
+      "language": "ko",
+      "title": "중국에 의존한 유럽 기업들 와장창 무너진다 [손진석의 머니워치]",
+      "url": "https://www.chosun.com/economy/2026/10/05/S6KKNG6KLFG2ZDOVKQMUD7ZIB4",
+      "publishedAt": "2026-10-05T08:19:35Z",
+      "collectedAt": "2026-10-05T14:51:16Z",
+      "feedPosition": 3,
+      "summary": ""
+    },
+    {
+      "id": "e1a85e8e0ae3be3a65a95d60",
+      "feedId": "chosun-economy",
+      "source": "조선일보",
+      "category": "사업",
+      "language": "ko",
+      "title": "기업 에너지효율 투자 부담 낮춘다… 기후부, 정책자금 금리 0.5%p 인하",
+      "url": "https://www.chosun.com/economy/economy_general/2026/10/05/ME2TEY3GMEYDAZRZGEZTCMRYMI",
+      "publishedAt": "2026-10-05T08:02:12Z",
+      "collectedAt": "2026-10-05T14:51:16Z",
+      "feedPosition": 22,
+      "summary": ""
+    },
+    {
+      "id": "739307915285835e0250075c",
+      "feedId": "etnews-ai",
+      "source": "전자신문 AI",
+      "category": "사업",
+      "language": "ko",
+      "title": "[사설] 고용영향평가, 일자리 예측 초점 둬야",
+      "url": "https://www.etnews.com/20261005000093",
+      "publishedAt": "2026-10-05T08:00:00Z",
+      "collectedAt": "2026-10-05T14:51:16Z",
+      "feedPosition": 2,
+      "summary": "국가정책에 따른 일자리 흐름과 수요를 미리 따져보고 대비하기 위해 도입된 '고용영향평가' 제도가 본연의 기능을 상실한 채 헛돌고 있다. 최근 5년간 진행된 평가의 80%가량이 정책 집행 중이거나 이미 사업이 끝난 뒤에야 이뤄진 전형적인 사후 약방문식인 것으로 나타났다. 정책 시행 전에 선제적으로 인력 수요를 예측하는 사전평가 비중은 2013~2019년 26.5%에서 최근 5년간(2020~2024년) 10.3% 수준까지 쪼그라들었다. 미래 산업"
+    },
+    {
+      "id": "a53aae4451837e80fb043e45",
+      "feedId": "joongang-useful",
+      "source": "중앙일보",
+      "category": "AI",
+      "language": "ko",
+      "title": "1교시 AI교육, 2교시 실습…갤럭시 들고 초등학교 간 삼성 - joongang.co.kr",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9yTlgyUE5JQU5fN1R2dlFLNWhmQ2lRQ1ZuUTg4bS1vbFlKVzhWeTVZaFVKUVpCRGNnUEZvNjE3bVNFaHRnTkdFNDNKeFRPdjkwcVBIc2dB?oc=5",
+      "publishedAt": "2026-10-05T07:57:08Z",
+      "collectedAt": "2026-10-05T14:51:16Z",
+      "feedPosition": 84,
+      "summary": ""
+    },
+    {
+      "id": "0e1744e7aa20bf83ac7c0c5b",
+      "feedId": "inews24-it",
+      "source": "아이뉴스24 IT",
+      "category": "법률",
+      "language": "ko",
+      "title": "퀄컴, 화웨이에 '첫 특허료'…미국 특허까지 사들여",
+      "url": "https://www.inews24.com/view/2011823",
+      "publishedAt": "2026-10-05T07:46:54Z",
+      "collectedAt": "2026-10-05T14:51:16Z",
+      "feedPosition": 3,
+      "summary": ""
+    },
+    {
+      "id": "3d540407f1677d437dc5c6be",
+      "feedId": "joongang-useful",
+      "source": "중앙일보",
+      "category": "AI",
+      "language": "ko",
+      "title": "손정의 “AI 위협 방지하기 위해 각국 협력해야”｜Global Money Club - joongang.co.kr",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9Id2x6S3BBV3pMSlY5Z2pRbXdLSks5RHV1ZkNBUl9Lcm1BaTdtLUR0UWNQRXlyVUhsaXFXaG9NbWdQYUlwLWFMOElsWHpfdDdGQVlJMHpMMWZpdXM?oc=5",
+      "publishedAt": "2026-10-05T07:26:52Z",
+      "collectedAt": "2026-10-05T14:51:16Z",
+      "feedPosition": 98,
+      "summary": ""
+    },
+    {
+      "id": "787b5ccc726055b1a9f7777c",
+      "feedId": "zdnet-korea",
+      "source": "ZDNet Korea",
+      "category": "AI",
+      "language": "ko",
+      "title": "[최경진 未來法道] AI가 바꾼 것은 속도, 기본이 아니다",
+      "url": "https://zdnet.co.kr/view?no=20261005161931",
+      "publishedAt": "2026-10-05T07:19:31Z",
+      "collectedAt": "2026-10-05T14:51:16Z",
       "feedPosition": 4,
       "summary": ""
     },
     {
-      "id": "0ce6a97d26441e4dd580fd61",
-      "feedId": "bloter",
-      "source": "블로터",
-      "category": "제약",
+      "id": "d9d967828e4f3add5d10bc02",
+      "feedId": "joongang-useful",
+      "source": "중앙일보",
+      "category": "AI",
       "language": "ko",
-      "title": "[로드 to IPO] 핵심축 재편…백신 전면 항암 후순위｜아리바이오③",
-      "url": "https://www.bloter.net/news/articleView.html?idxno=675008",
-      "publishedAt": "2026-10-05T07:00:00Z",
-      "collectedAt": "2026-10-05T05:49:45Z",
-      "feedPosition": 10,
+      "title": "트럼프, AI 태스크포스장에 ‘골프 친구’ 클레이튼 지명｜Global Money Club - joongang.co.kr",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9BREM1ejFKei1MTzI1b1o4TmNSeFBSSnRuTk9LSWkxd1VFNW9NaHAwNXJFbm5YRjF5a1I3dlp6R2gxajJFS2ZDRk5EeXNxUzluLWlJX3RYY1VmQmc?oc=5",
+      "publishedAt": "2026-10-05T07:12:11Z",
+      "collectedAt": "2026-10-05T14:51:16Z",
+      "feedPosition": 92,
       "summary": ""
     },
     {
-      "id": "6ee0e56ba80a6aaf98a2de44",
-      "feedId": "mk-economy",
-      "source": "매일경제",
-      "category": "사업",
+      "id": "aa6b4b26e27647e3fb966d6e",
+      "feedId": "etnews-ai",
+      "source": "전자신문 AI",
+      "category": "AI",
       "language": "ko",
-      "title": "“안 털린 은행이 없네, 내 정보 어디로”…정보유출에 흔들리는 금융권",
-      "url": "https://www.mk.co.kr/news/economy/12168245",
-      "publishedAt": "2026-10-05T06:05:23Z",
-      "collectedAt": "2026-10-04T21:34:42Z",
-      "feedPosition": 8,
-      "summary": ""
+      "title": "[人사이트] 이준호 크라우드웍스 부사장 “에이전틱 AI 시대, 구조화된 데이터가 핵심”",
+      "url": "https://www.etnews.com/20261005000038",
+      "publishedAt": "2026-10-05T07:00:00Z",
+      "collectedAt": "2026-10-05T14:51:16Z",
+      "feedPosition": 12,
+      "summary": "“인공지능(AI) 기술 발전으로 기업 내부에 축적된 데이터의 맥락과 관계를 구조화하고, 실제 행동과 물리 현상을 담은 희소 데이터를 정교하게 확보·검증하느냐가 중요 과제로 부상했습니다.” 이준호 크라우드웍스 부사장(크라우드데이터 대표)은 최근 전자신문과 인터뷰에서 “생성형 AI 위주에서 에이전틱 AI와 피지컬 AI로 무게중심이 이동하면서 데이터 경쟁력 기준도 바뀌고 있다”며 이같이 밝혔다. 거대언어모델(LLM)과 달리 생각하고 수행하는, 물리세"
     },
     {
       "id": "c0d8910694e4487e0bc649ad",
@@ -970,110 +1491,6 @@
       "summary": ""
     },
     {
-      "id": "87d5ee5805a6c90af1491762",
-      "feedId": "geeknews",
-      "source": "GeekNews",
-      "category": "컴퓨터 사이언스",
-      "language": "ko",
-      "title": "폐업 이후 온라인에 공개된 애니메이션 자료 디지털 아카이브",
-      "url": "https://news.hada.io/topic?id=34807",
-      "publishedAt": "2026-10-05T05:31:19Z",
-      "collectedAt": "2026-10-05T05:49:45Z",
-      "feedPosition": 0,
-      "summary": "폐업한 Tippett Studios 와 Phil Tippett의 스톱모션 작업 자료가 Internet Archive 에 공개돼 무료로 열람할 수 있음 익명의 구매자 TippettFan 이 폐업 경매에서 디스크 보관철을 구입하고, 중복을 제외한 주요 디스크 90장 을 IS..."
-    },
-    {
-      "id": "95c90cdc3bd785da917f7ca1",
-      "feedId": "chosun-economy",
-      "source": "조선일보",
-      "category": "사업",
-      "language": "ko",
-      "title": "CJ제일제당, 중국산 저가 라이신에 반격 시동…美 곡물기업과 손잡고 생산기지 확대",
-      "url": "https://www.chosun.com/economy/market_trend/2026/10/05/GZRDQMRYGUZGKNZSHFSTEYRRME",
-      "publishedAt": "2026-10-05T05:27:13Z",
-      "collectedAt": "2026-10-05T05:49:45Z",
-      "feedPosition": 2,
-      "summary": ""
-    },
-    {
-      "id": "43f26315cb67a38466c4d6d0",
-      "feedId": "chosun-economy",
-      "source": "조선일보",
-      "category": "법률",
-      "language": "ko",
-      "title": "올트먼 “AI 혜택 위해 일부 위험 감수해야”…앤트로픽 규제론과 차별화",
-      "url": "https://www.chosun.com/economy/tech_it/2026/10/05/MY2DMOBTGNRGIMBVMJSTKMBZME",
-      "publishedAt": "2026-10-05T05:22:07Z",
-      "collectedAt": "2026-10-05T05:49:45Z",
-      "feedPosition": 4,
-      "summary": ""
-    },
-    {
-      "id": "adcdb595ecccf9e1d94e7ed5",
-      "feedId": "hani-useful",
-      "source": "한겨레",
-      "category": "사업",
-      "language": "ko",
-      "title": "중수청 시험대 될 ‘1호 수사’…법조계, 중대경제범죄에 무게 - 한겨레",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE96Wk1CaFpEQTllX1I5WkJTUWxhN3hlS1ppdTB6YnlMVWdaMVhLOHlzSnMtekJ3bDl1V0R1bXRoVzhGUE9RNHhoRUYyNTc4bEtyYVY1bUNoRGdfWUo2M2RGTHZvaFY1enJrTVpOWGl3MTZ2UQ?oc=5",
-      "publishedAt": "2026-10-05T05:13:00Z",
-      "collectedAt": "2026-10-05T05:49:45Z",
-      "feedPosition": 1,
-      "summary": ""
-    },
-    {
-      "id": "660e79ae4899c1f12be48aa0",
-      "feedId": "hankyung-all",
-      "source": "한국경제",
-      "category": "AI",
-      "language": "ko",
-      "title": "5번 망한 AI브라우저의 반전...실밸이 주목한 韓 3인조[허진의 테크토닉]",
-      "url": "https://www.hankyung.com/article/202610031659i",
-      "publishedAt": "2026-10-05T05:00:01Z",
-      "collectedAt": "2026-10-05T05:49:45Z",
-      "feedPosition": 0,
-      "summary": ""
-    },
-    {
-      "id": "f294a1caa9ee3bc1d4489550",
-      "feedId": "geeknews",
-      "source": "GeekNews",
-      "category": "컴퓨터 사이언스",
-      "language": "ko",
-      "title": "자율주행 데이터의 진짜 문제는 크기가 아니다",
-      "url": "https://news.hada.io/topic?id=34805",
-      "publishedAt": "2026-10-05T04:51:08Z",
-      "collectedAt": "2026-10-05T05:49:45Z",
-      "feedPosition": 1,
-      "summary": "자율주행 데이터의 가장 어려운 문제는 데이터의 크기 자체가 아니라 의미를 보존하는 것 이다. 센서 데이터는 서로 다른 주기와 시계를 사용하기 때문에, 카메라·LiDAR·Radar 데이터를 정확한 시간 관계로 묶는 것이 생각보다 어렵다. 주행 데이터의 대부분은 반복적이고 지..."
-    },
-    {
-      "id": "9d698f5e54da0099a37531db",
-      "feedId": "chosun-economy",
-      "source": "조선일보",
-      "category": "AI",
-      "language": "ko",
-      "title": "신제품도 아닌데 왜 더 비싸져?…7년 된 셋톱박스·전자책 단말기까지 번진 ‘AI발’ 가격 인상",
-      "url": "https://www.chosun.com/economy/tech_it/2026/10/05/VAQZCN5KDRBJDCPUBLXMPMQHXM",
-      "publishedAt": "2026-10-05T04:41:01Z",
-      "collectedAt": "2026-10-05T05:49:45Z",
-      "feedPosition": 15,
-      "summary": ""
-    },
-    {
-      "id": "4a385a19adcfe4f1fcb13d36",
-      "feedId": "donga-useful",
-      "source": "동아일보",
-      "category": "사업",
-      "language": "ko",
-      "title": "AMRO, 올해 한국 경제성장률 3.3%로 상향…내년 2.7% 제시 - 동아일보",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBrV0JsUFJ3V2s5UUJIb3VWc2VnQ0w5cmZ2UzFPNVM1SEljNThqZXVRWHFMNDlFdmhtSk9ubF9FSHVHWDczeXVjZENlSnFWa251RVVTR1hvRTlDTTk3elp5ZnpPNEZZY0I3RV9HbnhxQ1duX1gzaFHSAWZBVV95cUxONDVTUDgxZGRseE9EUHpTNWdmMGR1Si1PQ3pKRzlta3RBaFp1WTFWX2E1RGJRdzh4RFg1RmNCZkl1aUY1TzRsaFdfYlBiQmRPdWFHMDg4NjJCOEhZeEV1SFdNVGgybmc?oc=5",
-      "publishedAt": "2026-10-05T04:40:50Z",
-      "collectedAt": "2026-10-05T05:49:45Z",
-      "feedPosition": 2,
-      "summary": ""
-    },
-    {
       "id": "e1ae653bb151d1dd8f38a6d6",
       "feedId": "etnews-ai",
       "source": "전자신문 AI",
@@ -1083,7 +1500,7 @@
       "url": "https://www.etnews.com/20261005000113",
       "publishedAt": "2026-10-05T04:39:46Z",
       "collectedAt": "2026-10-05T05:49:45Z",
-      "feedPosition": 0,
+      "feedPosition": 13,
       "summary": "최근 금융권 침해 사고에서 인터넷·모바일뱅킹 등 핵심 금융거래망이 직접 침해된 정황은 확인되지 않았다. 그러나 대출모집인·임직원용 웹페이지와 업무지원 시스템 등 핵심망 밖의 외부 접점에서 개인정보 유출이 잇따랐다. 핵심 시스템을 안전하게 지키더라도 주변 시스템에 남은 작은 빈틈 하나가 실제 피해로 이어질 수 있다는 점이 확인됐다. 신한은행은 대출모집인 전용 서비스, KB국민은행은 직원용 모바일 업무지원 시스템, 하나은행은 영업지원시스템(ODS)"
     },
     {
@@ -1096,7 +1513,7 @@
       "url": "https://www.etnews.com/20261005000112",
       "publishedAt": "2026-10-05T04:39:27Z",
       "collectedAt": "2026-10-05T05:49:45Z",
-      "feedPosition": 1,
+      "feedPosition": 14,
       "summary": "인공지능(AI)을 활용한 해킹이 더 이상 예고된 위협이 아니라 현실의 공격 수단으로 등장했다. 금융권 연쇄 침해 사고는 AI가 취약점 탐색부터 공격 실행까지 자동화하면서 특정 산업을 넘어 모든 기업의 보안체계를 흔들 수 있다는 경고를 던지고 있다. ◇금융사 취약점 훑었다 최근 금융권 침해 사고에서는 AI 도구를 활용한 공격 정황이 포착돼 AI 위협이 현실로 다가왔다는 충격을 던졌다. 지난 주말 신한·KB국민·하나·BNK부산은행과 예가람·웰컴저축"
     },
     {
@@ -1109,47 +1526,8 @@
       "url": "https://www.etnews.com/20261005000111",
       "publishedAt": "2026-10-05T04:36:32Z",
       "collectedAt": "2026-10-05T05:49:45Z",
-      "feedPosition": 2,
+      "feedPosition": 15,
       "summary": "오픈AI의 인공지능(AI) 안전 보고서 작성을 이끌어온 직원이 AI가 통제력을 상실할 경우 원전 사고보다 큰 피해가 발생할 수 있다고 경고하며 회사를 떠났다. 데이비드 로빈슨 전 오픈AI 안전 담당 직원은 3일(현지시간) 미국 시사월간지 디애틀랜틱 기고문을 통해 “AI 통제력 상실의 피해는 단일 원자로 노심용융 사고보다 훨씬 클 것”이라며 “AI 기업들이 이 기술을 충분히 신중하게 개발하고 있지 않다”고 지적했다. 로빈슨은 “오픈AI를 비롯한"
-    },
-    {
-      "id": "a671a57706ea99e5f84fe43a",
-      "feedId": "geeknews",
-      "source": "GeekNews",
-      "category": "컴퓨터 사이언스",
-      "language": "ko",
-      "title": "이르쿠츠크 연구소 직원 페스트 사망 후 약 200명 의학적 관찰",
-      "url": "https://news.hada.io/topic?id=34804",
-      "publishedAt": "2026-10-05T04:32:48Z",
-      "collectedAt": "2026-10-05T05:49:45Z",
-      "feedPosition": 2,
-      "summary": "러시아 이르쿠츠크 지역에서 연구소 직원이 페스트로 사망 한 뒤, 접촉 가능성이 있는 약 200명이 의학적 관찰 대상이 됨 사망한 직원은 검사용 시료를 채취하다 살아 있는 세균이 담긴 시험관을 실수로 깨뜨렸다 고 의료진에게 말한 것으로 전해짐 언론은 ..."
-    },
-    {
-      "id": "eadecd9d902c1f736b9b57ef",
-      "feedId": "etnews-ai",
-      "source": "전자신문 AI",
-      "category": "AI",
-      "language": "ko",
-      "title": "[단독] 금융권 덮친 AI 해킹…'1달러'면 가능했다",
-      "url": "https://www.etnews.com/20261005000110",
-      "publishedAt": "2026-10-05T04:31:25Z",
-      "collectedAt": "2026-10-05T05:49:45Z",
-      "feedPosition": 3,
-      "summary": "국내 금융권 동시다발 해킹에 인공지능(AI)이 악용되면서 'AI발 해킹' 위협이 고조된 가운데 1달러도 안 되는 비용으로 AI 대량 자동화 공격이 가능한 것으로 확인됐다. 실제 이번 피해를 본 다수 금융사가 저비용 공격에 취약점을 노출하며 정보유출 사태를 겪었다. AI 도구를 악용한 사이버 공격이 대중화할 수 있는 만큼 기업·공공이 관련 대응력을 강화해야 한다는 지적이 제기된다. 5일 AI 보안기업 에버스핀이 복수의 금융사 공격에 활용된 AI"
-    },
-    {
-      "id": "3c8960cc4db59b93ae47b783",
-      "feedId": "donga-useful",
-      "source": "동아일보",
-      "category": "AI",
-      "language": "ko",
-      "title": "AI·반도체 열풍에…4대 과기원 수시지원자 첫 3만명 돌파 - 동아일보",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9nUngtcnZ6UjNuZDkwZ19FSzJIeDhPOUZKNzRwV2RYOWZ2Y1R2RS1mM3B1d3NhbzN0a0NKMmlyU0tqNWNCSUdPSG9sbU41MUEyMW9Od21Mc0FBazdValJOZXZpbXB1cmVpeHF1WkV4WlFqZndOa3fSAWZBVV95cUxNUzgzdk84d0piQkVvRW83RVRJVDNfTXdjbmhTUS1iVDBwOEMxR1RqSUs3Yk1zVjFLbUFWTFlfQ2JockhhdEpCWEhuRTlKUVFuSVB6M2JBM3hUVUJDWGJuTUhrV01TdFE?oc=5",
-      "publishedAt": "2026-10-05T04:20:17Z",
-      "collectedAt": "2026-10-05T05:49:45Z",
-      "feedPosition": 1,
-      "summary": ""
     },
     {
       "id": "7632e90d28cc9bda8e7806fc",
@@ -1161,7 +1539,7 @@
       "url": "https://www.inews24.com/view/2011782",
       "publishedAt": "2026-10-05T04:07:41Z",
       "collectedAt": "2026-10-05T05:49:45Z",
-      "feedPosition": 0,
+      "feedPosition": 6,
       "summary": ""
     },
     {
@@ -1174,60 +1552,8 @@
       "url": "https://zdnet.co.kr/view?no=20261005111000",
       "publishedAt": "2026-10-05T04:01:24Z",
       "collectedAt": "2026-10-05T05:49:45Z",
-      "feedPosition": 0,
+      "feedPosition": 7,
       "summary": ""
-    },
-    {
-      "id": "3bb2d8049acc8c4bb9ba75c9",
-      "feedId": "geeknews",
-      "source": "GeekNews",
-      "category": "컴퓨터 사이언스",
-      "language": "ko",
-      "title": "F1, 소프트웨어 버그로 가속 페달 먹통에 드라이버들 반발",
-      "url": "https://news.hada.io/topic?id=34800",
-      "publishedAt": "2026-10-05T03:41:13Z",
-      "collectedAt": "2026-10-05T05:49:45Z",
-      "feedPosition": 5,
-      "summary": "말레이시아 Sepang에서 열린 바레인 GP에서 다수 차량이 소프트웨어 오류로 공회전 상태에 갇혀 , 예정된 출발이 중단됨 2026년형 차량의 첫 우천 레이스에서 파워 유닛 제어기의 우천 모드 가 극저속 주행 중 버그를 유발함 FIA는 적기 중단 중 11..."
-    },
-    {
-      "id": "850e93ed9684b754971a744f",
-      "feedId": "geeknews",
-      "source": "GeekNews",
-      "category": "컴퓨터 사이언스",
-      "language": "ko",
-      "title": "SSH와 Nginx로 직접 호스팅하는 HTTP 터널",
-      "url": "https://news.hada.io/topic?id=34802",
-      "publishedAt": "2026-10-05T03:40:05Z",
-      "collectedAt": "2026-10-05T05:49:45Z",
-      "feedPosition": 4,
-      "summary": "OpenSSH와 nginx 만으로 로컬 HTTP 서비스를 외부에 공유하는 터널을 구성할 수 있음. 짧은 SSH 명령 하나로 터널을 열고 공유용 HTTPS URL을 얻음 SSH 원격 포트 포워딩 이 서버의 빈 포트를 로컬 서비스에 연결하고, nginx는 서브도메인에서 포트 번호를 추출해 해..."
-    },
-    {
-      "id": "15372b8b0d51d4d1bc31027c",
-      "feedId": "hankyung-all",
-      "source": "한국경제",
-      "category": "제약",
-      "language": "ko",
-      "title": "조성배 조아제약 대표 \"수익성 중심 체질 개선, 연간 흑자 전환 목표\"",
-      "url": "https://www.hankyung.com/article/202610053373i",
-      "publishedAt": "2026-10-05T03:36:31Z",
-      "collectedAt": "2026-10-05T05:49:45Z",
-      "feedPosition": 12,
-      "summary": ""
-    },
-    {
-      "id": "7481092954a314446963fe00",
-      "feedId": "etnews-ai",
-      "source": "전자신문 AI",
-      "category": "법률",
-      "language": "ko",
-      "title": "샘 올트먼 오픈AI CEO “AI 혜택 위해 위험 감수해야”…앤트로픽과 차별화",
-      "url": "https://www.etnews.com/20261005000103",
-      "publishedAt": "2026-10-05T03:28:27Z",
-      "collectedAt": "2026-10-05T05:49:45Z",
-      "feedPosition": 4,
-      "summary": "샘 올트먼 오픈AI 최고경영자(CEO)가 인공지능(AI)의 혜택을 누리기 위해 일정 수준의 위험은 감수해야 한다는 입장을 내놨다. 올트먼 CEO는 4일(현지시간) 미국 정치전문매체 폴리티코의 기술 팟캐스트 '디코디드'와 인터뷰에서 오픈AI와 앤트로픽의 규제 관점에 대해 “양사의 입장에 상당한 차이가 있다”고 밝혔다. 그는 “우리는 AI 기술의 혜택과 인간의 주도권을 유지하기 위해 일부 나쁜 일을 받아들여야 한다고 생각한다”고 말했다. AI가 강"
     },
     {
       "id": "934d5de205cc7a4f8f12adf8",
@@ -1239,33 +1565,7 @@
       "url": "https://zdnet.co.kr/view?no=20261002195243",
       "publishedAt": "2026-10-05T03:05:02Z",
       "collectedAt": "2026-10-05T05:49:45Z",
-      "feedPosition": 2,
-      "summary": ""
-    },
-    {
-      "id": "a5b3b1c7769330a4cfbe6f64",
-      "feedId": "etnews-ai",
-      "source": "전자신문 AI",
-      "category": "AI",
-      "language": "ko",
-      "title": "'공공데이터·AI 창업경진대회' 역대 최고 경쟁률…10개팀 왕중왕전 진출",
-      "url": "https://www.etnews.com/20261005000046",
-      "publishedAt": "2026-10-05T03:01:00Z",
-      "collectedAt": "2026-10-05T05:49:45Z",
-      "feedPosition": 5,
-      "summary": "행정안전부는 지난달 30일부터 지난 2일까지 서울창업허브에서 '제14회 범정부 공공데이터·인공지능(AI) 활용 창업경진대회' 통합본선을 개최하고 최종 왕중왕전에 진출할 10개 팀을 확정했다고 5일 밝혔다. 이 대회는 공공데이터와 AI를 결합한 민간의 혁신 아이디어를 발굴하여 실제 창업과 사업화로 연결함으로써 공공데이터의 민간 활용을 활성화하기 위해 지난 2013년부터 매년 개최되고 있다. 지난 13년간(2013~2025년) 총 2만2364개 팀"
-    },
-    {
-      "id": "ff4b15e3a19ee17edf9b9ff9",
-      "feedId": "zdnet-korea",
-      "source": "ZDNet Korea",
-      "category": "AI",
-      "language": "ko",
-      "title": "[일문일답] 독파모 끝까지 간다…\"프론티어 AI 사업 별도 추진\"",
-      "url": "https://zdnet.co.kr/view?no=20261002194119",
-      "publishedAt": "2026-10-05T03:00:02Z",
-      "collectedAt": "2026-10-05T05:49:45Z",
-      "feedPosition": 3,
+      "feedPosition": 9,
       "summary": ""
     },
     {
@@ -1278,73 +1578,8 @@
       "url": "https://www.inews24.com/view/2011570",
       "publishedAt": "2026-10-05T03:00:01Z",
       "collectedAt": "2026-10-05T05:49:45Z",
-      "feedPosition": 6,
+      "feedPosition": 12,
       "summary": ""
-    },
-    {
-      "id": "cd8baf0f965a09fd04ac4246",
-      "feedId": "hani-useful",
-      "source": "한겨레",
-      "category": "AI",
-      "language": "ko",
-      "title": "‘4조7천억’ 프런티어AI, 내년 2월 출자대상 정할듯…스타트업에도 기회 열어 - 한겨레",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE0tbzFKU20ya0VmSUVjVE9VeTBLSlZyenJBT2J6a0xoeTBOaFZJRE9ENTJ2VnVyUDB4bjNnWEMyajJIbzNUWjlxcjhpRmhSM1ktR3F4UWV5dFBSX2FZOEM1Rg?oc=5",
-      "publishedAt": "2026-10-05T03:00:00Z",
-      "collectedAt": "2026-10-05T05:49:45Z",
-      "feedPosition": 4,
-      "summary": ""
-    },
-    {
-      "id": "832ab3be515f7b560b01135f",
-      "feedId": "joongang-useful",
-      "source": "중앙일보",
-      "category": "AI",
-      "language": "ko",
-      "title": "정부 AI사업, 독파모·프론티어 AI 투트랙으로 [팩플] - 중앙일보",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE42TkRIeS1fbGViSHZRc3piVElydFd3c0h1dXVvcTJHZlk2OXpMVXN5Q2NwUFBQNkdjSEJsV2R5aWwwZWNRRlNRRGxCNHBxaXRka0dvZmln?oc=5",
-      "publishedAt": "2026-10-05T03:00:00Z",
-      "collectedAt": "2026-10-05T05:49:45Z",
-      "feedPosition": 76,
-      "summary": ""
-    },
-    {
-      "id": "82f1daead9c83c21466b8930",
-      "feedId": "ai-times-korea",
-      "source": "AI타임스",
-      "category": "AI",
-      "language": "ko",
-      "title": "\"지기 싫어서 남의 코드 복사\"…아스트라, 스타크래프트 벤치마크서 꼼수",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=215970",
-      "publishedAt": "2026-10-05T02:52:20Z",
-      "collectedAt": "2026-10-05T05:49:45Z",
-      "feedPosition": 0,
-      "summary": "오픈AI의 \\'GPT-6 아스트라\\'가 스타크래프트 대회 경기 도중 부정행위를 저지른 정황이 포착돼 기술 업계와 커뮤니티의 관심이 집중되고 있다.개발자 카이 맥피터스가 운영하는 스타크래프트: 브루드 워 봇 경기장 \\'스타스커미시(StarSkirmish)\\'에서는 인간 개발자가 제작한 봇과 AI 모델이 직접 개발한 봇 간의 대결이 펼쳐졌다. 이번 대회에는 오픈AI의 GPT-6 아스트라와 앤트로픽의 \\'클로드 오퍼스 5.5\\'가 주요 AI 참가자로 맞붙었다.경기 규칙에 따라 각 모델은 프로토스 종족만을 선택해 1시간 동안 C++ 코드로 봇을 직접"
-    },
-    {
-      "id": "5f0aad6385972ef0ed22c85e",
-      "feedId": "geeknews",
-      "source": "GeekNews",
-      "category": "컴퓨터 사이언스",
-      "language": "ko",
-      "title": "「Quo Vadis, Mathematics?」—“수학이여, 어디로 가는가?”",
-      "url": "https://news.hada.io/topic?id=34798",
-      "publishedAt": "2026-10-05T02:36:45Z",
-      "collectedAt": "2026-10-05T05:49:45Z",
-      "feedPosition": 7,
-      "summary": "「Quo Vadis, Mathematics?」—“수학이여, 어디로 가는가?”"
-    },
-    {
-      "id": "ce53e0cbf75e05f2e2de55f4",
-      "feedId": "geeknews",
-      "source": "GeekNews",
-      "category": "컴퓨터 사이언스",
-      "language": "ko",
-      "title": "Infidel이 폭주하다",
-      "url": "https://news.hada.io/topic?id=34797",
-      "publishedAt": "2026-10-05T02:34:48Z",
-      "collectedAt": "2026-10-05T05:49:45Z",
-      "feedPosition": 8,
-      "summary": "Infocom의 Infidel 에서 사막에 내려놓은 물건을 처리할 때 엉뚱한 메모리를 덮어쓰는 컴파일러 버그 가 발견됨 ZIL 컴파일 결과가 전역 변수의 값을 인수 기본값으로 사용하지 않고 전역 변수 번호 30 을 사용해, 원래 배열 주소인 11129 대신 주소..."
     },
     {
       "id": "ee6a5afee7a09e59e823c786",
@@ -1358,175 +1593,6 @@
       "collectedAt": "2026-10-05T05:49:45Z",
       "feedPosition": 0,
       "summary": "광주과학기술원(GIST)은 물리·광과학과 방우석 교수 연구팀이 레이저 핵융합 실험에서 중성자를 하나씩 세지 않고도 전체 발생량을 측정하는 분석 방법을 제시했다고 밝혔다.연구팀은 각 실험을 중성자가 하나도 검출되지 않은 경우와 하나 이상 검출된 경우로 구분했다. 이후 중성자가 검출되지 않은 실험의 비율과 중성자 한 개당 검출 확률을 이용해 전체 발생량을 계산했다. 발생량이 많아질수록 중성자가 하나도 검출되지 않는 실험의 비율이 낮아진다는 점을 활용했다.레이저 핵융합 실험에서는 짧은 시간에 많은 중성자가 발생해 검출기에 거의 동시에 도"
-    },
-    {
-      "id": "3339fd0ce654f7b5ca9b2a8d",
-      "feedId": "geeknews",
-      "source": "GeekNews",
-      "category": "컴퓨터 사이언스",
-      "language": "ko",
-      "title": "Claude Code 모드(mod) 시작하기",
-      "url": "https://news.hada.io/topic?id=34796",
-      "publishedAt": "2026-10-05T02:24:45Z",
-      "collectedAt": "2026-10-05T05:49:45Z",
-      "feedPosition": 9,
-      "summary": "Claude Code의 동작과 UI를 바꾸는 JavaScript/TypeScript 확장인 모드(mod) 로, 세션 안에서 이벤트를 관찰하고 도구 실행에 개입하거나 맞춤 패널을 표시할 수 있음 원하는 기능을 자연어로 요청해 모드를 만들 수 있으며 , 핫 리로드로 세션을 재시작하지 않고 수..."
-    },
-    {
-      "id": "54dded90a11ddadcb0019842",
-      "feedId": "hankyung-all",
-      "source": "한국경제",
-      "category": "AI",
-      "language": "ko",
-      "title": "이강석 대우건설 대표 \"성장동력은 AI·데이터센터…M&A 투자 추진\"",
-      "url": "https://www.hankyung.com/article/202610053306i",
-      "publishedAt": "2026-10-05T02:22:59Z",
-      "collectedAt": "2026-10-05T05:49:45Z",
-      "feedPosition": 17,
-      "summary": ""
-    },
-    {
-      "id": "c2499d38af9231269eeca535",
-      "feedId": "joongang-useful",
-      "source": "중앙일보",
-      "category": "AI",
-      "language": "ko",
-      "title": "전기 없어 AI 놀릴 판…빅테크, 177조 ‘자가발전’ 판 벌렸다 [GMC] - 중앙일보",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5ZODRqQzFNZHE4YklfOHpZSFNlalpMb0VDd19xd1ZaYW5FeHNKcE92SThvWFpjVVlhWThUM3ZpU2twcW12SEhsQUFwdU1PbDl6c05jZWNR?oc=5",
-      "publishedAt": "2026-10-05T02:21:04Z",
-      "collectedAt": "2026-10-05T05:49:45Z",
-      "feedPosition": 78,
-      "summary": ""
-    },
-    {
-      "id": "179d9c984f191a05be250d53",
-      "feedId": "ai-times-korea",
-      "source": "AI타임스",
-      "category": "법률",
-      "language": "ko",
-      "title": "오픈AI '에이전트 폭주'에 사면초가... 전 세계서 법적·규제 경고 폭풍",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=215968",
-      "publishedAt": "2026-10-05T02:19:40Z",
-      "collectedAt": "2026-10-05T05:49:45Z",
-      "feedPosition": 1,
-      "summary": "오픈AI가 자사 AI 에이전트와 관련된 사이버 보안 침해 사건으로 전 세계적인 법적 손해 배상 청구와 정부 차원의 규제 조사에 직면했다. 자율 에이전트의 무단 데이터 수집 및 시스템 침입 정황이 드러나면서 오픈AI와 샘 알트먼 CEO가 창사 이래 최대의 법적 위기에 빠졌다는 분석이다.파이낸셜타임스(FT)에 따르면, 오픈AI 직원들은 법률, 기술 및 정책 분야의 고위 관계자들과 함께 AI 에이전트 관련 사이버 보안 침해 사실이 전 세계적으로 드러난 후 회사가 법적 손해 배상 및 정부 조치에 직면하게 되었다고 밝혔다.지난 한 주 동안"
-    },
-    {
-      "id": "da68a0ffcc8173909b287859",
-      "feedId": "zdnet-korea",
-      "source": "ZDNet Korea",
-      "category": "AI",
-      "language": "ko",
-      "title": "LGU+, 뱅고와 협력해 글로벌 AI·콘텐츠 구독 서비스 확대",
-      "url": "https://zdnet.co.kr/view?no=20261005104154",
-      "publishedAt": "2026-10-05T02:00:02Z",
-      "collectedAt": "2026-10-05T05:49:45Z",
-      "feedPosition": 9,
-      "summary": ""
-    },
-    {
-      "id": "338dbcc1bc98b43fcef9ec59",
-      "feedId": "zdnet-korea",
-      "source": "ZDNet Korea",
-      "category": "AI",
-      "language": "ko",
-      "title": "[SW키트] \"코딩 작업 따라 AI 조합\"…깃허브, '하이드라퓨전' 적용 확대",
-      "url": "https://zdnet.co.kr/view?no=20261004230743",
-      "publishedAt": "2026-10-05T01:51:51Z",
-      "collectedAt": "2026-10-05T05:49:45Z",
-      "feedPosition": 14,
-      "summary": ""
-    },
-    {
-      "id": "f06c99773b73175d8b21fe29",
-      "feedId": "donga-useful",
-      "source": "동아일보",
-      "category": "AI",
-      "language": "ko",
-      "title": "[돌직구 강력반]AI 성착취물 유포자 잡고 보니 현직 경찰관 - 동아일보",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFA3ZVAzcF9NSWRvMWhPR2dQeWxTeDFhSHRPOG9jQlBHWmVZMy15SzJfLXJfZUJYYWFUQmxQSDdMMm01a05iX1dnUU8wakxBc295Y0RPNlB3bWlZX3V1WVpzdA?oc=5",
-      "publishedAt": "2026-10-05T01:28:33Z",
-      "collectedAt": "2026-10-05T05:49:45Z",
-      "feedPosition": 93,
-      "summary": ""
-    },
-    {
-      "id": "88c3392665c7295ddf324078",
-      "feedId": "hani-useful",
-      "source": "한겨레",
-      "category": "법률",
-      "language": "ko",
-      "title": "트럼프, ‘슈퍼지능TF’ 창설 발표…‘금융규제통’을 AI 차르로 - 한겨레",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9qNzRPNlRTbDlSVUkzdEI4Nm53eE1vM1owZGloMGgwdlZ3dmVWZFM0d2VudU8xczlWS1QzNmJxX1NhYy1UNVJiOG5wU09FZW43NVJHVmd0Rmp4UEJkRlZrcnd3a2lwb0JRODhuS3FXTQ?oc=5",
-      "publishedAt": "2026-10-05T01:28:00Z",
-      "collectedAt": "2026-10-05T05:49:45Z",
-      "feedPosition": 8,
-      "summary": ""
-    },
-    {
-      "id": "d2407dee66c4ff4299c9f638",
-      "feedId": "inews24-it",
-      "source": "아이뉴스24 IT",
-      "category": "컴퓨터 사이언스",
-      "language": "ko",
-      "title": "과기정통부, 금융권 연이은 해킹에 24시간 비상대응체계 가동",
-      "url": "https://www.inews24.com/view/2011744",
-      "publishedAt": "2026-10-05T01:27:42Z",
-      "collectedAt": "2026-10-05T05:49:45Z",
-      "feedPosition": 8,
-      "summary": ""
-    },
-    {
-      "id": "220b8ab24315d2ccd5e1f6e4",
-      "feedId": "ai-times-korea",
-      "source": "AI타임스",
-      "category": "AI",
-      "language": "ko",
-      "title": "손정의 \"초지능, 잘못된 손에 들어가면 극도로 위험\"…AI 안전성에 이례적 경고",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=215965",
-      "publishedAt": "2026-10-05T01:17:19Z",
-      "collectedAt": "2026-10-05T05:49:45Z",
-      "feedPosition": 2,
-      "summary": "대표적인 AI 맹신론자로 꼽히는 손정의 소프트뱅크 회장이 AI 기술의 급격한 발전에 따른 안전성 위험에 대해 이례적으로 강력한 경고의 메시지를 던졌다.손정의 회장은 4일 일본 교토에서 열린 과학기술사회(STS) 포럼에 참석해 백악관 과학기술정책실장 마이클 크라치오스와 함께 무대에 올랐다. 이 자리에서 AI 역량의 기하급수적 증가는 각국이 기술을 공동으로 활용하기 위해 국가 간 신뢰를 구축하는 일을 필수 요소로 만든다고 강조했다.특히 최근 기계가 학습 능력을 빠르게 강화함에 따라 발생할 수 있는 AI 안전 위험에 우려를 표명했다. 손"
-    },
-    {
-      "id": "d0dd76ed5c8528e60a20a030",
-      "feedId": "ai-times-korea",
-      "source": "AI타임스",
-      "category": "AI",
-      "language": "ko",
-      "title": "'AI 피해자 영상'에 속아 내려진 중형...미국 법원 \"형량 잘못됐다\" 선고 파기",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=215964",
-      "publishedAt": "2026-10-05T00:53:49Z",
-      "collectedAt": "2026-10-05T05:49:45Z",
-      "feedPosition": 3,
-      "summary": "미국 애리조나주 항소법원이 과실치사 혐의로 징역 10년6개월을 선고받았던 가브리엘 호르카시타스의 선고 판결을 파기하고, 사건을 마리코파 카운티 고등법원으로 돌려보내 형량을 다시 정하도록 명령했다. 유죄 판결 자체는 유지됐지만, 양형 재판 과정에서 AI로 복원된 피해자의 영상을 증거로 채택해 형량을 매긴 조치가 \\\"근본적인 오류\\\"였다는 판단이다.뉴욕타임스(NYT)에 따르면, 이번 사건은 지난 2021년 11월13일 피닉스 교외 챈들러의 한 신호등에서 발생한 도로 분노 사건에서 시작됐다. 정차 중 뒤차에 있던 호르카시타스가 경적을 울리자"
-    },
-    {
-      "id": "eec389ad0658d903396431bb",
-      "feedId": "ai-times-korea",
-      "source": "AI타임스",
-      "category": "AI",
-      "language": "ko",
-      "title": "순천 국가유산 야행, 9일 개막…원도심·매산등서 3일간 운영",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=215907",
-      "publishedAt": "2026-10-05T00:50:00Z",
-      "collectedAt": "2026-10-05T05:49:45Z",
-      "feedPosition": 4,
-      "summary": "AI 생성 영상순천시 원도심과 매산등 선교유적, 순천향교 일원을 연결한 야간 국가유산 축제가 열린다.순천은 오는 10월9일부터 11일까지 3일간 원도심과 매산등 선교유적, 순천향교 일원에서 ‘2026 순천 국가유산 야행’을 개최한다고 밝혔다.올해 야행은 ‘달빛 아래, 유산을 거닐다’를 주제로 진행된다.남문터광장과 문화의거리, 한옥글방, 순천중앙교회, 매산등 선교유적 등을 하나의 역사문화 동선으로 연결해 시민과 관광객이 밤길을 걸으며 국가유산을 체험할 수 있도록 구성했다.서문안내소와 문화의거리에는 청사초롱을 설치하고, 매산등 숲길과"
-    },
-    {
-      "id": "aeae5a42e9abb18e688d1833",
-      "feedId": "ai-times-korea",
-      "source": "AI타임스",
-      "category": "법률",
-      "language": "ko",
-      "title": "호주, 태양광 지원 대상 1MW까지 확대…중형 설비도 10월부터 적용",
-      "url": "https://www.aitimes.com/news/articleView.html?idxno=215889",
-      "publishedAt": "2026-10-05T00:50:00Z",
-      "collectedAt": "2026-10-05T05:49:45Z",
-      "feedPosition": 5,
-      "summary": "호주가 기업과 농장, 학교 등에 설치되는 중형 태양광에 대한 지원을 확대했다. 기존 100킬로와트(kW)까지 적용되던 소규모재생에너지제도(SRES)의 태양광 설비 상한을 1메가와트(MW)까지 높여 10월부터 적용한다.호주 청정에너지규제기관(CER)은 지난 1일(현지시간)부터 관련 규정 개정에 따라 100kW 초과 1MW 이하의 중형 태양광 설비도 SRES 지원 대상에 포함됐다고 밝혔다.SRES는 태양광 등 적격 설비를 설치할 때 소규모기술인증서(STC)를 발급해 초기 설치비용을 낮추는 제도다. 설비 소유자는 STC를 직접 판매하거나"
     },
     {
       "id": "409045ea4fa25fe2b9b0e5ba",
@@ -1633,32 +1699,6 @@
       "summary": "콰놈 테크놀로지스(Quanome Technologies, Inc.)가 양 리(Yang Li) 최고경영자(CEO) 겸 이사회 의장과 1500만 달러 한도의 회전대출 계약을 체결했다고 지난 1일(현지시간) 발표했다.회사는 이번 계약에 따라 지분 희석 없이 자금을 빌릴 수 있다. 차입금은 운전자금과 일반적인 회사 운영 목적으로 사용할 예정이다.승인된 대출금에는 연 6%의 이자가 붙는다. 약정된 차입 가능 기간에는 상환한 금액을 다시 빌릴 수 있다. 다만 계약상 상환 조건을 따라야 하며, 자금을 빌릴 때마다 양 리 의장의 승인을 받아야 한"
     },
     {
-      "id": "08548351cf729eeb628cb213",
-      "feedId": "inews24-it",
-      "source": "아이뉴스24 IT",
-      "category": "사업",
-      "language": "ko",
-      "title": "시민 전에 소비자부터 되는 디지털 시대⋯기업 설계, 정부 방치 [지금은 과학]",
-      "url": "https://www.inews24.com/view/2011569",
-      "publishedAt": "2026-10-04T22:30:01Z",
-      "collectedAt": "2026-10-05T05:49:45Z",
-      "feedPosition": 10,
-      "summary": ""
-    },
-    {
-      "id": "c9911712a791531d43d9d02a",
-      "feedId": "joongang-useful",
-      "source": "중앙일보",
-      "category": "AI",
-      "language": "ko",
-      "title": "[AI기자의 News Briefing] 10월5일 오늘의 주요 뉴스를 전해 드립니다. - 중앙일보",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE03WXVybGN1aE0yMl9sd1pUNmE5d3JOMTRwTE12c29YN05Nd1BXZjJETmFtUi1fYm1oTlR5TjczVUZydG14NEtFc0VXRU9zdk9lYUJ2X0JFX243RkcyTlh5ZlJyYUM1cmtrQlE?oc=5",
-      "publishedAt": "2026-10-04T22:10:09Z",
-      "collectedAt": "2026-10-05T05:49:45Z",
-      "feedPosition": 95,
-      "summary": ""
-    },
-    {
       "id": "f689119cc00b69b60b39f7cb",
       "feedId": "techm",
       "source": "테크M",
@@ -1668,7 +1708,7 @@
       "url": "https://www.techm.kr/news/articleView.html?idxno=155835",
       "publishedAt": "2026-10-04T22:02:12Z",
       "collectedAt": "2026-10-04T21:34:42Z",
-      "feedPosition": 8,
+      "feedPosition": 11,
       "summary": ""
     },
     {
@@ -1677,11 +1717,11 @@
       "source": "브런치 자기계발·커리어",
       "category": "자기계발",
       "language": "ko",
-      "title": "08화 AI시대, 나의 커리어를 시스템으로 만든다는 것 - brunch.co.kr",
+      "title": "08화 AI시대, 나의 커리어를 시스템으로 만든다는 것 - 브런치",
       "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTFAtQzdURW1GT0lMZDVDZUV6bGJiTGJKd2FacnFtUFZJTTd1Y3JsZnFvOEFQZWF2czI3UXlySlZlYkhicDNNcGR3?oc=5",
       "publishedAt": "2026-10-04T19:07:50Z",
       "collectedAt": "2026-10-04T12:28:43Z",
-      "feedPosition": 49,
+      "feedPosition": 51,
       "summary": ""
     },
     {
@@ -1694,7 +1734,7 @@
       "url": "https://www.lennysnewsletter.com/p/openais-head-of-chatgpt-were-entering",
       "publishedAt": "2026-10-04T12:32:47Z",
       "collectedAt": "2026-10-04T21:34:42Z",
-      "feedPosition": 0,
+      "feedPosition": 1,
       "summary": "Listen now (37 mins) | Tibo Sottiaux on why Dots is OpenAI’s biggest bet, why agents will dominate internet traffic, and what builders are still getting wrong"
     },
     {
@@ -1729,11 +1769,11 @@
       "source": "브런치 자기계발·커리어",
       "category": "자기계발",
       "language": "ko",
-      "title": "선택 장애 - brunch.co.kr",
+      "title": "선택 장애 - 브런치",
       "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9vY3RqUUJZX1FKMHU4VW4tcmVUZXBTbWY3VXktdVBpZ3hRcU1GUXV6Unk0WjBPT0hOZkpSZXkxelRhR3RNalY3NGpLeVFDN1pzTU5BVA?oc=5",
       "publishedAt": "2026-10-04T02:10:51Z",
       "collectedAt": "2026-09-30T22:21:01Z",
-      "feedPosition": 83,
+      "feedPosition": 85,
       "summary": ""
     },
     {
@@ -1768,11 +1808,11 @@
       "source": "브런치 자기계발·커리어",
       "category": "자기계발",
       "language": "ko",
-      "title": "자원봉사, 고귀한 마음으로만 안옵니다. 커리어입니다. - brunch.co.kr",
+      "title": "자원봉사, 고귀한 마음으로만 안옵니다. 커리어입니다. - 브런치",
       "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5heGE5bXNWYXRIeldOenJmTTI1MU43M3F3UG9aTVJrSzNGejRET1p2dElrbzJYV1paTkJwM0VrUXlHQktpQkxYZGtIaw?oc=5",
       "publishedAt": "2026-10-03T21:44:56Z",
       "collectedAt": "2026-10-04T06:00:22Z",
-      "feedPosition": 48,
+      "feedPosition": 50,
       "summary": ""
     },
     {
@@ -1785,7 +1825,7 @@
       "url": "https://www.lennysnewsletter.com/p/community-wisdom-getting-value-from",
       "publishedAt": "2026-10-03T17:00:49Z",
       "collectedAt": "2026-10-03T21:23:41Z",
-      "feedPosition": 1,
+      "feedPosition": 2,
       "summary": "Community Wisdom 301"
     },
     {
@@ -1876,7 +1916,7 @@
       "url": "https://www.techm.kr/news/articleView.html?idxno=155830",
       "publishedAt": "2026-10-02T21:10:26Z",
       "collectedAt": "2026-10-02T12:45:50Z",
-      "feedPosition": 17,
+      "feedPosition": 20,
       "summary": ""
     },
     {
@@ -1915,7 +1955,7 @@
       "url": "https://www.techm.kr/news/articleView.html?idxno=155827",
       "publishedAt": "2026-10-02T18:05:15Z",
       "collectedAt": "2026-10-02T12:45:50Z",
-      "feedPosition": 19,
+      "feedPosition": 22,
       "summary": ""
     },
     {
@@ -1941,7 +1981,7 @@
       "url": "https://openai.com/index/practical-guide-building-gpt-6",
       "publishedAt": "2026-10-02T16:15:00Z",
       "collectedAt": "2026-10-02T22:18:45Z",
-      "feedPosition": 0,
+      "feedPosition": 1,
       "summary": "Learn how startups can choose GPT-6 models, tune reasoning effort, improve prompts and skills, coordinate tools, and prepare workflows for production."
     },
     {
@@ -2227,7 +2267,7 @@
       "url": "https://openai.com/index/chatham-financial",
       "publishedAt": "2026-10-02T00:00:00Z",
       "collectedAt": "2026-10-02T22:18:45Z",
-      "feedPosition": 1,
+      "feedPosition": 2,
       "summary": "Chatham Financial uses Codex and GPT-5.6 to build technology and redesign workflows, cutting trade validation from 30 minutes to under 4."
     },
     {
@@ -2266,7 +2306,7 @@
       "url": "https://openai.com/index/the-eternal-complement",
       "publishedAt": "2026-10-01T17:00:00Z",
       "collectedAt": "2026-10-01T22:44:56Z",
-      "feedPosition": 2,
+      "feedPosition": 3,
       "summary": "Advanced AI may matter most for the routine work behind breakthrough ideas. Explore why execution could shape the next economy and the pace of progress."
     },
     {
@@ -2292,7 +2332,7 @@
       "url": "https://openai.com/index/albertsons-reimagining-retail",
       "publishedAt": "2026-10-01T16:00:00Z",
       "collectedAt": "2026-10-01T22:44:56Z",
-      "feedPosition": 3,
+      "feedPosition": 4,
       "summary": "Albertsons Cos. is using ChatGPT Enterprise and the OpenAI API to help teams work faster and make grocery shopping easier for millions of customers."
     },
     {
@@ -2409,7 +2449,7 @@
       "url": "https://openai.com/index/the-den-family-social",
       "publishedAt": "2026-10-01T00:00:00Z",
       "collectedAt": "2026-10-01T22:44:56Z",
-      "feedPosition": 4,
+      "feedPosition": 5,
       "summary": "As it opens a new location, the social club prepares grant applications in 2 hours instead of 3 days and liquor-license materials in 3 hours instead of 4 days."
     },
     {
@@ -2435,7 +2475,7 @@
       "url": "https://www.lennysnewsletter.com/p/openai-dev-day-2026-the-releases",
       "publishedAt": "2026-09-30T14:45:15Z",
       "collectedAt": "2026-09-30T22:21:01Z",
-      "feedPosition": 2,
+      "feedPosition": 3,
       "summary": "Watch now (24 mins) | 🎙️ Claire tests OpenAI’s DevDay releases, from Dots, Spaces, and Sites to AI-picked thumbnails and a $97 game, and shares what’s worth trying first"
     },
     {
@@ -2461,7 +2501,7 @@
       "url": "https://www.lennysnewsletter.com/p/jev-8-real-use-cases-for-the-fastest",
       "publishedAt": "2026-09-30T12:04:27Z",
       "collectedAt": "2026-09-30T12:43:12Z",
-      "feedPosition": 3,
+      "feedPosition": 4,
       "summary": "Watch now (46 mins) | 🎙️ Educator and developer John Lindquist shares eight Jev demos, from live voice classification and deduplication to agent routing, showing how low costs make once-impractical ideas worth trying"
     },
     {
@@ -2474,7 +2514,7 @@
       "url": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign",
       "publishedAt": "2026-09-30T10:30:00Z",
       "collectedAt": "2026-09-30T22:21:01Z",
-      "feedPosition": 5,
+      "feedPosition": 6,
       "summary": "Learn how OpenAI disrupted a campaign to extract protected model reasoning and is strengthening defenses against adversarial distillation."
     },
     {
@@ -2487,7 +2527,7 @@
       "url": "https://openai.com/index/helping-small-businesses-put-ai-to-work",
       "publishedAt": "2026-09-30T10:00:00Z",
       "collectedAt": "2026-09-30T22:21:01Z",
-      "feedPosition": 6,
+      "feedPosition": 7,
       "summary": "OpenAI is partnering with America’s SBDC to expand hands-on AI training and local support for small businesses, alongside a new report on how small teams are using AI."
     },
     {
@@ -2496,11 +2536,11 @@
       "source": "브런치 자기계발·커리어",
       "category": "자기계발",
       "language": "ko",
-      "title": "일 잘하는 팀장의 AI 활용법 - brunch.co.kr",
+      "title": "일 잘하는 팀장의 AI 활용법 - 브런치",
       "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1ZUDNUZXJlQjZFRkZKNGZaUXdsNFJleEkzZnhVVGQxYk5WSWF5QTc2R01IR0VOemt1TVVpV2ZfWHpremtrWkQxb3U2Q3E2LWczdFE?oc=5",
       "publishedAt": "2026-09-30T07:19:18Z",
       "collectedAt": "2026-09-30T12:43:12Z",
-      "feedPosition": 17,
+      "feedPosition": 16,
       "summary": ""
     },
     {
@@ -2578,7 +2618,7 @@
       "url": "https://www.lennysnewsletter.com/p/all-of-the-lenny-and-friends-summit",
       "publishedAt": "2026-09-29T13:15:57Z",
       "collectedAt": "2026-09-29T22:20:59Z",
-      "feedPosition": 4,
+      "feedPosition": 5,
       "summary": "Plus, some reflections and takeaways from the day"
     },
     {
@@ -2593,19 +2633,6 @@
       "collectedAt": "2026-10-01T13:27:09Z",
       "feedPosition": 84,
       "summary": ""
-    },
-    {
-      "id": "b624d9f643d9db26fbc34478",
-      "feedId": "openai-news",
-      "source": "OpenAI News",
-      "category": "AI",
-      "language": "en",
-      "title": "DevDay 2026 Recap",
-      "url": "https://openai.com/index/devday-2026-recap",
-      "publishedAt": "2026-09-29T10:00:00Z",
-      "collectedAt": "2026-09-29T22:20:59Z",
-      "feedPosition": 7,
-      "summary": "Explore more than 20 announcements from OpenAI DevDay 2026, including GPT-6 Astra, ChatGPT, Codex, APIs, security, and new tools for builders."
     },
     {
       "id": "6a0e84cf2e81a1ab9f22de1e",
@@ -2634,19 +2661,6 @@
       "summary": ""
     },
     {
-      "id": "871fbc7243a6a1709d7142ea",
-      "feedId": "self-development-korea",
-      "source": "브런치 자기계발·커리어",
-      "category": "자기계발",
-      "language": "ko",
-      "title": "커리어 역전(Quantum Jump) 관련 솔직한 생 - brunch.co.kr",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE04clFGVzhLTXBQcTV5WTl0VlNVVWZXbW5WZFVWU2p3RmFnWWdoNVVCTkxoaXNVTEMwVGQ0VFU0ZnEyR3R5QktnTHBLOHlqazQ?oc=5",
-      "publishedAt": "2026-09-28T17:31:45Z",
-      "collectedAt": "2026-09-30T05:39:34Z",
-      "feedPosition": 41,
-      "summary": ""
-    },
-    {
       "id": "ee84686894a70d142d295dd6",
       "feedId": "lennys-newsletter",
       "source": "Lenny's Newsletter",
@@ -2656,7 +2670,7 @@
       "url": "https://www.lennysnewsletter.com/p/how-i-ai-jev-for-beginners-i-left",
       "publishedAt": "2026-09-28T15:03:13Z",
       "collectedAt": "2026-09-28T23:20:09Z",
-      "feedPosition": 5,
+      "feedPosition": 6,
       "summary": "Your weekly listens from How I AI, part of the Lenny's Podcast Network"
     },
     {
@@ -2682,7 +2696,7 @@
       "url": "https://www.lennysnewsletter.com/p/jev-for-beginners-how-to-use-it-and",
       "publishedAt": "2026-09-28T12:03:04Z",
       "collectedAt": "2026-09-28T14:05:54Z",
-      "feedPosition": 6,
+      "feedPosition": 7,
       "summary": "Watch now (26 mins) | 🎙️ Jev returns type-safe structured values instead of text, which makes it the fastest, cheapest classification layer I’ve ever put in a pipeline—and this week I shipped three real projects with it"
     },
     {
@@ -2710,19 +2724,6 @@
       "collectedAt": "2026-09-28T05:31:24Z",
       "feedPosition": 4,
       "summary": ""
-    },
-    {
-      "id": "211d9e51fb61fa68f741fe87",
-      "feedId": "lennys-newsletter",
-      "source": "Lenny's Newsletter",
-      "category": "사업",
-      "language": "en",
-      "title": "The grief, loneliness, and burnout sweeping through the tech industry right now | Molly Graham",
-      "url": "https://www.lennysnewsletter.com/p/the-grief-loneliness-and-burnout",
-      "publishedAt": "2026-09-27T12:32:18Z",
-      "collectedAt": "2026-09-27T17:02:03Z",
-      "feedPosition": 7,
-      "summary": "Listen now (94 mins) | Molly Graham revisits her famous career advice for the AI era, and explains why delegating to a robot is nothing like delegating to a human"
     },
     {
       "id": "9e04bf4a32731f6f578c5c5f",
